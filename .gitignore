@@ -13,3 +13,4 @@ __pycache__/
 legacy_before.json
 DEPLOYMENT_REPORT.json
 PUBLIC_REPOSITORY.json
+*.dpapi
