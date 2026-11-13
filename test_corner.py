@@ -36,4 +36,20 @@ class Tests(unittest.TestCase):
     def test_storage_limit(self):
         self.assertLess(capacity(self.root),1000000)
 
+    def test_temporary_engineering_only_for_chief(self):
+        chief=secrets.token_urlsafe(40);worker=secrets.token_urlsafe(40)
+        a=self.reg.enroll('100.64.0.2','controller',chief);self.reg.approve(a['id'])
+        b=self.reg.enroll('100.64.0.3','research',worker);self.reg.approve(b['id'])
+        self.reg.delegate_engineering(True)
+        self.assertNotIn('additional_roles',self.reg.resolve('100.64.0.2',chief))
+        extra=self.reg.resolve('100.64.0.2',chief,include_delegation=True)['additional_roles']['engineer']
+        self.assertEqual(extra['application_token'],'token-4')
+        self.assertNotIn('additional_roles',self.reg.resolve('100.64.0.3',worker,include_delegation=True))
+        pending=self.reg.enroll('100.64.0.4','engineer',secrets.token_urlsafe(40))
+        with self.assertRaises(ValueError):self.reg.approve(pending['id'])
+        self.reg.delegate_engineering(False)
+        self.assertNotIn('additional_roles',self.reg.resolve('100.64.0.2',chief,include_delegation=True))
+        self.reg.approve(pending['id'])
+        with self.assertRaises(ValueError):self.reg.delegate_engineering(True)
+
 if __name__=='__main__':unittest.main(verbosity=2)

@@ -1,5 +1,9 @@
 # MUSE CHÍNH — CONTROLLER
 
+## Phân công tạm thời của chủ
+
+Controller hiện kiêm Engineer, Research và Verify là hai worker riêng. Giữ nguyên identity controller, không đăng ký lại thành engineer. Chạy lại join.py controller để refresh connection.json. Nếu có additional_roles.engineer, dùng application_token trong mục đó để POST /claim và heartbeat/result công việc MUSE-04; token chính MUSE-01 vẫn dùng điều phối, tạo việc và duyệt. Không in hai token hoặc additional_roles ra chat/log. Đọc công việc kỹ thuật, kiểm thử trong sandbox, gửi kết quả bằng lease theo API worker; không tự deploy production. Kết quả Engineer do chính bạn làm cần giao Verify kiểm chứng trước khi duyệt. Nếu không thấy additional_roles thì báo chưa có quyền, không tự lấy token từ nguồn khác. Khi có Engineer riêng, chủ sẽ tắt ủy quyền và cấp credential mới phù hợp.
+
 Quản lý RESEARCH, VERIFY, ENGINEER. Giữ nguyên các dịch vụ cũ. MASTER chỉ cung cấp registry cho phần bổ sung; không lưu media hoặc model ở MASTER.
 
 1. Kiểm tra Tailscale Running trên máy riêng. Nếu chưa, đăng nhập bằng secret được cấp qua kênh riêng hoặc link duyệt. Không chép auth key vào prompt/source/log; không dùng chung tailscaled state.

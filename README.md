@@ -1,5 +1,7 @@
 # AgentNet Corner — phần bổ sung dưới 1 GB
 
+Phân công tạm thời: Controller kiêm Engineer; Research và Verify là hai worker riêng. Refresh join.py controller để nhận additional_roles.engineer trong connection.json private. Dùng credential Engineer để claim/heartbeat/result, credential Chief để điều phối. Không in additional_roles/token ra log. CLI riêng: `corner.py delegate-engineering on` hoặc `off`. Khi tắt, token đã cấp vẫn cần được rotate để thu hồi quyền cũ hoàn toàn; việc đó phải có kế hoạch tránh ảnh hưởng hệ thống cũ.
+
 Chỉ thêm /opt/agentnet-corner. Python standard library, không venv/Docker/model; không sửa hoặc restart bridge 8000/controller 8101. Registry bổ sung bind Tailscale cổng 8110.
 
 ## Có thể dùng

@@ -79,20 +79,33 @@ class Registry:
         if row['status']!='APPROVED': raise PermissionError(row['status'])
         return dict(row)
 
-    def resolve(self, ip, token):
+    def resolve(self, ip, token, include_delegation=False):
         row=self.authenticate(ip,token)
         with LOCK,connect(self.root) as db:
             capacity(self.root)
             db.execute('UPDATE nodes SET heartbeat=?,ip=? WHERE id=?',(time.time(),ip,row['id']))
             current=db.execute("SELECT value FROM config WHERE key='controller'").fetchone()
+            delegation=db.execute("SELECT value FROM config WHERE key='engineering_delegate'").fetchone()
         if not current: return {'status':'WAITING_CONTROLLER','role':row['role']}
         config=json.loads(current['value'])
         legacy=ROLES[row['role']]
         # Only an approved, Tailscale-identified node gets its own role credential.
         keys=json.loads((self.root/'credentials.json').read_text())
-        return {'status':'READY','role':row['role'],'legacy_role':legacy,
+        result={'status':'READY','role':row['role'],'legacy_role':legacy,
             'controller_url':config['url'],'controller_generation':config['generation'],
             'application_token':keys[legacy],'mode':config['mode']}
+        if row['role']=='controller' and delegation and delegation['value']=='controller' and include_delegation:
+            result['additional_roles']={'engineer':{'legacy_role':'MUSE-04',
+                'application_token':keys['MUSE-04'],'temporary':True}}
+        return result
+
+    def delegate_engineering(self, enabled):
+        with LOCK,connect(self.root) as db:
+            capacity(self.root)
+            if enabled and db.execute("SELECT 1 FROM nodes WHERE role='engineer' AND status='APPROVED'").fetchone():
+                raise ValueError('An Engineer node is already approved; resolve ownership first')
+            db.execute('INSERT OR REPLACE INTO config VALUES(?,?)',
+                ('engineering_delegate','controller' if enabled else 'none'))
 
     def approve(self,nid):
         with LOCK,connect(self.root) as db:
@@ -101,6 +114,9 @@ class Registry:
             if not row: raise ValueError('Unknown enrollment')
             if row['status']=='APPROVED': return
             if row['status']!='REPLACEMENT_PENDING': raise ValueError('Revoked requests cannot be approved again')
+            delegation=db.execute("SELECT value FROM config WHERE key='engineering_delegate'").fetchone()
+            if row['role']=='engineer' and delegation and delegation['value']=='controller':
+                raise ValueError('Disable temporary Chief engineering delegation before approving an Engineer node')
             # Replacing the role explicitly revokes the predecessor in the registry.
             # Legacy API credentials also need rotation before production replacement.
             predecessor=db.execute("SELECT 1 FROM nodes WHERE role=? AND status='APPROVED'",(row['role'],)).fetchone()
@@ -134,7 +150,8 @@ class Handler(BaseHTTPRequestHandler):
                 return self.respond(200,(self.registry.root/pages[self.path]).read_bytes(),'text/plain; charset=utf-8')
             if self.path=='/controller':
                 token=self.headers.get('Authorization','').removeprefix('Bearer ')
-                return self.respond(200,self.registry.resolve(self.client_address[0],token))
+                return self.respond(200,self.registry.resolve(self.client_address[0],token,
+                    include_delegation=self.headers.get('X-AgentNet-Client')=='join/2'))
             self.respond(404,{'error':'not_found'})
         except PermissionError as e:self.respond(403,{'error':str(e)})
         except ValueError as e:self.respond(400,{'error':str(e)})
@@ -158,6 +175,7 @@ def main():
     serve=sub.add_parser('serve');serve.add_argument('--bind',required=True);serve.add_argument('--port',type=int,default=8110)
     sub.add_parser('status')
     approve=sub.add_parser('approve');approve.add_argument('id')
+    delegate=sub.add_parser('delegate-engineering');delegate.add_argument('mode',choices=['on','off'])
     revoke=sub.add_parser('revoke');revoke.add_argument('id')
     route=sub.add_parser('route');route.add_argument('url');route.add_argument('--legacy-adapter',action='store_true',required=True)
     args=parser.parse_args();registry=Registry()
@@ -167,6 +185,8 @@ def main():
         ThreadingHTTPServer((args.bind,args.port),Handler).serve_forever()
     elif args.cmd=='status':print(json.dumps(registry.status(),indent=2))
     elif args.cmd=='approve':registry.approve(args.id);print('Approved; role credential can be retrieved by this verified device')
+    elif args.cmd=='delegate-engineering':
+        registry.delegate_engineering(args.mode=='on');print('Temporary Chief engineering delegation: '+args.mode)
     elif args.cmd=='revoke':
         with connect() as db:db.execute("UPDATE nodes SET status='REVOKED' WHERE id=?",(args.id,))
         print('Registry revoked. Rotate the old application credential before approving a replacement.')
