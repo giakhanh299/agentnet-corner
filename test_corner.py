@@ -1,0 +1,39 @@
+import json,secrets,tempfile,unittest
+from pathlib import Path
+from corner import Registry,capacity,connect
+
+class Tests(unittest.TestCase):
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory();self.root=Path(self.tmp.name)
+        self.reg=Registry(self.root,lambda ip:'device-'+ip)
+        (self.root/'credentials.json').write_text(json.dumps({f'MUSE-0{n}':'token-'+str(n) for n in range(1,5)}))
+        with connect(self.root) as db:db.execute('INSERT INTO config VALUES(?,?)',('controller',json.dumps({'url':'http://100.64.0.1:8101','generation':1,'mode':'legacy-adapter'})))
+    def tearDown(self):self.tmp.cleanup()
+    def test_pending_not_self_promoted(self):
+        key=secrets.token_urlsafe(40)
+        row=self.reg.enroll('100.64.0.2','controller',key)
+        self.assertEqual(row['status'],'REPLACEMENT_PENDING')
+        with self.assertRaises(PermissionError):self.reg.resolve('100.64.0.2',key)
+        self.reg.approve(row['id'])
+        self.assertEqual(self.reg.resolve('100.64.0.2',key)['legacy_role'],'MUSE-01')
+    def test_machine_identity_and_role_credentials(self):
+        for index,role in enumerate(['research','verify','engineer']):
+            ip='100.64.0.'+str(index+2);key=secrets.token_urlsafe(40)
+            row=self.reg.enroll(ip,role,key);self.reg.approve(row['id'])
+            result=self.reg.resolve(ip,key)
+            self.assertEqual(result['role'],role)
+            self.assertNotIn('credentials',result)
+            with self.assertRaises(PermissionError):self.reg.resolve('100.64.0.99',key)
+    def test_replacement_requires_explicit_revoke(self):
+        a=self.reg.enroll('100.64.0.2','research',secrets.token_urlsafe(40));self.reg.approve(a['id'])
+        b=self.reg.enroll('100.64.0.3','research',secrets.token_urlsafe(40))
+        with self.assertRaises(ValueError):self.reg.approve(b['id'])
+    def test_idempotency_and_route_refresh(self):
+        key=secrets.token_urlsafe(40);a=self.reg.enroll('100.64.0.2','verify',key)
+        self.assertEqual(a,self.reg.enroll('100.64.0.2','verify',key));self.reg.approve(a['id'])
+        with connect(self.root) as db:db.execute('UPDATE config SET value=?',(json.dumps({'url':'http://100.64.0.9:8101','generation':2,'mode':'legacy-adapter'}),))
+        self.assertEqual(self.reg.resolve('100.64.0.2',key)['controller_generation'],2)
+    def test_storage_limit(self):
+        self.assertLess(capacity(self.root),1000000)
+
+if __name__=='__main__':unittest.main(verbosity=2)

@@ -1,0 +1,28 @@
+[Unit]
+Description=AgentNet Corner isolated registry and prompts
+After=network-online.target tailscaled.service
+Wants=network-online.target
+
+[Service]
+User=agentnet-corner
+Group=agentnet-corner
+WorkingDirectory=/opt/agentnet-corner
+ExecStart=/usr/bin/python3 -B /opt/agentnet-corner/corner.py serve --bind 100.67.236.124 --port 8110
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/opt/agentnet-corner/state
+PrivateTmp=true
+ProtectKernelModules=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+MemoryMax=64M
+CPUQuota=10%
+TasksMax=32
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+credentials.json
+registry.sqlite3*
+state/
+*.log*
+*.pending
+identity.json
+connection.json
+.env*
+__pycache__/
+*.pem
+*.key
+*private*
+legacy_before.json
+DEPLOYMENT_REPORT.json
