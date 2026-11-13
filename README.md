@@ -44,6 +44,10 @@ Unit nằm trong thư mục; systemd có thêm liên kết đăng ký service ri
 
 ## Chưa triển khai/kiểm chứng
 
-Chưa có bốn VPS riêng đăng ký, chưa có runtime AI/model, repo công khai cần tài khoản GitHub đã xác thực. Chưa có public key age của chủ nên chưa bật backup 03:00 hoặc thử restore. Chưa kiểm thử đổi Controller thật hoặc áp dụng Grants. Registry/prompt không tự tạo AI.
+Chưa có bốn VPS riêng đăng ký, chưa có runtime AI/model, repo công khai đã tạo tại https://github.com/giakhanh299/agentnet-corner. Chưa có public key age của chủ nên chưa bật backup 03:00 hoặc thử restore. Chưa kiểm thử đổi Controller thật hoặc áp dụng Grants. Registry/prompt không tự tạo AI.
 
 MASTER hiện vẫn có .env/token Drive và dịch vụ cũ, được giữ nguyên theo yêu cầu không thay đổi hệ thống cũ. Vì vậy chưa đạt thiết kế MASTER chỉ giữ kiến trúc và không có secret AI/Drive; việc migration cần nhiệm vụ riêng có máy đích.
+
+## Source công khai
+
+https://github.com/giakhanh299/agentnet-corner — chỉ source/prompt/scripts; không có credentials.json, state hoặc dữ liệu thực tế.

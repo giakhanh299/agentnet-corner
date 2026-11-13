@@ -12,3 +12,4 @@ __pycache__/
 *private*
 legacy_before.json
 DEPLOYMENT_REPORT.json
+PUBLIC_REPOSITORY.json
