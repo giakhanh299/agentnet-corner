@@ -1,57 +1,40 @@
-# AgentNet Corner — phần bổ sung dưới 1 GB
+# AgentNet Corner — dự án nghiên cứu độc lập
 
-Master prompt Video Studio V1.1: `/prompts/master` (MASTER_PROMPT_V1_1.md). Bản này giữ mục tiêu nghiên cứu/sản xuất nhưng áp dụng Controller kiêm Engineer/Creative, Research và Verify/QC/Analytics, không tự tạo thêm máy. Registry hiển thị REGISTRY_RECENT hoặc REGISTRY_STALE cho tuổi heartbeat; không dùng heartbeat registry cũ để kết luận mạng/AI offline. Kiểm tra thêm lịch sử claim/result và connection_probe do chính agent trả lời.
+Code, registry và queue mới chỉ nằm trong /opt/agentnet-corner, dưới 1 GB. Python standard library; không model/media. API và prompt bind Tailscale cổng 8110.
 
-Phân công tạm thời: Controller kiêm Engineer; Research và Verify là hai worker riêng. Refresh join.py controller để nhận additional_roles.engineer trong connection.json private. Dùng credential Engineer để claim/heartbeat/result, credential Chief để điều phối. Không in additional_roles/token ra log. CLI riêng: `corner.py delegate-engineering on` hoặc `off`. Khi tắt, token đã cấp vẫn cần được rotate để thu hồi quyền cũ hoàn toàn; việc đó phải có kế hoạch tránh ảnh hưởng hệ thống cũ.
+## Sửa lỗi nối nhầm dự án
 
-Chỉ thêm /opt/agentnet-corner. Python standard library, không venv/Docker/model; không sửa hoặc restart bridge 8000/controller 8101. Registry bổ sung bind Tailscale cổng 8110.
+Trước đây assistant nối ba agent với broker 8101 tự sinh việc đánh giá FB. Thiết kế đó sai phạm vi nghiên cứu riêng. Broker phụ 8101 được dừng/disable, database giữ nguyên; các dịch vụ Facebook gốc và bridge 8000 không bị sửa/restart.
 
-## Có thể dùng
+Queue nghiên cứu mới không nhập task/kết quả/token FB. Registry không đọc credentials.json của broker cũ. Node dùng credential đăng ký riêng đã được chủ duyệt, xác thực thêm Tailscale Node.ID. Revoke registry chặn cả API nghiên cứu, không chỉ resolve.
 
-- Prompt Chief và Worker tại /prompts/chief và /prompts/worker.
-- Đăng ký máy gắn với Node.ID lấy từ tailscale whois; yêu cầu vai trò luôn chờ chủ duyệt.
-- Địa chỉ Controller lấy từ registry, không hardcode trong worker.
-- Chỉ node đã duyệt nhận token ứng dụng riêng của role; không có API cho worker xem toàn bộ registry.
-- Request tối đa 16KB, tối đa 256 bản đăng ký, SQLite giới hạn khoảng 256 MiB; guard trước khi ghi ở 900 triệu byte.
+## Thành phần
 
-Guard không phải filesystem quota; root/chương trình bên ngoài vẫn có thể chép file vào thư mục. Không lưu media, model, backup lớn hoặc repo dự án khác ở đây.
+- state/registry.sqlite3: giữ đăng ký Controller, Research, Verify.
+- state/research.sqlite3: hàng đợi project=research, ban đầu rỗng.
+- Controller tạm kiêm Engineer; không cần node thứ tư.
+- Prompt: /prompts/master-v1.2, /prompts/chief, /prompts/worker.
+- Không timer sinh việc FB, không HTTP client tích hợp FB.
 
-## Đăng ký
+## Kết nối lại
 
-Trên máy mới đọc join.py rồi chạy `python3 join.py ROLE --master http://MASTER_IP_TAILSCALE:8110`, ROLE là controller/research/verify/engineer.
+Cập nhật join.py từ source đã duyệt, giữ identity.json. Chạy đúng controller/research/verify với --master http://MASTER_IP:8110. Chỉ dùng connection.json có project=research, mode=research-only. Không dùng cache/token broker cũ. Khóa Tailscale không phải credential ứng dụng.
 
-Trên MASTER: `python3 /opt/agentnet-corner/corner.py status`, đối chiếu Node.ID với máy do chủ tạo, sau đó `python3 /opt/agentnet-corner/corner.py approve REQUEST_ID`.
+## API
 
-Máy mới chạy lại join.py để nhận connection.json riêng. Client phải refresh trước mỗi vòng nhận việc. Auth key Tailscale không thay thế bước duyệt và token ứng dụng.
+GET /health trả project=research. GET /tasks, GET /agents, POST /tasks và POST /tasks/{id}/approve chỉ Chief. Worker: POST /claim, POST /tasks/{id}/heartbeat, POST /tasks/{id}/result. API private yêu cầu Bearer credential node và nguồn Tailscale khớp đăng ký.
 
-## Tương thích cũ
+POST /tasks gồm project=research, assigned_to là research/verify/engineer, kind, dedup, payload.objective. Chief kiêm Engineer thêm as_role=engineer trong claim/heartbeat/result; server kiểm tra delegation hiện tại, không dùng token Engineer FB.
 
-Route ban đầu trỏ controller cũ, không di chuyển database. Mapping: research=MUSE-03, verify=MUSE-02, engineer=MUSE-04, chief=MUSE-01. credentials.json là cấu hình private của registry, không đưa vào Git hoặc endpoint tài liệu.
+Trạng thái QUEUED → RUNNING → SUBMITTED → APPROVED. Lease 15 phút, heartbeat 60 giây, chống trùng task/result. BLOCKED không được approve. Chặn URL nguồn trỏ endpoint đánh giá FB cũ. Không tự duyệt/đăng bài/thực thi code trên MASTER.
 
-## Thay máy
+## Dung lượng và vận hành
 
-Revoke registry chỉ chặn resolve, không tự thu hồi token đã cấp ở controller cũ. Phải rotate/thu hồi token ứng dụng cũ trước khi approve máy thay; công cụ chặn approve khi còn predecessor APPROVED. Không tự sửa controller cũ khi chưa có kế hoạch tránh gián đoạn.
+Guard 900 triệu byte; mỗi SQLite giới hạn khoảng 256 MiB. Đây không phải hard quota với root. Media/model/repo lớn ở worker hoặc Drive; queue chỉ giữ metadata/kết quả nhỏ có nguồn.
 
-Chỉ đổi route sau khi Controller mới phục hồi state và kiểm thử. Route CLI hiện chỉ hỗ trợ adapter legacy.
-
-## Vận hành
-
-```bash
 systemctl status agentnet-corner.service --no-pager
-systemctl stop agentnet-corner.service
-systemctl start agentnet-corner.service
 python3 /opt/agentnet-corner/corner.py status
+python3 /opt/agentnet-corner/corner.py delegate-engineering on
 du -sh /opt/agentnet-corner
-```
 
-Unit nằm trong thư mục; systemd có thêm liên kết đăng ký service riêng, không ghi đè unit cũ. Không ghi request body/token vào log.
-
-## Chưa triển khai/kiểm chứng
-
-Chưa có bốn VPS riêng đăng ký, chưa có runtime AI/model, repo công khai đã tạo tại https://github.com/giakhanh299/agentnet-corner. Chưa có public key age của chủ nên chưa bật backup 03:00 hoặc thử restore. Chưa kiểm thử đổi Controller thật hoặc áp dụng Grants. Registry/prompt không tự tạo AI.
-
-MASTER hiện vẫn có .env/token Drive và dịch vụ cũ, được giữ nguyên theo yêu cầu không thay đổi hệ thống cũ. Vì vậy chưa đạt thiết kế MASTER chỉ giữ kiến trúc và không có secret AI/Drive; việc migration cần nhiệm vụ riêng có máy đích.
-
-## Source công khai
-
-https://github.com/giakhanh299/agentnet-corner — chỉ source/prompt/scripts; không có credentials.json, state hoặc dữ liệu thực tế.
+Không bật broker 8101 cho dự án này. Source công khai không chứa state/credential/backup. Daily backup Drive mã hóa, restore và AI runtime chạy nền chưa được triển khai; không báo đã có chỉ vì queue hoạt động.

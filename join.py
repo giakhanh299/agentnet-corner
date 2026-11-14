@@ -30,6 +30,8 @@ if result['status']=='APPROVED':
     req=Request(args.master.rstrip('/')+'/controller',headers={
         'Authorization':'Bearer '+data['token'],'X-AgentNet-Client':'join/2'})
     with urlopen(req,timeout=15) as r:connection=json.load(r)
+    if connection.get('project')!='research' or connection.get('mode')!='research-only':
+        raise SystemExit('Refusing a non-research connection; existing identity kept unchanged')
     fd=os.open(state/'connection.json',os.O_WRONLY|os.O_CREAT|os.O_TRUNC,0o600)
     with os.fdopen(fd,'w') as f:json.dump(connection,f)
     safe={k:v for k,v in connection.items() if k not in ('application_token','additional_roles')}
