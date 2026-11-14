@@ -118,7 +118,7 @@ Small nếu cần; VPS yếu — Tiny/Base, không chạy song song. Tiếng Vi�
 tiếng lóng, nói nhanh, âm chồng), phân tích audio theo timestamp (âm mở đầu,
 hiệu ứng nhấn, pause trước tiết lộ, đổi nhạc, âm kết). Cách dễ nhất cho người
 không dùng dòng lệnh: Subtitle Edit → Video → Speech to text → Whisper CPP
-engine → model Tiny hoặc Base → tiếng Việt → kiểm tra, sửa, xuất TXT/SRT.
+engine → Tiny hoặc Base model → tiếng Việt → kiểm tra, sửa, xuất TXT/SRT.
 
 ## Q5 — Lịch đăng, độ dài, tiêu đề, thumbnail, hook
 
