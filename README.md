@@ -1,5 +1,7 @@
 # AgentNet Corner — phần bổ sung dưới 1 GB
 
+Master prompt Video Studio V1.1: `/prompts/master` (MASTER_PROMPT_V1_1.md). Bản này giữ mục tiêu nghiên cứu/sản xuất nhưng áp dụng Controller kiêm Engineer/Creative, Research và Verify/QC/Analytics, không tự tạo thêm máy. Registry hiển thị REGISTRY_RECENT hoặc REGISTRY_STALE cho tuổi heartbeat; không dùng heartbeat registry cũ để kết luận mạng/AI offline. Kiểm tra thêm lịch sử claim/result và connection_probe do chính agent trả lời.
+
 Phân công tạm thời: Controller kiêm Engineer; Research và Verify là hai worker riêng. Refresh join.py controller để nhận additional_roles.engineer trong connection.json private. Dùng credential Engineer để claim/heartbeat/result, credential Chief để điều phối. Không in additional_roles/token ra log. CLI riêng: `corner.py delegate-engineering on` hoặc `off`. Khi tắt, token đã cấp vẫn cần được rotate để thu hồi quyền cũ hoàn toàn; việc đó phải có kế hoạch tránh ảnh hưởng hệ thống cũ.
 
 Chỉ thêm /opt/agentnet-corner. Python standard library, không venv/Docker/model; không sửa hoặc restart bridge 8000/controller 8101. Registry bổ sung bind Tailscale cổng 8110.

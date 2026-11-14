@@ -129,7 +129,9 @@ class Registry:
         result=[]
         for row in rows:
             d=dict(row)
-            d['availability']=('ONLINE' if d['heartbeat'] and time.time()-d['heartbeat']<180 else 'OFFLINE') if d['status']=='APPROVED' else d['status']
+            age=time.time()-d['heartbeat'] if d['heartbeat'] else None
+            d['registry_heartbeat_age_seconds']=round(age) if age is not None else None
+            d['availability']=('REGISTRY_RECENT' if age is not None and age<180 else 'REGISTRY_STALE') if d['status']=='APPROVED' else d['status']
             result.append(d)
         return result
 
@@ -145,7 +147,8 @@ class Handler(BaseHTTPRequestHandler):
             if self.path=='/health':
                 return self.respond(200,{'status':'ok','directory_bytes':capacity(self.registry.root),
                     'limit_bytes':LIMIT,'function':'registry only; legacy system untouched'})
-            pages={'/':'README.md','/prompts/chief':'PROMPT_CHIEF.md','/prompts/worker':'PROMPT_WORKER.md'}
+            pages={'/':'README.md','/prompts/chief':'PROMPT_CHIEF.md',
+                '/prompts/worker':'PROMPT_WORKER.md','/prompts/master':'MASTER_PROMPT_V1_1.md'}
             if self.path in pages:
                 return self.respond(200,(self.registry.root/pages[self.path]).read_bytes(),'text/plain; charset=utf-8')
             if self.path=='/controller':

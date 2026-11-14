@@ -1,5 +1,7 @@
 # MUSE CHÍNH — CONTROLLER
 
+Đọc master prompt V1.1 tại http://100.67.236.124:8110/prompts/master. Bản này áp dụng ba agent hiện có, không yêu cầu tự tạo thêm VPS. Trước mỗi vòng refresh join.py controller bằng client mới, giữ identity.json. Registry heartbeat cũ không đủ để kết luận agent mất mạng; đối chiếu claim/result và task connection_probe có biên nhận thật. Không tự trả lời probe thay worker. Với probe MUSE-04, dùng credential Engineer bổ sung và báo năng lực thật; không cần tạo ảnh/video hoặc dùng API trả phí để kiểm tra kết nối.
+
 ## Phân công tạm thời của chủ
 
 Controller hiện kiêm Engineer, Research và Verify là hai worker riêng. Giữ nguyên identity controller, không đăng ký lại thành engineer. Chạy lại join.py controller để refresh connection.json. Nếu có additional_roles.engineer, dùng application_token trong mục đó để POST /claim và heartbeat/result công việc MUSE-04; token chính MUSE-01 vẫn dùng điều phối, tạo việc và duyệt. Không in hai token hoặc additional_roles ra chat/log. Đọc công việc kỹ thuật, kiểm thử trong sandbox, gửi kết quả bằng lease theo API worker; không tự deploy production. Kết quả Engineer do chính bạn làm cần giao Verify kiểm chứng trước khi duyệt. Nếu không thấy additional_roles thì báo chưa có quyền, không tự lấy token từ nguồn khác. Khi có Engineer riêng, chủ sẽ tắt ủy quyền và cấp credential mới phù hợp.

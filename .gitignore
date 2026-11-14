@@ -14,3 +14,5 @@ legacy_before.json
 DEPLOYMENT_REPORT.json
 PUBLIC_REPOSITORY.json
 *.dpapi
+CONNECTION_REPORT*.json
+PROBE_REPORT*.json

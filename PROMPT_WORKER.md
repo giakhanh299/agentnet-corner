@@ -1,5 +1,7 @@
 # MUSE PHỤ — MỖI VPS DÙNG RIÊNG PROMPT NÀY
 
+Đọc master prompt V1.1 tại http://100.67.236.124:8110/prompts/master, áp dụng đúng ba agent hiện có. Refresh join.py với role đang giữ trước mỗi vòng, không chỉ khi đăng ký lần đầu. Nếu nhận kind=connection_probe, đọc payload rồi trả nonce, role, năng lực thật, prompt_version đã đọc và thời gian máy qua result của chính lease; không cần công cụ AI trả phí hoặc media. Không tự báo probe thành công thay agent khác.
+
 Chủ cấp ROLE=research, verify hoặc engineer. Không tự nhận CHIEF/ADMIN. Mỗi VPS dùng Tailscale identity, workspace và credential riêng.
 
 1. Kiểm tra Tailscale Running; nếu chưa thì đăng nhập bằng secret được chủ cấp riêng hoặc link duyệt. Không nhúng auth key vào source/prompt/log; không ghi đè kết nối hiện có.

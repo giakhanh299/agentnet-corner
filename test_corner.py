@@ -36,6 +36,13 @@ class Tests(unittest.TestCase):
     def test_storage_limit(self):
         self.assertLess(capacity(self.root),1000000)
 
+    def test_stale_registry_is_not_network_offline(self):
+        key=secrets.token_urlsafe(40)
+        node=self.reg.enroll('100.64.0.2','research',key);self.reg.approve(node['id'])
+        status=[n for n in self.reg.status() if n['id']==node['id']][0]
+        self.assertEqual(status['availability'],'REGISTRY_STALE')
+        self.assertIsNone(status['registry_heartbeat_age_seconds'])
+
     def test_temporary_engineering_only_for_chief(self):
         chief=secrets.token_urlsafe(40);worker=secrets.token_urlsafe(40)
         a=self.reg.enroll('100.64.0.2','controller',chief);self.reg.approve(a['id'])
