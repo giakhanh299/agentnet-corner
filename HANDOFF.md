@@ -216,3 +216,15 @@ File: `~/workspace/user/files/FB_API_tokens_20261115_014934.json`
   Visual Essay, dễ làm + viral nhất; (2) Bất ngờ — plot twist; (3) Cảm xúc —
   stickman/mindset (kiểu Reel "Tâm sự người que").
 - Google Drive chưa nối (cần chủ bấm link kết nối) — file nặng đang chờ upload.
+
+## 9. Khi Muse mới vào (chủ dặn 15/11 ~01:58)
+
+- **Muse mới vào cần quyền gì thì cấp hết 1 lần** — đừng xin từng quyền lẻ tẻ
+  làm gián đoạn công việc. Liệt kê toàn bộ quyền cần thiết (đọc/ghi file, chạy
+  lệnh, trình duyệt, đăng nhập, kết nối dịch vụ, duyệt chi) và xin một lần duy nhất.
+- **Lần sau cần đăng nhập gì thì cập nhật vào đây (HANDOFF.md)** — ghi rõ dịch vụ,
+  tài khoản, trạng thái (đã nối/chưa nối), link kết nối. Chủ sẽ nối khi rảnh.
+- **Key/API token của dự án thử nghiệm này được lưu trên Google Drive** (thư mục
+  "AgentNet Video Studio", file FB_API_tokens_20261115.json) — KHÔNG đưa giá trị
+  key vào git, log hay chat. Đọc key từ file trên Drive/VPS lúc chạy, không in ra.
+- Chủ dặn: nếu không có việc thì tự kiếm việc mà làm; làm sớm hơn tiến độ cũng được.
