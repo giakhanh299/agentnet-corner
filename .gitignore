@@ -18,3 +18,14 @@ CONNECTION_REPORT*.json
 PROBE_REPORT*.json
 CONNECTION_CHECK*.md
 RESEARCH_ISOLATION_REPORT.json
+# media + tokens: never commit (heavy files go to Google Drive, not git)
+*.mp4
+*.wav
+*.jpg
+*.jpeg
+*.png
+*.part
+*.jsonl
+*token*
+*secret*
+*credential*
