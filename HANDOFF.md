@@ -202,3 +202,17 @@ File: `~/workspace/user/files/FB_API_tokens_20261115_014934.json`
    sang tuần 2 viết 7 kịch bản đầu.
 8. Duy trì: cron đẩy git mỗi 30 phút; file nặng lên Google Drive (thư mục
    "AgentNet Video Studio"); cập nhật file HANDOFF này mỗi khi trạng thái đổi.
+
+## 8. Hướng mới (chủ dặn 15/11 ~01:55 — lưu lại lời chủ)
+
+- **Lưu cả những gì chủ nói**, không chỉ kết quả.
+- **Dùng ChatGPT + Gemini để TẠO video, rồi lấy video đó phân tích tiếp** bằng
+  pipeline (analyze_video.py): tạo → phân tích hook/nhịp/audio → cải thiện.
+  Gemini Pro tạo video bằng Veo; ChatGPT (Plus/Pro) tạo bằng Sora. Video AI tạo
+  ra tải về rồi chạy qua pipeline như video ứng viên.
+- **Dùng tài khoản Google đang đăng nhập (giakhanhgcm@gmail.com) để tạo 2–3 kênh
+  YouTube** về một chủ đề. CHƯA tạo — cần chủ xác nhận tên kênh/chủ đề trước khi
+  tạo (đây là thao tác trên tài khoản thật). Đề xuất từ nghiên cứu: (1) Tò mò —
+  Visual Essay, dễ làm + viral nhất; (2) Bất ngờ — plot twist; (3) Cảm xúc —
+  stickman/mindset (kiểu Reel "Tâm sự người que").
+- Google Drive chưa nối (cần chủ bấm link kết nối) — file nặng đang chờ upload.
