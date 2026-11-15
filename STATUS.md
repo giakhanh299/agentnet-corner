@@ -7,19 +7,9 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-15 ~15:56 +07.
+> Cập nhật lần cuối: 2026-11-15 ~16:00 +07.
 
 ## IN PROGRESS
-
-### Video #1 — Visual Essay 45s (F2) — IN PROGRESS
-- **Bắt đầu:** 2026-11-15 14:53 +07 (chủ duyệt "Làm video đầu tiên ngay").
-  Vẫn đang chạy lúc 15:50 (subagent hoạt động, không kẹt).
-- **Thư mục:** `video_production/v001-visual-essay-45s/` — đã có `v001.mp4`,
-  `voice.wav`, `captions.srt` trên đĩa (thấy lúc 15:50), nhưng báo cáo cuối
-  của subagent + kiểm tra QC (ffprobe, loudness, xem frame) CHƯA có — KHÔNG
-  được coi là DONE.
-- **Ghi chú:** TTS đang thử nhiều hướng (gtts lỗi, đã tải model từ Hugging Face).
-  Chưa đăng/upload đâu cả.
 
 ### Ep001 — tập stickman thật đầu tiên (F7, 50s) — IN PROGRESS
 - **Bắt đầu:** 2026-11-15 ~15:46 +07. Thư mục
@@ -38,6 +28,34 @@
   render demo 5s, đo thời gian, copy frame về xem.
 
 ## DONE
+
+### Video #1 — Visual Essay 45s (F2) — DONE 2026-11-15 15:57 +07
+- **File:** `video_production/v001-visual-essay-45s/v001.mp4` — 47,1s,
+  1080x1920 30fps, H.264 + AAC 192k, 12,6 MB, sha256 `e65285dd625caccc…`
+  (Torque kiểm chứng: ffprobe + sha khớp báo cáo; xem frame 1s và 24s:
+  hook "Bạn có biết cửa sổ máy bay tròn không phải để đẹp?" rõ, dấu đúng;
+  phụ đề rõ, đúng vị trí).
+- **Chủ đề:** "Vì sao cửa sổ máy bay lại tròn?" — 126 từ, tiếng Việt,
+  hook kép (chữ + lời hỏi cùng 1 câu trong 3s đầu) → lịch sử Comet →
+  toán ứng suất Inglis/Kirsch → payoff + CTA. Nguồn đã kiểm chứng
+  (FAA Comet, Kirsch 1898 ×3, Inglis 1913 tới ×21, số chu kỳ bay
+  G-ALYP 1.290 / G-ALYY 900 / G-ALYU 3.060).
+- **Đã đo:** -16,74 LUFS, true peak -3,05 dBTP, giọng bắt đầu ~0,05s,
+  160 từ/phút — đều trong chuẩn. 9 frame QC đã xem (`qc.md`).
+- **Giọng đọc MMS-TTS** (`facebook/mms-tts-vie`, local, miễn phí) — đọc
+  từng câu + ngắt 0,9s; Whisper kiểm 70% khớp từ, từ khóa nghe rõ.
+  Edge TTS bị proxy chặn (WebSocket), gTTS 429, Piper phá dấu tiếng Việt
+  ("góc nhọn"→"khóc ngọt") — không dùng được. **MMS-TTS là pipeline
+  chuẩn cho các video sau** (mẫu `gen_voice.py` / `synth_sentences.py`).
+- **Lỗi đã sửa:** phụ đề SRT bị phóng 6,67× (PlayRes 384x288) → chuyển
+  sang ASS (PlayRes 1080x1920); true peak +0,24 dBTP sau AAC → sửa bằng
+  `alimiter=limit=0.7:level=false` (level=true là auto-gain, KHÔNG phải
+  true-peak — đã tăng nhầm loudness lên -13,16 LUFS ở 1 build).
+- **Giới hạn thật:** chưa ai nghe giọng bằng tai (chỉ Whisper kiểm —
+  Whisper yếu tiếng Việt, ~30% nghe nhầm âm gần giống); chưa có nhạc nền
+  (chưa có thư viện nhạc có bản quyền); ảnh img3 hơi mềm (nguồn 960px
+  upscale ~2×). Chủ nên nghe 1 lần trước khi đăng.
+- **Chưa đăng/upload đâu cả.** Thời gian: ~65 phút (3 lần build).
 
 ### Hệ thống liên tục / thay thế VPS (STATUS + HANDOFF) — DONE 2026-11-15 15:54 +07
 - **Commit:** `4fe66f4` (3 file) — `STATUS.md` (file này), `HANDOFF.md` §10
