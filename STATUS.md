@@ -250,6 +250,13 @@
 
 ## Rủi ro takeover (VPS mới chưa tiếp quản trọn vẹn được)
 
+- **VPS bị thay lần 4 trong ngày 2026-11-15 ~16:50 +07** (trước đó ~11:10,
+  ~12:50, ~14:50). Watchdog 16:53 tự chữa đúng thiết kế: tạo lại unit
+  systemd đã bị xóa + restart gateway (pid 1857), /health ok; Torque đưa
+  gateway về dưới systemd (active). Các subagent đang chạy (test PC,
+  Core_SFX) có thể bị gián đoạn bởi lần thay này — kiểm tra lại khi nhận
+  báo cáo.
+
 - `identity.json` / `connection.json` (khóa node AgentNet) KHÔNG có bản
   sao lưu nào (cố ý — bí mật, không lên git). Nếu VM bị thay và
   `~/.agentnet-corner/` mất, VPS mới không đăng ký lại được cùng node
