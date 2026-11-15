@@ -39,6 +39,23 @@
 
 ## DONE
 
+### Hệ thống liên tục / thay thế VPS (STATUS + HANDOFF) — DONE 2026-11-15 15:54 +07
+- **Commit:** `4fe66f4` (3 file) — `STATUS.md` (file này), `HANDOFF.md` §10
+  "Takeover" (10 bước cho VPS/Muse mới tiếp quản) + §11 "Infrastructure —
+  tất cả các VPS" (VPS 0/1/2/3/4, node Research `baa7de1f`, Verify
+  `355c4b87`, tailnet peers, thư mục Drive), `scripts/auto_push.sh`
+  (bản sao của auto_push.sh để VPS mới khôi phục cron).
+- **Đã kiểm chứng thật:** `STATUS.md` + `HANDOFF.md` đã lên Drive
+  (id ở cuối file, kiểm tra bằng `drive files list`); `auto_push.sh` đã
+  thêm `STATUS.md` vào danh sách git-add (grep đã kiểm chứng ở cả 2 bản).
+- **Quy tắc mới (chủ dặn ~15:50):** kết quả từng tính năng ghi vào
+  STATUS.md này (git là bản chính, Drive là bản sao) — KHÔNG báo riêng
+  cho chủ nữa. Chủ không can thiệp; cứ bám kế hoạch mà làm.
+- **Còn thiếu (xem mục "Rủi ro takeover" cuối file):** `identity.json` /
+  `connection.json`, `.env` gateway và khóa SSH `~/.ssh/pc_torque` chưa
+  có bản sao lưu nào — cần quyết định của chủ trước khi sao lưu bí mật
+  lên Drive; cron chỉ sống trong runtime, chưa có script tái tạo tự động.
+
 ### Stickman repo (Manim) — DONE 2026-11-15 15:45 +07
 - **Commit:** `58b70a2` (30 file) — `stickman-shorts/`.
   Manim 0.22.1, venv riêng; config.py SPEC đóng băng (HEAD_R=0.6);
@@ -165,6 +182,28 @@
   (`facebook-cli me` trả `{}`). Cần chủ nối Facebook hoặc gửi URL video
   trực tiếp. Đây là link công khai do chủ gửi để nghiên cứu, KHÔNG phải
   dữ liệu fanpage cũ.
+
+---
+
+## Rủi ro takeover (VPS mới chưa tiếp quản trọn vẹn được)
+
+- `identity.json` / `connection.json` (khóa node AgentNet) KHÔNG có bản
+  sao lưu nào (cố ý — bí mật, không lên git). Nếu VM bị thay và
+  `~/.agentnet-corner/` mất, VPS mới không đăng ký lại được cùng node
+  nếu không có chủ. Sao lưu lên Drive được (chủ đã lưu key thử nghiệm lên
+  Drive) nhưng CẦN chủ quyết trước — chưa tự làm.
+- `.env` của gateway cũng chưa có bản sao lưu (lý do như trên;
+  `.env.example` đã có trên git, key thật thì không).
+- Khóa riêng SSH `~/.ssh/pc_torque` chưa sao lưu — VPS mới phải tạo cặp
+  khóa mới và chủ phải thêm public key mới vào
+  `administrators_authorized_keys` trên PC.
+- Cron sống trong runtime, không có trên git — HANDOFF §10 có hướng dẫn
+  tạo lại cả 3 cron bằng tay, chưa có script tự tạo.
+- VPS 0/2/3/4 vẫn không tới được, IP chưa biết — đã ghi là chưa biết kèm
+  cách phát hiện (`tailscale status`, registry `/nodes`), không bịa.
+- HANDOFF.md §3 còn vài dòng cũ bên dưới ghi chú sửa (vd "Commit hiện tại
+  2060ecf") — ghi chú ở đầu §3 đã đính chính, nhưng viết lại toàn §3 vẫn
+  đang chờ.
 
 ---
 
