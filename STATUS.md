@@ -7,18 +7,54 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-15 ~17:03 +07.
+> Cập nhật lần cuối: 2026-11-15 ~17:15 +07.
 
-## IN PROGRESS
+## DONE
 
-### AI stack local trên PC (PyTorch cu128 + faster-whisper + TTS Việt) — IN PROGRESS
+### AI stack local trên PC (PyTorch cu128 + faster-whisper + TTS Việt) — DONE 2026-11-15 17:15 +07
 - **Bắt đầu:** 2026-11-15 ~17:03 +07. Tiếp sau test render Manim (DONE).
 - **Nội dung:** kiểm tra driver NVIDIA (cần ≥572.60, nếu thấp hơn thì dừng
   và báo, không tự cập nhật driver) → cài PyTorch ≥2.7.0 cu128 vào venv
   riêng (không chạm hệ Python của chủ) → faster-whisper large-v3, thử
   với voice.wav Ep001 → TTS Việt local (MMS-TTS). Ghi PC_AI_SETUP.md.
+- **Kết quả: CHẠY ĐƯỢC, cả 3 công cụ đã kiểm chứng bằng chạy thật.**
+  - Driver NVIDIA **610.88** (cần ≥572.60 — đạt, không cần làm gì),
+    RTX 5060 Ti 16 GB VRAM.
+  - **PyTorch 2.11.0+cu128, CUDA 12.8**: `cuda.is_available()` True,
+    capability (12, 0) = sm_120, matmul 512×512 trên CUDA ok. Cài ~100s
+    (torch có sẵn trong pip cache của PC).
+  - **faster-whisper 1.2.1, large-v3** (ctranslate2 4.9.0, av ghim 14.0.0):
+    voice.wav Ep001 (48,8s) nghe xong trong **4,7s (RTF 0,10x — nhanh
+    gấp ~10 lần VPS)**, khớp kịch bản **130/137 = 94,9%**. Cùng file trên
+    VPS whisper.cpp Base: 113/137 = 82,5% ở ~1x real-time.
+  - **MMS-TTS Việt** (transformers 5.23.0, mms-tts-vie trên CUDA): 3 câu
+    (55 từ, 19,6s audio) tổng hợp trong **0,9s** (VPS mất ~58s cho cả
+    giọng Ep001). Whisper tự kiểm output: **52/55 = 94,5%** (trượt: lả,
+    cày, tiếp — đúng các từ yếu đã biết của MMS). File test đã copy về
+    VPS: `stickman-shorts/test_audio/pc_tts_test.wav` (21,1s, 16 kHz
+    mono — Torque kiểm chứng ffprobe: 21,116s, 675.756 byte).
+- **Venv riêng:** `C:\Users\w\agentnet-corner\ai-stack\.venv-ai`
+  (Python 3.12.10) — tách khỏi `.venv-win` và hệ Python của chủ; không
+  chạm gì của chủ. Thư mục ai-stack ~4,7 GB; ổ C: còn trống 61,8 GB.
+- **Model đã có sẵn trong cache chung của chủ** (`HF_HOME` =
+  `D:\0.1_FACE_BOOK\DUNG_CHUNG\MODELS\HF_CACHE`) — không tải gì,
+  không ghi gì vào cache; large-v3 load ~3s, MMS-TTS ~13,7s. Venv phụ
+  thuộc cache này — không dời/xóa.
+- **Lỗi đã sửa:** faster-whisper 1.2.1 + av 19 hỏng (ghim `av==14.0.0`);
+  ctranslate2 không tìm thấy cuBLAS (torch 2.11 để DLL trong
+  `site-packages\torch\lib` — phải thêm vào `$env:PATH` trước khi chạy
+  python); console cp1252 crash khi in tiếng Việt (reconfigure utf-8).
+- **Hồ sơ:** `stickman-shorts/PC_AI_SETUP.md` (131 dòng) + 9 script
+  (`ai_*.ps1` / `ai_*.py`).
+- **Giới hạn thật:** chưa ai nghe output TTS của PC bằng tai (chỉ kiểm
+  Whisper 94,5%); câu hook MMS chạy 195 từ/phút (trên vùng an toàn
+  150–165); đường truyền file-path của faster-whisper chưa thử sau khi
+  ghim av (khuyên dùng đường numpy-array). Chưa làm: không có service
+  nền, không Ollama/ComfyUI, large-v3-turbo chưa thử (không cần ở
+  RTF 0,10x), chưa render tập thật trên PC, `assemble.py --srt` vẫn
+  chưa thử trên PC.
+- **Thời gian:** ~12 phút làm việc thật (17:03–17:15), không bị chặn.
 
-## DONE
 
 ### PC Windows — test render stickman qua SSH — DONE 2026-11-15 17:02 +07
 - **Kết quả: CHẠY ĐƯỢC.** Demo render trên PC **4,58s** (VPS: 17,2s lạnh /
