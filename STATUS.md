@@ -249,10 +249,13 @@
 
 - Thư mục: "AgentNet Video Studio"
   (https://drive.google.com/drive/folders/1q0gL8euNge458b_ktbGSg_RMfiz3FcC8)
-- `STATUS.md` (bản này) — Drive file id: `1gpLAunMiYnQhwknN-QNgmFlBYfrOUXCj`
-  (upload 2026-11-15 ~15:55 +07)
+- `STATUS.md` (bản này) — Drive file id: `1lAPg14W9pW43zq6aQCyWEIahxgbI6MKc`
+  (upload 2026-11-15 ~16:06 +07 — bản mới nhất, có Ep001 DONE; bản cũ
+  `1gpLAunMiYnQhwknN-QNgmFlBYfrOUXCj` (15:55) đã lỗi thời, giữ lại làm
+  bản sao cũ, không xóa theo quy tắc không xóa dữ liệu Drive)
 - `HANDOFF.md` — Drive file id: `16lcqICKbi8ZvurA-T4O4_eXhe6ZoKaZ7`
   (upload 2026-11-15 ~15:55 +07)
-- Lưu ý: bản Drive của STATUS.md được upload trước khi thêm dòng ghi id này;
-  bản trên git là bản chính, mới nhất. Bản Drive hiện tại (upload 15:55)
-  chưa có mục Video #1 DONE (15:57) và mục "Rủi ro takeover" — xem bản git.
+- Video thành phẩm (bản sao dự phòng, không lên git):
+  - `v001.mp4` (Video #1) — Drive file id: `1oVxOPRVSl5HmjdzI47RQiVGKHotAdCxn`
+  - `ep001-cam-dau-lam-viec.mp4` (Ep001) — Drive file id: `152--2bfxwsQIjKi_5bCmKbO3V8jsdu9f`
+- Lưu ý: bản trên git là bản chính, mới nhất.
