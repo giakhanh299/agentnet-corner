@@ -11,6 +11,46 @@
 
 ## DONE
 
+### Lô 3 kịch bản (v003 + v004 + v005) — DONE 2026-11-15 17:47 +07
+- **Vị trí:** `video_production/scripts-batch-20261115/` — 3 kịch bản +
+  `scripts_batch.md` (tóm tắt lô, thứ tự sản xuất, danh sách probe).
+  Chỉ kịch bản — chưa sản xuất video, chưa tổng hợp giọng, chưa
+  đăng/upload gì. (Torque kiểm chứng: 4 file có đủ; đọc tóm tắt lô +
+  phần đầu v003: nguồn có URL đầy đủ.)
+- **v003 — #77 (90) thang máy đứt ở tầng 85, F2 Visual Essay, 45s,
+  123 từ, ~164 từ/phút:** "Cáp thang máy đứt ở tầng 85 — nhảy lên thì
+  sống không?" Nguồn đã kiểm chứng: ScienceABC (rơi từ tầng 20 đã
+  ~108 km/h; nhảy Olympic chỉ trừ ~4 m/s; canh thời điểm phải chính
+  xác tới mili-giây — coi như không thể; nằm ngửa là tư thế được gợi ý
+  nhiều nhất), Otis + AboutElevators (≥4 lớp an toàn độc lập; bộ điều
+  tốc tác động ~115% tốc độ định mức; phanh Otis 1852, trình diễn 1854),
+  ZestyHabit (nằm ngửa chỉ mang tính lý thuyết, không đảm bảo sống).
+  **Con số "72 km/h" của video gốc #77 KHÔNG kiểm chứng được — không
+  dùng trong kịch bản**, thay bằng 108 km/h đã kiểm chứng. Năm "1854"
+  và tên "Otis" chỉ hiện trên hình, không đọc (bài học MMS v001).
+- **v004 — #50 (85) truyện stickman cảm xúc, F7, 50s, 130 từ, ~156
+  từ/phút, CÓ giọng kể (không làm bản câm như gốc):** "Ông Tư sửa
+  giày — chỉ cần một người dừng lại". Truyện hư cấu hoàn toàn mới
+  (ông Tư + bé gái, sạp sửa giày góc phố lúc chạng vạng, đôi giày nhỏ
+  không ai nhận + bức vẽ của bé, câu chốt "Chỉ cần một người dừng
+  lại.") — khác hẳn nhân vật/bối cảnh/câu chuyện/câu chốt của #50;
+  chỉ giữ cơ chế. Không dùng mưa (tránh lặp lại ghế đá mưa của gốc).
+  Cảnh báo © của #50 đã tính.
+- **v005 — H02 #69 (78) hài, F3 Countdown, 45s, 119 từ, ~159
+  từ/phút:** "Top 5 câu nói huyền thoại của mẹ". #2 "Con nhà người
+  ta" và #3 "Hồi bằng tuổi mày…" đã kiểm chứng là câu nói quen thuộc
+  (BlogRadio, Tripi); thứ hạng là xếp hạng biên tập. #1 là cảm xúc
+  ("Mẹ không cần gì đâu, con cứ lo cho con đi.") sau 4 trò đùa — cú
+  lật cảm xúc có chủ đích; Victory sting ở #1 dùng NHẸ.
+- **Thứ tự sản xuất đề xuất:** v003 → v005 → v004 (rẻ trước; v004 cần
+  rig 2 nhân vật + nền góc phố, đắt nhất).
+- **Từ cần probe trên PC trước khi sản xuất:** v003 "tám mươi lăm",
+  "kẹp chặt ray", "ngửa"; v004 "Tư", "lướt", "sạp"; v005 "phăng phắc",
+  "Tao", "trĩu" (đã ghi phương án thay thế trong từng file).
+- **Thời gian:** ~5 phút (17:42–17:47). Người dùng chọn lô này lúc
+  17:42 và nói "tôi mong chờ kết quả quá" — kịch bản đã gửi cho chủ
+  xem trong chat.
+
 ### Video #2 (Ep002) — "LOG IN" Visual Essay 45s (F2, #81) — DONE 2026-11-15 17:36 +07
 - **File:** `video_production/v002-login-45s/v002.mp4` — 46,8s, 1080x1920
   30fps, H.264 + AAC 192k, 13,7 MB, sha256 `b8b4f7cf18e338ccb645…`
