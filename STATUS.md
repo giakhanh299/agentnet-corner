@@ -7,19 +7,48 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-15 ~16:22 +07.
+> Cập nhật lần cuối: 2026-11-15 ~17:03 +07.
 
 ## IN PROGRESS
 
-### PC Windows — test render stickman qua SSH — IN PROGRESS
-- **Bắt đầu:** 2026-11-15 ~15:46 +07.
-- **SSH đã kiểm chứng 15:33:** `w@100.101.158.71` (desktop-01o3hnf),
-  Windows 11 Pro, 32.269 MB RAM — đăng nhập được, chạy lệnh được.
-- **Còn làm:** clone repo về `C:\Users\w\agentnet-corner`, cài Python 3.12 +
-  ffmpeg + git (winget nếu thiếu), venv + Manim, cài font Be Vietnam Pro,
-  render demo 5s, đo thời gian, copy frame về xem.
+### AI stack local trên PC (PyTorch cu128 + faster-whisper + TTS Việt) — IN PROGRESS
+- **Bắt đầu:** 2026-11-15 ~17:03 +07. Tiếp sau test render Manim (DONE).
+- **Nội dung:** kiểm tra driver NVIDIA (cần ≥572.60, nếu thấp hơn thì dừng
+  và báo, không tự cập nhật driver) → cài PyTorch ≥2.7.0 cu128 vào venv
+  riêng (không chạm hệ Python của chủ) → faster-whisper large-v3, thử
+  với voice.wav Ep001 → TTS Việt local (MMS-TTS). Ghi PC_AI_SETUP.md.
 
 ## DONE
+
+### PC Windows — test render stickman qua SSH — DONE 2026-11-15 17:02 +07
+- **Kết quả: CHẠY ĐƯỢC.** Demo render trên PC **4,58s** (VPS: 17,2s lạnh /
+  8,6s ấm). File `StickmanScene-pc.mp4` 263.107 byte, h264 1080x1920
+  30fps 5,000s (Torque kiểm chứng: ffprobe khớp; xem frame 1s và 4s:
+  dáng đi + vẫy tay + thẻ "TÂM SỰ NGƯỜI QUE" đúng dấu, nội dung giống
+  hệt bản render trên VPS).
+- **Môi trường trên PC** (DESKTOP-01O3HNF, 100.101.158.71): Python **3.12.10**
+  đã có sẵn (lệnh `python` trần là 3.10.11 — KHÔNG dùng; dùng `py -3.12`
+  hoặc đường dẫn đầy đủ), ffmpeg 8.1.2 + git 2.54.0 đã có sẵn, không cần
+  cài. Repo `C:\Users\w\agentnet-corner` (HEAD 58b70a2), venv
+  `.venv-win` (manim 0.22.1). Font Be Vietnam Pro đã cài + nhìn thấy
+  được — chỉ thấy sau khi thêm entry HKLM (HKCU + copy file chưa đủ).
+- **Hồ sơ:** `stickman-shorts/PC_SETUP.md` + 5 script `.ps1` dùng lại
+  được (commit f89d9c5); render + frame đã copy về VPS
+  (`test_frames/pc/`).
+- **Sự cố đã sửa:** quoting lồng nhau của `-Command` hỏng 2 lần → chuyển
+  sang file `.ps1` scp lên PC (mẫu bền vững); lần thử venv+pip đầu treo
+  **62 phút** (ssh exit 255) — còn sót 1 `python.exe` nhàn (PID 4368) +
+  `powershell.exe` (PID 38548) từ 15:49, ~0 CPU, không rõ là của session
+  treo hay REPL của chủ — **để nguyên, không chạm**; script `Start-Process`
+  detached chết im → chạy foreground + `< NUL` + transcript (pip xong
+  trong 68s); render script gọi nhầm `ffmpeg` thay vì `ffprobe`.
+- **Không chạm** hệ Python riêng của chủ trên PC (3.10/3.14,
+  `D:\02_CONG_CU\youtube-reup-pipeline\venv`). Log trên PC:
+  `C:\Users\w\pip_install.log`, `font_install.log`, `font_fix.log`,
+  `render_demo.log`.
+- **Chưa thử trên PC:** `render_all.sh`, `assemble.py --srt`, render tập
+  thật. Bước tiếp theo (AI stack local) chưa bắt đầu.
+
 
 ### Thư viện Core_SFX (18 SFX + 4 nhạc nền) — DONE 2026-11-15 16:21 +07
 - **Vị trí:** `stickman-shorts/src/assets/audio/` — `sfx/` 18 file + `music/`
