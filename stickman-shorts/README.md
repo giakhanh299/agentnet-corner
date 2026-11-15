@@ -15,14 +15,8 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-Font Be Vietnam Pro đã nhúng trong `src/assets/fonts/` và cần cài vào hệ
-thống để Pango tìm thấy:
-
-```bash
-# Linux
-mkdir -p ~/.fonts && cp src/assets/fonts/*.ttf ~/.fonts/ && fc-cache -f -v
-# Windows: click đúp từng file .ttf -> Install
-```
+Font Be Vietnam Pro nằm trong `src/assets/fonts/` kèm [giấy phép SIL OFL 1.1](src/assets/fonts/OFL.txt).
+`TextCard` nạp trực tiếp hai tệp font này khi render.
 
 ## Chạy thử (5 giây)
 
@@ -31,9 +25,17 @@ tools/render.sh stickman_demo.py StickmanScene
 # Windows: tools\render.bat stickman_demo.py StickmanScene
 ```
 
-Output: `media/videos/stickman_demo/1080p30/StickmanScene.mp4`.
+Output: `media/videos/stickman_demo/1920p30/StickmanScene.mp4`.
 Kiểm tra: 1080x1920, 30fps, ~5s, người que đi vào từ trái, vẫy tay,
 card "TÂM SỰ NGƯỜI QUE" hiện rõ dấu tiếng Việt.
+
+Khi ghép `--srt`, `tools/assemble.py` cần FFmpeg có bộ lọc `subtitles`
+(libass) và dùng font Be Vietnam Pro có sẵn trong repo. Bản xuất giữ thời
+lượng video và chuẩn hóa âm lượng của bản phối sau khi ghép nhạc.
+
+```bash
+python tools/assemble.py --video raw.mp4 --voice voice.wav --srt captions.srt --out final.mp4
+```
 
 ## Cấu trúc
 
@@ -83,7 +85,6 @@ stickman-shorts/
 ## Windows (PC RTX 5060 Ti)
 
 - Cài Python 3.12, rồi `python -m venv .venv` + `pip install -r requirements.txt`.
-- Cài font: click đúp `src/assets/fonts/*.ttf` -> Install.
 - Render: `tools\render.bat stickman_demo.py StickmanScene`.
 - Manim render bằng CPU nên RTX không tăng tốc; PC mạnh hơn VPS ở CPU/RAM
   nên render nhanh hơn 2-3 lần. Không cần cài LaTeX (không dùng Tex).

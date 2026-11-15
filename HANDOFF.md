@@ -2,7 +2,7 @@
 
 > Tài liệu này để một Muse khác (hoặc chính Torque sau này) đọc là tiếp tục được
 > công việc, không cần hỏi lại chủ. Cập nhật file này mỗi khi trạng thái đổi.
-> Cập nhật lần cuối: 15/11/2026 ~01:55 +07 (Asia/Bangkok).
+> Đối chiếu tiến độ ngày 15/11/2026 theo các báo cáo đã lưu trên GitHub.
 > KHÔNG BAO GIỜ ghi token, mật khẩu, PAT hay khóa bí mật vào file này (repo công khai).
 
 ## 1. Nhiệm vụ
@@ -41,7 +41,7 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   (dùng `gh auth login --with-token`, token qua stdin, KHÔNG ghi vào file/URL/log).
   Push HTTPS qua `gh` làm credential helper.
 
-## 3. Trạng thái hiện tại (15/11/2026 ~09:42)
+## 3. Trạng thái ghi nhận ngày 15/11/2026
 
 ### Hàng đợi nghiên cứu (API 8110)
 - `ac56d158` research 100 ứng viên — SUBMITTED (outcome `completed`, KHÔNG duyệt
@@ -65,9 +65,10 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   R1 #42, R2 #65, R3 #79, R4 #32, R5 #76, R6 #71, R7 #85, R8 #29, R9 #57,
   R10 #60. File: `docs/selection-30-20261115.md` + `.csv` (commit 2060ecf).
   Brief kiểm chứng: `docs/verify-f364bd47-brief-20261115.md`.
-- **Task đang chờ:** engineer `b4413e82` SUBMITTED (outcome `ok`, bản có FB-05);
-  verify `ce4f147d` QUEUED. Khi Verify nộp xong → chủ duyệt **b4413e82**
-  (KHÔNG duyệt f07e0ce6, KHÔNG duyệt 86debefd — cả hai đều đã bị thay thế).
+- **Task chờ chủ duyệt theo báo cáo 12:19:** engineer `b4413e82` đã SUBMITTED
+  (outcome `ok`, bản có FB-05). Verify `ce4f147d` đã SUBMITTED
+  (`verified_with_findings`). [Biên bản Verify](docs/verify-ce4f147d-brief-20261115.md).
+  Hai task `f07e0ce6` và `86debefd` đã được thay thế.
   **Không tự duyệt công việc do controller làm Engineer** — phải qua Verify trước.
 
 ### Tải video (VPS này, Engineer)
@@ -86,10 +87,14 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
 - **Whisper.cpp ĐÃ CÀI (15/11 ~09:02):** `whisper.cpp/build/bin/whisper-cli`,
   model ggml-base.bin (141 MiB) — chạy ~1x real-time, `-l auto` tự nhận ngôn ngữ
   (đã test #77: tiếng Urdu, khớp frame). Model Tiny tệ hơn, chỉ dùng dự phòng.
-- **Đang chạy: transcribe toàn bộ 96 file audio** (`transcribe_all.sh`, từ 09:32,
-  ~45 phút, log `transcribe_all.log`, transcript.txt lưu vào từng thư mục
-  video_analysis/). Xong thì phân tích sâu mới đánh giá được hook bằng lời nói
-  + audio thật (điểm hiện tại mới dựa trên 4 frame/video).
+- **Transcribe xong 96/96 lúc 10:05:54** theo [bảng hook](docs/deep-analysis-hook-sheet-20261115.md).
+  Transcript chỉ bao phủ 30 giây đầu. Hook nói của H05, H08, C03 và D02 vẫn
+  chưa xác định do lỗi nhận dạng tiếng Hindi.
+- **Đã lưu 30/30 bản phân tích sâu**, gồm [5 video ưu tiên](docs/deep-analysis-5x85-20261115.md)
+  và [25 video còn lại](docs/deep-analysis-25-20261115.md). Tổng điểm chấm lại
+  là 2.082, trung bình 69,40, có 4 video đạt 85+. Xem giới hạn bằng chứng và
+  bộ 8 công thức, 3 format ưu tiên, 3 template trong
+  [Production Framework](docs/production-framework-20261115.md).
 
 ### AI bên ngoài (Gemini + ChatGPT, qua browser)
 - **Gemini** (GCM Cong ty, giakhanhgcm@gmail.com, Pro, mode Argon): đã trả lời 5 câu
@@ -121,9 +126,9 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   nghiên cứu, KHÔNG phải dữ liệu fanpage cũ.
 
 ### GitHub
-- Commit hiện tại `2060ecf` (bản chọn 30 có FB-05). Lịch sử: e77ce03 → 55f5a8a →
-  b1eb6c1 → e80c2c2 → 9ee194d → 90ea77b → f5e5dfb → e42cd83 → f7b9c5c →
-  df75479 → 2060ecf.
+- Bản chọn 30 có FB-05 ở `2060ecf`. Các mốc sau đó gồm báo cáo Verify
+  (`4010e01`), phân tích 25 video còn lại (`503655a`), Production Framework
+  (`3fb06dc`) và hai đề xuất stickman (`4017985`, `6898781`).
 - Token PAT fine-grained ĐẦU TIÊN chỉ có quyền đọc (push 403, tạo blob 403) —
   đã thay bằng token mới có quyền ghi. `gh` đang đăng nhập.
 - **Quy tắc mới (chủ dặn 01:52): đẩy git mỗi 30 phút; file nặng lên Google Drive,
@@ -131,11 +136,10 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   `~/workspace/agentnet-corner/auto_push.sh` (chỉ add các đường dẫn an toàn:
   video-pipeline/, docs/, HANDOFF.md, README — không bao giờ add file media,
   token, .env, credentials).
-- **Kho công cụ (15/11 ~09:02):** `docs/codexreply.md` — kiểm kê 18 script + 8
-  phần mềm + 9 dịch vụ/tài khoản + 7 vị trí dữ liệu trên VPS này, và nghiên cứu
-  công cụ mới (máy chủ RTX 5060 Ti 16GB: driver ≥572.60, CUDA ≥12.8, PyTorch
-  ≥2.7.0 cu128; stickman: Pivot Animator, Manim+Remotion; AI video: Flow/Veo 3.1,
-  Kling, Wan 2.2). **Repo stickman CHƯA CÓ** — đây là khoảng trống lớn nhất.
+- **Rig stickman:** starter [Manim + FFmpeg](stickman-shorts/README.md) đã vào
+  `main` ở `58b70a2`. [Báo cáo thử trên VPS](stickman-shorts/test-report.md)
+  ghi nhận 11/11 kiểm tra rig đạt và demo 5 giây 1080×1920, 30 fps, có thẻ
+  chữ tiếng Việt. Xem thêm [bản kiểm kê công cụ](docs/codexreply.md).
 
 ## 4. Cách làm (phương pháp đã kiểm chứng)
 
@@ -212,28 +216,22 @@ File: `~/workspace/user/files/FB_API_tokens_20261115_014934.json`
 
 ## 7. Việc tiếp theo (theo thứ tự)
 
-1. **Đợi Verify nộp `ce4f147d`** → chủ duyệt engineer `b4413e82` (bản có FB-05).
-   KHÔNG duyệt f07e0ce6 / 86debefd (đã bị thay thế).
-2. **Đợi `transcribe_all.sh` chạy xong** (~45 phút, log `transcribe_all.log`);
-   kiểm tra số transcript.txt = 96, có file nào FAIL thì chạy lại lẻ.
-3. **Phân tích sâu 30 video** (Engineer, VPS này): bắt đầu từ 5 video 85+
-   (#77, #50, #81, #80, FB-05), mỗi video 6 lớp — hook, pacing, audio, cấu trúc
-   câu chuyện, cách làm lại faceless, chi phí sản xuất. Dùng transcript để đánh
-   giá hook bằng lời nói + audio thật và xác nhận/sửa lại điểm (Verify yêu cầu).
-   Tách quan sát khỏi suy luận trong báo cáo. Nộp kết quả bằng task engineer mới
-   + task verification (kèm result trong instruction).
-4. **Tổng hợp 5–8 công thức** + Production Framework (30 công thức hook, khung
-   kịch bản theo mốc 5 giây, 3 template trống Tò mò/Bất ngờ/Cảm xúc, thư mục
-   Core_SFX). Cổng tuần 2: ≥24 bản phân tích đầy đủ, ≥5 công thức có ví dụ,
-   3 format ưu tiên.
-5. **Tuần 2 (23–29/11):** viết 5 kịch bản gốc 23/11 → làm thử 5 video 25–26/11
+1. **Chốt bản chọn:** chủ duyệt `b4413e82` trên queue sau khi xem [biên bản Verify](docs/verify-ce4f147d-brief-20261115.md).
+   Engineer kiểm tra queue hiện tại trước khi nộp thêm task cho hai báo cáo
+   phân tích sâu và Production Framework.
+2. **Thử ghép giọng Việt thật vào demo stickman:** đo -16 LUFS và true peak
+   ≤ -1 dBTP từ bản xuất, kiểm tra dấu và thời điểm hiện phụ đề tiếng Việt.
+   [Lệnh ghép](stickman-shorts/README.md).
+3. **Chuẩn bị trước buổi làm thử:** dùng danh mục Core_SFX trong Production
+   Framework để sưu tầm âm có giấy phép thương mại và lưu nguồn; thử một đoạn
+   giọng Việt ở 150–165 từ/phút trước khi viết kịch bản cần giọng kể.
+4. **Tuần 2 (23–29/11):** viết 5 kịch bản gốc 23/11 → làm thử 5 video 25–26/11
    (Flow/Veo, Kling, hoặc Wan 2.2 local trên máy chủ) → đăng thử 27–29/11 lúc
    11:30/20:00. Kênh YouTube 2–3 kênh (Tò mò / Bất ngờ / Cảm xúc) CHỈ tạo khi chủ
    chốt tên + chủ đề.
-6. **Kho stickman:** repo chưa có — xây rig Manim/Remotion (xem `docs/codexreply.md`).
-7. **4 bài Facebook share** vẫn chưa đọc được: chờ chủ nối Facebook hoặc gửi link
-   video trực tiếp; Apify bị chặn từ VPS, TikHub chỉ dùng cho TikTok.
-8. Duy trì: cron đẩy git mỗi 30 phút; file nặng lên Google Drive (thư mục
+5. **4 link Facebook share chưa đọc được** nằm ngoài danh sách 30. Bổ sung
+   nghiên cứu khi có link video trực tiếp.
+6. Duy trì: cron đẩy git mỗi 30 phút; file nặng lên Google Drive (thư mục
    "AgentNet Video Studio"); cập nhật file HANDOFF này mỗi khi trạng thái đổi.
 
 ## 8. Hướng mới (chủ dặn 15/11 ~01:55 — lưu lại lời chủ)

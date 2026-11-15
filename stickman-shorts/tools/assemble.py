@@ -17,56 +17,58 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import shutil
 import subprocess
 import sys
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 TARGET_LUFS = -16.0
 TRUE_PEAK = -1.5
 LRA = 11
-
-
-def run(cmd: list[str]) -> None:
-    print("+", " ".join(cmd))
-    subprocess.run(cmd, check=True)
+FONT = Path(__file__).resolve().parents[1] / "src/assets/fonts/BeVietnamPro-Regular.ttf"
 
 
 def assemble(video: str, voice: str, out: str, srt: str | None, music: str | None) -> None:
-    inputs = ["-i", video, "-i", voice]
+    inputs = ["-i", str(Path(video).resolve()), "-i", str(Path(voice).resolve())]
+    mix = "[1:a]"
+    filters = []
     if music:
-        inputs += ["-stream_loop", "-1", "-i", music]
+        inputs += ["-stream_loop", "-1", "-i", str(Path(music).resolve())]
+        filters.extend([
+            "[2:a]volume=0.12[bgm]",
+            "[1:a][bgm]amix=inputs=2:duration=first:normalize=0[mix]",
+        ])
+        mix = "[mix]"
+    filters.append(f"{mix}loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA},apad[aout]")
 
-    # Voice -> -16 LUFS. Music (if any) sits 0.12 under the voice.
-    filters = [f"[1:a]loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA}:linear=true[voice]"]
-    if music:
-        filters.append("[2:a]volume=0.12[bgm]")
-        filters.append("[voice][bgm]amix=inputs=2:duration=first:dropout_transition=2[aout]")
-        audio_map = "[aout]"
-    else:
-        audio_map = "[voice]"
+    with TemporaryDirectory(prefix="stickman-assemble-") as temp:
+        vf = []
+        if srt:
+            # FFmpeg parses filter filenames separately from command-line paths.
+            # Stage a fixed name so drive letters and punctuation need no escaping.
+            shutil.copyfile(srt, Path(temp) / "captions.srt")
+            shutil.copyfile(FONT, Path(temp) / FONT.name)
+            style = (
+                "FontName=Be Vietnam Pro,FontSize=28,"
+                "PrimaryColour=&HFFFFFF&,OutlineColour=&H000000&,"
+                "BorderStyle=1,Outline=2,Alignment=2,MarginV=140"
+            )
+            vf = ["-vf", f"subtitles=captions.srt:fontsdir=.:force_style='{style}'"]
 
-    vf = []
-    if srt:
-        # Burn captions; force the repo font so diacritics render correctly.
-        style = (
-            "FontName=Be Vietnam Pro,FontSize=28,"
-            "PrimaryColour=&HFFFFFF&,OutlineColour=&H000000&,"
-            "BorderStyle=1,Outline=2,Alignment=2,MarginV=140"
+        cmd = (
+            ["ffmpeg", "-y"]
+            + inputs
+            + ["-filter_complex", ";".join(filters)]
+            + vf
+            + [
+                "-map", "0:v:0", "-map", "[aout]",
+                "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+                "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                "-shortest", str(Path(out).resolve()),
+            ]
         )
-        vf = ["-vf", f"subtitles='{srt}':force_style='{style}'"]
-
-    cmd = (
-        ["ffmpeg", "-y"]
-        + inputs
-        + ["-filter_complex", "; ".join(filters)]
-        + vf
-        + [
-            "-map", "0:v", "-map", audio_map,
-            "-c:v", "libx264", "-preset", "fast", "-crf", "18",
-            "-c:a", "aac", "-b:a", "192k",
-            "-shortest", out,
-        ]
-    )
-    run(cmd)
+        subprocess.run(cmd, cwd=temp, check=True)
     print(f"wrote {out}")
 
 

@@ -86,3 +86,17 @@ re-checked: the wave is now unambiguous (see frame_4s_v2.png).
   empty (no music/SFX library yet — that is a separate gap).
 - `media/` render output is gitignored by design (regenerated); the
   `test_frames/` PNGs are inspection artefacts, not part of the repo.
+
+## Windows follow-up (2026-11-15)
+
+- Manim 0.22.1 and Python 3.12. 11/11 rig checks passed. `tools\render.bat`
+  rendered the demo in 8.4 seconds with caching disabled. FFprobe reported
+  1080×1920, 30 fps, H.264 and 5.000 seconds. The 4-second frame showed the
+  wave and the title “TÂM SỰ NGƯỜI QUE” with the bundled font and all accents.
+- `tools/assemble.py` passed with voice-track input only, with Vietnamese
+  SRT captions, and with captions and looping music. The SRT path included
+  a drive letter, apostrophe, comma and Vietnamese characters. Frame samples
+  confirmed that captions appeared only during their scheduled interval.
+- Synthetic audio on a 5-second test clip measured −16.45 LUFS without
+  music and −16.53 LUFS with music. Both exports kept all 5 seconds and
+  measured below −1 dBTP. A Vietnamese voice recording still needs a test.
