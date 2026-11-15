@@ -7,7 +7,9 @@ Text is rendered with Manim Text (Pango). NEVER Tex/LaTeX.
 
 from __future__ import annotations
 
-from manim import RoundedRectangle, Text, VGroup
+from pathlib import Path
+
+from manim import RoundedRectangle, Text, VGroup, register_font
 
 from config import FONT_FAMILY, FONT_SIZE_BODY, FONT_SIZE_TITLE, SPEC
 from src.utils.text import normalize_text, split_text
@@ -16,6 +18,7 @@ INK = SPEC["INK"]
 ACCENT = SPEC["ACCENT"]
 WHITE = SPEC["WHITE"]
 GREY = SPEC["GREY"]
+FONTS = Path(__file__).resolve().parents[1] / "assets" / "fonts"
 
 
 class TextCard(VGroup):
@@ -36,27 +39,29 @@ class TextCard(VGroup):
             lines = [normalize_text(t) for t in title]
         title_text = "\n".join(lines)
         t2c = {normalize_text(accent): ACCENT} if accent else {}
-        text = Text(
-            title_text,
-            font=FONT_FAMILY,
-            weight="BOLD",
-            font_size=FONT_SIZE_TITLE,
-            color=INK,
-            t2c=t2c,
-            line_spacing=1.15,
-        )
+        with register_font(FONTS / "BeVietnamPro-Bold.ttf"):
+            text = Text(
+                title_text,
+                font=FONT_FAMILY,
+                weight="BOLD",
+                font_size=FONT_SIZE_TITLE,
+                color=INK,
+                t2c=t2c,
+                line_spacing=1.15,
+            )
         inner_w = max_width - 1.0
         if text.width > inner_w:
             text.scale(inner_w / text.width)
 
         parts: list = [text]
         if subtitle:
-            sub = Text(
-                normalize_text(subtitle),
-                font=FONT_FAMILY,
-                font_size=FONT_SIZE_BODY,
-                color=GREY,
-            )
+            with register_font(FONTS / "BeVietnamPro-Regular.ttf"):
+                sub = Text(
+                    normalize_text(subtitle),
+                    font=FONT_FAMILY,
+                    font_size=FONT_SIZE_BODY,
+                    color=GREY,
+                )
             if sub.width > inner_w:
                 sub.scale(inner_w / sub.width)
             sub.next_to(text, direction=(0, -1, 0), buff=0.25)

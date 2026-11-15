@@ -62,10 +62,18 @@ kiểm chứng là nghe rõ ở tốc độ cao hơn.
 
 # Bảng tổng kết 30 video (điểm đã chấm lại sau phân tích sâu)
 
-Tổng điểm mới **2082** (cũ 2090), trung bình **69,4** (cũ 69,67). 4 video đạt
-85+: #77 (90), #81 (87), #50 (85), FB-05 (85). 2 video đổi điểm: H06 #23
-59 → **54** (không có hook nói, dead air 0,6s, frame 0s mờ); B06 #24
-49 → **54** (hook nói "It's jelly. That's a pool." mà chấm từ frame bỏ sót).
+Tổng điểm mới **2.082** (cũ 2.090), trung bình **69,40** (cũ 69,67). 4 video
+đạt 85+: #77 (90), #81 (87), #50 (85), FB-05 (85).
+
+| Video | Điểm gốc → mới | Điều chỉnh |
+|---|---:|---|
+| C01 #50 | 89 → 85 | Retention 4 → 3 do nhịp chuyển cảnh chậm |
+| T03 #80 | 87 → 83 | Retention 4 → 3 do cảnh tĩnh kéo dài |
+| H06 #23 | 59 → 54 | Hook 3 → 2 do mở đầu mờ, khoảng lặng 0,6s và thiếu lời mở |
+| B06 #24 | 49 → 54 | Hook 2 → 3 sau khi xác định lời mở từ transcript |
+
+Nguồn đối chiếu: [5 video ưu tiên](deep-analysis-5x85-20261115.md) và
+[25 video còn lại](deep-analysis-25-20261115.md).
 
 ## 8 cơ chế (xếp theo thứ tự ưu tiên làm thử)
 
@@ -428,7 +436,7 @@ stickman gặp khó về rig).
 format duy nhất của ngách Cảm xúc — ngách có 2 video 85+ (#50, FB-05) và kịch
 bản FB-05 50–55s đã có sẵn (ChatGPT). Công thức: F7 + hook kép F1. **Điều
 kiện tiên quyết:** phải có rig stickman hoặc quy trình ảnh AI nhất quán trước
-— hiện repo stickman CHƯA TỒN TẠI (khoảng trống lớn nhất; xem mục "Còn thiếu").
+— dùng [rig stickman Manim + FFmpeg](../stickman-shorts/README.md).
 **Lịch thử:** 1 video tuần 2 (kịch bản 05: cảm xúc, ảnh AI + lời dẫn, 50–55s
 — lưu ý ChatGPT ghi 50–60s, khung này chốt tối đa 55s theo quy tắc cứng).
 
@@ -573,9 +581,9 @@ một phần). Đủ điều kiện bắt đầu viết kịch bản 23/11/2026 
 1. **Người dùng duyệt task b4413e82** (bản chọn 30 đã được Verify ce4f147d
    kiểm chứng — đang chờ duyệt). Không duyệt thì vẫn viết được kịch bản từ
    tài liệu này, nhưng bản chọn chưa chính thức chốt.
-2. **Repo stickman CHƯA TỒN TẠI** — không có rig/template/animation nào.
-   Khoảng trống lớn nhất. Cần xây trước khi làm F7 (và các phần stickman của
-   F1/F5/F8): đề xuất Manim + Remotion (1 rig, tái dùng cho mọi video).
+2. **Thử rig stickman với giọng kể thật** trước khi dùng cho F7 và các phần
+   stickman của F1/F5/F8. Rig Manim + FFmpeg đã có
+   [demo 5 giây trên VPS](../stickman-shorts/test-report.md).
 3. **Thư viện Core_SFX chưa có file nào** — cần sưu tầm 18 SFX trên với
    giấy phép thương mại (Mixkit/Pixabay/Freesound CC0) trước 25–26/11.
 4. **Giọng Việt AI chưa thử trên VPS này** (Kokoro/Qwen3-TTS hoặc Edge TTS)

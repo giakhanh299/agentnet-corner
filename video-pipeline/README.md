@@ -12,8 +12,10 @@ runs them on the controller VPS and shares the outputs.
   humor/surprise/curiosity Shorts. Skips files already downloaded and logs
   one JSON line per video to `video_downloads/download_log.jsonl`.
 - `analyze_video.py` — for one video file: ffprobe (duration, size,
-  resolution, codec), scene-change keyframes, keyframe images, 30s mono
-  16kHz audio, and a `timeline.md` + `summary.json` report.
+  resolution, codec), scene-change images, hook images at 0/1/2s where the
+  clip reaches those times, up to 30s of mono 16kHz audio when present, and
+  `timeline.md` + `summary.json` reports. `summary.json` lists hook images
+  in `hook_frames` and scene-change images in `frames`.
 
 ## Requirements
 
