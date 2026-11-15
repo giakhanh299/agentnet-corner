@@ -11,6 +11,65 @@
 
 ## DONE
 
+### So sánh giọng đọc thay thế MMS-TTS — DONE (báo cáo) 2026-11-15 18:21 +07
+- **Lý do:** chủ nghe v002 và nói giọng đọc chưa ok, ngưng nghỉ chưa
+  ok (17:48). Thử 3 giọng khác trên PC với cùng 3 câu (hook + beat +
+  payoff v002) để chủ nghe và chọn.
+- **Vị trí:** `video_production/voice-compare-20261115/` —
+  `voice_compare.md` (báo cáo đầy đủ) + 3 file wav + 27 script (.py/
+  .ps1). PC gốc + log: `C:\Users\w\agentnet-corner\ai-stack\
+  voice_compare\` và `C:\Users\w\voice_*.log`.
+- **Kết quả — chỉ 1/4 giọng cho ra mẫu dùng được:**
+  - **MMS-TTS với ngưng nghỉ THAY ĐỔI (mẫu đối chứng) — DÙNG ĐƯỢC:**
+    `mms_varied.wav` 15,54s, 497.452 byte (Torque kiểm chứng bằng
+    ffprobe: PCM 16-bit mono 16 kHz). Ngưng nghỉ 0,6s sau hook, 0,8s
+    trước payoff (không cố định 1,2s như v002). Whisper large-v3 trên
+    PC nghe đúng 36/40 từ = 90,0% (thật ~95% — "năm/trăm" là lỗi
+    chuẩn hóa số "500" của Whisper; "log"×2 nghe thành "đô"/"lon" —
+    lỗi MMS "log"→"lô" đã biết). Tốc độ 154 từ/phút tổng thể
+    (183/194/131 từng câu). **Giọng vẫn đơn điệu** — ngưng nghỉ đổi
+    chỉ sửa cấu trúc của lời phàn nàn, không sửa được độ đơn điệu.
+    Chủ là người duy nhất phán được (Whisper chỉ đo đúng từ, không
+    đo độ tự nhiên).
+  - **Edge TTS (HoaiMy/NamMinh) — THẤT BẠI (bị chặn/bóp băng
+    thông):** `edge_tts.exceptions.NoAudioReceived` — server nhận
+    stream (turn.start + response) rồi đóng lặng, 0 byte âm thanh.
+    Lúc đầu chạy được 2 lần, sau đó bị bóp. Thử lại ~1 giờ sau vẫn
+    lỗi. Ngoài ra edge-tts 7.3.1 KHÔNG làm được SSML (nó escape
+    SSML và giọng đọc luôn cả thẻ XML — Whisper xác nhận). Không có
+    mẫu nào.
+  - **F5-TTS — THẤT BẠI (không nói được tiếng Việt):** cài + chạy
+    được (sửa 3 lỗi: `--output` mơ hồ → `--output_dir`/`--output_file`;
+    cp1252 crash khi in tiếng Việt → UTF-8; torchcodec 0.17.0 thiếu
+    DLL FFmpeg → tải FFmpeg 8.1 shared build 85,5 MB, thêm bin vào
+    PATH). Nhưng model gốc KHÔNG nói được tiếng Việt: đưa đúng câu
+    1 kèm audio+text tham chiếu, nó đọc "Hãy subscribe cho kênh La
+    La School…" — nhại lại câu outro YouTube đã nhớ. Cả 6 file từng
+    câu đều 0–5% (tốc độ 1.0: 0/40 = 0,0%, 210 từ/phút quá nhanh;
+    tốc độ 0.75: 1/40 = 2,5%, 162 từ/phút). Model đã có sẵn trong
+    HF cache của chủ (không tải mới). `f5tts.wav` + `f5tts_slow.wav`
+    giữ lại làm bằng chứng, KHÔNG phải mẫu nghe.
+  - **Kokoro-82M — THẤT BẠI (không có giọng Việt):** danh sách
+    giọng chính thức (37 giọng) không có tiếng Việt (chỉ en-US/GB,
+    es, fr, hi, it, ja, pt, zh) — kiểm chứng bằng cách liệt kê
+    `hexgrad/Kokoro-82M` voices/ trên HF.
+- **Chưa thử:** FPT.AI/Vbee (cần chủ đăng ký tài khoản), ElevenLabs
+  (trả phí, cần chủ duyệt), Qwen3-TTS. Không đăng ký, không trả tiền,
+  không tạo tài khoản nào. Không đăng/upload gì.
+- **Đề xuất:** (1) chủ nghe `mms_varied.wav` và phán xem ngưng nghỉ
+  thay đổi có đủ không; (2) nếu không đủ, theo thứ tự: thử lại Edge
+  TTS hôm khác (bóp băng thông có thể hết), FPT.AI/Vbee (cần chủ đăng
+  ký), ElevenLabs (trả phí). Không tốn thêm thời gian cho F5-TTS gốc
+  hay Kokoro với tiếng Việt.
+- **Dọn dẹp PC:** `.venv-f5` 5,5 GB + `.venv-kokoro` 4,8 GB +
+  `ffmpeg-shared` 223 MB (+ zip 85,5 MB) mới sinh trên PC. `.venv-
+  kokoro` xóa được để lấy lại ~4,8 GB (Kokoro đã là ngõ cụt) — đang
+  chờ quyết định, chưa xóa. Bản sửa torchcodec (DLL FFmpeg 8.1
+  shared trên PATH) tái dùng được cho mọi việc torchaudio sau này
+  trên PC — ghi trong `voice_ffmpeg_shared.ps1` + `voice_compare.md`.
+- **Thời gian:** ~33 phút (17:48–18:21). Mẫu `mms_varied.wav` đã gửi
+  cho chủ nghe trong chat.
+
 ### Lô 3 kịch bản (v003 + v004 + v005) — DONE 2026-11-15 17:47 +07
 - **Vị trí:** `video_production/scripts-batch-20261115/` — 3 kịch bản +
   `scripts_batch.md` (tóm tắt lô, thứ tự sản xuất, danh sách probe).
