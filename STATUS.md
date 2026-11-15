@@ -234,4 +234,5 @@
 - `HANDOFF.md` — Drive file id: `16lcqICKbi8ZvurA-T4O4_eXhe6ZoKaZ7`
   (upload 2026-11-15 ~15:55 +07)
 - Lưu ý: bản Drive của STATUS.md được upload trước khi thêm dòng ghi id này;
-  bản trên git là bản chính, mới nhất.
+  bản trên git là bản chính, mới nhất. Bản Drive hiện tại (upload 15:55)
+  chưa có mục Video #1 DONE (15:57) và mục "Rủi ro takeover" — xem bản git.
