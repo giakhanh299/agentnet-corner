@@ -747,4 +747,5 @@
   - `ep001-cam-dau-lam-viec.mp4` (Ep001) — Drive file id: `152--2bfxwsQIjKi_5bCmKbO3V8jsdu9f`
   - `v002-login-45s.mp4` (Video #2 / Ep002) — Drive file id: `1m_c6zADoYLb3zxvg-dnTHGRTZrJiX3mq`
   - `v005.mp4` (Video #5) — Drive file id: `1D9ZG8q4C0odQkdXp1y0-09YnAEEpzVb4`
+  - `v004.mp4` (Video #4) — Drive file id: `1VWClKySoAetT3nbhjM6zFrimv5zRGe6a`
 - Lưu ý: bản trên git là bản chính, mới nhất.
