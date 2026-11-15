@@ -405,12 +405,13 @@
 
 - Thư mục: "AgentNet Video Studio"
   (https://drive.google.com/drive/folders/1q0gL8euNge458b_ktbGSg_RMfiz3FcC8)
-- `STATUS.md` (bản này) — Drive file id: `1892dptIIhhY5DIkyHEoW9o7iVk5N_XIH`
-  (upload 2026-11-15 ~17:15 +07 — bản mới nhất, có AI stack DONE; các bản
+- `STATUS.md` (bản này) — Drive file id: `13LCpNYKXjKu2WQ6bebXS_4SCiSLtmzdz`
+  (upload 2026-11-15 ~17:38 +07 — bản mới nhất, có v002 DONE; các bản
   cũ `1gpLAunMiYnQhwknN-QNgmFlBYfrOUXCj` (15:55),
   `1lAPg14W9pW43zq6aQCyWEIahxgbI6MKc` (16:06),
-  `1bDWx5BH9HUeomr1d9PyIV0_9fIXskNNk` (16:22) và
-  `1BK-Z-i-dpdvjPTk4Gut92ixHw7DOwUxS` (17:03) đã lỗi thời, giữ lại làm
+  `1bDWx5BH9HUeomr1d9PyIV0_9fIXskNNk` (16:22),
+  `1BK-Z-i-dpdvjPTk4Gut92ixHw7DOwUxS` (17:03) và
+  `1892dptIIhhY5DIkyHEoW9o7iVk5N_XIH` (17:15) đã lỗi thời, giữ lại làm
   bản sao cũ, không xóa theo quy tắc không xóa dữ liệu Drive)
 - `HANDOFF.md` — Drive file id: `16lcqICKbi8ZvurA-T4O4_eXhe6ZoKaZ7`
   (upload 2026-11-15 ~15:55 +07)
