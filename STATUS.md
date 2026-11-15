@@ -7,7 +7,7 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-15 ~16:05 +07.
+> Cập nhật lần cuối: 2026-11-15 ~16:22 +07.
 
 ## IN PROGRESS
 
@@ -20,6 +20,31 @@
   render demo 5s, đo thời gian, copy frame về xem.
 
 ## DONE
+
+### Thư viện Core_SFX (18 SFX + 4 nhạc nền) — DONE 2026-11-15 16:21 +07
+- **Vị trí:** `stickman-shorts/src/assets/audio/` — `sfx/` 18 file + `music/`
+  4 file, tổng **7,0 MB** (sfx 808 KB, nhạc 6,0 MB), định dạng Ogg Vorbis
+  q5 48 kHz; `sfx_manifest.json` (22 entries) + `sfx_report.md` + script
+  tải/chuẩn hóa (`search_openverse.py`, `download_sfx.py`,
+  `normalize_sfx.py`, `build_manifest.py`).
+- **Nguồn:** toàn bộ **CC0 1.0** (public domain, dùng thương mại được,
+  không cần ghi nguồn) — file preview HQ của Freesound tìm qua Openverse
+  API (`license=cc0`); mỗi entry có source URL + creator + license.
+- **Đã đo (Torque kiểm chứng):** 18 sfx + 4 nhạc đúng số lượng; whoosh
+  0,45s, bgm_calm 95,7s khớp manifest; tích hợp **-19,8 đến -21,27 LUFS**,
+  true peak **≤ -1,2 dBTP**; git KHÔNG ignore `.ogg` (check-ignore exit 1)
+  nên thư viện vào được git (không cần sửa .gitignore).
+- **Lỗi đã sửa:** Vorbis overshoot đẩy TP lên trên -1 dBTP → limiter hạ
+  0,85; ffmpeg loudnorm tự upsample 11 file lên 192 kHz → thêm
+  `aresample=48000`, encode lại toàn bộ. Cắt bớt: boom 3,94s→2,5s,
+  footsteps/crickets 17s→4s loop, bgm_upbeat 160s→90s; fade 2s cho nhạc.
+- **Giới hạn thật:** chưa ai nghe bằng tai (chỉ đo bằng ffprobe/loudnorm);
+  `boing` từ nguồn rất nhỏ (max -25 dB, tăng ~+25 dB) nên có thể nghe
+  thấy noise floor khi phát riêng — cần nghe thử cả 22 file trước khi
+  dùng cho video đăng. File là preview HQ mp3 của Freesound, không phải
+  WAV gốc (cần API key Freesound mới lấy được). Mixkit không dùng được
+  từ VPS này (URL asset trả 403 dù có Referer + UA trình duyệt).
+- **Chưa dùng trong video nào.** Tập sau dùng `--music` với file `.ogg`.
 
 ### Ep001 — tập stickman thật đầu tiên (F7, 50s) — DONE 2026-11-15 16:02 +07
 - **File:** `stickman-shorts/videos/2026-11-15_ep001-cam-dau-lam-viec/output/final.mp4`
