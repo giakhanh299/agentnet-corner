@@ -1,0 +1,45 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.28,Default,,0,0,0,,Mỗi lần đăng nhập,
+Dialogue: 0,0:00:01.28,0:00:02.57,Default,,0,0,0,,bạn đang dùng một
+Dialogue: 0,0:00:02.57,0:00:03.85,Default,,0,0,0,,mẹo của thủy thủ
+Dialogue: 0,0:00:03.85,0:00:05.14,Default,,0,0,0,,năm trăm năm trước?
+Dialogue: 0,0:00:06.68,0:00:07.90,Default,,0,0,0,,Ngày xưa, thủy thủ
+Dialogue: 0,0:00:07.90,0:00:09.12,Default,,0,0,0,,muốn biết tàu chạy
+Dialogue: 0,0:00:09.12,0:00:10.33,Default,,0,0,0,,nhanh cỡ nào. Họ
+Dialogue: 0,0:00:10.33,0:00:11.55,Default,,0,0,0,,ném một khúc gỗ
+Dialogue: 0,0:00:11.55,0:00:12.77,Default,,0,0,0,,xuống biển, buộc vào
+Dialogue: 0,0:00:12.77,0:00:13.99,Default,,0,0,0,,sợi dây thắt nút,
+Dialogue: 0,0:00:13.99,0:00:15.20,Default,,0,0,0,,rồi đếm nút tuột
+Dialogue: 0,0:00:15.20,0:00:16.42,Default,,0,0,0,,ra.
+Dialogue: 0,0:00:18.34,0:00:19.64,Default,,0,0,0,,Tốc độ tàu đo
+Dialogue: 0,0:00:19.64,0:00:20.95,Default,,0,0,0,,bằng nút thắt —
+Dialogue: 0,0:00:20.95,0:00:22.26,Default,,0,0,0,,một nút bằng một
+Dialogue: 0,0:00:22.26,0:00:23.56,Default,,0,0,0,,hải lý mỗi giờ.
+Dialogue: 0,0:00:23.56,0:00:24.86,Default,,0,0,0,,Thủy thủ viết tất
+Dialogue: 0,0:00:24.86,0:00:26.17,Default,,0,0,0,,cả vào sổ nhật
+Dialogue: 0,0:00:26.17,0:00:27.48,Default,,0,0,0,,ký của tàu, gọi
+Dialogue: 0,0:00:27.48,0:00:28.78,Default,,0,0,0,,là sổ log.
+Dialogue: 0,0:00:30.00,0:00:31.15,Default,,0,0,0,,Sau này, máy tính
+Dialogue: 0,0:00:31.15,0:00:32.30,Default,,0,0,0,,cũng cần sổ ghi
+Dialogue: 0,0:00:32.30,0:00:33.46,Default,,0,0,0,,ai ra vào. Bạn
+Dialogue: 0,0:00:33.46,0:00:34.61,Default,,0,0,0,,gõ mật khẩu, máy
+Dialogue: 0,0:00:34.61,0:00:35.76,Default,,0,0,0,,ghi một dòng vào
+Dialogue: 0,0:00:35.76,0:00:36.92,Default,,0,0,0,,nhật ký — y
+Dialogue: 0,0:00:36.92,0:00:38.07,Default,,0,0,0,,hệt thủy thủ ghi
+Dialogue: 0,0:00:38.07,0:00:39.22,Default,,0,0,0,,sổ ngày xưa.
+Dialogue: 0,0:00:41.12,0:00:42.19,Default,,0,0,0,,Đăng nhập là ký
+Dialogue: 0,0:00:42.19,0:00:43.26,Default,,0,0,0,,tên vào sổ log
+Dialogue: 0,0:00:43.26,0:00:44.32,Default,,0,0,0,,của tàu. Bạn biết
+Dialogue: 0,0:00:44.32,0:00:45.39,Default,,0,0,0,,chuyện này chưa? Bình
+Dialogue: 0,0:00:45.39,0:00:46.46,Default,,0,0,0,,luận nhé!

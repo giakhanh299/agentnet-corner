@@ -18,7 +18,13 @@ if [ -d "$WORK/stickman-shorts" ]; then
     --exclude='*.jpg' --exclude='*.pyc' \
     "$WORK/stickman-shorts/" "$REPO/stickman-shorts/" 2>/dev/null || true
 fi
-git add video-pipeline docs HANDOFF.md README.md .gitignore stickman-shorts STATUS.md scripts/auto_push.sh 2>/dev/null || true
+# Same for video_production (scripts/QC/captions only — media stays out).
+if [ -d "$WORK/video_production" ]; then
+  rsync -a --exclude='*.mp4' --exclude='*.wav' --exclude='*.jpg' \
+    --exclude='*.png' --exclude='*.part' --exclude='*.m4a' \
+    "$WORK/video_production/" "$REPO/video_production/" 2>/dev/null || true
+fi
+git add video-pipeline video_production docs HANDOFF.md README.md .gitignore stickman-shorts STATUS.md scripts/auto_push.sh 2>/dev/null || true
 if git diff --cached --quiet; then
   echo "nothing to push"
   exit 0

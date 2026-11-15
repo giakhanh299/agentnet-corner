@@ -1,0 +1,5 @@
+Mỗi lần đăng nhập, bạn đang dùng một mẹo của thủy thủ năm trăm năm trước?
+Ngày xưa, thủy thủ muốn biết tàu chạy nhanh cỡ nào. Họ ném một khúc gỗ xuống biển, buộc vào sợi dây thắt nút, rồi đếm nút tuột ra.
+Tốc độ tàu đo bằng nút thắt — một nút bằng một hải lý mỗi giờ. Thủy thủ viết tất cả vào sổ nhật ký của tàu, gọi là sổ log.
+Sau này, máy tính cũng cần sổ ghi ai ra vào. Bạn gõ mật khẩu, máy ghi một dòng vào nhật ký — y hệt thủy thủ ghi sổ ngày xưa.
+Đăng nhập là ký tên vào sổ log của tàu. Bạn biết chuyện này chưa? Bình luận nhé!

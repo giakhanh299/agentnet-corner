@@ -1,0 +1,13 @@
+[0:v]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,zoompan=z='1+0.1*on/duration':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=165:s=1080x1920:fps=30,format=yuv420p[v1];
+[1:v]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840:200:0,zoompan=z='1+0.1*on/duration':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=261:s=1080x1920:fps=30,format=yuv420p[v2];
+[2:v]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,zoompan=z='1+0.1*on/duration':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=450:s=1080x1920:fps=30,format=yuv420p[v3];
+[3:v]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,zoompan=z='1+0.1*on/duration':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=582:s=1080x1920:fps=30,format=yuv420p[v4];
+[v1][v2]xfade=transition=fade:duration=0.5:offset=5.0[x1];
+[x1][v3]xfade=transition=fade:duration=0.5:offset=13.2[x2];
+[x2][v4]xfade=transition=fade:duration=0.5:offset=27.7[x3];
+[x3]drawtext=fontfile=/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf:textfile=hook.txt:fontsize=76:fontcolor=white:box=1:boxcolor=black@0.55:boxborderw=24:x=(w-text_w)/2:y=h*0.28:enable='between(t,0,4.1)'[h1];
+[h1]drawtext=fontfile=/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf:textfile=label.txt:fontsize=48:fontcolor=white:box=1:boxcolor=black@0.55:boxborderw=16:x=(w-text_w)/2:y=140:enable='between(t,5,13.2)'[h2];
+[h2]drawbox=x=0:y=0:w=1080:h=1920:color=black@0.45:t=fill:enable='between(t,45.1,47.1)'[h3];
+[h3]drawtext=fontfile=/usr/share/fonts/truetype/noto/NotoSans-Bold.ttf:textfile=endcard.txt:fontsize=88:fontcolor=white:box=1:boxcolor=black@0.55:boxborderw=28:x=(w-text_w)/2:y=h*0.40:enable='between(t,45.1,47.1)'[h4];
+[h4]ass=captions.ass[vout];
+[4:a]alimiter=limit=0.6:attack=5:release=50:level=true[aout];

@@ -1,0 +1,31 @@
+# Nguồn hình ảnh — V001 (chỉ CC0 / CC BY, không NC, không SA, không ảnh có bản quyền)
+
+## img1_hook.jpg — cửa sổ máy bay tròn, nhìn ra núi (Hook 0–5s)
+- File: https://cdn.stocksnap.io/img-thumbs/960w/J9FFZI8YC0.jpg (960x1440)
+- Nguồn: Openverse (api.openverse.org), ảnh gốc StockSnap
+- Tác giả: The Pic Pac
+- Giấy phép: CC0 (public domain — không cần ghi công, dùng thương mại được)
+- Trang gốc: https://stocksnap.io/photo/J9FFZI8YC0 (qua Openverse)
+
+## img2_comet.jpg — mũi máy bay Comet 4 trong bảo tàng, chữ "COMET 4" (Beat 1)
+- File: https://upload.wikimedia.org/wikipedia/commons/e/ea/G-APDB_BOAC_DH_106_Comet_4_%2820185845690%29.jpg (5472x3648)
+- Nguồn: Wikimedia Commons — "G-APDB BOAC DH 106 Comet 4 (20185845690).jpg"
+- Giấy phép: CC BY 2.0 (ghi công khi đăng: ghi "Ảnh: Wikimedia Commons, CC BY 2.0")
+- Lưu ý: đây là Comet 4 (đời sau, cửa sổ đã bo tròn) — dùng minh họa cho "máy
+  bay phản lực đầu tiên", không phải ảnh Comet 1 năm 1952. Chữ trên hình
+  "1952 · Comet" chỉ ghi năm + tên dòng máy bay, không ghi đây là ảnh Comet 1.
+
+## img3_windows.jpg — cửa sổ tròn lúc hoàng hôn, nhìn ra cánh máy bay (Beat 2)
+- File: https://cdn.stocksnap.io/img-thumbs/960w/91ZWDHRPM8.jpg (960x641)
+- Nguồn: Openverse, ảnh gốc StockSnap
+- Tác giả: Suhyeon Choi
+- Giấy phép: CC0
+
+## img4_clouds.jpg — nhìn từ máy bay xuống cửa sông Đạm Thủy, Đài Loan (Beat 3 + Payoff)
+- File: https://upload.wikimedia.org/wikipedia/commons/5/51/Aerial_view_of_the_Danshui_Estuary_from_the_airplane_window.jpg (4000x3000)
+- Nguồn: Wikimedia Commons — "Aerial view of the Danshui Estuary from the airplane window", tác giả Ken Marshall
+- Giấy phép: CC BY (ghi công khi đăng: "Ảnh: Ken Marshall, Wikimedia Commons, CC BY")
+
+## Ghi công khi đăng video
+- Img2: Wikimedia Commons, CC BY 2.0 · Img4: Ken Marshall, Wikimedia Commons, CC BY
+- Img1, Img3: CC0, không bắt buộc ghi công.

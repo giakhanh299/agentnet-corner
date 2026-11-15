@@ -1,0 +1,46 @@
+# Nguồn hình ảnh — V002 (chỉ CC0 / CC BY, không NC, không SA, không ảnh có bản quyền)
+
+## img1_ship_painting.jpg — tranh tàu buồm giữa biển động, Johannes Christiaan Schotel, 1826 (Hook 0–6,7s)
+- File: https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL2xyL2ltYWdlcy9zaGlwcy10dXJidWxlbnQtc2VhLTE4MjYuanBn (xem img_candidates.json để lấy URL đầy đủ)
+- Nguồn: Openverse (api.openverse.org), ảnh gốc Rawpixel / Rijksmuseum
+- Tác giả: Johannes Christiaan Schotel (1826), "Ships in a Turbulent Sea"
+- Giấy phép: CC0 (public domain — không cần ghi công, dùng thương mại được)
+- Trang gốc: https://www.rawpixel.com/image/13731652/ships-turbulent-sea-1826-johannes-christiaan-schotel
+- Lưu ý: bản tải về là bản 1024px (editor_1024) — đã thử tìm bản gốc trên
+  Wikimedia Commons nhưng không thấy file này; 1024px vẫn dùng được (cùng
+  cỡ với ảnh v001, hơi mềm khi crop 9:16 nhưng chấp nhận được).
+
+## img2_rope_white.jpg — cuộn dây thừng trên boong tàu lúc hoàng hôn (Beat 1)
+- File: https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTAxL2xyL2ltYWdlcy9hZnRlcm5vb24tYm9hdC1jYzAuanBn (xem img_candidates.json)
+- Nguồn: Openverse, ảnh gốc Rawpixel
+- Giấy phép: CC0
+- Trang gốc: https://www.rawpixel.com/image/3286418/free-photo-image-afternoon-boat-cc0
+
+## img3_logbook_page.jpg — trang sổ nhật ký (logbook) viết tay, B2 Bazenville, Normandy, tháng 6/1944 (Beat 2)
+- File: https://live.staticflickr.com/3362/4631445636_10b0ae1fb9_b.jpg (738x1024, dọc — hợp crop 9:16)
+- Nguồn: Openverse, ảnh gốc Flickr
+- Tác giả: In Memoriam: PhillipC
+- Giấy phép: CC BY (ghi công khi đăng: "Ảnh: PhillipC, Flickr, CC BY")
+- Trang gốc: https://www.flickr.com/photos/42033648@N00/4631445636
+
+## img4_login.jpg — điện thoại hiện màn hình đăng nhập Facebook (Email / Password / Login) (Beat 3 + Payoff)
+- File: https://live.staticflickr.com/1768/42117027895_7b8e394a72_b.jpg
+- Nguồn: Openverse, ảnh gốc Flickr
+- Tác giả: Homedust
+- Giấy phép: CC BY (ghi công khi đăng: "Ảnh: Homedust, Flickr, CC BY")
+- Trang gốc: https://www.flickr.com/photos/159630537@N08/42117027895
+
+## Ảnh đã tải nhưng KHÔNG dùng (ghi lại để khỏi dùng nhầm)
+- img1b_sail_ocean.jpg (CC0, StockSnap): tàu buồm hiện đại dưới cầu cảng
+  Sydney + nhà cao tầng — sai không khí "500 năm trước". Loại.
+- img2b_rope_line.jpg (CC0, StockSnap): dây thừng buộc cọc gỗ, nền cây xanh
+  — giống hàng rào vườn hơn là tàu. Loại (dự phòng).
+- img3a_logbook.jpg (CC BY, Flickr, "Ye Olde Logbook"): thực ra là sổ tay
+  ghi bug của lập trình viên hiện đại (#2078, #3074...) — không phải sổ
+  logbook hàng hải. Loại.
+- img3c_rawpixel.jpg (CC0): sổ gia đình ghi sinh/tử 1821–1855 + sách Pháp —
+  chữ viết tay cổ đẹp nhưng là sổ gia đình, không phải logbook. Loại.
+
+## Ghi công khi đăng video
+- Img3: PhillipC, Flickr, CC BY · Img4: Homedust, Flickr, CC BY
+- Img1, Img2: CC0, không bắt buộc ghi công.

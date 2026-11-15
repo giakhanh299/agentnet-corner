@@ -11,6 +11,65 @@
 
 ## DONE
 
+### Video #2 (Ep002) — "LOG IN" Visual Essay 45s (F2, #81) — DONE 2026-11-15 17:36 +07
+- **File:** `video_production/v002-login-45s/v002.mp4` — 46,8s, 1080x1920
+  30fps, H.264 + AAC 192k, 13,7 MB, sha256 `b8b4f7cf18e338ccb645…`
+  (Torque kiểm chứng: ffprobe + sha khớp; xem frame 1s và 46,2s: hook
+  "MỖI LẦN ĐĂNG NHẬP, BẠN ĐANG DÙNG MẸO CỦA THỦY THỦ 500 NĂM TRƯỚC?"
+  to, rõ, đúng dấu, tàu Schotel đủ khung; thẻ cuối "Bạn biết chuyện
+  này chưa? Bình luận nhé!" hiện đủ sau khi sửa).
+- **Chủ đề:** #81 "WHY DO WE 'LOG IN'?!" (87) — kịch bản gốc 125 từ (F2),
+  hook kép → thủy thủ + dây thừng thắt nút → sổ log → đăng nhập máy tính
+  → payoff "Đăng nhập là ký tên vào sổ log của tàu" + poll/CTA.
+  Nguồn gốc từ đã kiểm chứng: Etymonline ("log") — log-book (1670s) từ
+  chip log trên dây log, nút thắt đo tốc độ; nghĩa máy tính "log in" từ
+  1963; + Wikipedia "Logbook (nautical)" + Turner Publishing. Lưu ý ghi
+  trong script.md: có ý kiến cho rằng "log in" có thể từ "log on" (lệnh
+  mainframe) — kịch bản trình bày theo cách hiểu phổ biến, không khẳng
+  định tuyệt đối.
+- **Đã đo:** **-16,39 LUFS** (đúng mục tiêu — lỗi -17,40 của Ep001 đã
+  tránh được, không cần pass loudnorm thêm), true peak **-2,42 dBTP**,
+  LRA 3,80, giọng bắt đầu **0,00s** (hết dead air 1,49s của bản gốc),
+  **160 từ/phút** (125 từ / 46,8s, trong vùng an toàn). Phụ đề 33 events,
+  khớp kịch bản 125/125 từ; 10 frame đã xem (`qc.md`).
+- **Giọng MMS-TTS TRÊN PC** (CUDA, tổng hợp 0,9s): kiểm bằng
+  faster-whisper large-v3 trên PC: **113/123 = 91,9%** từ nghe đúng
+  (v001 chỉ ~70% bằng Whisper Base trên VPS). Tốc độ từng câu 168–200
+  từ/phút, nối bằng khoảng nghỉ 1,2s kéo về 160 tổng. 2 vòng thử trên PC
+  (13 câu) chốt từ rủi ro: "Ngày xưa" ổn, "buộc"/"đếm"/"hải lý" ổn,
+  "cột" tệ hơn "buộc" (nghe "cục") — loại; câu beat-2 cũ hỏng ổn định
+  (71% hai lần) đã viết lại. **Giới hạn MMS: "log" đọc thành "lô/lố"**
+  (rớt phụ âm cuối; viết "lốc" cũng không sửa được) — giữ nguyên trong
+  giọng nói, chữ trên màn hình ("CHIP LOG", "SỔ LOG") giữ đúng chính tả.
+- **Nhạc + SFX — video đầu tiên CÓ nhạc:** `bgm_calm.ogg` volume 0,12
+  (đo ở khoảng nghỉ -41,1 dB, thấp hơn giọng ~22 dB) + whoosh + pop ở
+  0,1s, ding ở 6,68/18,34/30,00s, camera_click ở 18,34s, boom (vol 0,8)
+  ở 41,12s — toàn bộ CC0 từ thư viện Core_SFX. SFX kiểm chứng bằng cấu
+  trúc filtergraph + đo khoảng nghỉ của nhạc; độ nghe của từng SFX riêng
+  không tách đo được (chúng trùng với giọng theo thiết kế) — ghi thật
+  trong qc.md.
+- **Hình:** 4 ảnh đã dùng, toàn CC0/CC BY (Schotel "Ships in a Turbulent
+  Sea" 1826 CC0 Rijksmuseum; dây thừng hoàng hôn CC0; trang sổ log thật
+  1944 CC BY PhillipC; màn hình đăng nhập Facebook CC BY Homedust);
+  4 ảnh khác tải về rồi loại có lý do. Tất cả 1024px (Openverse
+  editor_1024) — hơi mềm khi crop 9:16, như v001, chấp nhận được.
+- **Lỗi đã sửa:** thẻ cuối bị cắt ở build 1 (24 ký tự, fontsize 88 tràn
+  1080px) → giảm fontsize 64, encode lại, kiểm lại ở 45,5s + 46,2s:
+  hiện đủ. Mix treo >4 phút lần đầu — `apad` trên track giọng +
+  `amix duration=first` không bao giờ kết thúc → bỏ `apad`, dùng
+  `duration=longest`; mix xong trong 4,7s.
+- **Giới hạn thật:** chưa ai nghe bằng tai (chỉ Whisper 91,9%) — chủ nên
+  nghe một lần trước khi đăng, nhất là "log" ("lô") và "Bạn gõ mật khẩu";
+  độ nghe từng SFX chưa đo riêng; ảnh 1024px hơi mềm; phụ đề "luận nhé!"
+  trùng chữ thẻ cuối trong 2s cuối (thừa nhỏ như v001). PC chạy tốt suốt
+  (SSH, TTS + Whisper ~10s/lần); không cần fallback VPS.
+- **Chưa đăng/upload đâu cả.** Thời gian: ~21 phút (17:15–17:36) — nhanh
+  gấp ~3 lần v001 (65 phút) nhờ TTS + Whisper trên PC.
+- **Thay đổi hệ thống:** `auto_push.sh` nay thêm `video_production/` vào
+  danh sách git-add (chỉ file text — mp4/wav/jpg vẫn bị .gitignore chặn);
+  lần đầu tiên file sản xuất (script.md, qc.md, captions) được đưa lên
+  git cùng đợt push này.
+
 ### AI stack local trên PC (PyTorch cu128 + faster-whisper + TTS Việt) — DONE 2026-11-15 17:15 +07
 - **Bắt đầu:** 2026-11-15 ~17:03 +07. Tiếp sau test render Manim (DONE).
 - **Nội dung:** kiểm tra driver NVIDIA (cần ≥572.60, nếu thấp hơn thì dừng
