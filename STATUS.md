@@ -673,17 +673,18 @@
 
 - Thư mục: "AgentNet Video Studio"
   (https://drive.google.com/drive/folders/1q0gL8euNge458b_ktbGSg_RMfiz3FcC8)
-- `STATUS.md` (bản này) — Drive file id: `1DOow24syLHrfa5iphufUXCJmVSQilVd-`
-  (upload 2026-11-15 ~18:48 +07 — bản mới nhất, có vòng 3 mở rộng
-  menu giọng; các bản cũ `1gpLAunMiYnQhwknN-QNgmFlBYfrOUXCj` (15:55),
+- `STATUS.md` (bản này) — Drive file id: `1NO2YbnSivxUuJpS1Mk-ZlunRZ-4ev7Qb`
+  (upload 2026-11-15 ~21:04 +07 — bản mới nhất, có v005 DONE; các bản
+  cũ `1gpLAunMiYnQhwknN-QNgmFlBYfrOUXCj` (15:55),
   `1lAPg14W9pW43zq6aQCyWEIahxgbI6MKc` (16:06),
   `1bDWx5BH9HUeomr1d9PyIV0_9fIXskNNk` (16:22),
   `1BK-Z-i-dpdvjPTk4Gut92ixHw7DOwUxS` (17:03),
   `1892dptIIhhY5DIkyHEoW9o7iVk5N_XIH` (17:15),
   `13LCpNYKXjKu2WQ6bebXS_4SCiSLtmzdz` (17:38),
   `1Z6wmJj9G63AGYU7skALHfTyaE5Fodx0k` (17:48),
-  `13PPFSztw50aqrQxndmon3hiGV_mCgTCX` (18:21) và
-  `1xlYJmXcMkUYTm1W_H0B2Oqnf6MX2IAkU` (18:33) đã lỗi thời, giữ lại làm
+  `13PPFSztw50aqrQxndmon3hiGV_mCgTCX` (18:21),
+  `1xlYJmXcMkUYTm1W_H0B2Oqnf6MX2IAkU` (18:33) và
+  `1DOow24syLHrfa5iphufUXCJmVSQilVd-` (18:48) đã lỗi thời, giữ lại làm
   bản sao cũ, không xóa theo quy tắc không xóa dữ liệu Drive)
 - `HANDOFF.md` — Drive file id: `16lcqICKbi8ZvurA-T4O4_eXhe6ZoKaZ7`
   (upload 2026-11-15 ~15:55 +07)
@@ -691,4 +692,5 @@
   - `v001.mp4` (Video #1) — Drive file id: `1oVxOPRVSl5HmjdzI47RQiVGKHotAdCxn`
   - `ep001-cam-dau-lam-viec.mp4` (Ep001) — Drive file id: `152--2bfxwsQIjKi_5bCmKbO3V8jsdu9f`
   - `v002-login-45s.mp4` (Video #2 / Ep002) — Drive file id: `1m_c6zADoYLb3zxvg-dnTHGRTZrJiX3mq`
+  - `v005.mp4` (Video #5) — Drive file id: `1D9ZG8q4C0odQkdXp1y0-09YnAEEpzVb4`
 - Lưu ý: bản trên git là bản chính, mới nhất.
