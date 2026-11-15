@@ -1,0 +1,43 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.64,Default,,0,0,0,,Mỗi ngày, hàng trăm người
+Dialogue: 0,0:00:01.64,0:00:03.28,Default,,0,0,0,,đi qua góc phố này.
+Dialogue: 0,0:00:03.58,0:00:04.89,Default,,0,0,0,,Ông Tư sửa giày
+Dialogue: 0,0:00:04.89,0:00:06.20,Default,,0,0,0,,ở góc phố này
+Dialogue: 0,0:00:06.20,0:00:07.52,Default,,0,0,0,,đã ba mươi năm.
+Dialogue: 0,0:00:07.82,0:00:09.10,Default,,0,0,0,,Người ta lướt
+Dialogue: 0,0:00:09.10,0:00:10.38,Default,,0,0,0,,qua mỗi ngày,
+Dialogue: 0,0:00:10.53,0:00:12.59,Default,,0,0,0,,không ai dừng lại,
+Dialogue: 0,0:00:12.74,0:00:14.88,Default,,0,0,0,,không ai hỏi tên ông,
+Dialogue: 0,0:00:15.03,0:00:16.92,Default,,0,0,0,,không ai nhớ mặt ông.
+Dialogue: 0,0:00:17.22,0:00:18.82,Default,,0,0,0,,Tối nào ông cũng đánh
+Dialogue: 0,0:00:18.82,0:00:20.42,Default,,0,0,0,,bóng một đôi giày nhỏ,
+Dialogue: 0,0:00:20.57,0:00:22.38,Default,,0,0,0,,của một người khách bỏ
+Dialogue: 0,0:00:22.38,0:00:24.19,Default,,0,0,0,,quên từ lâu, không bao
+Dialogue: 0,0:00:24.19,0:00:25.64,Default,,0,0,0,,giờ quay lại lấy.
+Dialogue: 0,0:00:25.94,0:00:27.42,Default,,0,0,0,,Ông để đôi giày
+Dialogue: 0,0:00:27.42,0:00:28.90,Default,,0,0,0,,trên quầy nhỏ, như
+Dialogue: 0,0:00:28.90,0:00:30.39,Default,,0,0,0,,đang đợi ai đó.
+Dialogue: 0,0:00:30.69,0:00:32.19,Default,,0,0,0,,Một chiều, một bé
+Dialogue: 0,0:00:32.19,0:00:33.33,Default,,0,0,0,,gái dừng lại,
+Dialogue: 0,0:00:33.48,0:00:35.62,Default,,0,0,0,,chỉ vào đôi giày nhỏ:
+Dialogue: 0,0:00:35.77,0:00:37.61,Default,,0,0,0,,Của ai vậy ông?
+Dialogue: 0,0:00:37.91,0:00:39.81,Default,,0,0,0,,Hôm sau, bé quay lại,
+Dialogue: 0,0:00:39.96,0:00:41.91,Default,,0,0,0,,tay cầm một bức vẽ:
+Dialogue: 0,0:00:42.06,0:00:43.98,Default,,0,0,0,,ông Tư ngồi sửa giày
+Dialogue: 0,0:00:43.98,0:00:45.52,Default,,0,0,0,,dưới ánh đèn vàng.
+Dialogue: 0,0:00:46.03,0:00:47.27,Default,,0,0,0,,Ông cười, lần đầu
+Dialogue: 0,0:00:47.27,0:00:48.52,Default,,0,0,0,,sau bao năm, có
+Dialogue: 0,0:00:48.52,0:00:49.77,Default,,0,0,0,,người nhìn thấy ông.
+Dialogue: 0,0:00:50.07,0:00:51.21,Default,,0,0,0,,Chỉ cần một
+Dialogue: 0,0:00:51.21,0:00:52.36,Default,,0,0,0,,người dừng lại.

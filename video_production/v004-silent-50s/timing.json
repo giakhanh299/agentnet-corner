@@ -1,0 +1,42 @@
+[
+  {
+    "beat": "hook",
+    "start_s": 0.0,
+    "duration_s": 3.58,
+    "words": 10,
+    "wpm": 167.6
+  },
+  {
+    "beat": "beat1",
+    "start_s": 3.58,
+    "duration_s": 13.642,
+    "words": 32,
+    "wpm": 140.7
+  },
+  {
+    "beat": "beat2",
+    "start_s": 17.222,
+    "duration_s": 13.47,
+    "words": 36,
+    "wpm": 160.4
+  },
+  {
+    "beat": "beat3",
+    "start_s": 30.692,
+    "duration_s": 15.336,
+    "words": 35,
+    "wpm": 136.9
+  },
+  {
+    "beat": "payoff",
+    "start_s": 46.028,
+    "duration_s": 6.332,
+    "words": 18,
+    "wpm": 170.6
+  },
+  {
+    "total_s": 52.36,
+    "total_words": 131,
+    "overall_wpm": 150.1
+  }
+]

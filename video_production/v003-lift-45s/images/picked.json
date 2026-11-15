@@ -1,0 +1,26 @@
+{
+  "hook_elevator": [
+    "https://live.staticflickr.com/1470/24890855811_de33c4efe6_b.jpg",
+    "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2ZsMzkwNjQwMDAwNy1pbWFnZS5qcGc.jpg",
+    "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2ZsMzkwNjQwMDM3MS1pbWFnZS5qcGc.jpg",
+    "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2ZsMzkwNjQwMDE5OS1pbWFnZS5qcGc.jpg"
+  ],
+  "beat1_interior": [
+    "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA5L21ldDM4NTI3NS1pbWFnZS5qcGc.jpg",
+    "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA5L21ldDM4NTI3OS1pbWFnZS5qcGc.jpg",
+    "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA5L21ldDM4OTY1OS1pbWFnZS5qcGc.jpg",
+    "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA5L21ldDM2NTU0Mi1pbWFnZS5qcGc.jpg"
+  ],
+  "beat2_machinery": [
+    "https://live.staticflickr.com/8388/8517008600_8c6ce51d82_b.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/0/00/Pavetta_rigida-NMNH-02508439.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/8f/Space_elevator_structural_diagram-RO.png",
+    "https://upload.wikimedia.org/wikipedia/commons/9/99/Henry_M._Brinckerhoff.jpg"
+  ],
+  "payoff_building": [
+    "https://live.staticflickr.com/7137/13890661614_b35e77b9b0_b.jpg",
+    "https://live.staticflickr.com/65535/49145357446_4fd8b812db_b.jpg",
+    "https://live.staticflickr.com/65535/47945309328_bbfb737c78_b.jpg",
+    "https://live.staticflickr.com/547/32206828781_63abdbf65c_b.jpg"
+  ]
+}

@@ -1,0 +1,45 @@
+# Nguồn ảnh V005 — "Top 5 câu nói huyền thoại của mẹ"
+# Tất cả CC0 hoặc CC BY, dùng thương mại được. Ảnh tải từ Openverse
+# (editor_1024); ảnh dùng trong video đã crop/zoom bằng ffmpeg.
+# Mỗi mục dùng 1 ảnh, hiện trong khung ảnh của thẻ danh sách.
+
+## ĐÃ DÙNG (5 ảnh)
+- n5b_dinner.jpg — #5 mâm cơm gia đình
+  "Pre-Race Dinner at Miguel's Baja Grill" — Kazz.0 — CC BY — Flickr
+  https://www.flickr.com/photos/59811447@N03/5542217507
+- n4b_alone.jpg — #4 cả nhà im lặng (phòng tối, một người ngồi lặng trước màn hình)
+  "It's my Friday night" — goblinbox_(queen_of_ad_hoc_bento) — CC BY — Flickr
+  https://www.flickr.com/photos/25977089@N00/15646614458
+- n3a_mother_child.jpg — #3 mẹ trẻ nấu cơm (bếp sáng, mẹ + con nhỏ)
+  "Mother Child" — Direct Media — CC0 — StockSnap
+  https://stocksnap.io/photo/mother-child-WY0F19KYW3
+- n2a_window.jpg — #2 cậu bé nhìn sang nhà hàng xóm (nhìn qua cửa sổ)
+  "Boy Looking Out Window" — inclusivesecurity — CC BY — Flickr
+  https://www.flickr.com/photos/35933362@N03/6792629054
+  Lưu ý: nguồn gốc 679x1024 (portrait) — crop landscape + upscale ~1,6x
+  nên hơi mềm; đã kiểm bằng mắt, chấp nhận được.
+- n1a_family.jpg — #1 mẹ cười hiền (gia đình + chó, công viên)
+  "Family Portrait" — Family Moments — CC0 — StockSnap
+  https://stocksnap.io/photo/family-portrait-OIUD9DEKPG
+
+## ĐÃ LOẠI (9 ảnh, có lý do)
+- n5a_dinner.jpg — "Deepawali Celebration 2007" (anantal, CC BY): một người
+  đàn ông dọn mâm cơm trên sàn — ít rõ "bàn ăn gia đình" hơn n5b.
+- n5c_food.jpg — "Chicken Pra Ram" (Stephanie L. Smith, CC BY): chỉ có đĩa
+  thức ăn cận cảnh, không có người/mẹ.
+- n4a_quiet.jpg — "P1010025" (grantlairdjr, CC BY): phụ nữ phát biểu trên
+  bục trong sảnh tiệc — sai cảnh hoàn toàn.
+- n4c_quiet.jpg — "Matt Cat & Providence" (dannysoar, CC BY): bé + mèo bên
+  cửa sổ, đen trắng — không khí lặng thì có nhưng lạc đề (mèo, không phải
+  cả nhà).
+- n3b_baking.jpg — "Christmas Baking" (PS Imaging, CC0): bé + bà nướng bánh
+  Giáng sinh — lệch mùa, không phải "mẹ trẻ nấu cơm".
+- n2b_train.jpg — "Of trains & infinite dreams" (Fountain_Head, CC BY):
+  bé nhìn qua cửa sổ tàu — tâm trạng du lịch, không phải "nhìn sang nhà
+  hàng xóm".
+- n2c_look.jpg — "a.y.f.k.m. look" (aakanayev, CC BY): chân dung studio
+  trước tường trắng — lạc đề.
+- n1b_family.jpg — "Black Family" (Family First, CC0): gia đình vui vẻ
+  trong công viên — tốt nhưng mẹ ít nổi bật hơn n1a.
+- n1c_surprised.jpg — "WHATTTTT?!" (U.S. Geological Survey, CC0): ảnh một
+  con hải cẩu há miệng — kết quả tìm kiếm gán nhãn sai, không phải mẹ.

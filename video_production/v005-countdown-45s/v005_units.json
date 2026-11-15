@@ -1,0 +1,86 @@
+[
+  {
+    "unit": "hook",
+    "text": "Top năm câu nói huyền thoại của mẹ!",
+    "start": 0.0,
+    "end": 3.18,
+    "words": 8
+  },
+  {
+    "unit": "n5a",
+    "text": "Số năm: Ăn cơm đi, nguội hết rồi!",
+    "start": 3.48,
+    "end": 6.36,
+    "words": 8
+  },
+  {
+    "unit": "n5b",
+    "text": "Mẹ nói câu này ba lần một bữa, lần nào cũng vậy.",
+    "start": 6.66,
+    "end": 10.92,
+    "words": 12
+  },
+  {
+    "unit": "n4a",
+    "text": "Số bốn: Tao nói mày có nghe không?",
+    "start": 11.32,
+    "end": 14.5,
+    "words": 8
+  },
+  {
+    "unit": "n4b",
+    "text": "Câu này mà vang lên là cả nhà im phăng phắc.",
+    "start": 14.8,
+    "end": 19.24,
+    "words": 11
+  },
+  {
+    "unit": "n3a",
+    "text": "Số ba: Hồi bằng tuổi mày, mẹ đã biết nấu cơm, giặt đồ.",
+    "start": 19.64,
+    "end": 24.88,
+    "words": 13
+  },
+  {
+    "unit": "n3b",
+    "text": "Câu này mẹ kể từ lúc con lên năm.",
+    "start": 25.18,
+    "end": 28.1,
+    "words": 9
+  },
+  {
+    "unit": "n2a",
+    "text": "Số hai: Con nhà người ta.",
+    "start": 28.5,
+    "end": 31.26,
+    "words": 6
+  },
+  {
+    "unit": "n2b",
+    "text": "Chỉ ba chữ thôi mà đủ làm con thấy mình thua cả xóm.",
+    "start": 31.56,
+    "end": 37.08,
+    "words": 13
+  },
+  {
+    "unit": "n1a",
+    "text": "Số một: Mẹ không cần gì đâu, con cứ lo cho con đi.",
+    "start": 37.68,
+    "end": 42.28,
+    "words": 13
+  },
+  {
+    "unit": "n1b",
+    "text": "Nghe thì nhẹ, mà tim con nặng nề.",
+    "start": 42.58,
+    "end": 45.47,
+    "words": 8
+  },
+  {
+    "unit": "cta",
+    "text": "Số một của bạn là câu nào? Bình luận nhé!",
+    "start": 45.87,
+    "end": 49.95,
+    "words": 10
+  }
+]

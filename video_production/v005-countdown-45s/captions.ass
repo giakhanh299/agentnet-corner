@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Noto Sans,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.59,Default,,0,0,0,,Top năm câu nói
+Dialogue: 0,0:00:01.59,0:00:03.18,Default,,0,0,0,,huyền thoại của mẹ!
+Dialogue: 0,0:00:03.48,0:00:04.97,Default,,0,0,0,,Số năm: Ăn cơm
+Dialogue: 0,0:00:04.97,0:00:06.46,Default,,0,0,0,,đi, nguội hết rồi!
+Dialogue: 0,0:00:06.46,0:00:07.94,Default,,0,0,0,,Mẹ nói câu này
+Dialogue: 0,0:00:07.94,0:00:09.43,Default,,0,0,0,,ba lần một bữa,
+Dialogue: 0,0:00:09.43,0:00:10.92,Default,,0,0,0,,lần nào cũng vậy.
+Dialogue: 0,0:00:11.32,0:00:12.90,Default,,0,0,0,,Số bốn: Tao nói
+Dialogue: 0,0:00:12.90,0:00:14.49,Default,,0,0,0,,mày có nghe không?
+Dialogue: 0,0:00:14.49,0:00:16.07,Default,,0,0,0,,Câu này mà vang
+Dialogue: 0,0:00:16.07,0:00:17.66,Default,,0,0,0,,lên là cả nhà
+Dialogue: 0,0:00:17.66,0:00:19.24,Default,,0,0,0,,im phăng phắc.
+Dialogue: 0,0:00:19.64,0:00:21.05,Default,,0,0,0,,Số ba: Hồi bằng
+Dialogue: 0,0:00:21.05,0:00:22.46,Default,,0,0,0,,tuổi mày, mẹ đã
+Dialogue: 0,0:00:22.46,0:00:23.87,Default,,0,0,0,,biết nấu cơm, giặt
+Dialogue: 0,0:00:23.87,0:00:25.28,Default,,0,0,0,,đồ. Câu này mẹ
+Dialogue: 0,0:00:25.28,0:00:26.69,Default,,0,0,0,,kể từ lúc con
+Dialogue: 0,0:00:26.69,0:00:28.10,Default,,0,0,0,,lên năm.
+Dialogue: 0,0:00:28.50,0:00:30.22,Default,,0,0,0,,Số hai: Con nhà
+Dialogue: 0,0:00:30.22,0:00:31.93,Default,,0,0,0,,người ta… Chỉ ba
+Dialogue: 0,0:00:31.93,0:00:33.65,Default,,0,0,0,,chữ thôi mà đủ
+Dialogue: 0,0:00:33.65,0:00:35.36,Default,,0,0,0,,làm con thấy mình
+Dialogue: 0,0:00:35.36,0:00:37.08,Default,,0,0,0,,thua cả xóm.
+Dialogue: 0,0:00:37.68,0:00:38.98,Default,,0,0,0,,Số một: Mẹ không
+Dialogue: 0,0:00:38.98,0:00:40.28,Default,,0,0,0,,cần gì đâu, con
+Dialogue: 0,0:00:40.28,0:00:41.58,Default,,0,0,0,,cứ lo cho con
+Dialogue: 0,0:00:41.58,0:00:42.87,Default,,0,0,0,,đi. Nghe thì nhẹ,
+Dialogue: 0,0:00:42.87,0:00:44.17,Default,,0,0,0,,mà tim con nặng
+Dialogue: 0,0:00:44.17,0:00:45.47,Default,,0,0,0,,nề.
+Dialogue: 0,0:00:45.87,0:00:47.23,Default,,0,0,0,,Số một của bạn
+Dialogue: 0,0:00:47.23,0:00:48.59,Default,,0,0,0,,là câu nào? Bình
+Dialogue: 0,0:00:48.59,0:00:49.95,Default,,0,0,0,,luận nhé!
