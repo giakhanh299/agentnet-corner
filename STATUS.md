@@ -11,6 +11,57 @@
 
 ## DONE
 
+### Video #3 (v003) — "Cáp thang máy đứt ở tầng 85" Visual Essay 45s (F2, #77 90) — DONE + QC-passed 2026-11-15 22:21 +07
+- **File:** `video_production/v003-lift-45s/v003.mp4` — **50,13s,
+  1080x1920, 30fps, H.264 + AAC 192k, 19.733.840 byte, sha256
+  `b9fb43a4762a…`** — **-16,41 LUFS** (mục tiêu ~-16), true peak
+  **-5,34 dBTP**, LRA 4,30, giọng vào **0,00s**, **147 từ/phút**
+  tổng thể (123 từ / 50,13s; ~152 wpm chỉ tính lúc nói; theo beat
+  146–172 wpm). **Torque kiểm chứng:** ffprobe + sha khớp; xem
+  frame 1s (hook "CÁP ĐỨT Ở TẦNG 85?" lớn rõ, dấu đúng, trên ảnh
+  giếng thang máy, caption "Cáp thang máy đứt") và 49,5s (end card
+  "BẠN CÓ DÁM ĐI THANG TẦNG 85 KHÔNG?" + "YES / NO" đỏ, caption
+  "không? Bình luận nhé!" — đầy đủ, không cắt).
+- **Giọng:** MMS-TTS trên PC (speaking_rate 0.92), Whisper large-v3
+  **105/123 = 85,4%** (chủ yếu chuẩn hóa số "tám mươi lăm"→"85" +
+  lỗi ranh giới; các từ nội dung chính nghe đúng hết). **Probe: 2
+  lần đổi** — "kẹp chặt ray"→"rai" đổi thành **"phanh kẹp chặt"**
+  (94,1%); "nằm ngửa"→"năng ngựa" đổi thành **"nằm dài xuống
+  sàn"** (94,1%). Hook giữ nguyên (thử "Dây cáp…" tệ hơn, 60%);
+  chữ trên hình "CÁP ĐỨT Ở TẦNG 85?" gánh chính tả. MMS đọc "Cáp"
+  thành "Các" ở từ đầu tiên.
+- **Hình:** 4 ảnh dùng, toàn CC0 (3 Wikimedia — neil.dalphin ×2,
+  Tomasz Rynkiewicz — + 1 Flickr DanielC743); 11 ảnh khác bị loại
+  có lý do trong `images/sources.txt`. Beat 3 là Manim stickman tự
+  render (nằm dài, tay khoanh trước ngực — 4 lần chỉnh pose).
+- **Nhạc + SFX:** bgm_suspense + whoosh/pop 0,1s, ding 5,53/
+  14,06s, camera_click 26,86s, boom 41,91s. Ding nghe ở mức giọng;
+  click nhỏ nhưng trên nền nhạc; boom to (~6 dB trên giọng — ghi là
+  lỗi nhỏ). BGM đo ~11 dB dưới giọng — nóng hơn mục tiêu -18 đến
+  -24 dB (ghi nhận, không mix lại; giọng vẫn rõ ràng áp đảo).
+- **Render: PC, 12 giây** (quyết định của chủ 21:53 — render trên
+  máy chủ từ nay). ffmpeg 8.1.2 trên PC, 22:15:49–22:16:01,
+  FFMPEG_EXIT=0, đúng 1504 frame. Ráp tiếng + loudnorm + QC làm
+  trên VPS. **Bài học lớn về pipeline: `-loop 1` làm ffmpeg chạy
+  mãi không dừng** — encode VPS (56 phút, 98 MB, không có moov) và
+  encode PC lần 1 (16 phút, 238 MB) đều là runaway, không phải
+  crash: `-loop 1` trên input ảnh làm đầu vào của zoompan vô hạn
+  nên chuỗi xfade không bao giờ thấy EOF. Sửa: bỏ `-loop 1` (1 ảnh
+  = 1 frame → zoompan xuất đúng `d` frame rồi EOF) + `-frames:v
+  1505` làm giới hạn cứng. Chạy lại sạch trong 12s. 2 sửa nhỏ khác
+  trên PC: `fontfile=C\:/Windows/...` lỗi parse filter — copy
+  BeVietnamPro-Bold.ttf vào thư mục render, dùng đường dẫn tương
+  đối (caption đốt bằng Be Vietnam Pro, không phải Noto Sans — ghi
+  trong `assemble_filter_pc.txt` / `captions_pc.ass`); lần mix đầu
+  ra AAC 96 kHz mono (loudnorm xuất 192 kHz, amix lấy layout mono
+  của giọng) — encode lại 48 kHz stereo như v002.
+- **Giới hạn trung thực:** chưa ai nghe thật (chỉ Whisper 85,4%);
+  BGM nóng hơn mục tiêu; boom payoff ~6 dB trên giọng; caption
+  trùng chữ end card ở 2s cuối (như v002); ảnh payoff 1024px hơi
+  mờ; beat 2 ~13s gần như tĩnh (chỉ zoompan). **CHƯA đăng.** Đã
+  gửi cho chủ xem trong chat. Lô 3 video (v003 + v004 + v005) đã
+  hoàn thành.
+
 ### Video #4 (v004) — "Ông Tư sửa giày" truyện stickman cảm xúc 50s (F7, #50) — DONE + QC-passed 2026-11-15 21:10 +07
 - **File:** `video_production/v004-silent-50s/v004.mp4` — **52,36s,
   1080x1920, 30fps, H.264 + AAC 192k, 2.628.973 byte, sha256
