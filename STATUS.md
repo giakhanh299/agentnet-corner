@@ -7,17 +7,9 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-15 ~16:00 +07.
+> Cập nhật lần cuối: 2026-11-15 ~16:05 +07.
 
 ## IN PROGRESS
-
-### Ep001 — tập stickman thật đầu tiên (F7, 50s) — IN PROGRESS
-- **Bắt đầu:** 2026-11-15 ~15:46 +07. Thư mục
-  `stickman-shorts/videos/2026-11-15_ep001-cam-dau-lam-viec/` đã tạo.
-- **Nội dung:** kịch bản gốc (không copy FB-05) theo bài học FB-05
-  "cắm đầu làm việc không giúp bạn giàu lên", ~125–138 từ, giọng Edge TTS
-  hoặc TTS đang dùng ở v001, render Manim + assemble có `--srt` (đường này
-  chưa từng thử), QC đầy đủ trước khi báo.
 
 ### PC Windows — test render stickman qua SSH — IN PROGRESS
 - **Bắt đầu:** 2026-11-15 ~15:46 +07.
@@ -28,6 +20,34 @@
   render demo 5s, đo thời gian, copy frame về xem.
 
 ## DONE
+
+### Ep001 — tập stickman thật đầu tiên (F7, 50s) — DONE 2026-11-15 16:02 +07
+- **File:** `stickman-shorts/videos/2026-11-15_ep001-cam-dau-lam-viec/output/final.mp4`
+  — 48,8s, 1080x1920 30fps, H.264 + AAC 192k, 3,2 MB, sha256 `3f40bf21a0616d30baaa…`
+  (Torque kiểm chứng: ffprobe + sha khớp; xem frame 1s và 36s: hook
+  "CÙNG LÀM 10 TIẾNG" rõ, dấu đúng; 2 nhân vật An/Bình + túi tiền rõ, không
+  đè chân; phụ đề rõ, đúng vị trí).
+- **Chủ đề:** "Cùng làm 10 tiếng, sao người giàu, người nghèo?" — kịch bản
+  gốc 137 từ (F7), hook kép 0–3s → An đổi giờ lấy tiền → Bình xây cây cầu
+  → một năm sau → payoff "Giàu không phải làm nhiều hơn. Giàu là làm khác
+  đi." Bài học cảm hứng từ FB-05, không sao chép câu chữ/cảnh nào.
+- **Đã đo:** -17,40 LUFS (thấp hơn mục tiêu 1,4 — chưa sửa), true peak
+  -2,91 dBTP, giọng bắt đầu 0,105s, 174 từ/phút (trên vùng an toàn 150–165).
+  Phụ đề 16 events, khớp kịch bản 137/137 từ; 7 frame đã xem (`qc.md`).
+- **Giọng MMS-TTS** (đúng pipeline v001): từng beat riêng, ngắt 0,3/0,4/0,4/0,7s.
+  Piper tự kiểm: 275 từ/phút — loại; Edge TTS file 0 byte — khớp v001.
+  Caption sửa theo kịch bản gốc (timestamp Whisper giữ nguyên).
+- **Đường `--srt` của assemble.py ĐÃ TEST + SỬA XONG:** `tools/assemble.py`
+  tự convert .srt → .ass (PlayRes 1080x1920, Be Vietnam Pro 56) + filter
+  `ass` + `alimiter=limit=0.7:level=false`; 2 bài học ghi vào docstring.
+- **Lỗi hình đã sửa:** POSE_SURPRISED 2 tay chồng thành 1 tay + chân/thân
+  thành 1 cột → sửa pose-only (SPEC không đụng), rig test chạy lại ALL
+  PASSED; túi tiền đè chân Bình → dời x 2,2 → 3,2.
+- **Giới hạn thật:** không nhạc nền (thư viện nhạc/SFX vẫn trống — điểm yếu
+  lớn nhất); chưa ai nghe giọng bằng tai; tốc độ 174 từ/phút hơi nhanh;
+  beat 2 có ~4s tư thế suy nghĩ tĩnh hơi dài; ảnh tĩnh giữa nhịp đi bộ
+  đôi khi gượng.
+- **Chưa đăng/upload đâu cả.** Thời gian: ~75 phút.
 
 ### Video #1 — Visual Essay 45s (F2) — DONE 2026-11-15 15:57 +07
 - **File:** `video_production/v001-visual-essay-45s/v001.mp4` — 47,1s,
