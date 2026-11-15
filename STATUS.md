@@ -620,16 +620,17 @@
 
 - Thư mục: "AgentNet Video Studio"
   (https://drive.google.com/drive/folders/1q0gL8euNge458b_ktbGSg_RMfiz3FcC8)
-- `STATUS.md` (bản này) — Drive file id: `1xlYJmXcMkUYTm1W_H0B2Oqnf6MX2IAkU`
-  (upload 2026-11-15 ~18:33 +07 — bản mới nhất, có vòng 2 chỉnh tốc
-  độ MMS; các bản cũ `1gpLAunMiYnQhwknN-QNgmFlBYfrOUXCj` (15:55),
+- `STATUS.md` (bản này) — Drive file id: `1DOow24syLHrfa5iphufUXCJmVSQilVd-`
+  (upload 2026-11-15 ~18:48 +07 — bản mới nhất, có vòng 3 mở rộng
+  menu giọng; các bản cũ `1gpLAunMiYnQhwknN-QNgmFlBYfrOUXCj` (15:55),
   `1lAPg14W9pW43zq6aQCyWEIahxgbI6MKc` (16:06),
   `1bDWx5BH9HUeomr1d9PyIV0_9fIXskNNk` (16:22),
   `1BK-Z-i-dpdvjPTk4Gut92ixHw7DOwUxS` (17:03),
   `1892dptIIhhY5DIkyHEoW9o7iVk5N_XIH` (17:15),
   `13LCpNYKXjKu2WQ6bebXS_4SCiSLtmzdz` (17:38),
-  `1Z6wmJj9G63AGYU7skALHfTyaE5Fodx0k` (17:48) và
-  `13PPFSztw50aqrQxndmon3hiGV_mCgTCX` (18:21) đã lỗi thời, giữ lại làm
+  `1Z6wmJj9G63AGYU7skALHfTyaE5Fodx0k` (17:48),
+  `13PPFSztw50aqrQxndmon3hiGV_mCgTCX` (18:21) và
+  `1xlYJmXcMkUYTm1W_H0B2Oqnf6MX2IAkU` (18:33) đã lỗi thời, giữ lại làm
   bản sao cũ, không xóa theo quy tắc không xóa dữ liệu Drive)
 - `HANDOFF.md` — Drive file id: `16lcqICKbi8ZvurA-T4O4_eXhe6ZoKaZ7`
   (upload 2026-11-15 ~15:55 +07)
