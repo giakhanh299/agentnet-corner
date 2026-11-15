@@ -11,6 +11,77 @@
 
 ## DONE
 
+### Vòng 3 — mở rộng menu giọng (tự động hóa + lâu dài + dùng PC) — DONE 2026-11-15 18:48 +07
+- **Lý do:** chủ dặn (18:33) chọn thêm lựa chọn, ưu tiên tự động hóa
+  được + render dài lâu được, có thể dùng máy của chủ (RTX 5060 Ti,
+  16 GB VRAM).
+- **Vị trí:** `video_production/voice-compare-20261115/voice_compare.md`
+  (435 dòng, 33 KB — Torque kiểm chứng: đủ mục "Vòng 3", bảng menu,
+  mục Gemini/FPT.AI) + 5 script vòng 3. Không có mẫu wav mới vòng
+  này (Edge không ra tiếng; VITS bị chặn trước khi tổng hợp).
+- **Kết quả:**
+  - **Qwen3-TTS — NGÕ CỤT (không cần cài):** README chính thức liệt
+    kê đúng 10 ngôn ngữ (Trung, Anh, Nhật, Hàn, Đức, Pháp, Nga, Bồ,
+    Tây, Ý) — **không có tiếng Việt**. Bản fine-tune cộng đồng
+    `ShiniChien/Qwen3-TTS-12Hz-1.7B-Vietnamese` có (Apache 2.0, 30
+    giọng, fine-tune trên H200) nhưng 0 lượt tải, checkpoint **3,83
+    GB — vượt ngưỡng 3 GB, CHƯA tải**, chờ duyệt.
+  - **Model Việt trên HF — ứng viên số 1: `hynt/F5-TTS-Vietnamese-
+    ViVoice`** (9.569 lượt tải, 60 like, fine-tune 1.000 giờ ViVoice
+    + VLSP 2021–2023, 1,5 tháng trên RTX 3090, tái dùng `.venv-f5`).
+    Checkpoint **5,39 GB — CHƯA tải** (vượt ngưỡng), license
+    **CC-BY-NC-SA-4.0 (phi thương mại) — phải kiểm lại trước khi
+    kiếm tiền**. Các model khác cũng vượt ngưỡng, chưa tải:
+    `multilingual-tts/F5-TTS-OpenBible-Vietnamese` (5,37 GB),
+    `thangquang09/parler-tts-vietnamese-v1-stage2` (3,54 GB). Model
+    duy nhất dưới ngưỡng đã thử: `multilingual-tts/VITS-OpenBible-
+    Vietnamese` (998 MB, CC-BY-SA-4.0, 2 giọng) — **BỊ CHẶN:** Coqui
+    TTS không có wheel Windows (kiểm chứng qua PyPI JSON — mọi
+    phiên bản 0.8.0–0.22.0 chỉ có manylinux); `pip install TTS` đòi
+    biên dịch từ source và cần MSVC 14.0+ (PC không có MSVC Build
+    Tools). Đã tạo `.venv-vits` (Python 3.10 + torch 2.11 cu128) và
+    tải sẵn model về PC để thử sau nếu có Build Tools hoặc chạy
+    Linux. Ưu tiên thấp (42 lượt tải, dữ liệu audiobook Kinh Thánh).
+  - **Edge TTS thử lại — VẪN BỊ BÓP:** 1 lần thử nhanh, plain text
+    (không SSML), cả HoaiMy + NamMinh → `NoAudioReceived`, 0 byte.
+    Dừng sau 1 lần, không cố thêm.
+  - **API (chỉ nghiên cứu, không key/không đăng ký):**
+    - **Gemini TTS (Flash/Lite) — API SỐ 1:** free tier "Free of
+      charge", không cần thẻ; trả phí $0,81/giờ Flash / $0,54/giờ
+      Flash-Lite tới 31/12/2026, tăng gấp đôi từ 01/01/2027. REST
+      `generateContent` + API key, hoàn toàn tự động hóa được.
+      Style bằng `speech_metadata` + thẻ `<short pause>` (không
+      SSML). 30 giọng, giọng nào cũng nói được mọi ngôn ngữ; tiếng
+      Việt được đánh giá cao trên Voice Arena. **Chủ cần: tạo key
+      miễn phí tại aistudio.google.com (2 phút, dùng tài khoản
+      Google sẵn có).**
+    - **FPT.AI TTS v5 — dự phòng Việt số 1:** free 100k ký tự/tháng
+      (~160 video/tháng), sau đó gói từ 500k VND. 9 giọng, 3 vùng
+      miền, 7 tốc độ, từ điển phát âm. REST + API key. **Chủ cần:
+      đăng ký tại console.fpt.ai → tạo project → API key (không
+      cần thẻ).**
+    - **Google Cloud TTS:** free 4M ký tự/tháng Standard/WaveNet +
+      1M Neural2/Chirp 3 HD, SSML đầy đủ, giọng vi-VN — **nhưng bắt
+      buộc billing + thẻ tín dụng ngay cả khi dùng free, vượt hạn
+      mức tự tính tiền.** Chỉ dùng nếu chủ chấp nhận thẻ.
+    - **Vbee:** 700+ giọng, Gen 2 tiếng Việt, SSML, REST API; từ
+      $5,99/tháng, có free-trial nhưng hạn mức free không công bố
+      — trả phí ngay từ đầu.
+- **Xếp hạng đề xuất:** 1) **MMS-TTS (vòng 2) — làm ngay** (local,
+  miễn phí, tự động hóa hoàn toàn, chủ đã ưng giọng). 2) **Gemini
+  TTS free tier** — nâng cấp API đầu tiên (thử 3 câu ngay khi chủ
+  tạo key). 3) **FPT.AI** — dự phòng Việt. 4) **F5-TTS-Vietnamese-
+  ViVoice, 5,39 GB — chờ chủ duyệt tải.** 5) Edge — thử lại thỉnh
+  thoảng. 6) Cloud TTS — chỉ khi chủ chấp nhận thẻ. 7) Vbee /
+  ElevenLabs — cuối cùng.
+- **Cần chủ quyết (chưa tự quyết):** duyệt/không duyệt tải 5,39 GB
+  `hynt/F5-TTS-Vietnamese-ViVoice` (và tùy chọn 3,83 GB Qwen3-Việt
+  sau đó). Không xóa gì trên PC. Đĩa mới: `.venv-vits` 4,2 GB + model
+  VITS 998 MB; ổ C: còn 45,5 GB trống. `.venv-kokoro` 4,7 GB vẫn chờ
+  chủ quyết xóa.
+- **Thời gian:** ~15 phút (18:33–18:48). Menu đã đưa cho chủ chọn
+  trong chat (3 lựa chọn).
+
 ### Vòng 2 — chỉnh tốc độ + ngưng nghỉ MMS-TTS (giữ nguyên giọng) — DONE 2026-11-15 18:33 +07
 - **Lý do:** chủ phán giọng MMS hay, chỉ ngưng nghỉ + tốc độ chưa ok
   (18:28). Không đổi giọng; sửa cách đọc.
