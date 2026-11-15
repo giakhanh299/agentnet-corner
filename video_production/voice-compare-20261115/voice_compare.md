@@ -140,3 +140,99 @@ giết WebSocket) nên chỉ thử được trên PC.
 - Dung lượng mới trên PC: `.venv-f5` 5,5 GB + `.venv-kokoro` 4,8 GB +
   `ffmpeg-shared` 223 MB (+ file zip 85,5 MB). `.venv-kokoro` có thể xoá để
   lấy lại ~4,8 GB vì Kokoro đã xác định không dùng được.
+
+---
+
+# Vòng 2 — chỉnh tốc độ + ngưng nghỉ MMS (2026-11-15, sau phán quyết của người dùng)
+
+**Phán quyết của người dùng (~18:28, sau khi nghe `mms_varied.wav`): giọng MMS
+hiện tại HAY — giữ nguyên giọng, KHÔNG đổi giọng nữa. Chỉ có ngưng nghỉ và tốc
+độ là chưa ok.** Vòng 2 sửa đúng hai thứ đó: chậm tốc độ NÓI TRONG câu + ngưng
+nghỉ ngắn, đặt đúng chỗ. Cùng 3 câu test như vòng 1 (40 từ).
+
+## Phát hiện kỹ thuật: không có `length_scale`, có `speaking_rate`
+
+- transformers 5.23.0, `VitsModel.forward` KHÔNG có tham số `length_scale`
+  (kiểm chứng bằng `inspect.signature`: các tham số là `input_ids,
+  attention_mask, speaker_id, output_attentions, output_hidden_states,
+  return_dict, labels, speaking_rate, kwargs`; `VitsConfig.length_scale`
+  cũng không tồn tại).
+- Thay vào đó có **`speaking_rate`** (mặc định 1.0) — **nhỏ hơn = nói chậm
+  hơn**, đã kiểm chứng bằng probe (câu 1, 15 từ): rate 1.0 → 5,49s / 164
+  từ/phút; rate 0.75 → 6,66s / 135 từ/phút; rate 1.25 → 4,59s / 196
+  từ/phút. Quy đổi tương đương length_scale: 1.2 ≈ speaking_rate 0.83;
+  1.35 ≈ 0.74. **Không cần fallback atempo** (ffmpeg) — `speaking_rate`
+  chạy được, và atempo có thể làm giọng nghe hơi "xử lý" nên không dùng.
+- Không tạo venv mới, không đăng ký, không trả phí. Chạy trong venv
+  ai-stack có sẵn.
+
+## Ngưng nghỉ dùng cho vòng 2 (giống nhau cho mọi biến thể)
+
+Ba con số trong nhiệm vụ được map vào ba điểm dừng thực sự có: **0,3s sau
+hook** (câu 1 → câu 2), **0,4s micro-pause tại dấu phẩy trong câu 2** (câu 2
+tách thành 2 mệnh đề để tổng hợp riêng: "Thủy thủ viết tất cả vào sổ nhật
+ký của tàu," + "gọi là sổ log."), **0,6s trước câu payoff** (câu 2 → câu 3).
+Tổng ngưng nghỉ 1,3s (vòng 1 là 1,4s với 0,6s/0,8s; v002 là 2,4s với 1,2s
+cố định). Biến thể D dùng micro-pause 0,25s tại dấu phẩy thay vì 0,4s.
+
+## Kết quả vòng 2 (đối chiếu vòng 1: `mms_varied.wav` — từng câu 183/194/131
+từ/phút, tổng thể 154, chỉ tính phần nói 170, Whisper 36/40 = 90,0%)
+
+| Biến thể | speaking_rate | Từng câu (từ/phút) | Tổng thể | Chỉ phần nói | Whisper |
+|---|---|---|---|---|---|
+| A `mms_slow12.wav` (17,76s, 568.492 byte) | 0.83 (= length_scale 1.2) | 161 / 132 / 149 | 135 | 146 | **35/40 = 87,5%** |
+| B `mms_slow135.wav` (19,52s, 624.812 byte) | 0.74 (= length_scale 1.35) | 143 / 124 / 129 | 123 | 132 | 34/40 = 85,0% |
+| C `mms_slow09.wav` (16,34s, 522.924 byte) | 0.92 (thêm vào để bracket) | 172 / 148 / 161 | 147 | **160** | 33/40 = 82,5% |
+| D `mms_clause.wav` (15,41s, 493.036 byte) | 1.0 + micro-pause 0,25s (đối chứng) | 180 / 166 / 157 | 156 | 168 | 33/40 = 82,5% |
+
+Tất cả 4 file PCM 16-bit mono 16 kHz, ffprobe đã kiểm chứng trên VPS.
+Whisper: faster-whisper large-v3 trên PC, như vòng 1.
+
+**Đọc số thật:**
+- **Độ đều (chênh lệch tốc độ giữa các câu):** vòng 1 chênh 63 từ/phút
+  (131–194). Vòng 2: B đều nhất (19; 124–143), rồi D (23), C (24), A (29).
+  Tất cả đều đều hơn hẳn vòng 1 — chậm trong câu đã sửa được nhịp "nói nhanh
+  rồi nghỉ dài".
+- **Vùng an toàn 150–165 từ/phút (tính theo phần nói):** chỉ **C (160)** nằm
+  trong vùng. A (146) hơi dưới, B (132) rõ ràng dưới, D (168) hơi trên.
+- **Whisper (chỉ đo đúng chữ):** A tốt nhất vòng 2 (87,5%; thật ~92,5% vì
+  'năm'/'trăm' là lỗi chuẩn hoá số của Whisper, còn lại chỉ sai 'gọi' +
+  'log'×2). B 85,0% (thật ~90%). C và D 82,5% (thật ~87,5%). Chênh lệch nhỏ,
+  không đủ để chọn giọng theo Whisper — **người dùng nghe mới là chuẩn**.
+- **"log" vẫn sai ở mọi biến thể** (nghe thành "lon"/"lo") — lỗi MMS đã biết,
+  chậm tốc độ không sửa được. Chữ trên màn hình vẫn phải gánh cách viết đúng.
+- **"gọi" bị nghe thành "vậy" ở cả 4 biến thể vòng 2** ("Vậy là sổ lon"),
+  trong khi vòng 1 nghe đúng "gọi". Nghi ngờ: tách câu 2 tại dấu phẩy khiến
+  mệnh đề "gọi là sổ log." tổng hợp riêng, mất ngữ cảnh, nên MMS đọc "gọi"
+  khác đi — hoặc chỉ là dao động ngẫu nhiên của model (VITS lấy mẫu
+  duration, mỗi lần chạy tốc độ chênh ~10%: câu 1 ở rate 1.0 đo được 164
+  từ/phút ở probe nhưng 180 ở biến thể D). Ghi lại để lần sau kiểm tra, không
+  kết luận vội.
+- **Câu hook luôn nhanh nhất ở mọi biến thể** (161/143/172/180) — model đọc
+  câu hỏi nhanh hơn câu kể; chỉnh rate không san bằng hoàn toàn được.
+
+## Đề xuất vòng 2
+
+1. **Nghe `mms_slow09.wav` (C) TRƯỚC** — duy nhất nằm trong vùng an toàn
+   (160 từ/phút phần nói), nhịp đều hơn vòng 1 nhiều (148–172 thay vì
+   131–194). Đây là ứng viên chính cho pipeline sản xuất.
+2. **Nghe `mms_slow12.wav` (A) thứ hai** — chậm hơn, thư thả hơn (146
+   từ/phút phần nói), Whisper tốt nhất vòng 2 (87,5%). Nếu người dùng thấy C
+   vẫn hơi nhanh thì A là lựa chọn.
+3. **B (0.74) có lẽ quá chậm** (123 từ/phút tổng thể) — đều nhất nhưng dễ
+   nghe ì. D chứng minh chỉ tách mệnh đề mà không chậm tốc độ thì không sửa
+   được vấn đề (168 từ/phút phần nói, vẫn nhanh).
+4. Nếu cả C và A đều chưa vừa tai, hướng tiếp theo: rate ~0.87–0.88 (giữa A
+   và C) hoặc rate riêng theo câu (hook chậm hơn, beat giữ nguyên) — model
+   cho phép chỉnh từng câu, không cần đổi giọng.
+
+## File vòng 2 trong thư mục này (VPS)
+
+- `mms_slow12.wav`, `mms_slow135.wav`, `mms_slow09.wav`, `mms_clause.wav`
+  — 4 file mẫu (ffprobe đã kiểm chứng, xem bảng trên)
+- `voice_r2_probe.py/.ps1` — probe `length_scale` (kết quả: không hỗ trợ)
+- `voice_r2_probe2.py/.ps1` — probe chiều của `speaking_rate` (nhỏ = chậm)
+- `voice_r2_synth.py/.ps1` — tổng hợp 4 biến thể + kiểm Whisper
+- Trên PC, file nằm ở `C:\Users\w\agentnet-corner\ai-stack\voice_compare\`
+  và log `C:\Users\w\voice_r2_*.log`. Không thêm dung lượng đáng kể trên PC
+  (chỉ 4 file wav, reuse venv ai-stack).

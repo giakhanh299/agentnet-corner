@@ -11,6 +11,51 @@
 
 ## DONE
 
+### Vòng 2 — chỉnh tốc độ + ngưng nghỉ MMS-TTS (giữ nguyên giọng) — DONE 2026-11-15 18:33 +07
+- **Lý do:** chủ phán giọng MMS hay, chỉ ngưng nghỉ + tốc độ chưa ok
+  (18:28). Không đổi giọng; sửa cách đọc.
+- **Phát hiện kỹ thuật:** `length_scale` KHÔNG hỗ trợ trong
+  transformers 5.23.0 (kiểm chứng bằng `inspect.signature(VitsModel.
+  forward)` — tham số có `speaking_rate`, không có `length_scale`).
+  Tương đương là **`speaking_rate`** (mặc định 1.0, thấp hơn = chậm
+  hơn): đo thực tế câu 1 — rate 1.0 → 164 từ/phút, 0.75 → 135,
+  1.25 → 196. Không cần atempo (sẽ nghe máy móc hơn). Tái dùng venv
+  ai-stack trên PC; không venv mới, không đăng ký, không trả tiền.
+- **Ngưng nghỉ mới:** 0,3s sau hook, 0,4s micro-pause ở dấu phẩy
+  trong câu 2 (tách thành 2 mệnh đề), 0,6s trước payoff — tổng 1,3s
+  (vòng 1: 1,4s; v002: 2,4s cố định).
+- **4 mẫu (cùng 3 câu vòng 1, 40 từ; đã copy về VPS, ffprobe kiểm
+  chứng — Torque kiểm lại: slow09 16,34s/522.924 byte, slow12
+  17,76s/568.492 byte, đủ 4 file + mục "Vòng 2" trong
+  `voice_compare.md`):**
+  - **C — `mms_slow09.wav` (rate 0.92): NGHE TRƯỚC — duy nhất nằm
+    trong vùng an toàn 150–165 từ/phút (160, tính riêng phần nói),
+    đều nhất sau B. Whisper 33/40 = 82,5%.**
+  - **A — `mms_slow12.wav` (rate 0.83): NGHE THỨ HAI — chậm/nhẹ
+    nhàng hơn (146 từ/phút phần nói), Whisper tốt nhất vòng 2
+    (35/40 = 87,5%). Nếu C vẫn thấy nhanh thì A là lựa chọn.**
+  - B — `mms_slow135.wav` (rate 0.74): có lẽ quá chậm (123 từ/phút
+    tổng thể). D — `mms_clause.wav` (rate 1.0 + micro-pause 0,25s):
+    chứng minh chỉ đổi vị trí ngưng nghỉ không sửa được tốc độ.
+- **Độ đều đã sửa:** vòng 1 chênh lệch giữa các câu 63 từ/phút
+  (131–194). Vòng 2: B 19, D 23, C 24, A 29 — nhịp nhanh-chậm giật
+  cục đã hết. Chênh lệch Whisper giữa các mẫu nhỏ, không phải căn
+  cứ chọn (thật ~90–92,5% sau khi trừ lỗi chuẩn hóa số "500" của
+  Whisper). "log" vẫn nghe sai thành "lon"/"lo" ở MỌI mẫu — tốc độ
+  không sửa được lỗi MMS "log"→"lô" đã biết; chữ trên hình phải
+  gánh chính tả.
+- **2 lưu ý trung thực:** (1) "gọi" nghe đúng ở vòng 1 nhưng thành
+  "vậy" ở cả 4 mẫu vòng 2 — có thể do tách mệnh đề ở dấu phẩy, hoặc
+  do model ngẫu nhiên (tốc độ từng lần chạy dao động ~10%: câu 1 ở
+  rate 1.0 đo 164 từ/phút lúc probe nhưng 180 ở mẫu D). (2) Câu hook
+  nhanh nhất ở mọi mẫu — model đọc câu hỏi nhanh hơn; chỉnh rate
+  không san phẳng hoàn toàn.
+- **Nếu C và A đều chưa vừa ý:** bước tiếp là rate ở giữa (~0,87–
+  0,88) hoặc rate riêng từng câu (hook chậm hơn, beat bình thường)
+  — model hỗ trợ chỉnh từng câu, không cần đổi giọng.
+- **Thời gian:** ~5 phút (18:28–18:33). 2 mẫu C + A đã gửi cho chủ
+  nghe trong chat.
+
 ### So sánh giọng đọc thay thế MMS-TTS — DONE (báo cáo) 2026-11-15 18:21 +07
 - **Lý do:** chủ nghe v002 và nói giọng đọc chưa ok, ngưng nghỉ chưa
   ok (17:48). Thử 3 giọng khác trên PC với cùng 3 câu (hook + beat +
