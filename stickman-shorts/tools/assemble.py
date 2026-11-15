@@ -6,6 +6,15 @@ Project audio standard (measured from real reference videos):
 voice from ~0.1 s, normalize to -16 LUFS, true peak <= -1 dBTP,
 speech 150-165 wpm. No LaTeX anywhere in this pipeline.
 
+Lessons from v001 (2026-11-15, verified the hard way):
+- Do NOT use the ffmpeg ``subtitles`` filter on an .srt: libass renders
+  the SRT at PlayRes 384x288 and scales it 6.67x onto a 1080x1920 frame,
+  so the text lands invisible / off-frame. Convert the .srt to .ass
+  with PlayResX=1080 / PlayResY=1920 first and use the ``ass`` filter.
+- True-peak limiting: ``alimiter=limit=0.7:level=false`` AFTER loudnorm.
+  ``level=true`` is auto-gain, not true-peak mode — it once boosted a
+  v001 build to -13.16 LUFS.
+
 Usage:
     python tools/assemble.py --video videos/2026-11-15_x/output/raw.mp4 \\
         --voice videos/2026-11-15_x/voice.wav \\
@@ -17,12 +26,63 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import os
+import re
 import subprocess
 import sys
 
 TARGET_LUFS = -16.0
 TRUE_PEAK = -1.5
 LRA = 11
+
+ASS_HEADER = """[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+
+
+def _srt_time_to_ass(t: str) -> str:
+    """00:00:04,800 -> 0:00:04.80 (ASS wants H:MM:SS.cc)."""
+    h, m, rest = t.split(":")
+    s, ms = rest.split(",")
+    return f"{int(h)}:{m}:{s}.{ms[:2]}"
+
+
+def srt_to_ass(srt_path: str) -> str:
+    """Convert an .srt to an .ass next to it (PlayRes 1080x1920).
+
+    Returns the .ass path. Style matches the v001-proven captions
+    (Be Vietnam Pro 56, white + black outline, bottom-centre, 300px up).
+    """
+    with open(srt_path, encoding="utf-8") as f:
+        text = f.read()
+    blocks = re.split(r"\n\s*\n", text.strip())
+    events = []
+    for block in blocks:
+        lines = [ln for ln in block.strip().splitlines() if ln.strip()]
+        if len(lines) < 3:
+            continue
+        m = re.match(r"(\d\d:\d\d:\d\d,\d+)\s*-->\s*(\d\d:\d\d:\d\d,\d+)", lines[1])
+        if not m:
+            continue
+        start, end = _srt_time_to_ass(m.group(1)), _srt_time_to_ass(m.group(2))
+        caption = "\\N".join(lines[2:])
+        events.append(f"Dialogue: 0,{start},{end},Default,,0,0,0,,{caption}")
+    ass_path = os.path.splitext(srt_path)[0] + ".ass"
+    with open(ass_path, "w", encoding="utf-8") as f:
+        f.write(ASS_HEADER)
+        f.write("\n".join(events) + "\n")
+    print(f"converted {srt_path} -> {ass_path} ({len(events)} events)")
+    return ass_path
 
 
 def run(cmd: list[str]) -> None:
@@ -35,8 +95,11 @@ def assemble(video: str, voice: str, out: str, srt: str | None, music: str | Non
     if music:
         inputs += ["-stream_loop", "-1", "-i", music]
 
-    # Voice -> -16 LUFS. Music (if any) sits 0.12 under the voice.
-    filters = [f"[1:a]loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA}:linear=true[voice]"]
+    # Voice -> -16 LUFS, then hard true-peak limit (see module docstring).
+    filters = [
+        f"[1:a]loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA}:linear=true,"
+        f"alimiter=limit=0.7:level=false[voice]"
+    ]
     if music:
         filters.append("[2:a]volume=0.12[bgm]")
         filters.append("[voice][bgm]amix=inputs=2:duration=first:dropout_transition=2[aout]")
@@ -46,13 +109,9 @@ def assemble(video: str, voice: str, out: str, srt: str | None, music: str | Non
 
     vf = []
     if srt:
-        # Burn captions; force the repo font so diacritics render correctly.
-        style = (
-            "FontName=Be Vietnam Pro,FontSize=28,"
-            "PrimaryColour=&HFFFFFF&,OutlineColour=&H000000&,"
-            "BorderStyle=1,Outline=2,Alignment=2,MarginV=140"
-        )
-        vf = ["-vf", f"subtitles='{srt}':force_style='{style}'"]
+        # Burn captions via the ass filter (NOT subtitles — see docstring).
+        ass_path = srt_to_ass(srt)
+        vf = ["-vf", f"ass='{ass_path}'"]
 
     cmd = (
         ["ffmpeg", "-y"]

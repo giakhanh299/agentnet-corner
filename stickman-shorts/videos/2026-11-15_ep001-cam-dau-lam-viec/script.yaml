@@ -1,0 +1,65 @@
+# Ep001 — "Cắm đầu làm việc" (F7: truyện stickman cảm xúc, 50s)
+# Bài học gốc từ FB-05 (cây cầu / đòn bẩy) nhưng kịch bản VIẾT MỚI HOÀN TOÀN:
+# hai người An và Bình, cùng 10 tiếng/ngày, khác nhau ở cách dùng thời gian.
+# Không sao chép câu chữ hay cảnh nào của FB-05.
+title: "Cùng làm 10 tiếng, sao người giàu, người nghèo?"
+slug: ep001-cam-dau-lam-viec
+date: "2026-11-15"
+formula: F7
+duration_target_s: 50
+words: 137
+wpm_target: [150, 165]
+voice: mms-tts-vie (facebook/mms-tts-vie, tong hop tung cau, mien phi)
+audio_standard:
+  lufs: -16
+  true_peak_dbtp: -1.5
+  voice_start_s: 0.1
+
+beats:
+  - id: hook
+    start_s: 0
+    end_s: 3
+    words: 14
+    card_title: "CÙNG LÀM 10 TIẾNG"
+    card_subtitle: "Sao người giàu, người nghèo?"
+    spoken: "Cùng làm mười tiếng mỗi ngày, sao một người giàu, một người vẫn nghèo?"
+    visual: "1 stickman giua khung, bieu cam surprised; card hook tren dau"
+  - id: beat1_an
+    start_s: 3
+    end_s: 15
+    words: 36
+    card_title: "AN ĐỔI GIỜ LẤY TIỀN"
+    card_subtitle: "10 tiếng một ngày, lương theo giờ"
+    spoken: "An làm thuê mười tiếng một ngày. Hết giờ, anh nhận lương theo giờ, về nhà mệt lả, ngủ một giấc, sáng mai lại cày tiếp. Một năm trôi qua, tiền trong túi anh vẫn thế."
+    visual: "An di bo vao tu trai, dong ho (clock_wall) tren cao; bieu cam sad o cuoi beat"
+  - id: beat2_binh
+    start_s: 15
+    end_s: 28
+    words: 41
+    card_title: "BÌNH XÂY CÂY CẦU"
+    card_subtitle: "5 tiếng làm thuê, 5 tiếng học cách khác"
+    spoken: "Bình cũng làm mười tiếng một ngày. Nhưng anh chỉ làm thuê năm tiếng. Năm tiếng còn lại, anh học cách bán hàng, học cách để tiền làm việc. Anh xây một cây cầu. Ai đi qua, anh thu một đồng."
+    visual: "Binh think pose roi point pose; tui tien (money_bag) + chong xu (coin_stack) hien dan"
+  - id: beat3_nam_sau
+    start_s: 28
+    end_s: 42
+    words: 31
+    card_title: "MỘT NĂM SAU"
+    card_subtitle: "Cùng một sức, khác nhau ở cách nghĩ"
+    spoken: "Một năm sau, An vẫn đổi giờ lấy tiền. Bình không bán giờ nữa. Cầu của anh làm việc cả khi anh ngủ. Cùng một sức, khác nhau ở cách nghĩ."
+    visual: "Ca hai dung canh nhau: An (trai, sad) - Binh (phai, happy) + tui tien; An di bo tai cho, Binh dung yen"
+  - id: payoff
+    start_s: 42
+    end_s: 50
+    words: 15
+    card_title: "GIÀU LÀ LÀM KHÁC ĐI"
+    card_subtitle: "Bạn chọn bên nào?"
+    spoken: "Giàu không phải làm nhiều hơn. Giàu là làm khác đi. Bạn chọn bên nào?"
+    visual: "Binh giua khung wave; card payoff + cau hoi ket (end card 2s)"
+
+props_used: [clock_wall, money_bag, coin_stack]
+poses_used: [walk_pose, wave_pose, think_pose, point_pose, POSE_SAD, POSE_HAPPY, POSE_SURPRISED]
+notes:
+  - "Hook kep: chu tren man hinh + loi noi hoi CUNG mot cau trong 3s dau."
+  - "Toc do noi: khong doc nhanh nhu FB-05 goc (246 tu/phut); muc tieu 150-165 tu/phut."
+  - "Khong nhac nen (thu vien nhac chua co); chi giong noi + caption."

@@ -47,6 +47,7 @@ def point_pose() -> PoseAngles:
         elbow_r=0.05,
         shoulder_l=0.15,
         elbow_l=0.4,
+        hip_l=0.12, hip_r=-0.12,  # slight stance
         expression="happy",
     )
 
@@ -70,5 +71,6 @@ def think_pose() -> PoseAngles:
         head_tilt=0.18,
         shoulder_r=0.9,
         elbow_r=1.9,
+        hip_l=0.12, hip_r=-0.12,  # slight stance
         expression="focused",
     )

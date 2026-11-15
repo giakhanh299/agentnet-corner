@@ -50,10 +50,15 @@ def lerp_pose(a: PoseAngles, b: PoseAngles, t: float) -> PoseAngles:
 # ---------------------------------------------------------------- named poses
 POSE_NEUTRAL = PoseAngles()
 
-POSE_HAPPY = PoseAngles(expression="happy")
+POSE_HAPPY = PoseAngles(
+    hip_l=0.12, hip_r=-0.12,  # slight stance: legs must not merge into one line
+    expression="happy",
+)
 
 POSE_SAD = PoseAngles(
-    torso_lean=0.12, head_tilt=0.25, expression="sad",
+    torso_lean=0.12, head_tilt=0.25,
+    hip_l=0.12, hip_r=-0.12,  # slight stance
+    expression="sad",
 )
 
 POSE_THINK = PoseAngles(
@@ -76,8 +81,11 @@ POSE_HANDS_HIPS = PoseAngles(
 )
 
 POSE_SURPRISED = PoseAngles(
-    shoulder_l=1.4, elbow_l=0.3,
+    # Arms asymmetric (both at 1.4 drew as ONE arm); slight leg stance
+    # (straight legs + straight torso drew as one pole).
+    shoulder_l=1.15, elbow_l=0.7,
     shoulder_r=1.4, elbow_r=0.3,
+    hip_l=0.12, hip_r=-0.12,
     expression="surprised",
 )
 
