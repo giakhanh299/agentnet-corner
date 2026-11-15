@@ -157,13 +157,13 @@ def build_girl(pose: PoseAngles) -> VGroup:
 def shoe_prop() -> VGroup:
     """The small shoe: sole + upper, origin at the sole's bottom centre."""
     sole = RoundedRectangle(
-        corner_radius=0.05, width=0.55, height=0.12, color=INK, stroke_width=5,
+        corner_radius=0.05, width=0.70, height=0.14, color=INK, stroke_width=5,
     )
     sole.set_fill(opacity=0)
-    sole.move_to([0, 0.06, 0])
-    upper = Rectangle(width=0.34, height=0.22, color=INK, stroke_width=5)
+    sole.move_to([0, 0.07, 0])
+    upper = Rectangle(width=0.48, height=0.30, color=INK, stroke_width=5)
     upper.set_fill(opacity=0)
-    upper.move_to([-0.06, 0.23, 0])
+    upper.move_to([-0.08, 0.29, 0])
     return VGroup(sole, upper)
 
 
@@ -237,9 +237,9 @@ class StickmanScene(StickmanScene):
             phase = w * walk_phase_for_distance(9.2)
             x = -4.6 + 9.2 * w
             m = Stickman(pose=walk_pose(phase))
-            m.scale(0.8, about_point=np.array([0.0, 0.0, 0.0]))
-            m.place(x, GROUND_Y + (SPEC["UPPER_LEG"] + SPEC["LOWER_LEG"]) * 0.8
-                    + walk_bob(phase) * 0.8)
+            m.scale(0.7, about_point=np.array([0.0, 0.0, 0.0]))
+            m.place(x, GROUND_Y + (SPEC["UPPER_LEG"] + SPEC["LOWER_LEG"]) * 0.7
+                    + walk_bob(phase) * 0.7)
             return m
 
         walker = always_redraw(build_walker)
@@ -251,6 +251,9 @@ class StickmanScene(StickmanScene):
         self.t_now += 0.5
         self.wait_until(5.0)
         self.add(walker)
+        # Walker passes BEHIND Tu and the stall (smaller = background depth),
+        # so he never tangles with Tu when crossing his x position.
+        self.bring_to_front(tu_sad, stall)
         self.play(walk_t.animate.set_value(1.0), run_time=8.0, rate_func=linear)
         self.t_now += 8.0
         self.remove(walker)
@@ -261,7 +264,7 @@ class StickmanScene(StickmanScene):
         shoe_hand = shoe_prop()
         shoe_hand.move_to([0.15, -0.31, 0])  # at his right hand, chest height
         shoe_stall = shoe_prop()
-        shoe_stall.move_to([TU_X, STALL_TOP + 0.14, 0])
+        shoe_stall.move_to([TU_X, STALL_TOP + 0.22, 0])
         rub = ValueTracker(0.0)
 
         def build_tu_polish():

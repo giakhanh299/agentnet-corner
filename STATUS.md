@@ -11,6 +11,59 @@
 
 ## DONE
 
+### Video #5 (v005) — "Top 5 câu nói huyền thoại của mẹ" Countdown 45s (F3, H02 #69) — DONE + QC-passed 2026-11-15 21:03 +07
+- **File:** `video_production/v005-countdown-45s/v005.mp4` — **49,97s,
+  1080x1920, 30fps, H.264 + AAC 192k, 14.072.099 byte, sha256
+  `0c967c677b23…`** — **-16,42 LUFS** (mục tiêu ~-16), true peak
+  **-2,55 dBTP**, LRA 3,70, giọng vào **0,00s**, **155 từ/phút** (chỉ
+  phần nói, trong vùng 150–165; tổng thể 143 do pause đếm ngược có
+  chủ đích — gốc H02 cũng ~114 tổng thể). **Torque kiểm chứng:**
+  ffprobe + sha khớp; xem frame 1s (tiêu đề lớn rõ, dấu đúng, #3 mở
+  sẵn, các hàng ẩn "• • •", caption rõ) và 49,5s (end card "SỐ 1 CỦA
+  BẠN LÀ CÂU NÀO?" + "Bình luận nhé!" + quote #1 đầy đủ, không cắt).
+- **Giọng:** MMS-TTS trên PC (speaking_rate 0.92), Whisper large-v3
+  **102/119 = 85,7%**. Run 1 (47,92s, 163 wpm, 89,1%) bị loại vì câu
+  #1 cảm xúc chạy 190 wpm; **run 2 dùng** (n1a chậm lại rate 0.80 →
+  170 wpm, 49,95s, 155 wpm). File run 1 đã bị ghi đè trên PC, không
+  khôi phục được; run 2 là bản chính.
+- **Probe từ:** "phăng phắc" nghe thành "phan phát" — GIỮ (phương án
+  thay thế tệ hơn: "im re"→"Inge", "nín thinh"→"nứng thiên"); chính
+  tả đúng nhờ thẻ danh sách + caption (tiền lệ "log" ở v002). "Tao"
+  đúng 100% — giữ. "trĩu" nghe thành "triếu" — ĐỔI thành "nặng nề"
+  theo kịch bản (caption dùng "nặng nề"). "Top" nghe thành "Tốc"
+  (giới hạn từ mượn của MMS; tiêu đề + caption gánh chính tả).
+- **Hình:** 5 ảnh dùng, toàn CC0/CC BY (nguồn đầy đủ trong
+  `images/sources.txt`): #5 bàn ăn (Kazz.0, CC BY), #4 người một mình
+  trong phòng tối (goblinbox_, CC BY), #3 mẹ + bé nấu ăn (Direct
+  Media, CC0), #2 bé trai bên cửa sổ (inclusivesecurity, CC BY), #1
+  ảnh gia đình (Family Moments, CC0). 9 ảnh khác bị loại có lý do.
+  Toàn 1024px, trừ n2a 679px dọc — crop + upscale ~1,6x, hơi mờ.
+- **Nhạc + SFX:** bgm_comedy vol 0.12 (đo được: pause-window -41,6
+  dB so với giọng -57,1 dB) + whoosh/pop 0,1s, pop mỗi lần reveal
+  (3,48/11,32/19,64/28,50/37,68s), riser 34,60–37,68s vào #1 (đo
+  được: -29,2 dB so với giọng -94,6 dB ở cửa sổ không giọng),
+  **victory NHẸ ở #1** (cắt 1,5s, vol 0,35 — #1 là cảm xúc, không
+  phải trò đùa), laugh sau punchline #4, ding ở CTA. **Laugh ở #2
+  BỎ** — sẽ đụng riser + reveal #1; bảo vệ cú lật cảm xúc quan
+  trọng hơn. Mix `amix duration=longest`; loudnorm 2-pass +
+  `alimiter=limit=0.7:level=false`. Lưu ý: `aresample=48000:ocl=
+  stereo` không hỗ trợ trên ffmpeg build này — đã bỏ; amix tự xử
+  input mono/stereo lẫn nhau.
+- **QC frame (đã xem: 1/5/13/21/30/39/46,5/49,5s):** reveal đúng
+  thứ tự, ảnh + caption khớp; 39s: #1 huy hiệu vàng + highlight hổ
+  phách, quote đầy đủ 1 dòng. Nhỏ: caption (MarginV 300) sát hàng
+  #5 (vd 39s) — vẫn đọc được, không che chữ; lần sau nâng MarginV
+  lên ~360. Caption "luận nhé!" trùng chữ end card ở 2s cuối (lỗi
+  nhỏ đã có ở v002).
+- **Giới hạn trung thực:** chưa ai nghe thật (chỉ Whisper 85,7%) —
+  chủ nên nghe 1 lần trước khi đăng, nhất là "phăng phắc" ("phan
+  phát"), "Top" ("Tốc"), và câu #1 cảm xúc. SFX không đo riêng từng
+  cái được (trùng giọng theo thiết kế); chỉ BGM + riser đo bằng cửa
+  sổ năng lượng, còn lại kiểm bằng cấu trúc filter. Ảnh 1024px hơi
+  mờ khi crop 9:16 (n2a tệ nhất); ảnh n4 tối. **CHƯA đăng.** Đã gửi
+  cho chủ xem trong chat. Video đầu tiên trong lô 3 hoàn thành —
+  v003 + v004 vẫn đang làm.
+
 ### Vòng 3 — mở rộng menu giọng (tự động hóa + lâu dài + dùng PC) — DONE 2026-11-15 18:48 +07
 - **Lý do:** chủ dặn (18:33) chọn thêm lựa chọn, ưu tiên tự động hóa
   được + render dài lâu được, có thể dùng máy của chủ (RTX 5060 Ti,

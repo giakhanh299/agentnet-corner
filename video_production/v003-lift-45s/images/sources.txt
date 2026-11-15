@@ -1,0 +1,43 @@
+# Nguồn ảnh + âm thanh — V003 "Cáp thang máy đứt ở tầng 85"
+# Tất cả ảnh CC0 (Openverse/Wikimedia/Flickr). Không dùng lại frame nào
+# của video gốc #77. Stickman beat 3 là render Manim từ rig của mình.
+
+## Ảnh (dùng)
+- hook (0-5,5s): images/r2_beat2_1.jpg — "Central Elevator Shaft
+  (32155878585).jpg", CC0, neil.dalphin, Wikimedia Commons
+  https://upload.wikimedia.org/wikipedia/commons/b/b7/Central_Elevator_Shaft_%2832155878585%29.jpg
+  Landing: https://commons.wikimedia.org/w/index.php?curid=61383149
+- beat1 (5,5-14,1s): images/r2_beat1_2.jpg — "Looking inside to elevator
+  (Unsplash)", CC0, Tomasz Rynkiewicz thmsr, Wikimedia Commons
+  https://upload.wikimedia.org/wikipedia/commons/e/e8/Looking_inside_to_elevator_%28Unsplash%29.jpg
+  Landing: https://commons.wikimedia.org/w/index.php?curid=62135309
+- beat2 (14,1-26,9s): images/r2_beat2_2.jpg — "Central elevator shaft
+  (31345516363).jpg", CC0, neil.dalphin, Wikimedia Commons
+  https://upload.wikimedia.org/wikipedia/commons/c/cd/Central_elevator_shaft_%2831345516363%29.jpg
+  Landing: https://commons.wikimedia.org/w/index.php?curid=61383147
+- payoff (41,9-50,1s): images/payoff_building_3.jpg — "WTC Towers looking
+  up very beautiful", CC0, DanielC743, Flickr
+  https://live.staticflickr.com/65535/47945309328_bbfb737c78_b.jpg
+  Landing: https://www.flickr.com/photos/155508014@N03/47945309328
+- beat3 (26,9-41,9s): beat3_stickman.mp4 — render Manim từ rig stickman
+  của repo (v003_beat3.py), nền #F6F5F0, không dùng tài sản của ai khác.
+
+## Ảnh (tải về nhưng LOẠI — ghi lý do như v002)
+- hook_elevator_1.jpg — Woolwich Foot Tunnel (hầm đi bộ, không phải thang máy).
+- hook_elevator_2/3/4.jpg — thợ mỏ rời khỏi hầm mỏ (ảnh lịch sử, không phải thang máy hiện đại).
+- beat1_interior_1/2/3/4.jpg — bản vẽ kiến trúc "elevation" (tường nhà), Openverse
+  nhầm "elevator" với "elevation" — không phải ảnh thang máy.
+- beat2_machinery_1.jpg — hoàng hôn + cột điện (không liên quan).
+- beat2_machinery_2.jpg — mẫu cây Pavetta rigida (Wikimedia trả sai).
+- beat2_machinery_3.png — sơ đồ thang máy vũ trụ (diagram, không phải ảnh thật).
+- beat2_machinery_4.jpg — chân dung Henry M. Brinckerhoff (không liên quan).
+- r2_beat1_1.jpg — "Space inside the elevator": mờ, không rõ là thang máy.
+- payoff_building_1.jpg — Bank of China Tower (dùng được nhưng payoff_3 kịch tính hơn).
+- payoff_building_2.jpg — phố Toronto (không đủ kịch tính cho end card).
+- payoff_building_4.jpg — cành cây mờ (không dùng được).
+
+## Âm thanh (Core_SFX, toàn CC0 1.0)
+- Nhạc nền: music/bgm_suspense.ogg (86,31s, CC0)
+- SFX: sfx/whoosh.ogg (0,448s), sfx/pop.ogg (0,341s), sfx/ding.ogg (0,524s),
+  sfx/camera_click.ogg (0,295s), sfx/boom.ogg (2,5s) — toàn CC0.
+- Giọng: MMS-TTS facebook/mms-tts-vie (Meta), tổng hợp trên PC, speaking_rate 0.92.
