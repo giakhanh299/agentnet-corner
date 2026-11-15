@@ -41,7 +41,7 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   (dùng `gh auth login --with-token`, token qua stdin, KHÔNG ghi vào file/URL/log).
   Push HTTPS qua `gh` làm credential helper.
 
-## 3. Trạng thái hiện tại (15/11/2026 ~01:55)
+## 3. Trạng thái hiện tại (15/11/2026 ~09:42)
 
 ### Hàng đợi nghiên cứu (API 8110)
 - `ac56d158` research 100 ứng viên — SUBMITTED (outcome `completed`, KHÔNG duyệt
@@ -53,28 +53,43 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   illogical creative 1. Chỉ 22 video biết độ dài; 58 biết kênh.
 - `aa5f7d18` engineer pipeline phân tích video — APPROVED (outcome `ok`).
 - `a1d31407` + `ef4e0b2c` verify — SUBMITTED, verified_with_findings.
-- `5246f45f` research chọn 30 video phân tích sâu — **QUEUED, Research chưa nhận lại**
-  (đã nhận 1 lần ~00:31 rồi hết lease 15 phút không nộp; Research online,
-  last_seen 01:24, nhưng không claim lại). Đây là điểm tắc cần xử lý (mục 7).
+- `5246f45f` research chọn 30 video phân tích sâu — SUBMITTED, outcome `BLOCKED`
+  (yt-dlp 403, lease 15 phút không đủ xem 30 video, 0 video được xem). Đừng duyệt.
+- **Chọn 30 video (FINALIZED, 95/100):** engineer `f07e0ce6` SUBMITTED (ok) và
+  verify `f364bd47` SUBMITTED (verified_with_findings, 6/6 điểm kiểm tra PASS) —
+  nhưng cả hai đều **ĐÃ BỊ THAY THẾ**, không duyệt nữa (xem bên dưới).
+- **FB-05 ĐƯỢC ĐƯA VÀO 30 (quyết định của chủ 15/11 ~09:34, "Duyệt + FB-05 thay
+  #32"):** FB-05 (85 điểm, stickman mindset, hook đã xác minh từ frame thật) vào
+  30 với mã C04, thay #32 (67 điểm, xuống dự bị R4). Điểm trung bình mới 69,67;
+  5 video đạt 85+ (#77 90, #50 89, #81 87, #80 87, FB-05 85). Dự bị mới:
+  R1 #42, R2 #65, R3 #79, R4 #32, R5 #76, R6 #71, R7 #85, R8 #29, R9 #57,
+  R10 #60. File: `docs/selection-30-20261115.md` + `.csv` (commit 2060ecf).
+  Brief kiểm chứng: `docs/verify-f364bd47-brief-20261115.md`.
+- **Task đang chờ:** engineer `b4413e82` SUBMITTED (outcome `ok`, bản có FB-05);
+  verify `ce4f147d` QUEUED. Khi Verify nộp xong → chủ duyệt **b4413e82**
+  (KHÔNG duyệt f07e0ce6, KHÔNG duyệt 86debefd — cả hai đều đã bị thay thế).
+  **Không tự duyệt công việc do controller làm Engineer** — phải qua Verify trước.
 
 ### Tải video (VPS này, Engineer)
-- Đợt 1 xong: **81/100 OK, 19 lỗi**. 81 file trong `video_downloads/candidates/`
-  (439 MB). 19 lỗi: 18 YouTube "Sign in to confirm you're not a bot" + 1 TikTok
-  "Your IP address is blocked". Log: `video_downloads/download_log.jsonl`.
-- Đang chạy lại 19 lỗi: `retry_failed.py` (pid 5845, log `video_downloads/retry_run.log`)
-  — thử lại theo thứ tự android → ios → tv_embedded, nghỉ giữa các lần.
-  TikTok lỗi IP vẫn fail; sẽ xử lý bằng TikHub (mục 5).
+- Đã xong: **95/100 video đã tải + phân tích** (92 .mp4 + 3 .webm chuyển sang .mp4
+  bằng ffmpeg: #37, #77, #82). Chỉ 5 video chưa bao giờ tải được: #6, #21, #38,
+  #75 (TikTok @zakszalai, IP bị chặn; TikHub cũng trả về rỗng), #94.
+  File trong `video_downloads/candidates/` (không đẩy lên git, đã lên Drive).
 - Test đã chứng minh: YouTube client mặc định bị chặn bot, `--extractor-args
   "youtube:player_client=android"` vượt được (format 18); TikTok tải được bằng
   yt-dlp thường sau vài lần thử.
 
 ### Phân tích video (VPS này, Engineer)
-- Đang chạy: `batch_analyze.py` (pid 5934, log `video_analysis/batch_run.log`) —
-  chạy `analyze_video.py` cho từng .mp4: ffprobe, keyframes theo scene, tách 30s
-  audio mono 16kHz, ghi `timeline.md` + `summary.json` vào `video_analysis/<tên>/`,
-  gom index vào `video_analysis/index.jsonl`.
-- Chưa có ASR/OCR/OpenCV. Transcript: dùng Groq Whisper Large-v3-turbo miễn phí
-  (tiếng Việt tốt nhất) hoặc Subtitle Edit/Whisper.cpp offline (xem docs Gemini).
+- Đã xong: **95/100 video đã phân tích** vào `video_analysis/<tên>/` (summary.json
+  + timeline.md + keyframes + 30s audio.wav; FB-05 có thư mục riêng, tổng 96 thư mục).
+  Index: `video_analysis/index.jsonl`.
+- **Whisper.cpp ĐÃ CÀI (15/11 ~09:02):** `whisper.cpp/build/bin/whisper-cli`,
+  model ggml-base.bin (141 MiB) — chạy ~1x real-time, `-l auto` tự nhận ngôn ngữ
+  (đã test #77: tiếng Urdu, khớp frame). Model Tiny tệ hơn, chỉ dùng dự phòng.
+- **Đang chạy: transcribe toàn bộ 96 file audio** (`transcribe_all.sh`, từ 09:32,
+  ~45 phút, log `transcribe_all.log`, transcript.txt lưu vào từng thư mục
+  video_analysis/). Xong thì phân tích sâu mới đánh giá được hook bằng lời nói
+  + audio thật (điểm hiện tại mới dựa trên 4 frame/video).
 
 ### AI bên ngoài (Gemini + ChatGPT, qua browser)
 - **Gemini** (GCM Cong ty, giakhanhgcm@gmail.com, Pro, mode Argon): đã trả lời 5 câu
@@ -90,19 +105,25 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   Link Facebook /share/p/ là "opaque share link" — không web nào tự giải được;
   phải mở bằng trình duyệt đã đăng nhập FB, lấy link canonical (watch/?v=… hoặc
   reel/…) rồi mới tải được.
-- **ChatGPT**: đã đăng nhập, đang trả lời 5 câu (task browser đang chạy, chủ cầm
-  cửa sổ). Khi có kết quả: lưu câu trả lời + phương pháp vào VPS như đã làm với
-  Gemini. Câu hỏi tiếp (làm gì tiếp + web tải video) CHƯA gửi được cho ChatGPT vì
-  chủ đang cầm cửa sổ — gửi lại khi chủ trả quyền.
+- **ChatGPT** (Plus): đã trả lời 5 câu + câu hỏi tiếp (kế hoạch 2 tuần + web tải
+  video). Đã lưu: `docs/chatgpt-answers-20261115.md` và
+  `docs/chatgpt-followup-20261115.md`. Kế hoạch 2 tuần: tuần 1 (16–22/11) chuẩn hoá
+  100 → chọn 30 + 10 dự bị → tải → phân tích sâu 6 lớp/video 19–21/11 → tổng hợp
+  5–8 công thức 22/11; tuần 2 (23–29/11) viết 5 kịch bản 23/11 → làm thử 5 video
+  25–26/11 → đăng thử 27–29/11 lúc 11:30/20:00. **Sora ĐÃ NGỪNG** (web/app
+  26/4/2026, API 24/9/2026) — không dùng Sora; tạo video bằng Google Flow/Veo,
+  Kling, hoặc Wan 2.2 local trên máy chủ (RTX 5060 Ti 16GB).
 - **Facebook**: 4 link share → 3 bài duy nhất trên tài khoản gikhah.99 + 1 Reel
-  1669933094108812. fsave.net lỗi cả 4 link share, chỉ tải được Reel (12,1 MB,
-  720x1280, "Tâm sự người que", 2:21, stickman mindset). `facebook-cli` chưa nối.
-  Task browser xem FB vẫn chờ đăng nhập Facebook. Đây là link công khai do chủ
-  gửi để nghiên cứu, KHÔNG phải dữ liệu fanpage cũ.
+  1669933094108812 (FB-05, đã tải + phân tích, giờ là C04 trong 30).
+  `facebook-cli` chưa nối; Apify bị chặn từ VPS (3 token đều timeout khi gọi có
+  xác thực). 4 bài share vẫn chưa đọc được — chờ chủ nối Facebook hoặc gửi link
+  video trực tiếp (reel/ hoặc watch/?v=). Đây là link công khai do chủ gửi để
+  nghiên cứu, KHÔNG phải dữ liệu fanpage cũ.
 
 ### GitHub
-- Commit `55f5a8a` "Add video pipeline..." đã push thành công lên main
-  (video-pipeline/: README.md, analyze_video.py, download_candidates.py).
+- Commit hiện tại `2060ecf` (bản chọn 30 có FB-05). Lịch sử: e77ce03 → 55f5a8a →
+  b1eb6c1 → e80c2c2 → 9ee194d → 90ea77b → f5e5dfb → e42cd83 → f7b9c5c →
+  df75479 → 2060ecf.
 - Token PAT fine-grained ĐẦU TIÊN chỉ có quyền đọc (push 403, tạo blob 403) —
   đã thay bằng token mới có quyền ghi. `gh` đang đăng nhập.
 - **Quy tắc mới (chủ dặn 01:52): đẩy git mỗi 30 phút; file nặng lên Google Drive,
@@ -110,6 +131,11 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   `~/workspace/agentnet-corner/auto_push.sh` (chỉ add các đường dẫn an toàn:
   video-pipeline/, docs/, HANDOFF.md, README — không bao giờ add file media,
   token, .env, credentials).
+- **Kho công cụ (15/11 ~09:02):** `docs/codexreply.md` — kiểm kê 18 script + 8
+  phần mềm + 9 dịch vụ/tài khoản + 7 vị trí dữ liệu trên VPS này, và nghiên cứu
+  công cụ mới (máy chủ RTX 5060 Ti 16GB: driver ≥572.60, CUDA ≥12.8, PyTorch
+  ≥2.7.0 cu128; stickman: Pivot Animator, Manim+Remotion; AI video: Flow/Veo 3.1,
+  Kling, Wan 2.2). **Repo stickman CHƯA CÓ** — đây là khoảng trống lớn nhất.
 
 ## 4. Cách làm (phương pháp đã kiểm chứng)
 
@@ -130,7 +156,9 @@ python3 analyze_video.py <video.mp4> <out_dir>   # timeline.md + summary.json + 
 python3 batch_analyze.py                          # chạy hàng loạt cho candidates/
 ```
 - Keyframes: ffprobe lavfi `select=gt(scene,0.4)`. Audio: 30s mono 16kHz.
-- Hook 3s đầu đánh giá từ frame ở 0/1/2s (chưa có ASR nên không có transcript).
+- Transcript (ASR): **Whisper.cpp đã cài** — model Base, chạy ~1x real-time:
+  `cd whisper.cpp && ./build/bin/whisper-cli -m models/ggml-base.bin -f <audio.wav> -l auto --output-txt --output-file <out>`. Chạy hàng loạt: `transcribe_all.sh` (log `transcribe_all.log`). Ghi lại ngôn ngữ nói của từng video (transcript sẽ cho biết).
+- Hook 3s đầu đánh giá từ frame ở 0/1/2s + transcript (lời nói) + audio.
 
 ### Quy trình hàng đợi (V1.2)
 - Chỉ Chief (controller) tạo task: POST /tasks với project=research,
@@ -184,22 +212,27 @@ File: `~/workspace/user/files/FB_API_tokens_20261115_014934.json`
 
 ## 7. Việc tiếp theo (theo thứ tự)
 
-1. Chờ `retry_failed.py` + `batch_analyze.py` chạy xong; kiểm tra log, đếm OK/FAIL.
-2. Sửa lỗi TikHub (xem traceback đầy đủ) → tải video TikTok còn thiếu bằng TikHub.
-3. Dùng Apify lấy 3 bài FB + Reel → tải video về `video_downloads/facebook/`,
-   phân tích bằng `analyze_video.py` như video khác.
-4. Xử lý task `5246f45f` đang QUEUED: nếu Research vẫn không nhận, làm phân tích
-   30 video bằng Engineer (video đã tải + keyframes/audio/transcript) rồi đăng
-   task engineer mới để nộp kết quả chọn 30, sau đó đăng task verification
-   (kèm result trong instruction). Task research cũ cứ để QUEUED — nếu Research
-   nộp sau thì có thêm góc nhìn đối chứng.
-5. Khi có kết quả ChatGPT: lưu câu trả lời + phương pháp vào VPS (file
-   `chatgpt-answers-20261115.md`), hỏi tiếp 2 câu (làm gì tiếp + web tải video).
-6. Transcript cho 30 video đã chọn: Groq Whisper Large-v3-turbo (ưu tiên, miễn phí,
-   tiếng Việt tốt nhất) hoặc Subtitle Edit offline.
-7. Tổng hợp ngày 7: ngân hàng 30 công thức hook, khung kịch bản theo mốc 5 giây,
-   3 template trống (Tò mò/Bất ngờ/Cảm xúc), thư mục Core_SFX. Sáng ngày 8 mới
-   sang tuần 2 viết 7 kịch bản đầu.
+1. **Đợi Verify nộp `ce4f147d`** → chủ duyệt engineer `b4413e82` (bản có FB-05).
+   KHÔNG duyệt f07e0ce6 / 86debefd (đã bị thay thế).
+2. **Đợi `transcribe_all.sh` chạy xong** (~45 phút, log `transcribe_all.log`);
+   kiểm tra số transcript.txt = 96, có file nào FAIL thì chạy lại lẻ.
+3. **Phân tích sâu 30 video** (Engineer, VPS này): bắt đầu từ 5 video 85+
+   (#77, #50, #81, #80, FB-05), mỗi video 6 lớp — hook, pacing, audio, cấu trúc
+   câu chuyện, cách làm lại faceless, chi phí sản xuất. Dùng transcript để đánh
+   giá hook bằng lời nói + audio thật và xác nhận/sửa lại điểm (Verify yêu cầu).
+   Tách quan sát khỏi suy luận trong báo cáo. Nộp kết quả bằng task engineer mới
+   + task verification (kèm result trong instruction).
+4. **Tổng hợp 5–8 công thức** + Production Framework (30 công thức hook, khung
+   kịch bản theo mốc 5 giây, 3 template trống Tò mò/Bất ngờ/Cảm xúc, thư mục
+   Core_SFX). Cổng tuần 2: ≥24 bản phân tích đầy đủ, ≥5 công thức có ví dụ,
+   3 format ưu tiên.
+5. **Tuần 2 (23–29/11):** viết 5 kịch bản gốc 23/11 → làm thử 5 video 25–26/11
+   (Flow/Veo, Kling, hoặc Wan 2.2 local trên máy chủ) → đăng thử 27–29/11 lúc
+   11:30/20:00. Kênh YouTube 2–3 kênh (Tò mò / Bất ngờ / Cảm xúc) CHỈ tạo khi chủ
+   chốt tên + chủ đề.
+6. **Kho stickman:** repo chưa có — xây rig Manim/Remotion (xem `docs/codexreply.md`).
+7. **4 bài Facebook share** vẫn chưa đọc được: chờ chủ nối Facebook hoặc gửi link
+   video trực tiếp; Apify bị chặn từ VPS, TikHub chỉ dùng cho TikTok.
 8. Duy trì: cron đẩy git mỗi 30 phút; file nặng lên Google Drive (thư mục
    "AgentNet Video Studio"); cập nhật file HANDOFF này mỗi khi trạng thái đổi.
 
