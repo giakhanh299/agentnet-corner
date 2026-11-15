@@ -2,8 +2,9 @@
 
 > Tài liệu này để một Muse khác (hoặc chính Torque sau này) đọc là tiếp tục được
 > công việc, không cần hỏi lại chủ. Cập nhật file này mỗi khi trạng thái đổi.
-> Cập nhật lần cuối: 15/11/2026 ~01:55 +07 (Asia/Bangkok).
+> Cập nhật lần cuối: 15/11/2026 ~15:55 +07 (Asia/Bangkok).
 > KHÔNG BAO GIỜ ghi token, mật khẩu, PAT hay khóa bí mật vào file này (repo công khai).
+> Trạng thái từng tính năng (đúng/sai) xem `STATUS.md` — file đó mới nhất.
 
 ## 1. Nhiệm vụ
 
@@ -42,6 +43,17 @@ kịch bản và thử sản xuất khi có đủ công cụ/ngân sách.
   Push HTTPS qua `gh` làm credential helper.
 
 ## 3. Trạng thái hiện tại (15/11/2026 ~09:42)
+
+> **Cập nhật 15/11 ~15:55 (đọc phần này trước, thay cho các dòng cũ bên dưới):**
+> Verify `ce4f147d` đã SUBMITTED, outcome `verified_with_findings` (không còn
+> QUEUED) — `b4413e82` đang chờ chủ duyệt. Transcription DONE 96/96 (10:05).
+> Phân tích sâu DONE 30/30 (12:30, trung bình 69,4; 4 video 85+). SRT DONE
+> 30/30 (15:01). Production Framework DONE (14:41). Gateway auto-start DONE
+> (12:45, sống qua 2 lần reboot). **Repo stickman ĐÃ CÓ** — Manim, commit
+> `58b70a2` (15:45), demo 5s render thành công 1080x1920 30fps. HEAD hiện tại
+> `58b70a2`. Đang chạy: video #1 Visual Essay (từ 14:53), Ep001 stickman
+> (từ ~15:46), test render trên PC qua SSH (từ ~15:46). Chi tiết + lỗi xem
+> `STATUS.md`.
 
 ### Hàng đợi nghiên cứu (API 8110)
 - `ac56d158` research 100 ứng viên — SUBMITTED (outcome `completed`, KHÔNG duyệt
@@ -230,7 +242,8 @@ File: `~/workspace/user/files/FB_API_tokens_20261115_014934.json`
    (Flow/Veo, Kling, hoặc Wan 2.2 local trên máy chủ) → đăng thử 27–29/11 lúc
    11:30/20:00. Kênh YouTube 2–3 kênh (Tò mò / Bất ngờ / Cảm xúc) CHỈ tạo khi chủ
    chốt tên + chủ đề.
-6. **Kho stickman:** repo chưa có — xây rig Manim/Remotion (xem `docs/codexreply.md`).
+6. **Kho stickman:** ĐÃ CÓ — `stickman-shorts/` (Manim, commit `58b70a2`,
+   demo 5s đã render thành công). Tập thật đầu tiên (Ep001) đang làm.
 7. **4 bài Facebook share** vẫn chưa đọc được: chờ chủ nối Facebook hoặc gửi link
    video trực tiếp; Apify bị chặn từ VPS, TikHub chỉ dùng cho TikTok.
 8. Duy trì: cron đẩy git mỗi 30 phút; file nặng lên Google Drive (thư mục
@@ -249,6 +262,100 @@ File: `~/workspace/user/files/FB_API_tokens_20261115_014934.json`
   Visual Essay, dễ làm + viral nhất; (2) Bất ngờ — plot twist; (3) Cảm xúc —
   stickman/mindset (kiểu Reel "Tâm sự người que").
 - Google Drive chưa nối (cần chủ bấm link kết nối) — file nặng đang chờ upload.
+
+## 10. Takeover — VPS thay thế / Muse thay thế (chủ dặn 15/11 ~15:49)
+
+VPS này có thể tắt đột ngột và bị thay bằng VM mới (đã xảy ra 3 lần trong
+ngày 15/11: ~11:10, ~12:50, ~14:50 — `/etc` và tiến trình đang chạy đều mất,
+chỉ thư mục home + git + Drive còn). Muse mới trên VPS mới làm theo thứ tự:
+
+1. **Đọc trước:** `STATUS.md` (mới nhất — việc nào đang chạy, việc nào lỗi)
+   rồi `HANDOFF.md` này. Không bắt đầu việc mới khi chưa biết việc cũ dừng ở đâu.
+2. **Lấy code:** `git clone https://github.com/giakhanh299/agentnet-corner`
+   vào `~/workspace/agentnet-corner-github`; thư mục làm việc
+   `~/workspace/agentnet-corner` (copy/symlink theo thói quen cũ). File nặng
+   (video/audio/frame) KHÔNG có trong git — lấy lại từ Google Drive thư mục
+   "AgentNet Video Studio" (`1q0gL8euNge458b_ktbGSg_RMfiz3FcC8`) nếu cần.
+3. **Tailscale:** nối lại vào tailnet (cần chủ cấp quyền/xác thực — đây là
+   việc duy nhất cần chủ). Kiểm tra: `tailscale status` phải thấy `giakhanh`
+   100.67.236.124. Registry chỉ đi qua tunnel proxy port 3130 (host lấy từ
+   biến HTTPS_PROXY, đổi port 3128 → 3130; KHÔNG in/log URL proxy hay
+   credential). Egress proxy công khai không tới được tailnet.
+4. **AgentNet — GIỮ identity, KHÔNG đăng ký node mới:**
+   `~/.agentnet-corner/identity.json` (0600, node `1a74385032d8652dc2e1b2ba`,
+   role controller) phải được khôi phục nếu còn (nó nằm ngoài git; nếu mất
+   hoàn toàn thì báo chủ — đăng ký node mới cần chủ duyệt). Sau đó chạy lại
+   `join.py` để lấy `connection.json` mới:
+   `python3 join.py controller --master http://100.67.236.124:8110`
+   — script tự từ chối nếu `project != research` hoặc `mode != research-only`.
+   Kiểm tra hàng đợi: `python3 queue_status.py` (đọc token từ
+   connection.json lúc chạy, không in token).
+5. **Gateway:** `cd media_gateway && ./scripts/deploy.sh start` (tự tạo venv,
+   cài requirements, chạy uvicorn 127.0.0.1:8901). Kiểm tra:
+   `curl http://127.0.0.1:8901/health` phải trả `{"status":"ok",...}`.
+   Cron watchdog 10 phút tự tái tạo unit systemd nếu `/etc` bị xóa — xem
+   `media_gateway/HANDOVER.md` §12. **`.env` (0600) không có trong git:**
+   nếu mất, tạo lại từ `.env.example` + tạo key agent mới
+   (`python3 scripts/gen_api_key.py <tên>`); key provider lấy từ bản sao
+   trên Drive (nếu chủ đã lưu) hoặc đăng ký lại — cần chủ.
+6. **Cron (sống trong runtime, KHÔNG nằm trong git — phải tạo lại):**
+   `agentnet-git-autopush-30min` (chạy `auto_push.sh` mỗi 30 phút),
+   `media-gateway-watchdog-10min` (chạy `media_gateway/scripts/watchdog.sh`
+   mỗi 10 phút), `agentnet-morning-briefing` (bản tin sáng 07:00). Script
+   auto-push có bản sao trong repo: `scripts/auto_push.sh` — copy về
+   `~/workspace/agentnet-corner/auto_push.sh` rồi gắn cron lại.
+7. **Git:** `gh` cần đăng nhập lại (PAT không nằm trong git — cần chủ cấp
+   token mới có quyền ghi, `gh auth login --with-token` qua stdin).
+   Push HTTPS qua `gh` làm credential helper. Kiểm tra: `git log --oneline -3`.
+8. **PC của chủ (nếu cần):** SSH key `~/.ssh/pc_torque` KHÔNG có trong git.
+   VPS mới phải tạo keypair mới và nhờ chủ thêm public key vào
+   `C:\ProgramData\ssh\administrators_authorized_keys` trên PC (tài khoản
+   `w` là admin nên sshd đọc file đó, không đọc file user). PC:
+   desktop-01o3hnf, 100.101.158.71, Windows 11 Pro, 32 GB RAM, RTX 5060 Ti.
+9. **Tiếp tục từ `STATUS.md`:** việc nào IN PROGRESS thì kiểm tra thư mục
+   làm việc của nó xem dở ở bước nào rồi làm tiếp; việc nào FAILED/BLOCKED
+   thì đọc lỗi trong STATUS.md trước khi thử lại (đừng thử lại mù).
+10. **Quy tắc báo cáo (chủ dặn 15/11 ~15:50):** xong mỗi tính năng thì ghi
+    kết quả vào `STATUS.md` (đúng hay sai đều ghi) + đẩy git (+ bản sao
+    Drive) — KHÔNG báo riêng cho chủ. Chủ không can thiệp.
+
+## 11. Hạ tầng — tất cả các VPS (chủ dặn 15/11 ~15:49: "những vps kia cũng ghi lại")
+
+> Chỉ ghi những gì đã kiểm chứng. Chỗ nào chưa biết thì ghi "chưa biết" +
+> cách tìm ra — KHÔNG bịa IP, token hay credential.
+
+- **VPS 0 — Master:** chỉ lưu mã nguồn + kiến trúc (theo MASTER PROMPT V2 §1).
+  **Cấm lưu `.env`, token, API key trên VPS 0** (quy tắc V2 — nhưng chủ đã
+  chỉ đạo ngược lại: lưu key để VPS 0 lấy được; mâu thuẫn này cần chủ chốt,
+  xem `media_gateway/HANDOVER.md` §7). **Không có quyền SSH từ VPS này;
+  IP chưa biết.** Cách tìm: hỏi chủ hoặc xem registry.
+- **VPS 1 — Controller (máy này):** Tailscale IP `100.89.246.91`.
+  Chạy AgentNet controller (node `1a74385032d8652dc2e1b2ba`, project=research,
+  mode=research-only, registry `http://100.67.236.124:8110`) + Media Gateway
+  (`127.0.0.1:8901`) + cache + API. 4 CPU, ~8 GB RAM, không GPU, 150 GB disk,
+  Python 3.12.3, ffmpeg/ffprobe 8.1.2. Docker chưa cài.
+- **VPS 2 / 3 / 4 — Worker:** worker agent + render video (theo V2).
+  **Chưa triển khai, không có quyền shell từ đây, IP chưa biết.** Tích hợp
+  bằng API gateway + module render (`media_gateway/app/render/ffmpeg.py`),
+  chưa kiểm chứng Worker gọi API qua Tailscale.
+- **AgentNet nodes (đăng ký qua registry):**
+  - Research `baa7de1f...` — chỉ web_search/browser/image_search/research/
+    summarize; KHÔNG tải video, KHÔNG chạy code.
+  - Verify `355c4b87...` — chỉ verify.
+  - Engineer = controller này qua `as_role=engineer`.
+  - Cách tìm trạng thái node: `python3 queue_status.py` (bảng agent) hoặc
+    registry `/nodes` qua tunnel proxy.
+- **Tailnet peers đã thấy (kiểm chứng 15/11 ~15:50 bằng `tailscale status`):**
+  - `giakhanh` — 100.67.236.124 (máy registry/master)
+  - `desktop-01o3hnf` — 100.101.158.71 (PC của chủ; SSH được, user `w`)
+  - `muse-2` — 100.74.113.112
+  - `muse` — 100.110.177.69
+  - Máy này — 100.89.246.91
+- **Google Drive:** "AgentNet Video Studio" (`1q0gL8euNge458b_ktbGSg_RMfiz3FcC8`,
+  tài khoản giakhanhgcm@gmail.com) — video ứng viên + file token; thư mục
+  gateway `AI_MEDIA_GATEWAY/` (`1yaIvraWZJubYPD42JDE84peNvDmE8H4b`).
+  **Google Sheets/Docs chưa nối** (cần chủ bấm link kết nối).
+- **Facebook:** chưa nối (`facebook-cli me` trả `{}`); Apify bị chặn từ VPS.
 
 ## 9. Khi Muse mới vào (chủ dặn 15/11 ~01:58)
 
