@@ -11,6 +11,60 @@
 
 ## DONE
 
+### Video #4 (v004) — "Ông Tư sửa giày" truyện stickman cảm xúc 50s (F7, #50) — DONE + QC-passed 2026-11-15 21:10 +07
+- **File:** `video_production/v004-silent-50s/v004.mp4` — **52,36s,
+  1080x1920, 30fps, H.264 + AAC 192k, 2.628.973 byte, sha256
+  `6d2c72d8b20f…`** — **-16,05 LUFS** (mục tiêu ~-16), true peak
+  **-2,89 dBTP**, LRA 3,40, giọng vào **0,00s**, **150,1 từ/phút**
+  tổng thể (131 từ / 52,36s, trong vùng 150–165; theo beat: hook
+  167,6, beat1 140,7, beat2 160,4, beat3 136,9, payoff 170,6).
+  **Torque kiểm chứng:** ffprobe + sha khớp; xem frame 1s (thẻ hook
+  "KHÔNG AI NHÌN ÔNG MỘT LẦN." lớn rõ, dấu đúng, ông Tư mũ + tạp dề
+  mặt buồn, sạp, cột đèn, caption "Mỗi ngày, hàng trăm người") và
+  51,5s (thẻ payoff "CHỈ CẦN MỘT NGƯỜI DỪNG LẠI." đầy đủ, ông Tư
+  cười, bé gái nơ đỏ bên bức vẽ người que + mặt trời đỏ, đèn sáng
+  ấm, caption "người dừng lại.").
+- **Giọng:** MMS-TTS trên PC (speaking_rate 0.92), Whisper large-v3
+  **122/131 = 93,1%**. Probe từ: "Tư" OK, "lướt" OK, **"sạp" LỖI —
+  MMS đọc thành "sạc" (xác nhận 2 lần) → đổi thành "quầy nhỏ"**
+  theo fallback đã duyệt trong kịch bản (probe "quầy" nghe đúng).
+  Đổi đã ghi trong script.md. Lỗi còn lại chủ yếu là Whisper nghe
+  nhầm ("bé gái"→"bé rái"; "sửa giày"→"sử dài" — nhầm MMS/Whisper
+  đã biết).
+- **Render: VPS, không phải PC.** Manim 0.22.1 trong
+  `stickman-shorts/.venv`, 2 lần render (test ~69s, bản sửa ~3,5
+  phút kể cả chờ queue). Cờ `-ql` bị `apply_video_config()` ghi đè
+  thành full 1080×1920 30fps nên đầu ra VPS đã full quality — không
+  cần vòng qua PC. Scene: `stickman-shorts/videos/2026-11-15_v004-
+  ong-tu-sua-giay/scene.py` (2 rig: ông Tư mũ + tạp dề, bé gái
+  scale 0,62 nơ đỏ; sạp, đèn, 5 thẻ chữ; SPEC giữ nguyên, không đổi
+  rig). 2 lỗi sửa sau khi xem frame v1: (1) người qua đường beat 1
+  dính với ông Tư thành hình 2 đầu → thu 0,8→0,7, đặt sau ông Tư +
+  sạp; (2) giày trên sạp nhỏ không đọc được → đế 0,55→0,70, thân
+  0,34→0,48.
+- **Nhạc + SFX:** bgm_calm với volume envelope (0,11 hook / 0,11
+  beat1 / 0,12 beat2 / 0,18 beat3 swell / 0,0 trong 0,5s im trước
+  payoff 45,52–46,03 / 0,11 payoff), ding (0,5) ở 30,69, swoosh ở
+  3,58/17,22/30,69. BGM đo trong cửa sổ pause giọng: mean -39,1 dB
+  (nghe được, dưới giọng). Cửa sổ trước payoff: mean -51,0 dB.
+  **Swoosh hạ 0,4→0,2** sau QC: file swoosh peak -3,7 dB raw chạm
+  trần alimiter; đo lại cho thấy các peak lớn còn lại là onset câu
+  của giọng MMS (raw -1,7 dB ở 3,58s), đã bị alimiter kẹp — TP
+  cuối -2,89 dBTP trong chuẩn.
+- **QC frame (mp4 cuối, đều pass):** 1s thẻ hook rõ + caption · 8s
+  người đi bộ sau ông Tư, không dính · 26s giày trên sạp đọc được ·
+  33s bé gái chỉ tay, thẻ "CỦA AI VẬY ÔNG?" · 40s bức vẽ (người que
+  nhỏ + mặt trời đỏ) rõ · 48s/52s thẻ payoff đầy đủ, đèn sáng ấm, cả
+  hai cười, caption cuối "người dừng lại."
+- **Giới hạn trung thực:** chưa ai nghe thật (chỉ Whisper 93,1%);
+  SFX không đo riêng từng cái được (ding/swoosh trùng giọng theo
+  thiết kế); cửa sổ trước payoff yên nhưng không phải im số tuyệt
+  đối (max -29,2 dB, đuôi từ cuối); beat 2 ~13s gần như tĩnh (chỉ
+  tay đánh giày dao động); caption trùng chữ thẻ ở cuối (lỗi nhỏ đã
+  có ở v002); tạp dề trông hơi giống áo vest; **không dùng gì từ
+  #50** (truyện/nhân vật hoàn toàn gốc, chỉ giữ cơ chế, không mưa).
+  **CHƯA đăng.** Đã gửi cho chủ xem trong chat. v003 vẫn đang làm.
+
 ### Video #5 (v005) — "Top 5 câu nói huyền thoại của mẹ" Countdown 45s (F3, H02 #69) — DONE + QC-passed 2026-11-15 21:03 +07
 - **File:** `video_production/v005-countdown-45s/v005.mp4` — **49,97s,
   1080x1920, 30fps, H.264 + AAC 192k, 14.072.099 byte, sha256
