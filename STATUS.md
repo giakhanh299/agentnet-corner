@@ -7,9 +7,19 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~09:32 +07.
+> Cập nhật lần cuối: 2026-11-16 ~10:37 +07.
 
 ## DONE
+
+### Test 3 giọng TTS mới (VieNeu / valtec / VietVoice) — DONE 2026-11-16 ~10:37 +07
+- **File:** `video_production/voice-compare-20261116/voice_compare_20261116.md` (17,8 KB) + mẫu wav (16 kHz mono). Cùng 3 câu test / 40 từ, cùng Whisper Base `-l vi` như vòng 1–3; MMS round-2 C được đo lại bằng Base cho công bằng (72,5%).
+- **Kết luận: giữ MMS-TTS làm giọng sản xuất.** Không giọng nào vượt MMS toàn diện (tốc độ trong vùng, tổng hợp nhanh nhất, đã chứng minh qua 9 video). Nhược điểm duy nhất của MMS là giấy phép CC-BY-NC (phi thương mại).
+- **VieNeu-TTS v3 Turbo — dự phòng tốt nhất, an toàn thương mại:** giấy phép Apache 2.0; Whisper 80,0% (cao nhất); 25 giọng preset; server tương thích OpenAI. Vấn đề: nói nhanh 238 wpm, không có chỉnh tốc độ — phải chậm bằng ffmpeg `atempo=0.65` → ~155 wpm (77,5% sau khi chậm). Chậm trên VPS này (RTF 1,5–1,9 + nạp model 197s); trên PC có GPU sẽ nhanh hơn nhiều. Cài đặt ~1,4 GB.
+- **VietVoice-TTS — không dùng được trên VPS này:** MIT, Whisper 70,0%, có chỉnh `speed` (chưa test) — nhưng RTF 74–256, một video 45s mất ~1 giờ tổng hợp. Chỉ xem lại trên PC có GPU.
+- **valtec-tts — BLOCKED, không test được:** code cài được nhưng `TTS()` lỗi HTTP 401 — repo model trên HF đã private/gated/xóa, không có weights công khai. Bản .exe Windows 394 MB chưa test (chỉ chạy tay).
+- **Cả 3 giọng đều không nói được "log"** (MMS "lá"/"luôn", VieNeu "hốc"/"lắc"/"lớp", VietVoice "lót") — chữ trên màn hình vẫn phải gánh chính tả.
+- **2 sự cố (đã sửa, ghi trong báo cáo):** chạy đầu VietVoice bị lỗi của chính agent test (chuyển int16→float32 không chia lại → clip thành sóng vuông, Whisper 20%) — chạy lại đúng được 70,0%; file lỗi giữ lại tên `*_CLIPPED_INVALID.*`, không dùng. Cài valtec kẹt vì /tmp chỉ 512 MB tmpfs — sửa bằng TMPDIR sang ổ lớn.
+- **Hạn chế thật:** chưa có người nghe mẫu nào (chỉ đo Whisper) — chủ là người quyết định, nhất là VieNeu chậm vs MMS. Chênh Whisper nhỏ (80,0 / 72,5 / 70,0 = 2–3 từ); khác biệt quyết định là tốc độ và RTF (đã đo). Chủ chưa chọn giọng nào — MMS vẫn là chuẩn sản xuất.
 
 ### Video #6 (v006) — DONE + QC-passed 2026-11-16 ~09:32 +07
 - **File:** `video_production/v006-triple-point-45s/v006.mp4` — 53,13s, 1080x1920, 30fps, H.264 + AAC 192k, 18.522.052 byte, sha256 `84757475ef0e4ce5bd53b1ab2beeceee3e49912107c3f1e7745f0c8da0489010` — **-16,19 LUFS**, true peak **-3,04 dBTP**, giọng từ 0,00s, **158 wpm lúc nói** (147 tổng, 130 từ sau probe), Whisper large-v3 (PC) 124/127 = 97,6% — cao nhất từ trước đến nay.
