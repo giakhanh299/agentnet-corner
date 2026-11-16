@@ -7,9 +7,18 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~21:02 +07.
+> Cập nhật lần cuối: 2026-11-16 ~21:13 +07.
 
 ## DONE
+
+### Video #12 (v012) — DONE + QC-passed 2026-11-16 ~21:13 +07
+- **File:** `video_production/v012-talking-dog-45s/v012.mp4` — 55,47s, 1080x1920, 30fps, H.264 + AAC 192k, 15.405.319 byte, sha256 `9312183ff0b1361ce37a069516b0544940a011280d9c365255430a5e8d9f0aad` — **-16,09 LUFS**, true peak **-2,73 dBTP**, giọng vào **0,02s**, **151 wpm lúc nói** (131 tổng, 121 từ), Whisper large-v3 (PC) 108/121 = **89,3%** (tốt nhất từ v006).
+- **Chủ đề:** "Chó nhà bạn hiểu bao nhiêu từ?" (D01 #39, 80) — 1 nhân vật Bin + payoff "đi dạo". **Video đầu tiên dùng giọng VieNeu** ("Mai Anh", atempo 0.65, pauses 0.3/0.4/0.6). Không đổi từ probe nào (cả 4 PASS 100%).
+- **VieNeu ĐÃ CÀI TRÊN PC:** `C:\Users\w\agentnet-corner\ai-stack\.venv-vieneu` (vieneu 3.8.4, onnxruntime 1.32.0) — load lạnh 7–15,5s trên PC (so với 197s trên VPS), synth RTF ~0,4. Model trong HF cache chung.
+- **Render + mix + encode hoàn toàn trên PC** (~19s encode, 7 hard cut). BGM bgm_comedy ~26 dB dưới giọng (hơi nhỏ hơn mục tiêu -18 đến -24 dB, không mix lại).
+- **Sự cố:** session này thiếu known_hosts → copy `/root/.ssh/known_hosts` sang `~/.ssh/known_hosts` là SSH chạy; Whisper check crash `cublas64_12.dll not found` → prepend torch\lib + nvidia bin vào PATH trong .ps1; TTS run 2 crash `NameError: scale` sau khi ghi wav chậm nhưng trước khi ghi units — bài học: luôn kiểm tra units JSON + độ dài wav khớp lần chạy mới nhất trước khi xây phụ đề. Mỗi clause VieNeu có ~0,07–0,13s lặng đầu — công thức bắt đầu clause là native/0.65 + (lead − trim), không phải − trim.
+- **Hạn chế thật:** chưa có người nghe (Whisper 89,3%); 5 ảnh là 5 con chó khác nhau trong khi kịch bản xưng "Tôi là Bin"; dài 55,47s ở mép trên khung; ảnh 1024px hơi mềm (chỉ b2c Wikimedia là full-res); hộp nhãn che mắt chihuahua ở 10s; phụ đề trùng CTA 2s cuối (nit cũ). Chưa đăng. Drive: v012.mp4 id `1ybBSPw1Ro-8hih5LcEpFnTdJS295AOdB`.
+- **Ghi chú quyền PC:** session làm v012 vào PC bình thường tới ~21:11, trong khi session chính + session v013 bị chặn other_tcp Deny cùng lúc — chặn này theo từng session, không phải toàn cục. Thử lại bằng session mới là một đường khả thi cho v013.
 
 ### Video #13 (v013) — PARTIAL 2026-11-16 ~21:02 +07 (chưa có mp4 — PC không vào được)
 - **Giọng/âm thanh/hình/thẻ/phụ đề xong trên VPS** (`video_production/v013-iconic-sounds-45s/`): VieNeu "Mai Anh" atempo 0.70 (script chạy 222 wpm native nên 0.65 chỉ được 144 wpm — dùng 0.70 → 161 wpm), voice.wav 45.75s, 116 từ, giọng vào ~0.06s; Whisper Base (VPS) 83/116 = 71,6% (chưa đạt 75% — cần kiểm lại bằng large-v3 trên PC); 5 âm thanh mẫu chuẩn hóa -23 LUFS (chuông trường, xe máy, modem, nhạc chuông Gran Vals tự tổng hợp, rao bánh mì bằng VieNeu); 5 ảnh CC0; 7 thẻ; phụ đề 31 events.

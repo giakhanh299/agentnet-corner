@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.02,0:00:01.21,Default,,0,0,0,,Chó nhà bạn hiểu
+Dialogue: 0,0:00:01.21,0:00:02.40,Default,,0,0,0,,được bao nhiêu từ
+Dialogue: 0,0:00:02.40,0:00:03.59,Default,,0,0,0,,của bạn?
+Dialogue: 0,0:00:04.05,0:00:05.34,Default,,0,0,0,,Trung bình, một chú
+Dialogue: 0,0:00:05.34,0:00:06.64,Default,,0,0,0,,chó hiểu khoảng một
+Dialogue: 0,0:00:06.64,0:00:07.93,Default,,0,0,0,,trăm sáu mươi lăm
+Dialogue: 0,0:00:07.93,0:00:09.22,Default,,0,0,0,,từ.
+Dialogue: 0,0:00:09.84,0:00:11.19,Default,,0,0,0,,Gần bằng một đứa
+Dialogue: 0,0:00:11.19,0:00:12.54,Default,,0,0,0,,trẻ hai tuổi.
+Dialogue: 0,0:00:13.16,0:00:14.55,Default,,0,0,0,,Nhưng có một từ,
+Dialogue: 0,0:00:14.55,0:00:15.95,Default,,0,0,0,,chó nhà bạn nghe
+Dialogue: 0,0:00:15.95,0:00:17.34,Default,,0,0,0,,là chạy ngay.
+Dialogue: 0,0:00:17.96,0:00:19.44,Default,,0,0,0,,Tôi là Bin.
+Dialogue: 0,0:00:20.05,0:00:21.84,Default,,0,0,0,,Sáng chủ đi làm,
+Dialogue: 0,0:00:21.84,0:00:23.62,Default,,0,0,0,,tôi ở nhà chờ.
+Dialogue: 0,0:00:24.24,0:00:25.59,Default,,0,0,0,,Trưa chủ chưa về,
+Dialogue: 0,0:00:25.59,0:00:26.94,Default,,0,0,0,,tôi chờ tiếp.
+Dialogue: 0,0:00:27.56,0:00:29.10,Default,,0,0,0,,Tối chủ về, chỉ
+Dialogue: 0,0:00:29.10,0:00:30.64,Default,,0,0,0,,ôm điện thoại.
+Dialogue: 0,0:00:31.25,0:00:32.79,Default,,0,0,0,,Tôi hiểu hơn một
+Dialogue: 0,0:00:32.79,0:00:34.33,Default,,0,0,0,,trăm từ của chủ,
+Dialogue: 0,0:00:34.33,0:00:35.86,Default,,0,0,0,,mà chẳng từ nào
+Dialogue: 0,0:00:35.86,0:00:37.40,Default,,0,0,0,,là chơi với tôi.
+Dialogue: 0,0:00:38.02,0:00:39.62,Default,,0,0,0,,Nhưng chỉ cần chủ
+Dialogue: 0,0:00:39.62,0:00:41.22,Default,,0,0,0,,nói hai từ thôi,
+Dialogue: 0,0:00:41.22,0:00:42.82,Default,,0,0,0,,tôi chạy ngay.
+Dialogue: 0,0:00:43.44,0:00:44.60,Default,,0,0,0,,Hai từ đó là:
+Dialogue: 0,0:00:44.60,0:00:45.77,Default,,0,0,0,,đi dạo.
+Dialogue: 0,0:00:46.70,0:00:48.22,Default,,0,0,0,,Tối nay, thử nói
+Dialogue: 0,0:00:48.22,0:00:49.73,Default,,0,0,0,,hai từ đó với
+Dialogue: 0,0:00:49.73,0:00:51.25,Default,,0,0,0,,chó nhà bạn xem.
+Dialogue: 0,0:00:51.87,0:00:53.07,Default,,0,0,0,,Chó nhà bạn thích
+Dialogue: 0,0:00:53.07,0:00:54.27,Default,,0,0,0,,từ nào nhất? Bình
+Dialogue: 0,0:00:54.27,0:00:55.47,Default,,0,0,0,,luận nhé!
