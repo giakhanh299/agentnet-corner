@@ -7,9 +7,16 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~21:13 +07.
+> Cập nhật lần cuối: 2026-11-16 ~21:26 +07.
 
 ## DONE
+
+### Video #14 (v014) — DONE + QC-passed 2026-11-16 ~21:26 +07
+- **File:** `video_production/v014-no-part-time-job-50s/v014.mp4` — 52,07s, 1080x1920, 30fps, H.264 + AAC 192k, 5.396.303 byte, sha256 `938568d1c31b7fc8e10276bba603f4f8b372760fe403a4bec24dc03bf89b8d65` — **-16,05 LUFS**, true peak **-3,09 dBTP**, giọng vào **0,000s**, **156,4 wpm lúc nói** (129 từ), Whisper large-v3 (PC) 111/129 = **86,0%**.
+- **Chủ đề:** "Đừng làm thêm kiểu cũ" (T07 #99, 74) — hướng dẫn màn hình thật, giữ câu "Không hứa bạn giàu nhanh" ở beat 3; số liệu là số đo thật của chính mình (MMS-TTS 0,9s, Whisper 4,7s, render v003 12s). Giọng VieNeu "Mai Anh" atempo 0.66 (0.65 chỉ được 146 wpm — 0.66 → 156,4 wpm). Không đổi từ probe nào; "giàu" take 1 nghe thành "sầu nhanh" → dùng take 2.
+- **Render + mix + encode hoàn toàn trên PC** (9 hard cut, 1562 frames). SFX đã kiểm bằng đo mẫu (ding3 rõ nhất +39,8 dB; whoosh/pop nhỏ +0,6/+0,9 dB).
+- **Quay màn hình — cách làm mới:** gdigrab toàn màn hình quay nhầm trình duyệt Facebook live của chủ (đang đăng bài) — footage đó đã xóa khỏi PC + VPS. Cách chạy được: chụp PrintWindow từ process con (spawn từ chính console màn hình, `v014_snap_child.ps1` + `v014_screen4.ps1`) — 99/99 ảnh, 2 fps, terminal thật chạy pipeline thật, không cướp focus, không dính nội dung trình duyệt. Dead end đã ghi trong qc.md: gdigrab title từ SSH (lỗi I/O, khác window station), Start-Job snapshotter (IntPtr không serialize — 0 ảnh), FindWindow từ task riêng (window-station isolation — 0 ảnh). Dùng lại pattern này cho video quay màn hình sau.
+- **Hạn chế thật:** chưa có người nghe (Whisper 86,0%); footage màn hình 2 fps nên chuyển động giật từng bước (kiểu timelapse) nhưng 100% thật; chữ script trên màn hình bị mojibake (console hiển thị UTF-8 thành cp1252) — số chính vẫn đọc được, lần sau chạy `chcp 65001` trước Get-Content; ~780px dưới của đoạn màn hình là đen (vùng phụ đề, phụ đề là sidecar không burn-in); hook và step-4 chung bước render, b1a và step-2 chung bước TTS (khác khoảng ảnh). Chưa đăng. Drive: v014.mp4 id `1cbPe8R0o5yTeDcZflmcCLrgvb8yPm7vU`.
 
 ### Video #12 (v012) — DONE + QC-passed 2026-11-16 ~21:13 +07
 - **File:** `video_production/v012-talking-dog-45s/v012.mp4` — 55,47s, 1080x1920, 30fps, H.264 + AAC 192k, 15.405.319 byte, sha256 `9312183ff0b1361ce37a069516b0544940a011280d9c365255430a5e8d9f0aad` — **-16,09 LUFS**, true peak **-2,73 dBTP**, giọng vào **0,02s**, **151 wpm lúc nói** (131 tổng, 121 từ), Whisper large-v3 (PC) 108/121 = **89,3%** (tốt nhất từ v006).
