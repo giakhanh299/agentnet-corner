@@ -7,11 +7,11 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~10:37 +07.
+> Cập nhật lần cuối: 2026-11-16 ~12:37 +07.
 
 ## DONE
 
-### Lô kịch bản v012 + v013 + v014 — DONE 2026-11-16 ~12:40 +07 (chỉ kịch bản, chưa sản xuất)
+### Lô kịch bản v012 + v013 + v014 — DONE 2026-11-16 ~12:37 +07 (chỉ kịch bản, chưa sản xuất)
 - **File:** `video_production/scripts-batch-20261116/` — 3 kịch bản mới + `scripts_batch.md` (mục lô v012–v014). Viết trước theo chỉ đạo của chủ (làm việc chủ động, tự tìm việc khi rảnh, làm trước tiến độ); lô v009–v011 đã giao 10:49 sáng nay, chưa có lệnh sản xuất, nên lô này lấp khoảng trống tiếp theo để sản xuất không phải chờ.
 - **v012** — D01 #39 (80) "Chó nhà bạn hiểu bao nhiêu từ?", format chó nói 45s, **121 từ ≈ 161 từ/phút**. Format rẻ nhất ngân hàng 30 (F=5, C=5). Sự thật đã kiểm chứng: chó trung bình hiểu ~165 từ (Stanley Coren, Đại học British Columbia; chó thông minh nhất ~250 từ, tương đương trẻ 2–2,5 tuổi). Payoff là hai từ "đi dạo". Quyết định: giữ đúng 1 nhân vật + 1 câu nói đáng nhớ, không thêm nhân vật thứ hai.
 - **v013** — H03 #61 (67) "Top 5 âm thanh nghe là nhớ ngay", F3 Countdown 45s, **117 từ ≈ 156 từ/phút**. 5 âm thanh Việt tự làm/CC0 (chuông trường, xe máy, rao bánh mì, nhạc chuông cổ, modem quay số) — KHÔNG dịch 5 âm thanh meme tiếng Anh của video gốc, không lấy lại meme audio (cảnh báo bản quyền H03, L=2). Nhạc chuông: giai điệu "Gran Vals" (1902) của Francisco Tárrega đã thuộc phạm vi công cộng (Nokia dùng 1992/1994) — chỉ dùng bản tự tổng hợp, không lấy file của Nokia, không nhắc tên thương hiệu trong lời thoại (Nokia đã đăng ký giai điệu làm nhãn hiệu âm thanh ở một số nước).
