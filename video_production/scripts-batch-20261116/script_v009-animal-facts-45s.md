@@ -49,8 +49,8 @@ C=5 theo phân tích sâu): 1 ảnh nhân vật cố định + chữ + giọng.
 | 28–36 | Số 2 — cá bay | Số hai: cá bay, bay thật. Nó lao khỏi mặt nước, lướt trên không tới hai trăm mét để trốn kẻ săn mồi. |
 | 36–45 | Số 1 — bạch tuộc + CTA | Và số một: bạch tuộc có tới ba trái tim. Hai tim bơm máu đi mang, một tim bơm đi khắp cơ thể. Bạn tin không? Bình luận nhé! |
 
-**Đếm từ (kiểm bằng script):** Hook 12 · Số 5: 20 · Số 4: 19 ·
-Số 3: 18 · Số 2: 23 · Số 1 + CTA: 28 = **120 từ**. Mục tiêu 45s
+**Đếm từ (kiểm bằng script):** Hook 12 · Số 5: 19 · Số 4: 19 ·
+Số 3: 18 · Số 2: 23 · Số 1 + CTA: 29 = **120 từ**. Mục tiêu 45s
 ≈ 160 từ/phút — trong vùng an toàn 150–165 (kiểm thực tế sau khi
 tổng hợp; giọng vào từ 0,1s, không có khoảng lặng trong 3s đầu).
 

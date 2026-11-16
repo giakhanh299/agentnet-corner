@@ -57,8 +57,8 @@ video gốc, nếu không sẽ sai thời gian.
 | 30–42 | Beat 3 — số liệu thật | Nhưng thực tế khác hẳn. Tốc độ tăng dân số đạt đỉnh từ năm một chín sáu ba rồi giảm dần. Hôm nay thế giới có hơn tám tỉ người, không phải hàng trăm tỉ. |
 | 42–50 | Payoff + CTA | Bài học: kéo quá khứ ra tương lai, toán cũng nói dối. Bạn nghĩ sao? Bình luận nhé! |
 
-**Đếm từ (kiểm bằng script):** Hook 17 · Beat 1: 32 · Beat 2: 34 ·
-Beat 3: 35 · Payoff + CTA: 16 = **134 từ**. Mục tiêu 50s ≈ 161
+**Đếm từ (kiểm bằng script):** Hook 17 · Beat 1: 33 · Beat 2: 34 ·
+Beat 3: 35 · Payoff + CTA: 18 = **137 từ**. Mục tiêu 50s ≈ 164
 từ/phút — trong vùng an toàn 150–165 (kiểm thực tế sau khi tổng hợp;
 giọng vào từ 0,1s, không có khoảng lặng trong 3s đầu; video gốc có
 dead air 0,69s đầu + âm thanh -31,77 LUFS — bản này sửa cả hai).
