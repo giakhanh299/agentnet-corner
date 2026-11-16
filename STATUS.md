@@ -7,9 +7,17 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~13:45 +07.
+> Cập nhật lần cuối: 2026-11-16 ~13:50 +07.
 
 ## DONE
+
+### Video #11 (v011) — DONE + QC-passed 2026-11-16 ~13:50 +07
+- **File:** `video_production/v011-canada-lakes-45s/v011.mp4` — 49,60s, 1080x1920, 30fps, H.264 + AAC 192k, 21.583.334 byte, sha256 `1fade7c08b4d03d314b5769d7d49e57fbc4bd6eecaad4a5bfe4b48389f428fa7` — **-16,09 LUFS**, true peak **-2,94 dBTP**, giọng vào **0,041s** (đã cắt 0,25s lặng đầu trong wav TTS trước khi xây phụ đề — bài học v010 áp dụng đúng), **151 wpm lúc nói** (115 từ), Whisper large-v3 (PC) 98/115 = 85,2%.
+- **Chủ đề:** "Canada có 60% số hồ trên thế giới" (F2 Visual Essay, T06 #83, 76) — đúng 3 beat, không thêm beat thứ 4; số hiện trên hình, không đưa vào lời thoại. BGM bgm_calm ~23,5 dB dưới giọng (đúng mục tiêu).
+- **Render + mix + encode hoàn toàn trên PC.** Lô v009–v011 (11 video tổng) hoàn tất.
+- **Probe:** "Canada" → "Ca-na-đa" (TTS input, phụ đề vẫn "Canada"); "băng hà" → "băng tuyết khổng lồ"; "hố trũng" → "hố sâu". Giữ "cào xới", "Thượng", "Trái Đất".
+- **Sự cố mới (bài học pipeline):** lần render đầu trên PC làm mất 3 dòng chữ có "%" (nhãn beat 1 + 2 dòng số end card) — ffmpeg drawtext "Stray %" vẽ trống nhưng vẫn exit 0, `%%` cũng không thoát được. Sửa: `expansion=none` cho mọi drawtext; render lại trên PC và kiểm tra lại khung 10s + 45s. Bài học: không bao giờ để "%" trần trong textfile của drawtext nếu thiếu `expansion=none`, và phải xem khung hình trong cửa sổ của từng nhãn, không chỉ hook/end card.
+- **Hạn chế thật:** chưa có người nghe (Whisper 85,2%); payoff 130 wpm / beat 1 169 wpm chênh nhau; ảnh vệ tinh beat 3b là Nunavut (không phải Ngũ Đại Hồ); ảnh hồ Thượng 1024px hơi mềm; phụ đề trùng CTA 2s cuối (nit cũ). Chưa đăng. Drive: v011.mp4 id `1Jo0wt37hz2nZl36gWaZ_scSA5IFtnuaV`.
 
 ### Video #10 (v010) — DONE + QC-passed 2026-11-16 ~13:45 +07
 - **File:** `video_production/v010-doomsday-50s/v010.mp4` — 54,53s, 1080x1920, 30fps, H.264 + AAC 192k, 12.300.627 byte, sha256 `c7bca083059c8973344c8e0699a38603aa9a5eeb3b70f47cc1018905805c15f7` — **-16,24 LUFS**, true peak **-1,06 dBTP**, giọng MMS-TTS take 3 (take 1 + 2 bị loại vì nhịp không đều/nhanh), **160 wpm lúc nói** (137 từ, nhịp từng beat 155/165/160/158/164 — đều trong vùng 150–165), Whisper large-v3 (PC) 83,9%.
