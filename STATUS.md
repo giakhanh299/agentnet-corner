@@ -7,9 +7,16 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~13:39 +07.
+> Cập nhật lần cuối: 2026-11-16 ~13:45 +07.
 
 ## DONE
+
+### Video #10 (v010) — DONE + QC-passed 2026-11-16 ~13:45 +07
+- **File:** `video_production/v010-doomsday-50s/v010.mp4` — 54,53s, 1080x1920, 30fps, H.264 + AAC 192k, 12.300.627 byte, sha256 `c7bca083059c8973344c8e0699a38603aa9a5eeb3b70f47cc1018905805c15f7` — **-16,24 LUFS**, true peak **-1,06 dBTP**, giọng MMS-TTS take 3 (take 1 + 2 bị loại vì nhịp không đều/nhanh), **160 wpm lúc nói** (137 từ, nhịp từng beat 155/165/160/158/164 — đều trong vùng 150–165), Whisper large-v3 (PC) 83,9%.
+- **Chủ đề:** "Bài báo 1960 nói thế giới tận thế 13/11/2026" (F2 Visual Essay, T05 #82, 78) — video bóc mẽ bằng số liệu, KHÔNG dọa tận thế; giữ câu "chính họ cũng không tin" ở beat 2; hook quá khứ (13/11 đã qua). Ảnh CC0/CC BY + lịch/biểu đồ tự vẽ, không dùng lại asset của #82 gốc.
+- **Render + mix + encode hoàn toàn trên PC** (~23s, 8 hard cut kiểu v006, cap `-frames:v 1637`). Nhạc bgm_suspense.
+- **Probe:** cả 4 PASS, không đổi từ nào ("tận thế" 82,4%, "vô cùng" 95%, "đạt đỉnh" 75%, "trưởng nhóm" 100%).
+- **Hạn chế thật:** chưa có người nghe (Whisper 83,9%); **giọng vào 0,39s** (không phải ~0,1s — lặng kỹ thuật số tới 0,387s; phụ đề chạy từ 0,000s nên dòng đầu hiện trước giọng ~0,4s) — chưa sửa vì phụ đề + SFX đã xây trên take 3 chưa cắt; bài học cho lô sau: cắt lặng đầu trong wav TTS TRƯỚC khi xây phụ đề/SFX. Bìa 1928 bị crop mép phải khi zoompan 9:16; dải nhãn beat 3 đè lên đường cong gần 1963–1970 (chấm đỉnh vẫn thấy); phụ đề trùng end card 2s cuối (nit cũ). Chưa đăng. Drive: v010.mp4 id `1PE_yqkQ7yRfU9aCHyEHi4_DBylPAmX_O`.
 
 ### Video #9 (v009) — DONE + QC-passed 2026-11-16 ~13:39 +07
 - **File:** `video_production/v009-animal-facts-45s/v009.mp4` — 51,23s, 1080x1920, 30fps, H.264 + AAC 192k, 14.661.744 byte, sha256 `dc6c97c0e52e7ba322ac80b4845733e5b92afe563d48f914247e977d1f08db9b` — **-16,12 LUFS**, true peak **-2,95 dBTP**, giọng từ 0,00s, **152 wpm lúc nói** (141 tổng, 120 từ — khoảng lặng đếm ngược có chủ ý như v005/v007), Whisper large-v3 (PC) 102/120 = 85,0%.
