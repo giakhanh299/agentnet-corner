@@ -1,0 +1,46 @@
+{
+  "p_chuongtruong": {
+    "text": "Số năm: tiếng chuông trường.",
+    "dur": 1.76
+  },
+  "p_chuongtruong_fb": {
+    "text": "Số năm: tiếng chuông tan học.",
+    "dur": 1.84
+  },
+  "p_deno": {
+    "text": "Số bốn: tiếng xe máy đề nổ.",
+    "dur": 2.08
+  },
+  "p_deno_fb": {
+    "text": "Số bốn: tiếng xe máy nổ máy.",
+    "dur": 2.16
+  },
+  "p_rao": {
+    "text": "Số ba: tiếng rao bánh mì.",
+    "dur": 1.6
+  },
+  "p_rao_fb": {
+    "text": "Số ba: tiếng bán bánh mì.",
+    "dur": 1.84
+  },
+  "p_cucgach": {
+    "text": "Số hai: nhạc chuông điện thoại cục gạch.",
+    "dur": 2.16
+  },
+  "p_cucgach_fb": {
+    "text": "Số hai: nhạc chuông điện thoại cũ.",
+    "dur": 1.92
+  },
+  "p_modem": {
+    "text": "Số một: tiếng modem quay số.",
+    "dur": 2.08
+  },
+  "p_modem_fb": {
+    "text": "Số một: tiếng quay số.",
+    "dur": 1.52
+  },
+  "vendor_call": {
+    "text": "Ai bánh mì không?",
+    "dur": 1.2
+  }
+}

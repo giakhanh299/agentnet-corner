@@ -1,0 +1,51 @@
+[
+  {
+    "unit": "hook",
+    "text": "Năm âm thanh này, nghe một giây là nhớ ngay. Số một, đảm bảo bạn đã nghe cả trăm lần.",
+    "start": 0.0,
+    "end": 7.35,
+    "words": 20
+  },
+  {
+    "unit": "n5",
+    "text": "Số năm: tiếng chuông trường. Tan học là chạy, không cần ai nhắc.",
+    "start": 7.65,
+    "end": 12.78,
+    "words": 13
+  },
+  {
+    "unit": "n4",
+    "text": "Số bốn: tiếng xe máy đề nổ. Sáng nào cũng nghe, cả xóm cùng dậy.",
+    "start": 13.18,
+    "end": 18.77,
+    "words": 15
+  },
+  {
+    "unit": "n3",
+    "text": "Số ba: tiếng bán bánh mì. Chưa thấy xe đâu, đã thấy đói.",
+    "start": 19.17,
+    "end": 24.29,
+    "words": 13
+  },
+  {
+    "unit": "n2",
+    "text": "Số hai: nhạc chuông điện thoại cục gạch. Giai điệu này có từ hơn một trăm năm trước, già hơn cả ông bà bạn.",
+    "start": 24.69,
+    "end": 33.13,
+    "words": 24
+  },
+  {
+    "unit": "n1",
+    "text": "Số một: tiếng quay số. Nghe xong mới được lên mạng, mà rớt mạng là quay lại từ đầu.",
+    "start": 33.53,
+    "end": 40.94,
+    "words": 19
+  },
+  {
+    "unit": "cta",
+    "text": "Bạn nhớ âm thanh nào nhất? Bình luận số của nó nhé!",
+    "start": 41.54,
+    "end": 45.75,
+    "words": 12
+  }
+]

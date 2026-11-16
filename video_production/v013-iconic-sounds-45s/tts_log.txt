@@ -1,0 +1,30 @@
+Loading Vieneu() ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loaded in 8.1s
+hook: native 5.36s, 20 words, 224 wpm, synth 13.0s :: Năm âm thanh này, nghe một giây là nhớ ngay. Số một, đảm bảo bạn đã nghe cả trăm lần.
++ ffmpeg -v error -y -i /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/hook_native.wav -af atempo=0.65 -ar 48000 -ac 1 /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/hook_slow.wav
+  -> slowed 8.23s (146 wpm), ratio 1.536 (expect 1.538)
+n5: native 3.68s, 13 words, 212 wpm, synth 6.3s :: Số năm: tiếng chuông trường. Tan học là chạy, không cần ai nhắc.
++ ffmpeg -v error -y -i /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n5_native.wav -af atempo=0.65 -ar 48000 -ac 1 /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n5_slow.wav
+  -> slowed 5.63s (139 wpm), ratio 1.530 (expect 1.538)
+n4: native 4.24s, 15 words, 212 wpm, synth 6.6s :: Số bốn: tiếng xe máy đề nổ. Sáng nào cũng nghe, cả xóm cùng dậy.
++ ffmpeg -v error -y -i /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n4_native.wav -af atempo=0.65 -ar 48000 -ac 1 /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n4_slow.wav
+  -> slowed 6.50s (138 wpm), ratio 1.534 (expect 1.538)
+n3: native 3.36s, 13 words, 232 wpm, synth 5.8s :: Số ba: tiếng bán bánh mì. Chưa thấy xe đâu, đã thấy đói.
++ ffmpeg -v error -y -i /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n3_native.wav -af atempo=0.65 -ar 48000 -ac 1 /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n3_slow.wav
+  -> slowed 5.15s (151 wpm), ratio 1.534 (expect 1.538)
+n2: native 6.40s, 24 words, 225 wpm, synth 11.0s :: Số hai: nhạc chuông điện thoại cục gạch. Giai điệu này có từ hơn một trăm năm trước, già hơn cả ông bà bạn.
++ ffmpeg -v error -y -i /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n2_native.wav -af atempo=0.65 -ar 48000 -ac 1 /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n2_slow.wav
+  -> slowed 9.83s (147 wpm), ratio 1.536 (expect 1.538)
+n1: native 5.28s, 19 words, 216 wpm, synth 9.0s :: Số một: tiếng quay số. Nghe xong mới được lên mạng, mà rớt mạng là quay lại từ đầu.
++ ffmpeg -v error -y -i /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n1_native.wav -af atempo=0.65 -ar 48000 -ac 1 /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/n1_slow.wav
+  -> slowed 8.10s (141 wpm), ratio 1.535 (expect 1.538)
+cta: native 3.12s, 12 words, 231 wpm, synth 6.7s :: Bạn nhớ âm thanh nào nhất? Bình luận số của nó nhé!
++ ffmpeg -v error -y -i /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/cta_native.wav -af atempo=0.65 -ar 48000 -ac 1 /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/tts_tmp/cta_slow.wav
+  -> slowed 4.77s (151 wpm), ratio 1.530 (expect 1.538)
+Synthesis 60.3s
+Leading silence trimmed: 0.140s
+Saved /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/voice.wav: 50.59s total, 116 words
+Speech-only: 48.23s = 144 wpm; overall: 138 wpm
+Saved unit timings to /home/hatch/workspace/agentnet-corner/video_production/v013-iconic-sounds-45s/v013_units.json
+TOTAL 68.5s

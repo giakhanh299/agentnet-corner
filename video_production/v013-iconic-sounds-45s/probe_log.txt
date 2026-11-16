@@ -1,0 +1,15 @@
+Loading Vieneu() ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loaded in 14.6s
+p_chuongtruong: 1.76s, synth 5.0s :: Số năm: tiếng chuông trường.
+p_chuongtruong_fb: 1.84s, synth 2.9s :: Số năm: tiếng chuông tan học.
+p_deno: 2.08s, synth 4.2s :: Số bốn: tiếng xe máy đề nổ.
+p_deno_fb: 2.16s, synth 3.4s :: Số bốn: tiếng xe máy nổ máy.
+p_rao: 1.60s, synth 2.6s :: Số ba: tiếng rao bánh mì.
+p_rao_fb: 1.84s, synth 3.3s :: Số ba: tiếng bán bánh mì.
+p_cucgach: 2.16s, synth 3.8s :: Số hai: nhạc chuông điện thoại cục gạch.
+p_cucgach_fb: 1.92s, synth 5.6s :: Số hai: nhạc chuông điện thoại cũ.
+p_modem: 2.08s, synth 5.5s :: Số một: tiếng modem quay số.
+p_modem_fb: 1.52s, synth 2.8s :: Số một: tiếng quay số.
+vendor_call: 1.20s, synth 3.3s :: Ai bánh mì không?
+PROBE DONE in 57.6s
