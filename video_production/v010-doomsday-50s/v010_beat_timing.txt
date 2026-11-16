@@ -1,0 +1,6 @@
+hook: 0.00-6.59 (17 words, 155 wpm, rate 0.95)
+beat1: 6.89-19.31 (33 words, 165 wpm, rate 0.95)
+beat2: 19.71-32.86 (34 words, 160 wpm, rate 0.85)
+beat3: 33.26-47.34 (35 words, 158 wpm, rate 0.95)
+payoff: 47.94-54.53 (18 words, 164 wpm, rate 0.9)
+TOTAL 54.53s, 137 words, overall 151 wpm

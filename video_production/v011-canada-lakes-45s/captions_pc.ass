@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.63,Default,,0,0,0,,Một nước giữ hơn
+Dialogue: 0,0:00:01.63,0:00:03.26,Default,,0,0,0,,nửa số hồ trên
+Dialogue: 0,0:00:03.26,0:00:04.90,Default,,0,0,0,,cả hành tinh. Đoán
+Dialogue: 0,0:00:04.90,0:00:06.53,Default,,0,0,0,,thử xem nước nào?
+Dialogue: 0,0:00:06.83,0:00:08.26,Default,,0,0,0,,Đó là Canada. Hơn
+Dialogue: 0,0:00:08.26,0:00:09.68,Default,,0,0,0,,sáu mươi phần trăm
+Dialogue: 0,0:00:09.68,0:00:11.11,Default,,0,0,0,,số hồ trên thế
+Dialogue: 0,0:00:11.11,0:00:12.54,Default,,0,0,0,,giới nằm ở đây,
+Dialogue: 0,0:00:12.54,0:00:13.96,Default,,0,0,0,,hơn ba mươi mốt
+Dialogue: 0,0:00:13.96,0:00:15.39,Default,,0,0,0,,nghìn hồ lớn.
+Dialogue: 0,0:00:15.79,0:00:17.32,Default,,0,0,0,,Vì sao nhiều đến
+Dialogue: 0,0:00:17.32,0:00:18.85,Default,,0,0,0,,vậy? Mười nghìn năm
+Dialogue: 0,0:00:18.85,0:00:20.38,Default,,0,0,0,,trước, băng tuyết khổng
+Dialogue: 0,0:00:20.38,0:00:21.91,Default,,0,0,0,,lồ cào xới mặt
+Dialogue: 0,0:00:21.91,0:00:23.44,Default,,0,0,0,,đất, để lại hàng
+Dialogue: 0,0:00:23.44,0:00:24.97,Default,,0,0,0,,triệu hố sâu. Băng
+Dialogue: 0,0:00:24.97,0:00:26.50,Default,,0,0,0,,tan, nước đọng lại
+Dialogue: 0,0:00:26.50,0:00:28.03,Default,,0,0,0,,thành hồ.
+Dialogue: 0,0:00:28.43,0:00:30.06,Default,,0,0,0,,Trong đó có hồ
+Dialogue: 0,0:00:30.06,0:00:31.69,Default,,0,0,0,,Lớn, cụm hồ nước
+Dialogue: 0,0:00:31.69,0:00:33.32,Default,,0,0,0,,ngọt lớn nhất thế
+Dialogue: 0,0:00:33.32,0:00:34.94,Default,,0,0,0,,giới. Riêng hồ Thượng
+Dialogue: 0,0:00:34.94,0:00:36.57,Default,,0,0,0,,giữ gần một phần
+Dialogue: 0,0:00:36.57,0:00:38.20,Default,,0,0,0,,năm lượng nước hồ
+Dialogue: 0,0:00:38.20,0:00:39.83,Default,,0,0,0,,ngọt toàn cầu.
+Dialogue: 0,0:00:40.43,0:00:42.26,Default,,0,0,0,,Một nước, hơn nửa
+Dialogue: 0,0:00:42.26,0:00:44.09,Default,,0,0,0,,số hồ của cả
+Dialogue: 0,0:00:44.09,0:00:45.92,Default,,0,0,0,,Trái Đất. Bạn đã
+Dialogue: 0,0:00:45.92,0:00:47.75,Default,,0,0,0,,từng tới Canada chưa?
+Dialogue: 0,0:00:47.75,0:00:49.58,Default,,0,0,0,,Bình luận nhé!

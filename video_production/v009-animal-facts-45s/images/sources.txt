@@ -1,0 +1,47 @@
+V009 image sources (all CC0 via Openverse)
+
+n5_dolphin: Free Dolphin jumping image
+  file: images/n5_dolphin_0.jpg (3504x2336)
+  license: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+  creator: None
+  source: https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHgxMzU2MDE2LWltYWdlLWt3dnh4eGl6LmpwZw.jpg
+  landing: https://www.rawpixel.com/image/5924151/photo-image-public-domain-blue-ocean
+
+n4_grasshopper: A close-up of a grasshopper on a mountain road, blending with nearby dry leaves.
+  file: images/n4_grasshopper_1.jpg (2048x1365)
+  license: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+  creator: Brandon Zhang
+  source: https://pd.w.org/2025/11/7176909b6ae203bc9.21409258-2048x1365.jpg
+  landing: https://wordpress.org/photos/photo/7176909b6a/
+
+n3_ant: Leafcutter ant carrying leaf
+  file: images/n3_ant_0.jpg (606x768)
+  license: cc0 (https://creativecommons.org/publicdomain/zero/1.0/deed.en/)
+  creator: Alex Wild
+  source: https://upload.wikimedia.org/wikipedia/commons/f/fa/Leafcutter_ant_carrying_leaf.jpg
+  landing: https://commons.wikimedia.org/w/index.php?curid=18089547
+
+n2_flyingfish: Flying-fish Natural History British Fishes
+  file: images/n2_7.jpg (3039x1815)
+  license: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+  creator: newyorkpubliclibrary
+  source: https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMC0yMDAwMzEuanBn.jpg
+  landing: https://www.rawpixel.com/image/431308/free-illustration-image-tropical-fish-animals
+
+n1_octopus: A rock octopus floating with curled tentacles on a coral reef
+  file: images/n1_octopus_2.jpg (2048x1536)
+  license: cc0 (https://creativecommons.org/publicdomain/zero/1.0/)
+  creator: Nahuai Badiola
+  source: https://pd.w.org/2026/06/8086a2144b4424558.50998657-2048x1536.jpeg
+  landing: https://wordpress.org/photos/photo/8086a2144b/
+
+REJECTED:
+- n2_flyingfish #0 and #5: classical mythological painting, not a flying fish.
+- n5_dolphin #1: captive pool dolphin (less natural than #0 jumping in the sea).
+- n4_grasshopper #2: portrait, grasshopper small on a tree.
+- n4_grasshopper #3: grasshopper small on a leaf.
+- n3_ant #1: duplicate of #0 (same image).
+- n1_octopus #0: sucker close-up, does not read as an octopus at a glance.
+- n1_octopus #1: aquarium octopus, blue-lit; #2 natural reef preferred.
+- n2_flyingfish #1: vintage Exocoetus illustration with small-print text at the bottom; #7 (British Fishes plate) is cleaner and larger.
+- Several candidates failed to download (HTTP 403 from source host) or had null URLs.

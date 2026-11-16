@@ -1,0 +1,44 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,360,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.15,Default,,0,0,0,,Top 5 sự thật
+Dialogue: 0,0:00:01.15,0:00:02.29,Default,,0,0,0,,về động vật, nghe
+Dialogue: 0,0:00:02.29,0:00:03.44,Default,,0,0,0,,như bịa mà thật.
+Dialogue: 0,0:00:03.74,0:00:05.27,Default,,0,0,0,,Số năm: cá heo
+Dialogue: 0,0:00:05.27,0:00:06.80,Default,,0,0,0,,có tên riêng. Mỗi
+Dialogue: 0,0:00:06.80,0:00:08.32,Default,,0,0,0,,con kêu một điệu
+Dialogue: 0,0:00:08.32,0:00:09.85,Default,,0,0,0,,riêng, cả đàn nghe
+Dialogue: 0,0:00:09.85,0:00:11.38,Default,,0,0,0,,là biết ai.
+Dialogue: 0,0:00:11.78,0:00:13.55,Default,,0,0,0,,Số bốn: châu chấu
+Dialogue: 0,0:00:13.55,0:00:15.32,Default,,0,0,0,,làm nhạc bằng chân.
+Dialogue: 0,0:00:15.32,0:00:17.09,Default,,0,0,0,,Nó cọ chân vào
+Dialogue: 0,0:00:17.09,0:00:18.86,Default,,0,0,0,,cánh, tiếng kêu thành
+Dialogue: 0,0:00:18.86,0:00:20.63,Default,,0,0,0,,một bản nhạc.
+Dialogue: 0,0:00:21.03,0:00:22.60,Default,,0,0,0,,Số ba: kiến biết
+Dialogue: 0,0:00:22.60,0:00:24.17,Default,,0,0,0,,trồng nấm. Kiến cắt
+Dialogue: 0,0:00:24.17,0:00:25.74,Default,,0,0,0,,lá về tổ, không
+Dialogue: 0,0:00:25.74,0:00:27.31,Default,,0,0,0,,để ăn, mà để
+Dialogue: 0,0:00:27.31,0:00:28.88,Default,,0,0,0,,trồng nấm.
+Dialogue: 0,0:00:29.28,0:00:30.70,Default,,0,0,0,,Số hai: cá bay,
+Dialogue: 0,0:00:30.70,0:00:32.12,Default,,0,0,0,,bay thật. Nó lao
+Dialogue: 0,0:00:32.12,0:00:33.54,Default,,0,0,0,,khỏi mặt nước, lướt
+Dialogue: 0,0:00:33.54,0:00:34.96,Default,,0,0,0,,trên không tới hai
+Dialogue: 0,0:00:34.96,0:00:36.38,Default,,0,0,0,,trăm mét để trốn
+Dialogue: 0,0:00:36.38,0:00:37.80,Default,,0,0,0,,kẻ săn mồi.
+Dialogue: 0,0:00:38.40,0:00:39.99,Default,,0,0,0,,Và số một: bạch
+Dialogue: 0,0:00:39.99,0:00:41.59,Default,,0,0,0,,tuộc có tới ba
+Dialogue: 0,0:00:41.59,0:00:43.18,Default,,0,0,0,,trái tim. Hai tim
+Dialogue: 0,0:00:43.18,0:00:44.78,Default,,0,0,0,,bơm máu đi mang,
+Dialogue: 0,0:00:44.78,0:00:46.38,Default,,0,0,0,,một tim bơm đi
+Dialogue: 0,0:00:46.38,0:00:47.97,Default,,0,0,0,,khắp cơ thể.
+Dialogue: 0,0:00:48.37,0:00:49.80,Default,,0,0,0,,Bạn tin không? Bình
+Dialogue: 0,0:00:49.80,0:00:51.23,Default,,0,0,0,,luận nhé!

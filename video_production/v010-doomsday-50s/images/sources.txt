@@ -1,0 +1,48 @@
+# V010 — sources (CC0 / CC BY only) + rejections
+# All numbers appear on screen only, never in voiceover (script rule).
+# Graphs + calendar are OWN assets drawn locally (draw_assets.py) from
+# verified data — no assets reused from original #82.
+
+## USED
+- images/hook_calendar.png — OWN ASSET (drawn with PIL). November 2026
+  calendar, day 13 circled red (Friday 13th). Be Vietnam Pro.
+- images/beat1_science_invention_1928.jpg — CC0, Rawpixel,
+  "Science & Invention, November 1928" (vintage science magazine cover).
+  https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvZmlsZXMvd2Vic2l0ZS8yMDIzLTA0L3drNDQyMjgz
+- images/beat1b_popular_science_1940.jpg — CC BY, Flickr,
+  "Popular Science, June 1940" (vintage science magazine cover).
+  https://live.staticflickr.com/7679/16864827387_cb2786c85f_b.jpg
+- images/graph_forecast.png — OWN ASSET (matplotlib). Von Foerster
+  hyperbolic forecast P = k/(2026.87 - t), k set so P(1960) = 3.0 tỉ
+  (verified: actual 1960 population ~3.0 tỉ). Dashed asymptote 13/11/2026.
+- images/graph_forecast_zoom.png — OWN ASSET (matplotlib). Same curve,
+  zoomed 2000-2027, "VÔ CÙNG?" annotation. No data dot (the curve
+  alone shows the explosion; an earlier draft had a "2000: 6 tỉ" dot
+  at the formula value 7.47 — removed as misleading).
+- images/graph_growth_rate.png — OWN ASSET (matplotlib). Real annual
+  growth rate 1950-2023, peak ~2.2% in 1963, 0.87% in 2023
+  (verified: Science.org / Census Bureau via script).
+- images/graph_bars.png — OWN ASSET (matplotlib). LINEAR scale bars:
+  forecast 96-205 tỉ (red bar to 96 + whisker to 205) vs actual 8.2 tỉ
+  (teal). (An earlier log-scale draft shrank the 12-25x gap visually —
+  redrawn linear.)
+- images/payoff_night_sky.jpg — CC0, StockSnap, "Night Sky" (6000x4000).
+  https://cdn.stocksnap.io/img-thumbs/960w/3O51V5Q49Q.jpg
+- Audio: bgm_suspense.ogg + ding/whoosh/pop.ogg — Core_SFX library,
+  all CC0 (Freesound HQ previews via Openverse).
+
+## REJECTED (downloaded, not used)
+- images/beat1_alt_1960_post.jpg — CC0, Flickr, "1960-01-23 Post
+  Office" (two men with a POST MAIL CLOSED sign): a 1960 photo but
+  nothing to do with the science paper; no narrative fit.
+- images/hook_alt_november_page.jpg — CC0, Rawpixel, medieval
+  illuminated November calendar page: beautiful but a 15th-century
+  manuscript — the "13" is not identifiable; the drawn calendar is
+  exact (Nov 2026, Friday 13th circled).
+- images/payoff_stars_galaxy.jpg — CC0, StockSnap, "Stars Galaxy"
+  (colourful Milky Way + person silhouette): too busy/bright for
+  end-card text; the plain night sky is better for legibility.
+- Openverse candidates not downloaded: medieval calendar pages
+  (Wikimedia, CC0 — same problem as hook_alt), "Captain Future"
+  pulp covers (CC BY — fiction, wrong tone), "Fact Findings" 1934
+  documents (Wikimedia — tiny, low-res, irrelevant).

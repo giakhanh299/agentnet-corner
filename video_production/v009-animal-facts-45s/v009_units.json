@@ -1,0 +1,86 @@
+[
+  {
+    "unit": "hook",
+    "text": "Top 5 sự thật về động vật, nghe như bịa mà thật.",
+    "start": 0.0,
+    "end": 3.44,
+    "words": 12
+  },
+  {
+    "unit": "n5a",
+    "text": "Số năm: cá heo có tên riêng.",
+    "start": 3.74,
+    "end": 5.95,
+    "words": 7
+  },
+  {
+    "unit": "n5b",
+    "text": "Mỗi con kêu một điệu riêng, cả đàn nghe là biết ai.",
+    "start": 6.25,
+    "end": 11.38,
+    "words": 12
+  },
+  {
+    "unit": "n4a",
+    "text": "Số bốn: châu chấu làm nhạc bằng chân.",
+    "start": 11.78,
+    "end": 15.34,
+    "words": 8
+  },
+  {
+    "unit": "n4b",
+    "text": "Nó cọ chân vào cánh, tiếng kêu thành một bản nhạc.",
+    "start": 15.64,
+    "end": 20.63,
+    "words": 11
+  },
+  {
+    "unit": "n3a",
+    "text": "Số ba: kiến biết trồng nấm.",
+    "start": 21.03,
+    "end": 23.4,
+    "words": 6
+  },
+  {
+    "unit": "n3b",
+    "text": "Kiến cắt lá về tổ, không để ăn, mà để trồng nấm.",
+    "start": 23.7,
+    "end": 28.88,
+    "words": 12
+  },
+  {
+    "unit": "n2a",
+    "text": "Số hai: cá bay, bay thật.",
+    "start": 29.28,
+    "end": 31.73,
+    "words": 6
+  },
+  {
+    "unit": "n2b",
+    "text": "Nó lao khỏi mặt nước, lướt trên không tới hai trăm mét để trốn kẻ săn mồi.",
+    "start": 32.03,
+    "end": 37.8,
+    "words": 17
+  },
+  {
+    "unit": "n1a",
+    "text": "Và số một: bạch tuộc có tới ba trái tim.",
+    "start": 38.4,
+    "end": 42.52,
+    "words": 10
+  },
+  {
+    "unit": "n1b",
+    "text": "Hai tim bơm máu đi mang, một tim bơm đi khắp cơ thể.",
+    "start": 42.82,
+    "end": 47.97,
+    "words": 13
+  },
+  {
+    "unit": "cta",
+    "text": "Bạn tin không? Bình luận nhé!",
+    "start": 48.37,
+    "end": 51.23,
+    "words": 6
+  }
+]

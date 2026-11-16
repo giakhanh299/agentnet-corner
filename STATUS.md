@@ -7,9 +7,17 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~12:37 +07.
+> Cập nhật lần cuối: 2026-11-16 ~13:39 +07.
 
 ## DONE
+
+### Video #9 (v009) — DONE + QC-passed 2026-11-16 ~13:39 +07
+- **File:** `video_production/v009-animal-facts-45s/v009.mp4` — 51,23s, 1080x1920, 30fps, H.264 + AAC 192k, 14.661.744 byte, sha256 `dc6c97c0e52e7ba322ac80b4845733e5b92afe563d48f914247e977d1f08db9b` — **-16,12 LUFS**, true peak **-2,95 dBTP**, giọng từ 0,00s, **152 wpm lúc nói** (141 tổng, 120 từ — khoảng lặng đếm ngược có chủ ý như v005/v007), Whisper large-v3 (PC) 102/120 = 85,0%.
+- **Chủ đề:** "Top 5 sự thật về động vật" (F3 Countdown, T04 #84, 80) — đúng 5 sự thật, #1 là bạch tuộc 3 tim; không dùng mèo AI của video gốc (số lớn + ảnh động vật).
+- **Render + mix + encode hoàn toàn trên PC** (encode 15,3s, đúng 1537 frames). Nhạc bgm_comedy ~19,7 dB dưới giọng (đúng mục tiêu).
+- **Probe:** "huýt" FAIL → "kêu". Giữ "bạch tuộc", "lướt", "cọ", "Top" (chữ trên màn hình gánh chính tả).
+- **Sự cố:** scp 2 file cùng lúc tới đích là file-path tạo ra thư mục tên `v009_probe.py` trên PC (probe lỗi "can't find '__main__' module") — sửa bằng move/rmdir trên PC; bài học: một file mỗi lần scp, hoặc đích là thư mục.
+- **Hạn chế thật:** chưa có người nghe (Whisper 85,0%); hook 209 wpm / n2b 177 wpm nhanh; ảnh cá bay là tranh minh họa cổ (không tìm được ảnh thật tải được); ảnh kiến hơi mềm (606px); phụ đề chạm mép dưới hàng #4 và trùng end card 2s cuối (nit cũ). Chưa đăng. Drive: v009.mp4 id `1U0Fq09bQ1OAUKtnbISUpb2eqlauYmHH_`.
 
 ### Lô kịch bản v012 + v013 + v014 — DONE 2026-11-16 ~12:37 +07 (chỉ kịch bản, chưa sản xuất)
 - **File:** `video_production/scripts-batch-20261116/` — 3 kịch bản mới + `scripts_batch.md` (mục lô v012–v014). Viết trước theo chỉ đạo của chủ (làm việc chủ động, tự tìm việc khi rảnh, làm trước tiến độ); lô v009–v011 đã giao 10:49 sáng nay, chưa có lệnh sản xuất, nên lô này lấp khoảng trống tiếp theo để sản xuất không phải chờ.

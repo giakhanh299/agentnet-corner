@@ -1,0 +1,36 @@
+# Nguồn ảnh V011 — toàn CC0 (xem img_candidates.json)
+# Không dùng gì từ video gốc #83. Bản đồ Canada tự vẽ (draw_canada_map.py,
+# dữ liệu Natural Earth 110m, public domain).
+
+## DÙNG (6 ảnh)
+- hook_earth1.jpg — "First Color Photograph of Earth from Space" (1968),
+  Wikimedia Commons, CC0, 3000x1565.
+  https://upload.wikimedia.org/wikipedia/commons/a/ae/First_Color_Photograph_of_Earth_from_Space.jpg
+- canada_map.png — TỰ VẼ bằng PIL từ Natural Earth 110m admin_0 (public
+  domain): viền đỏ, 260 chấm hồ (tập trung vành đai Shield Ontario/
+  Manitoba), Ngũ Đại Hồ vẽ theo đúng kinh/vĩ độ thật. 2160x3840.
+- beat2_glacier1.jpg — "Hardangerjøkulen, luftfoto" (ảnh trên không sông
+  băng Na Uy), Wikimedia Commons, CC0, 2500x1661.
+  https://upload.wikimedia.org/wikipedia/commons/a/ad/Hardangerj%C3%B8kulen%2C_luftfoto.jpg
+- beat2_glacier2.jpg — "Mount Chudleigh" (núi tuyết + sông băng),
+  Wikimedia Commons, CC0, 2236x1833.
+  https://upload.wikimedia.org/wikipedia/commons/4/41/Mount_Chudleigh.jpg
+- beat3_superior.jpg — "Lake Superior & Duluth Aerial Lift Bridge",
+  Flickr, CC0, 1024x748 (hơi mềm khi crop 9:16, chấp nhận được).
+  https://live.staticflickr.com/7461/16077159158_7f211bb8e6_b.jpg
+- payoff_moraine3.jpg — "Moraine Lake (Unsplash)" (hồ turquoise + thông
+  tuyết), Wikimedia Commons, CC0, 5184x3456.
+  https://upload.wikimedia.org/wikipedia/commons/6/65/Moraine_Lake_%28Unsplash%29.jpg
+
+## LOẠI
+- hook_earth2 (rawpixel Blue Marble) — tải lỗi HTTP 404, không dùng.
+- beat3_lakes_space.png — "Great Lakes from space" (Wikimedia, CC0) —
+  LOẠI vì chữ ghi trên ảnh là tiếng Tây Ban Nha (LAGO SUPERIOR/HURON/
+  ERIE/ONTARIO/MICHIGAN), sai ngôn ngữ video.
+- beat1_nunavut.jpg — ảnh vệ tinh thật vùng hồ Nunavut (rawpixel CC0,
+  3873x3930) — dự phòng cho beat 1 nếu bản đồ tự vẽ không đạt; không
+  dùng vì bản đồ tự vẽ đã đạt.
+- payoff_moraine1.jpg — Moraine Lake 4288x2848 nhưng có cánh tay + máy
+  ảnh của người chụp lọt khung phải — LOẠI.
+- payoff_moraine2.jpg — Moraine Lake 6000x3375 — dự phòng, không dùng
+  (moraine3 ấn tượng hơn nhờ thông tuyết).

@@ -1,0 +1,49 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.32,Default,,0,0,0,,Ngày mười ba vừa
+Dialogue: 0,0:00:01.32,0:00:02.64,Default,,0,0,0,,rồi, thế giới phải
+Dialogue: 0,0:00:02.64,0:00:03.95,Default,,0,0,0,,tận thế. Nhưng bạn
+Dialogue: 0,0:00:03.95,0:00:05.27,Default,,0,0,0,,vẫn đang xem video
+Dialogue: 0,0:00:05.27,0:00:06.59,Default,,0,0,0,,này.
+Dialogue: 0,0:00:06.89,0:00:08.27,Default,,0,0,0,,Tin đồn đó bắt
+Dialogue: 0,0:00:08.27,0:00:09.65,Default,,0,0,0,,đầu từ một bài
+Dialogue: 0,0:00:09.65,0:00:11.03,Default,,0,0,0,,báo thật, đăng từ
+Dialogue: 0,0:00:11.03,0:00:12.41,Default,,0,0,0,,năm một chín sáu
+Dialogue: 0,0:00:12.41,0:00:13.79,Default,,0,0,0,,mươi. Tựa bài báo
+Dialogue: 0,0:00:13.79,0:00:15.17,Default,,0,0,0,,ghi rõ: Ngày tận
+Dialogue: 0,0:00:15.17,0:00:16.55,Default,,0,0,0,,thế, thứ sáu, ngày
+Dialogue: 0,0:00:16.55,0:00:17.93,Default,,0,0,0,,mười ba tháng mười
+Dialogue: 0,0:00:17.93,0:00:19.31,Default,,0,0,0,,một.
+Dialogue: 0,0:00:19.71,0:00:21.17,Default,,0,0,0,,Ba nhà khoa học
+Dialogue: 0,0:00:21.17,0:00:22.63,Default,,0,0,0,,tính rằng dân số
+Dialogue: 0,0:00:22.63,0:00:24.09,Default,,0,0,0,,tăng nhanh mãi, rồi
+Dialogue: 0,0:00:24.09,0:00:25.55,Default,,0,0,0,,chạm tới vô cùng
+Dialogue: 0,0:00:25.55,0:00:27.02,Default,,0,0,0,,vào đúng năm đó.
+Dialogue: 0,0:00:27.02,0:00:28.48,Default,,0,0,0,,Nhưng họ cũng không
+Dialogue: 0,0:00:28.48,0:00:29.94,Default,,0,0,0,,tin, vì đó là
+Dialogue: 0,0:00:29.94,0:00:31.40,Default,,0,0,0,,sinh nhật của ông
+Dialogue: 0,0:00:31.40,0:00:32.86,Default,,0,0,0,,trưởng nhóm.
+Dialogue: 0,0:00:33.26,0:00:34.82,Default,,0,0,0,,Nhưng thực tế khác
+Dialogue: 0,0:00:34.82,0:00:36.39,Default,,0,0,0,,hẳn. Tốc độ tăng
+Dialogue: 0,0:00:36.39,0:00:37.95,Default,,0,0,0,,dân số đạt đỉnh
+Dialogue: 0,0:00:37.95,0:00:39.52,Default,,0,0,0,,từ năm một chín
+Dialogue: 0,0:00:39.52,0:00:41.08,Default,,0,0,0,,sáu ba rồi giảm
+Dialogue: 0,0:00:41.08,0:00:42.65,Default,,0,0,0,,dần. Hôm nay thế
+Dialogue: 0,0:00:42.65,0:00:44.21,Default,,0,0,0,,giới có hơn tám
+Dialogue: 0,0:00:44.21,0:00:45.78,Default,,0,0,0,,tỉ người, không phải
+Dialogue: 0,0:00:45.78,0:00:47.34,Default,,0,0,0,,hàng trăm tỉ.
+Dialogue: 0,0:00:47.94,0:00:49.26,Default,,0,0,0,,Bài học: kéo quá
+Dialogue: 0,0:00:49.26,0:00:50.58,Default,,0,0,0,,khứ ra tương lai,
+Dialogue: 0,0:00:50.58,0:00:51.89,Default,,0,0,0,,toán cũng nói dối.
+Dialogue: 0,0:00:51.89,0:00:53.21,Default,,0,0,0,,Bạn nghĩ sao? Bình
+Dialogue: 0,0:00:53.21,0:00:54.53,Default,,0,0,0,,luận nhé!

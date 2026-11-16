@@ -209,3 +209,107 @@ stickman.
   → assemble + loudnorm -16 LUFS → QC frame), **render trên PC** theo
   lệnh của chủ 21:53 15/11; nhớ bài học v003: bỏ `-loop 1` + giới hạn
   cứng `-frames:v`.
+
+---
+
+# Lô tiếp theo — v015 + v016 + v017 (2026-11-16, viết trước)
+
+**Bối cảnh:** làm trước theo chỉ đạo của chủ (15/11 ~15:50: làm việc chủ
+động, tự tìm việc khi rảnh, làm trước tiến độ; và 15/11 ~17:34: chủ đề
+lấy từ ngân hàng 30 video đã phân tích sâu). Lô v009–v011 đang sản xuất
+theo lệnh của chủ 13:26 hôm nay ("Làm cả 3 video luôn"); lô v012–v014
+đã viết xong, chờ giao. Ba kịch bản này viết theo lô từ 3 chủ đề chưa
+dùng trong ngân hàng 30 — mỗi kịch bản một ngách khác nhau (bất ngờ ·
+cảm xúc · bất ngờ) và một format khác nhau (hình phi lý · tranh AI kể
+chuyện · storytime chữ phụ đề). **Chỉ kịch bản — chưa sản xuất video,
+chưa tổng hợp giọng, chưa đăng/upload gì.** Sản xuất theo lệnh của chủ
+như lần trước. File sẽ lên git qua auto-push 30 phút (`auto_push.sh`
+đã sync `video_production/`).
+
+## Bảng tổng kết
+
+| # | Video | Chủ đề | Công thức | Từ | Tốc độ | Nguồn gốc |
+|---|---|---|---|---|---|---|
+| v015 | B01 #8 (76) | Quả bóng bay chỉ bay theo bạn | F4 một hình phi lý, 45s | 120 | ~160 từ/phút | B01, deep-analysis-25 |
+| v016 | C03 #30 (74) | Về nhà ăn Tết | F7 tranh AI kể chuyện, 50s | 133 | ~160 từ/phút | C03, deep-analysis-25 |
+| v017 | B02 #10 (67) | Bài kiểm tra chi tiêu | Storytime chữ phụ đề, 45s | 122 | ~163 từ/phút | B02, deep-analysis-25 |
+
+**Thứ tự sản xuất đề xuất:** v015 → v016 → v017. Lý do: v015 rẻ nhất
+(3–4 ảnh AI tĩnh + giọng, không cần clip AI video); v016 cần 5–6 ảnh
+AI nhất quán (nhân vật không đổi mặt); v017 cần phụ đề đổi nhanh theo
+nhịp kể. Cả ba đều không cần quay phim, không cần rig stickman.
+
+## Điểm chung của cả 3 kịch bản
+- **Truyện gốc tiếng Việt hoàn toàn** (như v004/v008 — không có sự thật
+  nào cần kiểm chứng ngoài, đã ghi rõ trong từng file); hook kép (chữ +
+  giọng cùng một câu) trong 3s đầu; giọng vào từ 0,1s; chuẩn -16 LUFS;
+  phụ đề từng đoạn ngắn.
+- **MMS-TTS-friendly:** không có số, năm, tên nước ngoài trong lời
+  thoại (chỉ hiện trên hình); mỗi kịch bản có danh sách từ cần probe
+  trên PC trước khi chốt giọng (xem từng file).
+- **Nhạc + SFX từ thư viện Core_SFX** (toàn CC0): v015 dùng
+  bgm_suspense; v016 dùng bgm_calm; v017 dùng bgm_upbeat — mỗi kịch bản
+  ghi rõ tên file + vị trí đặt SFX theo giây.
+- **Không dùng lại tài sản của video gốc:** v015 vẽ lại bóng bay của
+  mình + gắn nhãn "VIDEO DO AI TẠO" như video gốc; v016 vẽ lại toàn bộ
+  ảnh với phong cách riêng (không nhái Ghibli); v017 tự làm phụ đề,
+  không dùng OpusClip (watermark của video gốc).
+
+## Cơ chế giữ lại từ phân tích sâu (mỗi kịch bản có chi tiết trong file)
+- **v015:** một hình ảnh phi lý + một quy tắc bí ẩn (bóng bay chỉ phản
+  ứng với bạn) — người xem ở lại để biết quy tắc là gì; sửa dead air
+  1,14s đầu của video gốc bằng tiếng gõ cửa từ 0,1s.
+- **v016:** tranh AI kể chuyện "chuẩn bị → hành trình → trở về",
+  payoff sum họp; sửa giọng vào muộn (hai khoảng lặng đầu) của video
+  gốc bằng hook kép + giọng từ 0,1s; Tết Việt thay Diwali.
+- **v017:** thẻ tiêu đề 3 phần → kể chuyện → câu kết tự tin gây tranh
+  cãi ("tôi xứng đáng") kéo bình luận; thêm cú lật (người bị kiểm tra
+  là anh ta); sửa âm thanh gốc -36,95 LUFS bằng chuẩn -16 LUFS.
+
+## Từ cần probe trên PC trước khi sản xuất (tổng hợp từ 3 file)
+- v015: "lơ lửng", "phồng", "che kín", "gõ cửa".
+- v016: "vali", "cay cay", "bạc" (tóc bạc), "Tết".
+- v017: "chi tiêu", "chiều chuộng", "xứng đáng", "đánh giá".
+- Quy tắc probe theo bài học v002/v003: probe từng câu riêng bằng
+  MMS-TTS trên PC + kiểm bằng faster-whisper large-v3; nếu hỏng thì đổi
+  từ theo gợi ý trong từng file (đã ghi sẵn phương án thay thế).
+
+## Quyết định biên tập đáng chú ý (ghi lại để không bị "sửa" mất)
+1. **v015:** kể bằng ảnh AI tĩnh + zoom nhẹ, KHÔNG dùng clip AI video
+   (Veo/Kling) — rủi ro bóng bay/nhân vật đổi hình giữa các cảnh.
+2. **v016:** chuyện Việt, Tết Việt, phong cách vẽ riêng — không dịch
+   lời kể Hindi (transcript gốc hỏng) và không nhái tranh Ghibli.
+3. **v017:** giữ câu "tôi xứng đáng được chiều chuộng" — đó là động cơ
+   bình luận; đừng làm mềm câu kết.
+
+## File trong thư mục này (lô v015–v017)
+- `script_v015-balloon-45s.md` — kịch bản v015 (120 từ) + nguồn +
+  từ cần probe.
+- `script_v016-homecoming-50s.md` — kịch bản v016 (133 từ) + nguồn +
+  từ cần probe.
+- `script_v017-spending-test-45s.md` — kịch bản v017 (122 từ) + nguồn
+  + quyết định giữ câu "tôi xứng đáng".
+- `scripts_batch.md` — file này (cả lô v009–v011, v012–v014 ở trên và
+  lô v015–v017 ở dưới).
+
+## Việc còn lại trước khi sản xuất (cho bước sau, không phải lô này)
+- Probe các từ rủi ro trên PC (danh sách ở trên) và chốt từ thay thế
+  nếu cần.
+- Chuẩn bị tài sản theo ghi chú từng file (3–4 ảnh bóng bay nhất quán
+  cho v015; 5–6 ảnh AI nhất quán cho v016; 3 ảnh nhà hàng/cửa hàng xe
+  cho v017).
+- Sản xuất theo thứ tự đề xuất (v015 → v016 → v017) với pipeline
+  v001/v002 (MMS-TTS trên PC, speaking_rate 0.92 → faster-whisper kiểm
+  → assemble + loudnorm -16 LUFS → QC frame), **render trên PC** theo
+  lệnh của chủ 21:53 15/11; nhớ bài học v003: bỏ `-loop 1` + giới hạn
+  cứng `-frames:v`.
+
+## Ngân hàng 30 sau lô này
+Đã dùng 17/30 (v002–v008 + Ep001 lấy cảm hứng FB-05 + v009–v017).
+(v001 cửa sổ máy bay là kịch bản gốc kiểu #81/T05, không phải làm lại
+từ một video trong ngân hàng.)
+Chưa dùng: H04 #66, H05 #4, H06 #23, H07 #52, H08 #22, B03 #67,
+B04 #55, B05 #15, B06 #24, C05 #43, D02 #97, D03 #96, D04 #34
+(13 video) + 10 dự bị R1–R10. Theo câu hỏi của chủ 17:34 15/11, lô
+nghiên cứu mới (100 → 30) chỉ cần khi ngân hàng cạn sau ~10–15 video
+nữa — chưa tới lúc.
