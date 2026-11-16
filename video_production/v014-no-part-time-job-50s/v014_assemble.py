@@ -24,7 +24,7 @@ INDIR = r"C:\Users\w\agentnet-corner\ai-stack\v014_tts"
 OUTDIR = r"C:\Users\w\v014_render"
 os.makedirs(OUTDIR, exist_ok=True)
 SR = 48000
-ATEMPO = 0.69
+ATEMPO = 0.66  # trimmed native is 236 wpm; 0.66 -> ~156 wpm speech-only (0.69 gave 163.4, top edge)
 THRESH = 0.01
 KEEP_S = 0.01
 

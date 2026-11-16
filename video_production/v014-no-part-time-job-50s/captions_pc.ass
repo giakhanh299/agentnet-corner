@@ -1,0 +1,48 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.47,Default,,0,0,0,,Đừng làm thêm giờ
+Dialogue: 0,0:00:01.47,0:00:02.95,Default,,0,0,0,,nữa. Máy tính nhà
+Dialogue: 0,0:00:02.95,0:00:04.42,Default,,0,0,0,,bạn làm video nhanh
+Dialogue: 0,0:00:04.42,0:00:05.90,Default,,0,0,0,,hơn bạn tưởng.
+Dialogue: 0,0:00:06.20,0:00:07.65,Default,,0,0,0,,Tôi làm video bốn
+Dialogue: 0,0:00:07.65,0:00:09.10,Default,,0,0,0,,mươi lăm giây thế
+Dialogue: 0,0:00:09.10,0:00:10.55,Default,,0,0,0,,này: giọng đọc xong
+Dialogue: 0,0:00:10.55,0:00:11.99,Default,,0,0,0,,trong chưa đầy một
+Dialogue: 0,0:00:11.99,0:00:13.44,Default,,0,0,0,,giây, kiểm tra giọng
+Dialogue: 0,0:00:13.44,0:00:14.89,Default,,0,0,0,,chỉ mất chưa đầy
+Dialogue: 0,0:00:14.89,0:00:16.34,Default,,0,0,0,,năm giây.
+Dialogue: 0,0:00:16.74,0:00:18.02,Default,,0,0,0,,Bốn bước thôi. Một,
+Dialogue: 0,0:00:18.02,0:00:19.29,Default,,0,0,0,,viết kịch bản ngắn,
+Dialogue: 0,0:00:19.29,0:00:20.57,Default,,0,0,0,,khoảng một trăm hai
+Dialogue: 0,0:00:20.57,0:00:21.85,Default,,0,0,0,,mươi từ.
+Dialogue: 0,0:00:22.15,0:00:23.40,Default,,0,0,0,,Hai, cho máy đọc
+Dialogue: 0,0:00:23.40,0:00:24.65,Default,,0,0,0,,giọng. Ba, vẽ hình
+Dialogue: 0,0:00:24.65,0:00:25.90,Default,,0,0,0,,bằng trí tuệ nhân
+Dialogue: 0,0:00:25.90,0:00:27.15,Default,,0,0,0,,tạo.
+Dialogue: 0,0:00:27.45,0:00:28.66,Default,,0,0,0,,Bốn, dựng trên máy
+Dialogue: 0,0:00:28.66,0:00:29.88,Default,,0,0,0,,nhà, mười hai giây
+Dialogue: 0,0:00:29.88,0:00:31.09,Default,,0,0,0,,là xong.
+Dialogue: 0,0:00:31.49,0:00:32.38,Default,,0,0,0,,Không hứa bạn giàu
+Dialogue: 0,0:00:32.38,0:00:33.26,Default,,0,0,0,,nhanh.
+Dialogue: 0,0:00:33.56,0:00:35.11,Default,,0,0,0,,Nhưng một buổi tối,
+Dialogue: 0,0:00:35.11,0:00:36.67,Default,,0,0,0,,bạn làm được một
+Dialogue: 0,0:00:36.67,0:00:38.22,Default,,0,0,0,,video. Một tuần, bạn
+Dialogue: 0,0:00:38.22,0:00:39.77,Default,,0,0,0,,có bảy video, mà
+Dialogue: 0,0:00:39.77,0:00:41.32,Default,,0,0,0,,không cần quay phim
+Dialogue: 0,0:00:41.32,0:00:42.88,Default,,0,0,0,,gì cả.
+Dialogue: 0,0:00:43.48,0:00:44.91,Default,,0,0,0,,Làm thêm kiểu cũ
+Dialogue: 0,0:00:44.91,0:00:46.35,Default,,0,0,0,,đổi giờ lấy tiền.
+Dialogue: 0,0:00:46.35,0:00:47.78,Default,,0,0,0,,Làm kiểu này, máy
+Dialogue: 0,0:00:47.78,0:00:49.22,Default,,0,0,0,,làm hộ giờ của
+Dialogue: 0,0:00:49.22,0:00:50.66,Default,,0,0,0,,bạn. Bạn chọn cách
+Dialogue: 0,0:00:50.66,0:00:52.09,Default,,0,0,0,,nào? Bình luận nhé!

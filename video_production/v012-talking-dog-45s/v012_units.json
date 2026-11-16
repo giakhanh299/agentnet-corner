@@ -1,0 +1,113 @@
+{
+  "units": [
+    {
+      "beat": "hook",
+      "clause": "Chó nhà bạn hiểu được bao nhiêu từ của bạn?",
+      "start": 0.02,
+      "end": 3.59,
+      "dur": 3.57,
+      "words": 10
+    },
+    {
+      "beat": "beat1",
+      "clause": "Trung bình, một chú chó hiểu khoảng một trăm sáu mươi lăm từ.",
+      "start": 4.05,
+      "end": 9.22,
+      "dur": 5.17,
+      "words": 13
+    },
+    {
+      "beat": "beat1",
+      "clause": "Gần bằng một đứa trẻ hai tuổi.",
+      "start": 9.84,
+      "end": 12.54,
+      "dur": 2.71,
+      "words": 7
+    },
+    {
+      "beat": "beat1",
+      "clause": "Nhưng có một từ, chó nhà bạn nghe là chạy ngay.",
+      "start": 13.16,
+      "end": 17.34,
+      "dur": 4.18,
+      "words": 11
+    },
+    {
+      "beat": "beat2",
+      "clause": "Tôi là Bin.",
+      "start": 17.96,
+      "end": 19.44,
+      "dur": 1.48,
+      "words": 3
+    },
+    {
+      "beat": "beat2",
+      "clause": "Sáng chủ đi làm, tôi ở nhà chờ.",
+      "start": 20.05,
+      "end": 23.62,
+      "dur": 3.57,
+      "words": 8
+    },
+    {
+      "beat": "beat2",
+      "clause": "Trưa chủ chưa về, tôi chờ tiếp.",
+      "start": 24.24,
+      "end": 26.94,
+      "dur": 2.71,
+      "words": 7
+    },
+    {
+      "beat": "beat2",
+      "clause": "Tối chủ về, chỉ ôm điện thoại.",
+      "start": 27.56,
+      "end": 30.64,
+      "dur": 3.08,
+      "words": 7
+    },
+    {
+      "beat": "beat2",
+      "clause": "Tôi hiểu hơn một trăm từ của chủ, mà chẳng từ nào là chơi với tôi.",
+      "start": 31.25,
+      "end": 37.4,
+      "dur": 6.15,
+      "words": 16
+    },
+    {
+      "beat": "beat3",
+      "clause": "Nhưng chỉ cần chủ nói hai từ thôi, tôi chạy ngay.",
+      "start": 38.02,
+      "end": 42.82,
+      "dur": 4.8,
+      "words": 11
+    },
+    {
+      "beat": "beat3",
+      "clause": "Hai từ đó là: đi dạo.",
+      "start": 43.44,
+      "end": 45.77,
+      "dur": 2.34,
+      "words": 6
+    },
+    {
+      "beat": "payoff",
+      "clause": "Tối nay, thử nói hai từ đó với chó nhà bạn xem.",
+      "start": 46.7,
+      "end": 51.25,
+      "dur": 4.55,
+      "words": 12
+    },
+    {
+      "beat": "payoff",
+      "clause": "Chó nhà bạn thích từ nào nhất? Bình luận nhé!",
+      "start": 51.87,
+      "end": 55.56,
+      "dur": 3.69,
+      "words": 10
+    }
+  ],
+  "total": 55.47,
+  "words": 121,
+  "trim_s": 0.053,
+  "voice": "Mai Anh",
+  "atempo": 0.65
+}

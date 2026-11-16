@@ -1,0 +1,72 @@
+{
+  "atempo": 0.66,
+  "total_dur": 52.093,
+  "speech_s": 49.493,
+  "words": 129,
+  "units": [
+    {
+      "unit": "hook",
+      "text": "Đừng làm thêm giờ nữa. Máy tính nhà bạn làm video nhanh hơn bạn tưởng.",
+      "start": 0.0,
+      "end": 5.898,
+      "words": 15,
+      "pause_after": 0.3
+    },
+    {
+      "unit": "b1",
+      "text": "Tôi làm video bốn mươi lăm giây thế này: giọng đọc xong trong chưa đầy một giây, kiểm tra giọng chỉ mất chưa đầy năm giây.",
+      "start": 6.198,
+      "end": 16.341,
+      "words": 26,
+      "pause_after": 0.4
+    },
+    {
+      "unit": "b2a",
+      "text": "Bốn bước thôi. Một, viết kịch bản ngắn, khoảng một trăm hai mươi từ.",
+      "start": 16.741,
+      "end": 21.848,
+      "words": 14,
+      "pause_after": 0.3
+    },
+    {
+      "unit": "b2b",
+      "text": "Hai, cho máy đọc giọng. Ba, vẽ hình bằng trí tuệ nhân tạo.",
+      "start": 22.148,
+      "end": 27.149,
+      "words": 13,
+      "pause_after": 0.3
+    },
+    {
+      "unit": "b2c",
+      "text": "Bốn, dựng trên máy nhà, mười hai giây là xong.",
+      "start": 27.449,
+      "end": 31.093,
+      "words": 10,
+      "pause_after": 0.4
+    },
+    {
+      "unit": "b3a",
+      "text": "Không hứa bạn giàu nhanh.",
+      "start": 31.493,
+      "end": 33.26,
+      "words": 5,
+      "pause_after": 0.3
+    },
+    {
+      "unit": "b3b",
+      "text": "Nhưng một buổi tối, bạn làm được một video. Một tuần, bạn có bảy video, mà không cần quay phim gì cả.",
+      "start": 33.56,
+      "end": 42.876,
+      "words": 22,
+      "pause_after": 0.6
+    },
+    {
+      "unit": "payoff",
+      "text": "Làm thêm kiểu cũ đổi giờ lấy tiền. Làm kiểu này, máy làm hộ giờ của bạn. Bạn chọn cách nào? Bình luận nhé!",
+      "start": 43.476,
+      "end": 52.093,
+      "words": 24,
+      "pause_after": 0.0
+    }
+  ]
+}

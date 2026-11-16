@@ -7,9 +7,15 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~13:50 +07.
+> Cập nhật lần cuối: 2026-11-16 ~21:02 +07.
 
 ## DONE
+
+### Video #13 (v013) — PARTIAL 2026-11-16 ~21:02 +07 (chưa có mp4 — PC không vào được)
+- **Giọng/âm thanh/hình/thẻ/phụ đề xong trên VPS** (`video_production/v013-iconic-sounds-45s/`): VieNeu "Mai Anh" atempo 0.70 (script chạy 222 wpm native nên 0.65 chỉ được 144 wpm — dùng 0.70 → 161 wpm), voice.wav 45.75s, 116 từ, giọng vào ~0.06s; Whisper Base (VPS) 83/116 = 71,6% (chưa đạt 75% — cần kiểm lại bằng large-v3 trên PC); 5 âm thanh mẫu chuẩn hóa -23 LUFS (chuông trường, xe máy, modem, nhạc chuông Gran Vals tự tổng hợp, rao bánh mì bằng VieNeu); 5 ảnh CC0; 7 thẻ; phụ đề 31 events.
+- **Chặn:** SSH tới PC bị từ chối — quyền "Other TCP connections" (other_tcp) đang Deny sau lần VPS thay máy hôm nay (dù rule allow cho 100.101.158.71 vẫn còn). Lỗi: `nc: Proxy error: "muse: Other TCP connections is turned off..."`. Không render dự phòng trên VPS (theo lệnh của chủ). Cần chủ mở Muse settings → Permissions → Direct network protocols → đổi other_tcp Deny → Ask, rồi chạy lại `v013_to_pc.sh`.
+- **Probe:** "rao"→"bán", "modem"→"quay số". Giữ "chuông trường", "đề nổ", "cục gạch".
+- **Xung đột mức âm:** kịch bản nói âm thanh mẫu phát ngang giọng; lệnh sản xuất nói -18 đến -24 dB dưới giọng — mix script đang để vol 0.12 (~-19 dB); đổi thành 1.0 trong `v013_mix.py` nếu muốn theo kịch bản.
 
 ### Video #11 (v011) — DONE + QC-passed 2026-11-16 ~13:50 +07
 - **File:** `video_production/v011-canada-lakes-45s/v011.mp4` — 49,60s, 1080x1920, 30fps, H.264 + AAC 192k, 21.583.334 byte, sha256 `1fade7c08b4d03d314b5769d7d49e57fbc4bd6eecaad4a5bfe4b48389f428fa7` — **-16,09 LUFS**, true peak **-2,94 dBTP**, giọng vào **0,041s** (đã cắt 0,25s lặng đầu trong wav TTS trước khi xây phụ đề — bài học v010 áp dụng đúng), **151 wpm lúc nói** (115 từ), Whisper large-v3 (PC) 98/115 = 85,2%.

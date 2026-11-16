@@ -1,0 +1,49 @@
+# V013 sources — all CC0 (images via Openverse) or self-made (sounds)
+# Files n2/n3/n4 are WebP served by Rawpixel despite the .jpg names.
+
+## Images (CC0, Openverse)
+- n5_bell.jpg: "Number Nine School Bell monument in Findlay, Ohio" by Mbrickn — cc0, 4032x3005, 3571525 bytes
+  source: https://commons.wikimedia.org/w/index.php?curid=125837206
+  direct: https://upload.wikimedia.org/wikipedia/commons/a/a1/Number_Nine_School_Bell_monument_in_Findlay%2C_Ohio.jpg
+- n4_motorbike.jpg: "Motorcycles, Vietnam, 12/28/2016" by None — cc0, 5303x3540, 334978 bytes
+  source: https://www.rawpixel.com/image/6113780/motorcycles-vietnam-12282016
+  direct: https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4NjY3MzAtaW1hZ2Uta3oyZWJvNXEuanBn.jpg
+- n3_banhmi.jpg: "Vietnamese Banh Mi, street food" by None — cc0, 4000x6000, 297004 bytes
+  source: https://www.rawpixel.com/image/8809356/photo-image-hands-public-domain-food
+  direct: https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2ZmMTc1Mi1pbWFnZS5qcGc.jpg
+- n2_phone.jpg: "Closeup old mobile phone" by None — cc0, 4608x3456, 240002 bytes
+  source: https://www.rawpixel.com/image/6034501/photo-image-phone-public-domain-free
+  direct: https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJtb2JpbGVfcGhvbmVfcGhvbmVfc21hcnRwaG9uZV8yLWltYWdlLWt5YmQ1Mm1xLmpwZw.jpg
+- n1_modem.jpg: "File:External 33.6k serial dial-up modem.jpg" by Frunze103 — cc0, 3072x2304, 1279399 bytes
+  source: https://commons.wikimedia.org/w/index.php?curid=16279867
+  direct: https://upload.wikimedia.org/wikipedia/commons/d/d5/External_33.6k_serial_dial-up_modem.jpg
+
+Rejected (not used): Stansbury school bell (667px, too small); Harley_01.wav
+  (47s, too long); banh-mi cart search returned only a chef photo — used the
+  'Vietnamese Banh Mi, street food' photo instead (no CC0 cart photo found).
+
+## Sound samples (all normalized single-pass loudnorm to I=-23 LUFS, 48 kHz mono)
+- sample_bell.wav: 'School Bell' by civvy, Freesound 620392, CC0 1.0, 7.80s
+  -> loudest 2s window starting at 1.50s. Measured -23.00 LUFS.
+  https://freesound.org/people/civvy/sounds/620392
+- sample_motorbike.wav: 'MotorCycle Engine Start', Freesound 679416, CC0 1.0, 2.86s
+  -> first 2s (ignition at start). Measured -22.99 LUFS.
+  https://freesound.org/sounds/679416/
+- sample_modem.wav: 'MODEM_3.aif', Freesound 454649, CC0 1.0, 17.84s
+  -> loudest 3s window starting at 5.40s (handshake screech). Measured -23.00 LUFS.
+  https://freesound.org/sounds/454649/
+- sample_ringtone.wav: SELF-SYNTHESIZED Gran Vals (1902, Francisco Tarrega,
+  public domain) — 13-note phrase E5 D5 F#4 G4 | C5 B4 D4 E4 | B4 A4 D4 E4 | A4,
+  sine + 2nd harmonic, exp decay. 3.04s. NEVER a Nokia file. Measured -23.13 LUFS.
+- sample_vendor.wav: VieNeu 'Mai Anh' reading 'Ai banh mi khong?', 1.2s.
+  Script says MMS; PC was unreachable from this session, so VieNeu was used.
+  The parent may swap it for an MMS take on the PC (same text, same placement).
+  Measured -23.00 LUFS.
+- sample_modem_synth.wav: SELF-SYNTHESIZED dial-up fallback (dial tone + DTMF +
+  handshake chirps + boing), 3.0s. NOT used — kept only if the CC0 slice fails.
+  Measured -23.17 LUFS.
+
+## Voice
+- VieNeu-TTS v3 Turbo, preset 'Mai Anh', Apache 2.0. Synthesized on this VPS.
+  Per-unit atempo=0.70 (see v013_tts.py note: native 222 wpm on this script).
+  voice.wav 45.75s, 116 words, 161 wpm speech-only, leading silence trimmed 0.062s.

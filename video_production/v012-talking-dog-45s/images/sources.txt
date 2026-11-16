@@ -1,0 +1,36 @@
+# V012 image sources — all CC0 via Openverse (api.openverse.org), commercial use OK
+# Picks (local file in images/):
+# - hook_smile_2.jpg — chihuahua close-up, tongue out, looking at camera (HOOK 0-5s + BEAT 1 5-15s, different zoom)
+#   title: "Chihuahua" / creator: unknown / 3456x3456 / CC0
+#   https://api.openverse.org/v1/images/ (query "dog smile close up")
+# - b2a_morning_0.jpg — white/golden dog lying flat on wooden floor (BEAT 2a morning, 15-20s)
+#   3000x1953 / CC0
+# - b2b_noon_1.jpg — spotted dog, paws on windowsill, looking out (BEAT 2b noon, 20-25s)
+#   3088x2056 / CC0
+# - b2c_evening_1.jpg — Belgian Malinois close-up staring at camera (BEAT 2c evening, 25-30s)
+#   5184x3456 / CC0 / creator: StockyPics
+# - b3_run_2.jpg — brown dog splashing through water, running toward camera (BEAT 3 30-40s + PAYOFF 40-45s)
+#   4306x2871 / CC0 / creator: Peter Hershey
+#
+# Rejections:
+# - hook_smile_0.jpg — German Shepherd upside down, teeth bared: reads aggressive/scary, not charming (D01 warning)
+# - hook_smile_1.jpg — happy white/black dog, usable but hook_2 is a tighter close-up
+# - b1_door_0/2.jpg — black dog at door BUT visible "rawpixel" watermark across the image
+# - b1_door_1.jpg — classical oil painting of a farmhouse with people, wrong medium/subject
+# - b1b_0/1.jpg — same Flickr photo twice, a car in snow, no dog visible at all
+# - b2a_morning_1.jpg — husky lying with a BLACK CAT next to it (script: exactly 1 character, no second animal)
+# - b2a_morning_2.jpg — GSD lying, usable backup for beat 2a
+# - b2b_noon_0.jpg — Shiba looking out window, usable backup for beat 2b
+# - b2b_noon_2.jpg — dog in a pickup truck, wrong context + rawpixel watermark
+# - b2c_evening_0.jpg — person holding a small dog + phone: fits the line but busy, two dogs visible
+# - b2c_evening_2.jpg — dog lying in grass, wrong setting (outdoors, not evening at home)
+# - b3_run_0.jpg — tan dog running in forest, usable backup for beat 3
+# - b3_run_1.jpg — white dog running with frisbee, usable backup for beat 3
+#
+# Beat 1 has no dedicated photo: the "dog waiting at door" concept returned
+# only watermarked / wrong / no-dog results in two Openverse rounds, so beat 1
+# reuses the hook photo with a different zoom + the "HIEU ~165 TU" label.
+# Known limitation: the 5 photos show 5 different dogs (stock photos, no AI
+# image generation available on the PC — no SD/ComfyUI installed). The story is
+# first-person ("Toi la Bin") so the changing dog is visible; noted in qc.md.
+# No assets reused from the original #39.
