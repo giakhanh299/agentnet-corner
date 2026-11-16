@@ -1,0 +1,5 @@
+0.00-4.03 (15 words, 223 wpm) Mỗi lần đăng nhập, bạn đang dùng mẹo của thủy thủ năm trăm năm trước?
+4.33-7.88 (11 words, 186 wpm) Thủy thủ viết tất cả vào sổ nhật ký của tàu,
+8.28-9.28 (4 words, 242 wpm) gọi là sổ log.
+9.88-13.12 (10 words, 185 wpm) Đăng nhập là ký tên vào sổ log của tàu.
+TOTAL 13.12s, 40 words, overall 183 wpm, speech-only 203 wpm

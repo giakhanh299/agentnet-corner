@@ -35,7 +35,17 @@ for text, gap_after in SEGMENTS:
     s0 = time.time()
     audio, gen_s = api.synthesize(text, gender="female", area="northern", emotion="neutral")
     wall_s = time.time() - s0
-    audio = np.asarray(audio, dtype=np.float32).reshape(-1)
+    # CORRECTED (2026-11-16 ~03:30): the decode model returns INT16-scale audio.
+    # First run converted to float32 without rescaling, so sf.write clipped
+    # everything to +/-1.0 (77.8% of samples saturated) and the Whisper check
+    # on that file (20%) was measuring MY bug, not the model. Divide by 32768.
+    raw = np.asarray(audio)
+    print(f"raw dtype={raw.dtype} max|abs|={np.max(np.abs(raw))}", flush=True)
+    if raw.dtype == np.int16 or np.max(np.abs(raw)) > 1.5:
+        audio = raw.astype(np.float32) / 32768.0
+    else:
+        audio = raw.astype(np.float32)
+    audio = audio.reshape(-1)
     dur = len(audio) / SR
     words = len(text.split())
     total_words += words
