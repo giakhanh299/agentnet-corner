@@ -29,3 +29,11 @@ RESEARCH_ISOLATION_REPORT.json
 *token*
 *secret*
 *credential*
+# TTS test: cloned repos + venvs (contain >100MB binaries, never commit;
+# a 178MB venv .so once got GitHub's pre-receive hook to decline a push)
+video_production/voice-compare-*/valtec/
+video_production/voice-compare-*/vieneu/
+video_production/voice-compare-*/vietvoice/
+video_production/voice-compare-*/venv*/
+venv*/
+.venv/

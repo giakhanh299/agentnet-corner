@@ -1,0 +1,6 @@
+#!/home/hatch/workspace/agentnet-corner/video_production/voice-compare-20261116/venv-vietvoice/bin/python3
+import sys
+from vietvoicetts.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

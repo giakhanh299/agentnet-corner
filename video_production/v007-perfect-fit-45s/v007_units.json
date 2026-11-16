@@ -1,0 +1,86 @@
+[
+  {
+    "unit": "hook",
+    "text": "Mọi thứ sinh ra để vừa khít với nhau, xem mà đã cái tay!",
+    "start": 0.0,
+    "end": 5.76,
+    "words": 14
+  },
+  {
+    "unit": "n5a",
+    "text": "Số năm: chìa khóa cắm vào ổ khóa, xoay một cái là mở.",
+    "start": 6.06,
+    "end": 11.18,
+    "words": 13
+  },
+  {
+    "unit": "n5b",
+    "text": "Nghe tiếng cạch mà sướng cả người.",
+    "start": 11.48,
+    "end": 14.58,
+    "words": 7
+  },
+  {
+    "unit": "n4a",
+    "text": "Số bốn: bản lề cửa khép lại vừa khít, không hở một khe nào.",
+    "start": 14.98,
+    "end": 19.43,
+    "words": 14
+  },
+  {
+    "unit": "n4b",
+    "text": "Nhìn thôi đã thấy gọn.",
+    "start": 19.73,
+    "end": 21.64,
+    "words": 5
+  },
+  {
+    "unit": "n3a",
+    "text": "Số ba: hòn đá vừa đúng lòng bàn tay.",
+    "start": 22.04,
+    "end": 25.35,
+    "words": 9
+  },
+  {
+    "unit": "n3b",
+    "text": "Cầm lên là muốn cầm mãi, không muốn bỏ xuống.",
+    "start": 25.65,
+    "end": 29.17,
+    "words": 10
+  },
+  {
+    "unit": "n2a",
+    "text": "Số hai: bánh xe tải chạy đúng vào khe.",
+    "start": 29.57,
+    "end": 32.83,
+    "words": 9
+  },
+  {
+    "unit": "n2b",
+    "text": "Như thể cái khe sinh ra cho nó.",
+    "start": 33.13,
+    "end": 35.87,
+    "words": 8
+  },
+  {
+    "unit": "n1a",
+    "text": "Số một: chốt cửa sập vào đúng lỗ.",
+    "start": 36.47,
+    "end": 39.83,
+    "words": 8
+  },
+  {
+    "unit": "n1b",
+    "text": "Một tiếng cạch duy nhất, cả video chỉ chờ khoảnh khắc này.",
+    "start": 40.13,
+    "end": 44.64,
+    "words": 12
+  },
+  {
+    "unit": "cta",
+    "text": "Cái nào vừa khít nhất? Bình luận nhé!",
+    "start": 45.04,
+    "end": 48.4,
+    "words": 8
+  }
+]

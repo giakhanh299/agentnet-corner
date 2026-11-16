@@ -1,0 +1,128 @@
+[
+  {
+    "beat": "hook",
+    "start_s": 0.0,
+    "duration_s": 4.796,
+    "words": 13,
+    "wpm": 162.6
+  },
+  {
+    "beat": "beat1",
+    "start_s": 4.436,
+    "duration_s": 9.798,
+    "words": 23,
+    "wpm": 140.8
+  },
+  {
+    "beat": "beat2",
+    "start_s": 14.234,
+    "duration_s": 10.108,
+    "words": 26,
+    "wpm": 154.3
+  },
+  {
+    "beat": "beat3",
+    "start_s": 24.342,
+    "duration_s": 10.798,
+    "words": 30,
+    "wpm": 166.7
+  },
+  {
+    "beat": "payoff",
+    "start_s": 35.14,
+    "duration_s": 9.686,
+    "words": 26,
+    "wpm": 161.1
+  },
+  {
+    "beat": "cta",
+    "start_s": 44.826,
+    "duration_s": 3.536,
+    "words": 9,
+    "wpm": 152.7
+  },
+  {
+    "total_s": 48.362,
+    "total_words": 127,
+    "overall_wpm": 156.4,
+    "clauses": [
+      {
+        "beat": "hook",
+        "start_s": 0.0,
+        "end_s": 4.136,
+        "text": "Con gái làm vỡ lọ hoa mẹ thích nhất, rồi bố về nhà.",
+        "words": 13
+      },
+      {
+        "beat": "beat1",
+        "start_s": 4.436,
+        "end_s": 8.916,
+        "text": "Mẹ mắng một câu, Na cúi đầu, nước mắt chực rơi.",
+        "words": 11
+      },
+      {
+        "beat": "beat1",
+        "start_s": 9.066,
+        "end_s": 13.834,
+        "text": "Cả nhà bỗng im phăng phắc, chỉ còn tiếng kim đồng hồ.",
+        "words": 12
+      },
+      {
+        "beat": "beat2",
+        "start_s": 14.234,
+        "end_s": 18.378,
+        "text": "Na giận dỗi, ôm gối ngồi một góc, không thèm nói với ai.",
+        "words": 13
+      },
+      {
+        "beat": "beat2",
+        "start_s": 18.528,
+        "end_s": 21.504,
+        "text": "Càng dỗi, càng mong có người đến dỗ.",
+        "words": 8
+      },
+      {
+        "beat": "beat2",
+        "start_s": 21.654,
+        "end_s": 23.942,
+        "text": "Nhưng chẳng ai đến cả.",
+        "words": 5
+      },
+      {
+        "beat": "beat3",
+        "start_s": 24.342,
+        "end_s": 29.606,
+        "text": "Bố đi làm về, mệt lắm, thấy con ngồi góc nhà thì bước vào thật khẽ.",
+        "words": 16
+      },
+      {
+        "beat": "beat3",
+        "start_s": 29.756,
+        "end_s": 34.54,
+        "text": "Bố không mắng, bố chỉ lặng im một lúc, rồi ngồi xuống bên cạnh.",
+        "words": 14
+      },
+      {
+        "beat": "payoff",
+        "start_s": 35.14,
+        "end_s": 40.548,
+        "text": "Rồi bố ôm con vào lòng, khẽ nói: con gái của bố đây rồi.",
+        "words": 14
+      },
+      {
+        "beat": "payoff",
+        "start_s": 40.698,
+        "end_s": 44.426,
+        "text": "Na bật cười, mọi giận dỗi tan hết trong một cái ôm.",
+        "words": 12
+      },
+      {
+        "beat": "cta",
+        "start_s": 44.826,
+        "end_s": 48.362,
+        "text": "Ai là con gái của bố? Bình luận nhé!",
+        "words": 9
+      }
+    ]
+  }
+]

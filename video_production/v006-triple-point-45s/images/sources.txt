@@ -1,0 +1,83 @@
+# Nguồn ảnh V006 — toàn CC0 (Openverse, license_type=commercial)
+
+## DÙNG (7 ảnh, 7 đoạn video — cắt cứng, không crossfade)
+
+1. Hook 0,00–4,33s — images/hook2_1.jpg (1024x624)
+   "Boiling water" — CC0 — creator: ₡ґǘșϯγ Ɗᶏ Ⱪᶅṏⱳդ (Flickr)
+   https://www.flickr.com/photos/148598741@N02/51456938640
+   Ghi chú: tranh trừu tượng màu xanh nước (không phải ảnh chụp nước sôi
+   thật) — dùng làm nền cho chữ hook lớn; hơi mềm khi crop 9:16 (upscale ~6x).
+
+2. Beat 1 4,33–14,35s — images/beat1_pressure_2.jpg (960x1434, chân dung)
+   "Pressure Gauge" — CC0 — Tim Sullivan (StockSnap)
+   https://stocksnap.io/photo/pressure-gauge-QEODLEPYUO
+   Đồng hồ áp suất HELICOID, kim + mặt số rõ — đúng chủ đề "sức ép quyết
+   định điểm sôi". Ảnh chân dung nên crop 9:16 gần như nguyên khung.
+
+3. Beat 2a 14,35–20,84s — images/beat2b_1.jpg (1024x684)
+   "glacier-snow-mountains-sunny" — CC0 — pixellaphoto (Flickr)
+   https://www.flickr.com/photos/137643065@N06/23699209683
+   Dãy núi tuyết, trời xanh — núi cao.
+
+4. Beat 2b 20,84–27,82s — images/beat2b_4.jpg (960x640)
+   "Snow Mountain" — CC0 — Burst (StockSnap)
+   https://stocksnap.io/photo/snow-mountain-0KHG3WOP1F
+   Thung lũng núi tuyết sáng — đổi cảnh giữa beat 2 (cắt cứng theo kịch bản).
+
+5. Beat 3a 27,82–39,78s — images/beat3b_1.jpg (3024x4032)
+   "Rb-mot-vacuum-chamber" — CC0 — Darth luigi (Wikimedia Commons)
+   https://commons.wikimedia.org/w/index.php?curid=159531376
+   Buồng chân không thật (thiết bị MOT rubidi) — đúng nghĩa "buồng kín rút
+   hết không khí". Ảnh nét nhất lô (3024px).
+
+6. Beat 3b 39,78–44,76s — images/beat3_lab_1.jpg (920x1024)
+   "Oak Ridge National Lab" — CC0 — usdoe (Rawpixel)
+   https://www.rawpixel.com/image/8733527/photo-image-light-public-domain-neon
+   Bình thí nghiệm phát sáng neon — đổi cảnh giữa beat 3 (câu "Một phần
+   nước sôi lên, một phần đóng băng lại").
+
+7. Payoff 44,76–53,14s — images/payoff_water_2.jpg (1024x1024)
+   "First Snowfall" — CC0 — Don Komarechka (Flickr)
+   https://www.flickr.com/photos/35693660@N03/38115232341
+   Bông tuyết macro trên nền đen — nền end card "ĐIỂM BA TRẠNG THÁI".
+
+## LOẠI (ghi lý do — xem contact_sheet.jpg / contact_sheet2.jpg)
+
+Lô 1 (search_images.py):
+- hook_boiling_ice_1/2.jpg: cocktail đỏ/cam trong ly martini — sai chủ đề.
+- hook_boiling_ice_3.jpg: hũ mứt/mason jar chất lỏng tối — không phải nước sôi.
+- hook_boiling_ice_4.jpg: đá vụn/nước bắn — trừu tượng, xám, kém nổi bật
+  hơn hook2_1 (giữ làm dự phòng).
+- beat1_pressure_1.jpg: bình áp suất xanh nhìn từ trên — bố cục lạ, đồng hồ
+  nhỏ (dự phòng).
+- beat1_pressure_3.jpg: bộ bơm lốp xe + đồng hồ — dụng cụ ô tô, không phải
+  khoa học (dự phòng).
+- beat1_pressure_4.jpg: đồng hồ đồng SCHULZ đẹp, nền bokeh vàng — dự phòng
+  tốt cho beat 1 (chỉ dùng beat1_2 vì ảnh chân dung hợp 9:16 hơn).
+- beat2_mountain_1..4.jpg: hoa trắng (anemone núi) chiếm khung, núi chỉ là
+  nền mờ — sai chủ đề (trừ beat2_mountain_3 có đỉnh tuyết nhưng hoa vẫn
+  chiếm nửa khung).
+- beat3_lab_2/3/4.png: svgsilh.com — HTTP 403, và là icon SVG silhouette,
+  không phải ảnh.
+- beat3_lab_5.jpg: clipart bình thí nghiệm phẳng — phong cách hoạt hình,
+  lệch với ảnh thật.
+- beat3_lab_6.png: tranh vẽ tay đen trắng (tay rót vào bình) — đẹp nhưng
+  phong cách lệch, giữ làm dự phòng.
+- beat3_lab_8.jpg: bình hoa xanh lá (Cleveland Art) — là bình hoa, không
+  phải bình thí nghiệm.
+- payoff_water_1.jpg: giọt dầu vàng trên nền xanh — trừu tượng, không phải
+  nước/đá.
+- payoff_water_3.jpg: cỏ sương macro — sương, không phải điểm ba trạng thái.
+- payoff_water_4.jpg: chuỗi giọt nước trên nền trắng — tối giản, kém ấn
+  tượng hơn bông tuyết (dự phòng).
+
+Lô 2 (search_images2.py):
+- hook2_2/3/4.jpg: đóng hộp/peaches/mứt — quy trình canning, sai chủ đề.
+- beat2b_2.jpg: đỉnh tuyết tối, u ám — dự phòng tốt cho beat 2.
+- beat2b_3.jpg: núi tuyết sương mù + chim — dự phòng tốt cho beat 2.
+- beat3b_2.jpg: buồng chân không NASA JPL — dự phòng tốt cho beat 3.
+- beat3b_3.png: 404.
+- beat3b_4.jpg: buồng chân không ASU 6,8 MB — dự phòng tốt cho beat 3.
+
+Không dùng gì từ video gốc #80: toàn bộ ảnh CC0 + chữ tự vẽ; kịch bản gốc
+tiếng Việt; số liệu đã kiểm chứng (0,01°C / 611,657 Pa / 1/166).

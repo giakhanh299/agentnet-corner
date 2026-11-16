@@ -1,0 +1,44 @@
+# V007 — nguồn ảnh (tất cả CC0/CC BY qua Openverse; không dùng clip/hình của video gốc, không facecam)
+
+## ĐÃ DÙNG (5 ảnh — file trong images/)
+1. n5_key.jpg — "Keys Door" — WDnet Studio — CC0 — Openverse/stocksnap
+   https://stocksnap.io/photo/keys-door-Z1TKDI29FZ
+   960x640, 41.789 bytes. Chìa khóa cắm trong ổ khóa cửa, nền xanh lá.
+2. n4_hinge.jpg — "Original door hinge from Bishop Museum, c. 1892" — Wmpearl — CC0 — Wikimedia Commons
+   https://commons.wikimedia.org/w/index.php?curid=26477929
+   1500x2670 (dọc), 675.610 bytes. Bản lề đồng chạm khắc, chụp cận cảnh.
+3. n3_stone.jpg — "Woman holding rocks" — (không ghi tác giả) — CC0 — rawpixel
+   https://www.rawpixel.com/image/6017973/photo-image-public-domain-hand-nature
+   1024x683, 217.712 bytes. Hai bàn tay nâng đầy sỏi tròn.
+4. n2_wheel.jpg — "26x1.50 Tire in Flange Gap" — joshua_putnam — CC BY — Flickr
+   https://www.flickr.com/photos/97437961@N00/7469689072
+   1024x768, 275.840 bytes. Bánh xe đạp nằm khít trong rãnh ray — đúng hình "vừa khít".
+5. n1_latch.jpg — "Still Life: Truck Door Bolt" — Jeffrey — CC BY — Flickr
+   https://www.flickr.com/photos/48889052497@N01/16026747024
+   1024x576, 185.746 bytes. Chốt cửa kim loại trên cửa thép xanh.
+
+## ĐÃ LOẠI (lý do)
+- n5 "key": "the MODERN GHOST- klavier" (tranh siêu thực, không có chìa);
+  "1958 GM Firebird III" (xe hơi); "Locked or not?" (ổ khóa móc, không thấy
+  chìa — dự phòng); "Batteries Not Included" (chỉ tay nắm cửa); "Master key
+  turning in a lock" (tranh khắc cổ, không phải ảnh); "Free unlocking door
+  image" (tay vặn chìa — dự phòng, không rõ bằng ảnh đã chọn); "Closeup of a
+  man's hand inserting a key" (dọc, tay nhỏ).
+- n4 "hinge": 4 ảnh đầu (nhà kho, LEGO, nhà Tudor, vòng bi — không thấy bản
+  lề); "Han Gilt Bronze Chariot Door Hinges" (vật bảo tàng, tối);
+  "Door Hinges" (sơ đồ minh họa phẳng); "Iron Door Hinge, Hoa Lo Prison"
+  (tối, tương phản thấp).
+- n3 "stone": "Hot massage stones" (không có tay); "WHETSTONE" (vật bảo tàng
+  + thước); "person holding bunch" (tay rải sỏi, lộn xộn, không phải "một
+  hòn đá trong lòng bàn tay").
+- n2 "wheel": 4 ảnh đầu (xe tải cổ, xe cứu hỏa, xe van, pháo — không có
+  bánh trong rãnh); vòng 2 toàn tàu hỏa nguyên chiếc (bánh không phải chủ
+  thể); "top of train", "Handwheel", "Tire trail" (không đúng ý).
+- n1 "latch": "Toolbox Lock" (240x160, quá nhỏ); "The Making of Harry
+  Potter" (cửa triển lãm lộn xộn + bảng chữ).
+
+## Ghi chú
+- Tất cả ảnh 960–1500px, upscale nhẹ (~1,1–1,4x) khi cắt 1080x710 — chấp
+  nhận được như v002/v005.
+- Ảnh hook (stage_hook) dùng lại ảnh n3 như v005 (mục #3 mở sẵn từ giây 0).
+- Không dùng lại bất kỳ khung hình nào của video gốc H01 #68.

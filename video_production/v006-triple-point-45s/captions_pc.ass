@@ -1,0 +1,46 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.34,Default,,0,0,0,,Nước vừa sôi vừa
+Dialogue: 0,0:00:01.34,0:00:02.69,Default,,0,0,0,,đóng băng một lúc
+Dialogue: 0,0:00:02.69,0:00:04.03,Default,,0,0,0,,— tin được không?
+Dialogue: 0,0:00:04.33,0:00:06.25,Default,,0,0,0,,Nước sôi ở độ
+Dialogue: 0,0:00:06.25,0:00:08.18,Default,,0,0,0,,nào, không phải do
+Dialogue: 0,0:00:08.18,0:00:10.10,Default,,0,0,0,,nước quyết định, mà
+Dialogue: 0,0:00:10.10,0:00:12.03,Default,,0,0,0,,do sức ép không
+Dialogue: 0,0:00:12.03,0:00:13.95,Default,,0,0,0,,khí quyết định.
+Dialogue: 0,0:00:14.35,0:00:15.80,Default,,0,0,0,,Lên núi cao, không
+Dialogue: 0,0:00:15.80,0:00:17.25,Default,,0,0,0,,khí mỏng hơn, sức
+Dialogue: 0,0:00:17.25,0:00:18.71,Default,,0,0,0,,ép không khí thấp
+Dialogue: 0,0:00:18.71,0:00:20.16,Default,,0,0,0,,hơn, nước sôi ở
+Dialogue: 0,0:00:20.16,0:00:21.61,Default,,0,0,0,,nhiệt độ thấp hơn
+Dialogue: 0,0:00:21.61,0:00:23.06,Default,,0,0,0,,hẳn. Xuống càng thấp,
+Dialogue: 0,0:00:23.06,0:00:24.52,Default,,0,0,0,,sức ép không khí
+Dialogue: 0,0:00:24.52,0:00:25.97,Default,,0,0,0,,càng lớn, nước càng
+Dialogue: 0,0:00:25.97,0:00:27.42,Default,,0,0,0,,khó sôi.
+Dialogue: 0,0:00:27.82,0:00:29.31,Default,,0,0,0,,Cho nước vào một
+Dialogue: 0,0:00:29.31,0:00:30.79,Default,,0,0,0,,buồng kín rồi rút
+Dialogue: 0,0:00:30.79,0:00:32.28,Default,,0,0,0,,hết không khí ra.
+Dialogue: 0,0:00:32.28,0:00:33.76,Default,,0,0,0,,Sức ép không khí
+Dialogue: 0,0:00:33.76,0:00:35.25,Default,,0,0,0,,tụt xuống đúng điểm
+Dialogue: 0,0:00:35.25,0:00:36.73,Default,,0,0,0,,mà nước lỏng vừa
+Dialogue: 0,0:00:36.73,0:00:38.22,Default,,0,0,0,,đủ tồn tại. Một
+Dialogue: 0,0:00:38.22,0:00:39.70,Default,,0,0,0,,phần nước sôi lên,
+Dialogue: 0,0:00:39.70,0:00:41.19,Default,,0,0,0,,một phần đóng băng
+Dialogue: 0,0:00:41.19,0:00:42.67,Default,,0,0,0,,lại — cùng một
+Dialogue: 0,0:00:42.67,0:00:44.16,Default,,0,0,0,,lúc.
+Dialogue: 0,0:00:44.76,0:00:46.16,Default,,0,0,0,,Đó là điểm ba
+Dialogue: 0,0:00:46.16,0:00:47.55,Default,,0,0,0,,trạng thái — nơi
+Dialogue: 0,0:00:47.55,0:00:48.95,Default,,0,0,0,,đá, nước và hơi
+Dialogue: 0,0:00:48.95,0:00:50.35,Default,,0,0,0,,nước cùng tồn tại.
+Dialogue: 0,0:00:50.35,0:00:51.74,Default,,0,0,0,,Bạn có dám thử
+Dialogue: 0,0:00:51.74,0:00:53.14,Default,,0,0,0,,không? Bình luận nhé!

@@ -1,0 +1,21 @@
+[0.00-2.14] Nước vừa sôi vừa đóng băng
+[2.14-3.62] Một lúc tin được không
+[3.62-6.06] Nước sôi ở độ nào
+[6.06-9.24] Không phải do nước quyết định
+[9.24-11.66] Mà do sức ép
+[11.66-13.58] Không khí quyết định
+[13.58-16.88] Lên núi cao không khí mỏng hơn sức ép
+[16.88-18.88] Không khí thấp hơn nước sôi
+[18.88-20.44] Ở nhiệt độ thấp hơn hẳn
+[20.44-22.82] Xuống càng thấp sức ép
+[22.82-25.22] Không khí càng lớn nước
+[25.22-27.00] Càng khó sôi
+[27.00-30.08] Cho nước vào một buồn kính
+[30.08-33.02] Rồi rút hết không khí ra
+[33.02-36.40] Sức ép không khí tụt xuống đúng điểm
+[36.40-39.38] Mà nước lỏng vừa đủ tồn tại
+[39.38-41.68] Một phần nước sôi lên
+[41.68-43.78] Một phần đóng băng lại cùng một rút
+[43.78-46.70] Đó là điểm ba trạng thái
+[46.70-49.70] Nơi đá, nước và hơi nước cùng tồn
+[49.70-52.84] Tại bạn có dám thử không bình luận nhé

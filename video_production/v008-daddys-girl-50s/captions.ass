@@ -1,0 +1,42 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Be Vietnam Pro,56,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,2,1,2,40,40,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.59,Default,,0,0,0,,Con gái làm vỡ lọ
+Dialogue: 0,0:00:01.59,0:00:02.86,Default,,0,0,0,,hoa mẹ thích nhất,
+Dialogue: 0,0:00:02.86,0:00:04.13,Default,,0,0,0,,rồi bố về nhà.
+Dialogue: 0,0:00:04.43,0:00:06.06,Default,,0,0,0,,Mẹ mắng một câu,
+Dialogue: 0,0:00:06.06,0:00:07.69,Default,,0,0,0,,Na cúi đầu, nước
+Dialogue: 0,0:00:07.69,0:00:08.91,Default,,0,0,0,,mắt chực rơi.
+Dialogue: 0,0:00:09.06,0:00:10.65,Default,,0,0,0,,Cả nhà bỗng im
+Dialogue: 0,0:00:10.65,0:00:12.24,Default,,0,0,0,,phăng phắc, chỉ còn
+Dialogue: 0,0:00:12.24,0:00:13.83,Default,,0,0,0,,tiếng kim đồng hồ.
+Dialogue: 0,0:00:14.23,0:00:15.82,Default,,0,0,0,,Na giận dỗi, ôm gối
+Dialogue: 0,0:00:15.82,0:00:17.10,Default,,0,0,0,,ngồi một góc, không
+Dialogue: 0,0:00:17.10,0:00:18.37,Default,,0,0,0,,thèm nói với ai.
+Dialogue: 0,0:00:18.52,0:00:20.01,Default,,0,0,0,,Càng dỗi, càng mong
+Dialogue: 0,0:00:20.01,0:00:21.50,Default,,0,0,0,,có người đến dỗ.
+Dialogue: 0,0:00:21.65,0:00:23.94,Default,,0,0,0,,Nhưng chẳng ai đến cả.
+Dialogue: 0,0:00:24.34,0:00:25.65,Default,,0,0,0,,Bố đi làm về,
+Dialogue: 0,0:00:25.65,0:00:26.97,Default,,0,0,0,,mệt lắm, thấy con
+Dialogue: 0,0:00:26.97,0:00:28.29,Default,,0,0,0,,ngồi góc nhà thì
+Dialogue: 0,0:00:28.29,0:00:29.60,Default,,0,0,0,,bước vào thật khẽ.
+Dialogue: 0,0:00:29.75,0:00:31.46,Default,,0,0,0,,Bố không mắng, bố chỉ
+Dialogue: 0,0:00:31.46,0:00:33.17,Default,,0,0,0,,lặng im một lúc, rồi
+Dialogue: 0,0:00:33.17,0:00:34.54,Default,,0,0,0,,ngồi xuống bên cạnh.
+Dialogue: 0,0:00:35.14,0:00:37.07,Default,,0,0,0,,Rồi bố ôm con vào
+Dialogue: 0,0:00:37.07,0:00:39.00,Default,,0,0,0,,lòng, khẽ nói: con gái
+Dialogue: 0,0:00:39.00,0:00:40.54,Default,,0,0,0,,của bố đây rồi.
+Dialogue: 0,0:00:40.69,0:00:41.94,Default,,0,0,0,,Na bật cười, mọi
+Dialogue: 0,0:00:41.94,0:00:43.18,Default,,0,0,0,,giận dỗi tan hết
+Dialogue: 0,0:00:43.18,0:00:44.42,Default,,0,0,0,,trong một cái ôm.
+Dialogue: 0,0:00:44.82,0:00:46.79,Default,,0,0,0,,Ai là con gái của
+Dialogue: 0,0:00:46.79,0:00:48.36,Default,,0,0,0,,bố? Bình luận nhé!

@@ -7,9 +7,31 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~08:35 +07.
+> Cập nhật lần cuối: 2026-11-16 ~09:32 +07.
 
 ## DONE
+
+### Video #6 (v006) — DONE + QC-passed 2026-11-16 ~09:32 +07
+- **File:** `video_production/v006-triple-point-45s/v006.mp4` — 53,13s, 1080x1920, 30fps, H.264 + AAC 192k, 18.522.052 byte, sha256 `84757475ef0e4ce5bd53b1ab2beeceee3e49912107c3f1e7745f0c8da0489010` — **-16,19 LUFS**, true peak **-3,04 dBTP**, giọng từ 0,00s, **158 wpm lúc nói** (147 tổng, 130 từ sau probe), Whisper large-v3 (PC) 124/127 = 97,6% — cao nhất từ trước đến nay.
+- **Chủ đề:** "Nước vừa sôi vừa đóng băng cùng một lúc" (F2 Visual Essay, T03 #80, 83) — 7 đoạn, cắt cứng qua concat (không crossfade, theo đúng kịch bản cắt mỗi ~10s).
+- **Render + mux hoàn toàn trên PC** (~29s). Nhạc bgm_calm đo ~19–20 dB dưới giọng (đúng mục tiêu -18 đến -24 dB; v003 nóng -11 dB).
+- **Probe:** "áp suất" → "sức ép không khí" (nghe "ác súc"); "loãng" → "mỏng hơn" (nghe "loạn"). Giữ "đóng băng", "buồng kín", "trạng thái". Từ đầu câu "Nước" nghe thành "Đất" (chữ trên màn hình gánh).
+- **Hạn chế thật:** chưa có người nghe (Whisper 97,6%); ảnh hook là art nước trừu tượng (không phải ảnh nước sôi thật), 1024px hơi mềm; hook 179 wpm / payoff 172 wpm nhanh; phụ đề trùng end card 2s cuối (nit cũ). Chưa đăng. Drive: v006.mp4 id `176QzDOjcnwyzFjhwI7t-93fYOPA1-wMj`.
+
+### Video #7 (v007) — DONE + QC-passed 2026-11-16 ~09:32 +07
+- **File:** `video_production/v007-perfect-fit-45s/v007.mp4` — 48,37s, 1080x1920, 30fps, H.264 + AAC 192k, 13.821.811 byte, sha256 `ab6fbf2cb4726710150e36de117534b128fb2e3649664b5181806f7ea76a8b5b` — **-15,99 LUFS**, true peak **-5,01 dBTP**, giọng từ 0,00s, **158 wpm lúc nói** (145 tổng, 117 từ — 4,0s khoảng lặng đếm ngược có chủ ý như v005), Whisper large-v3 (PC) 97/117 = 82,9%.
+- **Chủ đề:** "Top 5 thứ vừa khít hoàn hảo" (F3 Countdown, H01 #68, 78) — #1 là chốt cửa (đúng quyết định biên tập), không facecam.
+- **Render trên PC, 12,5s**, không `-loop 1`, giới hạn cứng `-frames:v 1452`. Nhạc bgm_comedy ~23 dB dưới giọng (đúng mục tiêu).
+- **Probe:** "tra vào ổ" → "cắm vào ổ khóa"; "bánh xe tải lăn đúng vào rãnh, khít từng milimét" → "bánh xe tải chạy đúng vào khe. Như thể cái khe sinh ra cho nó." Giữ "khít" (Whisper nghe "khiếp" ở file dài là nhiễu tách đoạn — probe rời nghe đúng), "bản lề", "cạch", "chốt cửa".
+- **Hạn chế thật:** chưa có người nghe (Whisper 82,9%); ảnh #4 là bản lề cổ vật bảo tàng (tối, cầu kỳ), ảnh #2 là bánh xe đạp trong rãnh ray chứ không phải bánh xe tải (cơ chế "vừa khít" giữ nguyên); phụ đề trùng end card 2s cuối (nit cũ); video ngắn hơn audio 0,033s (cắt đuôi không nghe thấy). Chưa đăng. Drive: v007.mp4 id `1cyjg3529mDT18j0HqgMSsXT6oxN-XDTT`.
+
+### Video #8 (v008) — DONE + QC-passed 2026-11-16 ~09:24 +07
+- **File:** `video_production/v008-daddys-girl-50s/v008.mp4` — 48,36s, 1080x1920, 30fps, H.264 + AAC 192k, 2.419.585 byte, sha256 `4fcd530b3e1e632badf3a1114fedb3dd255164df1164c7832044de302d034680` — **-15,90 LUFS**, true peak **-2,94 dBTP**, giọng từ ~0,05s, **157,6 wpm** (127 từ), Whisper large-v3 (PC) 114/127 = 89,8%.
+- **Chủ đề:** "Con gái của bố" (F7 stickman, C02 #47, 79) — truyện gốc hoàn toàn (Na làm vỡ lọ hoa; bố về chỉ ngồi xuống, không mắng; câu duy nhất của bố "con gái của bố đây rồi").
+- **Render trên PC — tập đầu tiên render end-to-end trên PC** (đồng bộ stickman-shorts + Manim 0.22.1 trong .venv-win, ~28s gồm sync). Không cần fallback VPS, PC không lỗi lần nào.
+- **Probe:** "rã rời" FAIL (2/2 sai thanh) → "mệt lắm"; "cởi giày" FAIL (2/2 nghe lộn) → "bước vào thật khẽ". Giữ "Na", "phăng phắc", "dỗi".
+- **Sửa sau đo/khung hình:** MMS chừa 0,41s lặng đầu giọng — đã cắt 0,36s đầu giọng + dịch timing/caption/nhạc/SFX −0,36s, cắt 0,36s đầu video thô lúc mux cho đồng bộ. Ôm payoff v1 rối thành một khối — render lại v2 tách 2 nhân vật sang 2 bên, nâng card payoff lên y=5.0 tránh đồng hồ.
+- **Hạn chế thật:** chưa có người nghe (Whisper 89,8%); beat 3 ~176 wpm (nhanh, tổng vẫn trong vùng); lọ vỡ nhìn như hộp nghiêng (cần giọng + card mới đọc ra lọ); phụ đề trùng end card 2s cuối (nit cũ); beat 2 ~10s gần như tĩnh. Chưa đăng.
 
 ### Lô kịch bản v006 + v007 + v008 — DONE 2026-11-16 08:35 +07 (chỉ kịch bản, chưa sản xuất)
 - **File:** `video_production/scripts-batch-20261116/` — 3 kịch bản +
