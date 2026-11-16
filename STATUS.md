@@ -7,9 +7,37 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-15 ~17:15 +07.
+> Cập nhật lần cuối: 2026-11-16 ~08:35 +07.
 
 ## DONE
+
+### Lô kịch bản v006 + v007 + v008 — DONE 2026-11-16 08:35 +07 (chỉ kịch bản, chưa sản xuất)
+- **File:** `video_production/scripts-batch-20261116/` — 3 kịch bản +
+  `scripts_batch.md`. Viết trước theo chỉ đạo của chủ (làm việc chủ động,
+  tự tìm việc khi rảnh, làm trước tiến độ); lô trước v003+v004+v005 đã
+  sản xuất xong cả 3, chưa có kế hoạch v006+ nào nên lô này lấp khoảng
+  trống để sản xuất không phải chờ.
+- **v006** — T03 #80 (83, điều chỉnh từ 87) "Nước vừa sôi vừa đóng băng
+  cùng một lúc", F2 Visual Essay 45s, **122 từ ≈ 163 từ/phút**. Điểm ba
+  trạng thái đã kiểm chứng: 0,01°C ở 611,657 Pa (~1/166 áp suất khí quyển,
+  Wikipedia "Triple point" + FactsMate/NIST, đo 1976 ±0,010 Pa) — các
+  con số chỉ hiện trên hình, không vào lời thoại. Cắt 80,3s → 45s, cắt
+  cứng mỗi ~10s (video gốc không cắt cứng nào — lý do R bị hạ).
+- **v007** — H01 #68 (78) "Top 5 thứ vừa khít hoàn hảo", F3 Countdown
+  45s, **121 từ ≈ 161 từ/phút**. Giữ thứ tự tăng dần của video gốc (đá
+  #3, bánh xe #2, chốt cửa #1), bỏ facecam hoàn toàn, clip stock/AI của
+  mình. Không có khẳng định số liệu nào.
+- **v008** — C02 #47 (79) "Con gái của bố", F7 stickman cảm xúc 50s,
+  **130 từ ≈ 156 từ/phút**. Truyện hoàn toàn mới (bé Na làm vỡ lọ hoa;
+  mẹ mắng → bé giận → bố về → bố ôm), không dùng lại cảnh/nhân vật 3D
+  của video gốc (watermark NVV). Ưu tiên stickman Manim thay vì ảnh AI
+  (nhân vật nhất quán). Quyết định: bố không mắng, chỉ ngồi xuống.
+- **Kiểm chứng:** đếm từ bằng script trên bảng lời thoại — v006 122,
+  v007 121, v008 130, khớp đúng con số ghi trong từng file (v008 ban đầu
+  ghi nhầm 129, đã sửa thành 130 sau khi đếm lại). **CHƯA sản xuất, CHƯA
+  tổng hợp giọng, CHƯA đăng.** Sản xuất theo lệnh của chủ như lần trước;
+  thứ tự đề xuất v006 → v007 → v008. Còn 22 chủ đề chưa dùng trong ngân
+  hàng 30 sau lô này.
 
 ### Video #3 (v003) — "Cáp thang máy đứt ở tầng 85" Visual Essay 45s (F2, #77 90) — DONE + QC-passed 2026-11-15 22:21 +07
 - **File:** `video_production/v003-lift-45s/v003.mp4` — **50,13s,
