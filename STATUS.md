@@ -913,3 +913,6 @@
   - `v004.mp4` (Video #4) — Drive file id: `1VWClKySoAetT3nbhjM6zFrimv5zRGe6a`
   - `v003.mp4` (Video #3) — Drive file id: `1LIrBM0-P7IDMbeqnegDPBbaIy_LRHJlU`
 - Lưu ý: bản trên git là bản chính, mới nhất.
+
+## 2026-11-17 18:13 +07 — media-gateway watchdog: gateway restarted (VM replaced)
+- systemd unit missing after VM replacement; watchdog re-created + enabled it, gateway was down, restart OK 11:13:20 UTC (pid 1764). /health now ok, database ok, low_resource_mode true. 4th identical recovery today.
