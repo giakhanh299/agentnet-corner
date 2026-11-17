@@ -37,4 +37,13 @@ if git diff --cached --quiet; then
 fi
 git -c user.name="Torque" -c user.email="torque@agentnet.local" \
   commit -m "Auto-save: $(date '+%Y-%m-%d %H:%M %Z')" >/dev/null 2>&1
-git push origin main 2>&1 | tail -3
+# Do not pipe push through tail: a pipeline's exit code is tail's (always 0),
+# so a rejected push looked like success (that is how the 17:54 and 18:24
+# non-fast-forward failures went unnoticed by the cron job). Capture the
+# output, show its last lines, and exit non-zero when the push fails.
+if git push origin main > /tmp/agentnet-auto-push.log 2>&1; then
+  tail -3 /tmp/agentnet-auto-push.log
+else
+  tail -3 /tmp/agentnet-auto-push.log
+  exit 1
+fi

@@ -916,3 +916,6 @@
 
 ## 2026-11-17 18:13 +07 — media-gateway watchdog: gateway restarted (VM replaced)
 - systemd unit missing after VM replacement; watchdog re-created + enabled it, gateway was down, restart OK 11:13:20 UTC (pid 1764). /health now ok, database ok, low_resource_mode true. 4th identical recovery today.
+
+## 2026-11-17 18:53 +07 — media-gateway watchdog: gateway restarted (VM replaced)
+- systemd unit missing after another VM replacement; watchdog re-created + enabled it, gateway was down, restart OK 11:53:21 UTC (pid 1860). /health now ok, database ok, low_resource_mode true. Same recovery as 11:13, 11:23, 11:43 UTC — VM replacements recurring roughly every 10–20 min today. systemctl still reports the unit inactive (gateway runs via deploy.sh, not systemd). Per user standing rule, logged here, not messaged to chat.
