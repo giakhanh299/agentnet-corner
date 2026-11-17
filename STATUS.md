@@ -934,3 +934,8 @@
 - Watchdog ran: systemd unit was missing again (VM replaced), re-created + enabled; gateway was down, restart attempted.
 - Restart OK at 19:03:22 +07 (pid 1863). Health verified after: {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
 - Pattern continues: every 10-min run since 11:43 UTC finds the unit missing and the gateway down — each run starts it fresh. Gateway itself is healthy once started; no keys, Drive, or AgentNet actions.
+
+## 2026-11-17 22:03 +07 — Media Gateway watchdog (10-min check)
+- Watchdog ran: systemd unit was missing again (VM replaced), re-created + enabled; gateway was down, restart attempted.
+- Restart OK at 15:03:28 UTC (pid 1756). Health verified after: {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Pattern continues: every 10-min run finds the unit missing and the gateway down — each run starts it fresh (66th "unit missing" / 67th "restart OK" in watchdog.log). Gateway itself is healthy once started; no keys, Drive, or AgentNet actions. Per user standing rule, logged here, not messaged to chat.
