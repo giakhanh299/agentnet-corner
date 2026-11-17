@@ -26,6 +26,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import subprocess
@@ -90,16 +91,60 @@ def run(cmd: list[str]) -> None:
     subprocess.run(cmd, check=True)
 
 
-def assemble(video: str, voice: str, out: str, srt: str | None, music: str | None) -> None:
+def _ffmpeg_filter_path(path: str) -> str:
+    """Escape a filesystem path for FFmpeg libass filter on both Windows & POSIX."""
+    norm = os.path.abspath(path).replace("\\", "/")
+    norm = norm.replace(":", r"\:").replace("'", r"\'")
+    return norm
+
+
+def _measure_loudnorm(voice: str) -> dict[str, str] | None:
+    """Run pass-1 loudnorm analysis so pass-2 linear=true works accurately."""
+    cmd = [
+        "ffmpeg", "-hide_banner", "-nostats", "-i", voice,
+        "-af", f"loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA}:print_format=json",
+        "-f", "null", "-",
+    ]
+    proc = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    m = re.search(r"\{\s*\"input_i\"[\s\S]*?\}", proc.stderr or "")
+    if not m:
+        return None
+    try:
+        stats = json.loads(m.group(0))
+        if stats.get("input_i") in (None, "-inf", "inf"):
+            return None
+        return stats
+    except Exception:
+        return None
+
+
+def assemble(
+    video: str,
+    voice: str,
+    out: str,
+    srt: str | None = None,
+    music: str | None = None,
+    ass: str | None = None,
+) -> None:
+    os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
     inputs = ["-i", video, "-i", voice]
     if music:
         inputs += ["-stream_loop", "-1", "-i", music]
 
-    # Voice -> -16 LUFS, then hard true-peak limit (see module docstring).
-    filters = [
-        f"[1:a]loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA}:linear=true,"
-        f"alimiter=limit=0.7:level=false[voice]"
-    ]
+    stats = _measure_loudnorm(voice)
+    if stats:
+        ln_filter = (
+            f"loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA}"
+            f":measured_I={stats['input_i']}"
+            f":measured_TP={stats['input_tp']}"
+            f":measured_LRA={stats['input_lra']}"
+            f":measured_thresh={stats['input_thresh']}"
+            f":offset={stats['target_offset']}:linear=true"
+        )
+    else:
+        ln_filter = f"loudnorm=I={TARGET_LUFS}:TP={TRUE_PEAK}:LRA={LRA}"
+
+    filters = [f"[1:a]{ln_filter},alimiter=limit=0.7:level=false[voice]"]
     if music:
         filters.append("[2:a]volume=0.12[bgm]")
         filters.append("[voice][bgm]amix=inputs=2:duration=first:dropout_transition=2[aout]")
@@ -108,10 +153,10 @@ def assemble(video: str, voice: str, out: str, srt: str | None, music: str | Non
         audio_map = "[voice]"
 
     vf = []
-    if srt:
-        # Burn captions via the ass filter (NOT subtitles — see docstring).
-        ass_path = srt_to_ass(srt)
-        vf = ["-vf", f"ass='{ass_path}'"]
+    ass_target = ass or (srt_to_ass(srt) if srt else None)
+    if ass_target:
+        escaped_ass = _ffmpeg_filter_path(ass_target)
+        vf = ["-vf", f"ass='{escaped_ass}'"]
 
     cmd = (
         ["ffmpeg", "-y"]
@@ -121,6 +166,7 @@ def assemble(video: str, voice: str, out: str, srt: str | None, music: str | Non
         + [
             "-map", "0:v", "-map", audio_map,
             "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+            "-pix_fmt", "yuv420p",
             "-c:a", "aac", "-b:a", "192k",
             "-shortest", out,
         ]
@@ -135,9 +181,10 @@ def main() -> int:
     p.add_argument("--voice", required=True, help="voice.wav / voice.mp3")
     p.add_argument("--out", required=True, help="output final.mp4")
     p.add_argument("--srt", help="optional captions.srt to burn in")
+    p.add_argument("--ass", help="optional pre-built captions.ass to burn in")
     p.add_argument("--music", help="optional background music file")
     a = p.parse_args()
-    assemble(a.video, a.voice, a.out, a.srt, a.music)
+    assemble(a.video, a.voice, a.out, a.srt, a.music, ass=a.ass)
     return 0
 
 

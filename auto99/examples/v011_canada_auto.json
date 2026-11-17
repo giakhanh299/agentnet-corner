@@ -1,0 +1,44 @@
+{
+  "slug": "v011-canada-vieneu-auto",
+  "title": "Vì sao Canada giữ hơn nửa số hồ trên Trái Đất?",
+  "template": "visual_essay",
+  "voice": "vieneu",
+  "bgm": "C:/Users/w/v011_render/bgm_calm.ogg",
+  "beats": [
+    {
+      "id": "hook",
+      "image": "C:/Users/w/v011_render/images/hook_earth1.jpg",
+      "card_title": "HƠN 50% HỒ TRÁI ĐẤT",
+      "card_subtitle": "Nằm trọn trong 1 quốc gia?",
+      "spoken": "Một nước giữ hơn nửa số hồ trên cả hành tinh. Đoán thử xem nước nào?"
+    },
+    {
+      "id": "beat1",
+      "image": "C:/Users/w/v011_render/images/beat1_nunavut.jpg",
+      "card_title": "ĐÓ LÀ CANADA",
+      "card_subtitle": "Hơn 60% số hồ toàn cầu",
+      "spoken": "Đó là Canada. Hơn sáu mươi phần trăm số hồ trên thế giới nằm ở đây, hơn ba mươi mốt nghìn hồ lớn."
+    },
+    {
+      "id": "beat2",
+      "image": "C:/Users/w/v011_render/images/beat2_glacier1.jpg",
+      "card_title": "BĂNG TUYẾT 10.000 NĂM TRƯỚC",
+      "card_subtitle": "Cào xới mặt đất thành triệu hố sâu",
+      "spoken": "Vì sao nhiều đến vậy? Mười nghìn năm trước, băng tuyết khổng lồ cào xới mặt đất, để lại hàng triệu hố sâu. Băng tan, nước đọng lại thành hồ."
+    },
+    {
+      "id": "beat3",
+      "image": "C:/Users/w/v011_render/images/beat3_superior.jpg",
+      "card_title": "NGŨ ĐẠI HỒ & HỒ THƯỢNG",
+      "card_subtitle": "Giữ gần 1/5 nước hồ ngọt toàn cầu",
+      "spoken": "Trong đó có hồ Lớn, cụm hồ nước ngọt lớn nhất thế giới. Riêng hồ Thượng giữ gần một phần năm lượng nước hồ ngọt toàn cầu."
+    },
+    {
+      "id": "payoff",
+      "image": "C:/Users/w/v011_render/images/payoff_moraine3.jpg",
+      "card_title": "HƠN NỬA SỐ HỒ TRÁI ĐẤT",
+      "card_subtitle": "Bạn đã từng tới Canada chưa? Bình luận nhé!",
+      "spoken": "Một nước, hơn nửa số hồ của cả Trái Đất. Bạn đã từng tới Canada chưa? Bình luận nhé!"
+    }
+  ]
+}

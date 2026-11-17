@@ -7,9 +7,19 @@
 > (DONE / FAILED / IN PROGRESS / BLOCKED), file/commit chứng minh, kết quả
 > thật — thành công hay lỗi (kèm lỗi) đều ghi. Không ghi số không có bằng chứng.
 > Bản trên git là bản chính; bản trên Drive là bản sao dự phòng.
-> Cập nhật lần cuối: 2026-11-16 ~21:26 +07.
+> Cập nhật lần cuối: 2026-11-17 ~12:05 +07.
 
 ## DONE
+
+### Nâng cấp Kiến trúc AgentNet V2.0 — Auto-99% (`auto99/`) — DONE + Verified 2026-11-17 ~12:05 +07
+- **File:** `research_queue.py`, `corner.py`, `join.py`, `stickman-shorts/tools/assemble.py`, `auto99/` (`tts_auto_heal.py`, `pronunciation_lexicon.json`, `episode_compiler.py`, `qc_verify.py`, `telegram_gate.py`, `worker_daemon.py`, `studio_cli.py`, `pc_worker_start.ps1`), `test_auto99.py`.
+- **Kiểm thử tự động:** **23/23 unit & integration tests PASS** (`test_corner.py`, `test_research_queue.py`, `test_research_http.py`, `test_auto99.py` — 9,1s trên Python 3.12 PC).
+- **Giải quyết triệt để lỗi chặn `other_tcp` SSH (v013):** PC Windows (`100.101.158.71`, RTX 5060 Ti 16GB) chủ động pull job chiều đi qua HTTP Tailscale tới `:8110` (`auto99/worker_daemon.py` kèm heartbeat 45s + outbox chống rớt mạng), không cần VPS SSH ngược vào PC. Đã tạo đăng ký node `engineer` cho PC trên Master `:8110` (`id: 4ad1aa279ae398c32745ce18`, chờ lệnh `delegate-engineering off && approve` trên Master).
+- **Định tuyến GPU-First → CPU-Fallback:** Task có `preferred_capabilities: ["gpu_cuda"]` ưu tiên giao PC RTX 5060 Ti khi online; tự động fallback `0s` về CPU VPS1 khi PC tắt hoặc sau `45s` khi PC quá tải.
+- **Xóa bỏ viết tay `probe.py` & Render 1 lệnh (đã chạy thật 2 tập mẫu trên RTX 5060 Ti):**
+  1. `studio_runs/ep001_auto/final.mp4` (Stickman Manim 1080x1920 30fps + MMS-TTS tự sửa lỗi + Whisper large-v3): **53,5s, -16,30 LUFS, -2,92 dBTP, 155,0 effective WPM, ASR 97,83% → QC PASS 99,5/100**.
+  2. `studio_runs/v011_vieneu_auto/final.mp4` (Visual Essay 1080x1920 30fps + giọng VieNeu "Mai Anh" persistent server + BGM + Whisper large-v3): **48,35s, -16,02 LUFS, -3,08 dBTP, 157,3 WPM, ASR 99,13% → QC PASS 97,0/100**.
+- **Cổng duyệt 1% Telegram Bot (`auto99/telegram_gate.py`):** Đẩy thẳng `.mp4` đạt chuẩn QC kèm 4 nút bấm (`Duyệt 11:30`, `Duyệt 20:00`, `Render lại`, `Loại + Ghi bài học`); tự học từ điển phát âm khi chủ nhắn `phát âm: X -> Y`.
 
 ### Video #14 (v014) — DONE + QC-passed 2026-11-16 ~21:26 +07
 - **File:** `video_production/v014-no-part-time-job-50s/v014.mp4` — 52,07s, 1080x1920, 30fps, H.264 + AAC 192k, 5.396.303 byte, sha256 `938568d1c31b7fc8e10276bba603f4f8b372760fe403a4bec24dc03bf89b8d65` — **-16,05 LUFS**, true peak **-3,09 dBTP**, giọng vào **0,000s**, **156,4 wpm lúc nói** (129 từ), Whisper large-v3 (PC) 111/129 = **86,0%**.
