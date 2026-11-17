@@ -1,0 +1,40 @@
+{
+  "version": "2.0",
+  "word_replacements": {
+    "Canada": "Ca-na-đa",
+    "YouTube": "Diu-túp",
+    "Shorts": "Sót",
+    "TikTok": "Tíc-tóc",
+    "Facebook": "Phây-búc",
+    "Reels": "Riu",
+    "AI": "Ây-ai",
+    "GPU": "Gi-pi-iu",
+    "CPU": "Xi-pi-iu",
+    "USD": "đô la Mỹ",
+    "video": "vi-đê-ô",
+    "Video": "Vi-đê-ô",
+    "Moraine": "Mô-rên",
+    "Superior": "Su-pi-ri-ơ",
+    "Nunavut": "Nu-na-vút"
+  },
+  "phrase_fallbacks": {
+    "băng hà": ["băng tuyết khổng lồ", "khối băng cổ đại"],
+    "hố trũng": ["hố sâu", "vùng đất trũng"],
+    "cày tiếp": ["làm tiếp", "vất vả tiếp"],
+    "mệt lả": ["mệt rã rời", "kiệt sức"]
+  },
+  "whisper_homophones": {
+    "lả": ["lã"],
+    "tiếp": ["kiếp"],
+    "vẫn": ["nhận"],
+    "khi": ["thì"],
+    "nghĩ": ["nghỉ"],
+    "riêng": ["kiêng"],
+    "ngọt": ["một"],
+    "cầu": ["công"],
+    "mười": ["người"],
+    "nước": ["đất"],
+    "cặp": ["các"],
+    "trăm": ["trong"]
+  }
+}

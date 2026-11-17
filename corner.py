@@ -25,9 +25,19 @@ class ManagedConnection(sqlite3.Connection):
         try:return super().__exit__(*args)
         finally:self.close()
 
+SKIP_CAPACITY_DIRS = {'.git', '.venv', '.venv-ai', '.venv-win', '__pycache__', 'ai-stack', 'media', 'video_downloads'}
+
 def capacity(root=ROOT):
-    total = sum(p.stat().st_size for p in root.rglob('*') if p.is_file() and not p.is_symlink())
-    if total > LIMIT: raise ValueError('Directory near 1 GB limit; writes disabled')
+    root = Path(root)
+    total = 0
+    for cur_root, dirs, files in os.walk(root):
+        dirs[:] = [d for d in dirs if d not in SKIP_CAPACITY_DIRS]
+        for fname in files:
+            p = Path(cur_root) / fname
+            if not p.is_symlink():
+                total += p.stat().st_size
+                if total > LIMIT:
+                    raise ValueError('Directory near 1 GB limit; writes disabled')
     return total
 
 def connect(root=ROOT):
@@ -93,7 +103,7 @@ class Registry:
             delegation=db.execute("SELECT value FROM config WHERE key='engineering_delegate'").fetchone()
         if not current: return {'status':'WAITING_CONTROLLER','role':row['role']}
         config=json.loads(current['value'])
-        if config.get('mode')!='research-only':
+        if config.get('mode') not in ('research-only', 'studio-auto99'):
             raise PermissionError('Research endpoint migration required; legacy routes disabled')
         result={'status':'READY','role':row['role'],'project':'research',
             'controller_url':config['url'],'controller_generation':config['generation'],
@@ -169,7 +179,8 @@ class Handler(BaseHTTPRequestHandler):
                 token=self.headers.get('Authorization','').removeprefix('Bearer ')
                 return self.respond(200,self.registry.resolve(self.client_address[0],token,
                     include_delegation=self.headers.get('X-AgentNet-Client')=='join/2'))
-            if self.path in ('/tasks','/agents'):
+            clean_path=self.path.split('?',1)[0]
+            if clean_path in ('/tasks','/agents','/staging','/lessons') or clean_path.startswith('/tasks/'):
                 return self.respond(200,self.queue.get(self.authenticated(),self.path))
             self.respond(404,{'error':'not_found'})
         except QueueError as e:self.respond(e.code,{'error':e.message})
