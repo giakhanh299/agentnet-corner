@@ -939,3 +939,13 @@
 - Watchdog ran: systemd unit was missing again (VM replaced), re-created + enabled; gateway was down, restart attempted.
 - Restart OK at 15:03:28 UTC (pid 1756). Health verified after: {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
 - Pattern continues: every 10-min run finds the unit missing and the gateway down — each run starts it fresh (66th "unit missing" / 67th "restart OK" in watchdog.log). Gateway itself is healthy once started; no keys, Drive, or AgentNet actions. Per user standing rule, logged here, not messaged to chat.
+
+## 2026-11-18 16:23 +07 — Media Gateway watchdog (10-min check)
+- Watchdog ran: systemd unit was missing again (VM replaced), re-created + enabled; gateway was down, restart attempted.
+- Restart OK at 09:23:24 UTC (pid 1955). Health verified after: {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Pattern continues: every 10-min run finds the unit missing and the gateway down — each run starts it fresh (6th restart in the log window: 08:53, 09:03, 09:13, 09:23 UTC, plus 08:13/08:33). Gateway itself is healthy once started; unit enabled but `systemctl is-active` reports inactive (process runs via deploy.sh, not systemd). No keys, Drive, or AgentNet actions. Per user standing rule, logged here, not messaged to chat.
+
+## 2026-11-18 16:33 +07 — Media Gateway watchdog (10-min check)
+- Watchdog ran: systemd unit was missing again (VM replaced), re-created + enabled; gateway was down, restart attempted.
+- Restart OK at 09:33:21 UTC (pid 1744). Health verified after: {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Pattern continues: every 10-min run finds the unit missing and the gateway down — each run starts it fresh (42nd "unit missing" / 41st "restart OK" in watchdog.log today; VM uptime was 2 min at check). Gateway itself is healthy once started; unit enabled but `systemctl is-active` reports inactive (process runs via deploy.sh, not systemd). One earlier restart FAILED at 07:03:17 UTC today but self-recovered at 07:13 (restart OK). No keys, Drive, or AgentNet actions. Per user standing rule, logged here, not messaged to chat.
