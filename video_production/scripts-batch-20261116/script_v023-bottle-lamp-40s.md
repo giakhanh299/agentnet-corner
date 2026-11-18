@@ -80,6 +80,14 @@ từng ảnh như v004/v008. Không quay tay thật — ảnh tĩnh + giọng k�
 - "dầu ăn" (nếu hỏng thì đổi thành "một ít dầu").
 - "rèm cửa" (nếu hỏng thì đổi thành "màn cửa").
 
+## KIỂM CHỨNG 18/11 — mẹo đèn dầu nước + dầu ăn + bấc: nguyên lý ĐÚNG, nhưng kịch bản cần sửa 2 chỗ trước khi sản xuất
+- **Nguyên lý đã kiểm chứng** (không phải mẹo bịa): dầu ăn nổi trên nước, bấc hút dầu lên bằng mao dẫn, lửa đốt hơi dầu cháy đều. Nguồn: apieceofrainbow.com (đèn dầu lọ thủy tinh: 1 thìa dầu ≈ 2 giờ cháy), outdoorguide.com (~2 oz dầu olive ≈ 5 giờ), contextenglish.education (nước là lớp đệm an toàn, dập lửa khi đổ). Mẹo này có thật, làm được ngoài đời.
+- **SỬA 1 — đừng dùng chai nhựa:** kịch bản đang viết "chai nhựa trong". Các nguồn đều dặn dùng vật chứa chịu nhiệt, không cháy (thủy tinh/kim loại, "no plastic" — anandtech). Ngọn lửa ở ngay miệng chai nhựa có nguy cơ làm mềm/chảy nhựa. Đổi thành **lọ/chai thủy tinh** trong lời thoại, beat 1 và khung hình.
+- **SỬA 2 — bấc dài bằng cotton thường dễ tắt:** nguồn apieceofrainbow thử bấc cotton dài với dầu ăn và thất bại hoàn toàn — dầu ăn đặc, bấc dài không hút đủ dầu, bấc cháy hết rồi lửa tắt. Dùng được: **bấc nổi (floating wick, có đĩa + bấc tẩm sáp)** hoặc bấc cotton ngắn, ngâm đẫm dầu trước khi châm, chỉ để ~6mm bấc nhô trên mặt dầu (homienjoy). Kịch bản đang viết "sợi bấc qua nắp chai" — cần đổi thành bấc nổi/ bấc ngắn ngâm dầu, nếu không lúc quay thật đèn có thể không cháy.
+- **"Một chai này sáng được cả buổi tối":** hợp lý nếu dùng vài thìa dầu (1 thìa ≈ 2 giờ) — giữ câu này được, không cần số ml trong lời thoại.
+- **"Sáng hơn cả nến" (beat 2):** chưa kiểm chứng được — đèn dầu ăn thường chỉ là ngọn lửa nhỏ, không có nguồn nào so sáng hơn nến. Nên làm mềm thành "đủ sáng cả phòng" khi sản xuất.
+- An toàn trong kịch bản vẫn đúng và giữ nguyên: để xa rèm cửa, không để đèn cháy một mình; thêm chữ an toàn trên hình ở beat 3.
+
 ## QUYẾT ĐỊNH — ẢNH TĨNH + GIỌNG KỂ, KHÔNG QUAY TAY THẬT
 Video gốc mạnh vì mẹo thực dụng + trước/sau rõ ràng, không phải vì
 quay thật. Bản làm lại dùng 4–5 ảnh AI tĩnh từng bước + chữ lớn, giữ
