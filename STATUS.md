@@ -954,3 +954,9 @@
 - Watchdog ran: systemd unit was missing again (VM replaced), re-created + enabled; gateway was down, restart attempted.
 - Restart OK at 01:13:23 UTC (pid 1773). Health verified after: {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
 - Pattern continues: every 10-min run finds the unit missing and the gateway down — each run starts it fresh (210th "unit missing" / 209th "restart OK" in watchdog.log; VM uptime was ~19 min at check). Gateway itself is healthy once started; unit enabled but `systemctl is-active` reports inactive (process runs via deploy.sh, not systemd). No keys, Drive, or AgentNet actions. Per user standing rule, logged here, not messaged to chat.
+
+## 2026-11-20 15:35 +07 — Media Gateway watchdog: diagnosis consolidated (no new failure today)
+- Checked live at 15:30 +07: gateway healthy, pid 1902 (started 08:23 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Watchdog log totals: 344 "unit missing" events, 342 "restart OK", 3 "restart FAILED" (2026-11-17 20:23, 2026-11-18 07:03, 2026-11-19 17:43 UTC) — none today; every failure self-recovered at the next check.
+- Unit-missing events by day: 11-15: 9, 11-16: 18, 11-17: 75, 11-18: 102, 11-19: 101, 11-20: 39 (by 08:30 UTC) — today is on the same pace as 11-18/19, NOT an escalation.
+- Diagnosis: gateway.log shows clean startups only, no crash/error traces — the gateway itself never crashes; the environment resets underneath it (unit file in /etc goes missing) and the watchdog recovers it within ~10 min each time. No action needed; do not message the user per restart (standing rule: logged here, not messaged to chat).
