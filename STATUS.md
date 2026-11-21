@@ -965,3 +965,10 @@
 - Checked live at 17:30 +07: /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}; process pid 1898, started 10:23 UTC. systemd unit exists but reports inactive — expected: watchdog restarts via deploy.sh (nohup), not via systemctl start.
 - Watchdog log today (2026-11-20): 48 "restart OK", 0 "restart FAILED" by 10:23 UTC. Same pace as 11-18 (101) and 11-19 (100) — NOT an escalation, despite 4 restarts in a row at the 10-min checks. Gateway itself never crashes (gateway.log shows clean startups only); the VM underneath is replaced roughly every 10–20 min and wipes /etc, so the unit file goes missing each time and the watchdog re-creates it.
 - No action needed; do not message the user per restart (standing rule: logged here, not messaged to chat).
+
+## 2026-11-21 11:36 +07 — Media Gateway watchdog (10-min checks) — 4th restart failure, recovered; no escalation
+
+- Watchdog restart FAILED at 07:13 +07 (00:13 UTC) — 4th failure since 15/11. Recovered manually right afterwards; gateway healthy from then on (pid 1941, /health ok). Already reported in chat at 07:16 +07; logged here for the record.
+- Restarts continued at every 10-min check through the morning: watchdog log for 2026-11-21 (UTC day, to 11:36 +07) shows 20 "unit missing" / 19 "restart OK" / 1 "restart FAILED". Total log: 429 "restart OK", 4 "restart FAILED".
+- Checked live at 11:36 +07: gateway healthy, pid 1818 (started 04:23 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}. The 11:33 check passed silently — gateway stayed up across the interval (VM up 54 min at check).
+- Diagnosis unchanged from 2026-11-20: gateway itself never crashes (gateway.log shows clean startups only); the environment resets underneath it (unit file in /etc goes missing on VM replacement) and the watchdog recovers it within ~10 min. Same pace as 11-18/19, NOT an escalation. Per user standing rule, logged here, not messaged to chat.
