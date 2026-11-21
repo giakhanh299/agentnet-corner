@@ -39,6 +39,13 @@ chữ lớn + giọng dẫn**, không cần máy quay.
    này chỉ nói "rất khó hỏng" + lý do hóa học đã kiểm chứng — không
    nhắc mộ Ai Cập, không nhắc 3.000 năm.
 
+## Kiểm chứng lại ngày 21/11/2026 (trước sản xuất tuần 2)
+Cả 3 đáp án đã kiểm lại qua web độc lập, đều đúng — không cần sửa lời thoại:
+1. Chuối là quả mọng, dâu tây không phải: Live Science (GS. Judy Jernstedt, UC Davis) + LibreTexts Biology 5.3 — quả mọng mọc từ một bầu nhụy của một hoa; dâu tây là quả tập hợp/phụ, phần thịt đỏ là đế hoa, hạt li ti trên mặt là quả bế (achene).
+2. Bạch tuộc có 3 tim: New Scientist + ScienceABC + OctoNation — 1 tim hệ thống bơm máu đi khắp cơ thể + 2 tim mang bơm máu qua mang; máu dùng hemocyanin (gốc đồng) nên mang oxy kém hơn hemoglobin.
+3. Mật ong rất khó hỏng: Smithsonian Magazine — ít nước (~17%), pH 3–4,5 (kịch bản ghi 3,4–4,5, nằm trong khoảng), enzyme glucose oxidase tạo hydrogen peroxide. Lưu ý: chỉ đúng khi đậy kín, để khô — mật ong hở, ngấm nước vẫn lên men được; kịch bản chỉ nói "rất khó hỏng" nên an toàn.
+- Câu hook "hơn chín mươi phần trăm người xem" là câu dẫn rhetorical, không có số liệu kiểm chứng — giữ nguyên như câu hook, không ghi là số liệu thật.
+
 ## Sự thật KHÔNG đưa vào lời thoại (chỉ hiện trên hình)
 - "1/3" / "2/3" / "3/3" + đáp án từng câu ("CHUỐI LÀ QUẢ MỌNG",
   "3 TIM", "KHÓ HỎNG") hiện sau mỗi câu hỏi (nhãn từng nhịp, chỉ
