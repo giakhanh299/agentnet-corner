@@ -996,3 +996,8 @@
 - Checked live at 16:30 +07 (09:30 UTC): gateway healthy, pid 2191 (uvicorn, started 09:23 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}. systemd unit still inactive — expected, watchdog restarts via deploy.sh, not systemd.
 - Restarts since the 15:30 entry: 08:43 UTC (pid 1887), 09:03 UTC (pid 1805), 09:23 UTC (pid 2191) — all "restart OK", each time "systemd unit was missing (VM replaced), re-created + enabled". No new "restart FAILED" (total still 4). Same ~100/day pace as 11-18/19/20, NOT an escalation.
 - No action needed; logged here per standing rule, not messaged to chat.
+
+## 2026-11-21 19:30 +07 — Media Gateway watchdog: evening check, same pace; no escalation
+- Checked live at 19:30 +07 (12:30 UTC): gateway healthy, pid 1773 (uvicorn, started 12:23 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Restarts since the 16:30 entry: 10:53, 11:03, 11:13, 11:23, 11:43, 12:03, 12:23 UTC — all "restart OK", each time "systemd unit was missing (VM replaced), re-created + enabled". The 11:33 and 12:13 checks passed silently (gateway stayed up). No new "restart FAILED" (total still 4). Same ~100/day pace as 11-18/19/20, NOT an escalation.
+- No action needed; logged here per standing rule, not messaged to chat.
