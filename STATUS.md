@@ -991,3 +991,8 @@
 - Watchdog log totals now: 445 "restart OK", 4 "restart FAILED" (unchanged — the 4 known failures 11-17 20:23, 11-18 07:03, 11-19 17:43, 11-21 00:13 UTC). Restarts since the 13:37 entry: 06:53, 07:13, 07:43, 07:53, 08:03, 08:13, 08:23 UTC — 7 more, same ~100/day pace as 11-18/19/20, NOT an escalation.
 - Same nuance as the 12:30 entry: VM uptime was 30 min at check (boot ~08:00 UTC), spanning the 08:03, 08:13 and 08:23 restarts — the unit/process reset recurs within a single boot, so it is not always a full VM replacement. Gateway.log still shows only graceful shutdowns and no recent traceback, error or OOM (26 "Shutting down" lines, unchanged). Mechanism still unproven; no code fix attempted.
 - No action needed; logged here per standing rule, not messaged to chat.
+
+## 2026-11-21 16:30 +07 — Media Gateway watchdog: afternoon check, same pace; no escalation
+- Checked live at 16:30 +07 (09:30 UTC): gateway healthy, pid 2191 (uvicorn, started 09:23 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}. systemd unit still inactive — expected, watchdog restarts via deploy.sh, not systemd.
+- Restarts since the 15:30 entry: 08:43 UTC (pid 1887), 09:03 UTC (pid 1805), 09:23 UTC (pid 2191) — all "restart OK", each time "systemd unit was missing (VM replaced), re-created + enabled". No new "restart FAILED" (total still 4). Same ~100/day pace as 11-18/19/20, NOT an escalation.
+- No action needed; logged here per standing rule, not messaged to chat.
