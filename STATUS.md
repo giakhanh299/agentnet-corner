@@ -1035,3 +1035,10 @@
 - VM booted 04:49:18 UTC (single boot in journal), up 43 min at check; the 04:53–05:23 restarts happened within this boot — same within-boot reset pattern noted before. Gateway itself never crashes (gateway.log: 545 "Started server process", only 27 graceful "Shutting down", 1 Traceback total — the known 2026-11-15 IndentationError, fixed the same morning).
 - Observation only, not a diagnosis: memory was tight at check — 155 MB free, 622 MB available, 319 MB swap used. No OOM line in gateway.log, so this is not proven as the cause; recorded in case the pattern correlates later.
 - No action needed; logged here per standing rule, not messaged to chat.
+
+## 2026-11-22 13:38 +07 — Media Gateway watchdog: early-afternoon check, same pace; no escalation
+- Checked live at 13:38 +07 (06:38 UTC): gateway healthy, pid 1841 (uvicorn, started 06:23 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Restarts since the 12:32 entry: 4 more, all "restart OK" (05:43, 06:03, 06:13, 06:23 UTC), each time "systemd unit was missing (VM replaced), re-created + enabled". Watchdog log totals now: 536 "restart OK", 5 "restart FAILED" (unchanged — the 5 known failures), 540 "unit was missing". Same ~100/day pace as 11-18/19/20/21, NOT an escalation. The 06:33 check passed silently (verified live at 06:35 UTC — unit file present, pid 1841 alive, same boot_id), so the reset is intermittent within a boot, not every tick.
+- VM booted 05:27 UTC, up ~1h10 at check; the 05:43–06:23 restarts happened within this boot — same within-boot reset pattern noted before.
+- Memory still tight and steady: 145 MB free, 599 MB available, 324 MB swap used (vs 155/622/319 at 12:32). No OOM line in gateway.log; not proven as the cause.
+- No action needed; logged here per standing rule, not messaged to chat.
