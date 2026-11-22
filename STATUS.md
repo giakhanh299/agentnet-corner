@@ -1042,3 +1042,10 @@
 - VM booted 05:27 UTC, up ~1h10 at check; the 05:43–06:23 restarts happened within this boot — same within-boot reset pattern noted before.
 - Memory still tight and steady: 145 MB free, 599 MB available, 324 MB swap used (vs 155/622/319 at 12:32). No OOM line in gateway.log; not proven as the cause.
 - No action needed; logged here per standing rule, not messaged to chat.
+
+## 2026-11-22 14:32 +07 — Media Gateway watchdog: mid-afternoon check, same pace; no escalation
+- Checked live at 14:32 +07 (07:32 UTC): gateway healthy, pid 1936 (uvicorn, started 07:13 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Restarts since the 13:38 entry: 2 more, both "restart OK" (06:53, 07:13 UTC), each time "systemd unit was missing (VM replaced), re-created + enabled". Watchdog log totals now: 538 "restart OK", 5 "restart FAILED" (unchanged — the 5 known failures), 542 "unit was missing". 29 restarts so far today (UTC). Same ~100/day pace as 11-18/19/20/21, NOT an escalation. The 06:43, 07:03 and 07:23 checks passed silently (gateway stayed up).
+- VM booted 05:27 UTC, up ~2h05 at check; the 06:53 and 07:13 restarts happened within this boot — same within-boot reset pattern noted before. Gateway itself never crashes (gateway.log shows clean startups only); the environment resets underneath it and the watchdog recovers it within ~10 min.
+- Memory still tight and steady: 201 MB free, 641 MB available (vs 145/599 at 13:38). No OOM line in gateway.log; not proven as the cause.
+- No action needed; logged here per standing rule, not messaged to chat.
