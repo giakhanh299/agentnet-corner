@@ -1021,3 +1021,9 @@
 - Restarts since the 06:35 entry: 16 more, all "restart OK" (23:53, 00:13, 00:23, 00:43, 00:53, 01:13, 01:33, 01:43, 01:53, 02:03, 02:13, 02:23, 02:43, 03:03, 03:13, 03:23 UTC). Watchdog log totals now: 524 "restart OK", 5 "restart FAILED" (unchanged — the 5 known failures; a 6th grep hit for "FAILED" is the 20:14 manual-recovery line, not a new failure), 528 "unit was missing". Same ~100/day pace as 11-18/19/20/21, NOT an escalation.
 - VM booted 03:16 UTC (10:16 +07), up ~14 min at check; the 03:23 restart happened within this boot, same pattern as noted at 06:35 — resets recur within a single boot, not only on VM replacement.
 - No action needed; logged here per standing rule, not messaged to chat.
+
+## 2026-11-22 11:31 +07 — Media Gateway watchdog: late-morning check, same pace; no escalation
+- Checked live at 11:31 +07 (04:31 UTC): gateway healthy, pid 1751 (uvicorn, started 04:23 UTC), /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Restarts since the 10:30 entry: 3 more, all "restart OK" (03:43, 04:03, 04:23 UTC), each time "systemd unit was missing (VM replaced), re-created + enabled". Watchdog log totals now: 527 "restart OK", 5 "restart FAILED" (unchanged — the 5 known failures), 531 "unit was missing". Same ~100/day pace as 11-18/19/20/21, NOT an escalation. The 11:13 check passed silently (gateway stayed up); the 11:23 restart is the 18th today.
+- VM booted ~04:16 UTC, up ~15 min at check; the 04:23 restart happened within this boot, same within-boot reset pattern noted before. Gateway itself never crashes (gateway.log shows clean startups only); the environment resets underneath it and the watchdog recovers it within ~10 min.
+- No action needed; logged here per standing rule, not messaged to chat.
