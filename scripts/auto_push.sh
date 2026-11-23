@@ -32,6 +32,19 @@ if [ -d "$WORK/video_production" ]; then
 fi
 git add video-pipeline video_production docs HANDOFF.md README.md .gitignore stickman-shorts STATUS.md scripts/auto_push.sh 2>/dev/null || true
 if git diff --cached --quiet; then
+  # Nothing new staged, but an earlier commit may never have reached origin
+  # (e.g. a push denied by egress): retry it instead of exiting quietly.
+  # Found 2026-11-23 20:54: commit 1595bff sat unpushed while the script
+  # kept reporting "nothing to push".
+  AHEAD=$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)
+  if [ "$AHEAD" -gt 0 ]; then
+    if git push origin main > /tmp/agentnet-auto-push.log 2>&1; then
+      tail -3 /tmp/agentnet-auto-push.log
+    else
+      tail -3 /tmp/agentnet-auto-push.log
+      exit 1
+    fi
+  fi
   echo "nothing to push"
   exit 0
 fi
