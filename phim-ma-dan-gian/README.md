@@ -11,6 +11,11 @@ Nhánh `feat/phim-ma-dan-gian` (Tầng 3 · R&D, cách ly Tầng 1 theo `L060`).
 ## Phụ thuộc runtime (chưa nằm trong nhánh này)
 Code đang chạy thật tại `D:\AI_AGENT\AI_SYSTEM\RAG` và import: `muse_dispatch.py`, `qc_engine.py`, `file_exchange.py`, cùng `vps_ssh_helper.py` ở `D:\0.1_FACE_BOOK\macro-tool`. Nhánh này là bản lưu phiên bản; chạy bằng `run_listener.cmd` (đặt `PYTHONPATH` trỏ về RAG).
 
+## Quy tắc lưu trữ
+- **Git:** chỉ code, test, tài liệu cải tiến workflow.
+- **Google Drive:** toàn bộ media (ảnh cảnh, clip, giọng đọc, nhạc, bản ghép tập). `.gitignore` đã chặn các đuôi media.
+- Dựng tập: tạo clip từng cảnh tại máy → ghép thành tập tại máy → xuất lên Drive.
+
 ## Secret — KHÔNG commit (`L065`)
 - `%LOCALAPPDATA%\MuseLoginHelper\telegram_council.json` (bot token, group id)
 - `%LOCALAPPDATA%\MuseLoginHelper\council_dc5.session` (phiên đăng nhập bot = mật khẩu)

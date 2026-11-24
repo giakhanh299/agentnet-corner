@@ -1,6 +1,30 @@
+# Secret (L065)
 *.session
 *.session-journal
 telegram_council.json
 active_invite.json
+
+# Runtime
 __pycache__/
 data/
+
+# Media: chỉ lưu Google Drive, không đưa lên git
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.srt
+*.ass
+*.onnx
+*.safetensors
+renders/
+media/
