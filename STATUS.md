@@ -1219,3 +1219,33 @@
 - Gateway (same check): healthy, /health ok, pid 1888 (started 06:23 UTC). Watchdog totals now 744 "gateway down" / 739 "restart OK" (vs 718/713 at 07:35 +07) — same ~100/day pace, NOT an escalation; logged here per standing rule, not messaged.
 - Registry otherwise unchanged: b4413e82 still SUBMITTED awaiting approval; K04 still BLOCKED, K02 still NEEDS_FIX; no wave5; no RUNNING/QUEUED.
 - Full ghost-vn task results fetched to /tmp/ghost-vn-20261124.json (8 tasks, payload + result); chief summaries also in /tmp/ghost_chief.txt.
+
+## 2026-11-24 14:35 +07 — Ghost-vn: recovered full task results + pilot comparison prepared (no new queue change)
+
+- The /tmp copies of the 8 ghost-vn results (noted in the 13:35 entry) were lost in a VM
+  replacement. Re-fetched all 8 read-only from the registry (GET /tasks) and saved them
+  to git-tracked `ghost-vn-20261124/` (8 JSON + 3 .txt summary extracts + this comparison
+  file) — they will go out with the next 30-min auto-push. Nothing approved, posted, or
+  changed on the registry.
+- Queue re-checked live 14:32 +07 (queue_status.py): still 65 tasks, no new tasks since
+  the 13:15 +07 replies, no RUNNING/QUEUED. Authorship still unprovable (no poster
+  field). Agents alive (Verify 14:30, Research 14:26 +07).
+- New checks done for the pilot choice (a) vs (b):
+  - Film "Ma Da" (2024) gross 127 ty VND independently verified via web (Wikipedia "Ma
+    da (phim)" + Kenh14/Thethaovanhoa, Box Office Vietnam; BOVN notes 5-10% error) —
+    clears the "not independently verified" flag R2 chief put on it.
+  - Script (a) "Ma Da keo gio" narration counted: 107 words = ~49s speech at slow
+    130 wpm; with pauses/silence/end card ~55-65s total, i.e. 10-25s SHORT of the locked
+    75-85s format and 23-63 words under the chief's own 130-170 word budget. Fixable by
+    adding ~25-40 words or much slower delivery — flagged in the comparison file, not a
+    rejection.
+  - (b) "Chieu tren ben song" is outline-only (3 beats); needs one more script-writing
+    round, but can then be written exactly to the 130-170 word budget, has the stronger
+    hook/cliffhanger ("Ai dang goi?") and spends none of the 1-mild-jump-scare budget,
+    vs (a) which spends it on the laugh + ghost voice.
+- Shared blockers unchanged for either choice: new Southern male narrator voice not yet
+  sourced (cannot use VieNeu "Mai Anh"); PC production still blocked on other_tcp;
+  pipeline Stage A only; test channel name unconfirmed.
+- Pending user decision (asked 13:40 +07, no reply yet): is the ghost-vn round-table
+  theirs, and pilot (a) or (b)? The comparison file is ready so the choice can be made
+  in one read; nothing new was messaged to chat.
