@@ -1200,3 +1200,7 @@
 - Fresh-boot evidence: `uptime` 5 min at 01:14 UTC — this VM instance booted ~01:09 UTC, a real replacement between the 00:43 and 01:13 restarts. The 00:53 and 01:03 runs were quiet (gateway healthy), so the outage window was at most ~10 min. Memory: 152 MB free, 1160 MB available (better than 186/645 at 07:35).
 - systemd unit exists and is enabled but the service is inactive (dead) — gateway runs as direct nohup uvicorn, so systemd Restart=on-failure never applies; watchdog is the only restart path (same as noted before).
 - Restart succeeded, so per standing rule this is logged here, not messaged to chat.
+
+## 2026-11-24 08:24 +07 — Auto-push (30-min): pushed 4f55ba6
+- auto_push.sh ran clean (exit 0): f24a47a..4f55ba6 "Auto-save: 2026-11-24 01:24 UTC" pushed to origin/main.
+- Verified: github repo HEAD 4f55ba6, main in sync with origin/main, clean working tree. No failure to report.
