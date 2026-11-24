@@ -1249,3 +1249,9 @@
 - Pending user decision (asked 13:40 +07, no reply yet): is the ghost-vn round-table
   theirs, and pilot (a) or (b)? The comparison file is ready so the choice can be made
   in one read; nothing new was messaged to chat.
+
+## 2026-11-25 02:43 +07 — Media Gateway watchdog: restart FAILED, manual recovery OK
+- Watchdog (10-min cron) found the gateway down at 19:43:17 UTC; systemd unit was missing again (VM replaced — same as the 18:53/19:03/19:13/19:33 runs), re-created + enabled by the script.
+- Watchdog's own deploy.sh restart attempt FAILED (watchdog.log: "restart FAILED" 19:43:17 UTC; the watchdog exec itself was terminated mid-run — stderr "Terminated", exit 1 after ~0.3s, far shorter than a normal ~5s restart).
+- Manual recovery: `deploy.sh restart` succeeded immediately — gateway up as pid 1888, /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- This is the 6th watchdog restart failure since 15/11 (5 recorded before, latest 2026-11-22 ~03:13); pattern continues: gateway dies with each VM replacement and the watchdog's restart intermittently fails while a manual restart works. systemd unit remains inactive (dead) — gateway runs directly via deploy.sh, not via the unit.
