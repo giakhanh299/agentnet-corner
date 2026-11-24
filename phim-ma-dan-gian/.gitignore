@@ -1,0 +1,6 @@
+*.session
+*.session-journal
+telegram_council.json
+active_invite.json
+__pycache__/
+data/
