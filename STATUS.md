@@ -1193,3 +1193,10 @@
 - PC access probe (fresh session, 00:32 UTC): SSH to the PC still denied — tunnel proxy returns HTTP 403 Forbidden for other TCP connections, same other_tcp block as before. Production stays blocked; no VPS fallback per user order.
 - Week 2 (23–29/11); trial posting 27–29/11 at 11:30/20:00. Pending decisions unchanged since the 07:00 briefing delivered 30 minutes ago — nothing new goes to chat.
 - No action needed; logged here per standing rule, not messaged to chat.
+
+## 2026-11-24 08:13 +07 — Watchdog check (10-min): gateway restarted after VM replacement, healthy again
+- Watchdog run at 08:13 +07 (01:13 UTC) found the gateway down and the systemd unit missing (VM replaced), re-created + enabled the unit, and restarted the gateway: "restart OK" at 01:13:26 UTC, new pid 1751. /health now returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- Restarts since the 07:35 entry: 2 more, both "restart OK" (00:43, 01:13 UTC), each time "systemd unit was missing (VM replaced), re-created + enabled". Watchdog log totals now: 720 "gateway down", 719 "unit was missing", 715 "restart OK", 5 "restart FAILED" (unchanged — last failure 2026-11-21 20:13 UTC). Same ~100/day pace, NOT an escalation.
+- Fresh-boot evidence: `uptime` 5 min at 01:14 UTC — this VM instance booted ~01:09 UTC, a real replacement between the 00:43 and 01:13 restarts. The 00:53 and 01:03 runs were quiet (gateway healthy), so the outage window was at most ~10 min. Memory: 152 MB free, 1160 MB available (better than 186/645 at 07:35).
+- systemd unit exists and is enabled but the service is inactive (dead) — gateway runs as direct nohup uvicorn, so systemd Restart=on-failure never applies; watchdog is the only restart path (same as noted before).
+- Restart succeeded, so per standing rule this is logged here, not messaged to chat.
