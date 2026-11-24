@@ -1204,3 +1204,8 @@
 ## 2026-11-24 08:24 +07 — Auto-push (30-min): pushed 4f55ba6
 - auto_push.sh ran clean (exit 0): f24a47a..4f55ba6 "Auto-save: 2026-11-24 01:24 UTC" pushed to origin/main.
 - Verified: github repo HEAD 4f55ba6, main in sync with origin/main, clean working tree. No failure to report.
+
+## 2026-11-24 12:53 +07 — Media Gateway watchdog (10-min): gateway down, restart OK
+- Watchdog found the gateway down at 05:53:19 UTC ("gateway down, attempting restart"); deploy.sh restarted it, pid 1795, "restart OK" at 05:53:25 UTC. /health now returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"} and the uvicorn process is running.
+- systemd unit still inactive — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
+- Restart succeeded, so per standing rule this is logged here, not messaged to chat.
