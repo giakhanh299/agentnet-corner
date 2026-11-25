@@ -1,0 +1,343 @@
+{
+  "title": "Tiếng Võng Kẽo Kẹt Dưới Gốc Cây Đa",
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "episode": 3,
+  "seed": 3,
+  "voice": "phonui",
+  "aigc_label": true,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "publish_title": "Tiếng Võng Kẽo Kẹt Dưới Gốc Cây Đa | Phim Ma Dân Gian Việt Nam Tập 03",
+  "cover_title": "Võng Đung Đưa Đêm Trăng",
+  "cover_hook": "Đêm trăng, võng ai kéo kẹt dưới gốc đa?",
+  "description": "Tập 03 – Phim Ma Dân Gian Việt Nam (AIGC). Làng quê Bắc Bộ, thập niên 1960, đêm trăng: chiếc võng dưới gốc cây đa đầu làng tự đung đưa, kẽo kẹt, dù không có gió. Anh Hùng về khuya đã nghe thấy tiếng ấy. Không máu me, không lộ mặt ma rõ. Xem đến cuối để biết sáng ra trên võng còn lại thứ gì.",
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TiengVong",
+    "#CayDaLang",
+    "#TruyenMaVietNam",
+    "#AIGC",
+    "#LangQueBacBo",
+    "#PhimMa",
+    "#KinhDiDanGian"
+  ],
+  "cta": "Bạn có dám đi qua gốc cây đa lúc nửa đêm? Bình luận 'DÁM' nếu dám, và theo dõi tập 04.",
+  "character_sheet": {
+    "anh_hung": "Anh Hùng: người đàn ông Việt Nam Bắc Bộ khoảng 30 tuổi, khỏe, da rám nắng, mặt vuông, tóc đen cắt ngắn, áo nâu bạc màu, quần đen xắn gối, khăn xếp đội đầu, chân đất, tay chai sần vì làm đồng.",
+    "bong_vong": "Bóng võng: chỉ thấy bóng dáng mờ ngồi trên võng từ phía sau và bàn tay trắng nhợt nắm dây võng, tóc đen dài rũ che mặt, áo trắng cũ, KHÔNG BAO GIỜ lộ mặt rõ, không máu me."
+  },
+  "visual_dna": "Làng quê Bắc Bộ Việt Nam thập niên 1960: cây đa cổ thụ đầu làng với rễ nổi và tán rộng, cổng làng gạch cũ, giếng làng, đình làng mái ngói rêu phong, đường đất, lũy tre, đèn dầu hột vịt ánh vàng cam là nguồn sáng ấm duy nhất, trăng xanh lạnh, sương trắng mỏng. Phong cách điện ảnh tài liệu, hạt film nhẹ, tông màu: vàng đèn dầu, xanh trăng, đen sâu.",
+  "negative_prompt": "no red Chinese lanterns, no Chinese palace, no curved pagoda roof, no Hanfu, no Chinese or Japanese characters, no text, no letters, no watermark, no logo, no modern clothing, no electric lights, no plastic, no cars, no anime style, no cartoon, no gore, no blood, no visible ghost face, no extra fingers, no distorted hands",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – võng kéo kẹt đêm trăng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic night wide shot, 1960s northern Vietnamese village: a huge ancient banyan tree at the village entrance with wide canopy and exposed roots, a hammock swaying gently beneath it, pale blue moonlight through the leaves, thin white mist, an old brick village gate in the background, eerie calm, documentary film grain.",
+      "motion": "camera đẩy chậm từ đường làng về phía gốc cây đa, sương trôi ngang sang trái",
+      "voiceover": "Võng ai kéo kẹt dưới gốc cây đa?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "võng kẽo kẹt",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -20
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "ếch nhái dế kêu xa",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Anh Hùng về khuya",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic night medium shot: Anh Hung (strong 30-year-old northern Vietnamese farmer, sun-darkened square face, short black hair, faded brown shirt, black trousers rolled to the knees, barefoot) walking home late on a dirt village path, holding a duck-egg oil lamp, bamboo grove behind him, cold moonlight rim light, film grain.",
+      "motion": "máy quay theo sau lưng Anh Hùng, bước chân chậm trên đường đất",
+      "voiceover": "Anh Hùng về khuya, trăng soi đường làng.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "bước chân trên đường đất khô",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -20
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "dế kêu thưa thớt",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Close-up đèn dầu",
+      "duration_s": 6,
+      "image_prompt": "Vertical 9:16 extreme close-up at night: a duck-egg oil lamp flame flickering in a glass chimney held by a rough farmer's hand, warm amber glow, darkness and bamboo leaves behind, shallow depth of field, documentary film grain.",
+      "motion": "zoom chậm vào ngọn lửa, lửa chập chờn theo gió",
+      "voiceover": "Đèn dầu trong tay, lửa chập chờn theo gió.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "lửa đèn dầu cháy",
+          "at": 0,
+          "dur": 6,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "gió rít nhẹ qua lũy tre",
+          "at": 0,
+          "dur": 6,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Cây đa đầu làng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic night wide shot: the ancient banyan tree at the village entrance in full, massive trunk and wide canopy silhouetted against a pale moon, the hammock hanging empty beneath it, an old tiled communal house roof in the distance, mist drifting, eerie stillness, film grain.",
+      "motion": "lia máy rất chậm từ gốc đa lên tán cây rồi xuống chiếc võng",
+      "voiceover": "Cây đa đầu làng, bóng tối phủ kín.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "desc": "lá đa xào xạc",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -24
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "cú kêu xa",
+          "at": 2,
+          "dur": 2,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Võng đung đưa",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 night medium shot in moonlight: a hammock swaying gently beneath the banyan tree, a pale ghostly silhouette of a woman sitting on it seen from behind, long black hair covering her face, face never visible, oil lamp light from the path outlining her shape, psychological folk horror, film grain.",
+      "motion": "máy quay đứng yên, võng đung đưa nhịp chậm, lấy nét chuyển sang bóng người",
+      "voiceover": "Chiếc võng đung đưa, dù không có gió.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "dây võng kẽo kẹt",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -20
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "gió lạnh qua tán đa",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Bàn tay trắng nắm dây võng",
+      "duration_s": 6,
+      "image_prompt": "Vertical 9:16 extreme close-up at night: an unnaturally pale bluish-white hand with long thin fingers gripping a worn hammock rope, cold blue-green moonlight, frayed fibres, no face visible, Vietnamese folk horror mood, desaturated except cold cyan, film grain, no blood.",
+      "motion": "zoom ra chậm để lộ thêm dây võng, bàn tay siết nhẹ",
+      "voiceover": "Sợi dây võng cũ, kẽo kẹt giữa đêm khuya.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "dây võng căng kẽo kẹt",
+          "at": 0,
+          "dur": 6,
+          "gain_db": -20
+        },
+        {
+          "tag": "water",
+          "desc": "giọt sương rơi từ lá đa",
+          "at": 3,
+          "dur": 2,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Anh Hùng bước tới gốc đa",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic night medium shot: Anh Hung walking slowly and cautiously toward the banyan tree across dry leaves, barefoot, holding the oil lamp high, the hammock silhouette ahead blurred by mist, cold moonlight rim light, film grain.",
+      "motion": "máy quay theo sau lưng Anh Hùng, bước chân chậm",
+      "voiceover": "Anh Hùng bước chậm, đất khô kêu rào rạt.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "bước chân trên lá khô",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -20
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "lá khô xào xạc",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Close-up lá đa và trăng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 close-up at night: broad banyan leaves rustling in the wind, pale moonlight breaking through the gaps between leaves, a strand of long wet black hair caught on a low branch, no face visible, cold cyan light, film grain.",
+      "motion": "lia máy chậm qua tán lá, trăng lọt qua kẽ lá",
+      "voiceover": "Lá đa xào xạc, trăng lọt qua kẽ lá.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "desc": "lá đa xào xạc",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -22
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "dế kêu xa",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Giọng ma trên võng",
+      "duration_s": 6,
+      "image_prompt": "Vertical 9:16 night medium shot in thick mist: the pale silhouette still sitting on the swaying hammock beneath the banyan tree seen from behind, long black hair covering her face, an oil lamp on the ground casting distorted shadows through the roots, face never visible, folk horror, film grain.",
+      "motion": "máy quay đứng yên rồi đẩy chậm về phía chiếc võng, sương cuộn",
+      "voiceover": "Về… nhà… với mẹ…",
+      "vo_at": 1.0,
+      "ghost": true,
+      "ghost_semitones": -3,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "võng kẽo kẹt chậm",
+          "at": 0,
+          "dur": 6,
+          "gain_db": -22
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "tiếng động sắc lạnh ngắn sau lời gọi",
+          "at": 4.0,
+          "dur": 1.2,
+          "gain_db": -22
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Anh Hùng nín thở",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic night close-up: Anh Hung's weathered face in the warm oil lamp light, eyes wide with fear, lips pressed shut, his rough hand gripping the lamp handle tightly, mist and darkness behind him, documentary film grain.",
+      "motion": "zoom chậm vào mặt Anh Hùng, đèn dầu lung linh",
+      "voiceover": "Anh Hùng nín thở, tay siết chặt đèn dầu.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "lửa đèn dầu cháy",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "tiếng động căng ngắn",
+          "at": 3.5,
+          "dur": 1.2,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Võng đứng im",
+      "duration_s": 6,
+      "image_prompt": "Vertical 9:16 cinematic night wide shot: the hammock beneath the banyan tree now hanging completely still, no one on it, moonlight through the canopy, mist closing over the village gate behind it, eerie stillness, film grain.",
+      "motion": "lùi máy rất chậm mở rộng khung cảnh gốc đa",
+      "voiceover": "Võng đứng im rồi, sương phủ trắng gốc đa.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "desc": "gió lạnh qua tán đa",
+          "at": 0,
+          "dur": 6,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "dế kêu thưa thớt xa",
+          "at": 0,
+          "dur": 6,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "Kết mở – nón lá trên võng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 pre-dawn wide shot of the same village entrance: mist lifting, first pale golden light on the horizon, the empty hammock beneath the banyan tree, a single old conical straw hat left lying on the hammock, the brick village gate far in the background, serene yet eerie stillness, film grain, warm-cold color contrast.",
+      "motion": "lùi máy rất chậm mở rộng khung cảnh khi trời hửng sáng",
+      "voiceover": "Sáng ra, chỉ còn nón lá trên võng.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "desc": "gà gáy xa",
+          "at": 0.5,
+          "dur": 4,
+          "gain_db": -22
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "tiếng mõ làng xa một nhịp",
+          "at": 4.0,
+          "dur": 1,
+          "gain_db": -26
+        }
+      ]
+    }
+  ]
+}

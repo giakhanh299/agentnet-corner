@@ -1,0 +1,401 @@
+{
+  "aigc_label": true,
+  "character_sheet": {
+    "bong_dan_ba": "Bóng đàn bà: chỉ thấy bóng dáng mờ và tóc đen dài ướt rũ che mặt, da trắng nhợt xanh, bàn tay dài, KHÔNG BAO GIỜ lộ mặt rõ, không máu me.",
+    "hanh": "Hạnh: cô giáo trẻ Việt Nam 24 tuổi, tóc dài buộc thấp, áo dài trắng đã ngả màu, áo khoác len nâu, đi xe đạp, mang túi vải."
+  },
+  "cover_hook": "Đèn dầu vẫn cháy trong căn nhà không người.",
+  "cover_title": "ĐÈN VẪN CHÁY",
+  "cta": "Bạn có dám ở lại căn nhà gỗ đồi thông một đêm? Bình luận nhé.",
+  "description": "Đà Lạt thập niên 1970, sương mù đêm khuya. Cô giáo Hạnh trú nhờ một đêm trong căn nhà gỗ trên đồi thông — nơi ngọn đèn dầu vẫn cháy dù không còn ai ở. Bóng người tóc dài ngoài cửa sổ là ai, và vì sao bà chủ cũ thắp đèn chờ con trở về? Phim ma dân gian Việt Nam, an toàn kênh, không máu me.",
+  "episode": 4,
+  "format": {
+    "fps": 30,
+    "height": 1920,
+    "ratio": "9:16",
+    "width": 1080
+  },
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#DaLat",
+    "#TruyenMa",
+    "#DenDau",
+    "#PhimNgan"
+  ],
+  "music": {
+    "gain_db": 0,
+    "generator": "horror"
+  },
+  "negative_prompt": "no red Chinese lanterns, no Chinese palace, no curved pagoda roof, no Hanfu, no Chinese or Japanese characters, no text, no letters, no watermark, no logo, no modern clothing, no electric lights, no plastic, no cars, no anime style, no cartoon, no gore, no blood, no visible ghost face, no extra fingers, no distorted hands",
+  "publish_title": "Ngọn Đèn Dầu Trong Căn Nhà Gỗ Đồi Thông: Đà Lạt 1970 | Phim Ma Dân Gian Tập 4",
+  "scenes": [
+    {
+      "duration_s": 5,
+      "id": 1,
+      "image_prompt": "Vertical 9:16 cinematic wide night shot, 1970s Da Lat pine hill: a small wooden house on a foggy pine-covered hill, one duck-egg oil lamp glowing amber in its only window, tall pine trees silhouetted in thick white fog, cold blue moonlight, thin mist drifting, eerie calm, documentary film grain.",
+      "label": "Hook – đèn dầu vẫn cháy",
+      "motion": "máy quay đẩy chậm từ rừng thông về phía căn nhà gỗ, sương trôi ngang sang trái, đèn dầu lung linh nhẹ",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "dế kêu xa trong rừng thông",
+          "dur": 5,
+          "gain_db": -26,
+          "tag": "night_creatures"
+        },
+        {
+          "at": 0,
+          "desc": "drone trầm mở màn",
+          "dur": 1.2,
+          "gain_db": -24,
+          "tag": "horror_stinger"
+        },
+        {
+          "at": 0,
+          "desc": "gió rì rào qua rừng thông",
+          "dur": 5,
+          "gain_db": -28,
+          "tag": "leaves_wind"
+        }
+      ],
+      "vo_at": 0.5,
+      "voiceover": "Đèn dầu vẫn cháy... trong căn nhà bỏ hoang."
+    },
+    {
+      "duration_s": 5,
+      "id": 2,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: Hanh (young Vietnamese teacher, 24, long hair tied low, faded white ao dai, brown wool cardigan, carrying a cloth bag) pushing her bicycle up a muddy pine hill path in drizzle and fog, wooden house with glowing window ahead, cold moonlight, film grain.",
+      "label": "Cô giáo Hạnh tới đồi thông",
+      "motion": "máy quay đi ngang theo Hạnh dắt xe đạp lên dốc, mưa phùn lất phất, sương cuộn",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân trên đường đất ướt",
+          "dur": 3,
+          "gain_db": -20,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "mưa phùn rơi nhẹ",
+          "dur": 5,
+          "gain_db": -26,
+          "tag": "rain"
+        },
+        {
+          "at": 2,
+          "desc": "gió qua rừng thông",
+          "dur": 3,
+          "gain_db": -26,
+          "tag": "leaves_wind"
+        }
+      ],
+      "vo_at": 0.8,
+      "voiceover": "Cô giáo Hạnh tới đồi thông, trú nhờ một đêm."
+    },
+    {
+      "duration_s": 6,
+      "id": 3,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: a weathered wooden door of the old pine hill house creaking open, warm amber oil lamp glow spilling from inside onto the wet doorstep, Hanh's hand pushing the door, fog curling in, no face visible, film grain.",
+      "label": "Cửa gỗ kẽo kẹt mở",
+      "motion": "zoom chậm vào tay Hạnh đẩy cửa, ánh đèn dầu tràn ra hiên, sương len vào nhà",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "cửa gỗ kẽo kẹt",
+          "dur": 3,
+          "gain_db": -20,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 2,
+          "desc": "ngọn đèn dầu cháy khẽ",
+          "dur": 4,
+          "gain_db": -24,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Cửa gỗ kẽo kẹt mở... đèn dầu trên bàn vẫn ấm."
+    },
+    {
+      "duration_s": 5,
+      "id": 4,
+      "image_prompt": "Vertical 9:16 cinematic medium shot inside the wooden house at night: Hanh hanging her wet wool cardigan near the oil lamp on a wooden table, drizzle visible through the small window, pine shadows on wooden plank walls, warm amber lamp light against cold blue fog outside, film grain.",
+      "label": "Hạnh nhóm đèn, hong áo",
+      "motion": "máy quay nghiêng chậm từ cửa sổ mưa phùn xuống ngọn đèn dầu trên bàn gỗ",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "mưa phùn gõ mái gỗ",
+          "dur": 5,
+          "gain_db": -24,
+          "tag": "rain"
+        },
+        {
+          "at": 1,
+          "desc": "lửa đèn dầu bập bùng",
+          "dur": 4,
+          "gain_db": -22,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 3,
+          "desc": "sàn gỗ kêu khẽ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.7,
+      "voiceover": "Ngoài trời mưa phùn... Hạnh nhóm đèn, hong áo ướt."
+    },
+    {
+      "duration_s": 5,
+      "id": 5,
+      "image_prompt": "Vertical 9:16 extreme close-up at night: the flame of the duck-egg oil lamp flickering and bending sideways as if someone just walked past, warm amber glow distorting on the wooden wall, a faint shadow sweeping across the flame, no face visible, film grain.",
+      "label": "Ngọn lửa chao đảo",
+      "motion": "giữ khung cận ngọn lửa, lửa chao đảo rồi đứng lại, bóng mờ lướt qua",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "lửa đèn dầu chao đảo",
+          "dur": 5,
+          "gain_db": -20,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 0,
+          "desc": "gió lùa qua khe cửa",
+          "dur": 5,
+          "gain_db": -26,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 3,
+          "desc": "riser căng dần",
+          "dur": 2,
+          "gain_db": -22,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Ngọn lửa chao đảo... như có ai vừa đi qua."
+    },
+    {
+      "duration_s": 6,
+      "id": 6,
+      "image_prompt": "Vertical 9:16 cinematic wide shot at night: through the small wooden window of the house, a pale ghostly silhouette of a woman with long wet black hair covering her face standing motionless among foggy pine trees, face never visible, cold moonlight rim light, oil lamp glow from inside, psychological folk horror, film grain.",
+      "label": "Bóng người ngoài cửa sổ",
+      "motion": "lấy nét chuyển từ ngọn đèn dầu trong nhà sang bóng người ngoài cửa sổ rồi chìm vào sương",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió rít qua rừng thông",
+          "dur": 6,
+          "gain_db": -24,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 0,
+          "desc": "ếch nhái kêu xa",
+          "dur": 6,
+          "gain_db": -28,
+          "tag": "night_creatures"
+        },
+        {
+          "at": 2,
+          "desc": "thì thầm xa, rất nhỏ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.8,
+      "voiceover": "Ngoài cửa sổ... bóng người tóc dài đứng trong sương."
+    },
+    {
+      "duration_s": 5,
+      "id": 7,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: Hanh's frightened face half-lit by the amber oil lamp, eyes wide, listening, breath held, wooden plank wall behind her, cold fog blue on one side of her face, film grain.",
+      "label": "Hạnh nín thở lắng nghe",
+      "motion": "zoom rất chậm vào mắt Hạnh, ánh đèn dầu rung nhẹ trên mặt",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng thì thầm gọi tên, rất nhỏ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 2,
+          "desc": "ván gỗ kêu khẽ dưới chân",
+          "dur": 2,
+          "gain_db": -24,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.5,
+      "voiceover": "Hạnh nín thở... tiếng thì thầm gọi tên mình."
+    },
+    {
+      "duration_s": 5,
+      "id": 8,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: an old framed black-and-white photograph on the wooden wall of the house, lit by the warm oil lamp — a woman in 1960s ao dai holding a small boy, lamp light flickering across the glass, pine shadows, film grain, no text visible.",
+      "label": "Tấm ảnh cũ trên tường",
+      "motion": "máy quay lia chậm từ ngọn đèn dầu sang tấm ảnh cũ trên tường gỗ",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "ván gỗ kêu khẽ",
+          "dur": 2,
+          "gain_db": -24,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 1,
+          "desc": "lửa đèn dầu bập bùng",
+          "dur": 4,
+          "gain_db": -22,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Trên tường... tấm ảnh cũ, người đàn bà chờ con."
+    },
+    {
+      "duration_s": 6,
+      "id": 9,
+      "image_prompt": "Vertical 9:16 extreme close-up at night: an unnaturally pale bluish-white hand with long thin fingers resting lightly on the outside of the wooden window frame, cold blue glow, rain droplets on the wood, no face visible, no blood, film grain.",
+      "label": "Bàn tay trắng ngoài cửa sổ",
+      "motion": "zoom ra chậm để lộ thêm khung cửa sổ, bàn tay siết nhẹ rồi biến mất",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "stinger lạnh",
+          "dur": 2,
+          "gain_db": -20,
+          "tag": "horror_stinger"
+        },
+        {
+          "at": 3,
+          "desc": "thì thầm xa, rất nhỏ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 4,
+          "desc": "giọt nước nhỏ từ mái hiên",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "water"
+        }
+      ],
+      "vo_at": 0.7,
+      "voiceover": "Bàn tay trắng... khẽ chạm khung cửa rồi biến mất."
+    },
+    {
+      "duration_s": 5,
+      "id": 10,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: Hanh kneeling by the wooden table, understanding, gently touching the old oil lamp with both hands, warm amber light on her face, drizzle on the window behind her, fog outside, film grain.",
+      "label": "Hạnh hiểu ra",
+      "motion": "máy quay hạ thấp chậm từ cửa sổ mưa xuống đôi tay Hạnh chạm đèn dầu",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "lửa đèn dầu cháy ấm",
+          "dur": 5,
+          "gain_db": -22,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 0,
+          "desc": "mưa phùn ngoài cửa sổ",
+          "dur": 5,
+          "gain_db": -28,
+          "tag": "rain"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Đèn này... bà chủ thắp chờ con trở về."
+    },
+    {
+      "duration_s": 5,
+      "id": 11,
+      "image_prompt": "Vertical 9:16 cinematic wide shot at night: Hanh placing the lit oil lamp on the wooden windowsill of the pine hill house, warm amber glow spilling into the foggy pine forest, her silhouette small against the window, cold moonlight, film grain.",
+      "label": "Hạnh thắp lại đèn",
+      "motion": "lùi máy chậm mở rộng khung cảnh khi Hạnh đặt đèn lên cửa sổ, ánh đèn lan ra sương",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "lửa đèn dầu cháy đều",
+          "dur": 5,
+          "gain_db": -20,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 1,
+          "desc": "bước chân nhẹ trên sàn gỗ",
+          "dur": 2,
+          "gain_db": -22,
+          "tag": "footsteps"
+        },
+        {
+          "at": 3,
+          "desc": "một nốt đàn tranh ngân",
+          "dur": 2,
+          "gain_db": -22,
+          "tag": "folk_oneshot"
+        }
+      ],
+      "vo_at": 0.7,
+      "voiceover": "Hạnh thắp lại đèn... đặt lên cửa sổ cho bà."
+    },
+    {
+      "duration_s": 6,
+      "id": 12,
+      "image_prompt": "Vertical 9:16 pre-dawn wide shot: the same pine hill wooden house at first light, mist lifting from the pine forest, the oil lamp still glowing faintly amber in the window, pale golden dawn on the horizon, serene yet eerie stillness, documentary film grain, warm-cold color contrast.",
+      "label": "Kết mở – bình minh đồi thông",
+      "motion": "lùi máy rất chậm mở rộng khung cảnh khi trời hửng sáng, sương tan dần",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gà gáy xa",
+          "dur": 4,
+          "gain_db": -24,
+          "tag": "night_creatures"
+        },
+        {
+          "at": 0,
+          "desc": "giọt sương nhỏ từ lá thông",
+          "dur": 6,
+          "gain_db": -28,
+          "tag": "water"
+        },
+        {
+          "at": 2,
+          "desc": "một nốt sáo ngân dài",
+          "dur": 3,
+          "gain_db": -24,
+          "tag": "folk_oneshot"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua rừng thông",
+          "dur": 6,
+          "gain_db": -28,
+          "tag": "leaves_wind"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Sáng ra... đèn vẫn cháy. Người chờ... đã yên lòng."
+    }
+  ],
+  "seed": 4,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "title": "Ngọn Đèn Dầu Trong Căn Nhà Gỗ Đồi Thông",
+  "visual_dna": "Đà Lạt thập niên 1970: căn nhà gỗ trên đồi thông, sương mù dày, đèn dầu hột vịt ánh vàng cam là nguồn sáng ấm duy nhất, rừng thông, mưa phùn, trăng lạnh, phong cách điện ảnh tài liệu, hạt film nhẹ, tông màu: vàng đèn dầu, xanh thông, đen sâu.",
+  "voice": "phonui"
+}
