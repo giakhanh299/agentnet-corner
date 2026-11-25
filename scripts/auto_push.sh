@@ -30,6 +30,9 @@ if [ -d "$WORK/video_production" ]; then
     --exclude='voice-compare-*/vietvoice/' --exclude='voice-compare-*/venv*/' \
     "$WORK/video_production/" "$REPO/video_production/" 2>/dev/null || true
 fi
+# Others (PC Chief, feature-branch merges) may push to main too: rebase on the
+# latest origin/main first so the timed push never fails non-fast-forward.
+git pull --rebase --autostash origin main >/tmp/agentnet-auto-pull.log 2>&1 || { tail -3 /tmp/agentnet-auto-pull.log; git rebase --abort 2>/dev/null; exit 1; }
 git add video-pipeline video_production docs HANDOFF.md README.md .gitignore stickman-shorts STATUS.md scripts/auto_push.sh 2>/dev/null || true
 if git diff --cached --quiet; then
   # Nothing new staged, but an earlier commit may never have reached origin

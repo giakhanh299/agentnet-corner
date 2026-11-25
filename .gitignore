@@ -42,3 +42,10 @@ stickman-shorts/.venv-win/
 telegram.json
 telegram_offset.json
 outbox/
+# Telegram/Muse session & config: never commit (L065)
+*.session
+*.session-journal
+telegram_council.json
+active_invite.json
+pending_accounts.txt
+
