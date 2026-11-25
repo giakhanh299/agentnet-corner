@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-11-25T20:18:00+07:00",
+  "machine": {
+    "gpu": "NVIDIA GeForce RTX 5060 Ti 16GB",
+    "torch": "2.10.0+cu128",
+    "cuda_available": true,
+    "python": "3.10.11",
+    "ffmpeg": "8.1.2-full_build-www.gyan.dev"
+  },
+  "voice": {
+    "omnivoice": {
+      "installed": true,
+      "samples_dir": "D:/0.1_FACE_BOOK/Lay video tiktok/OmniVoice/voices",
+      "samples": [
+        "giongnamtnghiemtuc.wav",
+        "giongnamdanchuongtrinh.mp3",
+        "giongnamreviewdao.mp3",
+        "giongdocconhan_short.mp3",
+        "giongchigg.wav",
+        "giongnucute.wav",
+        "ref_better_version.mp3"
+      ],
+      "access": "read_only_tier1"
+    },
+    "edge_tts": {"installed": true, "version": "7.3.1", "voices": ["vi-VN-NamMinhNeural", "vi-VN-HoaiMyNeural"], "needs_internet": true},
+    "mms_tts_vie": {"installed": true, "via": "transformers", "license": "CC-BY-NC-4.0", "model_cached": false},
+    "vieneu_tts": {"installed": false, "license": "Apache-2.0", "note": "best fallback in voice-compare-20261116"},
+    "gwen_tts_0_6b": {"installed": false, "model_cached": true}
+  },
+  "asr_check": {"faster_whisper": true},
+  "video": {
+    "encoders": ["h264_nvenc", "hevc_nvenc", "av1_nvenc", "libx264"],
+    "filters": ["zoompan", "xfade", "ass", "overlay", "rubberband", "sidechaincompress", "loudnorm", "amix", "whisper"],
+    "diffusers": {"installed": true, "image_model": null},
+    "manim": {"installed": false}
+  },
+  "qc": ["bridges/qc_engine.py", "auto99/qc_verify.py"],
+  "assets": {
+    "bgm": "stickman-shorts/src/assets/audio/music",
+    "sfx": "stickman-shorts/src/assets/audio/sfx",
+    "fonts": "stickman-shorts/src/assets/fonts",
+    "pronunciation_lexicon": "auto99/pronunciation_lexicon.json"
+  }
+}
