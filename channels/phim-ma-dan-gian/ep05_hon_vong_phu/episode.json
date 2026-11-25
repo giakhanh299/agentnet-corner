@@ -5,10 +5,10 @@
   "total_duration_s": 63,
   "language": "vi",
   "aigc_label": true,
-  "hook_3s": "Dem ram, tuong da Vong Phu bong quay dau nhin ra bien.",
-  "message": "Long thuy chung va tinh than la thu neo giu con nguoi; oan han chi hoa giai bang tha thu va doan vien.",
+  "hook_3s": "Đêm rằm, tượng đá Vọng Phu bỗng quay đầu nhìn ra biển Đông.",
+  "message": "Lòng thủy chung và tình thân là thứ neo giữ con người; oán hận chỉ hóa giải bằng tha thứ và đoàn viên.",
   "location": {
-    "name": "Nui Ba, xa Cat Tien",
+    "name": "Núi Bà, xã Cát Tiến",
     "region": "Tinh Gia Lai (vung bien Binh Dinh xua), mien Trung, nhin ra bien Dong",
     "note": "Hon Vong Phu: khoi da tu nhien tren nui Ba, hinh dang nhu nguoi vo bong con cho chong ngoai bien."
   },
@@ -390,7 +390,7 @@
   "publish_title": "Hòn Vọng Phu: Đêm Rằm Tượng Đá Quay Đầu Nhìn Ra Biển | Phim Ma Dân Gian Tập 05",
   "cover_title": "TƯỢNG ĐÁ QUAY ĐẦU",
   "cover_hook": "Đêm rằm, tượng đá bỗng quay đầu nhìn ra biển Đông…",
-  "cover_image": "scene_09.png",
+  "cover_image": "scene_08.png",
   "description": "Đêm rằm trên núi Bà, xã Cát Tiến, tượng đá Vọng Phu bỗng quay đầu nhìn ra biển Đông. Lan trở về quê ngoại trông nom bà và khám phá bí mật của người vợ chờ chồng hóa đá. Truyện dân gian Việt Nam (AIGC).",
   "cta": "Bạn có tin người chờ đợi sẽ hóa đá không? Kể chuyện quê bạn dưới bình luận nhé!",
   "hashtags": [

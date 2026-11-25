@@ -62,7 +62,7 @@
       "voiceover": "Đèn dầu vẫn cháy... trong căn nhà bỏ hoang."
     },
     {
-      "duration_s": 5,
+      "duration_s": 6,
       "id": 2,
       "image_prompt": "Vertical 9:16 cinematic medium shot at night: Hanh (young Vietnamese teacher, 24, long hair tied low, faded white ao dai, brown wool cardigan, carrying a cloth bag) pushing her bicycle up a muddy pine hill path in drizzle and fog, wooden house with glowing window ahead, cold moonlight, film grain.",
       "label": "Cô giáo Hạnh tới đồi thông",
@@ -119,10 +119,10 @@
       "voiceover": "Cửa gỗ kẽo kẹt mở... đèn dầu trên bàn vẫn ấm."
     },
     {
-      "duration_s": 5,
+      "duration_s": 6,
       "id": 4,
       "image_prompt": "Vertical 9:16 cinematic medium shot inside the wooden house at night: Hanh hanging her wet wool cardigan near the oil lamp on a wooden table, drizzle visible through the small window, pine shadows on wooden plank walls, warm amber lamp light against cold blue fog outside, film grain.",
-      "label": "Hạnh nhóm đèn, hong áo",
+      "label": "Hạnh nhóm đèn, hơ áo",
       "motion": "máy quay nghiêng chậm từ cửa sổ mưa phùn xuống ngọn đèn dầu trên bàn gỗ",
       "sfx": [
         {
@@ -148,10 +148,10 @@
         }
       ],
       "vo_at": 0.7,
-      "voiceover": "Ngoài trời mưa phùn... Hạnh nhóm đèn, hong áo ướt."
+      "voiceover": "Ngoài trời mưa phùn... Hạnh nhóm đèn, hơ áo ướt."
     },
     {
-      "duration_s": 5,
+      "duration_s": 6,
       "id": 5,
       "image_prompt": "Vertical 9:16 extreme close-up at night: the flame of the duck-egg oil lamp flickering and bending sideways as if someone just walked past, warm amber glow distorting on the wooden wall, a faint shadow sweeping across the flame, no face visible, film grain.",
       "label": "Ngọn lửa chao đảo",
@@ -240,7 +240,7 @@
       "voiceover": "Hạnh nín thở... tiếng thì thầm gọi tên mình."
     },
     {
-      "duration_s": 5,
+      "duration_s": 6,
       "id": 8,
       "image_prompt": "Vertical 9:16 cinematic medium shot at night: an old framed black-and-white photograph on the wooden wall of the house, lit by the warm oil lamp — a woman in 1960s ao dai holding a small boy, lamp light flickering across the glass, pine shadows, film grain, no text visible.",
       "label": "Tấm ảnh cũ trên tường",
@@ -322,7 +322,7 @@
       "voiceover": "Đèn này... bà chủ thắp chờ con trở về."
     },
     {
-      "duration_s": 5,
+      "duration_s": 6,
       "id": 11,
       "image_prompt": "Vertical 9:16 cinematic wide shot at night: Hanh placing the lit oil lamp on the wooden windowsill of the pine hill house, warm amber glow spilling into the foggy pine forest, her silhouette small against the window, cold moonlight, film grain.",
       "label": "Hạnh thắp lại đèn",
@@ -397,5 +397,6 @@
   "series": "Phim Ma Dân Gian Việt Nam",
   "title": "Ngọn Đèn Dầu Trong Căn Nhà Gỗ Đồi Thông",
   "visual_dna": "Đà Lạt thập niên 1970: căn nhà gỗ trên đồi thông, sương mù dày, đèn dầu hột vịt ánh vàng cam là nguồn sáng ấm duy nhất, rừng thông, mưa phùn, trăng lạnh, phong cách điện ảnh tài liệu, hạt film nhẹ, tông màu: vàng đèn dầu, xanh thông, đen sâu.",
-  "voice": "phonui"
+  "voice": "phonui",
+  "cover_image": "scene_01.png"
 }

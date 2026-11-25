@@ -217,7 +217,7 @@
     {
       "duration_s": 5,
       "id": 7,
-      "image_prompt": "Vertical 9:16 cinematic close-up at night: H'Lan's frightened face half-lit by bonfire light, eyes wide, listening, breath held, mist blue on one side of her face, film grain.",
+      "image_prompt": "Vertical 9:16 night close-up: young Vietnamese Ede ethnic woman with dark brown eyes, tan skin, braided black hair, looking startled in warm amber firelight and cold blue moonlight mist, Central Highlands Vietnam, documentary film.",
       "label": "H'Lan nín thở lắng nghe",
       "motion": "zoom rất chậm vào mắt H'Lan, ánh lửa rung nhẹ trên mặt",
       "sfx": [
@@ -397,5 +397,6 @@
   "series": "Phim Ma Dân Gian Việt Nam",
   "title": "Tiếng Chiêng Dưới Trăng",
   "visual_dna": "Tây Nguyên: buôn làng Ê-đê, Đắk Lắk, nhà dài, cồng chiêng đồng cổ, lửa trại, trăng rằm, sương mù dày, rừng cây, phong cách điện ảnh tài liệu, hạt film nhẹ, tông màu: vàng lửa trại, xanh trăng, đen sâu.",
-  "voice": "phonui"
+  "voice": "phonui",
+  "cover_image": "scene_11.png"
 }
