@@ -1,0 +1,412 @@
+{
+  "episode_id": "ep06-tieng-don-luc-nua-dem",
+  "channel": "phim-ma-dan-gian",
+  "title": "Tiếng Đờn Lúc Nửa Đêm",
+  "total_duration_s": 63,
+  "language": "vi",
+  "aigc_label": true,
+  "hook_3s": "4 gio sang, cho chua hop ma tieng don ca da ngan tren song.",
+  "message": "Giu nghe, giu chu tin voi khach va voi nguoi di truoc; tieng don con ngan khi long nguoi con nho.",
+  "location": {
+    "name": "Cho noi Cai Rang, song Can Tho",
+    "region": "Thanh pho Can Tho, mien Tay Nam Bo",
+    "note": "Cho noi hop tu 4-5 gio sang; ghe hang treo cay beo (cay sao) de rao hang: dua, dua hau, khoai, rau cu."
+  },
+  "character_sheet": {
+    "tin": "Tin, 24 tuoi, chang trai tre noi nghiep ghe hang cua ba ngoai; toc den ngan, ao thun trang tay xan, quan den, khan ran quanh co; nhanh nhen, that tha.",
+    "ba_ngoai": "Ba ngoai, 78 tuoi, toc bac bui gon, ao ba ba nau; gioi don ca tai tu, hay hat tren ghe.",
+    "spirit_silhouette": "Bong lung ba ngoai: toc bac bui, ao ba ba nau, chi thay tu phia sau, khong bao gio lo mat; hien len trong suong va anh den."
+  },
+  "visual_dna": {
+    "palette": "xanh song lanh, xam suong, den long vang am lam diem nhan; bao hoa thap, tuong phan vua",
+    "lighting": "4 gio sang toi mo, den dau va den long vang am, suong song mong",
+    "camera": "doi goc lien tuc: toan / trung / can; chuyen dong cham, tinh lang",
+    "style": "phim tai lieu dien anh, film grain nhe, chan thuc, mien Tay Viet Nam"
+  },
+  "negative_prompt": "no red Chinese lanterns, no Chinese curved temple roofs, no Chinese-style temples, no text, no logo, no watermark, no blood, no gore, no visible ghost face, no charms or talismans",
+  "sfx": [
+    "footsteps",
+    "rain",
+    "leaves_wind",
+    "wood_creak",
+    "water",
+    "night_creatures",
+    "fire_lamp",
+    "human_eerie",
+    "horror_stinger",
+    "folk_oneshot"
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Don ngan luc 4 gio",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a Vietnamese floating market on the Can Tho river at 4am, dark teal water, wooden boats with warm yellow lanterns, thin river mist, goods poles with pineapples and watermelons, cold pre-dawn light, film grain, no text, no logo, no blood",
+      "motion": "Static wide shot, then very slow push-in over the lantern-lit boats; mist drifting.",
+      "voiceover": "Tiếng đờn ngân! Bốn giờ sáng, chợ chưa họp.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 3.8,
+          "dur": 1.2,
+          "gain_db": -25
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Tin thap den",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese man in a white shirt lighting an oil lamp on a wooden cargo boat loaded with fruit at pre-dawn, warm lamp glow, dark river behind, film grain, no text",
+      "motion": "Slow tracking shot following Tin from the bow to the cabin as the lamp lights.",
+      "voiceover": "Tín thắp đèn dầu, kiểm lại ghe hàng bà ngoại.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Cay don kim cua ba",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of an old Vietnamese dan kim moon lute hanging inside a wooden boat cabin, warm oil lamp light, a young man's hand touching the strings, dust in the air, film grain, no text",
+      "motion": "Static close-up; slow focus pull from the lute to Tin's hand.",
+      "voiceover": "Cây đờn kìm cũ của bà… vẫn còn nằm đây.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Ghe hang cap ben",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of wooden cargo boats arriving at a Vietnamese floating market at dawn, warm lanterns reflecting on dark teal water, mist, goods poles with fruit, film grain, no text",
+      "motion": "Slow pan across the arriving boats and lantern reflections.",
+      "voiceover": "Ghe hàng cập bến, ánh đèn soi mặt nước đen.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Ba Sau hoi tham",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of an elderly Vietnamese woman customer in a brown ba ba shirt buying fruit from a young man on a wooden boat at a floating market at dawn, warm lantern light, film grain, no text",
+      "motion": "Static medium shot; gentle boat rocking.",
+      "voiceover": "Bà Sáu khẽ hỏi: bà ngoại con nay đâu rồi?",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Nho ba hat don ca",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a young Vietnamese man's thoughtful face in warm lamplight on a boat at night, soft memory-like glow, an elderly woman singing faintly behind him out of focus, film grain, no text",
+      "motion": "Static close-up; warm light slowly brightens like a memory.",
+      "voiceover": "Tín chợt nhớ những đêm bà hát đờn trên ghe.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Tin gay don tren song",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese man playing a dan kim moon lute on the bow of a wooden boat at night, warm lantern light, dark river and mist around, film grain, no text",
+      "motion": "Slow tracking shot circling Tin as he plays.",
+      "voiceover": "Đêm xuống sâu, Tín khẽ gảy đờn giữa dòng sông.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Bong lung quen thuoc",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close shot from behind of an elderly Vietnamese woman silhouette with grey hair in a bun and brown ba ba shirt, sitting at the bow of a wooden boat at night listening to lute music, face never visible, warm lantern glow, mist, film grain, no text",
+      "motion": "Slow tilt from the lantern to the silhouette's back.",
+      "voiceover": "Một bóng lưng quen thuộc… lặng lẽ ngồi nghe đờn.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Ghe den tu ve",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of many wooden boats with warm yellow lanterns gathering on a dark river at night around one boat where a young man plays the lute, mist, cold blue night, film grain, no text",
+      "motion": "Static wide shot; lantern lights slowly multiply on the water.",
+      "voiceover": "Tiếng đờn ngân vang, ghe đèn tự trôi về bến.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Bong tan vao suong",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese man lowering his lute on a wooden boat at night, a faint elderly silhouette dissolving into mist and warm lantern light at the bow, no face visible, peaceful, film grain, no text",
+      "motion": "Slow push-in on the lantern as the silhouette fades.",
+      "voiceover": "Bóng bà tan vào sương, ngọn đèn vẫn sáng ấm.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Len day don",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a young Vietnamese man's hands tuning a dan kim moon lute on a wooden boat at dawn, warm sunrise light, river behind, film grain, no text",
+      "motion": "Static close-up; fingers tighten the strings.",
+      "voiceover": "Tín so lại dây đờn, nguyện giữ nghề của bà.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "Cho hop, don con ngan",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a busy Vietnamese floating market at sunrise, many wooden boats with fruit and warm lanterns on a wide river, golden dawn light, a young man playing lute on his boat in the middle, film grain, no text",
+      "motion": "Slow crane up revealing the sunrise over the crowded market.",
+      "voiceover": "Chợ sớm họp đông, tiếng đờn còn ngân mãi trên sông.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ],
+  "episode": 6,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "voice": "phonui",
+  "seed": 6,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "publish_title": "Chợ Nổi Cái Răng 4 Giờ Sáng: Tiếng Đờn Không Người Gảy | Phim Ma Dân Gian Tập 06",
+  "cover_title": "ĐỜN NGÂN LÚC 4 GIỜ",
+  "cover_hook": "Bốn giờ sáng, chợ chưa họp mà tiếng đờn đã ngân…",
+  "cover_image": "scene_08.png",
+  "description": "Bốn giờ sáng trên sông Cần Thơ, chợ nổi Cái Răng chưa họp mà tiếng đờn ca tài tử đã ngân vang từ chiếc ghe không người. Tín nối nghiệp ghe hàng của bà ngoại và giữ trọn chữ tín với người đi trước. Phim ma dân gian Việt Nam (AIGC).",
+  "cta": "Nghề truyền thống ở quê bạn là gì? Chia sẻ dưới bình luận nhé!",
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TiengDonLucNuaDem",
+    "#ChoNoiCaiRang",
+    "#CanTho",
+    "#DonCaTaiTu",
+    "#TruyenDanGianVietNam",
+    "#AIGC"
+  ]
+}

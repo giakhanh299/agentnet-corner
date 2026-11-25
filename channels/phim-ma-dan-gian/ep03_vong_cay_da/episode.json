@@ -17,7 +17,7 @@
   },
   "publish_title": "Tiếng Võng Kẽo Kẹt Dưới Gốc Cây Đa | Phim Ma Dân Gian Việt Nam Tập 03",
   "cover_title": "Võng Đung Đưa Đêm Trăng",
-  "cover_hook": "Đêm trăng, võng ai kéo kẹt dưới gốc đa?",
+  "cover_hook": "Đêm trăng, võng ai kẽo kẹt dưới gốc đa?",
   "description": "Tập 03 – Phim Ma Dân Gian Việt Nam (AIGC). Làng quê Bắc Bộ, thập niên 1960, đêm trăng: chiếc võng dưới gốc cây đa đầu làng tự đung đưa, kẽo kẹt, dù không có gió. Anh Hùng về khuya đã nghe thấy tiếng ấy. Không máu me, không lộ mặt ma rõ. Xem đến cuối để biết sáng ra trên võng còn lại thứ gì.",
   "hashtags": [
     "#PhimMaDanGian",
@@ -39,11 +39,11 @@
   "scenes": [
     {
       "id": 1,
-      "label": "Hook – võng kéo kẹt đêm trăng",
+      "label": "Hook – võng kẽo kẹt đêm trăng",
       "duration_s": 5,
       "image_prompt": "Vertical 9:16 cinematic night wide shot, 1960s northern Vietnamese village: a huge ancient banyan tree at the village entrance with wide canopy and exposed roots, a hammock swaying gently beneath it, pale blue moonlight through the leaves, thin white mist, an old brick village gate in the background, eerie calm, documentary film grain.",
       "motion": "camera đẩy chậm từ đường làng về phía gốc cây đa, sương trôi ngang sang trái",
-      "voiceover": "Võng ai kéo kẹt dưới gốc cây đa?",
+      "voiceover": "Võng ai kẽo kẹt dưới gốc cây đa?",
       "vo_at": 0.0,
       "sfx": [
         {
@@ -190,7 +190,7 @@
     {
       "id": 7,
       "label": "Anh Hùng bước tới gốc đa",
-      "duration_s": 5,
+      "duration_s": 6,
       "image_prompt": "Vertical 9:16 cinematic night medium shot: Anh Hung walking slowly and cautiously toward the banyan tree across dry leaves, barefoot, holding the oil lamp high, the hammock silhouette ahead blurred by mist, cold moonlight rim light, film grain.",
       "motion": "máy quay theo sau lưng Anh Hùng, bước chân chậm",
       "voiceover": "Anh Hùng bước chậm, đất khô kêu rào rạt.",
@@ -215,7 +215,7 @@
     {
       "id": 8,
       "label": "Close-up lá đa và trăng",
-      "duration_s": 5,
+      "duration_s": 6,
       "image_prompt": "Vertical 9:16 close-up at night: broad banyan leaves rustling in the wind, pale moonlight breaking through the gaps between leaves, a strand of long wet black hair caught on a low branch, no face visible, cold cyan light, film grain.",
       "motion": "lia máy chậm qua tán lá, trăng lọt qua kẽ lá",
       "voiceover": "Lá đa xào xạc, trăng lọt qua kẽ lá.",
@@ -258,8 +258,8 @@
         {
           "tag": "horror_stinger",
           "desc": "tiếng động sắc lạnh ngắn sau lời gọi",
-          "at": 4.0,
-          "dur": 1.2,
+          "at": 5.0,
+          "dur": 1.0,
           "gain_db": -22
         }
       ]
@@ -267,7 +267,7 @@
     {
       "id": 10,
       "label": "Anh Hùng nín thở",
-      "duration_s": 5,
+      "duration_s": 6,
       "image_prompt": "Vertical 9:16 cinematic night close-up: Anh Hung's weathered face in the warm oil lamp light, eyes wide with fear, lips pressed shut, his rough hand gripping the lamp handle tightly, mist and darkness behind him, documentary film grain.",
       "motion": "zoom chậm vào mặt Anh Hùng, đèn dầu lung linh",
       "voiceover": "Anh Hùng nín thở, tay siết chặt đèn dầu.",
@@ -285,7 +285,7 @@
           "desc": "tiếng động căng ngắn",
           "at": 3.5,
           "dur": 1.2,
-          "gain_db": -24
+          "gain_db": -27
         }
       ]
     },
@@ -328,7 +328,7 @@
           "desc": "gà gáy xa",
           "at": 0.5,
           "dur": 4,
-          "gain_db": -22
+          "gain_db": -26
         },
         {
           "tag": "folk_oneshot",

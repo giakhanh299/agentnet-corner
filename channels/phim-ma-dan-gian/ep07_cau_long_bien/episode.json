@@ -1,0 +1,412 @@
+{
+  "episode_id": "ep07-nguoi-gac-cau-long-bien",
+  "channel": "phim-ma-dan-gian",
+  "title": "Người Gác Cầu Long Biên",
+  "total_duration_s": 63,
+  "language": "vi",
+  "aigc_label": true,
+  "hook_3s": "Dem suong mu, ong lao gac cau hien ra nhac doan tau di cham lai.",
+  "message": "Nho on nguoi di truoc va tran trong hoa binh; nhung cay cau noi ca hai bo va ca hai the he.",
+  "location": {
+    "name": "Cau Long Bien, song Hong",
+    "region": "Ha Noi, Bac Bo",
+    "note": "Cau sat Long Bien bac qua song Hong, hon tram tuoi; chòi gác cầu xưa của người gác cầu."
+  },
+  "character_sheet": {
+    "minh": "Minh, 28 tuoi, ky su tre ve kiem tra cau; mu bao ho, ao phan quang, den pin, may tinh bang; can than, kinh trong lich su.",
+    "cu_gac_cau": "Cu gac cau xua, khoang 70 tuoi, dong phuc duong sat cu, mu kep, den long; hien ve chi tu phia sau, khong bao gio lo mat.",
+    "cau_long_bien": "Cau sat hon tram tuoi, ket cau thep do nau, duong ray giua, song Hong chay duoi."
+  },
+  "visual_dna": {
+    "palette": "xam thep, xanh song lanh, suong trang, den long vang am lam diem nhan; bao hoa thap",
+    "lighting": "suong mu dem lanh, den long vang am, den tau xa mo",
+    "camera": "doi goc lien tuc: toan / trung / can; chuyen dong cham, tinh lang",
+    "style": "phim tai lieu dien anh, film grain nhe, chan thuc, Ha Noi"
+  },
+  "negative_prompt": "no red Chinese lanterns, no Chinese curved temple roofs, no Chinese-style temples, no text, no logo, no watermark, no blood, no gore, no visible ghost face, no charms or talismans",
+  "sfx": [
+    "footsteps",
+    "rain",
+    "leaves_wind",
+    "wood_creak",
+    "water",
+    "night_creatures",
+    "fire_lamp",
+    "human_eerie",
+    "horror_stinger",
+    "folk_oneshot"
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Ong lao hien ra",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of the historic Long Bien iron bridge over the Red River in Hanoi at night, thick fog, a distant train headlight glowing in the mist, an old man silhouette with a lantern on the bridge, cold blue-grey palette, film grain, no text, no logo, no blood",
+      "motion": "Static wide shot, then very slow push-in; fog drifting, train light approaching.",
+      "voiceover": "Ông lão hiện ra! Giơ đèn nhắc tàu chậm lại.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 3.8,
+          "dur": 1.2,
+          "gain_db": -25
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Minh kiem tra cau",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese engineer in a safety helmet and reflective vest inspecting iron bridge rivets with a flashlight at night, thick fog, Red River below, cold blue light, film grain, no text",
+      "motion": "Slow tracking shot following Minh along the bridge walkway.",
+      "voiceover": "Minh đi kiểm tra cầu giữa đêm sương mù dày.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Anh cu gac cau",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a young man's hands holding an old black-and-white photo of an elderly Vietnamese railway bridge keeper in an old uniform, warm lantern light, iron bridge blurred behind, film grain, no text",
+      "motion": "Static close-up; slow focus pull from the photo to Minh's face.",
+      "voiceover": "Tấm ảnh cụ gác cầu năm xưa, áo sờn vai.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Cau sat tram tuoi",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of the Long Bien iron bridge steel structure over the wide Red River in Hanoi at dusk, rust-brown steel, river boats below, warm evening light, film grain, no text",
+      "motion": "Slow pan along the steel truss and the river.",
+      "voiceover": "Cây cầu sắt trăm tuổi, nối hai bờ sông Hồng.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "So cu trong choi gac",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young engineer opening an old wooden keeper's hut on a railway bridge at night, finding an oil lantern and a worn logbook, warm lamp glow, dust in the air, film grain, no text",
+      "motion": "Slow push-in on the hut door and the logbook.",
+      "voiceover": "Trong chòi gác cũ, cuốn sổ trực vẫn còn nguyên.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Dong chu trong so",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a worn handwritten logbook page in Vietnamese script, oil lamp light, an old brass lantern beside it, dark background, film grain, no readable text in frame",
+      "motion": "Static close-up; lamp flame flickering over the page.",
+      "voiceover": "Trang sổ ghi rõ: sương dày, tàu nhớ đi chậm.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Mang den len cau",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese engineer walking on a foggy iron bridge at night carrying an old oil lantern, cold blue fog, warm lantern glow, Red River far below, film grain, no text",
+      "motion": "Tracking shot behind Minh through the fog; lantern swaying.",
+      "voiceover": "Đêm xuống khuya, Minh mang đèn dầu bước lên cầu.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Bong cu gac cau",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close shot from behind of an elderly Vietnamese railway keeper silhouette in an old uniform and cap, holding an oil lantern in thick fog on an iron bridge at night, face never visible, warm lantern glow, film grain, no text",
+      "motion": "Slow tilt from the lantern up to the silhouette's back.",
+      "voiceover": "Bóng cụ gác cầu đứng đó, ánh đèn soi sương mù.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Cu gio den, tau cham lai",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of an old railway keeper silhouette raising a lantern on a foggy iron bridge at night as a train slows down in the mist, headlight dimming, cold blue fog, warm lantern glow, film grain, no text",
+      "motion": "Static wide shot; the train glides slowly past the lantern.",
+      "voiceover": "Cụ giơ cao ngọn đèn, đoàn tàu chậm lại an toàn.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 4.8,
+          "dur": 1.2,
+          "gain_db": -25
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Minh cui dau",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese engineer bowing on a foggy iron bridge at night as an elderly keeper silhouette turns away and dissolves into mist and warm lantern light, face never visible, peaceful, film grain, no text",
+      "motion": "Slow push-in on the lantern as the silhouette fades.",
+      "voiceover": "Minh cúi đầu cảm ơn, bóng cụ tan vào màn sương.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Ghi tiep so gac",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a young man's hand writing in an old logbook with a pen, oil lamp light, iron bridge railing blurred behind, dawn light beginning, film grain, no text",
+      "motion": "Static close-up; the pen continues the old handwriting.",
+      "voiceover": "Minh mở sổ cũ, viết tiếp trang trực của cụ xưa.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "Binh minh noi hai the he",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of the Long Bien iron bridge over the Red River in Hanoi at sunrise, a train crossing slowly, golden dawn light, a young engineer standing on the bridge, hopeful, film grain, no text",
+      "motion": "Slow crane up revealing the sunrise over the river and bridge.",
+      "voiceover": "Bình minh lên, cây cầu nối hai bờ, hai thế hệ.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ],
+  "episode": 7,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "voice": "phonui",
+  "seed": 7,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "publish_title": "Người Gác Cầu Long Biên: Đêm Sương Mù Ông Lão Nhắc Tàu Chậm Lại | Phim Ma Dân Gian Tập 07",
+  "cover_title": "ÔNG LÃO GÁC CẦU",
+  "cover_hook": "Đêm sương mù, ông lão gác cầu đã mất hiện ra…",
+  "cover_image": "scene_08.png",
+  "description": "Đêm sương mù dày trên cầu Long Biên, sông Hồng, Hà Nội, bóng ông lão gác cầu năm xưa hiện ra giơ đèn nhắc đoàn tàu đi chậm lại. Minh, kỹ sư trẻ, tìm lại cuốn sổ gác cầu cũ của cụ mình. Phim ma dân gian Việt Nam (AIGC).",
+  "cta": "Cây cầu nào gắn với tuổi thơ của bạn? Kể dưới bình luận nhé!",
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#NguoiGacCauLongBien",
+    "#CauLongBien",
+    "#HaNoi",
+    "#SongHong",
+    "#TruyenDanGianVietNam",
+    "#AIGC"
+  ]
+}

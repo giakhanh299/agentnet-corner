@@ -1,0 +1,406 @@
+{
+  "episode_id": "ep05-hon-vong-phu",
+  "channel": "phim-ma-dan-gian",
+  "title": "Hòn Vọng Phu",
+  "total_duration_s": 63,
+  "language": "vi",
+  "aigc_label": true,
+  "hook_3s": "Dem ram, tuong da Vong Phu bong quay dau nhin ra bien.",
+  "message": "Long thuy chung va tinh than la thu neo giu con nguoi; oan han chi hoa giai bang tha thu va doan vien.",
+  "location": {
+    "name": "Nui Ba, xa Cat Tien",
+    "region": "Tinh Gia Lai (vung bien Binh Dinh xua), mien Trung, nhin ra bien Dong",
+    "note": "Hon Vong Phu: khoi da tu nhien tren nui Ba, hinh dang nhu nguoi vo bong con cho chong ngoai bien."
+  },
+  "character_sheet": {
+    "lan": "Lan, 26 tuoi, huong dan vien du lich; toc den dai buoc gon, ao so mi trang, quan jeans, non la khi dan khach; tinh cach am ap, kien nhan.",
+    "ba_ngoai": "Ba ngoai, 75 tuoi, toc bac bui gon, ao ba ba nau, khan ran; giong cham rai, hay ke chuyen xua.",
+    "vong_phu_spirit": "Bong trang mo cua nguoi vo cho chong: chi thay bong dang tu phia sau, toc den dai che kin mat, ao dai trang phat trong suong; KHONG BAO GIO lo mat ro, khong mau me."
+  },
+  "visual_dna": {
+    "palette": "xanh bien lanh, xam da, anh trang bac, den dau vang am lam diem nhan; bao hoa thap, tuong phan vua",
+    "lighting": "anh trang ram lanh, den dau vang am, suong bien mong",
+    "camera": "doi goc lien tuc: toan / trung / can; chuyen dong cham, tinh lang",
+    "style": "phim tai lieu dien anh, film grain nhe, chan thuc, mien Trung Viet Nam"
+  },
+  "negative_prompt": "no red Chinese lanterns, no Chinese curved temple roofs, no Chinese-style temples, no text, no logo, no watermark, no blood, no gore, no visible ghost face, no charms or talismans",
+  "sfx": [
+    "footsteps",
+    "rain",
+    "leaves_wind",
+    "wood_creak",
+    "water",
+    "night_creatures",
+    "fire_lamp",
+    "human_eerie",
+    "horror_stinger",
+    "folk_oneshot"
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Tuong da quay dau",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a giant natural stone formation shaped like a woman holding a child on a coastal mountain cliff at night, full moon, East Sea below, thin sea mist, cold blue moonlight, the stone figure seems to turn its head toward the sea, desaturated teal palette, film grain, no text, no logo, no blood",
+      "motion": "Static wide shot, then very slow push-in on the stone figure; moonlight steady, mist drifting.",
+      "voiceover": "Tượng đá quay đầu! Đêm rằm, nhìn ra biển Đông.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 3.8,
+          "dur": 1.2,
+          "gain_db": -25
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Lan ve que ngoai",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese woman tour guide in a white shirt arriving at an old wooden house in a central Vietnam coastal village at dusk, warm oil lamp glow in the doorway, fishing nets and clay pots, teal dusk light, film grain, no text",
+      "motion": "Slow tracking shot following Lan from the village path to the doorway.",
+      "voiceover": "Lan về quê ngoại, trông nom bà đang ốm.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Ba ke chuyen xua",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of an elderly Vietnamese grandmother's wrinkled hands and gentle face in warm oil lamp light inside an old wooden house, telling a story, dark background, film grain, no text",
+      "motion": "Static close-up, lamp flame flickering softly; slow focus pull from hands to face.",
+      "voiceover": "Bà kể chuyện xưa: người vợ chờ chồng hóa đá.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Dan khach tham nui Ba",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a young Vietnamese woman tour guide in a conical hat leading tourists on a coastal mountain trail in central Vietnam, East Sea blue behind, bright daylight, green hills, film grain, no text",
+      "motion": "Slow pan across the trail and the sea horizon.",
+      "voiceover": "Ban ngày, Lan dẫn khách lên thăm núi Bà.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Thu trong ruong cu",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese woman opening an old wooden chest in a dim house, finding a yellowed letter and an old black-and-white photo of a fisherman, warm lamp light, dust in the air, film grain, no text",
+      "motion": "Slow push-in on the chest and the letter.",
+      "voiceover": "Trong rương gỗ cũ, lá thư ông ngoại gửi bà.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Ong di bien khong ve",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of an old black-and-white photo of a Vietnamese fisherman beside a yellowed letter, held by wrinkled hands, tear catching lamplight, dark background, film grain, no text",
+      "motion": "Static close-up; slight handheld tremble, focus on the photo.",
+      "voiceover": "Ông đi biển không về… mà bà vẫn chờ.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Len nui dem ram",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese woman climbing a misty mountain stone path at night in light rain, holding a warm paper lantern, dark forest and sea mist around, cold blue moonlight, film grain, no text",
+      "motion": "Tracking shot behind Lan up the wet stone steps; lantern swaying.",
+      "voiceover": "Đêm rằm, Lan cầm đèn dầu leo lên núi Bà.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "rain",
+          "desc": "rain",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Mat da uot",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, extreme close-up of a weathered stone statue face in profile at night, water streaks like tears on the stone, cold moonlight, sea mist, no visible ghost face, film grain, no text",
+      "motion": "Slow tilt up the stone face; water droplets glisten.",
+      "voiceover": "Tượng đá lặng nhìn biển. Mặt đá ướt đẫm sương.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Bong trang ben tuong",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a pale ghostly female silhouette seen from behind, long black hair completely hiding the face, white ao dai in sea mist, standing beside a giant stone statue on a cliff at night, gazing at the East Sea, cold blue moonlight, no blood, no visible face, film grain, no text",
+      "motion": "Static wide shot; mist drifts, the silhouette barely moves.",
+      "voiceover": "Bóng trắng đứng cạnh tượng đá, nhìn ra biển Đông.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 4.8,
+          "dur": 1.2,
+          "gain_db": -25
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Thap den tha thu",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese woman kneeling to light a paper lantern at the foot of a giant stone statue at night, warm lantern glow against cold blue moonlight, sea mist, film grain, no text",
+      "motion": "Slow push-in on the lantern flame and Lan's hands.",
+      "voiceover": "Lan thắp đèn khấn nhỏ: bà đã tha thứ rồi.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Bong trang tan vao trang",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close shot from behind of a pale ghostly woman with long black hair, white ao dai dissolving into silver moonlight and sea mist on a cliff at night, no face visible, peaceful, film grain, no text",
+      "motion": "Slow pull-back as the figure fades into moonlight.",
+      "voiceover": "Bóng trắng tan dần vào ánh trăng ngoài biển khơi.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "Binh minh doan vien",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of an elderly Vietnamese grandmother and her young granddaughter standing on a coastal mountain cliff at dawn, golden sunrise over the East Sea, the stone statue peaceful behind them, warm hopeful light, film grain, no text",
+      "motion": "Slow crane up revealing the sunrise over the sea.",
+      "voiceover": "Bình minh, bà mỉm cười. Người chờ nay đã về.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ],
+  "episode": 5,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "voice": "phonui",
+  "seed": 5,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "publish_title": "Hòn Vọng Phu: Đêm Rằm Tượng Đá Quay Đầu Nhìn Ra Biển | Phim Ma Dân Gian Tập 05",
+  "cover_title": "TƯỢNG ĐÁ QUAY ĐẦU",
+  "cover_hook": "Đêm rằm, tượng đá bỗng quay đầu nhìn ra biển Đông…",
+  "cover_image": "scene_09.png",
+  "description": "Đêm rằm trên núi Bà, xã Cát Tiến, tượng đá Vọng Phu bỗng quay đầu nhìn ra biển Đông. Lan trở về quê ngoại trông nom bà và khám phá bí mật của người vợ chờ chồng hóa đá. Truyện dân gian Việt Nam (AIGC).",
+  "cta": "Bạn có tin người chờ đợi sẽ hóa đá không? Kể chuyện quê bạn dưới bình luận nhé!",
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#HonVongPhu",
+    "#TruyenDanGianVietNam",
+    "#GiaLai",
+    "#BinhDinh",
+    "#NuiBa",
+    "#ChuyenMaViet",
+    "#AIGC"
+  ]
+}

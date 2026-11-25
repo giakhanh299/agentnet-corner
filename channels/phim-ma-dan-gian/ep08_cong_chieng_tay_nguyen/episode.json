@@ -1,0 +1,401 @@
+{
+  "aigc_label": true,
+  "character_sheet": {
+    "bong_gia_lang": "Bóng già làng: chỉ thấy bóng dáng mờ cao lớn trong sương trăng, tóc bạc dài, KHÔNG BAO GIỜ lộ mặt rõ, không máu me.",
+    "h_lan": "H'Lan: cô gái trẻ Ê-đê 20 tuổi, tóc đen dài tết hai bên, váy thổ cẩm, vòng tay hạt, ôm dùi chiêng."
+  },
+  "cover_hook": "Đêm trăng, chiêng cổ tự ngân dù không ai gõ.",
+  "cover_title": "CHIÊNG TỰ NGÂN",
+  "cta": "Bạn có nghe thấy tiếng chiêng gọi mình không? Bình luận nhé.",
+  "description": "Tây Nguyên, buôn làng Ê-đê Đắk Lắk, đêm trăng lễ hội. H'Lan, cô gái trẻ học đánh cồng chiêng, nghe chiếc chiêng cổ tự ngân dù không ai gõ. Bóng già làng trong sương là ai, và vì sao chiêng chỉ ngân khi có người xứng đáng cầm dùi? Phim ma dân gian Việt Nam, an toàn kênh, không máu me.",
+  "episode": 8,
+  "format": {
+    "fps": 30,
+    "height": 1920,
+    "ratio": "9:16",
+    "width": 1080
+  },
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TayNguyen",
+    "#CongChieng",
+    "#TruyenMa",
+    "#PhimNgan"
+  ],
+  "music": {
+    "gain_db": 0,
+    "generator": "horror"
+  },
+  "negative_prompt": "no red Chinese lanterns, no Chinese palace, no curved pagoda roof, no Hanfu, no Chinese or Japanese characters, no text, no letters, no watermark, no logo, no modern clothing, no electric lights, no plastic, no cars, no anime style, no cartoon, no gore, no blood, no visible ghost face, no extra fingers, no distorted hands",
+  "publish_title": "Tiếng Chiêng Dưới Trăng: Chiêng Cổ Tự Ngân | Phim Ma Dân Gian Tập 8",
+  "scenes": [
+    {
+      "duration_s": 5,
+      "id": 1,
+      "image_prompt": "Vertical 9:16 cinematic wide night shot, Central Highlands Vietnam: an E-de village longhouse under a full moon, ancient bronze gongs hanging from wooden beams, tall trees silhouetted, thick white mist drifting, cold blue moonlight, eerie calm, documentary film grain.",
+      "label": "Hook – chiêng cổ tự ngân",
+      "motion": "máy quay đẩy chậm từ rừng cây về phía nhà dài, sương trôi ngang sang trái, chiêng cổ lấp lánh ánh trăng",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "dế kêu xa trong đêm trăng",
+          "dur": 5,
+          "gain_db": -26,
+          "tag": "night_creatures"
+        },
+        {
+          "at": 0,
+          "desc": "drone trầm mở màn",
+          "dur": 1.2,
+          "gain_db": -24,
+          "tag": "horror_stinger"
+        },
+        {
+          "at": 0,
+          "desc": "gió rì rào qua rừng cây",
+          "dur": 5,
+          "gain_db": -28,
+          "tag": "leaves_wind"
+        }
+      ],
+      "vo_at": 0.5,
+      "voiceover": "Đêm trăng... chiêng cổ tự ngân, không ai gõ."
+    },
+    {
+      "duration_s": 5,
+      "id": 2,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: H'Lan (young E-de woman, 20, long black hair in two braids, brocade skirt, bead bracelets, holding wooden gong mallets) walking on a dirt path toward the longhouse in light drizzle and fog, moonlight through trees, film grain.",
+      "label": "H'Lan ôm dùi chiêng về nhà dài",
+      "motion": "máy quay đi ngang theo H'Lan ôm dùi chiêng đi trên đường đất, mưa phùn lất phất, sương cuộn",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân trên đường đất",
+          "dur": 3,
+          "gain_db": -20,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "mưa phùn rơi nhẹ",
+          "dur": 5,
+          "gain_db": -26,
+          "tag": "rain"
+        },
+        {
+          "at": 2,
+          "desc": "sàn gỗ nhà dài kêu khẽ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.8,
+      "voiceover": "H'Lan ôm dùi chiêng... về nhà dài học đánh chiêng."
+    },
+    {
+      "duration_s": 6,
+      "id": 3,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: the surface of an ancient bronze gong with worn carvings and patina, cold moonlight glinting on the metal, a wisp of mist curling across it, wooden beam behind, film grain.",
+      "label": "Chiếc chiêng cổ",
+      "motion": "zoom chậm vào mặt chiêng cổ, ánh trăng lướt trên hoa văn mờ, sương len qua",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua nhà dài",
+          "dur": 6,
+          "gain_db": -26,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 2,
+          "desc": "tiếng chiêng ngân rất nhỏ",
+          "dur": 3,
+          "gain_db": -24,
+          "tag": "folk_oneshot"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Chiếc chiêng cổ... già làng bảo trong chiêng có thần."
+    },
+    {
+      "duration_s": 5,
+      "id": 4,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: villagers gathered around a bonfire in front of the longhouse, warm firelight against cold blue moonlight, bronze gongs hanging silent on wooden frames, mist, festival mood, film grain.",
+      "label": "Đêm lễ hội, lửa bập bùng",
+      "motion": "máy quay lia chậm từ lửa trại sang hàng chiêng treo im lặng",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "lửa trại bập bùng",
+          "dur": 5,
+          "gain_db": -22,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 0,
+          "desc": "mưa phùn xa",
+          "dur": 5,
+          "gain_db": -28,
+          "tag": "rain"
+        },
+        {
+          "at": 2,
+          "desc": "dế kêu quanh buôn",
+          "dur": 3,
+          "gain_db": -26,
+          "tag": "night_creatures"
+        }
+      ],
+      "vo_at": 0.7,
+      "voiceover": "Đêm lễ hội... lửa bập bùng, chiêng chưa ai gõ."
+    },
+    {
+      "duration_s": 5,
+      "id": 5,
+      "image_prompt": "Vertical 9:16 extreme close-up at night: the ancient bronze gong trembling on its own, dust falling from the wooden beam, moonlight rippling on the metal surface, no one touching it, film grain.",
+      "label": "Chiêng tự rung",
+      "motion": "giữ khung cận mặt chiêng, chiêng rung nhẹ, bụi rơi từ xà gỗ",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "riser căng dần",
+          "dur": 2,
+          "gain_db": -22,
+          "tag": "horror_stinger"
+        },
+        {
+          "at": 1,
+          "desc": "tiếng chiêng ngân dài",
+          "dur": 4,
+          "gain_db": -20,
+          "tag": "folk_oneshot"
+        },
+        {
+          "at": 0,
+          "desc": "gió lùa qua nhà dài",
+          "dur": 5,
+          "gain_db": -26,
+          "tag": "leaves_wind"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Bỗng chiêng rung... tiếng ngân vang khắp buôn làng."
+    },
+    {
+      "duration_s": 6,
+      "id": 6,
+      "image_prompt": "Vertical 9:16 cinematic wide shot at night: through drifting moonlit mist, a tall blurred silhouette of an old man with long silver hair standing motionless beside the ancient gong, face never visible, cold moonlight rim light, firelight flicker from the festival, psychological folk horror, film grain.",
+      "label": "Bóng già làng trong sương",
+      "motion": "lấy nét chuyển từ ngọn lửa trại sang bóng người trong sương rồi chìm vào trăng",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió rít qua rừng cây",
+          "dur": 6,
+          "gain_db": -24,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 0,
+          "desc": "ếch nhái kêu xa",
+          "dur": 6,
+          "gain_db": -28,
+          "tag": "night_creatures"
+        },
+        {
+          "at": 2,
+          "desc": "thì thầm xa, rất nhỏ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.8,
+      "voiceover": "Trong sương... bóng già làng đứng bên chiêng cổ."
+    },
+    {
+      "duration_s": 5,
+      "id": 7,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: H'Lan's frightened face half-lit by bonfire light, eyes wide, listening, breath held, mist blue on one side of her face, film grain.",
+      "label": "H'Lan nín thở lắng nghe",
+      "motion": "zoom rất chậm vào mắt H'Lan, ánh lửa rung nhẹ trên mặt",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng thì thầm gọi tên, rất nhỏ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 2,
+          "desc": "ván gỗ kêu khẽ dưới chân",
+          "dur": 2,
+          "gain_db": -24,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.5,
+      "voiceover": "H'Lan nín thở... tiếng chiêng gọi tên mình."
+    },
+    {
+      "duration_s": 5,
+      "id": 8,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: H'Lan's hands lifting the wooden gong mallets from the old carved stand, warm firelight on her bead bracelets, the ancient gong looming behind, mist, film grain.",
+      "label": "H'Lan cầm dùi chiêng",
+      "motion": "máy quay hạ thấp chậm từ mặt chiêng cổ xuống đôi tay H'Lan cầm dùi",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "ván gỗ kêu khẽ",
+          "dur": 2,
+          "gain_db": -24,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 1,
+          "desc": "bước chân nhẹ tiến tới",
+          "dur": 2,
+          "gain_db": -22,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "H'Lan cầm dùi... tay run mà lòng đã quyết."
+    },
+    {
+      "duration_s": 6,
+      "id": 9,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: the wooden mallets striking the ancient bronze gong, moonlight bursting across the metal, mist swirling, sound almost visible, film grain.",
+      "label": "Một tiếng chiêng ngân dài",
+      "motion": "giữ khung cận cú đánh chiêng, ánh trăng lóe trên mặt chiêng rồi lan ra sương",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "một tiếng chiêng ngân dài",
+          "dur": 5,
+          "gain_db": -18,
+          "tag": "folk_oneshot"
+        },
+        {
+          "at": 0,
+          "desc": "stinger lạnh",
+          "dur": 2,
+          "gain_db": -20,
+          "tag": "horror_stinger"
+        },
+        {
+          "at": 4,
+          "desc": "giọt sương nhỏ từ lá cây",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "water"
+        }
+      ],
+      "vo_at": 0.7,
+      "voiceover": "Một tiếng chiêng... ngân dài, sương tan dần."
+    },
+    {
+      "duration_s": 5,
+      "id": 10,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: villagers turning to listen, faces lit by bonfire light, the longhouse and hanging gongs behind them, moonlight and mist, film grain.",
+      "label": "Cả buôn lặng nghe",
+      "motion": "máy quay lia chậm từ lửa trại sang dân làng đang lắng nghe",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "lửa trại cháy ấm",
+          "dur": 5,
+          "gain_db": -22,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 0,
+          "desc": "mưa phùn ngoài nhà dài",
+          "dur": 5,
+          "gain_db": -28,
+          "tag": "rain"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Cả buôn lặng nghe... chiêng nối người với cội nguồn."
+    },
+    {
+      "duration_s": 5,
+      "id": 11,
+      "image_prompt": "Vertical 9:16 cinematic wide shot at night: H'Lan playing the ancient gong under the full moon, warm firelight and cold moonlight mixing, the tall blurred silhouette of the old man fading peacefully into the moonlight behind her, mist, film grain.",
+      "label": "H'Lan đánh chiêng",
+      "motion": "lùi máy chậm mở rộng khung cảnh khi H'Lan đánh chiêng, bóng già làng tan vào trăng",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng chiêng ngân vang",
+          "dur": 5,
+          "gain_db": -18,
+          "tag": "folk_oneshot"
+        },
+        {
+          "at": 1,
+          "desc": "bước chân nhịp theo chiêng",
+          "dur": 2,
+          "gain_db": -22,
+          "tag": "footsteps"
+        },
+        {
+          "at": 3,
+          "desc": "thì thầm xa, rất nhỏ",
+          "dur": 2,
+          "gain_db": -26,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.7,
+      "voiceover": "H'Lan đánh chiêng... bóng già làng tan vào trăng."
+    },
+    {
+      "duration_s": 6,
+      "id": 12,
+      "image_prompt": "Vertical 9:16 pre-dawn wide shot: the same E-de village at first light, mist lifting from the trees, the ancient bronze gong hanging quiet and still, pale golden dawn on the horizon, serene yet eerie stillness, documentary film grain, warm-cold color contrast.",
+      "label": "Kết mở – bình minh buôn làng",
+      "motion": "lùi máy rất chậm mở rộng khung cảnh khi trời hửng sáng, sương tan dần",
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gà gáy xa",
+          "dur": 4,
+          "gain_db": -24,
+          "tag": "night_creatures"
+        },
+        {
+          "at": 0,
+          "desc": "giọt sương nhỏ từ lá cây",
+          "dur": 6,
+          "gain_db": -28,
+          "tag": "water"
+        },
+        {
+          "at": 2,
+          "desc": "một nốt chiêng ngân dài",
+          "dur": 3,
+          "gain_db": -24,
+          "tag": "folk_oneshot"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua rừng cây",
+          "dur": 6,
+          "gain_db": -28,
+          "tag": "leaves_wind"
+        }
+      ],
+      "vo_at": 0.6,
+      "voiceover": "Sáng ra... chiêng lặng yên, buôn làng đã có người giữ."
+    }
+  ],
+  "seed": 8,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "title": "Tiếng Chiêng Dưới Trăng",
+  "visual_dna": "Tây Nguyên: buôn làng Ê-đê, Đắk Lắk, nhà dài, cồng chiêng đồng cổ, lửa trại, trăng rằm, sương mù dày, rừng cây, phong cách điện ảnh tài liệu, hạt film nhẹ, tông màu: vàng lửa trại, xanh trăng, đen sâu.",
+  "voice": "phonui"
+}

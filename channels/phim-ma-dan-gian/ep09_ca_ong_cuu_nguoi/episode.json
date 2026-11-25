@@ -1,0 +1,412 @@
+{
+  "episode_id": "ep09-tieng-goi-tu-bien-khuya",
+  "channel": "phim-ma-dan-gian",
+  "title": "Tiếng Gọi Từ Biển Khuya",
+  "total_duration_s": 63,
+  "language": "vi",
+  "aigc_label": true,
+  "hook_3s": "Giua bien dong, co tieng goi ten Hai tu duoi nuoc vong len.",
+  "message": "Ton trong bien ca va biet on ca Ong; nguoi di bien song duoc nho long biet on va giup do lan nhau.",
+  "location": {
+    "name": "Lang chai ven bien mien Trung, lang Ong",
+    "region": "Ven bien mien Trung, Viet Nam",
+    "note": "Lang Ong: noi tho ca Ong (ca voi) cua ngu dan; truoc khi ra khoi, ghe thuong ghe lang khan ca Ong phu ho."
+  },
+  "character_sheet": {
+    "hai": "Hai, 22 tuoi, ngu dan tre lan dau ra khoi xa cung cha; toc den ngan, ao thun trang, quan den, chan dat tren boong; nhanh nhen, can dam.",
+    "cha": "Cha cua Hai, 55 tuoi, da sam nang, ria xam, ao ba ba den, khan ran; tay lai vung, it noi.",
+    "ca_ong": "Ca Ong (ca voi) khung lo, lung xam xanh, hien lanh; chi hien lung va vay, khong phai ma quy, khong lo mat."
+  },
+  "visual_dna": {
+    "palette": "xanh bien dem lanh, xam song, den long vang am lam diem nhan; bao hoa thap",
+    "lighting": "dem bien dong, chop xa, den dau va den long vang am",
+    "camera": "doi goc lien tuc: toan / trung / can; chuyen dong cham, tinh lang",
+    "style": "phim tai lieu dien anh, film grain nhe, chan thuc, bien mien Trung Viet Nam"
+  },
+  "negative_prompt": "no red Chinese lanterns, no Chinese curved temple roofs, no Chinese-style temples, no text, no logo, no watermark, no blood, no gore, no visible ghost face, no charms or talismans",
+  "sfx": [
+    "footsteps",
+    "rain",
+    "leaves_wind",
+    "wood_creak",
+    "water",
+    "night_creatures",
+    "fire_lamp",
+    "human_eerie",
+    "horror_stinger",
+    "folk_oneshot"
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Tieng goi tu duoi nuoc",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a wooden fishing boat in a rough dark sea at night, big waves, storm clouds, distant lightning, cold blue palette, film grain, no text, no logo, no blood",
+      "motion": "Static wide shot, then very slow push-in; waves crashing, boat pitching.",
+      "voiceover": "Hải ơi! Tiếng gọi vang lên từ dưới nước đen.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 3.8,
+          "dur": 1.2,
+          "gain_db": -25
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Hai ra khoi xa",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese fisherman in a white shirt holding the boat rail in a storm at night, his father at the wheel behind him, dark waves, cold blue light, film grain, no text",
+      "motion": "Slow tracking shot following Hai across the wet deck.",
+      "voiceover": "Hải ra khơi xa, chuyến biển đêm đầu cùng cha.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Tay cha giu lai",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a weathered Vietnamese fisherman's hands gripping a wooden ship wheel in a storm at night, calm determined face in the background, rain and sea spray, film grain, no text",
+      "motion": "Static close-up; slow focus pull from hands to face.",
+      "voiceover": "Tay cha ghì lái, mắt dõi nhìn cơn biển động.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Ghe lang Ong",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a Vietnamese fishing village at dusk, a whale temple with warm lanterns on the shore, wooden boats in the harbour, teal dusk light, film grain, no text",
+      "motion": "Slow pan from the temple to the boats.",
+      "voiceover": "Trước giờ nhổ neo, hai cha con ghé lăng Ông.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Cha thap nhang",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of an older Vietnamese fisherman lighting incense at a whale temple shrine at dusk, warm lamp glow, incense smoke, whale bones on the altar, film grain, no text",
+      "motion": "Slow push-in on the incense smoke and the altar.",
+      "voiceover": "Cha thắp nén nhang, khấn xin Cá Ông phù hộ.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "footsteps",
+          "desc": "footsteps",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Xuong ca Ong",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a large old whale skeleton in a Vietnamese whale temple, warm oil lamp light, incense smoke drifting, dark reverent background, film grain, no text",
+      "motion": "Static close-up; lamp light moves slowly along the bones.",
+      "voiceover": "Ngọc cốt Cá Ông, trăm năm lặng lẽ giữ biển.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "fire_lamp",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Tieng goi giua bien dong",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a young Vietnamese fisherman on a stormy boat deck at night, turning his head to listen, dark waves crashing, cold blue light, film grain, no text",
+      "motion": "Tracking shot following Hai as he turns toward the sea.",
+      "voiceover": "Giữa cơn sóng dữ, tiếng gọi tên Hải lại vang.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "human_eerie",
+          "desc": "human_eerie",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 3.8,
+          "dur": 1.2,
+          "gain_db": -25
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Bong trang duoi nuoc",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of dark churning sea water at night from a boat deck, a pale shape gliding just beneath the waves, no face, cold blue moonlight, film grain, no text",
+      "motion": "Slow tilt down to the water; the pale shape passes.",
+      "voiceover": "Hải cúi nhìn mặt nước, bóng trắng lớn lướt qua.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "night_creatures",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Ca Ong noi len",
+      "duration_s": 6.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a giant whale surfacing beside a wooden fishing boat in a stormy night sea, water pouring off its grey-blue back, cold moonlight, awe and calm, film grain, no text",
+      "motion": "Static wide shot; the whale rises slowly, water streaming.",
+      "voiceover": "Cá Ông nổi lên giữa sóng, dẫn ghe vượt bão đêm.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngan",
+          "at": 4.8,
+          "dur": 1.2,
+          "gain_db": -25
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 6.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Cha con cui dau",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, medium shot of a father and son fishermen bowing toward the sea on a boat deck at night, a giant whale diving in the background, calm water, warm lantern glow, film grain, no text",
+      "motion": "Slow push-in on the two bowing figures.",
+      "voiceover": "Hai cha con cúi đầu, thầm cảm ơn Cá Ông cứu.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Song lang, tay vung",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, close-up of a young Vietnamese fisherman's steady hands on a wooden ship wheel at dawn, calm sea behind, soft golden light, film grain, no text",
+      "motion": "Static close-up; the wheel steadies as the sea calms.",
+      "voiceover": "Sóng dần lặng xuống, tay Hải vững vàng giữ lái.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "wood_creak",
+          "desc": "wood_creak",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "Ghe ve lang chai",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 cinematic film still, wide shot of a Vietnamese fishing village harbour at sunrise, wooden boats returning, whale temple on the shore, golden dawn light, joyful and peaceful, film grain, no text",
+      "motion": "Slow crane up revealing the sunrise over the harbour.",
+      "voiceover": "Bình minh, ghe cập bến, cả làng chài reo vui.",
+      "vo_at": 0.4,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "water",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "leaves_wind",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "folk_oneshot",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ],
+  "episode": 9,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "voice": "phonui",
+  "seed": 9,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "publish_title": "Tiếng Gọi Từ Biển Khuya: Cá Ông Hiện Về Cứu Ghe Gặp Nạn | Phim Ma Dân Gian Tập 09",
+  "cover_title": "TIẾNG GỌI TỪ BIỂN",
+  "cover_hook": "Giữa biển động, có tiếng gọi tên Hải từ dưới nước…",
+  "cover_image": "scene_09.png",
+  "description": "Giữa đêm biển động miền Trung, có tiếng gọi tên Hải vọng lên từ dưới làn nước đen. Lần đầu ra khơi xa cùng cha, Hải chứng kiến huyền thoại Cá Ông dẫn ghe vượt sóng dữ trở về bình an. Phim ma dân gian Việt Nam (AIGC).",
+  "cta": "Bạn đã từng nghe người làng chài kể chuyện Cá Ông cứu người chưa?",
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TiengGoiTuBienKhuya",
+    "#CaOng",
+    "#LangChai",
+    "#MienTrung",
+    "#TruyenDanGianVietNam",
+    "#AIGC"
+  ]
+}

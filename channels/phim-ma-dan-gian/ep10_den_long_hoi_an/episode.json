@@ -1,0 +1,356 @@
+{
+  "title": "Đèn Lồng Đêm Rằm",
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "episode": 10,
+  "seed": 10,
+  "voice": "phonui",
+  "aigc_label": true,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "character_sheet": {
+    "thao": "Thảo: cô gái Việt Nam 22 tuổi ở Hội An, tóc đen dài buộc gọn, áo dài lụa vàng nhạt, tay khéo léo, khuôn mặt hiền, ánh mắt tò mò. Con cháu nhà làm đèn lồng ba đời.",
+    "bong_ba": "Bóng bà: chỉ thấy bóng dáng mờ của một bà lão tóc bạc búi cao, tay cầm đèn hoa đăng giấy, KHÔNG BAO GIỜ lộ mặt rõ, không máu me."
+  },
+  "visual_dna": "Phố cổ Hội An Việt Nam đêm 14 âm lịch: nhà cổ tường vàng, mái ngói âm dương rêu phong, phố tắt hết đèn điện, chỉ còn ánh đèn hoa đăng giấy và đèn lụa truyền thống Việt Nam ấm vàng cam soi mặt sông Hoài, thuyền gỗ nhỏ, sương mỏng, trăng rằm tròn. Phong cách điện ảnh tài liệu, hạt film nhẹ, tông màu: vàng đèn lồng, xanh trăng, đen sâu.",
+  "negative_prompt": "no red Chinese-style lanterns, no Chinese palace, no curved Chinese roof, no Hanfu, no Chinese or Japanese characters, no text, no letters, no watermark, no logo, no modern clothing, no electric lights, no plastic, no cars, no anime style, no cartoon, no gore, no blood, no visible ghost face, no extra fingers, no distorted hands",
+  "publish_title": "Đèn Lồng Đêm Rằm | Phim Ma Dân Gian Việt Nam Tập 10",
+  "cover_title": "Đèn Trôi Ngược Dòng",
+  "cover_hook": "Đêm rằm, phố tắt điện — đèn lồng tự trôi ngược dòng sông Hoài!",
+  "description": "Đêm 14 âm lịch, phố cổ Hội An tắt hết đèn điện. Thảo, cô gái làm đèn lồng đời thứ ba, thả một chiếc đèn hoa đăng xuống sông Hoài — và chiếc đèn bỗng trôi ngược dòng. Một câu chuyện ma dân gian Việt Nam về nghề thủ công, ánh sáng đoàn viên và lời chúc bình an gửi về nhà. Phim AI (AIGC).",
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#HoiAn",
+    "#DenLongDemRam",
+    "#TruyenMaVietNam",
+    "#SongHoai",
+    "#PhimNganAI",
+    "#DemRam",
+    "#AIGC"
+  ],
+  "cta": "Bạn sẽ thả đèn cho ai? Bình luận nhé!",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – đèn trôi ngược dòng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic wide night shot, Hoi An ancient town Vietnam on the 14th lunar night: old yellow-walled houses with mossy yin-yang tiled roofs along the Hoai River, all electric lights off, warm amber glow of traditional Vietnamese paper flower lanterns and silk lanterns reflected on dark still water, full moon, thin mist, eerie calm, documentary film grain.",
+      "motion": "camera đẩy chậm từ mặt sông lên dãy phố cổ, ánh đèn lồng lung linh trên mặt nước",
+      "voiceover": "Đèn lồng trôi ngược dòng sông Hoài!",
+      "vo_at": 0.5,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "nước sông Hoài vỗ nhẹ",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "dế kêu xa trong đêm",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "stinger ngắn mở màn",
+          "at": 3.5,
+          "dur": 1.2,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Thảo làm đèn lồng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: Thao (young Vietnamese woman, 22, long black hair tied back, pale yellow silk ao dai) bending thin bamboo strips into a lantern frame at a wooden workbench, warm candlelight, colorful silk fabric and paper sheets around her, old Hoi An workshop, documentary film grain.",
+      "motion": "máy lia chậm từ đôi tay đang uốn nan tre lên khuôn mặt Thảo",
+      "voiceover": "Thảo làm đèn lồng, nghề ba đời nhà cô.",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "nan tre uốn kẽo kẹt",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -22
+        },
+        {
+          "tag": "fire_lamp",
+          "desc": "ngọn nến chập chờn",
+          "at": 1,
+          "dur": 4,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Đêm mười bốn, phố tắt điện",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: a traditional Vietnamese paper flower lantern glowing warm amber from a small candle inside, delicate paper petals, Thao's hands gently holding it, dark background with faint yellow old-town wall, film grain, no text.",
+      "motion": "zoom vào chậm, ngọn lửa trong đèn rung nhẹ",
+      "voiceover": "Đêm mười bốn, phố cổ tắt hết đèn điện.",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "lửa nến trong đèn lồng",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -24
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "dế kêu rất xa",
+          "at": 2,
+          "dur": 3,
+          "gain_db": -30
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Phố cổ chỉ còn ánh đèn lồng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic wide shot at night: a narrow Hoi An old street with yellow walls and tiled roofs, no electric light, people walking slowly carrying glowing paper flower lanterns, warm amber pools of light on old stone pavement, light drizzle, full moon glow above the rooftops, film grain.",
+      "motion": "máy trượt ngang chậm theo đoàn người cầm đèn",
+      "voiceover": "Chỉ còn ánh đèn lồng soi từng mái ngói.",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "bước chân chậm trên đá phố cổ",
+          "at": 0,
+          "dur": 3,
+          "gain_db": -20
+        },
+        {
+          "tag": "rain",
+          "desc": "mưa phùn nhẹ trên mái ngói",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Thả đèn xuống sông Hoài",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: Thao kneeling at the stone riverbank of the Hoai River, gently placing a glowing paper flower lantern onto the dark water, ripples spreading, warm reflection, her face lit softly by lantern light, hopeful expression, film grain.",
+      "motion": "máy hạ thấp theo tay Thảo, đèn chạm mặt nước, gợn sóng lan ra",
+      "voiceover": "Thảo thả đèn xuống sông, gửi lời chúc bình an.",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "đèn chạm nước, sóng gợn",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -24
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "một nốt đàn dân tộc nhẹ",
+          "at": 3.5,
+          "dur": 1.5,
+          "gain_db": -22
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Đèn trôi theo dòng",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: a single glowing paper flower lantern drifting downstream on the Hoai River, warm amber reflection trailing on black water, silhouettes of Hoi An old houses and a small wooden boat on the far bank, thin mist, film grain.",
+      "motion": "máy trôi song song với đèn, giữ đèn ở giữa khung hình",
+      "voiceover": "Đèn trôi theo dòng, soi bóng phố cổ.",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "nước sông trôi đều",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -26
+        },
+        {
+          "tag": "leaves_wind",
+          "desc": "gió nhẹ dọc bờ sông",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Đèn khựng lại, trôi ngược dòng",
+      "duration_s": 6,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: the glowing paper flower lantern on the Hoai River suddenly stops, water ripples reverse around it, then the lantern slowly drifts upstream against the current, uncanny stillness, cold moonlight mixing with warm lantern glow, film grain, no face.",
+      "motion": "zoom vào rất chậm, gợn nước đổi chiều quanh đèn",
+      "voiceover": "Rồi đèn khựng lại… rồi trôi ngược dòng nước.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "nước xoáy ngược quanh đèn",
+          "at": 0,
+          "dur": 6,
+          "gain_db": -24
+        },
+        {
+          "tag": "horror_stinger",
+          "desc": "riser ngắn khi đèn đổi hướng",
+          "at": 4,
+          "dur": 1.5,
+          "gain_db": -22
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Thảo nín thở",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: Thao standing at the riverbank, face lit by warm lantern light, eyes wide with surprise, hand covering her mouth, dark Hoai River behind her with one glowing lantern, film grain.",
+      "motion": "máy đẩy chậm vào khuôn mặt Thảo, ánh đèn rung nhẹ trên mặt cô",
+      "voiceover": "Thảo nín thở. Ai đang gọi đèn về?",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "desc": "tiếng gọi xa rất nhẹ, không đè thoại",
+          "at": 1,
+          "dur": 2,
+          "gain_db": -28
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "đêm im bặt, dế ngừng kêu",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -30
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Bóng người bên kia sông",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic wide shot at night: across the Hoai River, a faint pale silhouette of an old woman with a high grey bun holding a glowing paper flower lantern stands motionless on the far bank, face never visible, only her silhouette and the lantern light, mist between the banks, psychological folk horror, film grain, no blood.",
+      "motion": "lấy nét chuyển từ Thảo sang bóng người xa rồi chìm vào sương",
+      "voiceover": "Bên kia sông, bóng người cầm đèn đứng lặng.",
+      "vo_at": 0.6,
+      "ghost": true,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "desc": "ánh đèn xa chập chờn",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -26
+        },
+        {
+          "tag": "human_eerie",
+          "desc": "tiếng hát ru vọng rất xa",
+          "at": 2,
+          "dur": 2,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Lời bà nội",
+      "duration_s": 6,
+      "image_prompt": "Vertical 9:16 cinematic close-up at night: old weathered hands of a grandmother lighting a small paper flower lantern inside a dark wooden Hoi An house, warm candlelight on wrinkled skin, faded family lanterns hanging behind, no face visible, film grain.",
+      "motion": "máy giữ yên, ngọn lửa lớn dần soi rõ đôi tay",
+      "voiceover": "Bà nội cô từng nói: đèn sáng, nhà còn sum vầy.",
+      "vo_at": 0.8,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "desc": "nhà gỗ cũ kẽo kẹt nhẹ",
+          "at": 0,
+          "dur": 3,
+          "gain_db": -24
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "một nốt sáo dân tộc trầm",
+          "at": 3,
+          "dur": 2,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Thảo thả thêm đèn",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic medium shot at night: Thao smiling softly, lighting a second paper flower lantern and releasing it into the Hoai River, the first lantern now drifting back toward her among the reflections, warm hopeful light on her face, film grain.",
+      "motion": "máy lia nhẹ từ mặt Thảo xuống hai chiếc đèn trên sông",
+      "voiceover": "Thảo mỉm cười, thả thêm đèn về phía ánh sáng.",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "desc": "Thảo bước nhẹ xuống bến",
+          "at": 0,
+          "dur": 2,
+          "gain_db": -20
+        },
+        {
+          "tag": "water",
+          "desc": "đèn thứ hai chạm nước",
+          "at": 1,
+          "dur": 4,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "label": "Kết – sông đầy đèn",
+      "duration_s": 5,
+      "image_prompt": "Vertical 9:16 cinematic wide shot at night: the Hoai River filled with dozens of glowing Vietnamese paper flower lanterns drifting gently, Hoi An old town warm amber behind them, full moon above, serene yet eerie stillness, documentary film grain.",
+      "motion": "lùi máy rất chậm mở rộng khung cảnh sông đầy đèn",
+      "voiceover": "Mỗi đèn là lời chúc bình an gửi về nhà.",
+      "vo_at": 0.6,
+      "sfx": [
+        {
+          "tag": "water",
+          "desc": "sông vỗ nhẹ vào bến",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        },
+        {
+          "tag": "night_creatures",
+          "desc": "dế kêu trở lại",
+          "at": 0,
+          "dur": 5,
+          "gain_db": -28
+        },
+        {
+          "tag": "folk_oneshot",
+          "desc": "giai điệu dân tộc khép tập",
+          "at": 2,
+          "dur": 3,
+          "gain_db": -22
+        }
+      ]
+    }
+  ]
+}
