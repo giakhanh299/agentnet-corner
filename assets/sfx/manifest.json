@@ -71,6 +71,180 @@
       "task_id": "d7582a8a-7d10-4e42-9219-235825400f36",
       "uses": 0
     },
+    "horror_stinger/cinematic_horror_trailer_long_sweep": {
+      "added_at": "2026-11-25T21:48:46+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/561/561-preview.mp3",
+      "duration_s": 8.6,
+      "file": "horror_stinger/cinematic_horror_trailer_long_sweep.ogg",
+      "fit_note": "Long rising sweep; use for trailer-style transitions between scenes.",
+      "license": "Mixkit-Free-License",
+      "name": "Cinematic horror trailer long sweep",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "61fb1ba39015ea44af320c6c3cd131af6b799ad516b5b4f62ca008c79b83bd61",
+      "source_page_url": "https://mixkit.co/free-sound-effects/horror/",
+      "tags": [
+        "Sweep",
+        "Cinematic",
+        "Movie"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
+    "horror_stinger/cinematic_whoosh_deep_impact": {
+      "added_at": "2026-11-25T21:48:45+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1143/1143-preview.mp3",
+      "duration_s": 4.0,
+      "file": "horror_stinger/cinematic_whoosh_deep_impact.ogg",
+      "fit_note": "Dark whoosh ending in a deep impact; use for the ghost reveal / jump-scare hit.",
+      "license": "Mixkit-Free-License",
+      "name": "Cinematic whoosh deep impact",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "be92da82ee72aa3cc11c74fd0c34ca21f20c93a22c8c4f2bd6b319cc9d4ae0a5",
+      "source_page_url": "https://mixkit.co/free-sound-effects/horror/",
+      "tags": [
+        "Impact",
+        "Cinematic",
+        "Movie"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
+    "horror_stinger/drone_logo_presentation": {
+      "added_at": "2026-11-25T21:48:47+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/2751/2751-preview.mp3",
+      "duration_s": 7.2,
+      "file": "horror_stinger/drone_logo_presentation.ogg",
+      "fit_note": "Short low drone; use as an ominous bed under the riverbank scene.",
+      "license": "Mixkit-Free-License",
+      "name": "Drone logo presentation",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "f332a8cc39fe0c0af406096d56d3b0b10ec34aa123209e1fd9519f6635334222",
+      "source_page_url": "https://mixkit.co/free-sound-effects/drone/",
+      "tags": [
+        "Drone",
+        "Engine",
+        "Intro"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
+    "horror_stinger/hard_horror_hit_drum": {
+      "added_at": "2026-11-25T21:48:46+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/565/565-preview.mp3",
+      "duration_s": 4.1,
+      "file": "horror_stinger/hard_horror_hit_drum.ogg",
+      "fit_note": "Deep single drum hit; use as an impact accent when the ghost grabs the leg.",
+      "license": "Mixkit-Free-License",
+      "name": "Hard horror hit drum",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "c9d16c2c3992eb5e1c9f08fec56de0ee6a168d3c17bec5404f5cbe2826b199fa",
+      "source_page_url": "https://mixkit.co/free-sound-effects/horror/",
+      "tags": [
+        "Drum",
+        "Hit",
+        "Cinematic"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
+    "horror_stinger/horror_deep_drum_heartbeat": {
+      "added_at": "2026-11-25T21:48:46+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/559/559-preview.mp3",
+      "duration_s": 4.4,
+      "file": "horror_stinger/horror_deep_drum_heartbeat.ogg",
+      "fit_note": "Deep drum heartbeat; use for heartbeat/dread moments (exact beat count not verified by listening).",
+      "license": "Mixkit-Free-License",
+      "name": "Horror deep drum heartbeat",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "7d5625b4b1e4a5c5a970bbdf1251d48f502c9a5020949363cac928d62634f7f3",
+      "source_page_url": "https://mixkit.co/free-sound-effects/horror/",
+      "tags": [
+        "Drum",
+        "Heartbeat",
+        "Horror"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
+    "horror_stinger/horror_swish": {
+      "added_at": "2026-11-25T21:48:47+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1495/1495-preview.mp3",
+      "duration_s": 2.81,
+      "file": "horror_stinger/horror_swish.ogg",
+      "fit_note": "Short dark swish/whoosh; use for quick ghost movements or scene cuts.",
+      "license": "Mixkit-Free-License",
+      "name": "Horror swish",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "3c6287bad2f4b3ad1973d66eb6865fac91841d2ef7c11c2b2e7f2dcae893fc28",
+      "source_page_url": "https://mixkit.co/free-sound-effects/horror/",
+      "tags": [
+        "Swish",
+        "Horror"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
+    "horror_stinger/horror_tape_rewind_cinematic_transition": {
+      "added_at": "2026-11-25T21:48:48+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1090/1090-preview.mp3",
+      "duration_s": 7.8,
+      "file": "horror_stinger/horror_tape_rewind_cinematic_transition.ogg",
+      "fit_note": "Reverse/rewind-style swell; use as the reverse-reverb effect before a flashback or ghost entrance.",
+      "license": "Mixkit-Free-License",
+      "name": "Horror tape rewind cinematic transition",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "6c2b3b915cccfa1a8ec918937e7b28449c741ddb94dd643047d17908b003f991",
+      "source_page_url": "https://mixkit.co/free-sound-effects/rewind/",
+      "tags": [
+        "Rewind",
+        "Cinematic"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
+    "horror_stinger/terror_sweep_of_darkness": {
+      "added_at": "2026-11-25T21:48:45+07:00",
+      "author": "Mixkit",
+      "category": "horror_stinger",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/2630/2630-preview.mp3",
+      "duration_s": 7.9,
+      "file": "horror_stinger/terror_sweep_of_darkness.ogg",
+      "fit_note": "Rising sweep; use as a riser building tension before the ghost appears.",
+      "license": "Mixkit-Free-License",
+      "name": "Terror sweep of darkness",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "8a959fdb34d04f78e5cf40523b49636d4649ec3c599017008a3e256848607b1c",
+      "source_page_url": "https://mixkit.co/free-sound-effects/horror/",
+      "tags": [
+        "Intro",
+        "Cinematic",
+        "Transition"
+      ],
+      "task_id": "b07b6f70-9575-4837-ae6a-cf3d00096289",
+      "uses": 0
+    },
     "human_eerie/clown_laugh": {
       "added_at": "2026-11-25T21:41:12+07:00",
       "author": "scotcampbell",
@@ -279,6 +453,51 @@
       "task_id": "ae3cc3ef-8bb0-4626-84e1-aa37bcdcb5d4",
       "uses": 0
     },
+    "rain/forest_rain_loop": {
+      "added_at": "2026-11-25T21:48:34+07:00",
+      "author": "",
+      "category": "rain",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1225/1225-preview.mp3",
+      "duration_s": 24.8,
+      "file": "rain/forest_rain_loop.ogg",
+      "fit_note": "Mưa trên lá cây/rừng, gần nhất với cảnh mưa nhẹ trên lá chuối/lá cây trong objective; thời lượng chưa xác minh (để 0, không bịa). Tải từ trang Mixkit, không cần đăng nhập.",
+      "license": "Mixkit-Free-License",
+      "name": "Forest rain loop",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "4caf0ad8cefca9292cc590572a255bf4cbc73ce63e02040c66c64f2f765d92a3",
+      "source_page_url": "https://mixkit.co/free-sound-effects/rain/",
+      "tags": [
+        "rain",
+        "forest",
+        "leaves",
+        "loop"
+      ],
+      "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
+      "uses": 0
+    },
+    "rain/heavy_rain_over_metal_roof": {
+      "added_at": "2026-11-25T21:48:35+07:00",
+      "author": "",
+      "category": "rain",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1265/1265-preview.mp3",
+      "duration_s": 30.0,
+      "file": "rain/heavy_rain_over_metal_roof.ogg",
+      "fit_note": "Mưa nặng trên mái tôn, đúng cảnh mưa trên mái tôn trong objective; thời lượng chưa xác minh (để 0). Tải từ trang Mixkit, không cần đăng nhập.",
+      "license": "Mixkit-Free-License",
+      "name": "Heavy rain over metal roof",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "1c4e5ed3ca307257806529fbf2b3395607ccd53deca9edb8e7930cd3fcdd8b75",
+      "source_page_url": "https://mixkit.co/free-sound-effects/rain/",
+      "tags": [
+        "rain",
+        "metal-roof",
+        "heavy-rain"
+      ],
+      "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
+      "uses": 0
+    },
     "rain/light_rain_loop": {
       "added_at": "2026-11-25T21:26:38+07:00",
       "author": "",
@@ -302,6 +521,50 @@
       "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
       "uses": 0
     },
+    "rain/rain_and_thunder_storm": {
+      "added_at": "2026-11-25T21:48:32+07:00",
+      "author": "",
+      "category": "rain",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/2390/2390-preview.mp3",
+      "duration_s": 28.9,
+      "file": "rain/rain_and_thunder_storm.ogg",
+      "fit_note": "Mưa rào kèm sấm, 29s, đúng tiêu chí 2-30s; dùng cho cảnh mưa rào kéo tới kèm sấm xa. Tải từ trang Mixkit, không cần đăng nhập; link CDN trực tiếp chưa lấy được trong phiên này.",
+      "license": "Mixkit-Free-License",
+      "name": "Rain and thunder storm",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "301697141cf2bac2ffcb885475f151b043f92f02c8da079982a46777e3e72656",
+      "source_page_url": "https://mixkit.co/free-sound-effects/rain/",
+      "tags": [
+        "rain",
+        "thunder",
+        "storm"
+      ],
+      "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
+      "uses": 0
+    },
+    "rain/rain_on_umbrella": {
+      "added_at": "2026-11-25T21:48:36+07:00",
+      "author": "",
+      "category": "rain",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1263/1263-preview.mp3",
+      "duration_s": 14.9,
+      "file": "rain/rain_on_umbrella.ogg",
+      "fit_note": "Mưa trên ô/dù, tiếng giọt mưa gần, dùng cho cảnh nhân vật trú mưa hoặc giọt nước rơi gần máy quay; thời lượng chưa xác minh (để 0). Tải từ trang Mixkit.",
+      "license": "Mixkit-Free-License",
+      "name": "Rain on umbrella",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "5c5667d34db2083168be40f153dfac3038a461c7d0c04fc0745f7846ba1b779f",
+      "source_page_url": "https://mixkit.co/free-sound-effects/rain/",
+      "tags": [
+        "rain",
+        "umbrella",
+        "drops"
+      ],
+      "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
+      "uses": 0
+    },
     "rain/rainy_day": {
       "added_at": "2026-11-25T21:26:43+07:00",
       "author": "franciscapalma",
@@ -319,6 +582,29 @@
       "tags": [
         "rain",
         "rainy-day"
+      ],
+      "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
+      "uses": 0
+    },
+    "rain/thunderstorm_and_rain_loop": {
+      "added_at": "2026-11-25T21:48:37+07:00",
+      "author": "",
+      "category": "rain",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/2402/2402-preview.mp3",
+      "duration_s": 30.0,
+      "file": "rain/thunderstorm_and_rain_loop.ogg",
+      "fit_note": "Mưa rào kèm sấm xa dạng loop, dùng làm nền kéo dài cho cảnh giông; thời lượng chưa xác minh (để 0). Tải từ trang Mixkit.",
+      "license": "Mixkit-Free-License",
+      "name": "Thunderstorm and rain loop",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "f69ed798650fa57d191d13911ebbbe356899659d2803aa73db19888d07f1d27b",
+      "source_page_url": "https://mixkit.co/free-sound-effects/rain/",
+      "tags": [
+        "rain",
+        "thunder",
+        "storm",
+        "loop"
       ],
       "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
       "uses": 0
@@ -566,6 +852,6 @@
       "uses": 0
     }
   },
-  "updated_at": "2026-11-25T21:42:45+07:00",
+  "updated_at": "2026-11-25T21:48:50+07:00",
   "version": 1
 }

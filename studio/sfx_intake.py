@@ -174,15 +174,39 @@ def save_manifest(m: dict) -> None:
 
 FREESOUND_PAGE = re.compile(r"^https://freesound\.org/people/[^/]+/sounds/\d+/?$")
 FREESOUND_PREVIEW = re.compile(r"https://cdn\.freesound\.org/previews/\d+/\d+_\d+-(?:lq|hq)\.mp3")
+MIXKIT_PAIR = re.compile(
+    r'data-audio-player-preview-url-value="(https://assets\.mixkit\.co/[^"]+\.mp3)"'
+    r'[\s\S]{0,1600}?<h2 class="item-grid-card__title">\s*([^<]+?)\s*</h2>'
+)
+_MIXKIT_CACHE: dict[str, dict[str, str]] = {}
+
+
+def _resolve_mixkit(page: str, name: str) -> str:
+    if not page.startswith("https://mixkit.co/free-sound-effects/"):
+        return ""
+    if page not in _MIXKIT_CACHE:
+        try:
+            html = urlopen(Request(page, headers={"User-Agent": "Mozilla/5.0"}), timeout=25).read().decode("utf-8", "replace")
+            _MIXKIT_CACHE[page] = {
+                re.sub(r"\s+", " ", title).strip().lower(): u
+                for u, title in MIXKIT_PAIR.findall(html)
+            }
+        except Exception:
+            _MIXKIT_CACHE[page] = {}
+    key = re.sub(r"\s+", " ", name).strip().lower()
+    return _MIXKIT_CACHE[page].get(key, "")
 
 
 def resolve_download(snd: dict) -> str:
-    """Link tải: ưu tiên download_url Muse gửi; nếu trống mà là trang Freesound thì lấy bản preview công khai
-    (cùng giấy phép, không cần đăng nhập) -hq, lỗi thì -lq. Nguồn chặn bot (vd Pixabay 403) thì để trống."""
+    """Link tải: ưu tiên download_url Muse gửi; nếu trống thì lấy bản preview công khai cùng giấy phép
+    từ trang Freesound (-hq/-lq) hoặc Mixkit (assets.mixkit.co). Nguồn chặn bot (Pixabay 403) để trống."""
     url = str(snd.get("download_url") or "").strip()
     if url:
         return url
     page = str(snd.get("source_page_url") or "").strip()
+    name = str(snd.get("name") or snd.get("title") or "").strip()
+    if page.startswith("https://mixkit.co/free-sound-effects/"):
+        return _resolve_mixkit(page, name)
     if not FREESOUND_PAGE.match(page):
         return ""
     try:
