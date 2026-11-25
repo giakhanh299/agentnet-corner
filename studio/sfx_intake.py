@@ -67,14 +67,34 @@ def normalize_license(raw: str) -> str | None:
     return None
 
 
+def _find_sounds(obj) -> list[dict]:
+    if isinstance(obj, dict):
+        if isinstance(obj.get("sounds"), list):
+            return obj["sounds"]
+        for v in obj.values():
+            found = _find_sounds(v)
+            if found:
+                return found
+    return []
+
+
 def extract_sounds(result: dict | None) -> list[dict]:
-    """Lấy danh sách sounds từ result của Muse (field 'sounds' hoặc khối JSON trong summary)."""
+    """Lấy danh sách sounds từ result của Muse (field 'sounds' hoặc khối JSON trong summary, kể cả lồng trong result)."""
     if not result:
         return []
-    if isinstance(result.get("sounds"), list):
-        return result["sounds"]
+    found = _find_sounds(result)
+    if found:
+        return found
     texts = [str(result.get(k) or "") for k in ("summary", "report", "content")]
     for txt in texts:
+        stripped = txt.strip()
+        if stripped.startswith("{"):
+            try:
+                found = _find_sounds(json.loads(stripped))
+                if found:
+                    return found
+            except json.JSONDecodeError:
+                pass
         for m in re.finditer(r"\{[\s\S]*?\"sounds\"\s*:\s*\[", txt):
             start = m.start()
             depth = 0
@@ -85,9 +105,9 @@ def extract_sounds(result: dict | None) -> list[dict]:
                     depth -= 1
                     if depth == 0:
                         try:
-                            data = json.loads(txt[start:i + 1])
-                            if isinstance(data.get("sounds"), list):
-                                return data["sounds"]
+                            found = _find_sounds(json.loads(txt[start:i + 1]))
+                            if found:
+                                return found
                         except json.JSONDecodeError:
                             pass
                         break
@@ -152,24 +172,83 @@ def save_manifest(m: dict) -> None:
     MANIFEST.write_text(json.dumps(m, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
 
 
-def ingest_sound(snd: dict, task_id: str, manifest: dict, dry_run: bool = False) -> tuple[str, str]:
-    name = str(snd.get("name") or "").strip()
-    cat = str(snd.get("category") or "misc").strip().lower()
-    cat = cat if cat in CATEGORIES else "misc"
-    lic = normalize_license(str(snd.get("license") or ""))
+FREESOUND_PAGE = re.compile(r"^https://freesound\.org/people/[^/]+/sounds/\d+/?$")
+FREESOUND_PREVIEW = re.compile(r"https://cdn\.freesound\.org/previews/\d+/\d+_\d+-(?:lq|hq)\.mp3")
+MIXKIT_PAIR = re.compile(
+    r'data-audio-player-preview-url-value="(https://assets\.mixkit\.co/[^"]+\.mp3)"'
+    r'[\s\S]{0,1600}?<h2 class="item-grid-card__title">\s*([^<]+?)\s*</h2>'
+)
+_MIXKIT_CACHE: dict[str, dict[str, str]] = {}
+
+
+def _resolve_mixkit(page: str, name: str) -> str:
+    if not page.startswith("https://mixkit.co/free-sound-effects/"):
+        return ""
+    if page not in _MIXKIT_CACHE:
+        try:
+            html = urlopen(Request(page, headers={"User-Agent": "Mozilla/5.0"}), timeout=25).read().decode("utf-8", "replace")
+            _MIXKIT_CACHE[page] = {
+                re.sub(r"\s+", " ", title).strip().lower(): u
+                for u, title in MIXKIT_PAIR.findall(html)
+            }
+        except Exception:
+            _MIXKIT_CACHE[page] = {}
+    key = re.sub(r"\s+", " ", name).strip().lower()
+    return _MIXKIT_CACHE[page].get(key, "")
+
+
+def resolve_download(snd: dict) -> str:
+    """Link tải: ưu tiên download_url Muse gửi; nếu trống thì lấy bản preview công khai cùng giấy phép
+    từ trang Freesound (-hq/-lq) hoặc Mixkit (assets.mixkit.co). Nguồn chặn bot (Pixabay 403) để trống."""
     url = str(snd.get("download_url") or "").strip()
+    if url:
+        return url
+    page = str(snd.get("source_page_url") or "").strip()
+    name = str(snd.get("name") or snd.get("title") or "").strip()
+    if page.startswith("https://mixkit.co/free-sound-effects/"):
+        return _resolve_mixkit(page, name)
+    if not FREESOUND_PAGE.match(page):
+        return ""
+    try:
+        req = Request(page, headers={"User-Agent": "AgentNet-SFX-Intake/1.0"})
+        html = urlopen(req, timeout=30).read().decode("utf-8", "replace")
+    except Exception:
+        return ""
+    m = FREESOUND_PREVIEW.search(html)
+    if not m:
+        return ""
+    lq = m.group(0).replace("-hq.mp3", "-lq.mp3")
+    hq = lq.replace("-lq.mp3", "-hq.mp3")
+    for cand in (hq, lq):
+        try:
+            with urlopen(Request(cand, method="HEAD", headers={"User-Agent": "AgentNet-SFX-Intake/1.0"}), timeout=20) as r:
+                if r.status == 200:
+                    return cand
+        except Exception:
+            continue
+    return ""
+
+
+def ingest_sound(snd: dict, task_id: str, manifest: dict, dry_run: bool = False, default_cat: str = "misc") -> tuple[str, str]:
+    name = str(snd.get("name") or snd.get("title") or "").strip()
+    cat = re.sub(r"[^a-z_]", "_", str(snd.get("category") or "").strip().lower())
+    cat = cat if cat in CATEGORIES else (default_cat if default_cat in CATEGORIES else "misc")
+    lic = normalize_license(str(snd.get("license") or ""))
     if not name:
         return "SKIP", "thiếu tên"
     if not lic:
         return "REJECT", f"giấy phép không hợp lệ: {snd.get('license')!r}"
     if lic == "CC-BY-4.0" and not str(snd.get("author") or "").strip():
         return "REJECT", "CC-BY nhưng thiếu tác giả"
+    url = resolve_download(snd)
     if not url:
         return "PENDING", "chưa có link tải (chỉ có trang nguồn)"
     slug = slugify(name)
     key = f"{cat}/{slug}"
     score = float(snd.get("score") or 0)
     old = manifest["sounds"].get(key)
+    if old and old.get("task_id") == task_id and old.get("download_url") == url and (LIB / old["file"]).is_file():
+        return "SAME", f"{key} đã nhận từ task này"
     if old and float(old.get("score") or 0) > score:
         return "KEEP_OLD", f"{key} đã có bản điểm cao hơn"
     if dry_run:
@@ -219,13 +298,16 @@ def run(rows: list[dict], dry_run: bool = False) -> dict:
             print(f"[{row['id'][:8]}] không thấy JSON sounds trong kết quả")
             stats["NO_JSON"] = stats.get("NO_JSON", 0) + 1
             continue
+        tag = re.match(r"\s*\[([a-z_]+)\]", str((row.get("payload") or {}).get("objective") or ""))
+        default_cat = tag.group(1) if tag else "misc"
         for snd in sounds:
             try:
-                status, detail = ingest_sound(snd, row["id"], manifest, dry_run=dry_run)
+                status, detail = ingest_sound(snd, row["id"], manifest, dry_run=dry_run, default_cat=default_cat)
             except Exception as exc:  # tải lỗi, ffmpeg lỗi...
                 status, detail = "ERROR", f"{type(exc).__name__}: {str(exc)[:120]}"
             stats[status] = stats.get(status, 0) + 1
-            print(f"[{row['id'][:8]}] {status:<9} {snd.get('name', '')[:40]:<40} {detail}")
+            label = str(snd.get("name") or snd.get("title") or "")
+            print(f"[{row['id'][:8]}] {status:<9} {label[:40]:<40} {detail}")
     if not dry_run:
         save_manifest(manifest)
     print("Tổng:", stats)

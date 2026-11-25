@@ -38,6 +38,7 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 sys.path.insert(0, str(HERE))
 import horror_music  # noqa: E402
+import thumbnail as thumb_mod  # noqa: E402
 import voice as voice_mod  # noqa: E402
 
 W, H, FPS = 1080, 1920, 30
@@ -309,22 +310,40 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     run(["ffmpeg", "-y", "-hide_banner"] + inputs + ["-filter_complex", ";".join(chains), "-map", "[out]",
                                                     "-ar", "48000", "-t", f"{total}", str(mix_wav)])
 
-    # 7. Phụ đề + AIGC + xuất
+    # 7. Đồng màu + Phụ đề + AIGC + xuất
     write_ass(cues, work / "subs.ass")
     fonts = work / "fonts"
     if not fonts.is_dir():
         shutil.copytree(FONT_DIR, fonts)
-    vf = "ass=subs.ass:fontsdir=fonts"
+    vf_parts = []
+    grade = spec.get("color_grade", "folk_horror")
+    if grade == "folk_horror":
+        vf_parts.append(
+            "eq=contrast=1.06:saturation=0.92:brightness=-0.02,"
+            "colorbalance=rs=0.02:gs=0.0:bs=0.05:rm=0.03:gm=0.0:bm=-0.02,"
+            "noise=alls=3:allf=t+u"
+        )
+    vf_parts.append("ass=subs.ass:fontsdir=fonts")
     if spec.get("aigc_label", True):
-        vf += (",drawtext=fontfile=fonts/BeVietnamPro-Bold.ttf:text='AIGC · Nội dung tạo bởi AI':"
-               "fontsize=30:fontcolor=white@0.75:x=w-tw-40:y=h-th-60:box=1:boxcolor=black@0.35:boxborderw=10")
+        vf_parts.append(
+            "drawtext=fontfile=fonts/BeVietnamPro-Bold.ttf:text='AIGC · Nội dung tạo bởi AI':"
+            "fontsize=30:fontcolor=white@0.75:x=w-tw-40:y=h-th-60:box=1:boxcolor=black@0.35:boxborderw=10"
+        )
+    vf = ",".join(vf_parts)
     vcodec = ["-c:v", "h264_nvenc", "-preset", "p5", "-cq", "21"] if has_nvenc() else ["-c:v", "libx264", "-crf", "19"]
     out.parent.mkdir(parents=True, exist_ok=True)
     run(["ffmpeg", "-y", "-hide_banner", "-i", video_silent.name, "-i", mix_wav.name, "-vf", vf] + vcodec +
         ["-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out.resolve())],
         cwd=work)
+    # 8. Ảnh bìa 9:16 + tiêu đề + metadata + contact sheet QC
+    hero_img = None
+    if spec.get("cover_image"):
+        hero_img = fetch_clip(spec["cover_image"], clips_dir, work, 0)
+    pkg = thumb_mod.build_package(spec, out.resolve(), work, hero_image=hero_img)
     report.update({"output": str(out), "duration_s": round(total, 2), "voice": voice_name,
-                   "voice_lines": len(vo_tracks), "sfx_used": len(sfx_tracks)})
+                   "voice_lines": len(vo_tracks), "sfx_used": len(sfx_tracks),
+                   "cover": pkg["cover_path"], "publish_title": pkg["publish_title"],
+                   "contact_sheet": pkg["contact_sheet_path"]})
     (work / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     return report
 
