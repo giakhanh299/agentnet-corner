@@ -22,12 +22,13 @@ from PIL import Image  # noqa: E402
 
 MODEL_ID = "SG161222/RealVisXL_V5.0_Lightning"
 DEFAULT_NEG = (
+    "black and white, monochrome, grayscale, sepia, "
     "red Chinese lanterns, Chinese palace, curved pagoda roof, Hanfu, Chinese text, Japanese text, "
     "text, letters, subtitles, watermark, logo, modern clothing, cars, neon, electric streetlight, "
     "anime, cartoon, 3d render, plastic skin, gore, blood, visible scary ghost face, "
     "extra fingers, deformed hands, ugly, blurry, lowres"
 )
-STYLE_SUFFIX = ", 35mm documentary cinema still, moody natural lighting, subtle film grain, atmospheric, photorealistic"
+STYLE_SUFFIX = ", color photography, 35mm documentary cinema still, warm amber oil lamp and cold moonlight, subtle film grain, atmospheric, photorealistic"
 
 
 def make_storyboard(images: list[Path], dst: Path, cols: int = 3) -> Path:
@@ -49,13 +50,15 @@ def make_storyboard(images: list[Path], dst: Path, cols: int = 3) -> Path:
 
 def build_prompt(scene: dict, spec: dict) -> tuple[str, str]:
     raw = str(scene.get("image_prompt") or scene.get("label") or "").strip()
+    raw = raw.replace("black-and-white", "checkered").replace("black and white", "checkered")
+    raw = "Color film still, " + raw
     if "cinematic" not in raw.lower() and "documentary" not in raw.lower():
         raw = raw + STYLE_SUFFIX
     neg = str(spec.get("negative_prompt") or "").strip()
     if not neg or len(neg) < 30:
         neg = DEFAULT_NEG
     else:
-        neg = neg + ", watermark, logo, text, deformed hands, extra fingers, blurry"
+        neg = "black and white, monochrome, grayscale, " + neg + ", watermark, logo, text, deformed hands, extra fingers, blurry"
     return raw, neg
 
 
@@ -63,6 +66,8 @@ def generate_episode(
     spec_path: Path,
     out_dir: Path,
     overwrite: bool = False,
+    only_ids: set[int] | None = None,
+    seed_offset: int = 0,
     steps: int = 6,
     guidance: float = 1.8,
     width: int = 768,
@@ -81,7 +86,10 @@ def generate_episode(
         sid = int(sc["id"])
         dst = out_dir / f"scene_{sid:02d}.png"
         saved.append(dst)
-        if overwrite or not dst.is_file():
+        if only_ids is not None:
+            if sid in only_ids:
+                todo.append((sc, dst))
+        elif overwrite or not dst.is_file():
             todo.append((sc, dst))
 
     if not todo:
@@ -99,7 +107,7 @@ def generate_episode(
     pipe.to("cuda")
     pipe.vae.enable_slicing()
 
-    ep_seed = int(spec.get("seed") or spec.get("episode") or 1) * 1000
+    ep_seed = int(spec.get("seed") or spec.get("episode") or 1) * 1000 + seed_offset
     for sc, dst in todo:
         sid = int(sc["id"])
         prompt, neg = build_prompt(sc, spec)
@@ -126,10 +134,13 @@ def main() -> int:
     ap.add_argument("--spec", type=Path, required=True)
     ap.add_argument("--out-dir", type=Path, required=True)
     ap.add_argument("--overwrite", action="store_true")
+    ap.add_argument("--only", type=str, help="chỉ vẽ lại các scene id cách nhau bởi dấu phẩy, vd 2,4")
+    ap.add_argument("--seed-offset", type=int, default=0)
     ap.add_argument("--steps", type=int, default=6)
     ap.add_argument("--guidance", type=float, default=1.8)
     a = ap.parse_args()
-    generate_episode(a.spec, a.out_dir, overwrite=a.overwrite, steps=a.steps, guidance=a.guidance)
+    only = {int(x.strip()) for x in a.only.split(",") if x.strip()} if a.only else None
+    generate_episode(a.spec, a.out_dir, overwrite=a.overwrite, only_ids=only, seed_offset=a.seed_offset, steps=a.steps, guidance=a.guidance)
     return 0
 
 
