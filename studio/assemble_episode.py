@@ -151,7 +151,22 @@ def fetch_clip(ref: str, clips_dir: Path | None, work: Path, scene_id: int) -> P
     return p if p.is_file() else None
 
 
-def render_scene(src: Path | None, dur: float, dst: Path) -> str:
+def _pick_motion(motion_text: str, idx: int) -> str:
+    m = fold(motion_text)
+    if any(k in m for k in ("zoom ra", "lui may", "pull out", "mo rong")):
+        return "zoom_out"
+    if any(k in m for k in ("nghieng xuong", "tilt down", "tu mat", "xuong doi tay")):
+        return "tilt_down"
+    if any(k in m for k in ("sang trai", "pan left", "troi ngang")):
+        return "pan_left"
+    if any(k in m for k in ("sang phai", "pan right", "lia ngang")):
+        return "pan_right"
+    if any(k in m for k in ("day cham", "zoom vao", "push in", "can canh")):
+        return "zoom_in"
+    return ("zoom_in", "tilt_down", "zoom_out", "pan_right", "pan_left")[idx % 5]
+
+
+def render_scene(src: Path | None, dur: float, dst: Path, motion: str = "", idx: int = 0) -> str:
     vf_fit = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},format=yuv420p"
     common = ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(dst)]
     if src is None:
@@ -159,12 +174,24 @@ def render_scene(src: Path | None, dur: float, dst: Path) -> str:
         return "THIẾU_CLIP→nền đen"
     ext = src.suffix.lower()
     if ext in IMAGE_EXT:
-        frames = int(dur * FPS)
-        vf = (f"scale={int(W*1.15)}:{int(H*1.15)}:force_original_aspect_ratio=increase,crop={int(W*1.15)}:{int(H*1.15)},"
-              f"zoompan=z='min(zoom+0.0007,1.10)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS},"
-              "format=yuv420p")
+        frames = max(1, int(round(dur * FPS)))
+        mode = _pick_motion(motion, idx)
+        sw, sh = int(W * 1.18), int(H * 1.18)
+        t = f"(on/{frames})"
+        if mode == "zoom_out":
+            zp = f"zoompan=z='1.12-0.10*{t}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        elif mode == "pan_left":
+            zp = f"zoompan=z='1.10':x='(iw-iw/zoom)*(1-{t})':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        elif mode == "pan_right":
+            zp = f"zoompan=z='1.10':x='(iw-iw/zoom)*{t}':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        elif mode == "tilt_down":
+            zp = f"zoompan=z='1.10':x='iw/2-(iw/zoom/2)':y='(ih-ih/zoom)*{t}':d={frames}:s={W}x{H}:fps={FPS}"
+        else:
+            zp = f"zoompan=z='1.00+0.10*{t}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        vf = (f"scale={sw}:{sh}:force_original_aspect_ratio=increase,crop={sw}:{sh},"
+              f"{zp},vignette=PI/6,format=yuv420p")
         run(["ffmpeg", "-y", "-loop", "1", "-i", str(src), "-t", f"{dur}", "-vf", vf] + common)
-        return "ẢNH→Ken Burns"
+        return f"ẢNH→{mode}"
     run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(src), "-t", f"{dur}", "-vf", vf_fit] + common)
     return "CLIP (đã tắt tiếng gốc)"
 
@@ -219,11 +246,11 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     t_cursor = 0.0
     starts = []
     with seg_list.open("w", encoding="utf-8") as f:
-        for sc in scenes:
+        for i, sc in enumerate(scenes):
             dur = float(sc["duration_s"])
             src = fetch_clip(sc.get("clip", ""), clips_dir, work, sc["id"])
             seg = work / f"seg_{sc['id']:02d}.mp4"
-            how = render_scene(src, dur, seg)
+            how = render_scene(src, dur, seg, motion=str(sc.get("motion") or ""), idx=i)
             if how.startswith("THIẾU"):
                 report["warnings"].append(f"Cảnh {sc['id']}: thiếu clip, dùng nền đen")
             f.write(f"file '{seg.name}'\n")
