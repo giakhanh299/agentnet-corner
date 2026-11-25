@@ -62,7 +62,7 @@
       "voiceover": "Đêm trăng... chiêng cổ tự ngân, không ai gõ."
     },
     {
-      "duration_s": 5,
+      "duration_s": 6,
       "id": 2,
       "image_prompt": "Vertical 9:16 cinematic medium shot at night: H'Lan (young E-de woman, 20, long black hair in two braids, brocade skirt, bead bracelets, holding wooden gong mallets) walking on a dirt path toward the longhouse in light drizzle and fog, moonlight through trees, film grain.",
       "label": "H'Lan ôm dùi chiêng về nhà dài",
@@ -90,7 +90,7 @@
           "tag": "wood_creak"
         }
       ],
-      "vo_at": 0.8,
+      "vo_at": 0.5,
       "voiceover": "H'Lan ôm dùi chiêng... về nhà dài học đánh chiêng."
     },
     {
