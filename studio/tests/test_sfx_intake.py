@@ -55,7 +55,11 @@ class SfxIntakeTests(unittest.TestCase):
         self.assertLessEqual(out.stat().st_size, sfx_intake.MAX_OUT_BYTES)
         self.assertEqual(entry["license"], "CC0-1.0")
 
-        # bản điểm thấp hơn không được thay
+        # chạy lại cùng task + cùng link thì giữ nguyên không tải lại
+        self.assertEqual(sfx_intake.run(rows).get("SAME"), 1)
+
+        # task khác có bản điểm thấp hơn không được thay
+        rows[0]["id"] = "task-0002"
         rows[0]["result"]["summary"] = json.dumps({"sounds": [
             {"name": "Bước chân lá khô", "category": "footsteps", "license": "CC0",
              "download_url": SAMPLE.as_uri(), "score": 3}]})
