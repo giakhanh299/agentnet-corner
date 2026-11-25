@@ -203,6 +203,8 @@ def ingest_sound(snd: dict, task_id: str, manifest: dict, dry_run: bool = False,
     key = f"{cat}/{slug}"
     score = float(snd.get("score") or 0)
     old = manifest["sounds"].get(key)
+    if old and old.get("task_id") == task_id and old.get("download_url") == url and (LIB / old["file"]).is_file():
+        return "SAME", f"{key} đã nhận từ task này"
     if old and float(old.get("score") or 0) > score:
         return "KEEP_OLD", f"{key} đã có bản điểm cao hơn"
     if dry_run:
