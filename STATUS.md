@@ -1209,3 +1209,75 @@
 - Watchdog found the gateway down at 05:53:19 UTC ("gateway down, attempting restart"); deploy.sh restarted it, pid 1795, "restart OK" at 05:53:25 UTC. /health now returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"} and the uvicorn process is running.
 - systemd unit still inactive — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
 - Restart succeeded, so per standing rule this is logged here, not messaged to chat.
+
+## 2026-11-24 13:35 +07 — NEW registry batch ghost-vn: folk-ghost round-table, pilot decision made, waiting on Owner
+- Checked live at 13:30–13:35 +07 (06:30–06:35 UTC) via queue_status.py + full /tasks read: queue grew 57 -> 65 tasks (+8, all project=research, all SUBMITTED with results). New batch "ghost-vn-20261124": a Telegram round-table (MUSE CHÍNH + 4 MUSE PHỤ + Chủ dự án "Gia Gia") on Vietnamese folk ghost-story videos. R1 created 11:10 +07, R2 11:19 +07, usr:27 replies 13:15 +07 (leases to 13:32–13:34 +07); agents active at 13:17–13:30 +07. No poster field on any task, so authorship still undetermined from the registry — same caveat as the FB K01–K12 batch. Context pointing at this user: same node pool as the FB waves (Research baa7de1f, Verify 355c4b87, 807e2cc4, cd6820ff, be6920f3), hardware context cites the RTX 5060 Ti PC, and audio lessons cite K04/K05.
+- What the round-table decided (task d381b55f R2 chief-synthesis + task 0667d65d usr:27 chief reply, both outcome=ok): ONE pilot first, not a series — "Ma Da Bến Sông", vertical 9:16, 75–85s, one anchor voice (Southern male narrator, Nguyễn Ngọc Ngạn style — NOTE: different from production voice VieNeu "Mai Anh" female). 5-episode series list: #1 Ma Da kéo giò (miền Tây), #2 Thần Trùng (Bắc), #3 Linh Miêu hoàn hồn/Quỷ nhập tràng (Trung), #4 Chó đội nón mê (Nam), #5 Oan hồn Lệ Chi Viên (Bắc). Visual DNA "Làng Quê Việt Cổ" + 6 anchors + Negative Prompt against "Tàu hoá" accepted verbatim. Ma Da chosen on verified evidence: film "Ma Da" (2024, dir. Nguyễn Hữu Hoàng, Việt Hương as bà Lệ) grossed 127 tỷ VND (vi Wikipedia, Box Office Vietnam/Mojo); Saigoneer "Ma Quỷ Dân Gian Ký" 03/08/2022 (date/title corrected from Sub 1's 02/06/2022 "Kỳ").
+- Two pilot outlines exist — they differ: (a) R2 script "Ma Da kéo giò": ông Tư chài lưới, full 0–80s scene-by-scene script with narration + image prompts + SFX. (b) usr:27 folklore reply (13:15 +07): ORIGINAL story "Chiều trên bến sông" — boatman, oar held under water, grandmother's warning "Đừng ngoái lại khi nghe tiếng gọi tên mình dưới sông", ends "Ai đang gọi?" — 3 beats (0–20s / 20–55s / 55–85s), explicitly NOT copying the 2024 film plot; asks Gia Gia to confirm the 3-beat outline before writing the full script. That confirmation is the pending decision.
+- Binding QC gates from Sub 4 (upheld by Chief): still-images + slow zoom = YouTube Reused/Inauthentic-content risk (channel-level YPP refusal possible) — NO stills-only video approved before a motion test passes; minimum-motion standard mandatory. Slow narration + 0.3–0.8s pauses vs 60–90s format is a timing conflict to fix (script ~130–170 words incl. pauses). AIGC labels mandatory; max 1 mild jump-scare; no gore, no superstition instructions (NĐ 15/2020 cited, exact article/fine not verified); cautionary ending with "Truyện dân gian kể lại — nghe để biết, không khẳng định có thật."
+- Gaps before production: pipeline only Stage A (B–C incomplete, records truncated mid-sentence); test channel name not confirmed (isolated/unlisted test run, awaiting Owner); Track B not locked. Production would hit the same PC-access block (other_tcp) as Week-2 scripts. This batch is a possible answer to the v050+ topic exhaustion (5 folk-ghost episodes, no-camera producible) — but it is a new direction, not part of the 30-video bank or the 9 fresh topics.
+- Gateway (same check): healthy, /health ok, pid 1888 (started 06:23 UTC). Watchdog totals now 744 "gateway down" / 739 "restart OK" (vs 718/713 at 07:35 +07) — same ~100/day pace, NOT an escalation; logged here per standing rule, not messaged.
+- Registry otherwise unchanged: b4413e82 still SUBMITTED awaiting approval; K04 still BLOCKED, K02 still NEEDS_FIX; no wave5; no RUNNING/QUEUED.
+- Full ghost-vn task results fetched to /tmp/ghost-vn-20261124.json (8 tasks, payload + result); chief summaries also in /tmp/ghost_chief.txt.
+
+## 2026-11-24 14:35 +07 — Ghost-vn: recovered full task results + pilot comparison prepared (no new queue change)
+
+- The /tmp copies of the 8 ghost-vn results (noted in the 13:35 entry) were lost in a VM
+  replacement. Re-fetched all 8 read-only from the registry (GET /tasks) and saved them
+  to git-tracked `ghost-vn-20261124/` (8 JSON + 3 .txt summary extracts + this comparison
+  file) — they will go out with the next 30-min auto-push. Nothing approved, posted, or
+  changed on the registry.
+- Queue re-checked live 14:32 +07 (queue_status.py): still 65 tasks, no new tasks since
+  the 13:15 +07 replies, no RUNNING/QUEUED. Authorship still unprovable (no poster
+  field). Agents alive (Verify 14:30, Research 14:26 +07).
+- New checks done for the pilot choice (a) vs (b):
+  - Film "Ma Da" (2024) gross 127 ty VND independently verified via web (Wikipedia "Ma
+    da (phim)" + Kenh14/Thethaovanhoa, Box Office Vietnam; BOVN notes 5-10% error) —
+    clears the "not independently verified" flag R2 chief put on it.
+  - Script (a) "Ma Da keo gio" narration counted: 107 words = ~49s speech at slow
+    130 wpm; with pauses/silence/end card ~55-65s total, i.e. 10-25s SHORT of the locked
+    75-85s format and 23-63 words under the chief's own 130-170 word budget. Fixable by
+    adding ~25-40 words or much slower delivery — flagged in the comparison file, not a
+    rejection.
+  - (b) "Chieu tren ben song" is outline-only (3 beats); needs one more script-writing
+    round, but can then be written exactly to the 130-170 word budget, has the stronger
+    hook/cliffhanger ("Ai dang goi?") and spends none of the 1-mild-jump-scare budget,
+    vs (a) which spends it on the laugh + ghost voice.
+- Shared blockers unchanged for either choice: new Southern male narrator voice not yet
+  sourced (cannot use VieNeu "Mai Anh"); PC production still blocked on other_tcp;
+  pipeline Stage A only; test channel name unconfirmed.
+- Pending user decision (asked 13:40 +07, no reply yet): is the ghost-vn round-table
+  theirs, and pilot (a) or (b)? The comparison file is ready so the choice can be made
+  in one read; nothing new was messaged to chat.
+
+## 2026-11-25 02:43 +07 — Media Gateway watchdog: restart FAILED, manual recovery OK
+- Watchdog (10-min cron) found the gateway down at 19:43:17 UTC; systemd unit was missing again (VM replaced — same as the 18:53/19:03/19:13/19:33 runs), re-created + enabled by the script.
+- Watchdog's own deploy.sh restart attempt FAILED (watchdog.log: "restart FAILED" 19:43:17 UTC; the watchdog exec itself was terminated mid-run — stderr "Terminated", exit 1 after ~0.3s, far shorter than a normal ~5s restart).
+- Manual recovery: `deploy.sh restart` succeeded immediately — gateway up as pid 1888, /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"}.
+- This is the 6th watchdog restart failure since 15/11 (5 recorded before, latest 2026-11-22 ~03:13); pattern continues: gateway dies with each VM replacement and the watchdog's restart intermittently fails while a manual restart works. systemd unit remains inactive (dead) — gateway runs directly via deploy.sh, not via the unit.
+
+## 2026-11-25 03:03 +07 — Media Gateway watchdog (10-min): gateway down, restart OK
+- Watchdog found the gateway down at 20:03:17 UTC; systemd unit was missing again (VM replaced), re-created + enabled by the script. deploy.sh restarted it, pid 1778, "restart OK" at 20:03:23 UTC. /health now returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"} and the uvicorn process is running.
+- Fresh-boot evidence: `uptime` 19 min at 20:04 UTC — this VM instance booted ~19:45 UTC, a real replacement after the 19:43 restart failure (already logged, manual recovery OK). Memory: 158 MB free, 699 MB available.
+- Watchdog totals now: 805 "gateway down" / 804 "unit was missing" / 799 "restart OK" / 6 "restart FAILED" (unchanged — last failure 19:43 UTC). Same ~100/day pace, NOT an escalation.
+- systemd unit still inactive (dead) — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
+- Restart succeeded, so per standing rule this is logged here, not messaged to chat.
+
+## 2026-11-25 03:13 +07 — Media Gateway watchdog (10-min): gateway down, restart OK
+- Watchdog found the gateway down at 20:13:15 UTC; systemd unit was missing again (VM replaced), re-created + enabled by the script. deploy.sh restarted it, pid 1854, "restart OK" at 20:13:21 UTC. /health now returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"} and the uvicorn process is running.
+- VM uptime 1:02 at 20:14 UTC; memory 178 MB free, 749 MB available. systemd unit still inactive (dead) — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
+- Watchdog totals now: 806 "gateway down" / 805 "unit was missing" / 800 "restart OK" / 6 "restart FAILED" (unchanged — last failure 19:43 UTC, already logged with manual recovery OK). Same ~100/day pace, NOT an escalation.
+- Restart succeeded, so per standing rule this is logged here, not messaged to chat.
+
+## 2026-11-25 17:13 +07 — Media Gateway watchdog (10-min): gateway down, restart OK
+- Watchdog found the gateway down at 10:13:15 UTC; systemd unit was missing again (VM replaced), re-created + enabled by the script. deploy.sh restarted it, pid 1793, "restart OK" at 10:13:21 UTC. /health now returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"} and the uvicorn process is running.
+- VM uptime 21 min at 10:13 UTC; memory 185 MB free, 853 MB available. systemd unit still inactive (dead) — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
+- Watchdog totals now: 868 "gateway down" / 867 "unit was missing" / 862 "restart OK" / 6 "restart FAILED" (unchanged — last failure 19:43 UTC, already logged with manual recovery OK). Same ~100/day pace, NOT an escalation.
+- Restart succeeded, so per standing rule this is logged here, not messaged to chat.
+
+## 2026-11-25 19:53 +07 — Media Gateway watchdog (10-min): healthy; 12 restarts since 17:13 +07 logged in arrears
+- This run (19:53 +07 / 12:53 UTC): watchdog exited 0, no restart needed — /health returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"} and uvicorn (pid 1784, started 12:43 UTC) is running.
+- Gap found: the watchdog log shows 12 successful restarts between 10:33 and 12:43 UTC (17:33–19:43 +07) that never reached STATUS.md (last entry was 17:13 +07). Each found the gateway down with the systemd unit missing (VM replaced), re-created + enabled the unit, and deploy.sh restarted the gateway with "restart OK" — pids in sequence, latest pid 1784 at 12:43:22 UTC. No restart failures in that window.
+- Watchdog totals now: 880 "gateway down" / 879 "unit was missing" / 874 "restart OK" / 6 "restart FAILED" (unchanged — last failure 19:43 UTC on 2026-11-24, already logged with manual recovery OK). Same ~100/day pace, NOT an escalation.
+- VM uptime 33 min at 12:53 UTC; memory 291 MB free, 651 MB available. systemd unit still inactive (dead) — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
+- Gateway healthy, so per standing rule nothing is messaged to chat.
