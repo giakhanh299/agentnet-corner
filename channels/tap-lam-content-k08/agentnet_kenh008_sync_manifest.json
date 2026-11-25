@@ -1,0 +1,48 @@
+{
+  "synced_by_sha256": {
+    "84757475ef0e4ce5bd53b1ab2beeceee3e49912107c3f1e7745f0c8da0489010": "v006_nuoc_vua_soi_vua_dong_bang.mp4",
+    "ab6fbf2cb4726710150e36de117534b128fb2e3649664b5181806f7ea76a8b5b": "v007_top_5_thu_vua_khit_hoan_hao.mp4",
+    "dc6c97c0e52e7ba322ac80b4845733e5b92afe563d48f914247e977d1f08db9b": "v009_top_5_su_that_dong_vat.mp4",
+    "c7bca083059c8973344c8e0699a38603aa9a5eeb3b70f47cc1018905805c15f7": "v010_bai_bao_1960_du_bao_tan_the.mp4",
+    "1fade7c08b4d03d314b5769d7d49e57fbc4bd6eecaad4a5bfe4b48389f428fa7": "v011_canada_giu_hon_nua_so_ho_the_gioi.mp4",
+    "9312183ff0b1361ce37a069516b0544940a011280d9c365255430a5e8d9f0aad": "v012_cho_nha_ban_hieu_bao_nhieu_tu.mp4"
+  },
+  "synced_by_episode": {
+    "v006": {
+      "file": "v006_nuoc_vua_soi_vua_dong_bang.mp4",
+      "sha256": "84757475ef0e4ce5bd53b1ab2beeceee3e49912107c3f1e7745f0c8da0489010",
+      "src": "C:\\Users\\w\\v006_render\\v006.mp4",
+      "detail": "53.1s 1080x1920"
+    },
+    "v007": {
+      "file": "v007_top_5_thu_vua_khit_hoan_hao.mp4",
+      "sha256": "ab6fbf2cb4726710150e36de117534b128fb2e3649664b5181806f7ea76a8b5b",
+      "src": "C:\\Users\\w\\v007_render\\v007.mp4",
+      "detail": "48.4s 1080x1920"
+    },
+    "v009": {
+      "file": "v009_top_5_su_that_dong_vat.mp4",
+      "sha256": "dc6c97c0e52e7ba322ac80b4845733e5b92afe563d48f914247e977d1f08db9b",
+      "src": "C:\\Users\\w\\v009_render\\v009.mp4",
+      "detail": "51.2s 1080x1920"
+    },
+    "v010": {
+      "file": "v010_bai_bao_1960_du_bao_tan_the.mp4",
+      "sha256": "c7bca083059c8973344c8e0699a38603aa9a5eeb3b70f47cc1018905805c15f7",
+      "src": "C:\\Users\\w\\v010_render\\v010.mp4",
+      "detail": "54.5s 1080x1920"
+    },
+    "v011": {
+      "file": "v011_canada_giu_hon_nua_so_ho_the_gioi.mp4",
+      "sha256": "1fade7c08b4d03d314b5769d7d49e57fbc4bd6eecaad4a5bfe4b48389f428fa7",
+      "src": "C:\\Users\\w\\v011_render\\v011.mp4",
+      "detail": "49.6s 1080x1920"
+    },
+    "v012": {
+      "file": "v012_cho_nha_ban_hieu_bao_nhieu_tu.mp4",
+      "sha256": "9312183ff0b1361ce37a069516b0544940a011280d9c365255430a5e8d9f0aad",
+      "src": "C:\\Users\\w\\v012_render\\v012.mp4",
+      "detail": "55.5s 1080x1920"
+    }
+  }
+}
