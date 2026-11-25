@@ -20,12 +20,12 @@
       "duration_s": 15,
       "image_prompt": "Vertical 9:16 cinematic night shot, 1960s Mekong Delta riverside: old three-room Vietnamese house with mossy roof on the bank, a single duck-egg oil lamp glowing amber in its window, a bamboo monkey bridge crossing the dark still river, water coconut palms silhouetted, pale blue moonlight, thin white mist drifting over the water surface, eerie calm, documentary film grain.",
       "motion": "camera đẩy chậm từ bờ sông về phía ngôi nhà, sương trôi ngang sang trái, đèn dầu lung linh nhẹ",
-      "voiceover": "Đêm đó, nước sông Hậu rút cạn… chỉ còn tiếng kéo giò dưới bến.",
+      "voiceover": "Chỉ còn tiếng kéo giò dưới bến… Đêm đó, nước sông Hậu rút cạn.",
       "vo_at": 1.0,
       "sfx": [
         {"tag": "night_creatures", "desc": "ếch nhái dế kêu xa", "at": 0, "dur": 15, "gain_db": -26},
         {"tag": "water", "desc": "nước sông vỗ nhẹ", "at": 0, "dur": 15, "gain_db": -28},
-        {"tag": "horror_stinger", "desc": "drone trầm", "at": 0, "dur": 6, "gain_db": -24}
+        {"tag": "horror_stinger", "desc": "drone trầm mở màn", "at": 0, "dur": 1.2, "gain_db": -24}
       ]
     },
     {
@@ -66,7 +66,7 @@
       "ghost": true,
       "ghost_semitones": -3,
       "sfx": [
-        {"tag": "human_eerie", "desc": "thì thầm xa", "at": 0, "dur": 6, "gain_db": -24},
+        {"tag": "human_eerie", "desc": "thì thầm xa", "at": 0, "dur": 2, "gain_db": -24},
         {"tag": "leaves_wind", "desc": "gió rít qua lũy tre", "at": 0, "dur": 20, "gain_db": -24},
         {"tag": "footsteps", "desc": "bước chân chạy hoảng loạn trên cầu tre", "at": 9, "dur": 6, "gain_db": -18},
         {"tag": "human_eerie", "desc": "tiếng cười vọng dọc bến sông", "at": 14, "dur": 5, "gain_db": -22}
@@ -75,14 +75,14 @@
     {
       "id": 5,
       "label": "Kết mở – gà gáy bình minh",
-      "duration_s": 12,
+      "duration_s": 14,
       "image_prompt": "Vertical 9:16 pre-dawn wide shot of the same Mekong Delta riverside: mist lifting from the river, first pale golden light on the horizon, the empty bamboo monkey bridge with an abandoned wet fishing net lying on it, the old three-room house far in the background, serene yet eerie stillness, documentary film grain, warm-cold color contrast.",
       "motion": "lùi máy rất chậm mở rộng khung cảnh khi trời hửng sáng",
       "voiceover": "Người làng bảo: Ma Da chỉ kéo giò ai tham. Còn ông Tư… từ đó không chài đêm nữa. Bạn có dám ra bến sông lúc nửa đêm?",
       "vo_at": 0.6,
       "sfx": [
         {"tag": "night_creatures", "desc": "gà gáy xa", "at": 0.5, "dur": 4, "gain_db": -22},
-        {"tag": "rain", "desc": "giọt nước nhỏ giọt từ mái hiên", "at": 0, "dur": 12, "gain_db": -28}
+        {"tag": "water", "desc": "giọt nước nhỏ giọt từ mái hiên", "at": 0, "dur": 14, "gain_db": -28}
       ]
     }
   ]
