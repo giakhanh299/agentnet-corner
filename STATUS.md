@@ -1281,3 +1281,10 @@
 - Watchdog totals now: 880 "gateway down" / 879 "unit was missing" / 874 "restart OK" / 6 "restart FAILED" (unchanged — last failure 19:43 UTC on 2026-11-24, already logged with manual recovery OK). Same ~100/day pace, NOT an escalation.
 - VM uptime 33 min at 12:53 UTC; memory 291 MB free, 651 MB available. systemd unit still inactive (dead) — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
 - Gateway healthy, so per standing rule nothing is messaged to chat.
+
+## 2026-11-26 06:33 +07 — Media Gateway watchdog (10-min): gateway down, restart OK; 50 restarts since 19:53 +07 logged in arrears
+- This run (06:33 +07 / 23:33 UTC): watchdog found the gateway down at 23:33:17 UTC; systemd unit was missing again (VM replaced), re-created + enabled by the script. deploy.sh restarted it, pid 1785, "restart OK" at 23:33:23 UTC. /health now returns {"status":"ok","database":"ok","low_resource_mode":true,"version":"1.0.0"} and the uvicorn process is running.
+- Gap found: the watchdog log shows 50 successful restarts between 12:53 and 23:33 UTC (19:53 +07 on 2026-11-25 to 06:33 +07 on 2026-11-26) that never reached STATUS.md (last entry was 19:53 +07). Each found the gateway down with the systemd unit missing (VM replaced), re-created + enabled the unit, and deploy.sh restarted the gateway with "restart OK". No restart failures in that window.
+- Watchdog totals now: 930 "gateway down" / 929 "unit was missing" / 924 "restart OK" / 6 "restart FAILED" (unchanged — last failure 19:43 UTC on 2026-11-24, already logged with manual recovery OK). Same ~100/day pace, NOT an escalation.
+- VM uptime 3 min at 23:34 UTC (fresh replacement); memory 160 MB free, 1489 MB available. systemd unit still inactive (dead) — gateway runs as direct nohup uvicorn, so the watchdog remains the only restart path (same as before).
+- Restart succeeded, so per standing rule this is logged here, not messaged to chat.
