@@ -97,6 +97,31 @@ def category_for(text: str) -> str | None:
     return None
 
 
+SFX_SYNONYMS = {
+    "thi tham": ("whisper", "whispering"),
+    "cuoi": ("laugh",),
+    "khoc": ("cry", "crying", "weep"),
+    "tho": ("breath", "breathing"),
+    "bong bong": ("bubble", "bubbles"),
+    "song": ("river", "water", "splash", "wave"),
+    "cheo": ("oar", "paddle", "rowing"),
+    "tom": ("splash", "rock"),
+    "cua": ("door", "creak"),
+    "vong": ("bed", "creak"),
+    "van": ("wood", "creak"),
+    "cau": ("wood", "creak"),
+    "buoc": ("footstep", "footsteps", "leaves"),
+    "la": ("leaves", "rustling", "twig"),
+    "gio": ("wind", "leaves"),
+    "mua": ("rain", "forest", "light"),
+    "sam": ("thunder", "storm"),
+    "drone": ("drone",),
+    "riser": ("sweep", "terror", "trailer"),
+    "impact": ("impact", "hit", "drum"),
+    "tim": ("heartbeat", "drum"),
+}
+
+
 def resolve_sfx(item, manifest: dict) -> Path | None:
     """item: dict {"tag": "rain"} hoặc chuỗi mô tả tiếng Việt. Trả về file âm thanh tốt nhất."""
     tag = item.get("tag") if isinstance(item, dict) else None
@@ -104,7 +129,11 @@ def resolve_sfx(item, manifest: dict) -> Path | None:
     cat = tag if tag else category_for(desc)
     if not cat:
         return None
-    words = set(re.findall(r"[a-z0-9]+", fold(desc)))
+    fdesc = fold(desc)
+    words = set(re.findall(r"[a-z0-9]+", fdesc))
+    for vi_key, en_words in SFX_SYNONYMS.items():
+        if vi_key in fdesc:
+            words.update(en_words)
     best, best_key = None, (-1.0, -1.0)
     for entry in manifest.get("sounds", {}).values():
         if entry.get("category") != cat:
@@ -112,7 +141,7 @@ def resolve_sfx(item, manifest: dict) -> Path | None:
         p = SFX_LIB / entry["file"]
         if not p.is_file():
             continue
-        tag_words = set(re.findall(r"[a-z0-9]+", fold(" ".join(entry.get("tags", [])) + " " + entry.get("name", ""))))
+        tag_words = set(re.findall(r"[a-z0-9]+", fold(" ".join(entry.get("tags", [])) + " " + entry.get("name", "") + " " + entry["file"])))
         key = (len(words & tag_words), float(entry.get("score") or 0))
         if key > best_key:
             best, best_key = p, key
@@ -217,6 +246,31 @@ def ass_time(t: float) -> str:
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
+def split_caption_chunks(text: str, start: float, end: float, max_words: int = 12) -> list[tuple[float, float, str]]:
+    """Tách câu dài thành từng cụm phụ đề 1-2 dòng theo tỷ lệ số từ để không bị cắt mất chữ."""
+    words = text.split()
+    if len(words) <= max_words:
+        return [(start, end, text)]
+    parts = [p.strip() for p in re.split(r"(?<=[.!?…])\s+", text.strip()) if p.strip()]
+    chunks: list[str] = []
+    for p in parts:
+        pw = p.split()
+        if len(pw) <= max_words:
+            chunks.append(p)
+        else:
+            for i in range(0, len(pw), max_words):
+                chunks.append(" ".join(pw[i:i + max_words]))
+    total_w = max(1, sum(len(c.split()) for c in chunks))
+    dur = max(0.2, end - start)
+    cur = start
+    out = []
+    for c in chunks:
+        seg = dur * (len(c.split()) / total_w)
+        out.append((cur, cur + seg, c))
+        cur += seg
+    return out
+
+
 def write_ass(cues: list[tuple[float, float, str]], path: Path) -> None:
     head = (
         "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nScaledBorderAndShadow: yes\n\n"
@@ -230,7 +284,8 @@ def write_ass(cues: list[tuple[float, float, str]], path: Path) -> None:
     rows = []
     for start, end, text, *style in cues:
         st = style[0] if style else "Default"
-        rows.append(f"Dialogue: 0,{ass_time(start)},{ass_time(end)},{st},,0,0,0,,{wrap_caption(text)}")
+        for cs, ce, ct in split_caption_chunks(text, start, end):
+            rows.append(f"Dialogue: 0,{ass_time(cs)},{ass_time(ce)},{st},,0,0,0,,{wrap_caption(ct)}")
     path.write_text(head + "\n".join(rows) + "\n", encoding="utf-8")
 
 
