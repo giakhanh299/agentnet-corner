@@ -14,3 +14,5 @@ Bản sao có phiên bản của các công cụ đang chạy thật tại `D:\A
 Chạy: đặt thư mục này vào `PYTHONPATH` (các file import lẫn nhau). Cần thêm `vps_ssh_helper.py` (`D:\0.1_FACE_BOOK\macro-tool`) cho thao tác VPS.
 
 Test: `python -m unittest discover -s bridges/tests -v` (đặt `PYTHONPATH=bridges`).
+
+�?ng b? t? RAG (1 chi?u, t? b? secret): `python bridges/sync_from_rag.py --check` d? xem kh�c bi?t, b? `--check` d? ghi.
