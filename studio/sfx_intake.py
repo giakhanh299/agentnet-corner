@@ -152,18 +152,51 @@ def save_manifest(m: dict) -> None:
     MANIFEST.write_text(json.dumps(m, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
 
 
-def ingest_sound(snd: dict, task_id: str, manifest: dict, dry_run: bool = False) -> tuple[str, str]:
-    name = str(snd.get("name") or "").strip()
-    cat = str(snd.get("category") or "misc").strip().lower()
-    cat = cat if cat in CATEGORIES else "misc"
-    lic = normalize_license(str(snd.get("license") or ""))
+FREESOUND_PAGE = re.compile(r"^https://freesound\.org/people/[^/]+/sounds/\d+/?$")
+FREESOUND_PREVIEW = re.compile(r"https://cdn\.freesound\.org/previews/\d+/\d+_\d+-(?:lq|hq)\.mp3")
+
+
+def resolve_download(snd: dict) -> str:
+    """Link tải: ưu tiên download_url Muse gửi; nếu trống mà là trang Freesound thì lấy bản preview công khai
+    (cùng giấy phép, không cần đăng nhập) -hq, lỗi thì -lq. Nguồn chặn bot (vd Pixabay 403) thì để trống."""
     url = str(snd.get("download_url") or "").strip()
+    if url:
+        return url
+    page = str(snd.get("source_page_url") or "").strip()
+    if not FREESOUND_PAGE.match(page):
+        return ""
+    try:
+        req = Request(page, headers={"User-Agent": "AgentNet-SFX-Intake/1.0"})
+        html = urlopen(req, timeout=30).read().decode("utf-8", "replace")
+    except Exception:
+        return ""
+    m = FREESOUND_PREVIEW.search(html)
+    if not m:
+        return ""
+    lq = m.group(0).replace("-hq.mp3", "-lq.mp3")
+    hq = lq.replace("-lq.mp3", "-hq.mp3")
+    for cand in (hq, lq):
+        try:
+            with urlopen(Request(cand, method="HEAD", headers={"User-Agent": "AgentNet-SFX-Intake/1.0"}), timeout=20) as r:
+                if r.status == 200:
+                    return cand
+        except Exception:
+            continue
+    return ""
+
+
+def ingest_sound(snd: dict, task_id: str, manifest: dict, dry_run: bool = False, default_cat: str = "misc") -> tuple[str, str]:
+    name = str(snd.get("name") or "").strip()
+    cat = re.sub(r"[^a-z_]", "_", str(snd.get("category") or "").strip().lower())
+    cat = cat if cat in CATEGORIES else (default_cat if default_cat in CATEGORIES else "misc")
+    lic = normalize_license(str(snd.get("license") or ""))
     if not name:
         return "SKIP", "thiếu tên"
     if not lic:
         return "REJECT", f"giấy phép không hợp lệ: {snd.get('license')!r}"
     if lic == "CC-BY-4.0" and not str(snd.get("author") or "").strip():
         return "REJECT", "CC-BY nhưng thiếu tác giả"
+    url = resolve_download(snd)
     if not url:
         return "PENDING", "chưa có link tải (chỉ có trang nguồn)"
     slug = slugify(name)
@@ -219,9 +252,11 @@ def run(rows: list[dict], dry_run: bool = False) -> dict:
             print(f"[{row['id'][:8]}] không thấy JSON sounds trong kết quả")
             stats["NO_JSON"] = stats.get("NO_JSON", 0) + 1
             continue
+        tag = re.match(r"\s*\[([a-z_]+)\]", str((row.get("payload") or {}).get("objective") or ""))
+        default_cat = tag.group(1) if tag else "misc"
         for snd in sounds:
             try:
-                status, detail = ingest_sound(snd, row["id"], manifest, dry_run=dry_run)
+                status, detail = ingest_sound(snd, row["id"], manifest, dry_run=dry_run, default_cat=default_cat)
             except Exception as exc:  # tải lỗi, ffmpeg lỗi...
                 status, detail = "ERROR", f"{type(exc).__name__}: {str(exc)[:120]}"
             stats[status] = stats.get(status, 0) + 1

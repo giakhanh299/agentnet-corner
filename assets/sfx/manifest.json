@@ -1,0 +1,98 @@
+{
+  "sounds": {
+    "footsteps/footsteps_on_leaves_natural_outdoor_foley": {
+      "added_at": "2026-11-25T21:21:28+07:00",
+      "author": "LUISCAVAR",
+      "category": "footsteps",
+      "download_url": "https://cdn.freesound.org/previews/879/879850_19174358-hq.mp3",
+      "duration_s": 30.0,
+      "file": "footsteps/footsteps_on_leaves_natural_outdoor_foley.ogg",
+      "fit_note": "Di cham tren la kho ngoai troi, ghi am thuc te (field recording), crunching/rustling ro rang; dai 40.8s vuot muc 2-30s nen can cat ngan. Can dang nhap Freesound de tai file goc.",
+      "license": "CC-BY-4.0",
+      "name": "Footsteps on Leaves - Natural Outdoor Foley",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "d3ba120e5b91ebfbe24a95756ecca43c1ccac3d588598943c41e2f525fe9edbf",
+      "source_page_url": "https://freesound.org/people/LUISCAVAR/sounds/879850/",
+      "tags": [
+        "footsteps",
+        "leaves",
+        "forest",
+        "foley",
+        "walk"
+      ],
+      "task_id": "d7582a8a-7d10-4e42-9219-235825400f36",
+      "uses": 0
+    },
+    "footsteps/soft_leaves_wav": {
+      "added_at": "2026-11-25T21:21:33+07:00",
+      "author": "winkysadface",
+      "category": "footsteps",
+      "download_url": "https://cdn.freesound.org/previews/674/674151_13530534-hq.mp3",
+      "duration_s": 10.0,
+      "file": "footsteps/soft_leaves_wav.ogg",
+      "fit_note": "Di khe tren duong la trong vuon bach thao, it tap am, dung chuan 2-30s; hop canh nhan vat di ren nhe nhang / lang nghe. WAV 44.1kHz 24-bit stereo. Can dang nhap Freesound de tai file goc.",
+      "license": "CC-BY-4.0",
+      "name": "Soft Leaves.wav",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "16a89f6e539e664fa7f73624c637f9e8c08b4199810779236bb8087e94f91106",
+      "source_page_url": "https://freesound.org/people/winkysadface/sounds/674151/",
+      "tags": [
+        "footsteps",
+        "leaves",
+        "quiet",
+        "walk",
+        "field-recording"
+      ],
+      "task_id": "d7582a8a-7d10-4e42-9219-235825400f36",
+      "uses": 0
+    },
+    "rain/light_rain_loop": {
+      "added_at": "2026-11-25T21:21:36+07:00",
+      "author": "",
+      "category": "rain",
+      "download_url": "https://cms-assets.tutsplus.com/uploads/users/1631/posts/41924/audio-upload/mixkit_light_rain_loop_2393.wav",
+      "duration_s": 15.0,
+      "file": "rain/light_rain_loop.ogg",
+      "fit_note": "Mưa nhẹ nền, loop 15s, dùng làm bed dưới voiceover hoặc cảnh mở đầu mưa phùn. download_url là bản sao .wav của đúng file Mixkit này được host lại trên trang Tuts+; tải chính thức từ trang Mixkit không cần đăng nhập.",
+      "license": "Mixkit-Free-License",
+      "name": "Light rain loop",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "8b4c2979b6ebf100724b3f3097f1e2cc11e8e27f52f107fc719aac68ddeb8e77",
+      "source_page_url": "https://mixkit.co/free-sound-effects/rain/",
+      "tags": [
+        "rain",
+        "light-rain",
+        "loop",
+        "ambience"
+      ],
+      "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
+      "uses": 0
+    },
+    "rain/rainy_day": {
+      "added_at": "2026-11-25T21:21:41+07:00",
+      "author": "franciscapalma",
+      "category": "rain",
+      "download_url": "https://cdn.freesound.org/previews/521/521863_11086558-hq.mp3",
+      "duration_s": 10.7,
+      "file": "rain/rainy_day.ogg",
+      "fit_note": "Tiếng mưa ngày mưa, CC0, trang Freesound đã mở và xác nhận giấy phép CC0, 382 lượt tải; cần đăng nhập Freesound mới tải được nên download_url để rỗng. Thời lượng chưa xác minh (để 0).",
+      "license": "CC0-1.0",
+      "name": "Rainy Day",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "fa80bd4ad89ff7bdd2d818e8153196cd10f984ba141fc512b4a79d3fb64ec1f2",
+      "source_page_url": "https://freesound.org/people/franciscapalma/sounds/521863/",
+      "tags": [
+        "rain",
+        "rainy-day"
+      ],
+      "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
+      "uses": 0
+    }
+  },
+  "updated_at": "2026-11-25T21:21:41+07:00",
+  "version": 1
+}
