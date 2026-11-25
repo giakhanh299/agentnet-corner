@@ -1,7 +1,7 @@
 {
   "sounds": {
     "footsteps/footsteps_on_leaves_natural_outdoor_foley": {
-      "added_at": "2026-11-25T21:21:28+07:00",
+      "added_at": "2026-11-25T21:26:31+07:00",
       "author": "LUISCAVAR",
       "category": "footsteps",
       "download_url": "https://cdn.freesound.org/previews/879/879850_19174358-hq.mp3",
@@ -10,9 +10,9 @@
       "fit_note": "Di cham tren la kho ngoai troi, ghi am thuc te (field recording), crunching/rustling ro rang; dai 40.8s vuot muc 2-30s nen can cat ngan. Can dang nhap Freesound de tai file goc.",
       "license": "CC-BY-4.0",
       "name": "Footsteps on Leaves - Natural Outdoor Foley",
-      "replaced": false,
+      "replaced": true,
       "score": 0.0,
-      "sha256": "d3ba120e5b91ebfbe24a95756ecca43c1ccac3d588598943c41e2f525fe9edbf",
+      "sha256": "f79de6f86df09639fbbd2aebd52bf0b1b3c695ad61fbf8f914836c8afce67bf4",
       "source_page_url": "https://freesound.org/people/LUISCAVAR/sounds/879850/",
       "tags": [
         "footsteps",
@@ -25,7 +25,7 @@
       "uses": 0
     },
     "footsteps/soft_leaves_wav": {
-      "added_at": "2026-11-25T21:21:33+07:00",
+      "added_at": "2026-11-25T21:26:36+07:00",
       "author": "winkysadface",
       "category": "footsteps",
       "download_url": "https://cdn.freesound.org/previews/674/674151_13530534-hq.mp3",
@@ -34,9 +34,9 @@
       "fit_note": "Di khe tren duong la trong vuon bach thao, it tap am, dung chuan 2-30s; hop canh nhan vat di ren nhe nhang / lang nghe. WAV 44.1kHz 24-bit stereo. Can dang nhap Freesound de tai file goc.",
       "license": "CC-BY-4.0",
       "name": "Soft Leaves.wav",
-      "replaced": false,
+      "replaced": true,
       "score": 0.0,
-      "sha256": "16a89f6e539e664fa7f73624c637f9e8c08b4199810779236bb8087e94f91106",
+      "sha256": "6d949ceda27132c865094063fe99616af1584ab0063c6e5776a6f48607dbdff7",
       "source_page_url": "https://freesound.org/people/winkysadface/sounds/674151/",
       "tags": [
         "footsteps",
@@ -48,8 +48,77 @@
       "task_id": "d7582a8a-7d10-4e42-9219-235825400f36",
       "uses": 0
     },
+    "leaves_wind/leavesrustling08": {
+      "added_at": "2026-11-25T21:26:47+07:00",
+      "author": "falcospizaetus",
+      "category": "leaves_wind",
+      "download_url": "https://cdn.freesound.org/previews/489/489932_10570192-hq.mp3",
+      "duration_s": 1.96,
+      "file": "leaves_wind/leavesrustling08.ogg",
+      "fit_note": "La kho xao xac/nghien nat, ngan gon 2s — dung cho khoanh khac la roi hoac tay boc la kho; da xac minh CC0 o trang item Freesound.",
+      "license": "CC0-1.0",
+      "name": "LeavesRustling08",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "6f4c4c6acc789db956564b32a2574e3ea194059d9ce0f4e562c2aebc887ff8a8",
+      "source_page_url": "https://freesound.org/people/falcospizaetus/sounds/489932/",
+      "tags": [
+        "leaves",
+        "rustling",
+        "dry leaves",
+        "foliage"
+      ],
+      "task_id": "ae3cc3ef-8bb0-4626-84e1-aa37bcdcb5d4",
+      "uses": 0
+    },
+    "leaves_wind/moss_rubbing_on_redwood_tree_dry_leaves_crumblin": {
+      "added_at": "2026-11-25T21:27:01+07:00",
+      "author": "CVLTIV8R",
+      "category": "leaves_wind",
+      "download_url": "https://cdn.freesound.org/previews/803/803678_2520418-hq.mp3",
+      "duration_s": 30.0,
+      "file": "leaves_wind/moss_rubbing_on_redwood_tree_dry_leaves_crumblin.ogg",
+      "fit_note": "La kho vun nat + ambience rung, 11s — lop nen cho canh rung/luy tre ve dem; da xac minh CC0 o trang item Freesound.",
+      "license": "CC0-1.0",
+      "name": "Moss Rubbing on Redwood Tree, Dry Leaves Crumbling and Forest Ambience",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "6189aded0c5b9bca4538f858e84b1a7e46fd24afa96914d30b822874d07c3892",
+      "source_page_url": "https://freesound.org/people/CVLTIV8R/sounds/803678/",
+      "tags": [
+        "dry leaves",
+        "crumbling",
+        "forest",
+        "ambience"
+      ],
+      "task_id": "ae3cc3ef-8bb0-4626-84e1-aa37bcdcb5d4",
+      "uses": 0
+    },
+    "leaves_wind/snapping_twig": {
+      "added_at": "2026-11-25T21:27:02+07:00",
+      "author": "stephan",
+      "category": "leaves_wind",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/1f/Snapping_twig.ogg/Snapping_twig.ogg.mp3",
+      "duration_s": 4.8,
+      "file": "leaves_wind/snapping_twig.ogg",
+      "fit_note": "Mot tieng be canh don, 5s, Public Domain (pdsounds) — dung cho khoanh khac gay rac don le; co link mp3 truc tiep da hien tren trang file.",
+      "license": "CC0-1.0",
+      "name": "Snapping twig",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "db0c04ce62068fd01317428fa79a6b3210ac4de1b94b58c974d3ab5acf12930a",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Snapping_twig.ogg",
+      "tags": [
+        "twig",
+        "snap",
+        "breaking",
+        "wood"
+      ],
+      "task_id": "ae3cc3ef-8bb0-4626-84e1-aa37bcdcb5d4",
+      "uses": 0
+    },
     "rain/light_rain_loop": {
-      "added_at": "2026-11-25T21:21:36+07:00",
+      "added_at": "2026-11-25T21:26:38+07:00",
       "author": "",
       "category": "rain",
       "download_url": "https://cms-assets.tutsplus.com/uploads/users/1631/posts/41924/audio-upload/mixkit_light_rain_loop_2393.wav",
@@ -58,9 +127,9 @@
       "fit_note": "Mưa nhẹ nền, loop 15s, dùng làm bed dưới voiceover hoặc cảnh mở đầu mưa phùn. download_url là bản sao .wav của đúng file Mixkit này được host lại trên trang Tuts+; tải chính thức từ trang Mixkit không cần đăng nhập.",
       "license": "Mixkit-Free-License",
       "name": "Light rain loop",
-      "replaced": false,
+      "replaced": true,
       "score": 0.0,
-      "sha256": "8b4c2979b6ebf100724b3f3097f1e2cc11e8e27f52f107fc719aac68ddeb8e77",
+      "sha256": "633624f5c09fdc6a2b0ce1c69e485570b44ca772f261441ac50ff46cf4fd87be",
       "source_page_url": "https://mixkit.co/free-sound-effects/rain/",
       "tags": [
         "rain",
@@ -72,7 +141,7 @@
       "uses": 0
     },
     "rain/rainy_day": {
-      "added_at": "2026-11-25T21:21:41+07:00",
+      "added_at": "2026-11-25T21:26:43+07:00",
       "author": "franciscapalma",
       "category": "rain",
       "download_url": "https://cdn.freesound.org/previews/521/521863_11086558-hq.mp3",
@@ -81,9 +150,9 @@
       "fit_note": "Tiếng mưa ngày mưa, CC0, trang Freesound đã mở và xác nhận giấy phép CC0, 382 lượt tải; cần đăng nhập Freesound mới tải được nên download_url để rỗng. Thời lượng chưa xác minh (để 0).",
       "license": "CC0-1.0",
       "name": "Rainy Day",
-      "replaced": false,
+      "replaced": true,
       "score": 0.0,
-      "sha256": "fa80bd4ad89ff7bdd2d818e8153196cd10f984ba141fc512b4a79d3fb64ec1f2",
+      "sha256": "3e93469a6e29ae01624d9a45e8b6fbf2dee3b4223259f7a0cd4e358f98e92df1",
       "source_page_url": "https://freesound.org/people/franciscapalma/sounds/521863/",
       "tags": [
         "rain",
@@ -93,6 +162,6 @@
       "uses": 0
     }
   },
-  "updated_at": "2026-11-25T21:21:41+07:00",
+  "updated_at": "2026-11-25T21:27:02+07:00",
   "version": 1
 }
