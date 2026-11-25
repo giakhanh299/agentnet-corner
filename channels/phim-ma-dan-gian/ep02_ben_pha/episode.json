@@ -94,7 +94,7 @@
       "image_prompt": "Vertical 9:16 extreme close-up at night: a duck-egg oil lamp flame flickering in a glass chimney, warm amber glow, a rough old hand shielding the flame, darkness and thin mist behind, shallow depth of field, documentary film grain.",
       "motion": "zoom chậm vào ngọn lửa, lửa rung nhẹ theo gió",
       "voiceover": "Lửa đèn dầu run rẩy, soi bóng nước đen.",
-      "vo_at": 0.8,
+      "vo_at": 0.6,
       "sfx": [
         {
           "tag": "fire_lamp",
@@ -144,7 +144,7 @@
       "image_prompt": "Vertical 9:16 night medium shot in heavy mist: a pale ghostly silhouette of a woman in an old white ao dai standing at the far end of the wooden ferry pier seen from behind, long wet black hair covering her face, face never visible, oil lamp light from behind outlining her shape, dark river shimmering, psychological folk horror, film grain.",
       "motion": "lấy nét chuyển từ ngọn đèn dầu sang bóng người rồi chìm vào bóng tối",
       "voiceover": "Áo dài trắng đứng đó, tóc dài che mặt.",
-      "vo_at": 0.8,
+      "vo_at": 0.6,
       "sfx": [
         {
           "tag": "leaves_wind",
@@ -156,8 +156,8 @@
         {
           "tag": "human_eerie",
           "desc": "tiếng thở dài rất nhẹ sau lời thoại",
-          "at": 4.0,
-          "dur": 1,
+          "at": 4.4,
+          "dur": 0.6,
           "gain_db": -26
         }
       ]
@@ -201,7 +201,7 @@
           "desc": "bước chân trần trên ván gỗ ướt",
           "at": 0,
           "dur": 5,
-          "gain_db": -20
+          "gain_db": -24
         },
         {
           "tag": "wood_creak",
@@ -219,14 +219,14 @@
       "image_prompt": "Vertical 9:16 close-up at night: black Tien River water lapping against the wooden ferry hull, pale ripples spreading, white foam fading, a strand of long wet black hair floating briefly on the surface, no face visible, cold cyan moonlight, film grain.",
       "motion": "hạ máy xuống sát mặt nước, gợn sóng lan ra",
       "voiceover": "Nước sông Tiền vỗ nhẹ, bọt trắng tan dần.",
-      "vo_at": 0.8,
+      "vo_at": 0.6,
       "sfx": [
         {
           "tag": "water",
           "desc": "sóng vỗ vào mạn phà",
           "at": 0,
           "dur": 5,
-          "gain_db": -20
+          "gain_db": -24
         },
         {
           "tag": "night_creatures",
@@ -258,8 +258,8 @@
         {
           "tag": "horror_stinger",
           "desc": "tiếng động sắc lạnh ngắn sau lời gọi",
-          "at": 3.5,
-          "dur": 1.2,
+          "at": 4.0,
+          "dur": 1.0,
           "gain_db": -22
         }
       ]
@@ -271,7 +271,7 @@
       "image_prompt": "Vertical 9:16 cinematic night close-up: Ong Sau's weathered face in the warm oil lamp light, eyes wide with fear, lips pressed shut, his rough hand gripping a wooden oar tightly, mist and darkness behind him, documentary film grain.",
       "motion": "zoom chậm vào mặt Ông Sáu, đèn dầu lung linh",
       "voiceover": "Ông Sáu nín thở, tay siết chặt mái chèo.",
-      "vo_at": 0.8,
+      "vo_at": 0.6,
       "sfx": [
         {
           "tag": "fire_lamp",
@@ -283,8 +283,8 @@
         {
           "tag": "horror_stinger",
           "desc": "tiếng động căng ngắn",
-          "at": 3.5,
-          "dur": 1.2,
+          "at": 4.4,
+          "dur": 0.6,
           "gain_db": -24
         }
       ]
@@ -328,7 +328,7 @@
           "desc": "gà gáy xa",
           "at": 0.5,
           "dur": 4,
-          "gain_db": -22
+          "gain_db": -26
         },
         {
           "tag": "water",
@@ -339,5 +339,6 @@
         }
       ]
     }
-  ]
+  ],
+  "cover_image": "scene_05.png"
 }
