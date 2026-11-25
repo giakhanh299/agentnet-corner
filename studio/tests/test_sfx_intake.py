@@ -30,6 +30,8 @@ class SfxIntakeTests(unittest.TestCase):
     def test_extract_json_from_summary(self):
         res = {"summary": 'Đã tìm xong.\n{"sounds":[{"name":"Mưa lá chuối","category":"rain"}]}\nGiới hạn: ...'}
         self.assertEqual(sfx_intake.extract_sounds(res)[0]["name"], "Mưa lá chuối")
+        nested = {"summary": '{"task_id":"x","result":{"category":"water","sounds":[{"title":"river.wav"}]}}'}
+        self.assertEqual(sfx_intake.extract_sounds(nested)[0]["title"], "river.wav")
 
     def test_ingest_end_to_end_and_reject(self):
         self.assertTrue(SAMPLE.is_file())

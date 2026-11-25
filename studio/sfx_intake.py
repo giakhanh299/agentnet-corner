@@ -67,14 +67,34 @@ def normalize_license(raw: str) -> str | None:
     return None
 
 
+def _find_sounds(obj) -> list[dict]:
+    if isinstance(obj, dict):
+        if isinstance(obj.get("sounds"), list):
+            return obj["sounds"]
+        for v in obj.values():
+            found = _find_sounds(v)
+            if found:
+                return found
+    return []
+
+
 def extract_sounds(result: dict | None) -> list[dict]:
-    """Lấy danh sách sounds từ result của Muse (field 'sounds' hoặc khối JSON trong summary)."""
+    """Lấy danh sách sounds từ result của Muse (field 'sounds' hoặc khối JSON trong summary, kể cả lồng trong result)."""
     if not result:
         return []
-    if isinstance(result.get("sounds"), list):
-        return result["sounds"]
+    found = _find_sounds(result)
+    if found:
+        return found
     texts = [str(result.get(k) or "") for k in ("summary", "report", "content")]
     for txt in texts:
+        stripped = txt.strip()
+        if stripped.startswith("{"):
+            try:
+                found = _find_sounds(json.loads(stripped))
+                if found:
+                    return found
+            except json.JSONDecodeError:
+                pass
         for m in re.finditer(r"\{[\s\S]*?\"sounds\"\s*:\s*\[", txt):
             start = m.start()
             depth = 0
@@ -85,9 +105,9 @@ def extract_sounds(result: dict | None) -> list[dict]:
                     depth -= 1
                     if depth == 0:
                         try:
-                            data = json.loads(txt[start:i + 1])
-                            if isinstance(data.get("sounds"), list):
-                                return data["sounds"]
+                            found = _find_sounds(json.loads(txt[start:i + 1]))
+                            if found:
+                                return found
                         except json.JSONDecodeError:
                             pass
                         break
@@ -186,7 +206,7 @@ def resolve_download(snd: dict) -> str:
 
 
 def ingest_sound(snd: dict, task_id: str, manifest: dict, dry_run: bool = False, default_cat: str = "misc") -> tuple[str, str]:
-    name = str(snd.get("name") or "").strip()
+    name = str(snd.get("name") or snd.get("title") or "").strip()
     cat = re.sub(r"[^a-z_]", "_", str(snd.get("category") or "").strip().lower())
     cat = cat if cat in CATEGORIES else (default_cat if default_cat in CATEGORIES else "misc")
     lic = normalize_license(str(snd.get("license") or ""))
@@ -262,7 +282,8 @@ def run(rows: list[dict], dry_run: bool = False) -> dict:
             except Exception as exc:  # tải lỗi, ffmpeg lỗi...
                 status, detail = "ERROR", f"{type(exc).__name__}: {str(exc)[:120]}"
             stats[status] = stats.get(status, 0) + 1
-            print(f"[{row['id'][:8]}] {status:<9} {snd.get('name', '')[:40]:<40} {detail}")
+            label = str(snd.get("name") or snd.get("title") or "")
+            print(f"[{row['id'][:8]}] {status:<9} {label[:40]:<40} {detail}")
     if not dry_run:
         save_manifest(manifest)
     print("Tổng:", stats)
