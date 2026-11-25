@@ -1,0 +1,89 @@
+{
+  "title": "Ma Da Kéo Giò",
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "episode": 1,
+  "seed": 1,
+  "voice": "phonui",
+  "aigc_label": true,
+  "format": {"ratio": "9:16", "width": 1080, "height": 1920, "fps": 30},
+  "music": {"generator": "horror", "gain_db": 0},
+  "character_sheet": {
+    "ong_tu": "Ông Tư: người đàn ông Việt Nam miền Tây 65 tuổi, gầy, da rám nắng sạm, mặt khắc khổ nhiều nếp nhăn, tóc muối tiêu cắt ngắn, râu lún phún bạc, áo bà ba đen bạc màu, quần đen xắn gối, khăn rằn trắng-đen quàng cổ, chân trần.",
+    "ma_da": "Ma Da: chỉ thấy bàn tay và bóng dáng mờ, da trắng nhợt xanh, ngón tay dài, tóc đen dài ướt rũ che mặt, KHÔNG BAO GIỜ lộ mặt rõ, không máu me."
+  },
+  "visual_dna": "Làng quê miền Tây Nam Bộ Việt Nam thập niên 1960: nhà ba gian mái lá dừa/ngói cũ rêu phong, cầu khỉ bằng thân tre bắc qua sông, bến sông có xuồng ba lá, rặng dừa nước và lũy tre, đèn dầu hột vịt ánh vàng cam là nguồn sáng ấm duy nhất, trăng xanh lạnh, sương trắng mỏng trôi trên mặt nước. Phong cách điện ảnh tài liệu, hạt film nhẹ, tông màu: vàng đèn dầu, xanh trăng, đen sâu.",
+  "negative_prompt": "no red Chinese lanterns, no Chinese palace, no curved pagoda roof, no Hanfu, no Chinese or Japanese characters, no text, no letters, no watermark, no logo, no modern clothing, no electric lights, no plastic, no cars, no anime style, no cartoon, no gore, no blood, no visible ghost face, no extra fingers, no distorted hands",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – đêm sông Hậu",
+      "duration_s": 15,
+      "image_prompt": "Vertical 9:16 cinematic night shot, 1960s Mekong Delta riverside: old three-room Vietnamese house with mossy roof on the bank, a single duck-egg oil lamp glowing amber in its window, a bamboo monkey bridge crossing the dark still river, water coconut palms silhouetted, pale blue moonlight, thin white mist drifting over the water surface, eerie calm, documentary film grain.",
+      "motion": "camera đẩy chậm từ bờ sông về phía ngôi nhà, sương trôi ngang sang trái, đèn dầu lung linh nhẹ",
+      "voiceover": "Đêm đó, nước sông Hậu rút cạn… chỉ còn tiếng kéo giò dưới bến.",
+      "vo_at": 1.0,
+      "sfx": [
+        {"tag": "night_creatures", "desc": "ếch nhái dế kêu xa", "at": 0, "dur": 15, "gain_db": -26},
+        {"tag": "water", "desc": "nước sông vỗ nhẹ", "at": 0, "dur": 15, "gain_db": -28},
+        {"tag": "horror_stinger", "desc": "drone trầm", "at": 0, "dur": 6, "gain_db": -24}
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Ông Tư kéo lưới",
+      "duration_s": 20,
+      "image_prompt": "Vertical 9:16 cinematic night shot: Ong Tu (thin 65-year-old Mekong Delta fisherman, sun-darkened wrinkled face, short salt-and-pepper hair, faded black ba ba shirt, black-and-white checkered khan ran scarf, barefoot) standing on a narrow bamboo monkey bridge pulling a heavy wet fishing net from the black river with both rough hands, bamboo grove behind him, oil lamp hanging on a bamboo pole casting warm amber light, cold moonlight rim light, mist, documentary film grain.",
+      "motion": "máy quay cầm tay nghiêng chậm từ mặt ông Tư xuống đôi tay rồi xuống mặt nước, lưới căng, nước nhỏ giọt",
+      "voiceover": "Ông Tư chài lưới ba mươi năm, chưa thấy con nước nào lặng như đêm ấy. Cái giò lưới… tự dưng nặng trĩu.",
+      "vo_at": 0.8,
+      "sfx": [
+        {"tag": "wood_creak", "desc": "cầu tre kẽo kẹt", "at": 0, "dur": 20, "gain_db": -22},
+        {"tag": "water", "desc": "kéo lưới dưới nước", "at": 6, "dur": 10, "gain_db": -20},
+        {"tag": "night_creatures", "desc": "chó sủa xa", "at": 12, "dur": 4, "gain_db": -28}
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Bàn tay trắng dưới nước",
+      "duration_s": 15,
+      "image_prompt": "Vertical 9:16 extreme close-up at night: an unnaturally pale bluish-white hand with long thin fingers rising from black river water and gripping the edge of a fishing net, cold blue-green glow beneath the surface, ripples, wet strands of long black hair floating nearby, no face visible, Vietnamese folk horror mood, desaturated except cold cyan, film grain, no blood.",
+      "motion": "zoom ra chậm để lộ thêm lưới, bàn tay siết chặt dần, gợn nước lan ra",
+      "voiceover": "Dưới nước, có bàn tay níu lấy giò lưới. Không phải cá. Năm ngón tay dài, lạnh như nước giếng khuya.",
+      "vo_at": 0.6,
+      "sfx": [
+        {"tag": "water", "desc": "bong bóng nổi lên", "at": 1, "dur": 6, "gain_db": -20},
+        {"tag": "horror_stinger", "desc": "riser căng dần", "at": 8, "dur": 7, "gain_db": -20}
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Giọng ma – đèn dầu chao",
+      "duration_s": 20,
+      "image_prompt": "Vertical 9:16 night scene in heavy mist: a pale ghostly silhouette of a woman with long wet black hair covering her face standing at the far end of the bamboo monkey bridge, an oil lamp on a bamboo pole swinging wildly and casting distorted shadows, Ong Tu's dropped fishing net on the bridge in the foreground, dark river shimmering, face never visible, psychological folk horror, film grain.",
+      "motion": "lấy nét chuyển từ ngọn đèn dầu chao đảo sang bóng người rồi chìm vào bóng tối",
+      "voiceover": "Trả… giò… cho tao…",
+      "vo_at": 2.0,
+      "ghost": true,
+      "ghost_semitones": -3,
+      "sfx": [
+        {"tag": "human_eerie", "desc": "thì thầm xa", "at": 0, "dur": 6, "gain_db": -24},
+        {"tag": "leaves_wind", "desc": "gió rít qua lũy tre", "at": 0, "dur": 20, "gain_db": -24},
+        {"tag": "footsteps", "desc": "bước chân chạy hoảng loạn trên cầu tre", "at": 9, "dur": 6, "gain_db": -18},
+        {"tag": "human_eerie", "desc": "tiếng cười vọng dọc bến sông", "at": 14, "dur": 5, "gain_db": -22}
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Kết mở – gà gáy bình minh",
+      "duration_s": 12,
+      "image_prompt": "Vertical 9:16 pre-dawn wide shot of the same Mekong Delta riverside: mist lifting from the river, first pale golden light on the horizon, the empty bamboo monkey bridge with an abandoned wet fishing net lying on it, the old three-room house far in the background, serene yet eerie stillness, documentary film grain, warm-cold color contrast.",
+      "motion": "lùi máy rất chậm mở rộng khung cảnh khi trời hửng sáng",
+      "voiceover": "Người làng bảo: Ma Da chỉ kéo giò ai tham. Còn ông Tư… từ đó không chài đêm nữa. Bạn có dám ra bến sông lúc nửa đêm?",
+      "vo_at": 0.6,
+      "sfx": [
+        {"tag": "night_creatures", "desc": "gà gáy xa", "at": 0.5, "dur": 4, "gain_db": -22},
+        {"tag": "rain", "desc": "giọt nước nhỏ giọt từ mái hiên", "at": 0, "dur": 12, "gain_db": -28}
+      ]
+    }
+  ]
+}
