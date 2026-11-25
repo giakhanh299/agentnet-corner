@@ -1,5 +1,28 @@
 {
   "sounds": {
+    "folk_oneshot/metal_barrel_rolling": {
+      "added_at": "2026-11-25T21:37:42+07:00",
+      "author": "caquet",
+      "category": "folk_oneshot",
+      "download_url": "https://cdn.freesound.org/previews/432/432217_1645319-hq.mp3",
+      "duration_s": 19.5,
+      "file": "folk_oneshot/metal_barrel_rolling.ogg",
+      "fit_note": "Thung kim loai lan - thay the gan nhat cho lon thiec lan tim duoc tren Freesound; khong phai lon thiec nho. Duration khong hien tren trang da mo.",
+      "license": "CC0-1.0",
+      "name": "Metal barrel rolling",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "b44f730dcc537c497431aa4819f63a563cf0aa000c7746779b67ff7a19b241b5",
+      "source_page_url": "https://freesound.org/people/caquet/sounds/432217/",
+      "tags": [
+        "metal",
+        "rolling",
+        "barrel",
+        "can"
+      ],
+      "task_id": "e0eb7b04-9267-499f-a013-a5abbff83c7a",
+      "uses": 0
+    },
     "footsteps/footsteps_on_leaves_natural_outdoor_foley": {
       "added_at": "2026-11-25T21:26:31+07:00",
       "author": "LUISCAVAR",
@@ -160,8 +183,106 @@
       ],
       "task_id": "2fbc83e5-7fdb-498f-9527-ccfe876e2c80",
       "uses": 0
+    },
+    "wood_creak/bed_creaking_in_various_ways": {
+      "added_at": "2026-11-25T21:37:26+07:00",
+      "author": "MieckevanHoek",
+      "category": "wood_creak",
+      "download_url": "https://cdn.freesound.org/previews/765/765137_15764256-hq.mp3",
+      "duration_s": 17.6,
+      "file": "wood_creak/bed_creaking_in_various_ways.ogg",
+      "fit_note": "Vong dua keo ket / cau tre rung (proxy) - rhythmic wood-on-wood creaking; no dedicated CC0 hammock or bamboo-bridge sound found, this is the closest verified substitute.",
+      "license": "CC0-1.0",
+      "name": "Bed creaking in various ways.",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "cf4d3db65861fa7b87054eef19e28676d19ca1e5e09bddb2782235eb4f9e4dce",
+      "source_page_url": "https://freesound.org/people/MieckevanHoek/sounds/765137/",
+      "tags": [
+        "creaking",
+        "furniture",
+        "wood"
+      ],
+      "task_id": "c5500774-1a22-4001-8880-ccfe13c7b774",
+      "uses": 0
+    },
+    "wood_creak/drawer_cabinet_chest_open_close_creak_squeak_mec": {
+      "added_at": "2026-11-25T21:37:20+07:00",
+      "author": "dimapain",
+      "category": "wood_creak",
+      "download_url": "https://cdn.freesound.org/previews/864/864781_18051562-hq.mp3",
+      "duration_s": 26.8,
+      "file": "wood_creak/drawer_cabinet_chest_open_close_creak_squeak_mec.ogg",
+      "fit_note": "Van go nut / tu go keo ket - several close-up wood creak/squeak variations in one file; trim one creak for a plank or chest strain.",
+      "license": "CC0-1.0",
+      "name": "drawer cabinet chest open close creak squeak mechanical friction wood foley variations close-up zoom-h5 xy-microphone_",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "5ccf8d23e48dd7291538fedbdfac4ff69fd2e01b4d108cf00c14c6a30b939412",
+      "source_page_url": "https://freesound.org/people/dimapain/sounds/864781/",
+      "tags": [
+        "cabinet",
+        "chest",
+        "creak",
+        "drawer",
+        "foley",
+        "friction",
+        "wood"
+      ],
+      "task_id": "c5500774-1a22-4001-8880-ccfe13c7b774",
+      "uses": 0
+    },
+    "wood_creak/wood_creak_04_wav": {
+      "added_at": "2026-11-25T21:37:35+07:00",
+      "author": "dheming",
+      "category": "wood_creak",
+      "download_url": "https://cdn.freesound.org/previews/193/193764_2035780-hq.mp3",
+      "duration_s": 27.7,
+      "file": "wood_creak/wood_creak_04_wav.ogg",
+      "fit_note": "San go keo ket / van go - squeaky wood floor, natural reverb; credit dheming when used (CC-BY).",
+      "license": "CC-BY-4.0",
+      "name": "Wood_Creak_04.wav",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "32517e6d5ef7511c0393f1bbf6ca44a387aa036e65f7d3277137b248842ee331",
+      "source_page_url": "https://freesound.org/s/193764/",
+      "tags": [
+        "wood",
+        "creak",
+        "floor",
+        "squeak"
+      ],
+      "task_id": "c5500774-1a22-4001-8880-ccfe13c7b774",
+      "uses": 0
+    },
+    "wood_creak/wooden_door_creaking": {
+      "added_at": "2026-11-25T21:37:11+07:00",
+      "author": "Mr_KeybOred",
+      "category": "wood_creak",
+      "download_url": "https://cdn.freesound.org/previews/414/414493_6417448-hq.mp3",
+      "duration_s": 17.1,
+      "file": "wood_creak/wooden_door_creaking.ogg",
+      "fit_note": "Cua go mo keo ket cham - single clean door creak, best for a slow folk-horror entrance.",
+      "license": "CC0-1.0",
+      "name": "Wooden Door Creaking",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "cab108615d303f58b57b735c251e6dd3d581e81e3d7f0d53cb7155d64e1f42fa",
+      "source_page_url": "https://freesound.org/s/414493/",
+      "tags": [
+        "door",
+        "creak",
+        "creaking",
+        "wood",
+        "wooden",
+        "hinge",
+        "open",
+        "foley"
+      ],
+      "task_id": "c5500774-1a22-4001-8880-ccfe13c7b774",
+      "uses": 0
     }
   },
-  "updated_at": "2026-11-25T21:27:02+07:00",
+  "updated_at": "2026-11-25T21:37:42+07:00",
   "version": 1
 }
