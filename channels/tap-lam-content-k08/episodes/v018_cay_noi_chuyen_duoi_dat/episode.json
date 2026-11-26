@@ -1,0 +1,311 @@
+{
+  "aigc_label": true,
+  "color_grade": "vivid_doc",
+  "cover_hook": "Rừng cây gửi tín hiệu cầu cứu cho nhau qua rễ?",
+  "cover_theme": "knowledge",
+  "cover_title": "INTERNET CỦA RỪNG CÂY",
+  "cta": "Bạn có tin cây cũng biết giúp nhau không? Bình luận nhé!",
+  "description": "Cây cối đang nhắn tin cho nhau dưới lòng đất qua mạng nấm rễ cây. Nghiên cứu của nhà sinh thái Suzanne Simard cho thấy cây mẹ chuyển chất dinh dưỡng cho cây con, và cây bị sâu tấn công có thể báo động cho cây khác qua rễ. Khám phá mạng gỗ của rừng cây cùng Tập Làm Content.",
+  "episode": 18,
+  "hashtags": [
+    "#TapLamConTent",
+    "#KhoaHoc",
+    "#CayCoi",
+    "#RungCay",
+    "#ThienNhien"
+  ],
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no gore, no blood, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Cây Cối Đang Nhắn Tin Dưới Lòng Đất | Tập Làm Content Tập 18",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – rừng cây nhắn tin",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunlight streaming through a dense green forest canopy, towering trees, vivid documentary photography, vertical 9:16, sharp macro detail, no text, no logo, no watermark.",
+      "motion": "máy quay đẩy chậm từ tán cây xuống mặt đất, nắng vàng xuyên qua lá",
+      "voiceover": "Rừng cây gửi tín hiệu cầu cứu cho nhau... qua rễ?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua tán lá",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 0,
+          "desc": "chim hót xa trong rừng",
+          "dur": 5,
+          "gain_db": -30.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Mạng lưới dưới chân",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on forest floor soil, exposed tree roots intertwining like cables, white fungal threads, vivid documentary macro, vertical 9:16, sharp detail, no text.",
+      "motion": "máy quay hạ thấp chậm xuống mặt đất, lộ rễ cây đan vào nhau",
+      "voiceover": "Dưới chân bạn, rễ cây nối nhau thành mạng lưới khổng lồ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân nhẹ trên lá khô",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gió qua tán lá",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Nấm cộng sinh làm cầu nối",
+      "duration_s": 5.0,
+      "image_prompt": "Extreme macro of white mycelium threads wrapping tree roots in dark moist soil, golden light rays, vivid documentary photography, vertical 9:16, sharp detail, no text.",
+      "motion": "zoom chậm vào sợi nấm trắng bám quanh rễ cây trong đất ẩm",
+      "voiceover": "Nấm cộng sinh bám vào rễ, làm cầu nối giữa các cây.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước nhỏ giọt trong đất ẩm",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "water"
+        },
+        {
+          "at": 2,
+          "desc": "gió nhẹ qua lá",
+          "dur": 3,
+          "gain_db": -30.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Phát hiện gần ba mươi năm trước",
+      "duration_s": 5.0,
+      "image_prompt": "Sunlit forest scene, researcher hands holding a soil sample with pale roots, bright natural light, vivid documentary style, vertical 9:16, no text.",
+      "motion": "máy quay nghiêng chậm từ bàn tay cầm mẫu đất lên tán rừng sáng",
+      "voiceover": "Phát hiện này có từ gần ba mươi năm trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân trên đường rừng",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua rừng",
+          "dur": 5,
+          "gain_db": -30.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Cây mẹ nuôi cây con",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on a giant mother tree, young seedlings growing in its shade, golden sunbeams, vivid documentary photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm từ thân cây mẹ xuống cây con mọc trong bóng râm",
+      "voiceover": "Cây mẹ chuyển chất dinh dưỡng cho cây con qua mạng nấm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió qua tán lá",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "chim hót buổi sáng",
+          "dur": 4,
+          "gain_db": -30.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Sâu tấn công, cây báo động",
+      "duration_s": 5.0,
+      "image_prompt": "Dramatic close-up of green leaves with tiny aphids, soft sunlight, vivid macro documentary, vertical 9:16, sharp detail, no text.",
+      "motion": "zoom chậm vào lá cây có rệp, nắng mềm chiếu qua gân lá",
+      "voiceover": "Khi sâu tấn công, cây báo động cho cây khác qua rễ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió rít nhẹ qua lá",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 2,
+          "desc": "mưa phùn xa",
+          "dur": 3,
+          "gain_db": -30.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Cây nhận tín hiệu, chuẩn bị phòng vệ",
+      "duration_s": 5.0,
+      "image_prompt": "Bright macro of a young tree leaf strengthening, fresh green veins glowing in sunlight, vivid documentary photography, vertical 9:16, sharp detail, no text.",
+      "motion": "giữ khung cận gân lá xanh, ánh nắng lan dần trên mặt lá",
+      "voiceover": "Cây nhận tín hiệu liền chuẩn bị phòng vệ trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua lá non",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 0,
+          "desc": "nước nhỏ giọt",
+          "dur": 5,
+          "gain_db": -30.0,
+          "tag": "water"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Cây con mọc trong bóng râm",
+      "duration_s": 5.0,
+      "image_prompt": "Soft sunlight filtering through canopy onto a tiny seedling sprouting in deep shade, vivid documentary macro, vertical 9:16, sharp detail, no text.",
+      "motion": "máy quay hạ thấp chậm xuống cây con nảy mầm trong bóng râm",
+      "voiceover": "Mạng nấm còn giúp cây con mọc trong bóng râm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua tán cây",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 2,
+          "desc": "chim hót xa",
+          "dur": 3,
+          "gain_db": -30.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Mạng gỗ của rừng cây",
+      "duration_s": 5.0,
+      "image_prompt": "Aerial view of a vast green forest at golden hour, trees connected like a living network, warm sunlight, vivid documentary photography, vertical 9:16, no text.",
+      "motion": "bay lên chậm mở rộng khung cảnh rừng cây nối nhau dưới nắng vàng",
+      "voiceover": "Người ta gọi đây là mạng gỗ của rừng cây.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió qua rừng cây",
+          "dur": 5,
+          "gain_db": -26.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Một mạng nấm nối rất nhiều cây",
+      "duration_s": 5.0,
+      "image_prompt": "Underground cross-section view of a glowing fungal network linking many tree roots, warm light, vivid documentary style, vertical 9:16, no text.",
+      "motion": "máy quay lướt chậm dọc mạng nấm phát sáng nối các rễ cây",
+      "voiceover": "Một mạng nấm nối rất nhiều cây với nhau.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước chảy ngầm nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ",
+          "dur": 5,
+          "gain_db": -30.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunny forest path, a friendly young woman smiling at camera among tall trees, warm golden light, vivid documentary photography, vertical 9:16, no text.",
+      "motion": "giữ khung trung cảnh người dẫn mỉm cười, nắng vàng sau lưng, rừng cây xung quanh",
+      "voiceover": "Bạn có tin cây cũng biết giúp nhau không? Bình luận nhé!",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "chim hót vui buổi sáng",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "night_creatures"
+        },
+        {
+          "at": 1,
+          "desc": "bước chân nhẹ trên lá khô",
+          "dur": 2,
+          "gain_db": -30.0,
+          "tag": "footsteps"
+        }
+      ]
+    }
+  ],
+  "series": "Tập Làm Content",
+  "title": "Cây Cối Đang Nhắn Tin Dưới Lòng Đất",
+  "voice": "maianh",
+  "seed": 18,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

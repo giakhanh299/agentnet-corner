@@ -1,0 +1,312 @@
+{
+  "episode": 15,
+  "title": "Bạch Tuộc Có 3 Trái Tim Và 9 Bộ Não",
+  "publish_title": "Bạch Tuộc Có 3 Trái Tim Và 9 Bộ Não | Tập Làm Content",
+  "cover_title": "3 TRÁI TIM 9 BỘ NÃO",
+  "cover_hook": "Loài vật ngoài hành tinh ngay dưới đại dương?",
+  "description": "Bạch tuộc có ba trái tim, máu màu xanh và chín bộ não. Cùng khám phá sinh vật kỳ lạ nhất đại dương trong năm mươi lăm giây.",
+  "hashtags": [
+    "#TapLamConTent",
+    "#BachTuoc",
+    "#KhoaHoc",
+    "#DaiDuong",
+    "#DongVat",
+    "#KhamPha"
+  ],
+  "cta": "Bạn thích trái tim hay bộ não nào hơn? Bình luận nhé!",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blurry, low quality, deformed, extra limbs",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu dưới đại dương",
+      "duration_s": 5.0,
+      "image_prompt": "Vivid macro of a curious octopus gliding through sunlit turquoise ocean water, tentacles curling gracefully, sharp documentary detail, deep blue reef behind, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow push in",
+      "voiceover": "Loài vật ngoài hành tinh ngay dưới đại dương?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Ba trái tim cùng đập",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of an octopus resting on a coral rock, three soft glowing heart shapes suggested by warm light, vivid documentary macro, clear blue water, vertical 9:16, no text, no logo, no watermark",
+      "motion": "gentle pan right",
+      "voiceover": "Bạch tuộc có tới ba trái tim đang đập cùng lúc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Hai tim tới mang",
+      "duration_s": 5.0,
+      "image_prompt": "Macro of octopus gills and mantle in clear blue water, sunlight rays falling from above, vivid documentary style, sharp detail, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow tilt up",
+      "voiceover": "Hai tim đưa máu tới mang, một tim nuôi toàn cơ thể.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Tim ngừng khi bơi",
+      "duration_s": 5.0,
+      "image_prompt": "Octopus swimming fast with jet propulsion over sandy seabed, water bubbles trailing behind, vivid documentary footage, bright sunlight, vertical 9:16, no text, no logo, no watermark",
+      "motion": "tracking shot",
+      "voiceover": "Khi bơi nhanh, tim chính tạm ngừng để tiết kiệm sức.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Máu màu xanh",
+      "duration_s": 5.0,
+      "image_prompt": "Extreme macro of blue octopus blood vessel under translucent skin, copper-blue tones, vivid scientific documentary, sharp focus, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow zoom in",
+      "voiceover": "Máu của chúng có màu xanh vì chứa đồng, không phải sắt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Chín bộ não",
+      "duration_s": 5.0,
+      "image_prompt": "Octopus head close-up with large intelligent eyes, eight arms spread on a reef, vivid documentary macro, sunlit clear water, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow push in",
+      "voiceover": "Chín bộ não, một ở đầu, tám nằm trong tám tay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Tay tự cảm nhận",
+      "duration_s": 5.0,
+      "image_prompt": "Macro of octopus arm suckers touching a seashell, tasting the surface, vivid documentary detail, bright reef light, vertical 9:16, no text, no logo, no watermark",
+      "motion": "gentle pan left",
+      "voiceover": "Mỗi cánh tay tự nếm, tự cảm nhận và tự quyết định.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Nơ-ron ở tay",
+      "duration_s": 5.0,
+      "image_prompt": "Octopus arm curling around a coral branch, neurons glowing softly along the arm, vivid scientific documentary, blue ocean light, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow tilt down",
+      "voiceover": "Phần lớn nơ-ron nằm ở tay, nên tay nhớ đường đi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Da đổi màu",
+      "duration_s": 5.0,
+      "image_prompt": "Octopus skin shifting color and texture to match a coral reef, chromatophores rippling, vivid macro documentary, bright sunlight, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow zoom out",
+      "voiceover": "Da đổi màu trong tích tắc nhờ tế bào sắc tố.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Phun mực trốn thoát",
+      "duration_s": 5.0,
+      "image_prompt": "Octopus releasing a dark ink cloud and darting away through blue water, dramatic vivid documentary, sunlit reef, vertical 9:16, no text, no logo, no watermark",
+      "motion": "tracking shot",
+      "voiceover": "Chúng còn phun mực đen để đánh lạc hướng kẻ săn mồi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết và mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Friendly octopus facing the camera with curious eyes among colorful coral, warm sunlight, vivid documentary macro, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow push in",
+      "voiceover": "Bạn thích trái tim hay bộ não nào hơn? Bình luận nhé!",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 15,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

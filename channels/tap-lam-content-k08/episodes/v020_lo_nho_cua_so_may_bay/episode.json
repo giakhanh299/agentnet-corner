@@ -1,0 +1,310 @@
+{
+  "episode": 20,
+  "title": "Lỗ Nhỏ Trên Cửa Sổ Máy Bay Để Làm Gì",
+  "publish_title": "Lỗ Nhỏ Trên Cửa Sổ Máy Bay Để Làm Gì",
+  "cover_title": "Lỗ Nhỏ Cứu Cả Chuyến Bay",
+  "cover_hook": "Đừng bịt lỗ nhỏ xíu trên kính cửa sổ máy bay!",
+  "description": "Giải thích vì sao cửa sổ máy bay có lỗ nhỏ ở lớp kính giữa: cân bằng áp suất, giữ lớp dự phòng và thoát hơi ẩm để kính không mờ sương.",
+  "hashtags": [
+    "#TapLamConTent",
+    "#KhoaHoc",
+    "#MayBay",
+    "#KienThuc"
+  ],
+  "cta": "Bạn từng thấy lỗ nhỏ này chưa? Hãy bình luận nhé!",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no logo, no watermark, no blurry face, no distorted window",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu gây tò mò",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary close-up of a tiny bleed hole at the bottom of an airplane window, blue sky and clouds outside, warm cabin light, sharp macro detail, no text, no logo, no watermark.",
+      "motion": "slow push-in",
+      "voiceover": "Đừng bịt lỗ nhỏ xíu trên kính cửa sổ máy bay!",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Cửa sổ không đơn giản",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary view of a passenger looking through an airplane window at bright clouds, curious expression, warm cabin tones, no text, no logo, no watermark.",
+      "motion": "slow pan right",
+      "voiceover": "Cửa sổ máy bay không phải một tấm kính đâu bạn ạ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Ba lớp kính",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary cross-section diagram style view of three stacked acrylic airplane window panes, clear layers, bright sky behind, no text, no logo, no watermark.",
+      "motion": "slow zoom out",
+      "voiceover": "Nó gồm ba lớp kính acrylic xếp chồng lên nhau.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Lớp ngoài chịu áp lực",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary close-up of the outer airplane window pane facing high sky and thin clouds, strong light, sense of pressure, no text, no logo, no watermark.",
+      "motion": "slow push-in",
+      "voiceover": "Lớp ngoài cùng chịu áp lực lớn nhất khi bay cao.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Lớp giữa dự phòng",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary view of the middle airplane window pane glowing softly behind the outer pane, layered glass, blue sky, no text, no logo, no watermark.",
+      "motion": "slow pan left",
+      "voiceover": "Lớp giữa là lớp dự phòng nếu lớp ngoài gặp sự cố.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Vị trí lỗ nhỏ",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary macro of a tiny round bleed hole at the bottom edge of the middle airplane window pane, fingertip pointing nearby, sharp detail, no text, no logo, no watermark.",
+      "motion": "slow push-in",
+      "voiceover": "Lỗ nhỏ nằm ở đáy của lớp kính giữa này.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Cân bằng áp suất",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary animation style of gentle air flowing through a tiny hole between cabin and window gap, soft blue streams, bright sky, no text, no logo, no watermark.",
+      "motion": "slow tracking shot",
+      "voiceover": "Nó cân bằng áp suất giữa khoang hành khách và khoảng trống.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Chia sẻ áp lực",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary view of an airplane window with balanced light across three glass layers, calm blue sky, reassuring mood, no text, no logo, no watermark.",
+      "motion": "slow zoom out",
+      "voiceover": "Nhờ đó lớp ngoài không phải gánh hết áp lực một mình.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Thoát hơi ẩm",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary close-up of clear airplane window glass with tiny moisture droplets escaping, bright sky, fresh air feeling, no text, no logo, no watermark.",
+      "motion": "slow pan up",
+      "voiceover": "Lỗ nhỏ còn thoát hơi ẩm để kính không mờ sương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Nếu bịt lỗ lại",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary view of a fogged airplane window with blurred white frost patterns, dim light, blocked view of clouds, no text, no logo, no watermark.",
+      "motion": "slow push-in",
+      "voiceover": "Nếu bịt lỗ lại hơi ẩm đọng sương che mất tầm nhìn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết và kêu gọi bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Vertical 9:16 vivid documentary wide view of a smiling passenger at an airplane window with clear blue sky and clouds, warm light, friendly mood, no text, no logo, no watermark.",
+      "motion": "slow zoom out",
+      "voiceover": "Bạn từng thấy lỗ nhỏ này chưa hãy bình luận nhé!",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 20,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

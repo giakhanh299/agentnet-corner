@@ -1,0 +1,312 @@
+{
+  "episode": 19,
+  "title": "Hành Tinh Có 1 Ngày Dài Hơn 1 Năm",
+  "publish_title": "Hành Tinh Có 1 Ngày Dài Hơn 1 Năm | Tập Làm Content",
+  "cover_title": "1 NGÀY DÀI HƠN 1 NĂM",
+  "cover_hook": "Nơi sinh nhật đến trước cả khi mặt trời lặn?",
+  "description": "Sao Kim quay một vòng lâu hơn cả năm của nó. Cùng khám phá hành tinh kỳ lạ nhất hệ Mặt Trời trong năm mươi lăm giây.",
+  "hashtags": [
+    "#TapLamConTent",
+    "#SaoKim",
+    "#ThienVan",
+    "#KhoaHoc",
+    "#VuTru",
+    "#KhamPha"
+  ],
+  "cta": "Bạn có dám sống một ngày trên sao Kim? Bình luận nhé!",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blurry, low quality, deformed, extra limbs",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu câu hỏi",
+      "duration_s": 5.0,
+      "image_prompt": "Vivid view of planet Venus glowing golden behind thick swirling clouds, sunlight rim light, deep space documentary, sharp detail, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow push in",
+      "voiceover": "Nơi sinh nhật đến trước cả khi mặt trời lặn?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Giới thiệu sao Kim",
+      "duration_s": 5.0,
+      "image_prompt": "Bright Venus planet with creamy yellow clouds rotating slowly in dark space, Sun glowing far behind, vivid space documentary, vertical 9:16, no text, no logo, no watermark",
+      "motion": "gentle pan right",
+      "voiceover": "Đây là sao Kim, hành tinh nóng nhất hệ Mặt Trời.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Ngày dài hơn năm",
+      "duration_s": 5.0,
+      "image_prompt": "Venus spinning very slowly above a glowing calendar turning pages in space, warm golden light, vivid documentary style, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow tilt up",
+      "voiceover": "Một ngày trên sao Kim dài hơn cả một năm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Tự quay hai trăm bốn mươi ba ngày",
+      "duration_s": 5.0,
+      "image_prompt": "Close view of Venus rotating slowly on its axis, cloud bands drifting, sunlight across the surface, vivid space documentary, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow zoom in",
+      "voiceover": "Sao Kim quay một vòng hết hai trăm bốn mươi ba ngày.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Bay quanh Mặt Trời",
+      "duration_s": 5.0,
+      "image_prompt": "Venus orbiting the bright Sun along a glowing path, stars around, vivid space documentary, clear motion, vertical 9:16, no text, no logo, no watermark",
+      "motion": "tracking shot",
+      "voiceover": "Bay quanh Mặt Trời chỉ mất hai trăm hai mươi lăm ngày.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Sinh nhật đến trước",
+      "duration_s": 5.0,
+      "image_prompt": "A birthday cake with candles floating beside planet Venus in space, warm glow, playful vivid documentary, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow push in",
+      "voiceover": "Nghĩa là sinh nhật đến trước khi một ngày kết thúc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Quay ngược chiều",
+      "duration_s": 5.0,
+      "image_prompt": "Venus rotating backwards with a glowing arrow curving the opposite way, Sun rising over golden clouds, vivid space documentary, vertical 9:16, no text, no logo, no watermark",
+      "motion": "gentle pan left",
+      "voiceover": "Sao Kim quay ngược, Mặt Trời mọc ở phía tây.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Bầu khí giữ nhiệt",
+      "duration_s": 5.0,
+      "image_prompt": "Thick golden clouds wrapping Venus like a blanket, heat shimmer rising, vivid space documentary, dramatic light, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow tilt down",
+      "voiceover": "Bầu khí dày đặc giữ nhiệt khiến hành tinh nóng rực.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Nóng chảy chì",
+      "duration_s": 5.0,
+      "image_prompt": "Rocky volcanic surface of Venus glowing orange under thick yellow sky, lava cracks, vivid documentary, dramatic heat, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow zoom out",
+      "voiceover": "Nhiệt độ bề mặt đủ nóng để chảy chì.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Ngày mặt trời dài",
+      "duration_s": 5.0,
+      "image_prompt": "Sun hanging low over Venus horizon for a long slow sunset, golden clouds glowing, vivid documentary, vertical 9:16, no text, no logo, no watermark",
+      "motion": "tracking shot",
+      "voiceover": "Ngày mặt trời ở đây dài hơn trăm ngày Trái Đất.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết và mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Planet Venus shining brightly beside Earth in dark space, both glowing in warm sunlight, vivid documentary, vertical 9:16, no text, no logo, no watermark",
+      "motion": "slow push in",
+      "voiceover": "Bạn có dám sống một ngày trên sao Kim? Bình luận nhé!",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 19,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

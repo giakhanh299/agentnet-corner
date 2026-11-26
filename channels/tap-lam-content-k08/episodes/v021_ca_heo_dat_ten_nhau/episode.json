@@ -1,0 +1,311 @@
+{
+  "episode": 21,
+  "title": "Cá Heo Tự Đặt Tên Cho Nhau",
+  "publish_title": "Cá Heo Tự Đặt Tên Cho Nhau | Tập Làm Content",
+  "cover_title": "CÁ HEO GỌI TÊN NHAU",
+  "cover_hook": "Mỗi con cá heo có tên riêng, nhớ suốt hai mươi năm?",
+  "description": "Cá heo mũi chai có tiếng huýt riêng giống như tên gọi. Chúng học tiếng huýt từ nhỏ, dùng để nhận ra nhau, và có thể nhớ tiếng huýt của bạn cũ sau nhiều năm xa cách.",
+  "hashtags": [
+    "#TapLamConTent",
+    "#CaHeo",
+    "#KhoaHocThuVi",
+    "#DaiDuong",
+    "#KienThucNgan"
+  ],
+  "cta": "Nếu bạn là cá heo, bạn muốn tên mình thế nào? Bình luận ý kiến của bạn nhé!",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blurry, distorted, low quality",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu gây tò mò",
+      "duration_s": 5.0,
+      "image_prompt": "Two bottlenose dolphins swimming in clear blue ocean, golden sunlight rays underwater, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Theo hai con cá heo bơi",
+      "voiceover": "Mỗi con cá heo có tên riêng, nhớ suốt hai mươi năm?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Không phải tiếng kêu ngẫu nhiên",
+      "duration_s": 5.0,
+      "image_prompt": "Bottlenose dolphin close-up underwater, bright blue water, sunlight sparkles, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Cận cảnh mặt cá heo",
+      "voiceover": "Cá heo không gọi nhau bằng tiếng kêu ngẫu nhiên đâu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Tiếng huýt riêng",
+      "duration_s": 5.0,
+      "image_prompt": "Dolphin pod swimming together in turquoise ocean, morning sunlight, sound waves visualized softly, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Lia máy theo đàn cá heo",
+      "voiceover": "Mỗi con tạo ra một tiếng huýt riêng rất đặc biệt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Tiếng huýt như tên gọi",
+      "duration_s": 5.0,
+      "image_prompt": "Single dolphin leaping from blue sea, bright daylight, water droplets sparkling, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Theo cú nhảy của cá heo",
+      "voiceover": "Tiếng huýt này giống như tên gọi của chính nó.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Cá heo con học huýt",
+      "duration_s": 5.0,
+      "image_prompt": "Mother dolphin and calf swimming side by side, warm sunlight underwater, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Theo mẹ con cá heo bơi",
+      "voiceover": "Cá heo con học tiếng huýt từ mẹ và bạn bè.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Huýt lên tìm bạn",
+      "duration_s": 5.0,
+      "image_prompt": "Dolphin calling in deep blue ocean, gentle light rays, distant pod silhouettes, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào cá heo",
+      "voiceover": "Khi xa nhau, chúng huýt lên để tìm bạn cũ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Nhận ra nhau ngay",
+      "duration_s": 5.0,
+      "image_prompt": "Two dolphins approaching each other underwater, bright blue light, joyful movement, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Theo hai con cá heo gặp nhau",
+      "voiceover": "Bạn bè nghe tiếng huýt liền nhận ra nhau ngay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Thử nghiệm phát lại",
+      "duration_s": 5.0,
+      "image_prompt": "Marine scientist with hydrophone equipment on research boat, bright daylight, blue ocean, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Cận cảnh thiết bị ghi âm dưới nước",
+      "voiceover": "Các nhà khoa học đã thử phát lại tiếng huýt cũ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Quay lại khi nghe tên",
+      "duration_s": 5.0,
+      "image_prompt": "Dolphin turning quickly toward sound underwater, sunlight rays, clear blue water, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Theo cú quay đầu của cá heo",
+      "voiceover": "Cá heo quay lại ngay khi nghe tên bạn cũ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Nhớ sau hai mươi năm",
+      "duration_s": 5.0,
+      "image_prompt": "Two old dolphins swimming together in calm blue ocean, soft golden light, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm theo đôi cá heo",
+      "voiceover": "Dù xa nhau hai mươi năm, chúng vẫn còn nhớ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết và mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Smiling young woman by bright blue ocean, holding phone, curious expression, daylight, vivid documentary portrait, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào gương mặt",
+      "voiceover": "Nếu bạn là cá heo, bạn muốn tên mình thế nào?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 21,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

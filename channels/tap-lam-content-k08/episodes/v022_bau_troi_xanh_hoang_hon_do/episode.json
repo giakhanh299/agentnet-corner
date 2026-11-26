@@ -1,0 +1,313 @@
+{
+  "episode": 22,
+  "title": "Vì Sao Trời Xanh Nhưng Hoàng Hôn Lại Đỏ",
+  "publish_title": "Vì Sao Trời Xanh Nhưng Hoàng Hôn Lại Đỏ",
+  "cover_title": "TRỜI XANH, HOÀNG HÔN ĐỎ",
+  "cover_hook": "Cùng một mặt trời, sao trưa xanh mà chiều đỏ rực?",
+  "description": "Ánh sáng mặt trời bị không khí tán xạ, nên ban ngày bầu trời xanh. Khi mặt trời xuống thấp, đường đi của ánh sáng dài hơn, chỉ còn ánh đỏ và cam tới mắt ta.",
+  "hashtags": [
+    "#TapLamContent",
+    "#BauTroi",
+    "#KhoaHoc",
+    "#HoangHon",
+    "#KhamPha"
+  ],
+  "cta": "Bạn thích trời xanh hay hoàng hôn đỏ, hãy bình luận nhé?",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không logo, không watermark, không biến dạng, không bạo lực",
+  "fact_check": "Kiến thức chung đã được công nhận rộng rãi: tán xạ Rayleigh làm ánh sáng xanh tán xạ mạnh hơn ánh sáng đỏ, nên trời ban ngày xanh; khi mặt trời thấp, ánh sáng đi qua lớp không khí dày hơn, ánh xanh tán xạ hết, chỉ còn đỏ và cam. Không đưa bước sóng hay số liệu đo lường cụ thể chưa kiểm chứng.",
+  "limitations": "Chưa mở và kiểm chứng liên kết nguồn cụ thể trong phiên này, vì vậy không đính kèm liên kết nguồn. Không đưa số liệu đo lường chi tiết chưa kiểm chứng.",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu gây tò mò",
+      "duration_s": 5.0,
+      "image_prompt": "Bầu trời xanh ban trưa và hoàng hôn đỏ rực chia đôi khung hình, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm từ trời xanh sang hoàng hôn",
+      "voiceover": "Cùng một mặt trời, sao trưa xanh mà chiều đỏ rực?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Bầu trời không phải màu không khí",
+      "duration_s": 5.0,
+      "image_prompt": "Bầu trời xanh trong với vài đám mây trắng nhẹ, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay nâng dần lên bầu trời",
+      "voiceover": "Bầu trời xanh không phải màu của không khí đâu nhé.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Ánh sáng chứa nhiều màu",
+      "duration_s": 5.0,
+      "image_prompt": "Tia nắng mặt trời xuyên qua lăng kính tạo dải màu cầu vồng, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay tiến chậm lại gần dải màu",
+      "voiceover": "Ánh sáng mặt trời chứa đủ mọi màu sắc khác nhau.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Tán xạ ánh sáng xanh",
+      "duration_s": 5.0,
+      "image_prompt": "Tia sáng xanh tán xạ khắp bầu trời giữa các phân tử không khí, minh họa khoa học, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay xoay chậm quanh tia sáng",
+      "voiceover": "Ánh sáng xanh bị không khí tán xạ mạnh hơn hẳn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Mắt nhận ánh sáng xanh",
+      "duration_s": 5.0,
+      "image_prompt": "Bầu trời xanh lan tỏa khắp nơi trên đồng cỏ, người ngước nhìn trời, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm qua bầu trời",
+      "voiceover": "Mắt ta nhận nhiều ánh sáng xanh tán xạ khắp nơi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Ban ngày trời xanh",
+      "duration_s": 5.0,
+      "image_prompt": "Bầu trời xanh trong ban ngày trên cánh đồng, nắng nhẹ, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay nâng dần từ cánh đồng lên trời",
+      "voiceover": "Vì vậy, ban ngày ta thấy bầu trời xanh trong.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Mặt trời xuống thấp",
+      "duration_s": 5.0,
+      "image_prompt": "Mặt trời chiều xuống thấp gần đường chân trời, tia sáng dài xuyên không khí, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay hạ chậm theo mặt trời",
+      "voiceover": "Buổi chiều, mặt trời xuống thấp, tia sáng đi xa hơn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Ánh xanh tán xạ hết",
+      "duration_s": 5.0,
+      "image_prompt": "Tia sáng đi qua lớp không khí dày, ánh xanh mờ dần, ánh đỏ còn lại, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay tiến chậm theo tia sáng",
+      "voiceover": "Đường đi dài làm ánh sáng xanh tán xạ hết dần.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Chỉ còn đỏ và cam",
+      "duration_s": 5.0,
+      "image_prompt": "Hoàng hôn đỏ cam rực rỡ trên bầu trời chiều, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm qua hoàng hôn",
+      "voiceover": "Chỉ còn ánh sáng đỏ và cam tới được mắt ta.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Mây và bụi làm đỏ hơn",
+      "duration_s": 5.0,
+      "image_prompt": "Mây chiều nhuộm đỏ cam dưới ánh hoàng hôn, bụi nhẹ trong không khí, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm qua đám mây đỏ",
+      "voiceover": "Mây và bụi nhỏ càng làm hoàng hôn đỏ rực hơn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết thúc và mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Hoàng hôn đỏ rực trên biển, bầu trời chuyển từ xanh sang cam, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lùi chậm và nâng dần lên cao",
+      "voiceover": "Bạn thích trời xanh hay hoàng hôn đỏ, hãy bình luận nhé?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 22,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

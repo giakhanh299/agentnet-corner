@@ -1,0 +1,311 @@
+{
+  "episode": 24,
+  "title": "Vì Sao Bạn Không Thể Tự Cù Mình Cười",
+  "publish_title": "Vì Sao Bạn Không Thể Tự Cù Mình Cười | Tập Làm Content",
+  "cover_title": "BẠN KHÔNG THỂ TỰ CÙ",
+  "cover_hook": "Thử tự cù lòng bàn chân ngay bây giờ xem sao?",
+  "description": "Bạn không tự cù mình cười được vì não đã đoán trước chuyển động của chính mình. Tiểu não dự báo cảm giác chạm, làm giảm sự bất ngờ, trong khi cái cù của người khác thì khó đoán trước.",
+  "hashtags": [
+    "#TapLamConTent",
+    "#TamLyHoc",
+    "#KhoaHocThuVi",
+    "#NaoBo",
+    "#KienThucNgan"
+  ],
+  "cta": "Bạn có cù được chính mình không? Thử rồi bình luận kết quả nhé!",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blurry, distorted, low quality",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu thử ngay",
+      "duration_s": 5.0,
+      "image_prompt": "Young woman tickling her own foot sole, laughing softly, bright living room light, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Cận cảnh bàn chân và bàn tay",
+      "voiceover": "Thử tự cù lòng bàn chân ngay bây giờ xem sao?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Tự cù không buồn cười",
+      "duration_s": 5.0,
+      "image_prompt": "Young man tickling his own foot, calm expression, bright daylight, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào gương mặt",
+      "voiceover": "Bạn cù mãi mà chẳng thấy buồn cười chút nào.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Người khác cù thì cười",
+      "duration_s": 5.0,
+      "image_prompt": "Two friends laughing while one tickles the other foot, bright living room, joyful moment, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Lia máy theo tiếng cười",
+      "voiceover": "Nhờ người khác cù, bạn bật cười ngay lập tức.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Câu hỏi vì sao",
+      "duration_s": 5.0,
+      "image_prompt": "Curious young woman thinking, finger on chin, bright soft light, vivid documentary portrait, vertical 9:16, no text",
+      "motion": "Cận cảnh gương mặt suy nghĩ",
+      "voiceover": "Vì sao cùng một cái cù mà khác nhau đến vậy?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Não đoán trước chuyển động",
+      "duration_s": 5.0,
+      "image_prompt": "Glowing human brain model with neural pathways, bright blue light, dark background, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào mô hình não",
+      "voiceover": "Não bạn luôn đoán trước chuyển động của chính mình.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Não biết trước điểm chạm",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up hand reaching toward foot sole, soft bright light, skin detail, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Theo bàn tay chạm xuống",
+      "voiceover": "Khi tự cù, não đã biết trước tay sẽ chạm đâu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Cảm giác bất ngờ giảm đi",
+      "duration_s": 5.0,
+      "image_prompt": "Macro human skin with gentle touch, soft daylight, calm atmosphere, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Cận cảnh điểm chạm trên da",
+      "voiceover": "Não liền giảm bớt cảm giác bất ngờ ở da.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Tiểu não dự báo",
+      "duration_s": 5.0,
+      "image_prompt": "Detailed cerebellum brain illustration glowing, bright light, scientific style, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào tiểu não",
+      "voiceover": "Vùng tiểu não giống như người dự báo chuyển động.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Cái cù khó đoán",
+      "duration_s": 5.0,
+      "image_prompt": "Surprised young woman laughing during tickle, bright living room light, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Cận cảnh phản ứng bất ngờ",
+      "voiceover": "Người khác cù thì não không đoán được trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Bất ngờ gây cười",
+      "duration_s": 5.0,
+      "image_prompt": "Group of friends laughing together in bright room, warm daylight, joyful energy, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Lia máy qua nhóm bạn cười",
+      "voiceover": "Cảm giác bất ngờ làm bạn bật cười thành tiếng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết và mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Smiling young woman looking at camera, bright kitchen light, playful expression, vivid documentary portrait, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào gương mặt",
+      "voiceover": "Bạn có cù được chính mình không, thử bình luận nhé?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 24,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

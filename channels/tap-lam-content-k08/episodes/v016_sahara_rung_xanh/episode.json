@@ -1,0 +1,313 @@
+{
+  "episode": 16,
+  "title": "Sa Mạc Sahara Từng Là Rừng Xanh",
+  "publish_title": "Sa Mạc Sahara Từng Là Rừng Xanh",
+  "cover_title": "SAHARA TỪNG LÀ RỪNG",
+  "cover_hook": "Chỉ sáu nghìn năm trước, Sahara đầy hồ nước và hà mã?",
+  "description": "Sa mạc Sahara từng xanh ẩm, có hồ nước, cỏ cây và nhiều loài thú. Tranh đá cổ và sự thay đổi của gió mùa giúp giải thích vì sao cảnh quan ấy biến mất.",
+  "hashtags": [
+    "#TapLamContent",
+    "#Sahara",
+    "#KhoaHoc",
+    "#LichSuTraiDat",
+    "#KhamPha"
+  ],
+  "cta": "Bạn có tin sa mạc từng xanh không, hãy bình luận nhé?",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không logo, không watermark, không biến dạng, không bạo lực",
+  "fact_check": "Kiến thức chung đã được công nhận rộng rãi: thời kỳ Sahara xanh ẩm, tranh đá cổ vẽ hà mã và hươu cao cổ, gió mùa và sự thay đổi quỹ đạo Trái Đất làm khí hậu khô dần. Mốc sáu nghìn năm là khoảng thời gian gần đúng, không phải ngày chính xác.",
+  "limitations": "Chưa mở và kiểm chứng liên kết nguồn cụ thể trong phiên này, vì vậy không đính kèm liên kết nguồn. Không đưa số liệu đo lường chi tiết chưa kiểm chứng.",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu gây tò mò",
+      "duration_s": 5.0,
+      "image_prompt": "Sa mạc Sahara khô cằn dưới nắng gắt, cồn cát vàng trải dài, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm từ trái sang phải",
+      "voiceover": "Chỉ sáu nghìn năm trước, Sahara đầy hồ nước và hà mã.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Sahara ngày nay",
+      "duration_s": 5.0,
+      "image_prompt": "Toàn cảnh sa mạc Sahara rộng lớn, cát vàng và bầu trời xanh, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay nâng dần từ thấp lên cao",
+      "voiceover": "Ngày nay, Sahara là sa mạc nóng lớn nhất thế giới.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Tranh đá cổ",
+      "duration_s": 5.0,
+      "image_prompt": "Vách đá sa mạc có tranh đá cổ vẽ hà mã và hươu cao cổ, ánh sáng ấm, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay tiến chậm lại gần vách đá",
+      "voiceover": "Tranh đá cổ vẽ hà mã và hươu cao cổ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Thời kỳ Sahara xanh ẩm",
+      "duration_s": 5.0,
+      "image_prompt": "Đồng cỏ xanh và hồ nước giữa vùng đất Sahara xưa, chim bay trên trời, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm qua đồng cỏ xanh",
+      "voiceover": "Các nhà khoa học gọi thời kỳ này là Sahara xanh ẩm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Gió mùa mang mưa",
+      "duration_s": 5.0,
+      "image_prompt": "Mây mưa dày kéo đến trên đồng cỏ châu Phi, mưa rơi nhẹ, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay nghiêng chậm theo mây mưa",
+      "voiceover": "Khi đó, gió mùa mang mưa sâu vào lục địa châu Phi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Hồ nước đầy sự sống",
+      "duration_s": 5.0,
+      "image_prompt": "Hồ nước trong xanh có cá, chim và thú hoang uống nước ven bờ, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm quanh mặt hồ",
+      "voiceover": "Hồ nước lớn nuôi cá, chim và nhiều loài thú hoang.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Người xưa ven hồ",
+      "duration_s": 5.0,
+      "image_prompt": "Người xưa sống ven hồ Sahara, chăn gia súc giữa đồng cỏ xanh, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay tiến chậm về phía nhóm người",
+      "voiceover": "Người xưa sống ven hồ, săn bắn và chăn nuôi gia súc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Trục Trái Đất thay đổi",
+      "duration_s": 5.0,
+      "image_prompt": "Trái Đất nghiêng chậm trong không gian, ánh sáng mặt trời thay đổi, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay xoay chậm quanh Trái Đất",
+      "voiceover": "Trục Trái Đất thay đổi chậm, làm gió mùa yếu dần đi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Mưa ít dần",
+      "duration_s": 5.0,
+      "image_prompt": "Đồng cỏ khô dần thành đất nứt nẻ, hồ nước cạn lại dưới nắng, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lùi chậm khỏi mặt đất khô",
+      "voiceover": "Mưa ít dần, hồ cạn lại, cỏ xanh biến thành cát khô.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Sa mạc lan rộng",
+      "duration_s": 5.0,
+      "image_prompt": "Cát vàng lan dần phủ lên đồng cỏ khô, tranh đá cổ còn lại trên vách, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lia chậm từ cát sang vách đá",
+      "voiceover": "Sa mạc lan rộng, nhưng tranh đá vẫn kể câu chuyện ấy.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết thúc và mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Hoàng hôn trên sa mạc Sahara, cồn cát vàng và bầu trời tím, ảnh dọc, không chữ, không logo, không watermark",
+      "motion": "Máy quay lùi chậm và nâng dần lên cao",
+      "voiceover": "Bạn có tin sa mạc từng xanh không, hãy bình luận nhé?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 16,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

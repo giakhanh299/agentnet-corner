@@ -1,0 +1,311 @@
+{
+  "episode": 17,
+  "title": "Vì Sao Mật Ong Ba Nghìn Năm Không Hỏng",
+  "publish_title": "Vì Sao Mật Ong Ba Nghìn Năm Không Hỏng | Tập Làm Content",
+  "cover_title": "MẬT ONG BẤT TỬ",
+  "cover_hook": "Mở hũ mật ong ba nghìn năm tuổi, vẫn ăn được sao?",
+  "description": "Mật ong trong mộ cổ Ai Cập được cho là vẫn giữ được rất lâu nhờ ít nước, nhiều đường, hơi chua và chất kháng khuẩn tự nhiên. Tập này giải thích ngắn gọn vì sao mật ong khó hỏng, và vì sao mật ong để hở vẫn có thể lên men.",
+  "hashtags": [
+    "#TapLamConTent",
+    "#MatOng",
+    "#KhoaHocThuVi",
+    "#AiCapCoDai",
+    "#KienThucNgan"
+  ],
+  "cta": "Bạn có dám nếm mật ong ba nghìn năm tuổi không? Bình luận ý kiến của bạn nhé!",
+  "series": "Tập Làm Content",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blurry, distorted, low quality",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Mở đầu gây tò mò",
+      "duration_s": 5.0,
+      "image_prompt": "Ancient Egyptian honey jar opening in golden torchlight, thick amber honey dripping slowly, vivid documentary macro, warm glow, dark pyramid tomb background, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào hũ mật",
+      "voiceover": "Mở hũ mật ong ba nghìn năm tuổi, vẫn ăn được sao?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Mật ong trong mộ cổ",
+      "duration_s": 5.0,
+      "image_prompt": "Egyptian pharaoh tomb interior, golden artifacts and sealed clay honey jars, warm torchlight, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Quét máy chậm qua gian mộ",
+      "voiceover": "Người xưa chôn mật ong cùng vua Ai Cập cổ đại.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Phát hiện của khảo cổ",
+      "duration_s": 5.0,
+      "image_prompt": "Archaeologist hands in gloves lifting ancient clay honey jar, dust particles in warm light, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Cận cảnh tay nâng hũ mật",
+      "voiceover": "Các nhà khảo cổ tìm thấy hũ mật vẫn còn nguyên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Bí mật lượng nước thấp",
+      "duration_s": 5.0,
+      "image_prompt": "Extreme macro of thick golden honey drop, glossy surface, bright natural light, vivid documentary style, vertical 9:16, no text",
+      "motion": "Cận cảnh giọt mật rơi chậm",
+      "voiceover": "Bí mật đầu tiên nằm ở lượng nước rất thấp.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Đường hút nước",
+      "duration_s": 5.0,
+      "image_prompt": "Macro sugar crystals absorbing tiny water droplets, golden honey texture, bright studio light, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Cận cảnh tinh thể đường hút ẩm",
+      "voiceover": "Đường đặc hút nước, vi khuẩn khó sống nổi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Môi trường hơi chua",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up honeycomb with bees, soft morning light, golden honey glistening, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Lia máy chậm trên tổ ong",
+      "voiceover": "Mật ong hơi chua, môi trường này kìm vi sinh vật.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Chất kháng khuẩn tự nhiên",
+      "duration_s": 5.0,
+      "image_prompt": "Honeybee on bright yellow flower, sunlight, pollen, vivid documentary macro, sharp focus, vertical 9:16, no text",
+      "motion": "Cận cảnh ong đậu trên hoa",
+      "voiceover": "Ong còn thêm một chất kháng khuẩn tự nhiên nữa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Ô xi già trong mật ong",
+      "duration_s": 5.0,
+      "image_prompt": "Macro honey pouring in thin golden stream, bright light, sparkling bubbles, vivid documentary style, vertical 9:16, no text",
+      "motion": "Theo dòng mật chảy xuống",
+      "voiceover": "Chất đó tạo ra một lượng nhỏ ô xi già.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Hũ kín và khô ráo",
+      "duration_s": 5.0,
+      "image_prompt": "Sealed clay jar with wax lid in dark dry tomb, warm lamp light, dust in air, vivid documentary photography, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào nắp hũ",
+      "voiceover": "Hũ kín, khô ráo, mật ong gần như ngừng biến đổi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Mật ong để hở",
+      "duration_s": 5.0,
+      "image_prompt": "Open honey jar absorbing moisture in humid kitchen, condensation, soft daylight, vivid documentary macro, vertical 9:16, no text",
+      "motion": "Cận cảnh hơi ẩm quanh miệng hũ",
+      "voiceover": "Nhưng mật ong để hở sẽ hút ẩm và lên men.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết và mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Smiling young woman holding small honey jar, curious expression, bright kitchen light, vivid documentary portrait, vertical 9:16, no text",
+      "motion": "Đẩy máy chậm vào gương mặt",
+      "voiceover": "Bạn có dám nếm mật ong ba nghìn năm tuổi không?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 17,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}
