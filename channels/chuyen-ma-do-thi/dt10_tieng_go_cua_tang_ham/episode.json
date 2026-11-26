@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "folk_horror",
+  "cover_hook": "Camera bãi xe ghi lại ai đó đang vẫy tay ở góc cột…",
+  "cover_theme": "horror",
+  "cover_title": "TẦNG HẦM B3",
+  "cta": "Bạn có dám xem lại camera đêm nay không? Bình luận nhé!",
+  "description": "Đêm nay, bảo vệ Nam trực ca dưới tầng hầm. Camera bãi xe ghi lại ai đó đang vẫy tay ở góc cột, nhưng xuống tới nơi, góc cột trống không. Tiếng gõ cửa lại vang lên từ cuối bãi xe. Một câu chuyện hồi hộp tâm lý, không máu me, không lộ mặt ma.",
+  "episode": 10,
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no blood, no gore, no suicide, no ghost face, no scary face, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Tiếng Gõ Cửa Tầng Hầm B3 | Chuyện Ma Đô Thị Tập 10",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – camera ghi bóng người vẫy tay",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light on a CCTV monitor showing a parking garage, a waving figure at a pillar, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay đẩy chậm vào màn hình camera, bóng người vẫy tay ở góc cột",
+      "voiceover": "Camera ghi ai đó đang vẫy tay ở góc cột...",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng rè rất khẽ của camera",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 0,
+          "desc": "đêm yên tĩnh trong phòng trực",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Bảo vệ Nam trực ca đêm",
+      "duration_s": 5.0,
+      "image_prompt": "Dim cold light in a basement security room, a guard watching monitors, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay lia chậm qua phòng trực tối, dừng ở Nam trước màn hình",
+      "voiceover": "Đêm nay, bảo vệ Nam trực ca dưới tầng hầm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân nhẹ trong phòng trực",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "mưa nhỏ ngoài cửa",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Màn hình chớp, bóng người xuất hiện",
+      "duration_s": 5.0,
+      "image_prompt": "Cold fluorescent light on a CCTV screen, a still silhouette at a concrete pillar, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "giữ khung cận màn hình camera, bóng người đứng yên ở góc cột",
+      "voiceover": "Màn hình camera chớp nhẹ, một bóng người xuất hiện.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "đèn huỳnh quang chớp nhẹ",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 1,
+          "desc": "tiếng thở khẽ trong đêm",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "human_eerie"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Bóng người vẫy tay về ống kính",
+      "duration_s": 5.0,
+      "image_prompt": "Dark corridor light on a motionless silhouette waving toward a camera, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay giữ khung bóng người đứng yên, tay vẫy về phía ống kính",
+      "voiceover": "Bóng người đứng yên, tay vẫy về phía ống kính.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió lạnh qua hành lang hầm",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 0,
+          "desc": "đêm yên tĩnh",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Nam cầm đèn pin xuống cầu thang",
+      "duration_s": 5.0,
+      "image_prompt": "Cold flashlight beam in a dark stairwell, a guard descending, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay theo sau Nam cầm đèn pin bước xuống cầu thang tối",
+      "voiceover": "Nam cầm đèn pin, bước xuống cầu thang tối om.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân xuống cầu thang",
+          "dur": 4,
+          "gain_db": -26.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "nước nhỏ giọt trong cầu thang",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "water"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Tầng hầm vắng lặng",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light in an empty underground parking garage, dripping water, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay mở rộng chậm qua bãi xe trống, đèn neon lạnh chớp nhẹ",
+      "voiceover": "Tầng hầm vắng lặng, chỉ nghe tiếng nước nhỏ giọt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước nhỏ giọt trong bãi xe",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió lạnh qua tầng hầm",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Tiếng gõ cửa từ cuối bãi xe",
+      "duration_s": 5.0,
+      "image_prompt": "Dark corridor in a basement parking garage, a closed metal door, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay giữ khung hành lang tối, cửa kim loại khép kín cuối bãi xe",
+      "voiceover": "Tiếng gõ cửa vang lên từ cuối bãi xe.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng gõ cửa ba nhịp",
+          "dur": 3,
+          "gain_db": -26.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 0,
+          "desc": "đèn hành lang chớp tắt",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "fire_lamp"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Soi đèn vào góc cột",
+      "duration_s": 5.0,
+      "image_prompt": "Flashlight beam on an empty concrete pillar corner, no one there, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay theo chùm đèn pin quét qua góc cột trống không",
+      "voiceover": "Nam soi đèn vào góc cột, chẳng thấy ai cả.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân chậm trên sàn bê tông",
+          "dur": 4,
+          "gain_db": -26.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 2,
+          "desc": "tiếng thở khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "human_eerie"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Camera vẫn thấy bóng người",
+      "duration_s": 5.0,
+      "image_prompt": "Cold monitor glow on a guard staring at a CCTV screen, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay giữ khung cận Nam nhìn màn hình, ánh sáng xanh lay động",
+      "voiceover": "Màn hình camera vẫn thấy bóng người vẫy tay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "một nốt nhạc căng thẳng rất khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "horror_stinger"
+        },
+        {
+          "at": 0,
+          "desc": "đêm yên tĩnh",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Xem lại đoạn phim",
+      "duration_s": 5.0,
+      "image_prompt": "Dim blue light on a guard rewinding CCTV footage, tense silence, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay đẩy chậm vào tay Nam tua lại đoạn phim trên màn hình",
+      "voiceover": "Nam xem lại đoạn phim, bóng người đã biến mất.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng rè rất khẽ của camera",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 1,
+          "desc": "mưa nhỏ ngoài cửa",
+          "dur": 4,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon dawn light on an old Vietnamese apartment block entrance, misty street, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay mở rộng chậm lên cổng chung cư cũ trong ánh bình minh lạnh",
+      "voiceover": "Bạn có dám xem lại camera đêm nay không?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió sớm qua hẻm nhỏ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    }
+  ],
+  "series": "Chuyện Ma Đô Thị",
+  "title": "Tiếng Gõ Cửa Tầng Hầm B3",
+  "voice": "phonui",
+  "seed": 210,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

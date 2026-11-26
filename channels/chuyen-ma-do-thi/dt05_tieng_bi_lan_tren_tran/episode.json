@@ -1,0 +1,883 @@
+{
+  "episode": 5,
+  "title": "Tiếng Bi Lăn Trên Trần Nhà",
+  "publish_title": "Tiếng Bi Lăn Trên Trần Nhà | Chuyện Ma Đô Thị Tập Năm",
+  "cover_title": "TIẾNG BI LĂN ĐÊM KHUYA",
+  "cover_hook": "Sống ở tầng cao nhất chung cư… vậy ai đang thả bi ở trên?",
+  "description": "Một người sống ở tầng cao nhất của chung cư cũ nghe tiếng bi lăn trên trần nhà mỗi đêm. Anh bước ra hành lang tối, thấy bóng lưng xa lạ và cửa thang máy tự khép lại. Câu chuyện tâm linh hiện đại gợi hồi hộp bằng âm thanh và bóng tối, không máu me và không lộ mặt ma.",
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "cta": "Hãy theo dõi Chuyện Ma Đô Thị để nghe câu chuyện tiếp theo và bình luận cảm nhận của bạn.",
+  "series": "Chuyện Ma Đô Thị",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no logo, no blood, no gore, no violence, no ghost face, no watermark",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, an old Vietnamese apartment building at night, dark windows, thin fog, quiet street, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Toàn cảnh chung cư cũ về đêm",
+      "voiceover": "Chung cư cũ im lặng khi đêm xuống thật sâu.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Cold dim light, a young man lying awake in a dark old apartment, listening upward, tense expression, night shadows, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Trung cảnh người đàn ông nằm lắng nghe trong phòng tối",
+      "voiceover": "Tiếng bi lăn trên trần nhà vang lên từng nhịp.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Cold ceiling light, close-up of a young man looking up at a dark apartment ceiling, holding his breath, quiet tension, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Cận cảnh người đàn ông ngẩng đầu nhìn trần nhà",
+      "voiceover": "Tôi ngẩng đầu nhìn trần nhà rồi nín thở.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, an empty top-floor corridor in an old Vietnamese apartment building, dark doors, flickering lamp, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Toàn cảnh hành lang tầng cao nhất về đêm",
+      "voiceover": "Trên tầng cao nhất chẳng còn căn hộ nào nữa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering cold light, a young man stepping into a dark apartment corridor, long shadows, night fog, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Trung cảnh người đàn ông bước ra hành lang tối",
+      "voiceover": "Tôi bước ra hành lang tối khi đèn chớp tắt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Cold dim light, a distant back silhouette standing at the end of a dark apartment corridor, flickering lamp, fog, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Toàn cảnh bóng lưng xa lạ ở cuối hành lang",
+      "voiceover": "Bóng lưng ai đó đứng cuối hành lang lặng lẽ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, elevator doors closing in a dark old apartment corridor, empty hallway, flickering light, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Trung cảnh cửa thang máy khép lại trong hành lang tối",
+      "voiceover": "Cửa thang máy khép lại dù không ai bấm nút.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Cold dim light, close-up of a hand locking an old apartment door at night, dark corridor behind, tense mood, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Cận cảnh bàn tay khóa cửa phòng trong đêm",
+      "voiceover": "Tôi quay về phòng và khóa cửa thật chặt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Cold floor light, a small glass marble rolling slowly across a dark apartment floor, long shadows, quiet night, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Cận cảnh viên bi lăn chậm trên nền gạch tối",
+      "voiceover": "Tiếng bi lại lăn chậm rãi qua từng viên gạch.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight, a young man sitting silently in a dark apartment, listening in the quiet night, soft shadows, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Trung cảnh người đàn ông ngồi im lặng trong phòng tối",
+      "voiceover": "Tôi hiểu âm thanh ấy chỉ vang trong đêm tĩnh.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Mysterious cold light, an empty dark apartment ceiling with a single glass marble resting on the floor, quiet haunting mood, cinematic urban horror film, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "Toàn cảnh trần nhà tối và viên bi nằm im lặng",
+      "voiceover": "Ai đang thả bi trên trần nhà lúc nửa đêm?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "seed": 205,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

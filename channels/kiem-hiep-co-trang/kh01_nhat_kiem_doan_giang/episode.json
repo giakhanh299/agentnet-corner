@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "wuxia",
+  "cover_hook": "Một kiếm chém đôi dòng nước lạnh trước cổng thành cổ?",
+  "cover_theme": "wuxia",
+  "cover_title": "NHẤT KIẾM ĐOẠN GIANG",
+  "cta": "Theo dõi Giang Hồ Ký Truyện để xem tập tiếp theo!",
+  "description": "Tập 01: Một kiếm khách lạ bước qua rừng trúc, ghé quán trọ cổ bên sông, rồi một đường kiếm tách đôi dòng nước lạnh trước cổng thành cổ. Kiếm hiệp hào hùng, bí ẩn, không máu me bạo lực.",
+  "episode": 1,
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blood, gore, violence, modern clothing, deformed hands, blurry, low quality",
+  "publish_title": "Nhất Kiếm Đoạn Giang | Giang Hồ Ký Truyện Tập 01",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Golden dawn light over misty mountains and a cold river before an ancient Chinese city gate, cinematic wuxia film still, vertical 9:16, drifting fog, a lone swordsman silhouette on the stone bridge, muted teal and gold palette, epic wide shot",
+      "motion": "",
+      "voiceover": "Một kiếm, chém đôi dòng nước lạnh trước cổng thành.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light filtering through a misty bamboo forest path, cinematic wuxia film still, vertical 9:16, a swordsman in dark robes walking away from camera, swaying bamboo, floating leaves, serene and mysterious atmosphere",
+      "motion": "",
+      "voiceover": "Người kiếm khách bước qua rừng trúc trong sương sớm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on a close-up of a weathered hand gripping an ornate sword hilt, cinematic wuxia film still, vertical 9:16, dark robe sleeve, shallow depth of field, misty background, detailed craftsmanship",
+      "motion": "",
+      "voiceover": "Tay nắm chuôi kiếm, bước chân vẫn nhẹ như gió.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Golden lantern glow inside an ancient riverside tavern at dusk, cinematic wuxia film still, vertical 9:16, wooden beams, hanging paper lanterns, steam rising from tea cups, warm amber light, mist outside the window",
+      "motion": "",
+      "voiceover": "Quán trọ cổ treo đèn vàng bên bờ sông vắng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm candlelight in an old tavern, cinematic wuxia film still, vertical 9:16, an elderly innkeeper pouring tea for a hooded swordsman, wooden table, clay teapot, gentle steam, quiet tense mood",
+      "motion": "",
+      "voiceover": "Lão chủ quán rót trà, nhìn về phía cổng thành.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering candlelight on a swordsman's calm eyes in close-up, cinematic wuxia film still, vertical 9:16, dark shadows, cold blue rim light, determined gaze, misty tavern background, dramatic contrast",
+      "motion": "",
+      "voiceover": "Trong ánh nến, đôi mắt kiếm khách lạnh như sương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue moonlight over a wide river rushing before an ancient city gate, cinematic wuxia film still, vertical 9:16, dark water, stone walls, drifting mist, a lone figure standing on the bank, tense stillness",
+      "motion": "",
+      "voiceover": "Dòng sông lạnh cuộn sóng, chặn lối vào thành cổ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Pale dawn light in mist, cinematic wuxia film still, vertical 9:16, medium shot of a swordsman drawing a gleaming sword, dark robes flowing, bamboo shadows, cold steel catching light, heroic stance",
+      "motion": "",
+      "voiceover": "Kiếm khách rút kiếm, ánh thép lóe lên trong sương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sword light arcing through cold mist, cinematic wuxia film still, vertical 9:16, close-up of a gleaming blade mid-swing, sparkling water droplets, dark river background, dynamic motion, no blood",
+      "motion": "",
+      "voiceover": "Một đường kiếm vút qua, sông lặng, gió ngừng thổi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Golden light parting a cold river into two walls of water, cinematic wuxia film still, vertical 9:16, a stone path revealed between the waves, mist, ancient gate ahead, epic and magical, no blood",
+      "motion": "",
+      "voiceover": "Dòng nước lạnh tách đôi, lối đi hiện giữa sông.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning mist over a stone bridge, cinematic wuxia film still, vertical 9:16, wide shot of a swordsman walking away into fog, sword at his side, ancient gate behind, peaceful golden light, quiet ending",
+      "motion": "",
+      "voiceover": "Kiếm tra vào vỏ, người đi vào sương sớm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "series": "Giang Hồ Kỳ Truyện",
+  "title": "Nhất Kiếm Đoạn Giang",
+  "voice": "phonui",
+  "seed": 101,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

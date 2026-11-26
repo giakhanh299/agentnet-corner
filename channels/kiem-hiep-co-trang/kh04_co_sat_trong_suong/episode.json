@@ -1,0 +1,144 @@
+{
+  "episode": 4,
+  "title": "Cổ Sát Trong Sương",
+  "publish_title": "Tập Bốn — Cổ Sát Trong Sương | Giang Hồ Kỳ Truyện",
+  "cover_title": "CỔ SÁT TRONG SƯƠNG",
+  "cover_hook": "Ngôi chùa hoang nơi cao thủ rửa tay gác kiếm, nhưng sương đêm vẫn gọi tên người xưa.",
+  "description": "Tập bốn kể về lão kiếm khách ẩn cư trong chùa hoang giữa sương núi, khi cố nhân tìm đến với một phong thư cũ và món nợ chưa trả. Một trận giao đấu ngắn trong sương mù khép lại bằng sự tha thứ, không phải bằng máu. Câu chuyện hoàn toàn hư cấu, không dựa trên nhân vật hay sự kiện có thật.",
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Giang Hồ Kỳ Truyện để xem tập tiếp theo, và bình luận xem lão kiếm khách có nên rút kiếm nữa không.",
+  "series": "Giang Hồ Kỳ Truyện",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không biểu tượng, không máu me, không bạo lực ghê rợn, không hình ảnh méo mó, không dấu chìm",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight on a misty abandoned mountain temple among bamboo forest, grey fog swirling around ancient stone steps, a lone elderly swordsman silhouette at the gate, cinematic wuxia film, muted teal and gold tones, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh núi non, rừng trúc và chùa hoang trong sương mù",
+      "voiceover": "Sương mù giăng kín ngôi chùa hoang trên đỉnh núi.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on a middle-aged swordsman in worn cloth robes standing before a temple gate, mist drifting behind him, calm weathered face, sheathed sword at his side, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh kiếm khách đứng trước cổng chùa, áo vải cũ",
+      "voiceover": "Lão kiếm khách gác kiếm mười năm, lòng nguội lạnh.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Soft lamplight on an old sword hanging on a wooden temple wall, dust on the scabbard, blade edge gleaming faintly, spider webs in the corner, cinematic wuxia close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh thanh kiếm cũ treo trên vách gỗ",
+      "voiceover": "Thanh kiếm cũ treo trên vách, lưỡi vẫn sáng ngời.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Pale dawn light on a mysterious traveller in a dark cloak stepping through a temple gate in thick fog, bamboo shadows behind, wet stone path, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh khách lạ bước qua cổng chùa trong sương",
+      "voiceover": "Bước chân vang trong sương, khách lạ dừng trước cổng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Dim lantern light on the weathered face of an elderly swordsman, eyes widening in recognition, wrinkles and grey beard in sharp focus, misty temple interior behind, cinematic wuxia close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh ánh mắt lão kiếm khách khi nhận ra cố nhân",
+      "voiceover": "Ánh mắt lão khẽ động, nhận ra cố nhân xưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm candlelight on two weathered hands exchanging an old sealed letter, faded paper and red wax seal, dark wooden table, mist outside the window, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh phong thư cũ trao tay giữa hai người",
+      "voiceover": "Phong thư cũ trao tay, món nợ xưa chưa trả.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Grey rainy light on a swordsman standing under a temple eave as rain falls on tiled roofs, his sheathed sword trembling slightly, puddles reflecting lanterns, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh mưa rơi trên mái chùa, kiếm rung trong vỏ",
+      "voiceover": "Mưa bắt đầu rơi, kiếm trong vỏ khẽ rung lên.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight on two swordsmen duelling in a misty bamboo forest, blades flashing, leaves swirling, fog between tall bamboo stalks, cinematic wuxia action, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh hai bóng kiếm lướt qua nhau giữa rừng trúc sương mù",
+      "voiceover": "Hai bóng kiếm lướt qua nhau giữa làn sương mù.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light on an elderly swordsman lowering his sword and turning away, the other swordsman kneeling in mist, bamboo forest around them, peaceful mood, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh lão kiếm khách thu kiếm, tha cho cố nhân",
+      "voiceover": "Lão thu kiếm lại, tha cho cố nhân lần cuối.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunrise light on an abandoned mountain temple as morning fog lifts, warm rays over tiled roofs and bamboo forest, a lone figure sweeping the courtyard, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh sương tan, bình minh lên trên mái chùa hoang",
+      "voiceover": "Sương tan dần, bình minh lên trên mái chùa hoang.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunset light on a lone swordsman walking away along a misty mountain path, abandoned temple behind him, bamboo forest and distant peaks, calm hopeful mood, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh kiếm khách bước đi trên đường núi, chùa hoang phía sau",
+      "voiceover": "Giang hồ còn đó, lòng người đã chọn bình yên.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 104,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

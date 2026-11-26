@@ -1,0 +1,913 @@
+{
+  "episode": 4,
+  "episode_code": "dt04_chuyen_xe_buyt_cuoi",
+  "title": "Chuyến Xe Buýt Cuối Đêm",
+  "publish_title": "Chuyến Xe Buýt Cuối Đêm | Chuyện Ma Đô Thị",
+  "cover_title": "CHUYẾN XE BUÝT CUỐI",
+  "cover_hook": "Tất cả hành khách trên xe đều xuống ở một trạm bỏ hoang?",
+  "description": "Tập bốn của Chuyện Ma Đô Thị kể về chuyến xe buýt cuối đêm và trạm dừng bỏ hoang giữa màn sương. Khi mọi hành khách cùng xuống xe trong im lặng, cô gái còn lại phải đối mặt với nỗi sợ không tên. Một câu chuyện tâm lý rùng rợn, không máu me, chỉ còn bóng lưng, đèn chớp và cánh cửa khép lại.",
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "cta": "Bạn có dám đi chuyến xe buýt cuối đêm không? Hãy bình luận suy nghĩ của bạn và theo dõi Chuyện Ma Đô Thị để xem tập tiếp theo.",
+  "series": "Chuyện Ma Đô Thị",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no logo, no watermark, no blood, no gore, no ghost face, no exposed face horror, no violence, no distorted hands, no extra fingers",
+  "total_duration_seconds": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light on a young woman waiting at a deserted night bus stop in Ho Chi Minh City, wet street, fog, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "toàn cảnh",
+      "voiceover": "Chuyến xe buýt cuối đêm dừng trước mặt cô.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue light inside an empty night bus, a few passengers sitting silently in shadow, backs to camera, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "trung cảnh",
+      "voiceover": "Trong xe chỉ còn vài hành khách lặng lẽ ngồi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Dark moonlight through a foggy bus window, blurred city lights passing, a young woman reflected, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "cận cảnh",
+      "voiceover": "Ngoài cửa kính, thành phố chìm trong màn sương lạnh.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "v",
+          "desc": "v",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Cold dashboard light on the back of a silent bus driver, dark road ahead, fog, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "trung cảnh",
+      "voiceover": "Người lái xe không nói, chỉ nhìn thẳng phía trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering neon light on an empty abandoned bus station at night, broken sign, fog, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "toàn cảnh",
+      "voiceover": "Trạm tiếp theo vang lên giữa đêm vắng lặng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light on passengers standing together inside a night bus, seen from behind, foggy windows, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "trung cảnh",
+      "voiceover": "Tất cả hành khách cùng đứng dậy một lúc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold mist light at an open bus door at night, fog pouring in, empty abandoned station outside, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "cận cảnh",
+      "voiceover": "Cửa xe mở ra, sương lạnh ùa vào trong xe.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Dark moonlight on silhouettes walking away from a bus toward an abandoned station, fog, backs to camera, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "toàn cảnh",
+      "voiceover": "Họ bước xuống trạm bỏ hoang không một tiếng động.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering fluorescent light on a young woman alone inside a night bus, frightened eyes, empty seats, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "cận cảnh",
+      "voiceover": "Cô gái nhìn theo, tim đập nhanh trong lồng ngực.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light on a night bus driving through foggy empty streets, wet road, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "toàn cảnh",
+      "voiceover": "Chiếc xe lại lăn bánh, mang cô về phía trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Soft cold dawn light on an empty abandoned bus station, fog lifting, a bus stop sign, cinematic urban horror, vertical 9:16, no text, no logo, no blood, no ghost face",
+      "motion": "toàn cảnh",
+      "voiceover": "Sáng hôm sau, trạm ấy vẫn vắng lặng lạ thường.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "seed": 204,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

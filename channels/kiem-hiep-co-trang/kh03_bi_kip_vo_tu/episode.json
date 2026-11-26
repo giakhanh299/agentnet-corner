@@ -1,0 +1,308 @@
+{
+  "episode": 3,
+  "title": "Bí Kíp Vô Tự",
+  "publish_title": "Bí Kíp Vô Tự — Cuốn mật tịch trắng trơn suốt trăm năm ai cũng tranh đoạt?",
+  "cover_hook": "Cuốn mật tịch trắng trơn suốt trăm năm ai cũng tranh đoạt?",
+  "description": "Tập ba của Giang Hồ Kỳ Truyện: một cuốn mật tịch trắng trơn xuất hiện giữa giang hồ và khiến bao kiếm khách tranh đoạt. Chữ xưa chỉ hiện ra khi lòng người thật sự tĩnh lặng, và bí kíp vô tự không dạy chiêu thức mà chỉ dạy tâm.",
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Giang Hồ Kỳ Truyện để xem tập tiếp theo.",
+  "series": "Giang Hồ Kỳ Truyện",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no logo, no watermark, no blood, no gore",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Golden lantern light, a blank ancient manual lying on a worn wooden tavern table, drifting mist, cinematic wuxia film, misty bamboo forest beyond the window, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Trăm năm trước, cuốn mật tịch trắng trơn xuất hiện.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight, a white-robed swordsman standing on a misty mountain ridge, bamboo forest below, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Giang hồ đồn ai giữ nó sẽ vô địch.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Dim golden lantern light, an ancient roadside tavern at night, empty wooden tables, rain mist outside, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Đêm nay, quán trọ cổ lặng im chờ bão tố.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light, a white-robed swordsman entering an ancient tavern doorway, cold calm eyes, wooden beams, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Kiếm khách áo trắng bước vào, ánh mắt lạnh lùng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden lantern light, a blank white ancient book on a wooden table, a swordsman hand reaching slowly, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Trên bàn, cuốn sách trắng nằm giữa ánh đèn vàng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Soft moonlight, faint ancient characters glowing on blank pages of an old manual, calm swordsman face in close-up, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Chữ xưa chỉ hiện khi lòng người thật tĩnh.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue moonlight, a greedy rival drawing a shining sword in a bamboo grove, leaves swirling, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Kẻ tham lam rút kiếm, gió trúc rít lên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering golden lantern light, two swords clashing in an ancient tavern, sparks and swaying lanterns, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Một chiêu kiếm lướt qua, đèn lồng vàng khẽ rung.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Pale moonlight, blank pages of an ancient manual glowing softly on a wooden table, mist drifting, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Trang sách trắng bỗng sáng lên dưới ánh trăng mờ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dawn light, a swordsman sheathing his sword before a misty bamboo forest, peaceful expression, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Bí kíp vô tự không dạy chiêu, chỉ dạy tâm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunrise light, a lone swordsman walking away through a misty bamboo forest, ancient mountains behind, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Ai hiểu được điều ấy mới thật sự cầm kiếm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "seed": 103,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

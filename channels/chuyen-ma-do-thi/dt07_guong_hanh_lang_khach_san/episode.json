@@ -1,0 +1,309 @@
+{
+  "episode": 7,
+  "title": "Chiếc Gương Cuối Hành Lang",
+  "publish_title": "Chiếc Gương Cuối Hành Lang — Bóng trong gương quay chậm hơn người thật nửa giây...",
+  "cover_title": "CHIẾC GƯƠNG HÀNH LANG",
+  "cover_hook": "Bóng trong gương quay chậm hơn người thật nửa giây...",
+  "description": "Tập bảy của Chuyện Ma Đô Thị: nửa đêm trong chung cư cũ, cuối hành lang dài hun hút có một chiếc gương phủ bụi mờ. Bóng trong gương quay chậm hơn người thật, và những gì ẩn sau gương bắt đầu gõ cửa.",
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Chuyện Ma Đô Thị để xem tập tiếp theo.",
+  "series": "Chuyện Ma Đô Thị",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no logo, no watermark, no blood, no gore, no jump scare",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, a long dark apartment corridor at night in modern Vietnam, flickering ceiling lamp, cinematic urban horror, foggy shadows, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nửa đêm, hành lang chung cư dài hun hút.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Cold flickering neon light, a dark corridor in a Vietnamese apartment building at night, empty hallway, cinematic urban horror, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bóng đèn chớp tắt, tiếng bước chân vọng lại.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, an old dusty mirror at the end of a dark apartment corridor, faint reflection, cinematic urban horror in modern Vietnam, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cuối hành lang, chiếc gương cũ phủ bụi mờ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Cold pale light, a man facing an old mirror in a dark corridor, his reflection turning slowly, cinematic urban horror, modern Vietnam, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bóng trong gương quay chậm hơn người thật.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, an empty elevator opening in a dark apartment lobby at night, modern Vietnam, cinematic urban horror, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thang máy mở cửa dù không ai bấm gọi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Dark corridor, cold wind blowing through a door gap in a Vietnamese apartment at night, lights going out, cinematic urban horror, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Gió lạnh lùa qua khe cửa, đèn vụt tắt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, close-up of a mirror reflection smiling in a dark corridor, frightened man in foreground, cinematic urban horror, modern Vietnam, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bóng ấy mỉm cười, dù người thật không cười.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Cold dim light, a man pressing his ear to an old mirror in a dark apartment corridor at night, cinematic urban horror, modern Vietnam, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tiếng gõ cửa vang lên từ phía sau gương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light, a frightened man stepping back from a mirror in a dark corridor, long shadows, cinematic urban horror, modern Vietnam, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Người đàn ông lùi lại, tim đập thình thịch.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Cold pale light, a cracked old mirror at the end of a dark corridor, empty reflection, dust and fog, cinematic urban horror, modern Vietnam, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Gương nứt một đường, bóng kia biến mất hẳn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Cold morning light, an empty apartment corridor with an old mirror at the end, quiet and still, cinematic urban horror, modern Vietnam, 9:16 vertical, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sáng ra, hành lang chỉ còn lại chiếc gương trống.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "seed": 207,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

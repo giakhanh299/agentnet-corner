@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "wuxia",
+  "cover_hook": "Mười năm một lời hẹn trên đỉnh núi mây mù…",
+  "cover_theme": "wuxia",
+  "cover_title": "HẸN ƯỚC TUYẾT SƠN",
+  "cta": "Giữ lời hẹn mười năm, bạn có làm được không? Bình luận nhé!",
+  "description": "Mười năm trước, hai kiếm khách hẹn gặp nhau trên đỉnh Tuyết Sơn. Một người giữ lời, một người vượt rừng trúc trong sương tìm về. Không máu me, chỉ có tuyết rơi, kiếm sáng và một lời hẹn được giữ trọn.",
+  "episode": 7,
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no blood, no gore, no violence, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Hẹn Ước Đỉnh Tuyết Sơn | Giang Hồ Kỳ Truyện Tập 7",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – lời hẹn mười năm",
+      "duration_s": 5.0,
+      "image_prompt": "Golden dawn light over a misty snow mountain peak, clouds drifting, cinematic wuxia film, vertical 9:16, epic wide shot, no text, no blood.",
+      "motion": "máy quay mở rộng chậm từ mây mù lên đỉnh núi tuyết trong nắng sớm",
+      "voiceover": "Mười năm... một lời hẹn trên đỉnh núi mây mù...",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió lạnh qua đỉnh núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Kiếm khách qua rừng trúc",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light in a misty bamboo forest, a white-robed swordsman walking, cinematic wuxia film, vertical 9:16, no text, no blood.",
+      "motion": "máy quay theo sau kiếm khách áo trắng bước qua rừng trúc trong sương",
+      "voiceover": "Kiếm khách áo trắng bước qua rừng trúc trong sương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân trên lá trúc",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gió qua rừng trúc",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Cận cảnh thanh kiếm cũ",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on an old polished sword hilt, close-up, cinematic wuxia film, vertical 9:16, sharp detail, no text, no blood.",
+      "motion": "zoom chậm vào chuôi kiếm cũ sáng bóng dưới ánh đèn lồng",
+      "voiceover": "Thanh kiếm cũ vẫn sáng, như chưa từng rời tay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gỗ kẽo kẹt nhẹ",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 0,
+          "desc": "đèn lồng cháy ấm",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "fire_lamp"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Quán trọ ven đường",
+      "duration_s": 5.0,
+      "image_prompt": "Golden lantern light inside an ancient roadside tavern, wooden tables, warm mist, cinematic wuxia film, vertical 9:16, no text, no blood.",
+      "motion": "máy quay lia chậm qua quán trọ cổ, đèn vàng soi bóng người xưa",
+      "voiceover": "Quán trọ ven đường, đèn vàng soi bóng người xưa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "đèn lồng cháy ấm",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 1,
+          "desc": "gỗ kẽo kẹt nhẹ",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "wood_creak"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Cận cảnh ánh mắt người hẹn",
+      "duration_s": 5.0,
+      "image_prompt": "Soft candlelight on a swordsman's determined eyes, close-up, cinematic wuxia film, vertical 9:16, sharp detail, no text, no blood.",
+      "motion": "giữ khung cận ánh mắt kiếm khách, ánh nến lay động nhẹ",
+      "voiceover": "Ánh mắt người hẹn vẫn đợi, dù tóc đã bạc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "đèn nến cháy khẽ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ ngoài cửa",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Tuyết rơi trắng đỉnh núi",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue moonlight on falling snow over a mountain peak, cinematic wuxia film, vertical 9:16, epic wide shot, no text, no blood.",
+      "motion": "máy quay mở rộng chậm, tuyết rơi trắng đỉnh núi dưới ánh trăng",
+      "voiceover": "Tuyết rơi trắng đỉnh núi, lời hẹn vẫn còn đây.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió lạnh qua núi tuyết",
+          "dur": 5,
+          "gain_db": -26.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 2,
+          "desc": "nước tan chảy nhỏ giọt",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "water"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Hai bóng kiếm đối mặt",
+      "duration_s": 5.0,
+      "image_prompt": "Dramatic sunset light on two swordsman silhouettes facing each other, misty mountain, cinematic wuxia film, vertical 9:16, no text, no blood.",
+      "motion": "máy quay giữ khung trung cảnh hai bóng kiếm đối mặt trong hoàng hôn",
+      "voiceover": "Hai bóng kiếm đối mặt, không ai rút kiếm trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió núi thổi mạnh",
+          "dur": 5,
+          "gain_db": -26.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 0,
+          "desc": "bước chân chậm trên tuyết",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Một cái gật đầu",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light on two swordsmen nodding to each other, snow falling gently, cinematic wuxia film, vertical 9:16, no text, no blood.",
+      "motion": "máy quay đẩy chậm vào hai kiếm khách gật đầu với nhau giữa tuyết rơi",
+      "voiceover": "Một cái gật đầu thay cho ngàn lời thề xưa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Cùng ngắm tuyết rơi",
+      "duration_s": 5.0,
+      "image_prompt": "Soft twilight light on two figures watching snow fall from a mountain peak, cinematic wuxia film, vertical 9:16, no text, no blood.",
+      "motion": "máy quay lùi chậm, hai bóng người cùng ngắm tuyết rơi trên đỉnh núi",
+      "voiceover": "Hai người cùng ngắm tuyết rơi trên đỉnh núi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ hoàng hôn",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 2,
+          "desc": "mưa tuyết rơi khẽ",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Hẹn ước giữ trọn",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunrise light on a lone swordsman walking down a snowy mountain path, cinematic wuxia film, vertical 9:16, no text, no blood.",
+      "motion": "máy quay theo sau kiếm khách bước xuống đường núi trong nắng sớm",
+      "voiceover": "Hẹn ước giữ trọn, giang hồ lại gọi tên nhau.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân trên tuyết",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gió sớm qua núi",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Bright dawn light over a misty snow mountain, a swordsman silhouette on the ridge, cinematic wuxia film, vertical 9:16, no text, no blood.",
+      "motion": "máy quay mở rộng chậm lên đỉnh núi mây mù trong nắng sớm",
+      "voiceover": "Giữ lời hẹn mười năm, bạn có làm được không?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió núi buổi sớm",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    }
+  ],
+  "series": "Giang Hồ Kỳ Truyện",
+  "title": "Hẹn Ước Đỉnh Tuyết Sơn",
+  "voice": "phonui",
+  "seed": 107,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

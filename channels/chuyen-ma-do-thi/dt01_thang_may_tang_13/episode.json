@@ -1,0 +1,144 @@
+{
+  "episode": 1,
+  "title": "Thang Máy Tầng 13",
+  "publish_title": "Tập Một — Thang Máy Tầng 13 | Chuyện Ma Đô Thị",
+  "cover_title": "THANG MÁY TẦNG 13",
+  "cover_hook": "Tòa chung cư không có tầng mười ba, sao nút đèn vẫn sáng?",
+  "description": "Tập một kể về Linh đi thang máy về nhà lúc đêm khuya trong chung cư cũ. Cô bấm tầng mười hai, nhưng thang máy dừng ở tầng mười ba vốn không tồn tại, cửa mở ra hành lang tối với một bóng người lặng lẽ. Câu chuyện hoàn toàn hư cấu, chỉ gợi sợ hãi bằng tâm lý, bóng lưng và đèn chớp, không máu me, không sát hại, không lộ mặt đáng sợ.",
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Chuyện Ma Đô Thị để xem tập tiếp theo, và bình luận xem bạn có dám đi thang máy một mình lúc nửa đêm không.",
+  "series": "Chuyện Ma Đô Thị",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không biểu tượng, không máu me, không bạo lực, không lộ mặt đáng sợ, không hình ảnh méo mó, không dấu chìm",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light on an old Vietnamese apartment building at night, flickering corridor lights, dark windows, fog drifting, empty street below, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh chung cư cũ trong đêm, đèn hành lang chớp",
+      "voiceover": "Đêm khuya, chung cư cũ im lặng, đèn chớp tắt.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Dim fluorescent light on a young woman entering an old elevator with a food bag, metal doors half open, dark corridor behind, nervous expression, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh Linh bước vào thang máy",
+      "voiceover": "Linh bước vào thang máy, ôm chặt túi đồ ăn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Cold fluorescent light on a hand pressing the twelfth floor button inside an old elevator, worn metal panel, numbers glowing, doors closing, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh tay cô bấm nút tầng mười hai",
+      "voiceover": "Cô bấm tầng mười hai, cửa thang máy khép lại.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering light on an old elevator floor indicator jumping to thirteen, dim metal interior, shadows shifting, unsettling quiet, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh bảng số thang máy nhảy tới tầng mười ba",
+      "voiceover": "Thang rung nhẹ, bảng số nhảy tới tầng mười ba.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cold yellow light on a dark apartment corridor seen from an open elevator, flickering ceiling lamp, long shadows, doors closed on both sides, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh hành lang tối khi cửa thang máy mở",
+      "voiceover": "Cửa mở ra hành lang tối, đèn vàng chớp tắt.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Dim corridor light on a distant shadowy figure standing at the end of a dark hallway, back turned, flickering lamp above, fog near the floor, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh bóng người đứng cuối hành lang",
+      "voiceover": "Bóng người cuối hành lang lặng lẽ nhìn cô.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold fluorescent light on a frightened young woman pressing the elevator close button repeatedly, trembling hand, metal doors slowly closing, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh Linh bấm nút đóng cửa thang máy",
+      "voiceover": "Linh bấm nút đóng cửa, tim đập thình thịch.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering fluorescent light inside a still old elevator, a young woman waiting anxiously, dark metal walls, floor numbers unlit, tense silence, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh thang máy đứng yên, đèn chớp tắt",
+      "voiceover": "Thang máy đứng yên, đèn cabin chớp tắt liên tục.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Dim light on closed metal elevator doors in a dark corridor, a faint shadow passing under the door gap, flickering lamp, suspenseful stillness, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh cửa thang máy, tiếng gõ vang lên",
+      "voiceover": "Tiếng gõ cửa vang lên, hành lang lại im lặng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Soft cold light on a young woman with closed eyes counting silently inside a descending old elevator, hands clasped, floor indicator moving down, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh Linh nhắm mắt đếm thầm trong thang máy",
+      "voiceover": "Linh nhắm mắt đếm thầm, thang máy đi xuống.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm bright light on a ground floor apartment lobby at night, a relieved young woman stepping out of an elevator, security desk and glass doors, calm after tension, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh sảnh chung cư sáng đèn, Linh bước ra",
+      "voiceover": "Cửa mở, sảnh sáng đèn, Linh thở phào bước ra.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 201,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

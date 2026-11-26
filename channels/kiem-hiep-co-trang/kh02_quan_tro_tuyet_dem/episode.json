@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "wuxia",
+  "cover_hook": "Bảy cao thủ mắc kẹt trong quán trọ giữa bão tuyết…",
+  "cover_theme": "wuxia",
+  "cover_title": "QUÁN TRỌ TUYẾT ĐÊM",
+  "cta": "Theo dõi Giang Hồ Ký Truyện để xem tập tiếp theo!",
+  "description": "Tập 02: Bảy cao thủ mắc kẹt trong quán trọ cổ giữa bão tuyết. Cánh cửa bật mở, tuyết ùa vào, bảy bàn tay cùng đặt lên chuôi kiếm — rồi một chén trà nâng lên phá tan im lặng. Kiếm hiệp hào hùng, bí ẩn, không máu me bạo lực.",
+  "episode": 2,
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blood, gore, violence, modern clothing, deformed hands, blurry, low quality",
+  "publish_title": "Quán Trọ Tuyết Đêm | Giang Hồ Ký Truyện Tập 02",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue moonlight over snow-covered mountains and a lonely ancient inn, cinematic wuxia film still, vertical 9:16, heavy snowfall, one golden lantern glowing in the window, drifting mist, epic wide shot",
+      "motion": "",
+      "voiceover": "Bảy cao thủ mắc kẹt giữa bão tuyết đêm.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden lantern light inside an ancient mountain inn doorway, cinematic wuxia film still, vertical 9:16, seven swordsmen in dark robes entering through falling snow, snow on shoulders, wooden beams, tense quiet mood",
+      "motion": "",
+      "voiceover": "Bảy bóng người bước vào quán trọ đèn vàng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering lantern light on an elderly innkeeper lighting paper lanterns, cinematic wuxia film still, vertical 9:16, weathered hands, warm amber glow, wooden counter, snow falling outside the window, nervous quiet mood",
+      "motion": "",
+      "voiceover": "Chủ quán run tay thắp đèn, liếc ra cửa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm candlelight over a long wooden table in an ancient inn, cinematic wuxia film still, vertical 9:16, seven swordsmen in dark robes seated in silence, steam rising from tea cups, golden lanterns, tense mysterious atmosphere",
+      "motion": "",
+      "voiceover": "Bảy thanh kiếm đặt trên bàn, khói trà bay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Soft lantern light on seven ornate swords resting on a wooden table, cinematic wuxia film still, vertical 9:16, melting snow droplets, dark sleeves, shallow depth of field, warm amber and cold blue tones",
+      "motion": "",
+      "voiceover": "Tuyết tan trên vai áo, gió rít ngoài hiên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering candlelight on a swordsman's calm cold eyes in close-up, cinematic wuxia film still, vertical 9:16, dark hood, snowflakes on eyebrows, misty background, tense mysterious mood",
+      "motion": "",
+      "voiceover": "Đôi mắt lạnh nhìn về phía cánh cửa gỗ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold wind and swirling snow bursting through an open wooden inn door, cinematic wuxia film still, vertical 9:16, lantern flames flickering, seven startled swordsmen silhouettes, dramatic gust, blue and gold tones",
+      "motion": "",
+      "voiceover": "Cánh cửa bật mở, tuyết ùa vào như sóng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on seven hands gripping ornate sword hilts at once, cinematic wuxia film still, vertical 9:16, dark robes, tense standoff, wooden table, steam from tea, dramatic low angle",
+      "motion": "",
+      "voiceover": "Bảy bàn tay cùng đặt lên chuôi kiếm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Golden lantern glow on a hand raising a clay tea cup in toast, cinematic wuxia film still, vertical 9:16, warm amber light, steam curling upward, relieved smiles in soft focus background, snow outside window",
+      "motion": "",
+      "voiceover": "Một chén trà nâng lên, phá tan im lặng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light filling an ancient inn as seven swordsmen laugh over tea, cinematic wuxia film still, vertical 9:16, hanging paper lanterns, steam, snow falling beyond the window, cozy joyful mood",
+      "motion": "",
+      "voiceover": "Tiếng cười ấm vang khắp quán giữa đêm tuyết.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Soft pink dawn light over a snow-covered mountain inn, cinematic wuxia film still, vertical 9:16, golden lantern still burning in the window, calm snowfall, drifting mist, peaceful wide shot",
+      "motion": "",
+      "voiceover": "Bình minh lên, quán trọ vẫn sáng đèn vàng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "series": "Giang Hồ Kỳ Truyện",
+  "title": "Quán Trọ Tuyết Đêm",
+  "voice": "phonui",
+  "seed": 102,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

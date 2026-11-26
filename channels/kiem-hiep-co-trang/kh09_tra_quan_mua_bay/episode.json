@@ -1,0 +1,144 @@
+{
+  "episode": 9,
+  "title": "Trà Quán Mưa Bay",
+  "publish_title": "Tập Chín — Trà Quán Mưa Bay | Giang Hồ Kỳ Truyện",
+  "cover_title": "TRÀ QUÁN MƯA BAY",
+  "cover_hook": "Chưa kịp đặt chén trà xuống, trận quyết đấu đã kết thúc?",
+  "description": "Tập chín kể về trà quán ven đường trong đêm mưa bay, nơi hai kiếm khách ngồi đối diện trong im lặng. Một ánh kiếm lóe lên nhanh hơn tiếng sấm, và trận đấu kết thúc trước khi chén trà kịp đặt xuống bàn. Câu chuyện hoàn toàn hư cấu, không dựa trên nhân vật hay sự kiện có thật.",
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Giang Hồ Kỳ Truyện để xem tập tiếp theo, và bình luận xem bạn có kịp nhìn thấy đường kiếm không.",
+  "series": "Giang Hồ Kỳ Truyện",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không biểu tượng, không máu me, không bạo lực ghê rợn, không hình ảnh méo mó, không dấu chìm",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Soft rainy light on a small ancient tea house beside a mountain road, golden lanterns glowing, rain mist drifting, bamboo forest behind, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh trà quán ven đường trong mưa bay",
+      "voiceover": "Mưa bay trắng trời, trà quán ven đường sáng đèn.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on an elderly tea house owner pouring tea, fragrant steam rising, clay teapot and wooden table, calm hands, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh lão chủ quán pha trà",
+      "voiceover": "Lão chủ quán pha trà, khói thơm bay khắp nhà.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Dim rainy light on a mysterious traveller in a conical hat entering a tea house, wet cloak dripping, sword at his side, lantern glow behind, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh khách lạ đội nón bước vào quán",
+      "voiceover": "Khách lạ đội nón bước vào, áo ướt sũng mưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm candlelight on two swordsmen sitting opposite each other at a wooden tea table, tense silence, swords resting beside them, rain on the window, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh hai kiếm khách ngồi đối diện im lặng",
+      "voiceover": "Hai kiếm khách đối diện, chẳng ai nói lời nào.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Soft lantern light on a hot cup of tea being set on a dark wooden table, steam curling upward, a weathered hand withdrawing, cinematic wuxia close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh chén trà nóng đặt xuống bàn",
+      "voiceover": "Chén trà nóng đặt xuống bàn, hơi nước bốc lên.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Grey storm light on rain falling outside a tea house porch, lightning flashing over bamboo forest and distant mountains, wet tiles glistening, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh mưa rơi ngoài hiên quán, sấm chớp",
+      "voiceover": "Ngoài hiên mưa rơi, sấm chớp lóe sáng cả trời.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sword flash in a dim tea house, a single gleaming blade arc between two tables, teacups trembling, lanterns swaying, cinematic wuxia action, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh ánh kiếm lóe lên trong quán",
+      "voiceover": "Một ánh kiếm lóe lên, nhanh hơn cả tiếng sấm.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on an untouched cup of tea on a wooden table, steam still rising, a sword sheath lying beside it, quiet tea house, cinematic wuxia close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh chén trà vẫn nguyên trên bàn",
+      "voiceover": "Chén trà vẫn nguyên, trận đấu xong từ lúc nào.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft lantern light on a defeated swordsman bowing his head, the victor smiling calmly and sheathing his sword, rain outside the window, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh kẻ thua cúi đầu, kẻ thắng mỉm cười",
+      "voiceover": "Kẻ thua cúi đầu, kẻ thắng mỉm cười lặng lẽ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Pale dawn light on a traveller in a conical hat leaving a tea house as rain eases, wet road reflecting lanterns, bamboo forest ahead, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh khách lạ đội nón rời quán khi mưa tạnh",
+      "voiceover": "Mưa tạnh dần, khách lạ đội nón rời khỏi quán.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on a small tea house glowing in the rainy night, steam from the chimney, empty road and bamboo forest around, peaceful mood, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh trà quán sáng đèn trong đêm mưa",
+      "voiceover": "Trà quán sáng đèn, chờ người giang hồ ghé qua.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 109,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

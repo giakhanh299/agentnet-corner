@@ -1,0 +1,981 @@
+{
+  "episode": 5,
+  "title": "Tiếng Sáo Rừng Trúc",
+  "publish_title": "Tiếng Sáo Rừng Trúc | Giang Hồ Kỳ Truyện Tập Năm",
+  "cover_title": "TIẾNG SÁO RỪNG TRÚC",
+  "cover_hook": "Nghe hết khúc sáo này chưa ai từng bước ra khỏi rừng trúc?",
+  "description": "Kiếm khách bước vào rừng trúc lúc hoàng hôn và nghe một khúc sáo không ai giải thích được. Chàng chọn lắng nghe thay vì rút kiếm, rồi nhận ra khúc sáo là một lời hẹn cũ. Một câu chuyện kiếm hiệp hào hùng và bí ẩn về lòng tin và sự bình yên giữa giang hồ.",
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "cta": "Hãy theo dõi Giang Hồ Kỳ Truyện để nghe khúc sáo tiếp theo và bình luận cảm nhận của bạn.",
+  "series": "Giang Hồ Kỳ Truyện",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no logo, no blood, no gore, no violence, no watermark",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Golden dusk light, a lone swordsman in white robes standing in a misty bamboo forest, tall green bamboo, drifting leaves, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Toàn cảnh rừng trúc lúc hoàng hôn",
+      "voiceover": "Rừng trúc mở lối khi hoàng hôn buông xuống.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "v",
+          "desc": "v",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft misty light, a swordsman pausing on a bamboo path, listening intently, green bamboo swaying, fallen leaves, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Trung cảnh kiếm khách dừng bước giữa rừng trúc",
+      "voiceover": "Kiếm khách dừng bước lắng nghe tiếng sáo xa xăm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Pale moonlight, a swordsman following a winding bamboo trail, tall bamboo trunks, drifting mist, mysterious atmosphere, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Toàn cảnh lối trúc quanh co dưới ánh trăng",
+      "voiceover": "Tiếng sáo dẫn chàng qua ba lối trúc quanh co.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "v",
+          "desc": "v",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light, close-up of a bamboo leaf landing on a swordsman shoulder, white robe, gentle wind, misty bamboo background, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Cận cảnh lá trúc rơi chạm vai áo kiếm khách",
+      "voiceover": "Lá trúc rơi chạm vai áo chàng không tiếng động.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "v",
+          "desc": "v",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cool moonlight, a mysterious flutist in white robes sitting among bamboo, playing a bamboo flute, drifting mist, serene expression, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Trung cảnh người thổi sáo ngồi giữa rừng trúc",
+      "voiceover": "Bóng trắng ngồi thổi sáo giữa rừng trúc mờ sương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Soft moonlight, close-up of a swordsman hand resting near his sword hilt, calm face, white robe, misty bamboo background, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Cận cảnh bàn tay kiếm khách đặt gần chuôi kiếm",
+      "voiceover": "Chàng không rút kiếm vì tiếng sáo không sát khí.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Warm firelight, a mysterious flutist in white robes speaking beside a small lantern, bamboo forest at night, gentle mist, nostalgic mood, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Trung cảnh người thổi sáo kể chuyện bên đèn lồng",
+      "voiceover": "Người thổi sáo kể về một lời hẹn đã cũ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunrise light, a swordsman and a flutist exchanging a respectful bow in a bamboo clearing, mist lifting, peaceful mood, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Toàn cảnh hai người cúi chào nhau trong khoảng trúc trống",
+      "voiceover": "Một khúc sáo đổi lấy một đêm bình yên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light, a swordsman bowing gratefully then walking away through bamboo, white robe, drifting leaves, calm atmosphere, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Trung cảnh kiếm khách cúi đầu cảm tạ rồi rời đi",
+      "voiceover": "Chàng cúi đầu cảm tạ rồi bước ra khỏi rừng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunrise light, a bamboo forest path glowing golden, morning mist, sun rays through tall bamboo, peaceful wuxia landscape, cinematic film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Toàn cảnh bình minh soi lối trúc vàng rực rỡ",
+      "voiceover": "Bình minh lên soi lối trúc vàng rực rỡ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "v",
+          "desc": "v",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Mysterious twilight light, an empty bamboo path fading into mist, a lone flute resting on stone, haunting quiet mood, cinematic wuxia film, vertical 9:16, no text, no logo, no blood",
+      "motion": "Toàn cảnh lối trúc vắng lặng sau khi tiếng sáo dừng",
+      "voiceover": "Ai nghe hết khúc sáo sẽ không còn đường về.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "v",
+          "desc": "v",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "seed": 105,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

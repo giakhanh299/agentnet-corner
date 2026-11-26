@@ -1,0 +1,144 @@
+{
+  "episode": 6,
+  "title": "Quán Cà Phê Hẻm Cụt",
+  "publish_title": "Tập Sáu — Quán Cà Phê Hẻm Cụt | Chuyện Ma Đô Thị",
+  "cover_title": "QUÁN CÀ PHÊ HẺM CỤT",
+  "cover_hook": "Sáng hôm sau quay lại, con hẻm chỉ là bức tường gạch cũ…",
+  "description": "Tập sáu kể về An tìm quán cà phê nhỏ cuối con hẻm cụt trong đêm mưa. Quán ấm áp, chủ quán hiền hậu, nhưng đồng hồ dừng lại đúng nửa đêm và sáng hôm sau quay lại, con hẻm chỉ còn bức tường gạch cũ. Câu chuyện hoàn toàn hư cấu, chỉ gợi sợ hãi bằng tâm lý, bóng lưng và đèn chớp, không máu me, không sát hại, không lộ mặt đáng sợ.",
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Chuyện Ma Đô Thị để xem tập tiếp theo, và bình luận xem bạn có dám vào quán cà phê trong hẻm cụt không.",
+  "series": "Chuyện Ma Đô Thị",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không biểu tượng, không máu me, không bạo lực, không lộ mặt đáng sợ, không hình ảnh méo mó, không dấu chìm",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold rainy light on a narrow dead-end alley in a Vietnamese city at night, a small cafe glowing warmly, wet pavement, fog drifting, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh hẻm cụt trong đêm mưa, quán cà phê sáng đèn",
+      "voiceover": "Đêm mưa, An tìm quán cà phê cuối hẻm cụt.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm yellow light spilling from a small cafe doorway onto a wet alley, old Vietnamese music posters inside, rain falling, peaceful yet eerie, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh đèn vàng hắt ra từ quán cà phê",
+      "voiceover": "Đèn vàng hắt ra, nhạc xưa vang lên khẽ khàng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on a kind elderly cafe owner handing a young woman a hot coffee, steam rising, wooden counter, old cups, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh chủ quán đưa An tách cà phê nóng",
+      "voiceover": "Chủ quán cười hiền, đưa An tách cà phê nóng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Soft rainy light on a young woman sitting by a cafe window watching rain on the awning, warm interior behind, street lamp outside, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh An ngồi bên cửa sổ nhìn mưa",
+      "voiceover": "An ngồi bên cửa sổ, nhìn mưa rơi mái hiên.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Dim lamplight on an old wall clock stopped at midnight inside a quiet cafe, dust on the glass, shadows on the wall, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh đồng hồ treo tường dừng lại nửa đêm",
+      "voiceover": "Đồng hồ tường dừng lại, kim chỉ đúng nửa đêm.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dim light on silent cafe customers turning to look at a young woman, faces in shadow, coffee cups untouched, tense stillness, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh khách trong quán im lặng nhìn An",
+      "voiceover": "Khách trong quán im lặng, mọi ánh mắt nhìn An.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on a young woman paying at a cafe counter, the elderly owner pointing toward the door, rain visible outside, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh An đứng dậy trả tiền, chủ quán chỉ cửa",
+      "voiceover": "An đứng dậy trả tiền, chủ quán chỉ cửa ra.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Cold foggy light on a narrow alley at night, street lamp flickering, mist swallowing the far end, wet walls, a lone figure walking, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh hẻm sương mù, đèn đường chớp tắt",
+      "voiceover": "Ngoài hẻm sương mù giăng kín, đèn đường chớp tắt.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Pale foggy light on a young woman turning back in a misty alley, the cafe gone, only fog and old walls, frightened eyes, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh An quay đầu nhìn lại quán trong sương",
+      "voiceover": "An quay đầu nhìn lại, quán biến mất trong sương.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Pale morning light on a dead-end alley that ends in an old brick wall, no cafe, a young woman standing in disbelief, wet pavement, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh hẻm cụt sáng hôm sau, bức tường gạch cũ",
+      "voiceover": "Sáng sau quay lại, hẻm chỉ là tường gạch cũ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light on a young woman holding a coffee cup in a quiet alley, steam still rising, thoughtful face, old brick wall behind, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh An giữ tách cà phê còn hơi ấm",
+      "voiceover": "An giữ tách cà phê, hơi ấm còn trên tay.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 206,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

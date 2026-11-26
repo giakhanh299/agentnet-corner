@@ -1,0 +1,144 @@
+{
+  "episode": 9,
+  "title": "Tin Nhắn Từ Tài Khoản Đã Xóa",
+  "publish_title": "Tập Chín — Tin Nhắn Từ Tài Khoản Đã Xóa | Chuyện Ma Đô Thị",
+  "cover_title": "TIN NHẮN LÚC NỬA ĐÊM",
+  "cover_hook": "Tin nhắn đến từ chiếc điện thoại cất trong tủ suốt năm năm…",
+  "description": "Tập chín kể về Hà dọn tủ cũ lúc đêm khuya và tìm thấy chiếc điện thoại cất suốt năm năm. Màn hình bỗng sáng lên, tin nhắn không tên người gửi hiện ra, hỏi cô còn nhớ không. Câu chuyện hoàn toàn hư cấu, chỉ gợi sợ hãi bằng tâm lý, bóng lưng và đèn chớp, không máu me, không sát hại, không lộ mặt đáng sợ.",
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Chuyện Ma Đô Thị để xem tập tiếp theo, và bình luận xem bạn có dám mở tin nhắn lúc nửa đêm không.",
+  "series": "Chuyện Ma Đô Thị",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không biểu tượng, không máu me, không bạo lực, không lộ mặt đáng sợ, không hình ảnh méo mó, không dấu chìm",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold dim light on a young woman cleaning an old wardrobe late at night, dust in the air, folded clothes, a small old phone found, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh Hà dọn tủ cũ trong đêm khuya",
+      "voiceover": "Đêm khuya, Hà dọn tủ cũ, thấy điện thoại xưa.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft cold light on an old mobile phone lying in a dusty drawer, one battery bar glowing, cobwebs nearby, dark room, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh chiếc điện thoại cũ nằm im",
+      "voiceover": "Điện thoại nằm im năm năm, pin vẫn còn vạch.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue light on an old phone screen lighting up in a dark room, a new message notification glowing, a young woman watching in surprise, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh màn hình điện thoại bỗng sáng lên",
+      "voiceover": "Màn hình bỗng sáng lên, tin nhắn mới hiện ra.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Dim blue light on a phone screen showing a short message with no sender name, a trembling hand holding it, dark bedroom, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh tin nhắn không tên người gửi",
+      "voiceover": "Tin nhắn không tên, chỉ có một dòng chữ ngắn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cold screen light on a young woman reading a phone message in a dark bedroom, worried eyes, rain on the window, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh Hà mở tin nhắn, gương mặt lo lắng",
+      "voiceover": "Hà mở tin nhắn, dòng chữ hỏi cô còn nhớ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Grey rainy light on a city street seen from an apartment window at night, street lamp flickering, rain on glass, distant fog, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh cửa sổ mưa rơi, đèn đường chớp tắt",
+      "voiceover": "Ngoài cửa sổ mưa rơi, đèn đường chớp tắt.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue light on an old phone vibrating on a wooden table, a second message arriving, dark quiet bedroom, a shadow on the wall, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh tin nhắn thứ hai đến",
+      "voiceover": "Tin nhắn thứ hai đến, hỏi sao cô im lặng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Dim lamplight on a young woman setting an old phone down on a wooden table, trembling hands, dark bedroom, rain outside, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh Hà đặt điện thoại xuống bàn",
+      "voiceover": "Hà đặt điện thoại xuống, tay vẫn run từng hồi.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft cold light on a young woman opening an old box from a wardrobe, a faded photograph inside, dust and shadows, quiet bedroom, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh Hà mở tủ lấy hộp cũ",
+      "voiceover": "Cô mở tủ lấy hộp cũ, trong hộp còn ảnh.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Pale morning light on a young woman locking an old phone inside a wardrobe, calm but tired face, daylight through the window, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh Hà cất điện thoại vào tủ lúc trời sáng",
+      "voiceover": "Trời sáng, Hà cất điện thoại vào tủ khóa lại.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight on a quiet bedroom at night, an old wardrobe closed, a young woman lying awake in bed, soft shadows, peaceful yet uneasy, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh phòng ngủ yên tĩnh trong đêm",
+      "voiceover": "Đêm nay điện thoại im lặng, Hà chưa ngủ được.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 209,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

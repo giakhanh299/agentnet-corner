@@ -1,0 +1,309 @@
+{
+  "episode": 8,
+  "title": "Chuyến Tiêu Cuối Năm",
+  "publish_title": "Chuyến Tiêu Cuối Năm — Chiếc rương khóa đồng không ai biết bên trong chứa gì?",
+  "cover_title": "CHUYẾN TIÊU CUỐI NĂM",
+  "cover_hook": "Chiếc rương khóa đồng không ai biết bên trong chứa gì?",
+  "description": "Tập tám của Giang Hồ Kỳ Truyện: cuối năm, đoàn tiêu lên đường giữa sương lạnh, hộ tống một chiếc rương khóa đồng mà không ai biết bên trong chứa thứ gì. Giữa rừng trúc, chữ tín của người hộ tiêu được thử thách đến cùng.",
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Giang Hồ Kỳ Truyện để xem tập tiếp theo.",
+  "series": "Giang Hồ Kỳ Truyện",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no logo, no watermark, no blood, no gore",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold morning mist, a caravan of wuxia escorts walking a mountain road with a locked bronze chest, cinematic wuxia film, misty bamboo forest, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Cuối năm, đoàn tiêu lên đường giữa sương lạnh.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft golden light, a locked bronze chest on a wooden cart, wuxia escorts in ancient robes walking beside it, cinematic wuxia film, misty bamboo forest, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Chiếc rương khóa đồng lặng lẽ nằm giữa đoàn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Dim lantern light, close-up of an old bronze lock on a wooden chest, curious escort faces in shadow, cinematic wuxia film, ancient tavern, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Không ai biết bên trong rương chứa thứ gì.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight, a wuxia caravan halting on a dark bamboo forest path at night, mist and swaying bamboo, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Đêm xuống, rừng trúc xào xạc, bước chân dừng lại.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue moonlight, a black-robed stranger standing at a forest crossroads, swordsman silhouette in mist, cinematic wuxia film, misty bamboo forest, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Kẻ lạ mặt áo đen xuất hiện nơi ngã ba.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Golden lantern light, close-up of a swordsman drawing his sword, calm fearless eyes, ancient robes, cinematic wuxia film, misty bamboo forest, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Kiếm khách rút kiếm, ánh mắt không hề run sợ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight, two swords clashing in a bamboo grove, green leaves scattering through the air, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Một chiêu kiếm lướt qua, lá trúc bay tứ tán.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light, a locked bronze chest glowing and shaking on a wooden cart at night, astonished escorts, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Rương đồng rung lên, ánh sáng vàng hắt ra ngoài.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft golden lantern light, an opened chest revealing a single handwritten letter, no gold inside, swordsman reading, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Bên trong không phải vàng bạc, chỉ một bức thư.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dawn light, close-up of a handwritten letter in a swordsman hand, misty mountain road behind, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Bức thư viết tay dặn giữ chữ tín đến cùng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunrise light, a wuxia caravan walking away on a misty mountain road, bamboo forest and ancient peaks, cinematic wuxia film, 9:16 vertical, no text, no logo",
+      "motion": "",
+      "voiceover": "Chuyến tiêu cuối năm khép lại giữa bình minh.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -27
+        }
+      ]
+    }
+  ],
+  "seed": 108,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

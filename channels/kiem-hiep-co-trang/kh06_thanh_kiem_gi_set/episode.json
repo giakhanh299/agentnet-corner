@@ -1,0 +1,144 @@
+{
+  "episode": 6,
+  "title": "Thanh Kiếm Gỉ Sét",
+  "publish_title": "Tập Sáu — Thanh Kiếm Gỉ Sét | Giang Hồ Kỳ Truyện",
+  "cover_title": "THANH KIẾM GỈ SÉT",
+  "cover_hook": "Lão ăn mày vác thanh kiếm cùn lại là đệ nhất cao thủ?",
+  "description": "Tập sáu kể về lão ăn mày vác thanh kiếm gỉ sét đi qua chợ chiều, bị mọi người cười nhạo, cho đến khi bọn cướp xông vào quán trọ và lão rút kiếm chỉ một lần. Câu chuyện hoàn toàn hư cấu, không dựa trên nhân vật hay sự kiện có thật.",
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Giang Hồ Kỳ Truyện để xem tập tiếp theo, và bình luận xem bạn có nhận ra cao thủ ẩn mình không.",
+  "series": "Giang Hồ Kỳ Truyện",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không biểu tượng, không máu me, không bạo lực ghê rợn, không hình ảnh méo mó, không dấu chìm",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunset light on a crowded ancient market street, an old beggar in patched rags carrying a rusty sword wrapped in cloth, vendors and lanterns around, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh chợ chiều ồn ào, lão ăn mày đi qua",
+      "voiceover": "Chợ chiều ồn ào, lão ăn mày vác kiếm cùn.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Golden afternoon light on laughing children pointing at an old beggar in a dusty market, adults turning away, the beggar smiling calmly, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh trẻ con cười nhạo lão ăn mày",
+      "voiceover": "Trẻ con cười nhạo, người lớn xua đuổi lão nghèo.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Soft lantern light on a rusty old sword wrapped in faded cloth, rust and worn handle in close-up, wooden market stall behind, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh thanh kiếm gỉ sét trong bao vải",
+      "voiceover": "Kiếm gỉ sét trong bao vải, chẳng ai thèm nhìn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on an ancient tavern at night, golden windows glowing, travellers laughing inside, bamboo and stone street outside, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh quán trọ sáng đèn trong đêm",
+      "voiceover": "Đêm xuống, quán trọ sáng đèn, tiếng cười vang khắp.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Harsh lantern light on masked bandits bursting into an ancient tavern, frightened travellers raising their hands, tables overturned, tense atmosphere, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh bọn cướp xông vào quán trọ",
+      "voiceover": "Bọn cướp xông vào quán, dao sáng dọa mọi người.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on an old beggar slowly rising from a corner table and drawing a rusty sword, calm eyes, stunned bandits in the background, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh lão ăn mày đứng dậy rút kiếm",
+      "voiceover": "Lão ăn mày đứng dậy, chậm rãi rút kiếm ra.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sword flash in a dim ancient tavern, a single gleaming blade arc, bandits falling back in surprise, lanterns swaying, cinematic wuxia action, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh ánh kiếm lóe lên trong quán",
+      "voiceover": "Ánh kiếm lóe lên, bọn cướp ngã xuống sàn quán.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on stunned tavern guests staring at an old beggar holding a now gleaming sword, dust in the air, amazed faces, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh mọi người sững sờ nhìn lão",
+      "voiceover": "Mọi người sững sờ nhìn lão, kiếm gỉ sáng ngời.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft candlelight on weathered hands wiping a gleaming sword with a cloth sleeve, the old beggar speaking quietly, listeners gathered around, cinematic wuxia close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh lão lau kiếm, kể chuyện xưa",
+      "voiceover": "Lão lau kiếm, kể chuyện xưa bằng giọng trầm buồn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight on an old beggar carrying a sword on his shoulder, walking away from a glowing tavern along a quiet street, long shadow, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh trăng lên, lão rời quán trọ",
+      "voiceover": "Trăng lên cao, lão vác kiếm rời khỏi quán trọ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Pale moonlight on a lone beggar swordsman walking a misty mountain path, distant peaks and bamboo forest, a small bowl of rice in his hand, peaceful mood, cinematic wuxia film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh lão bước đi trên đường núi dưới trăng",
+      "voiceover": "Cao thủ chẳng cần danh, chỉ cần bát cơm nóng.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 106,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

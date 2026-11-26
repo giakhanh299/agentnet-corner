@@ -1,0 +1,144 @@
+{
+  "episode": 3,
+  "title": "Phòng Trọ Cuối Dãy",
+  "publish_title": "Tập Ba — Phòng Trọ Cuối Dãy | Chuyện Ma Đô Thị",
+  "cover_title": "PHÒNG TRỌ CUỐI DÃY",
+  "cover_hook": "Chủ trọ dặn kỹ: sau nửa đêm đừng nhìn qua lỗ khóa…",
+  "description": "Tập ba kể về Nam thuê phòng trọ cuối dãy trong hẻm cũ với giá rẻ bất thường. Chủ trọ dặn kỹ rằng sau nửa đêm đừng nhìn qua lỗ khóa, và đêm đầu tiên tiếng bước chân dừng ngay trước cửa phòng. Câu chuyện hoàn toàn hư cấu, chỉ gợi sợ hãi bằng tâm lý, bóng lưng và đèn chớp, không máu me, không sát hại, không lộ mặt đáng sợ.",
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "cta": "Theo dõi Chuyện Ma Đô Thị để xem tập tiếp theo, và bình luận xem bạn có dám thuê phòng cuối dãy không.",
+  "series": "Chuyện Ma Đô Thị",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "không chữ, không biểu tượng, không máu me, không bạo lực, không lộ mặt đáng sợ, không hình ảnh méo mó, không dấu chìm",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold yellow light on an old Vietnamese rental house at the end of a narrow alley at night, flickering lamp, wet pavement, fog drifting, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh dãy trọ cũ cuối hẻm trong đêm",
+      "voiceover": "Dãy trọ cũ cuối hẻm, đèn vàng mờ soi lối.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dim light on a young man signing a rental paper at a small landlord desk, old corridor behind, cheap room key on the table, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh Nam thuê phòng cuối dãy",
+      "voiceover": "Nam thuê phòng cuối dãy, giá rẻ hơn phòng khác.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Dim corridor light on an elderly landlord warning a young tenant at a doorway, serious expression, old key in hand, shadows on the wall, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh chủ trọ dặn Nam trước cửa phòng",
+      "voiceover": "Chủ trọ dặn, nửa đêm đừng nhìn qua lỗ khóa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Cold rainy light on a small rented room at night, a young man unpacking a bag, rain on the window, single yellow bulb, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh phòng trọ nhỏ trong đêm mưa",
+      "voiceover": "Đêm đầu yên tĩnh, chỉ nghe mưa rơi ngoài hiên.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering corridor light on an empty old apartment hallway at midnight, long shadows, closed doors, wet footprints fading, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh hành lang vắng, bước chân vang lên",
+      "voiceover": "Nửa đêm, bước chân vang lên ngoài hành lang vắng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Dim lamplight on a young man holding his breath and listening beside a closed door, tense face, dark rented room, silence, cinematic horror close-up, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh Nam nín thở lắng nghe trong phòng",
+      "voiceover": "Nam nín thở lắng nghe, bước chân dừng trước cửa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold flickering light on a dark shadow passing under a door gap in a corridor, a young man watching from inside, dust in the air, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh bóng đen lướt qua khe cửa",
+      "voiceover": "Bóng đen lướt qua khe cửa, đèn hành lang chớp.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Soft cold light on a young man turning his back to a door keyhole in a dark room, hands clenched, lamp flickering, suspenseful mood, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh Nam quay lưng, không nhìn lỗ khóa",
+      "voiceover": "Nam nhớ lời dặn, quay lưng không nhìn lỗ khóa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Dim corridor light on a closed wooden room door at night, no one outside, flickering lamp, dust and shadows, eerie stillness, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "cận cảnh cửa phòng, tiếng gõ vang lên",
+      "voiceover": "Tiếng gõ cửa vang lên, rồi im lặng rợn người.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Pale morning light on an empty old apartment corridor, a young man opening his door cautiously, clean floor, quiet doors, calm after night, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "toàn cảnh hành lang trống trơn lúc trời sáng",
+      "voiceover": "Trời sáng, Nam mở cửa, hành lang trống trơn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on an elderly landlord giving a sad smile to a young tenant in a narrow alley, old rental house behind, peaceful daylight, cinematic horror film, vertical 9:16, no text, no logo.",
+      "motion": "trung cảnh chủ trọ dặn Nam khóa cửa sớm",
+      "voiceover": "Chủ trọ cười buồn, dặn Nam khóa cửa sớm.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 203,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

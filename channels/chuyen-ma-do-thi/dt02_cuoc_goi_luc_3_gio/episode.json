@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "folk_horror",
+  "cover_hook": "Số máy gọi đến chính là số điện thoại của bạn?",
+  "cover_theme": "horror",
+  "cover_title": "CUỘC GỌI 3 GIỜ SÁNG",
+  "cta": "Bạn có dám bắt máy lúc ba giờ sáng không? Bình luận nhé!",
+  "description": "Ba giờ sáng, điện thoại của Linh reo lên. Số máy gọi đến chính là số điện thoại của cô. Đầu dây chỉ có tiếng thở khẽ và một lời thì thầm: đừng mở cửa. Một câu chuyện hồi hộp tâm lý giữa chung cư cũ về đêm, không máu me, không lộ mặt ma.",
+  "episode": 2,
+  "hashtags": [
+    "#ChuyenMaDoThi",
+    "#TamLinh",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no blood, no gore, no suicide, no ghost face, no scary face, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Cuộc Gọi Lúc 3 Giờ Sáng | Chuyện Ma Đô Thị Tập 2",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – số gọi đến là số của bạn",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue neon light on a smartphone ringing on a nightstand, dark Vietnamese apartment at night, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay đẩy chậm vào màn hình điện thoại sáng xanh trong căn hộ tối",
+      "voiceover": "Số gọi đến... chính là số điện thoại của bạn?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "điện thoại rung khẽ",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 0,
+          "desc": "đêm yên tĩnh trong chung cư",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Ba giờ sáng, điện thoại rung",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon glow in a dark old Vietnamese apartment, a phone vibrating on a table, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay lia chậm qua căn hộ tối, dừng ở chiếc điện thoại rung",
+      "voiceover": "Ba giờ sáng, điện thoại rung trong căn hộ tối.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "điện thoại rung khẽ",
+          "dur": 4,
+          "gain_db": -26.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 2,
+          "desc": "mưa nhỏ ngoài cửa sổ",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Linh nhìn màn hình",
+      "duration_s": 5.0,
+      "image_prompt": "Dim blue light on a young woman staring at a glowing phone screen, dark apartment, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "giữ khung cận gương mặt Linh nhìn màn hình, ánh sáng xanh lay động",
+      "voiceover": "Linh nhìn màn hình, tay run run không dám nghe.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng thở khẽ trong đêm",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 0,
+          "desc": "gió đêm qua khe cửa",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Chuông reo lần nữa",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light on a ringing phone in a dark apartment, flickering hallway lamp, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay đẩy chậm vào điện thoại đang reo, đèn hành lang chớp tắt",
+      "voiceover": "Chuông reo lần nữa, vẫn là số của cô.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "điện thoại rung khẽ",
+          "dur": 4,
+          "gain_db": -26.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 1,
+          "desc": "đèn hành lang chớp tắt",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "fire_lamp"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Cô bắt máy",
+      "duration_s": 5.0,
+      "image_prompt": "Dark corridor light on a woman holding a phone to her ear, tense silence, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "giữ khung trung cảnh Linh áp điện thoại vào tai trong bóng tối",
+      "voiceover": "Cô bắt máy, đầu dây chỉ có tiếng thở khẽ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng thở khẽ đầu dây bên kia",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 0,
+          "desc": "đêm yên tĩnh",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Giọng thì thầm: đừng mở cửa",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering cold light in a dark apartment hallway, a closed wooden door, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay giữ khung cửa gỗ khép kín, ánh đèn chớp tắt",
+      "voiceover": "Một giọng thì thầm: đừng mở cửa, đừng mở cửa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "giọng thì thầm rất khẽ",
+          "dur": 4,
+          "gain_db": -28.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 2,
+          "desc": "gỗ cửa kẽo kẹt nhẹ",
+          "dur": 2,
+          "gain_db": -27.0,
+          "tag": "wood_creak"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Tiếng gõ cửa vang lên",
+      "duration_s": 5.0,
+      "image_prompt": "Dark hallway with flickering fluorescent light, a wooden door, suspenseful stillness, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay giữ khung hành lang tối, đèn chớp tắt, cửa gỗ rung nhẹ",
+      "voiceover": "Tiếng gõ cửa vang lên, hành lang đèn chớp tắt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng gõ cửa ba nhịp",
+          "dur": 3,
+          "gain_db": -26.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 0,
+          "desc": "đèn hành lang chớp tắt",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "fire_lamp"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Nhìn qua mắt thần",
+      "duration_s": 5.0,
+      "image_prompt": "Dim peephole view of an empty dark corridor, flickering light, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay giữ góc nhìn qua mắt thần, hành lang trống không",
+      "voiceover": "Nhìn qua mắt thần, hành lang không bóng người.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân xa dần ngoài hành lang",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "nước nhỏ giọt trong ống nước",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "water"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Thang máy tự mở",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon light in an old elevator opening by itself, dark and empty, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay giữ khung thang máy cũ tự mở trong ánh neon lạnh",
+      "voiceover": "Thang máy tự mở, đèn bên trong chớp liên hồi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "cửa thang máy mở khẽ",
+          "dur": 3,
+          "gain_db": -26.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt nhạc căng thẳng rất khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "horror_stinger"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Điện thoại lại rung",
+      "duration_s": 5.0,
+      "image_prompt": "Cold blue light on a vibrating phone in a dark room, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay đẩy chậm vào điện thoại rung trên bàn trong bóng tối",
+      "voiceover": "Điện thoại lại rung, màn hình hiện chính số cô.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "điện thoại rung khẽ",
+          "dur": 4,
+          "gain_db": -26.0,
+          "tag": "human_eerie"
+        },
+        {
+          "at": 2,
+          "desc": "mưa nhỏ ngoài cửa sổ",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Cold neon dawn light on an old Vietnamese apartment block, misty alley, cinematic horror film, vertical 9:16, no text, no ghost face.",
+      "motion": "máy quay mở rộng chậm lên chung cư cũ trong ánh bình minh lạnh",
+      "voiceover": "Bạn có dám bắt máy lúc ba giờ sáng không?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió sớm qua hẻm nhỏ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    }
+  ],
+  "series": "Chuyện Ma Đô Thị",
+  "title": "Cuộc Gọi Lúc 3 Giờ Sáng",
+  "voice": "phonui",
+  "seed": 202,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}
