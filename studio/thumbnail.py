@@ -98,6 +98,14 @@ def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
     base = Image.alpha_composite(img.convert("RGBA"), overlay)
     draw = ImageDraw.Draw(base)
 
+    theme = str(spec.get("cover_theme") or "horror").lower()
+    if theme == "knowledge":
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (56, 212, 232, 235), (10, 26, 38, 210), (120, 240, 255, 255), (255, 196, 46, 245)
+    elif theme == "wuxia":
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (232, 196, 112, 235), (20, 16, 12, 210), (248, 224, 152, 255), (204, 158, 62, 245)
+    else:
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (245, 166, 35, 220), (14, 18, 26, 195), (248, 190, 72, 255), (220, 62, 46, 240)
+
     series = str(spec.get("series") or "Phim Ma Dân Gian Việt Nam").upper()
     ep_num = int(spec.get("episode") or 1)
     badge_text = f"{series}  ·  TẬP {ep_num:02d}"
@@ -108,8 +116,8 @@ def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
     rx0 = (W - bw) // 2 - pad_x
     ry0 = 110
     draw.rounded_rectangle([rx0, ry0, rx0 + bw + pad_x * 2, ry0 + bh + pad_y * 2],
-                           radius=14, fill=(14, 18, 26, 195), outline=(245, 166, 35, 220), width=3)
-    draw.text(((W - bw) // 2, ry0 + pad_y - 3), badge_text, font=f_badge, fill=(248, 190, 72, 255))
+                           radius=14, fill=badge_fill, outline=badge_outline, width=3)
+    draw.text(((W - bw) // 2, ry0 + pad_y - 3), badge_text, font=f_badge, fill=badge_text_col)
 
     # Main dramatic title
     cover_title = str(spec.get("cover_title") or spec.get("title") or f"Tập {ep_num}").upper()
@@ -133,7 +141,7 @@ def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
     y = H - 220 - block_h
 
     # Accent bar above title
-    draw.rounded_rectangle([(W - 140) // 2, y - 34, (W + 140) // 2, y - 24], radius=5, fill=(220, 62, 46, 240))
+    draw.rounded_rectangle([(W - 140) // 2, y - 34, (W + 140) // 2, y - 24], radius=5, fill=accent_bar_col)
 
     for ln in lines:
         bb = draw.textbbox((0, 0), ln, font=f_title)

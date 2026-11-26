@@ -1,5 +1,164 @@
 {
   "sounds": {
+    "fire_lamp/big_fire_flame_burning": {
+      "added_at": "2026-11-26T17:38:11+07:00",
+      "author": "Mixkit",
+      "category": "fire_lamp",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1331/1331-preview.mp3",
+      "duration_s": 8.2,
+      "file": "fire_lamp/big_fire_flame_burning.ogg",
+      "fit_note": "Strong flame burning, for a large lamp flame or fire flare-up.",
+      "license": "Mixkit-Free-License",
+      "name": "Big fire flame burning",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "4e418ceb481b70e7641816e44a4c411efa31d0e953fa16b0b9496044aac683ff",
+      "source_page_url": "https://mixkit.co/free-sound-effects/fire/",
+      "tags": [
+        "fire",
+        "flame",
+        "burning"
+      ],
+      "task_id": "e0ecd25d-289c-47ee-8a26-caf0f4f2c729",
+      "uses": 0
+    },
+    "fire_lamp/campfire_burning_crackles": {
+      "added_at": "2026-11-26T17:38:09+07:00",
+      "author": "Mixkit",
+      "category": "fire_lamp",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1329/1329-preview.mp3",
+      "duration_s": 13.5,
+      "file": "fire_lamp/campfire_burning_crackles.ogg",
+      "fit_note": "Shorter wood-fire crackling bed, for a lamp / fireplace close-up.",
+      "license": "Mixkit-Free-License",
+      "name": "Campfire burning crackles",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "0d0da18e88071de19934d765610d9283f4baca7e5f81cac6f1661b7e126f73aa",
+      "source_page_url": "https://mixkit.co/free-sound-effects/fire/",
+      "tags": [
+        "fire",
+        "campfire",
+        "crackling",
+        "ambience"
+      ],
+      "task_id": "e0ecd25d-289c-47ee-8a26-caf0f4f2c729",
+      "uses": 0
+    },
+    "fire_lamp/campfire_crackles": {
+      "added_at": "2026-11-26T17:38:08+07:00",
+      "author": "Mixkit",
+      "category": "fire_lamp",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1330/1330-preview.mp3",
+      "duration_s": 23.2,
+      "file": "fire_lamp/campfire_crackles.ogg",
+      "fit_note": "Wood fire crackling for an oil-lamp / campfire scene; longest crackle bed in the set.",
+      "license": "Mixkit-Free-License",
+      "name": "Campfire crackles",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "19ef84aab0432e87d3ffae0cea94504979a3954e50f8318c17940bfcd3062d62",
+      "source_page_url": "https://mixkit.co/free-sound-effects/fire/",
+      "tags": [
+        "fire",
+        "campfire",
+        "crackling",
+        "wood"
+      ],
+      "task_id": "e0ecd25d-289c-47ee-8a26-caf0f4f2c729",
+      "uses": 0
+    },
+    "fire_lamp/campfire_night_wind": {
+      "added_at": "2026-11-26T17:38:10+07:00",
+      "author": "Mixkit",
+      "category": "fire_lamp",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1736/1736-preview.mp3",
+      "duration_s": 30.0,
+      "file": "fire_lamp/campfire_night_wind.ogg",
+      "fit_note": "Fire with night wind; closest match for a flame in wind / about to go out.",
+      "license": "Mixkit-Free-License",
+      "name": "Campfire night wind",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "3fbbd86353cf8f61afb978fab7fff556b711ef922d06d7c7ed77740decb79dba",
+      "source_page_url": "https://mixkit.co/free-sound-effects/fire/",
+      "tags": [
+        "fire",
+        "wind",
+        "night",
+        "ambience"
+      ],
+      "task_id": "e0ecd25d-289c-47ee-8a26-caf0f4f2c729",
+      "uses": 0
+    },
+    "fire_lamp/fire_match_lighting": {
+      "added_at": "2026-11-26T17:38:10+07:00",
+      "author": "Mixkit",
+      "category": "fire_lamp",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/2590/2590-preview.mp3",
+      "duration_s": 6.1,
+      "file": "fire_lamp/fire_match_lighting.ogg",
+      "fit_note": "Match strike and lighting, for lighting an oil lamp or candle.",
+      "license": "Mixkit-Free-License",
+      "name": "Fire match lighting",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "000a7a6d98b91cde52b05fe5f5974c78c081160550dff0d04efc35afd9cf0fda",
+      "source_page_url": "https://mixkit.co/free-sound-effects/fire/",
+      "tags": [
+        "match",
+        "light",
+        "fire",
+        "ignition"
+      ],
+      "task_id": "e0ecd25d-289c-47ee-8a26-caf0f4f2c729",
+      "uses": 0
+    },
+    "fire_lamp/papers_blowing_in_the_windstorm": {
+      "added_at": "2026-11-26T17:38:12+07:00",
+      "author": "Mixkit",
+      "category": "fire_lamp",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/2653/2653-preview.mp3",
+      "duration_s": 5.2,
+      "file": "fire_lamp/papers_blowing_in_the_windstorm.ogg",
+      "fit_note": "Wind gust with papers blowing, for wind blowing a lamp flame out.",
+      "license": "Mixkit-Free-License",
+      "name": "Papers blowing in the windstorm",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "0e903bcd92bd1f86f38480186d950bf5b3f6328a655624447e8fccfe6ccbe68a",
+      "source_page_url": "https://mixkit.co/free-sound-effects/fire/",
+      "tags": [
+        "wind",
+        "blow",
+        "paper",
+        "fire"
+      ],
+      "task_id": "e0ecd25d-289c-47ee-8a26-caf0f4f2c729",
+      "uses": 0
+    },
+    "fire_lamp/short_fire_whoosh": {
+      "added_at": "2026-11-26T17:38:11+07:00",
+      "author": "Mixkit",
+      "category": "fire_lamp",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/1345/1345-preview.mp3",
+      "duration_s": 3.1,
+      "file": "fire_lamp/short_fire_whoosh.ogg",
+      "fit_note": "Brief fire whoosh, for a flame puffing out or flaring in wind.",
+      "license": "Mixkit-Free-License",
+      "name": "Short fire whoosh",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "f672b3894b187a201df946ad71aea1c0a426025fb6ee3df077651bff486bad64",
+      "source_page_url": "https://mixkit.co/free-sound-effects/fire/",
+      "tags": [
+        "fire",
+        "whoosh",
+        "swoosh"
+      ],
+      "task_id": "e0ecd25d-289c-47ee-8a26-caf0f4f2c729",
+      "uses": 0
+    },
     "folk_oneshot/metal_barrel_rolling": {
       "added_at": "2026-11-25T21:37:42+07:00",
       "author": "caquet",
@@ -453,6 +612,52 @@
       "task_id": "ae3cc3ef-8bb0-4626-84e1-aa37bcdcb5d4",
       "uses": 0
     },
+    "night_creatures/crickets_and_insects_in_the_wild_ambience": {
+      "added_at": "2026-11-26T17:38:02+07:00",
+      "author": "Mixkit",
+      "category": "night_creatures",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/39/39-preview.mp3",
+      "duration_s": 26.1,
+      "file": "night_creatures/crickets_and_insects_in_the_wild_ambience.ogg",
+      "fit_note": "De nen lien tuc suot canh dem, sach, it tap am",
+      "license": "Mixkit-Free-License",
+      "name": "Crickets and insects in the wild ambience",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "d9d7fe73c071c47f19247b95f3fdd8f930e6ac1dbe30fddf576c4b92a6684e04",
+      "source_page_url": "https://mixkit.co/free-sound-effects/crickets/",
+      "tags": [
+        "crickets",
+        "insects",
+        "night",
+        "ambience"
+      ],
+      "task_id": "9c9f51a6-3f0c-45de-8725-32ec336acfba",
+      "uses": 0
+    },
+    "night_creatures/horde_of_barking_dogs": {
+      "added_at": "2026-11-26T17:38:04+07:00",
+      "author": "Mixkit",
+      "category": "night_creatures",
+      "download_url": "https://assets.mixkit.co/active_storage/sfx/60/60-preview.mp3",
+      "duration_s": 10.6,
+      "file": "night_creatures/horde_of_barking_dogs.ogg",
+      "fit_note": "Bay cho sua, dung khi co dong tinh trong lang (nguoi la, tieng dong dem)",
+      "license": "Mixkit-Free-License",
+      "name": "Horde of barking dogs",
+      "replaced": false,
+      "score": 0.0,
+      "sha256": "b6d8601bec2047b2b450e26cb92d4ddf699371fddbda6256f7fc1abdadaa734b",
+      "source_page_url": "https://mixkit.co/free-sound-effects/dog/",
+      "tags": [
+        "dog",
+        "barking",
+        "dogs",
+        "village"
+      ],
+      "task_id": "9c9f51a6-3f0c-45de-8725-32ec336acfba",
+      "uses": 0
+    },
     "rain/forest_rain_loop": {
       "added_at": "2026-11-25T21:48:34+07:00",
       "author": "",
@@ -852,6 +1057,6 @@
       "uses": 0
     }
   },
-  "updated_at": "2026-11-25T21:48:50+07:00",
+  "updated_at": "2026-11-26T17:38:13+07:00",
   "version": 1
 }
