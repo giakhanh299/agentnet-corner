@@ -5,10 +5,10 @@
   "title": "Hành Tinh Nào Có Mưa Kim Cương Thật",
   "cover_text": "MƯA KIM CƯƠNG THẬT",
   "hook": "Trên Sao Hải Vương, trời thực sự đổ mưa bằng kim cương?",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -28,8 +28,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunlight on deep blue Neptune glowing in dark space, tiny sparkling diamond-like crystals falling through its atmosphere, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sao Hải Vương có mưa kim cương thật không?",
-      "vo_at": 0.0,
+      "voiceover": "Trên Trái Đất kim cương là món trang sức đắt đỏ bậc nhất, nhưng ngoài rìa hệ Mặt Trời có một hành tinh mà kim cương rơi xuống như mưa rào!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -53,8 +53,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vivid sunlight on blue Neptune seen from space, swirling storms and pale clouds, distant stars behind, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Hành tinh xanh xa xôi giấu bí mật kỳ lạ.",
-      "vo_at": 0.3,
+      "voiceover": "Thế giới kỳ ảo ấy chính là Sao Hải Vương, hành tinh khí băng khổng lồ mang sắc xanh đại dương nằm cách chúng ta hơn bốn tỷ cây số.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -78,8 +78,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright glowing light on layered blue clouds deep inside Neptune, immense pressure compressing the atmosphere, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sâu bên trong, áp suất lớn đến khó tin.",
-      "vo_at": 0.3,
+      "voiceover": "Ẩn dưới tầng mây xanh thẳm dữ dội với những cơn bão siêu thanh nhanh gấp đôi vận tốc âm thanh là áp suất nghẹt thở.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -103,8 +103,8 @@
       "duration_s": 5.0,
       "image_prompt": "Intense light on methane gas molecules being squeezed together under thick blue clouds inside Neptune, glowing particles, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Khí mêtan bị nén chặt dưới lớp mây dày.",
-      "vo_at": 0.3,
+      "voiceover": "Càng lặn sâu vào lòng Sao Hải Vương vài nghìn cây số, khí mêtan dồi dào trong khí quyển bị nén chặt gấp hàng triệu lần áp suất mặt đất.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -128,8 +128,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright macro light on carbon atoms separating and joining into a clear sparkling crystal lattice, deep blue background, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Cácbon tách ra rồi kết lại thành tinh thể.",
-      "vo_at": 0.3,
+      "voiceover": "Dưới sức ép khủng khiếp cộng với nhiệt độ hàng nghìn độ C, các phân tử mêtan bị xé toạc làm nguyên tử carbon tách rời hoàn toàn.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -153,8 +153,8 @@
       "duration_s": 5.0,
       "image_prompt": "Brilliant white light on a sparkling diamond crystal held in macro close-up, sharp facets reflecting light, dark blue background, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tinh thể ấy cứng, sáng, giống hệt kim cương.",
-      "vo_at": 0.3,
+      "voiceover": "Những nguyên tử carbon nguyên chất ấy lập tức ép chặt vào nhau theo mạng tinh thể lập phương, kết tinh thành những viên kim cương thật sự!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -178,8 +178,8 @@
       "duration_s": 5.0,
       "image_prompt": "Glowing light on sparkling diamond crystals falling like rain through thick blue gas layers inside Neptune, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chúng rơi xuống như mưa qua lớp khí dày.",
-      "vo_at": 0.3,
+      "voiceover": "Khi lớn dần lên nặng hàng triệu carat, từng trận mưa kim cương lấp lánh bắt đầu chìm dần qua lớp vật chất đặc sánh về phía lõi hành tinh.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -203,8 +203,8 @@
       "duration_s": 5.0,
       "image_prompt": "Soft telescope light on astronomers observing distant blue Neptune through a large observatory telescope at night, stars above, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nhưng chưa ai nhìn thấy mưa ấy trực tiếp.",
-      "vo_at": 0.3,
+      "voiceover": "Vì áp suất quá lớn nên chưa một tàu vũ trụ nào của nhân loại có thể bay xuyên xuống tận nơi chụp ảnh trực tiếp cơn mưa ấy.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -228,8 +228,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright laboratory light on scientists using lasers to compress carbon material in a small diamond experiment, sparks and glowing plasma, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Phòng thí nghiệm mới mô phỏng được hiện tượng này.",
-      "vo_at": 0.3,
+      "voiceover": "Tuy nhiên các nhà vật lý Mỹ và Đức đã dùng chùm tia laser siêu mạnh bắn vào nhựa hydrocarbon để tái tạo đúng áp suất lòng Sao Hải Vương.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -253,8 +253,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright macro light on tiny diamond crystals forming inside a laboratory sample, sparkling facets under a microscope, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Kết quả cho thấy kim cương có thể hình thành.",
-      "vo_at": 0.3,
+      "voiceover": "Ngay trong chớp mắt phần tỷ giây tại phòng thí nghiệm, hàng loạt hạt kim cương siêu nhỏ đã thực sự kết tinh đúng như dự đoán lý thuyết!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -278,8 +278,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright starlight on blue Neptune shining among distant stars, a curious young viewer looking up at the night sky, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bí mật vũ trụ vẫn chờ người khám phá tiếp.",
-      "vo_at": 0.3,
+      "voiceover": "Vũ trụ bao la luôn cất giấu những kho báu vượt xa trí tưởng tượng, chỉ tiếc là chẳng ai mang giỏ lên đó nhặt kim cương về được!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -305,5 +305,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Trên Trái Đất kim cương là món trang sức đắt đỏ bậc nhất, nhưng ngoài rìa hệ Mặt Trời có một hành tinh mà kim cương rơi xuống như mưa rào!"
 }

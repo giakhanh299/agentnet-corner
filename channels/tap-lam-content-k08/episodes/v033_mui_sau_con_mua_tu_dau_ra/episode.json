@@ -5,10 +5,10 @@
   "title": "Mùi Thơm Kỳ Diệu Sau Cơn Mưa Đến Từ Đâu",
   "cover_title": "MÙI ĐẤT SAU MƯA",
   "hook": "Mùi đất thơm sau mưa thực chất do một loại vi khuẩn tạo ra?",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -71,8 +71,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunlight after rain on dry soil, raindrops and a fresh earthy scent rising in the air, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mưa rơi xuống đất khô, mùi thơm bốc lên ngay.",
-      "vo_at": 0.0,
+      "voiceover": "Cơn mưa rào mùa hạ vừa rơi lộp bộp xuống mặt đất khô nắng, lập tức một mùi hương ngai ngái trong lành bốc lên khiến ai hít vào cũng thấy dễ chịu!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -81,8 +81,8 @@
       "duration_s": 5.0,
       "image_prompt": "Rain falling on dry cracked soil in bright light, water soaking into the earth, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Người ta gọi mùi ấy là mùi đất sau mưa.",
-      "vo_at": 0.3,
+      "voiceover": "Các nhà khoa học đặt cho mùi hương đặc biệt ấy cái tên thơ mộng là Petrichor, nghĩa là tinh chất tỏa ra từ đá và đất sau mưa.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -91,8 +91,8 @@
       "duration_s": 5.0,
       "image_prompt": "Close view of soil bacteria in bright scientific light, earthy soil and tiny spores, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Vi khuẩn đất tạo ra chất có mùi đặc biệt.",
-      "vo_at": 0.3,
+      "voiceover": "Tác giả chính tạo nên mùi đất quen thuộc ấy là một hợp chất hữu cơ tên Geosmin do loài xạ khuẩn sống hiền lành trong đất tiết ra.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -101,8 +101,8 @@
       "duration_s": 5.0,
       "image_prompt": "A human nose sensing a fresh earthy scent in bright daylight after rain, close documentary view, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chất ấy đặc biệt, mũi người nhạy cảm vô cùng.",
-      "vo_at": 0.3,
+      "voiceover": "Đáng kinh ngạc ở chỗ khứu giác con người nhạy với chất Geosmin này gấp hàng nghìn lần cá mập đánh hơi thấy máu trong nước biển!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -111,8 +111,8 @@
       "duration_s": 5.0,
       "image_prompt": "Dry cracked soil waiting for rain in bright sunlight, dormant microbes in the earth, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Khi đất khô, vi khuẩn nghỉ, chờ mưa quay lại.",
-      "vo_at": 0.3,
+      "voiceover": "Chỉ cần năm giọt nhỏ hòa loãng trong hai mươi bể bơi tiêu chuẩn Olympic, chiếc mũi của bạn vẫn nhận ra mùi mưa về ngay lập tức.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -121,8 +121,8 @@
       "duration_s": 5.0,
       "image_prompt": "Raindrops striking dry soil in bright light, tiny spores and scent rising into the air, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mưa đánh bật bào tử và mùi lên không khí.",
-      "vo_at": 0.3,
+      "voiceover": "Suốt những ngày nắng hạn khô cằn, vi khuẩn đất tích tụ bào tử cùng tinh dầu tự nhiên của cây cỏ nằm im trong từng kẽ đất nứt.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -131,8 +131,8 @@
       "duration_s": 5.0,
       "image_prompt": "Plant oils in dry soil in bright sunlight, leaves and earth after rain, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Dầu thực vật trong đất cũng góp phần tạo mùi.",
-      "vo_at": 0.3,
+      "voiceover": "Khi giọt mưa đầu tiên rơi đập xuống nền đất xốp, nó nhốt các bọt khí siêu nhỏ rồi nổ tung bắn hàng triệu hạt sương mang hương đất bay lơ lửng vào gió!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -141,8 +141,8 @@
       "duration_s": 5.0,
       "image_prompt": "Lightning in clouds above a rainy landscape in bright daylight, fresh air after rain, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tia chớp trong mây cũng góp phần tạo mùi.",
-      "vo_at": 0.3,
+      "voiceover": "Thêm vào đó, những tia sét đánh ngang tầng mây cao còn tách phân tử oxy tạo thành khí ozone mang mùi thanh mát đặc trưng báo hiệu cơn giông.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -151,8 +151,8 @@
       "duration_s": 5.0,
       "image_prompt": "A person breathing in the fresh scent of rain on soil in bright daylight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mũi người nhận ra mùi đất từ rất xa.",
-      "vo_at": 0.3,
+      "voiceover": "Các nhà nhân chủng học cho rằng tổ tiên loài người tiến hóa chiếc mũi siêu nhạy với mùi đất mưa để tìm nguồn nước uống sống còn giữa thảo nguyên khô.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -161,8 +161,8 @@
       "duration_s": 5.0,
       "image_prompt": "Rain watering green plants in bright sunlight after a shower, fresh earth below, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mùi đất báo mưa đã về, cây cối được tưới.",
-      "vo_at": 0.3,
+      "voiceover": "Đến tận hôm nay, bản năng cổ xưa hàng vạn năm ấy vẫn làm tâm trí chúng ta dịu lại bình yên mỗi khi ngửi thấy mùi mưa đầu mùa.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -171,8 +171,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunlight over wet soil and green plants after rain, a fresh earthy landscape, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mùi thơm sau mưa là quà từ đất và mưa.",
-      "vo_at": 0.3,
+      "voiceover": "Hóa ra hương thơm sau cơn mưa chính là bản giao hưởng của vi sinh vật, cỏ cây và sấm chớp báo tin sự sống lại vừa được tưới mát!",
+      "vo_at": 0.12,
       "sfx": []
     }
   ],
@@ -183,5 +183,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Cơn mưa rào mùa hạ vừa rơi lộp bộp xuống mặt đất khô nắng, lập tức một mùi hương ngai ngái trong lành bốc lên khiến ai hít vào cũng thấy dễ chịu!"
 }

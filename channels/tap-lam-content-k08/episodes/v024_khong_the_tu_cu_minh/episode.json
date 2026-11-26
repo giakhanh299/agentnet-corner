@@ -3,7 +3,7 @@
   "title": "Vì Sao Bạn Không Thể Tự Cù Mình Cười",
   "publish_title": "Vì Sao Bạn Không Thể Tự Cù Mình Cười | Tập Làm Content",
   "cover_title": "BẠN KHÔNG THỂ TỰ CÙ",
-  "cover_hook": "Thử tự cù lòng bàn chân ngay bây giờ xem sao?",
+  "cover_hook": "Bạn hãy thử đưa ngón tay xuống tự cù vào lòng bàn chân mình ngay lúc này xem, tại sao làm thế nào cũng chẳng thấy nhột hay buồn cười?",
   "description": "Bạn không tự cù mình cười được vì não đã đoán trước chuyển động của chính mình. Tiểu não dự báo cảm giác chạm, làm giảm sự bất ngờ, trong khi cái cù của người khác thì khó đoán trước.",
   "hashtags": [
     "#TapLamConTent",
@@ -14,10 +14,10 @@
   ],
   "cta": "Bạn có cù được chính mình không? Thử rồi bình luận kết quả nhé!",
   "series": "Tập Làm Content",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -30,8 +30,8 @@
       "duration_s": 5.0,
       "image_prompt": "Young woman tickling her own foot sole, laughing softly, bright living room light, vivid documentary photography, vertical 9:16, no text",
       "motion": "Cận cảnh bàn chân và bàn tay",
-      "voiceover": "Thử tự cù lòng bàn chân ngay bây giờ xem sao?",
-      "vo_at": 0.0,
+      "voiceover": "Bạn hãy thử đưa ngón tay xuống tự cù vào lòng bàn chân mình ngay lúc này xem, tại sao làm thế nào cũng chẳng thấy nhột hay buồn cười?",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -55,8 +55,8 @@
       "duration_s": 5.0,
       "image_prompt": "Young man tickling his own foot, calm expression, bright daylight, vivid documentary photography, vertical 9:16, no text",
       "motion": "Đẩy máy chậm vào gương mặt",
-      "voiceover": "Bạn cù mãi mà chẳng thấy buồn cười chút nào.",
-      "vo_at": 0.3,
+      "voiceover": "Thế nhưng chỉ cần một người bạn bất ngờ chạm nhẹ đúng vào chỗ đó một giây thôi là bạn đã giãy nảy bật cười sặc sụa ngay lập tức!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -80,8 +80,8 @@
       "duration_s": 5.0,
       "image_prompt": "Two friends laughing while one tickles the other foot, bright living room, joyful moment, vivid documentary photography, vertical 9:16, no text",
       "motion": "Lia máy theo tiếng cười",
-      "voiceover": "Nhờ người khác cù, bạn bật cười ngay lập tức.",
-      "vo_at": 0.3,
+      "voiceover": "Cùng một làn da, cùng một lực chạm giống hệt nhau, điều gì bên trong cơ thể đã tắt công tắc gây cười của chính bạn?",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -105,8 +105,8 @@
       "duration_s": 5.0,
       "image_prompt": "Curious young woman thinking, finger on chin, bright soft light, vivid documentary portrait, vertical 9:16, no text",
       "motion": "Cận cảnh gương mặt suy nghĩ",
-      "voiceover": "Vì sao cùng một cái cù mà khác nhau đến vậy?",
-      "vo_at": 0.3,
+      "voiceover": "Câu trả lời nằm ở cơ chế sinh tồn cực kỳ thông minh của bộ não nhằm phân biệt đâu là hành động của ta, đâu là mối đe dọa từ bên ngoài.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -130,8 +130,8 @@
       "duration_s": 5.0,
       "image_prompt": "Glowing human brain model with neural pathways, bright blue light, dark background, vivid documentary macro, vertical 9:16, no text",
       "motion": "Đẩy máy chậm vào mô hình não",
-      "voiceover": "Não bạn luôn đoán trước chuyển động của chính mình.",
-      "vo_at": 0.3,
+      "voiceover": "Mỗi khi bạn định cử động ngón tay, não bộ không chỉ gửi lệnh xuống cơ bắp mà còn lập sẵn một bản sao dự báo trước vị trí chạm.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -155,8 +155,8 @@
       "duration_s": 5.0,
       "image_prompt": "Close-up hand reaching toward foot sole, soft bright light, skin detail, vivid documentary macro, vertical 9:16, no text",
       "motion": "Theo bàn tay chạm xuống",
-      "voiceover": "Khi tự cù, não đã biết trước tay sẽ chạm đâu.",
-      "vo_at": 0.3,
+      "voiceover": "Ngay trước khi ngón tay bạn kịp chạm vào gan bàn chân, não đã biết chính xác một trăm phần trăm thời điểm, áp lực và hướng sượt qua.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -180,8 +180,8 @@
       "duration_s": 5.0,
       "image_prompt": "Macro human skin with gentle touch, soft daylight, calm atmosphere, vivid documentary macro, vertical 9:16, no text",
       "motion": "Cận cảnh điểm chạm trên da",
-      "voiceover": "Não liền giảm bớt cảm giác bất ngờ ở da.",
-      "vo_at": 0.3,
+      "voiceover": "Lập tức trung tâm thần kinh hạ thấp tín hiệu cảm giác trên da xuống mức tối thiểu để bạn không bị giật mình bởi chính tay chân mình.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -205,8 +205,8 @@
       "duration_s": 5.0,
       "image_prompt": "Detailed cerebellum brain illustration glowing, bright light, scientific style, vivid documentary macro, vertical 9:16, no text",
       "motion": "Đẩy máy chậm vào tiểu não",
-      "voiceover": "Vùng tiểu não giống như người dự báo chuyển động.",
-      "vo_at": 0.3,
+      "voiceover": "Cơ quan chỉ huy màn khử nhiễu siêu tốc này chính là tiểu não nằm ngay phía sau gáy, hoạt động như radar dự đoán chuyển động từng phần nghìn giây.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -230,8 +230,8 @@
       "duration_s": 5.0,
       "image_prompt": "Surprised young woman laughing during tickle, bright living room light, vivid documentary photography, vertical 9:16, no text",
       "motion": "Cận cảnh phản ứng bất ngờ",
-      "voiceover": "Người khác cù thì não không đoán được trước.",
-      "vo_at": 0.3,
+      "voiceover": "Ngược lại khi người khác thò tay tới cù bạn, tiểu não hoàn toàn không thể đoán trước họ sẽ chạm vào sườn hay bàn chân lúc nào.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -255,8 +255,8 @@
       "duration_s": 5.0,
       "image_prompt": "Group of friends laughing together in bright room, warm daylight, joyful energy, vivid documentary photography, vertical 9:16, no text",
       "motion": "Lia máy qua nhóm bạn cười",
-      "voiceover": "Cảm giác bất ngờ làm bạn bật cười thành tiếng.",
-      "vo_at": 0.3,
+      "voiceover": "Sự mất kiểm soát bất ngờ ấy kích hoạt phản xạ phòng vệ pha lẫn hưng phấn thần kinh, khiến chúng ta bật cười không sao nhịn nổi!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -280,8 +280,8 @@
       "duration_s": 5.0,
       "image_prompt": "Smiling young woman looking at camera, bright kitchen light, playful expression, vivid documentary portrait, vertical 9:16, no text",
       "motion": "Đẩy máy chậm vào gương mặt",
-      "voiceover": "Bạn có cù được chính mình không, thử bình luận nhé?",
-      "vo_at": 0.3,
+      "voiceover": "Thì ra tiếng cười khi bị cù chính là chuông báo động vui nhộn giúp con người cảnh giác bảo vệ những vùng nhạy cảm trên cơ thể!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -307,5 +307,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

@@ -3,7 +3,7 @@
   "title": "Nếu Bạn Khỏe Như Một Con Kiến",
   "publish_title": "Nếu Bạn Khỏe Như Một Con Kiến",
   "cover_title": "Kiến Nhỏ Sức Mạnh Khổng Lồ",
-  "cover_hook": "Kiến nhỏ xíu nâng gấp năm mươi lần trọng lượng cơ thể?",
+  "cover_hook": "Nếu con người có tỷ lệ sức mạnh cơ bắp giống như một con kiến nhỏ xíu, bạn có thể nhấc bổng cả chiếc xe tải nặng ba tấn bằng một tay!",
   "description": "Giải thích vì sao kiến có thể nâng gấp năm mươi lần trọng lượng cơ thể nhờ bộ xương ngoài, sáu chân và quy luật kích thước.",
   "hashtags": [
     "#TapLamConTent",
@@ -13,10 +13,10 @@
   ],
   "cta": "Bạn ấn tượng điều gì về loài kiến hãy bình luận nhé!",
   "series": "Tập Làm Content",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -29,8 +29,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary macro of a tiny red ant lifting a large green leaf fragment on a forest floor, bright sunlight, sharp detail, no text, no logo, no watermark.",
       "motion": "slow push-in",
-      "voiceover": "Kiến nhỏ xíu nâng gấp năm mươi lần trọng lượng cơ thể?",
-      "vo_at": 0.0,
+      "voiceover": "Nếu con người có tỷ lệ sức mạnh cơ bắp giống như một con kiến nhỏ xíu, bạn có thể nhấc bổng cả chiếc xe tải nặng ba tấn bằng một tay!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -54,8 +54,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary macro of ants walking in a line across a green leaf, warm sunlight, detailed exoskeleton, no text, no logo, no watermark.",
       "motion": "slow pan right",
-      "voiceover": "Bí mật nằm ở cơ thể nhỏ bé đặc biệt này.",
-      "vo_at": 0.3,
+      "voiceover": "Trong thế giới tự nhiên, loài kiến dễ dàng cõng trên lưng những mảnh lá và hạt giống nặng gấp năm mươi lần trọng lượng cơ thể chúng.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -79,8 +79,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary extreme macro of an ant exoskeleton glowing in sunlight, hard shiny armor texture, green background, no text, no logo, no watermark.",
       "motion": "slow zoom out",
-      "voiceover": "Kiến có bộ xương ngoài cứng chắc như áo giáp.",
-      "vo_at": 0.3,
+      "voiceover": "Vũ khí đầu tiên nằm ở lớp vỏ kitin cứng cáp bọc bên ngoài hoạt động như một bộ khung xương trợ lực siêu nhẹ không bao giờ gãy.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -104,8 +104,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary close-up of an ant body showing muscle and exoskeleton structure, warm light, scientific clarity, no text, no logo, no watermark.",
       "motion": "slow push-in",
-      "voiceover": "Cơ của kiến bám trực tiếp vào bộ xương ngoài này.",
-      "vo_at": 0.3,
+      "voiceover": "Các bó cơ cổ và hàm của kiến bám trực tiếp vào thành trong lớp giáp cứng ấy, tạo đòn bẩy cơ học tối ưu đến từng milimet.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -129,8 +129,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary macro of an ant with six legs firmly gripping a twig, balanced load, bright forest light, no text, no logo, no watermark.",
       "motion": "slow pan left",
-      "voiceover": "Sáu chân của kiến chia đều sức nặng rất hiệu quả.",
-      "vo_at": 0.3,
+      "voiceover": "Cấu trúc sáu chân tỏa rộng giữ trọng tâm sát mặt đất giúp chúng phân tán lực nén hoàn hảo ngay cả khi leo ngược vách tường thẳng đứng.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -154,8 +154,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary view comparing a tiny ant and a large animal silhouette in soft light, scale concept, green nature, no text, no logo, no watermark.",
       "motion": "slow tracking shot",
-      "voiceover": "Khi cơ thể nhỏ lại sức mạnh tương đối tăng lên.",
-      "vo_at": 0.3,
+      "voiceover": "Nhưng bí mật lớn nhất lại nằm ở định luật vật lý bình phương lập phương của nhà bác học vĩ đại Galileo.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -179,8 +179,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary macro of ants carrying leaf pieces up a plant stem, teamwork, bright daylight, no text, no logo, no watermark.",
       "motion": "slow pan up",
-      "voiceover": "Khối lượng tăng nhanh hơn nhiều so với tiết diện cơ.",
-      "vo_at": 0.3,
+      "voiceover": "Khi kích thước một sinh vật phóng to lên gấp đôi, sức mạnh cơ bắp chỉ tăng gấp bốn lần nhưng khối lượng cơ thể lại nặng gấp tám lần!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -204,8 +204,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary close-up of a strong leafcutter ant holding a bright green leaf overhead, sunlight, no text, no logo, no watermark.",
       "motion": "slow push-in",
-      "voiceover": "Vì vậy kiến nhỏ có tỉ lệ sức mạnh vượt trội.",
-      "vo_at": 0.3,
+      "voiceover": "Ngược lại ở kích thước tí hon của loài kiến, cơ thể chúng nhẹ như hạt bụi nên hầu như toàn bộ lực cơ đều dư ra để nâng vật nặng.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -229,8 +229,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary view of leafcutter ants carrying green leaf fragments along a forest trail, vivid colors, no text, no logo, no watermark.",
       "motion": "slow tracking shot",
-      "voiceover": "Kiến cắt lá thường xuyên mang lá nặng gấp năm mươi lần.",
-      "vo_at": 0.3,
+      "voiceover": "Những chú kiến cắt lá vùng nhiệt đới mỗi ngày vừa ngậm mảnh lá khổng lồ như cánh buồm vừa chạy băng băng hàng trăm mét về tổ.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -254,8 +254,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary view of several ants cooperating to carry a large food crumb, teamwork, warm light, no text, no logo, no watermark.",
       "motion": "slow zoom out",
-      "voiceover": "Kiến còn phối hợp cùng nhau để khiêng vật lớn hơn.",
-      "vo_at": 0.3,
+      "voiceover": "Khi gặp con mồi quá lớn, hàng chục con kiến thợ còn biết khóa chặt nhịp bước cùng nâng một lúc không lệch một nhịp nào.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -279,8 +279,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary wide view of ants marching in a line through green leaves at golden hour, hopeful mood, no text, no logo, no watermark.",
       "motion": "slow zoom out",
-      "voiceover": "Bạn ấn tượng điều gì về loài kiến hãy bình luận nhé!",
-      "vo_at": 0.3,
+      "voiceover": "Nhỏ bé chẳng hề đồng nghĩa với yếu ớt — chính kích thước tí hon đã biến loài kiến thành những nhà vô địch cử tạ thực thụ của hành tinh!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -306,5 +306,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

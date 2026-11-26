@@ -5,10 +5,10 @@
   "title": "Vì Sao Nước Biển Mặn Còn Sông Ngọt",
   "cover_title": "SAO BIỂN MẶN SÔNG NGỌT",
   "hook": "Mỗi năm sông mang hàng tỷ tấn muối ra đại dương?",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -71,8 +71,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunlight on a clear river flowing through green mountains, fresh water sparkling, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nước sông ngọt, nước biển mặn, vì sao lại khác?",
-      "vo_at": 0.0,
+      "voiceover": "Tất cả các dòng sông trên đất liền đều đổ dồn nước ngọt ra đại dương mỗi giây, vậy tại sao nước biển chẳng những không nhạt đi mà lại mặn chát?",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -81,8 +81,8 @@
       "duration_s": 5.0,
       "image_prompt": "Rain falling on green mountains in bright daylight, water running over rocks and soil, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mưa rơi xuống núi, thấm qua đất và đá.",
-      "vo_at": 0.3,
+      "voiceover": "Câu chuyện bắt đầu từ những đám mây mưa: khi hơi nước trên trời ngưng tụ rơi xuống núi rừng, nước mưa hấp thụ khí CO2 nên có tính axit rất nhẹ.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -91,8 +91,8 @@
       "duration_s": 5.0,
       "image_prompt": "Rainwater washing over rocks in bright sunlight, carrying dissolved minerals toward a river, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nước mưa cuốn theo muối khoáng từ đá ra sông.",
-      "vo_at": 0.3,
+      "voiceover": "Chính độ axit dịu nhẹ ấy ngày đêm bào mòn từng chút một các tảng đá trên núi, hòa tan các ion natri và clorua thành muối khoáng chảy vào khe suối.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -101,8 +101,8 @@
       "duration_s": 5.0,
       "image_prompt": "A river flowing into the blue ocean in bright sunlight, fresh water meeting salty sea water, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sông chảy ra biển, mang theo muối khoáng hòa tan.",
-      "vo_at": 0.3,
+      "voiceover": "Hàng vạn con sông lớn nhỏ gom toàn bộ lượng khoáng chất hòa tan ấy cuốn trôi một chiều suốt hàng ngàn cây số đổ thẳng ra biển cả.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -111,8 +111,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunlight over the ocean, water evaporating and leaving salt behind, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Biển nhận muối mãi, nhưng nước lại bay hơi đi.",
-      "vo_at": 0.3,
+      "voiceover": "Đại dương giống như chiếc chảo khổng lồ cuối nguồn: nó nhận muối từ sông suốt bốn tỷ năm qua nhưng lại không có bất kỳ lối thoát nào chảy đi!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -121,8 +121,8 @@
       "duration_s": 5.0,
       "image_prompt": "Water vapour rising from the sunny ocean surface, leaving salt in the sea below, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Hơi nước bay lên là nước ngọt, muối ở lại.",
-      "vo_at": 0.3,
+      "voiceover": "Khi ánh nắng Mặt Trời chiếu xuống làm hàng tỷ tấn nước biển bốc hơi bay lên tạo mây mới, chỉ có phân tử nước tinh khiết bay lên mà thôi.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -131,8 +131,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunlight on salty ocean water over geological time, waves and white foam, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Muối tích tụ qua thời gian, biển ngày càng mặn.",
-      "vo_at": 0.3,
+      "voiceover": "Toàn bộ lượng muối nặng trịch bị bỏ lại dưới lòng đại dương, năm này qua tháng nọ cô đặc dần tới mức ba mươi lăm gam muối trong mỗi lít nước.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -141,8 +141,8 @@
       "duration_s": 5.0,
       "image_prompt": "A fast river flowing continuously in bright sunlight, clear water over smooth stones, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sông chảy liên tục, muối chưa kịp tích tụ nhiều.",
-      "vo_at": 0.3,
+      "voiceover": "Trong khi đó nước trên các dòng sông luôn chảy trôi liên tục được thay mới bằng nước mưa tươi, nên lượng muối quá loãng lưỡi ta không nếm thấy vị mặn.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -151,8 +151,8 @@
       "duration_s": 5.0,
       "image_prompt": "Close view of clear river water in bright sunlight, almost no visible salt, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nước sông cũng có muối, nhưng rất loãng khó nhận.",
-      "vo_at": 0.3,
+      "voiceover": "Nếu gom toàn bộ muối đang hòa tan trong các đại dương rải khô đều khắp mặt đất liền, lớp muối trắng ấy sẽ cao bằng tòa nhà bốn mươi tầng!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -161,8 +161,8 @@
       "duration_s": 5.0,
       "image_prompt": "A still lake with no outlet in bright sunlight, salt crusts forming along the shore, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Hồ không lối thoát cũng mặn dần theo năm tháng.",
-      "vo_at": 0.3,
+      "voiceover": "Minh chứng rõ nhất là những hồ kín không có sông thoát ra như Biển Chết cũng bị nắng làm bốc hơi nước ngọt, trở nên mặn gấp gần mười lần biển thường.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -171,8 +171,8 @@
       "duration_s": 5.0,
       "image_prompt": "A split view of a sweet river and a salty ocean in bright sunlight, water cycle in nature, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Biển mặn, sông ngọt vì vòng tuần hoàn khác nhau.",
-      "vo_at": 0.3,
+      "voiceover": "Chỉ một vòng tuần hoàn mây mưa giản dị nhưng đã âm thầm nêm gia vị cho đại dương của hành tinh xanh suốt hàng tỷ năm lịch sử!",
+      "vo_at": 0.12,
       "sfx": []
     }
   ],
@@ -183,5 +183,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Tất cả các dòng sông trên đất liền đều đổ dồn nước ngọt ra đại dương mỗi giây, vậy tại sao nước biển chẳng những không nhạt đi mà lại mặn chát?"
 }

@@ -5,10 +5,10 @@
   "title": "Vì Sao Thức Dậy 5 Phút Là Quên Hết Giấc Mơ",
   "cover_title": "QUÊN MƠ SAU 5 PHÚT",
   "hook": "Não bộ tự xóa gần hết giấc mơ ngay khi bạn mở mắt?…",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -71,8 +71,8 @@
       "duration_s": 5.0,
       "image_prompt": "Soft morning light in a bedroom, a person waking up with eyes open and a dream fading, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mở mắt, giấc mơ còn rõ như vừa xảy ra.",
-      "vo_at": 0.0,
+      "voiceover": "Vừa mở mắt thức dậy bạn còn nhớ rõ mồn một giấc mơ ly kỳ đêm qua, tại sao chỉ đi đánh răng năm phút quay vào đã quên sạch trơn?",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -81,8 +81,8 @@
       "duration_s": 5.0,
       "image_prompt": "A clock showing early morning in soft light, a person sitting up in bed trying to remember a dream, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Năm phút sau, giấc mơ mờ dần rồi biến mất.",
-      "vo_at": 0.3,
+      "voiceover": "Cảm giác tiếc nuối cố lục lọi trí óc mà câu chuyện trong mơ cứ tan biến như khói sương là trải nghiệm ai trong đời cũng gặp.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -91,8 +91,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright daylight on a human brain model beside a bed, clear educational documentary lighting, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Não bộ không lưu giấc mơ như phim đã quay.",
-      "vo_at": 0.3,
+      "voiceover": "Nguyên nhân là bởi bộ não con người khi ngủ hoàn toàn không bật chế độ ghi hình lưu vào ổ cứng dài hạn như lúc thức.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -101,8 +101,8 @@
       "duration_s": 5.0,
       "image_prompt": "A sleeping person in a dark bedroom, soft blue night light and calm breathing, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Khi mơ, vùng ghi nhớ hoạt động yếu hơn thường.",
-      "vo_at": 0.3,
+      "voiceover": "Khi bạn chìm vào giấc ngủ mắt chuyển động nhanh nơi giấc mơ diễn ra sống động nhất, vùng hải mã phụ trách đóng gói ký ức lại nghỉ ngơi muộn nhất.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -111,8 +111,8 @@
       "duration_s": 5.0,
       "image_prompt": "Close view of brain neurons in soft scientific light, educational documentary style, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chất giúp ghi nhớ cũng giảm mạnh trong giấc mơ.",
-      "vo_at": 0.3,
+      "voiceover": "Đồng thời nồng độ hai chất dẫn truyền thần kinh giúp khắc sâu trí nhớ là norepinephrine và serotonin cũng tụt xuống mức cực thấp.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -121,8 +121,8 @@
       "duration_s": 5.0,
       "image_prompt": "A fragile soap bubble floating in soft morning light, symbolising a short-term memory, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Giấc mơ nằm trong trí nhớ ngắn hạn mong manh.",
-      "vo_at": 0.3,
+      "voiceover": "Vì vậy toàn bộ hình ảnh giấc mơ chỉ trôi lơ lửng tạm bợ trong bộ nhớ đệm ngắn hạn mỏng manh kéo dài vỏn vẹn vài chục giây.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -131,8 +131,8 @@
       "duration_s": 5.0,
       "image_prompt": "A person thinking about the day ahead in soft morning light, a dream slipping away, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bạn vừa nghĩ việc khác, giấc mơ liền trôi đi.",
-      "vo_at": 0.3,
+      "voiceover": "Ngay khoảnh khắc bạn ngồi dậy cầm điện thoại hay nghĩ xem sáng nay ăn món gì, luồng thông tin thực tại ập vào sẽ xóa đè sạch bộ nhớ đệm ấy!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -141,8 +141,8 @@
       "duration_s": 5.0,
       "image_prompt": "A hand writing in a dream journal in bright morning light beside a bed, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Muốn giữ giấc mơ, hãy ghi lại ngay khi tỉnh.",
-      "vo_at": 0.3,
+      "voiceover": "Mẹo duy nhất được các nhà thần kinh học khuyên dùng là đặt sẵn cuốn sổ nhỏ cạnh gối và nằm yên nhắm mắt nhẩm lại mạch mơ ngay khi tỉnh.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -151,8 +151,8 @@
       "duration_s": 5.0,
       "image_prompt": "A pen writing a few lines in a notebook in bright morning light, a cup of tea nearby, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Viết vài dòng cũng giúp não nhớ giấc mơ lâu.",
-      "vo_at": 0.3,
+      "voiceover": "Chỉ cần ghi nhanh ba từ khóa chính trước khi bước chân xuống giường, vùng hải mã vừa tỉnh dậy sẽ kịp khóa giấc mơ vào trí nhớ dài hạn.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -161,8 +161,8 @@
       "duration_s": 5.0,
       "image_prompt": "A calm person smiling in bright morning light, reassured and relaxed in a bedroom, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Không nhớ mơ không có nghĩa não bạn yếu.",
-      "vo_at": 0.3,
+      "voiceover": "Việc quên sạch giấc mơ mỗi sáng thực chất là cơ chế dọn rác tuyệt vời để não không lẫn lộn giữa ký ức thật và ảo giác ban đêm.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -171,8 +171,8 @@
       "duration_s": 5.0,
       "image_prompt": "Soft morning light on a sleeping face, a gentle emotional expression remaining after waking, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Mơ quên nhanh, nhưng cảm xúc có thể còn lại.",
-      "vo_at": 0.3,
+      "voiceover": "Dù chi tiết giấc mơ bay biến rất nhanh, dư âm cảm xúc vui buồn ấm áp mà nó để lại trong lòng bạn buổi sớm vẫn luôn rất thật!",
+      "vo_at": 0.12,
       "sfx": []
     }
   ],
@@ -183,5 +183,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Vừa mở mắt thức dậy bạn còn nhớ rõ mồn một giấc mơ ly kỳ đêm qua, tại sao chỉ đi đánh răng năm phút quay vào đã quên sạch trơn?"
 }

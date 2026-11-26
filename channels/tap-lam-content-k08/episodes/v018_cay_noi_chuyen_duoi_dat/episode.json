@@ -1,7 +1,7 @@
 {
-  "aigc_label": true,
+  "aigc_label": false,
   "color_grade": "vivid_doc",
-  "cover_hook": "Rừng cây gửi tín hiệu cầu cứu cho nhau qua rễ?",
+  "cover_hook": "Trông khu rừng có vẻ im lặng bất động, nhưng ngay dưới bàn chân bạn hàng ngàn cái cây đang âm thầm nhắn tin và cứu trợ lẫn nhau!",
   "cover_theme": "knowledge",
   "cover_title": "INTERNET CỦA RỪNG CÂY",
   "cta": "Bạn có tin cây cũng biết giúp nhau không? Bình luận nhé!",
@@ -27,8 +27,8 @@
       "duration_s": 5.0,
       "image_prompt": "Golden sunlight streaming through a dense green forest canopy, towering trees, vivid documentary photography, vertical 9:16, sharp macro detail, no text, no logo, no watermark.",
       "motion": "máy quay đẩy chậm từ tán cây xuống mặt đất, nắng vàng xuyên qua lá",
-      "voiceover": "Rừng cây gửi tín hiệu cầu cứu cho nhau... qua rễ?",
-      "vo_at": 0.0,
+      "voiceover": "Trông khu rừng có vẻ im lặng bất động, nhưng ngay dưới bàn chân bạn hàng ngàn cái cây đang âm thầm nhắn tin và cứu trợ lẫn nhau!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -52,8 +52,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunlight on forest floor soil, exposed tree roots intertwining like cables, white fungal threads, vivid documentary macro, vertical 9:16, sharp detail, no text.",
       "motion": "máy quay hạ thấp chậm xuống mặt đất, lộ rễ cây đan vào nhau",
-      "voiceover": "Dưới chân bạn, rễ cây nối nhau thành mạng lưới khổng lồ.",
-      "vo_at": 0.3,
+      "voiceover": "Ẩn sâu trong lớp đất ẩm là hệ thống rễ cây đan cài chằng chịt nối liền cả cánh rừng già thành một cơ thể sống khổng lồ.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -77,8 +77,8 @@
       "duration_s": 5.0,
       "image_prompt": "Extreme macro of white mycelium threads wrapping tree roots in dark moist soil, golden light rays, vivid documentary photography, vertical 9:16, sharp detail, no text.",
       "motion": "zoom chậm vào sợi nấm trắng bám quanh rễ cây trong đất ẩm",
-      "voiceover": "Nấm cộng sinh bám vào rễ, làm cầu nối giữa các cây.",
-      "vo_at": 0.3,
+      "voiceover": "Đóng vai trò như những sợi cáp quang sinh học chính là mạng lưới sợi nấm trắng siêu mảnh quấn chặt quanh từng đầu rễ cây.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -102,8 +102,8 @@
       "duration_s": 5.0,
       "image_prompt": "Sunlit forest scene, researcher hands holding a soil sample with pale roots, bright natural light, vivid documentary style, vertical 9:16, no text.",
       "motion": "máy quay nghiêng chậm từ bàn tay cầm mẫu đất lên tán rừng sáng",
-      "voiceover": "Phát hiện này có từ gần ba mươi năm trước.",
-      "vo_at": 0.3,
+      "voiceover": "Các nhà sinh thái học phát hiện mối giao dịch ngầm kỳ diệu này cách đây gần ba thập kỷ: nấm lấy đường từ cây và trả lại khoáng chất.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -127,8 +127,8 @@
       "duration_s": 5.0,
       "image_prompt": "Warm morning light on a giant mother tree, young seedlings growing in its shade, golden sunbeams, vivid documentary photography, vertical 9:16, no text.",
       "motion": "máy quay lia chậm từ thân cây mẹ xuống cây con mọc trong bóng râm",
-      "voiceover": "Cây mẹ chuyển chất dinh dưỡng cho cây con qua mạng nấm.",
-      "vo_at": 0.3,
+      "voiceover": "Đáng kinh ngạc hơn, những cây cổ thụ lớn nhất có thể bơm thẳng carbon và nước qua mạng sợi nấm để nuôi những cây con của mình.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -152,8 +152,8 @@
       "duration_s": 5.0,
       "image_prompt": "Dramatic close-up of green leaves with tiny aphids, soft sunlight, vivid macro documentary, vertical 9:16, sharp detail, no text.",
       "motion": "zoom chậm vào lá cây có rệp, nắng mềm chiếu qua gân lá",
-      "voiceover": "Khi sâu tấn công, cây báo động cho cây khác qua rễ.",
-      "vo_at": 0.3,
+      "voiceover": "Khi một cây thông bị đàn sâu rệp tấn công rách lá, nó lập tức phát đi tín hiệu hóa học khẩn cấp chạy dọc theo mạng rễ ngầm.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -177,8 +177,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright macro of a young tree leaf strengthening, fresh green veins glowing in sunlight, vivid documentary photography, vertical 9:16, sharp detail, no text.",
       "motion": "giữ khung cận gân lá xanh, ánh nắng lan dần trên mặt lá",
-      "voiceover": "Cây nhận tín hiệu liền chuẩn bị phòng vệ trước.",
-      "vo_at": 0.3,
+      "voiceover": "Những cây hàng xóm cách đó hàng chục mét nhận được tin báo liền chủ động tiết ra nhựa đắng phòng thủ trước khi đàn sâu kịp bò tới!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -202,8 +202,8 @@
       "duration_s": 5.0,
       "image_prompt": "Soft sunlight filtering through canopy onto a tiny seedling sprouting in deep shade, vivid documentary macro, vertical 9:16, sharp detail, no text.",
       "motion": "máy quay hạ thấp chậm xuống cây con nảy mầm trong bóng râm",
-      "voiceover": "Mạng nấm còn giúp cây con mọc trong bóng râm.",
-      "vo_at": 0.3,
+      "voiceover": "Nhờ sự đùm bọc ấy, những mầm cây non mọc dưới bóng râm thiếu nắng vẫn nhận đủ dưỡng chất từ cây mẹ để sống sót qua mùa đông.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -227,8 +227,8 @@
       "duration_s": 5.0,
       "image_prompt": "Aerial view of a vast green forest at golden hour, trees connected like a living network, warm sunlight, vivid documentary photography, vertical 9:16, no text.",
       "motion": "bay lên chậm mở rộng khung cảnh rừng cây nối nhau dưới nắng vàng",
-      "voiceover": "Người ta gọi đây là mạng gỗ của rừng cây.",
-      "vo_at": 0.3,
+      "voiceover": "Giới khoa học đặt tên cho hệ thống truyền tin kỳ vĩ dưới lòng đất này là mạng Internet gỗ của rừng xanh.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -252,8 +252,8 @@
       "duration_s": 5.0,
       "image_prompt": "Underground cross-section view of a glowing fungal network linking many tree roots, warm light, vivid documentary style, vertical 9:16, no text.",
       "motion": "máy quay lướt chậm dọc mạng nấm phát sáng nối các rễ cây",
-      "voiceover": "Một mạng nấm nối rất nhiều cây với nhau.",
-      "vo_at": 0.3,
+      "voiceover": "Chỉ một nhúm đất rừng bằng bàn tay đã có thể chứa hàng cây số sợi nấm mỏng như tơ nối hàng trăm cá thể thực vật lại với nhau.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -277,8 +277,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright sunny forest path, a friendly young woman smiling at camera among tall trees, warm golden light, vivid documentary photography, vertical 9:16, no text.",
       "motion": "giữ khung trung cảnh người dẫn mỉm cười, nắng vàng sau lưng, rừng cây xung quanh",
-      "voiceover": "Bạn có tin cây cũng biết giúp nhau không? Bình luận nhé!",
-      "vo_at": 0.3,
+      "voiceover": "Thế nên mỗi khi bước đi giữa rừng cây yên ả, thực chất bạn đang đứng ngay phía trên một mạng xã hội cổ xưa nhất hành tinh đấy!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "at": 0,
@@ -299,7 +299,7 @@
   ],
   "series": "Tập Làm Content",
   "title": "Cây Cối Đang Nhắn Tin Dưới Lòng Đất",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "seed": 18,
   "format": {
     "ratio": "9:16",
@@ -307,5 +307,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

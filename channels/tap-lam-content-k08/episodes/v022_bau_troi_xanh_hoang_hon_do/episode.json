@@ -3,7 +3,7 @@
   "title": "Vì Sao Trời Xanh Nhưng Hoàng Hôn Lại Đỏ",
   "publish_title": "Vì Sao Trời Xanh Nhưng Hoàng Hôn Lại Đỏ",
   "cover_title": "TRỜI XANH, HOÀNG HÔN ĐỎ",
-  "cover_hook": "Cùng một mặt trời, sao trưa xanh mà chiều đỏ rực?",
+  "cover_hook": "Cùng một Mặt Trời chiếu sáng không đổi, tại sao ban trưa bầu trời lại xanh ngắt trong veo mà lúc chiều tà lại cháy rực sắc đỏ cam?",
   "description": "Ánh sáng mặt trời bị không khí tán xạ, nên ban ngày bầu trời xanh. Khi mặt trời xuống thấp, đường đi của ánh sáng dài hơn, chỉ còn ánh đỏ và cam tới mắt ta.",
   "hashtags": [
     "#TapLamContent",
@@ -14,10 +14,10 @@
   ],
   "cta": "Bạn thích trời xanh hay hoàng hôn đỏ, hãy bình luận nhé?",
   "series": "Tập Làm Content",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -32,8 +32,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vibrant clear deep blue midday sky above white fluffy cumulus clouds over lush green mountains, crisp daylight documentary photography",
       "motion": "Máy quay lia chậm từ trời xanh sang hoàng hôn",
-      "voiceover": "Cùng một mặt trời, sao trưa xanh mà chiều đỏ rực?",
-      "vo_at": 0.0,
+      "voiceover": "Cùng một Mặt Trời chiếu sáng không đổi, tại sao ban trưa bầu trời lại xanh ngắt trong veo mà lúc chiều tà lại cháy rực sắc đỏ cam?",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -57,8 +57,8 @@
       "duration_s": 5.0,
       "image_prompt": "Dramatic fiery red and orange sunset sky reflecting over calm ocean waves at horizon, breathtaking nature photography",
       "motion": "Máy quay nâng dần lên bầu trời",
-      "voiceover": "Bầu trời xanh không phải màu của không khí đâu nhé.",
-      "vo_at": 0.3,
+      "voiceover": "Nhiều người lầm tưởng bầu trời xanh là do phản chiếu màu nước đại dương, nhưng sự thật nằm trọn trong bầu khí quyển phía trên đầu bạn.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -82,8 +82,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright beam of white sunlight passing through a clear glass prism splitting into a vivid rainbow spectrum on dark slate, studio science photography",
       "motion": "Máy quay tiến chậm lại gần dải màu",
-      "voiceover": "Ánh sáng mặt trời chứa đủ mọi màu sắc khác nhau.",
-      "vo_at": 0.3,
+      "voiceover": "Ánh sáng trắng từ Mặt Trời trông đơn giản nhưng thực chất là chùm pha trộn của đủ bảy sắc cầu vồng với độ dài bước sóng khác nhau.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -107,8 +107,8 @@
       "duration_s": 5.0,
       "image_prompt": "Close-up visual of sunlit sky atmosphere with soft blue scattered light rays streaming through high clouds, crisp documentary photography",
       "motion": "Máy quay xoay chậm quanh tia sáng",
-      "voiceover": "Ánh sáng xanh bị không khí tán xạ mạnh hơn hẳn.",
-      "vo_at": 0.3,
+      "voiceover": "Trong đó ánh sáng xanh lam có bước sóng ngắn và lăn tăn nhỏ, nên khi va vào các phân tử khí nitơ và oxy nó bị hất tung ra mọi hướng.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -132,8 +132,8 @@
       "duration_s": 5.0,
       "image_prompt": "Earth atmosphere thin glowing blue layer seen from low orbit space with sun rising on limb, NASA documentary photography",
       "motion": "Máy quay lia chậm qua bầu trời",
-      "voiceover": "Mắt ta nhận nhiều ánh sáng xanh tán xạ khắp nơi.",
-      "vo_at": 0.3,
+      "voiceover": "Hiện tượng vật lý này gọi là tán xạ Rayleigh: bầu khí quyển khuếch tán ánh sáng xanh mạnh gấp nhiều lần so với ánh sáng đỏ.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -157,8 +157,8 @@
       "duration_s": 5.0,
       "image_prompt": "Sun directly overhead in brilliant cobalt blue midday sky with glowing solar corona and crisp clouds, nature photography",
       "motion": "Máy quay nâng dần từ cánh đồng lên trời",
-      "voiceover": "Vì vậy, ban ngày ta thấy bầu trời xanh trong.",
-      "vo_at": 0.3,
+      "voiceover": "Ban trưa khi Mặt Trời chiếu thẳng từ đỉnh đầu xuống ngắn nhất, ánh sáng xanh văng khắp tầng không khiến mắt ta nhìn đâu cũng thấy trời xanh.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -182,8 +182,8 @@
       "duration_s": 5.0,
       "image_prompt": "Golden hour sun descending low toward ocean horizon casting long warm amber light across calm water, documentary photography",
       "motion": "Máy quay hạ chậm theo mặt trời",
-      "voiceover": "Buổi chiều, mặt trời xuống thấp, tia sáng đi xa hơn.",
-      "vo_at": 0.3,
+      "voiceover": "Thế nhưng khi chiều buông Mặt Trời hạ thấp sát đường chân trời, chùm tia nắng phải xuyên chéo qua lớp khí quyển dày gấp mười lần ban trưa!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -207,8 +207,8 @@
       "duration_s": 5.0,
       "image_prompt": "Deep crimson and scarlet sunset clouds glowing intensely above silhouetted mountain peaks, National Geographic photography",
       "motion": "Máy quay tiến chậm theo tia sáng",
-      "voiceover": "Đường đi dài làm ánh sáng xanh tán xạ hết dần.",
-      "vo_at": 0.3,
+      "voiceover": "Trên quãng đường quá dài đầy bụi mịn và hơi nước ấy, gần như toàn bộ ánh sáng xanh lam và tím đã bị tán xạ rơi rụng sạch dọc đường.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -232,8 +232,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vibrant pink, violet and orange twilight sky reflected in calm Vietnamese coastal bay water, crisp nature photography",
       "motion": "Máy quay lia chậm qua hoàng hôn",
-      "voiceover": "Chỉ còn ánh sáng đỏ và cam tới được mắt ta.",
-      "vo_at": 0.3,
+      "voiceover": "Chỉ còn lại những tia sáng màu đỏ, cam và vàng có bước sóng dài nhất mới đủ sức vượt chướng ngại vật đi thẳng tới võng mạc mắt bạn.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -257,8 +257,8 @@
       "duration_s": 5.0,
       "image_prompt": "Panoramic silhouette of coastal lighthouse standing against blazing orange-red sunset sky over sea, documentary photography",
       "motion": "Máy quay lia chậm qua đám mây đỏ",
-      "voiceover": "Mây và bụi nhỏ càng làm hoàng hôn đỏ rực hơn.",
-      "vo_at": 0.3,
+      "voiceover": "Những ngày không khí có thêm mây mỏng và hạt bụi tự nhiên, hiệu ứng lọc sáng càng mạnh biến chân trời thành bức tranh lửa lộng lẫy.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -282,8 +282,8 @@
       "duration_s": 5.0,
       "image_prompt": "Peaceful twilight transition from deep red horizon to starry indigo night sky above quiet hills, crisp landscape photography",
       "motion": "Máy quay lùi chậm và nâng dần lên cao",
-      "voiceover": "Bạn thích trời xanh hay hoàng hôn đỏ, hãy bình luận nhé?",
-      "vo_at": 0.3,
+      "voiceover": "Mỗi buổi hoàng hôn đỏ rực thực chất là màn trình diễn quang học kỳ vĩ mà bầu khí quyển Trái Đất vẽ tặng chúng ta mỗi chiều!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -309,5 +309,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_02.png"
+  "cover_image": "scene_02.png",
+  "tight_pacing": true
 }

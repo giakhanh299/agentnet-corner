@@ -3,7 +3,7 @@
   "title": "Lỗ Nhỏ Trên Cửa Sổ Máy Bay Để Làm Gì",
   "publish_title": "Lỗ Nhỏ Trên Cửa Sổ Máy Bay Để Làm Gì",
   "cover_title": "Lỗ Nhỏ Cứu Cả Chuyến Bay",
-  "cover_hook": "Đừng bịt lỗ nhỏ xíu trên kính cửa sổ máy bay!",
+  "cover_hook": "Mỗi lần ngồi ghế cạnh cửa sổ máy bay, bạn có từng để ý cái lỗ tròn bé xíu nằm ngay mép dưới tấm kính và tự hỏi có bị thủng không?",
   "description": "Giải thích vì sao cửa sổ máy bay có lỗ nhỏ ở lớp kính giữa: cân bằng áp suất, giữ lớp dự phòng và thoát hơi ẩm để kính không mờ sương.",
   "hashtags": [
     "#TapLamConTent",
@@ -13,10 +13,10 @@
   ],
   "cta": "Bạn từng thấy lỗ nhỏ này chưa? Hãy bình luận nhé!",
   "series": "Tập Làm Content",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -29,8 +29,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary close-up of a tiny bleed hole at the bottom of an airplane window, blue sky and clouds outside, warm cabin light, sharp macro detail, no text, no logo, no watermark.",
       "motion": "slow push-in",
-      "voiceover": "Đừng bịt lỗ nhỏ xíu trên kính cửa sổ máy bay!",
-      "vo_at": 0.0,
+      "voiceover": "Mỗi lần ngồi ghế cạnh cửa sổ máy bay, bạn có từng để ý cái lỗ tròn bé xíu nằm ngay mép dưới tấm kính và tự hỏi có bị thủng không?",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -54,8 +54,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary view of a passenger looking through an airplane window at bright clouds, curious expression, warm cabin tones, no text, no logo, no watermark.",
       "motion": "slow pan right",
-      "voiceover": "Cửa sổ máy bay không phải một tấm kính đâu bạn ạ.",
-      "vo_at": 0.3,
+      "voiceover": "Đừng lo lắng nhé, bởi ô cửa sổ máy bay chở khách thực chất không phải là một tấm kính đơn lẻ mỏng manh như cửa kính ở nhà.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -79,8 +79,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary cross-section diagram style view of three stacked acrylic airplane window panes, clear layers, bright sky behind, no text, no logo, no watermark.",
       "motion": "slow zoom out",
-      "voiceover": "Nó gồm ba lớp kính acrylic xếp chồng lên nhau.",
-      "vo_at": 0.3,
+      "voiceover": "Nó được chế tạo từ ba lớp nhựa acrylic siêu bền xếp chồng khít lên nhau với một khoảng đệm không khí nhỏ ở chính giữa.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -104,8 +104,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary close-up of the outer airplane window pane facing high sky and thin clouds, strong light, sense of pressure, no text, no logo, no watermark.",
       "motion": "slow push-in",
-      "voiceover": "Lớp ngoài cùng chịu áp lực lớn nhất khi bay cao.",
-      "vo_at": 0.3,
+      "voiceover": "Khi máy bay vọt lên độ cao mười nghìn mét nơi không khí loãng toẹt, lớp kính ngoài cùng mới là tấm khiên gánh toàn bộ chênh lệch áp suất.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -129,8 +129,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary view of the middle airplane window pane glowing softly behind the outer pane, layered glass, blue sky, no text, no logo, no watermark.",
       "motion": "slow pan left",
-      "voiceover": "Lớp giữa là lớp dự phòng nếu lớp ngoài gặp sự cố.",
-      "vo_at": 0.3,
+      "voiceover": "Lớp kính ở giữa đóng vai trò chốt chặn dự phòng an toàn phòng trường hợp hi hữu lớp ngoài cùng bị va đập nứt vỡ.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -154,8 +154,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary macro of a tiny round bleed hole at the bottom edge of the middle airplane window pane, fingertip pointing nearby, sharp detail, no text, no logo, no watermark.",
       "motion": "slow push-in",
-      "voiceover": "Lỗ nhỏ nằm ở đáy của lớp kính giữa này.",
-      "vo_at": 0.3,
+      "voiceover": "Và chiếc lỗ nhỏ li ti bạn nhìn thấy nằm xuyên qua đúng phần đáy của tấm kính dự phòng ở giữa này, gọi là lỗ thở cân bằng.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -179,8 +179,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary animation style of gentle air flowing through a tiny hole between cabin and window gap, soft blue streams, bright sky, no text, no logo, no watermark.",
       "motion": "slow tracking shot",
-      "voiceover": "Nó cân bằng áp suất giữa khoang hành khách và khoảng trống.",
-      "vo_at": 0.3,
+      "voiceover": "Nhờ có lỗ thông khí nhỏ ấy, không khí từ khoang hành khách đi qua giúp cân bằng áp suất để lớp kính giữa không bị ép cong thường xuyên.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -204,8 +204,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary view of an airplane window with balanced light across three glass layers, calm blue sky, reassuring mood, no text, no logo, no watermark.",
       "motion": "slow zoom out",
-      "voiceover": "Nhờ đó lớp ngoài không phải gánh hết áp lực một mình.",
-      "vo_at": 0.3,
+      "voiceover": "Toàn bộ áp lực khổng lồ được dồn đúng thiết kế lên tấm kính ngoài cùng dày nhất, giữ cho lớp dự phòng luôn nguyên vẹn một trăm phần trăm!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -229,8 +229,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary close-up of clear airplane window glass with tiny moisture droplets escaping, bright sky, fresh air feeling, no text, no logo, no watermark.",
       "motion": "slow pan up",
-      "voiceover": "Lỗ nhỏ còn thoát hơi ẩm để kính không mờ sương.",
-      "vo_at": 0.3,
+      "voiceover": "Tác dụng quan trọng thứ hai là lỗ thở giúp giải phóng hơi ẩm đọng giữa các lớp kính khi nhiệt độ bên ngoài tụt xuống âm năm mươi độ C.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -254,8 +254,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary view of a fogged airplane window with blurred white frost patterns, dim light, blocked view of clouds, no text, no logo, no watermark.",
       "motion": "slow push-in",
-      "voiceover": "Nếu bịt lỗ lại hơi ẩm đọng sương che mất tầm nhìn.",
-      "vo_at": 0.3,
+      "voiceover": "Nếu không có chiếc lỗ bé bằng đầu tăm này, cửa sổ máy bay sẽ lập tức đóng băng trắng xóa che mù mịt toàn bộ biển mây bên ngoài.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -279,8 +279,8 @@
       "duration_s": 5.0,
       "image_prompt": "Vertical 9:16 vivid documentary wide view of a smiling passenger at an airplane window with clear blue sky and clouds, warm light, friendly mood, no text, no logo, no watermark.",
       "motion": "slow zoom out",
-      "voiceover": "Bạn từng thấy lỗ nhỏ này chưa hãy bình luận nhé!",
-      "vo_at": 0.3,
+      "voiceover": "Một chi tiết nhỏ xíu nhưng lại là thiết kế kỹ thuật cực kỳ tinh tế bảo vệ hàng triệu chuyến bay an toàn mỗi ngày!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -306,5 +306,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

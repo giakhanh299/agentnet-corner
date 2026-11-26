@@ -5,10 +5,10 @@
   "title": "Tại Sao Thấy Người Khác Ngáp Bạn Cũng Ngáp",
   "cover_text": "NGÁP LÂY SANG NHAU",
   "hook": "Chỉ cần nghe chữ ngáp thôi bạn đã muốn ngáp rồi đúng không?",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -28,8 +28,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright daylight on a young woman yawning widely in a sunny park, friends smiling nearby, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chỉ nghe chữ ngáp, bạn đã muốn ngáp rồi.",
-      "vo_at": 0.0,
+      "voiceover": "Đặt cược với bạn một điều thú vị nhé: chỉ cần nhìn hình ảnh và nghe nhắc tới chữ ngáp trong ba mươi giây tới, rất có thể bạn sẽ ngáp theo!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -53,8 +53,8 @@
       "duration_s": 5.0,
       "image_prompt": "Warm sunlight on a group of friends in a park, one yawning and others starting to yawn too, laughing together, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ngáp lây sang nhau, ai cũng từng trải qua.",
-      "vo_at": 0.3,
+      "voiceover": "Hiện tượng thấy người bên cạnh ngáp dài một cái là cả bàn tự nhiên ngáp dây chuyền theo đã làm giới khoa học tò mò suốt hàng thế kỷ.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -78,8 +78,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright macro light on a glowing human brain model, areas lighting up as a person watches someone yawn, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Thấy người khác ngáp, não ta phản ứng ngay.",
-      "vo_at": 0.3,
+      "voiceover": "Thực chất ngáp lây hoàn toàn không phải do căn phòng thiếu oxy như nhiều người vẫn lầm tưởng từ trước tới nay đâu.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -103,8 +103,8 @@
       "duration_s": 5.0,
       "image_prompt": "Clear light on two people facing each other, one yawning and the other mirroring the same expression, sunny classroom background, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Vùng não soi gương bắt chước hành động quen thuộc.",
-      "vo_at": 0.3,
+      "voiceover": "Khi mắt bạn nhìn thấy ai đó há miệng ngáp, hệ thống tế bào thần kinh gương trong vỏ não lập tức kích hoạt mô phỏng lại đúng hành động ấy.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -128,8 +128,8 @@
       "duration_s": 5.0,
       "image_prompt": "Warm sunlight on close friends sharing a kind conversation on a bench, one yawning gently and the other yawning back, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Người càng đồng cảm càng dễ ngáp theo hơn.",
-      "vo_at": 0.3,
+      "voiceover": "Điều thú vị là các nghiên cứu tâm lý chỉ ra: bạn càng gắn bó thân thiết và giàu lòng đồng cảm với ai thì càng dễ bị lây ngáp từ người đó nhất!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -153,8 +153,8 @@
       "duration_s": 5.0,
       "image_prompt": "Cool morning light on a person yawning and stretching after waking, fresh air through an open window, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ngáp giúp não mát lại và tỉnh táo hơn.",
-      "vo_at": 0.3,
+      "voiceover": "Còn về mặt sinh lý học, một cái ngáp sâu kèm luồng khí mát hít căng lồng ngực đóng vai trò như chiếc quạt tản nhiệt làm mát bộ não đang nóng lên.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -178,8 +178,8 @@
       "duration_s": 5.0,
       "image_prompt": "Soft evening light on a tired student yawning over books at a desk, warm lamp glowing, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Thiếu ngủ, mệt mỏi, ngáp càng xuất hiện nhiều.",
-      "vo_at": 0.3,
+      "voiceover": "Khi ta buồn ngủ hoặc căng thẳng mệt mỏi, nhiệt độ máu lên não tăng nhẹ khiến cơ thể tự động kích hoạt phản xạ ngáp để lấy lại sự tỉnh táo.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -203,8 +203,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright daylight on a happy dog yawning beside its owner on a sofa, both relaxed at home, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chó cưng cũng ngáp theo chủ của mình đấy.",
-      "vo_at": 0.3,
+      "voiceover": "Đáng yêu hơn nữa, ngay cả những chú chó cưng nuôi lâu năm trong nhà cũng biết ngáp lây mỗi khi nhìn thấy người chủ yêu quý của mình ngáp!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -228,8 +228,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright laboratory light on researchers discussing brain scans and yawning data on a screen, curious and thoughtful, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nhưng khoa học chưa giải thích trọn vẹn hiện tượng.",
-      "vo_at": 0.3,
+      "voiceover": "Trong thế giới hoang dã, phản xạ ngáp đồng loạt giúp cả bầy thú đồng bộ nhịp sinh học, cùng chuyển sang trạng thái cảnh giác một lúc.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -253,8 +253,8 @@
       "duration_s": 5.0,
       "image_prompt": "Golden sunset light on friends walking together in a park, yawning and laughing in warm friendship, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ngáp lây là dấu hiệu gắn kết xã hội.",
-      "vo_at": 0.3,
+      "voiceover": "Trẻ nhỏ dưới bốn tuổi khi vùng não đồng cảm xã hội chưa phát triển hoàn thiện hầu như không bao giờ bị lây ngáp từ người xung quanh.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -278,8 +278,8 @@
       "duration_s": 5.0,
       "image_prompt": "Warm sunlight on a young woman smiling after a big yawn, friends smiling with her in a bright park, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Lần sau ngáp, mỉm cười vì não đang kết nối.",
-      "vo_at": 0.3,
+      "voiceover": "Vậy từ đầu video tới giờ bạn có lỡ ngáp theo lần nào chưa, đó là dấu hiệu bộ não bạn rất giàu sự thấu cảm kết nối đấy!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -305,5 +305,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Đặt cược với bạn một điều thú vị nhé: chỉ cần nhìn hình ảnh và nghe nhắc tới chữ ngáp trong ba mươi giây tới, rất có thể bạn sẽ ngáp theo!"
 }

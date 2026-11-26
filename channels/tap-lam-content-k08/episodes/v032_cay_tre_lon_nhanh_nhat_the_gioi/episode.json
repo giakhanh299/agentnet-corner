@@ -3,10 +3,10 @@
   "title": "Loài Cây Mọc Cao Gần 1 Mét Chỉ Trong 1 Ngày",
   "cover_title": "TRE LỚN 1 MÉT/NGÀY",
   "series": "Tập Làm Content",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -25,8 +25,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright morning light on a tall green bamboo shoot growing fast in a misty Vietnamese forest, dew drops, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bạn có thể nghe thấy tiếng cây tre lớn lên?",
-      "vo_at": 0.0,
+      "voiceover": "Nếu ngồi thật yên trong rừng trúc sau cơn mưa rào mùa xuân, bạn thậm chí có thể nghe thấy tiếng cây tre vươn mình lớn lên từng centimet!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -50,8 +50,8 @@
       "duration_s": 5.0,
       "image_prompt": "Warm sunlight on a young bamboo shoot rising beside a measuring bamboo pole in a lush forest, morning mist, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tre mọc cao gần một mét chỉ trong một ngày.",
-      "vo_at": 0.3,
+      "voiceover": "Sách kỷ lục thế giới từng ghi nhận những loài tre khổng lồ có tốc độ mọc thần tốc tới chín mươi mốt centimet chỉ trong đúng hai mươi tư giờ.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -75,8 +75,8 @@
       "duration_s": 5.0,
       "image_prompt": "Golden sunrise light on a dense bamboo grove towering over a Vietnamese village, mist drifting, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tre là cây mọc nhanh nhất thế giới hiện nay.",
-      "vo_at": 0.3,
+      "voiceover": "Tính trung bình cứ chưa đầy hai phút đồng hồ thân măng lại cao thêm một milimet, trở thành loài thực vật tăng trưởng nhanh nhất hành tinh!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -100,8 +100,8 @@
       "duration_s": 5.0,
       "image_prompt": "Soft daylight on a fresh bamboo shoot pushing through rich soil, water droplets, green leaves, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Măng tre vươn lên nhờ nước và nắng ban ngày.",
-      "vo_at": 0.3,
+      "voiceover": "Khác với cây gỗ thông thường phải mất hàng chục năm mở rộng vòng thân, măng tre khi nhú khỏi mặt đất đã mang sẵn toàn bộ các đốt hoàn chỉnh.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -125,8 +125,8 @@
       "duration_s": 5.0,
       "image_prompt": "Cool moonlight on bamboo shoots growing at night in a quiet forest, dew forming, soft mist, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ban đêm tre lớn nhanh vì tế bào giãn nở.",
-      "vo_at": 0.3,
+      "voiceover": "Cả mùa đông trước đó hệ thống rễ ngầm khổng lồ dưới lòng đất đã tích trữ đầy ắp đường, tinh bột và nước như một chiếc lò xo nén chặt.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -150,8 +150,8 @@
       "duration_s": 5.0,
       "image_prompt": "Close macro light on a bamboo shoot skin cracking softly as it grows, fine fibres, morning dew, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tiếng tre lớn là tiếng vỏ nứt rất khẽ.",
-      "vo_at": 0.3,
+      "voiceover": "Đợi đúng cơn mưa đầu mùa làm mềm đất, các tế bào trong từng đốt măng đồng loạt hút căng nước và kéo giãn chiều dài cùng một lúc!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -175,8 +175,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright daylight on strong bamboo roots absorbing water from damp forest soil, green shoots rising, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Rễ tre hút nước mạnh nuôi thân cao vút.",
-      "vo_at": 0.3,
+      "voiceover": "Âm thanh lách tách rất khẽ vang lên trong đêm tĩnh mịch chính là tiếng lớp bẹ măng khô bên ngoài căng nứt ra khi thân tre phóng vút lên trời.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -200,8 +200,8 @@
       "duration_s": 5.0,
       "image_prompt": "Wide daylight on a tall bamboo grove beside a three-storey Vietnamese house, showing equal height, blue sky, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Một bụi tre có thể cao bằng nhà ba tầng.",
-      "vo_at": 0.3,
+      "voiceover": "Chỉ mất vỏn vẹn khoảng sáu mươi ngày kể từ lúc nhú mầm, một cây tre non đã vươn cao sừng sững ngang ngửa tòa nhà năm sáu tầng lầu!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -225,8 +225,8 @@
       "duration_s": 5.0,
       "image_prompt": "Warm afternoon light on Vietnamese craftsmen building a bamboo house and bridge, musical instruments nearby, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tre dùng làm nhà, cầu, nhạc cụ khắp châu Á.",
-      "vo_at": 0.3,
+      "voiceover": "Dẻo dai chịu uốn hơn gỗ cứng mà sức bền kéo lại ngang ngửa thép xây dựng, cây tre gắn bó máu thịt với nếp nhà và cây cầu làng quê Việt.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -250,8 +250,8 @@
       "duration_s": 5.0,
       "image_prompt": "Golden harvest light on Vietnamese farmers cutting mature bamboo in a sunny grove, baskets full, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Người trồng tre thu hoạch nhanh sau vài mùa mưa.",
-      "vo_at": 0.3,
+      "voiceover": "Sau ba đến năm năm trưởng thành là người trồng đã có thể thu hoạch mà gốc rễ dưới đất vẫn tự đâm măng mới không cần trồng lại.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -275,8 +275,8 @@
       "duration_s": 5.0,
       "image_prompt": "Serene sunset light over a healthy bamboo forest beside a clean stream, mist rising, birds flying, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tre lớn nhanh nhưng vẫn cần đất và nước sạch.",
-      "vo_at": 0.3,
+      "voiceover": "Bài học của loài tre cũng giống như thành công của con người: âm thầm bén rễ sâu suốt nhiều năm để bứt phá ngoạn mục khi thời cơ tới!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -303,5 +303,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Nếu ngồi thật yên trong rừng trúc sau cơn mưa rào mùa xuân, bạn thậm chí có thể nghe thấy tiếng cây tre vươn mình lớn lên từng centimet!"
 }

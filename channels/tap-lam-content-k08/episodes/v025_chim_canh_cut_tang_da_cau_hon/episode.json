@@ -5,10 +5,10 @@
   "title": "Chim Cánh Cụt Tặng Đá Cho Cầu Hôn",
   "cover_title": "CÁNH CỤT TẶNG ĐÁ",
   "hook": "Chim cánh cụt đực tìm viên sỏi đẹp nhất để cầu hôn?",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -71,8 +71,8 @@
       "duration_s": 5.0,
       "image_prompt": "Bright Antarctic sunlight on a male Adelie penguin searching for a smooth pebble on a rocky beach, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Cánh cụt đực tìm viên sỏi đẹp nhất trên bãi.",
-      "vo_at": 0.0,
+      "voiceover": "Giữa vùng đất băng giá lạnh âm bốn mươi độ ở Nam Cực, loài chim cánh cụt Adelie lại có màn cầu hôn lãng mạn chẳng kém gì trao nhẫn kim cương!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -81,8 +81,8 @@
       "duration_s": 5.0,
       "image_prompt": "A male Adelie penguin carrying a smooth pebble in its beak, walking slowly across a rocky Antarctic beach, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nó ngậm viên sỏi, bước chậm về phía bạn tình.",
-      "vo_at": 0.3,
+      "voiceover": "Khi mùa sinh sản bắt đầu, chàng cánh cụt đực sẽ lặn lội khắp bờ biển để tìm cho bằng được một viên sỏi tròn nhẵn và đẹp nhất.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -91,8 +91,8 @@
       "duration_s": 5.0,
       "image_prompt": "A female Adelie penguin looking closely at a pebble offered by a male, bright Antarctic daylight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chim cái nhìn viên sỏi, rồi nhìn chàng cánh cụt.",
-      "vo_at": 0.3,
+      "voiceover": "Nó nâng niu ngậm chặt viên đá quý giá trong mỏ, lạch bạch bước thật trang trọng tới trước mặt nàng cánh cụt mà nó thầm thương.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -101,8 +101,8 @@
       "duration_s": 5.0,
       "image_prompt": "A smooth grey pebble held in a penguin beak, bright sunlight on a rocky Antarctic nest site, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sỏi không phải nhẫn, mà là vật liệu làm tổ.",
-      "vo_at": 0.3,
+      "voiceover": "Ở vùng lục địa phủ toàn băng tuyết trắng xóa không có lấy một cành cây ngọn cỏ, những viên sỏi nhẵn thực sự hiếm và đắt giá như vàng ròng.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -111,8 +111,8 @@
       "duration_s": 5.0,
       "image_prompt": "A male Adelie penguin placing a pebble on the ground before a female, bright Antarctic sunlight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chim đực đặt sỏi xuống, chờ bạn tình nhận lấy.",
-      "vo_at": 0.3,
+      "voiceover": "Chàng cánh cụt cúi đầu đặt nhẹ viên sỏi xuống ngay trước chân bạn tình, hồi hộp đứng im chờ đợi câu trả lời định mệnh.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -121,8 +121,8 @@
       "duration_s": 5.0,
       "image_prompt": "A female Adelie penguin picking up a pebble and arranging it in a small stone nest, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chim cái gắp sỏi lên, xếp vào tổ đá nhỏ.",
-      "vo_at": 0.3,
+      "voiceover": "Nếu ưng thuận lời cầu hôn, chim cái sẽ cúi xuống gắp viên sỏi ấy lên và đặt vào vị trí đầu tiên của chiếc tổ đá chung.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -131,8 +131,8 @@
       "duration_s": 5.0,
       "image_prompt": "A stone penguin nest protecting an egg, bright Antarctic sunlight and cold blue ice behind, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tổ đá giúp trứng không bị lạnh và ngập nước.",
-      "vo_at": 0.3,
+      "voiceover": "Hàng trăm viên sỏi xếp cao thành bệ đỡ vững chắc sẽ nâng quả trứng lên khỏi mặt băng, ngăn dòng nước tuyết tan lạnh buốt làm hỏng phôi non.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -141,8 +141,8 @@
       "duration_s": 5.0,
       "image_prompt": "Many male Adelie penguins carrying pebbles across a rocky Antarctic beach in bright sunlight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nhiều chim đực mang sỏi, ít con được bạn chọn.",
-      "vo_at": 0.3,
+      "voiceover": "Cuộc cạnh tranh khốc liệt tới mức nhiều anh chàng lười biếng còn lén rình lúc hàng xóm quay lưng để ăn trộm sỏi đẹp mang về tặng vợ!",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -151,8 +151,8 @@
       "duration_s": 5.0,
       "image_prompt": "A female Adelie penguin inspecting a small stone nest, bright Antarctic sunlight on pebbles, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sỏi đẹp chưa đủ, chim cái còn xem tổ vững.",
-      "vo_at": 0.3,
+      "voiceover": "Tất nhiên nếu phát hiện kẻ trộm đá xây tổ, chủ nhà sẽ xù lông rượt đuổi khắp bãi biển tạo nên khung cảnh vô cùng hài hước.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -161,8 +161,8 @@
       "duration_s": 5.0,
       "image_prompt": "Two Adelie penguins incubating an egg together in a stone nest, bright Antarctic daylight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tổ hoàn thành, cặp đôi cùng ấp trứng bên nhau.",
-      "vo_at": 0.3,
+      "voiceover": "Khi chiếc tổ đá hoàn thành tròn trịa, cặp đôi cánh cụt sẽ thay phiên nhau ấp trứng vượt qua những trận bão tuyết dữ dội nhất.",
+      "vo_at": 0.12,
       "sfx": []
     },
     {
@@ -171,8 +171,8 @@
       "duration_s": 5.0,
       "image_prompt": "A small smooth pebble in a penguin stone nest at sunset light over an Antarctic beach, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Viên sỏi nhỏ mở đầu câu chuyện gia đình lớn.",
-      "vo_at": 0.3,
+      "voiceover": "Một viên sỏi xám bình thường nhưng lại chứa đựng cả lời hứa chở che trọn vẹn cho một gia đình nhỏ nơi tận cùng Trái Đất!",
+      "vo_at": 0.12,
       "sfx": []
     }
   ],
@@ -183,5 +183,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Giữa vùng đất băng giá lạnh âm bốn mươi độ ở Nam Cực, loài chim cánh cụt Adelie lại có màn cầu hôn lãng mạn chẳng kém gì trao nhẫn kim cương!"
 }

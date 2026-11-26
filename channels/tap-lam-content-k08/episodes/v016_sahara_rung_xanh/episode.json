@@ -3,7 +3,7 @@
   "title": "Sa Mạc Sahara Từng Là Rừng Xanh",
   "publish_title": "Sa Mạc Sahara Từng Là Rừng Xanh",
   "cover_title": "SAHARA TỪNG LÀ RỪNG",
-  "cover_hook": "Chỉ sáu nghìn năm trước, Sahara đầy hồ nước và hà mã?",
+  "cover_hook": "Ít ai ngờ rằng chỉ khoảng sáu nghìn năm trước, biển cát cháy bỏng Sahara từng là một thiên đường xanh mướt đầy hồ nước.",
   "description": "Sa mạc Sahara từng xanh ẩm, có hồ nước, cỏ cây và nhiều loài thú. Tranh đá cổ và sự thay đổi của gió mùa giúp giải thích vì sao cảnh quan ấy biến mất.",
   "hashtags": [
     "#TapLamContent",
@@ -14,10 +14,10 @@
   ],
   "cta": "Bạn có tin sa mạc từng xanh không, hãy bình luận nhé?",
   "series": "Tập Làm Content",
-  "voice": "maianh",
+  "voice": "taplamcontent",
   "color_grade": "vivid_doc",
   "cover_theme": "knowledge",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "curiosity",
     "gain_db": 0
@@ -32,8 +32,8 @@
       "duration_s": 5.0,
       "image_prompt": "Aerial documentary photograph of vast golden Sahara desert sand dunes stretching to horizon under bright blue sky, crisp sunlight, National Geographic style",
       "motion": "Máy quay lia chậm từ trái sang phải",
-      "voiceover": "Chỉ sáu nghìn năm trước, Sahara đầy hồ nước và hà mã.",
-      "vo_at": 0.0,
+      "voiceover": "Ít ai ngờ rằng chỉ khoảng sáu nghìn năm trước, biển cát cháy bỏng Sahara từng là một thiên đường xanh mướt đầy hồ nước.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -57,8 +57,8 @@
       "duration_s": 5.0,
       "image_prompt": "Stunning oasis lake surrounded by lush green palm trees and grasslands in ancient green Sahara landscape, bright daylight, documentary photography",
       "motion": "Máy quay nâng dần từ thấp lên cao",
-      "voiceover": "Ngày nay, Sahara là sa mạc nóng lớn nhất thế giới.",
-      "vo_at": 0.3,
+      "voiceover": "Ngày nay Sahara là hoang mạc nóng khắc nghiệt nhất hành tinh, rộng gần bằng cả diện tích nước Mỹ cộng lại.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -82,8 +82,8 @@
       "duration_s": 5.0,
       "image_prompt": "Ancient prehistoric rock art paintings of cattle and giraffes carved on warm sandstone cliff in Sahara desert, crisp natural sunlight, photography",
       "motion": "Máy quay tiến chậm lại gần vách đá",
-      "voiceover": "Tranh đá cổ vẽ hà mã và hươu cao cổ.",
-      "vo_at": 0.3,
+      "voiceover": "Thế nhưng sâu giữa lòng sa mạc khô cằn, các nhà khảo cổ lại phát hiện hàng ngàn bức tranh đá vẽ hà mã và hươu cao cổ.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -107,8 +107,8 @@
       "duration_s": 5.0,
       "image_prompt": "Wide aerial shot of giant turquoise freshwater lake with lush green marshlands and ancient river delta in Africa, bright sunny documentary photo",
       "motion": "Máy quay lia chậm qua đồng cỏ xanh",
-      "voiceover": "Các nhà khoa học gọi thời kỳ này là Sahara xanh ẩm.",
-      "vo_at": 0.3,
+      "voiceover": "Giới khoa học gọi giai đoạn kỳ diệu kéo dài hàng thiên niên kỷ ấy là thời kỳ Sahara Xanh Ẩm của Bắc Phi.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -132,8 +132,8 @@
       "duration_s": 5.0,
       "image_prompt": "Wild hippopotamus swimming in clear blue freshwater lake surrounded by green reeds in African savanna, wildlife documentary photography",
       "motion": "Máy quay nghiêng chậm theo mây mưa",
-      "voiceover": "Khi đó, gió mùa mang mưa sâu vào lục địa châu Phi.",
-      "vo_at": 0.3,
+      "voiceover": "Khi đó hệ thống sông ngòi chằng chịt nuôi sống từng đàn hà mã khổng lồ bơi lội ngay giữa nơi nay là đồi cát trắng.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -157,8 +157,8 @@
       "duration_s": 5.0,
       "image_prompt": "Majestic Nile crocodiles resting on grassy riverbank beside calm freshwater lake in lush green Africa, wildlife photography",
       "motion": "Máy quay lia chậm quanh mặt hồ",
-      "voiceover": "Hồ nước lớn nuôi cá, chim và nhiều loài thú hoang.",
-      "vo_at": 0.3,
+      "voiceover": "Những đầm lầy ngọt khổng lồ còn là quê hương của cá sấu sông Nile, voi rừng cùng vô số loài chim nước trù phú.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -182,8 +182,8 @@
       "duration_s": 5.0,
       "image_prompt": "Lush African green savanna with acacia trees, meandering river and grazing antelope under bright clouds, National Geographic photography",
       "motion": "Máy quay tiến chậm về phía nhóm người",
-      "voiceover": "Người xưa sống ven hồ, săn bắn và chăn nuôi gia súc.",
-      "vo_at": 0.3,
+      "voiceover": "Tổ tiên loài người từng dựng làng ven hồ, chăn thả gia súc và đánh bắt cá giữa thảo nguyên xanh ngắt trải dài.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -207,8 +207,8 @@
       "duration_s": 5.0,
       "image_prompt": "Dramatic split landscape showing green savanna gradually drying into golden desert sand dunes under warm sun, documentary aerial photo",
       "motion": "Máy quay xoay chậm quanh Trái Đất",
-      "voiceover": "Trục Trái Đất thay đổi chậm, làm gió mùa yếu dần đi.",
-      "vo_at": 0.3,
+      "voiceover": "Bước ngoặt xảy ra khi độ nghiêng trục Trái Đất dịch chuyển nhẹ theo chu kỳ hai mươi mốt nghìn năm, đẩy dải mưa gió mùa lùi xuống phía nam.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -232,8 +232,8 @@
       "duration_s": 5.0,
       "image_prompt": "Scientific earth globe from space highlighting North Africa Sahara region glowing in golden sunlight, ultra sharp space photography",
       "motion": "Máy quay lùi chậm khỏi mặt đất khô",
-      "voiceover": "Mưa ít dần, hồ cạn lại, cỏ xanh biến thành cát khô.",
-      "vo_at": 0.3,
+      "voiceover": "Mưa thưa dần qua từng thế kỷ khiến các đại hồ bốc hơi cạn kiệt, thảm cỏ xanh chết khô nhường chỗ cho bão cát nuốt chửng.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -257,8 +257,8 @@
       "duration_s": 5.0,
       "image_prompt": "Dry cracked ancient lakebed in Sahara desert revealing fossilized fish shells in golden sand, macro documentary photography",
       "motion": "Máy quay lia chậm từ cát sang vách đá",
-      "voiceover": "Sa mạc lan rộng, nhưng tranh đá vẫn kể câu chuyện ấy.",
-      "vo_at": 0.3,
+      "voiceover": "Dưới đáy cát nóng hôm nay vẫn còn nằm lại hàng triệu vỏ sò và xương cá hóa thạch minh chứng cho đại dương ngọt năm xưa.",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -282,8 +282,8 @@
       "duration_s": 5.0,
       "image_prompt": "Breathtaking sunset over golden Sahara dunes with faint mirage of water on horizon, cinematic documentary photography",
       "motion": "Máy quay lùi chậm và nâng dần lên cao",
-      "voiceover": "Bạn có tin sa mạc từng xanh không, hãy bình luận nhé?",
-      "vo_at": 0.3,
+      "voiceover": "Theo tính toán thiên văn, khoảng mười lăm nghìn năm nữa khi trục Trái Đất nghiêng trở lại, Sahara sẽ một lần nữa hóa rừng xanh!",
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -309,5 +309,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_02.png"
+  "cover_image": "scene_02.png",
+  "tight_pacing": true
 }
