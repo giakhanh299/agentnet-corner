@@ -1,0 +1,133 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 16,
+  "slug": "k1_srt_16_ngay_thu_ba_den_toi_1929_pho_wall",
+  "title": "Ngày Thứ Ba Đen Tối 1929: Khi Cậu Đánh Giày Cũng Bàn Chuyện Cổ Phiếu",
+  "cover_title": "NGÀY THỨ BA ĐEN TỐI 1929",
+  "cover_hook": "Khi người cuối cùng ngoài vỉa hè cũng dốc sạch tiền tiết kiệm mua cổ phiếu, ai sẽ là người mua tiếp theo?",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 116,
+  "voice": "tienvadoi",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "cuoc_choi_vi_dai_pho_wall__7697568844546088703.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Trong đống thông tin đó, Bao nhiêu là sự thật, Bao nhiêu là nhiễu, Gordon nói một câu trong sách, Trên phố Wall, Thông tin là món hàng đắt nhất, Cũng là món hàng rẻ nhất, Đắt nhất vì thông tin thật.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 5.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, moody cinematic close-up of an antique brass scale balancing gold coins against a stack of debt contracts on dark walnut wood, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Giúp bạn kiếm tiền, Rẻ nhất vì thông tin giả, Khiến bạn mất tiền, Bạn tưởng mình đang đọc tin, Thực ra tin đang đọc bạn, Hắn biết bạn thích xem gì, Hắn biết bạn sợ gì.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 5.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Hắn biết lúc nào nên cho bạn xem gì, Hắn không nói cho bạn sự thật, Hắn nói cho bạn sự thật mà hắn muốn bạn tin, Gordon trong sách còn kể một chi tiết tàn nhẫn hơn.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 5.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Đầu thế kỷ 20, Các ông lớn phố Wall phát hiện ra một điều, Cảm xúc của nhà đầu tư nhỏ lẻ có thể bị đoán trước, Khi tất cả mọi người phát điên, Thị trường nên giảm rồi.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 5.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, young office worker sitting at a kitchen table late at night reviewing monthly mortgage bills and a calculator under a single warm pendant lamp, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Khi tất cả mọi người hoảng loạn, Thị trường nên tăng rồi, Vậy họ đang làm gì, Họ đang tạo ra cảm xúc, Họ tung ra tin xấu trước, Khiến nhà đầu tư nhỏ lẻ hoảng sợ bán tháo.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 5.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Rồi họ mua vào giá thấp, Sau đó tung ra tin tốt, Khiến nhà đầu tư nhỏ lẻ đua nhau mua.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 5.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, moody cinematic close-up of an antique brass scale balancing gold coins against a stack of debt contracts on dark walnut wood, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Rồi họ bán ra giá cao, Bạn đã hiểu vòng lặp này chưa, Nhà đầu tư nhỏ lẻ không phải người tham gia thị trường.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 5.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Họ là nhiên liệu của thị trường, Mỗi lần bạn vì một tin tức, Và đưa ra quyết định, Đều đang tiếp thêm nhiên liệu cho vòng lặp này, Mỗi lần bạn vì một tin nhắn, Mà lao vào.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 5.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Đều khiến vòng lặp này kiếm nhanh hơn, Nhưng nghĩ sâu thêm một tầng, Tại sao nhà đầu tư nhỏ lẻ lại chạy theo tin tức, Vì họ cần sự chắc chắn, Thị trường thì không chắc chắn.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 5.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Hỗn loạn, Ngẫu nhiên, Nhưng não người không chịu nổi sự ngẫu nhiên, Não người cần một lý do, Cần một lời giải thích, Tin tức cho bạn lời giải thích đó, Dù lời giải thích đó sai.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 5.5,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Bạn vẫn sẵn lòng tin, Vì tin một lời giải thích sai, Dễ hơn đối mặt với hỗn loạn không lời giải thích, Gordon nói trong sách, Trên phố Wall, Điều nguy hiểm nhất không phải là thứ bạn không biết.",
+      "vo_at": 0.12,
+      "sfx": []
+    }
+  ]
+}

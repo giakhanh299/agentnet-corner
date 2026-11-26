@@ -1,0 +1,133 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 21,
+  "slug": "k1_srt_21_cai_gia_cua_su_mo_rong_nong_voi",
+  "title": "Vì Sao Nhiều Ông Lớn Kiếm Tiền Cực Nhanh Rồi Sụp Đổ Chỉ Sau Một Đêm?",
+  "cover_title": "KIẾM NHANH RỒI SỤP ĐỔ TRONG ĐÊM",
+  "cover_hook": "Kiếm được tiền đầu tiên nhờ liều lĩnh, nhưng giữ được cơ nghiệp lại cần kỷ luật dòng tiền lạnh như băng.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 121,
+  "voice": "tienvadoi",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "bi_mat_dong_troi__7698695452514096297.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Thứ ai cũng nghĩ mình hiểu, nhưng gần như ai cũng bị nó dắt lệch, Thương hiệu, quảng cáo, câu chuyện.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 5.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Ngô Tiểu Ba viết trong sách một đoạn rất hoang đường nhưng lại rất thật, Jianlibao năm xưa nhờ tiếp thị thể thao mà khởi nghiệp, có tên.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 5.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Nước thần phương Đông, Sau đó thị trường loạn, Tam Châu, Phi Long và mấy công ty thực phẩm chức năng này, bắt đầu nổ điên cuồng, Nhân viên thị trường Jianlibao cũng sốt ruột, bắt đầu bịa thư cảm ơn của khách hàng.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 5.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Nói rằng một ông cụ nằm liệt giường quanh năm, uống Jianlibao, kỳ diệu khỏi hẳn, còn gửi đồ uống đến Bệnh viện Nhân dân tỉnh Quảng Đông, để quan sát lâm sàng, Kết luận là sau khi dùng Jianlibao.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 5.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Có thể cải thiện môi trường trong cơ thể hồi phục tinh thần xóa tan mệt mỏi, Cải thiện cảm giác thèm ăn, Thúc đẩy cân bằng điện giải trong cơ thể, Giúp tăng cường sinh lực, Khả năng tiêu hóa.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 5.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Sức co bóp, Có lợi ích rõ rệt, Bạn đọc đoạn này đi, Một chai nước giải khát, Sức co bóp, Ngô Tiểu Ba viết, May mà Lý Kinh Vĩ, Người sáng lập Kiện Lực Bảo, Đã kịp thời nhận ra sự nguy hiểm của loại quảng cáo này.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 5.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, young office worker sitting at a kitchen table late at night reviewing monthly mortgage bills and a calculator under a single warm pendant lamp, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Cấp dưới của ông ấy phàn nàn rằng, Nếu chúng ta không làm vậy, Thì sẽ không có nhà phân phối nào chịu bán Kiện Lực Bảo, Nhưng Lý Kinh Vĩ vẫn chấm dứt, Ba năm sau, Khi niềm tin vào thị trường thực phẩm chức năng sụp đổ.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 5.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Lúc này Kiện Lực Bảo thoát nạn, Bạn có nhận ra không, Lý Kinh Vĩ không thông minh hơn người khác, Ông ấy chỉ sợ sớm hơn người khác một chút, Nhưng hãy nhìn thêm một người khác là Sử Ngọc Trụ.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 5.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Năm 1993, bo mạch chữ Hán của Cự Nhân bán rất chạy, Doanh số tăng 300% so với năm trước, Lợi nhuận 30 triệu, Truyền thông khảo sát nhân vật thanh niên bạn ngưỡng mộ nhất, Hạng nhất: Bill Gates.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 5.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Hạng hai: Sử Ngọc Trụ, Sau đó Sử Ngọc Trụ quyết định khởi nghiệp lần hai, Nhảy ra khỏi ngành máy tính, đi theo hướng đa ngành, Xây tòa nhà Cự Nhân, Sang Hồng Kông bán nhà trên giấy, Ngô Tiểu Ba viết.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 5.5,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Nhiều năm sau, Người ta sẽ coi quyết định này của Sử Ngọc Trụ, là nguyên nhân khiến Cự Nhân sụp đổ, Bạn thử nghĩ xem, Một người được thanh niên cả nước ngưỡng mộ.",
+      "vo_at": 0.12,
+      "sfx": []
+    }
+  ]
+}

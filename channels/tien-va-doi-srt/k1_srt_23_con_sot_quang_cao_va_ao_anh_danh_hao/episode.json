@@ -1,0 +1,133 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 23,
+  "slug": "k1_srt_23_con_sot_quang_cao_va_ao_anh_danh_hao",
+  "title": "Bẫy Hào Quang Vua Quảng Cáo: Đốt Trăm Tỷ Lên Truyền Hình Rồi Phá Sản",
+  "cover_title": "BẪY HÀO QUANG VUA QUẢNG CÁO",
+  "cover_hook": "Khi chi phí đánh bóng tên tuổi nuốt chửng chất lượng cốt lõi, ánh đèn sân khấu chính là pháo hiệu báo tử.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 123,
+  "voice": "tienvadoi",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "bi_mat_dong_troi__7698695452514096297.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, moody cinematic close-up of an antique brass scale balancing gold coins against a stack of debt contracts on dark walnut wood, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Họ tưởng mình đang đứng trên đầu sóng, Ba mươi năm sau, Ngay cả tên cũng chẳng ai nhớ, Ngô Tiểu Ba trong sách còn viết một chi tiết, Thập niên 1980, Trung Quan Thôn khi đó gọi là Thung lũng Silicon của Trung Quốc.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 5.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1985 young man in a neat white shirt typing intensely late at night on a mechanical typewriter under a green banker lamp, calloused fingers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Compaq, HP, IBM ồ ạt tiến vào, Ngành máy tính vừa mới khởi bước, Đứng trước cuộc tái sắp xếp lại, Những người năm đó bày sạp ở Trung Quan Thôn, Bán máy tính, Về sau có vài người thành những Liễu Truyền Chí.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 5.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Tuyệt đại đa số, Đến tư cách được viết vào sách cũng không có, Ngô Tiểu Ba trong sách, Ông nói một câu rất lạnh lùng, Vào thập niên 80, Những nhân vật phong vân cải cách từng lẫy lừng một thời.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 5.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, young office worker sitting at a kitchen table late at night reviewing monthly mortgage bills and a calculator under a single warm pendant lamp, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Đều trở thành nhân vật lịch sử im lìm, Còn nhiều anh hùng thương giới nổi lên thập niên 90, Kẻ chìm người nổi, Đều thành mây khói thoáng qua, Bạn có thể sẽ nói, Vậy thì Ngô Tiểu Ba viết cuốn sách này.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 5.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Chẳng phải là đang viết về người thành công sao, Nhưng cách ông viết về những người thành công khác với người khác, Trong lời tựa, ông nói, Ông muốn viết cho thời đại hôm nay, những thiên liệt truyện anh hùng xuất hiện không ngừng.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 5.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Nhưng ông cũng thừa nhận, Xét cho cùng, lịch sử doanh nghiệp, chính là quá trình doanh nhân làm nên lịch sử.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 5.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Vấn đề là, còn những người không được viết vào thì sao, Trong sách có một câu, có thể xem là tông nền của cuốn sách này.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 5.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Ngô Tiểu Ba dẫn lời tác giả Lược sử nước Anh, Woodward nói rằng, Lịch sử chỉ đề cập đến đời sống của một dân tộc, một phần cực nhỏ thôi, Phần lớn cuộc sống của người dân và công cuộc dựng nghiệp gian khổ.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 5.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1983 rainy southern port dockyard with stacked iron freight containers, sacks of golden corn grain, and a determined young entrepreneur in a simple jacket, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Quá khứ lẫn tương lai đều sẽ không được ghi chép, Bạn hiểu chưa, Rất có thể bạn sẽ không được ghi chép lại, Bạn không phải Liễu Truyền Chí, Bạn không phải Vương Thạch, Bạn không phải Mã Vân, Bạn là người kéo dây trên bờ.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 5.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Con thuyền đã đi qua, Máy quay hướng vào người trên thuyền, Bạn vẫn còn ở trên bờ, Tay bạn vẫn nắm chặt sợi dây đó, Nhưng nghĩ sâu thêm một lớp, Người kéo dây thật sự không có lựa chọn sao.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 5.5,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1983 rainy southern port dockyard with stacked iron freight containers, sacks of golden corn grain, and a determined young entrepreneur in a simple jacket, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Ngô Tiểu Ba viết về Viên Canh trong sách, Người sáng lập khu công nghiệp Xà Khẩu, Việc cuối cùng ông làm trước khi nghỉ hưu, Là đưa ba công ty trực thuộc Xà Khẩu, Ra khỏi hệ thống.",
+      "vo_at": 0.12,
+      "sfx": []
+    }
+  ]
+}

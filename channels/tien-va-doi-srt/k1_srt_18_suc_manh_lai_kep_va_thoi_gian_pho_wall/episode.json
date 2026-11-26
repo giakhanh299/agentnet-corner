@@ -1,0 +1,133 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 18,
+  "slug": "k1_srt_18_suc_manh_lai_kep_va_thoi_gian_pho_wall",
+  "title": "Bài Học Cuối Cùng Sau 300 Năm Phố Wall: Kẻ Giàu Nhờ Kiên Nhẫn",
+  "cover_title": "KẺ THẮNG CUỘC NHỜ KIÊN NHẪN",
+  "cover_hook": "Phố Wall thưởng cho người biết nắm giữ tài sản thật qua giông bão và trừng phạt kẻ muốn làm giàu sau một đêm.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 118,
+  "voice": "tienvadoi",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "cuoc_choi_vi_dai_pho_wall__7697568844546088703.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Mà vì vận nước của họ chưa lên, Tại sao chứng khoán một số nước, Tăng mấy chục năm.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 5.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Không phải vì thị trường của họ tốt, Mà vì vận nước của họ đã lên, Gordon nói một câu trong sách, Có thể làm chú thích cho cuốn sách này, ông nói.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 5.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Ở Phố Wall, Người kiếm tiền rất nhiều, Nhưng người thực sự hiểu Phố Wall rất ít, Vì đa số mọi người, Chỉ nhìn thấy giá, Không nhìn thấy thứ đằng sau giá, Thứ đằng sau giá là gì, Là tín dụng của quốc gia.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 5.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Là năng lực của doanh nghiệp, Là sự ổn định của thể chế, Là xu hướng của thời đại, Mỗi lần bạn mua cổ phiếu, Bạn đều đang đặt cược vào thứ này, Bạn cược tương lai đất nước này sẽ tốt hơn.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 5.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Bạn cược doanh nghiệp nước này sẽ kiếm nhiều tiền hơn, Bạn cược thể chế nước này sẽ ổn định hơn, Bạn không phải đang chơi chứng khoán, Bạn đang đặt cược vào vận nước, Nhưng nghĩ sâu thêm một tầng, Vận nước là gì.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 5.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Vận nước không phải từ trên trời rơi xuống, Vận nước là bao thế hệ người, Bằng đường sắt, Bằng thép, Bằng dầu mỏ, Bằng chip, Bằng mã code, Từng chút một chồng chất nên, Phố Wall chỉ biến những thứ đó thành giá cả.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 5.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Mà giá cả chỉ là kết quả, Không phải nguyên nhân, Gordon nói trong sách, Phố Wall không phải nguyên nhân nước Mỹ trỗi dậy, Phố Wall là công cụ để nước Mỹ trỗi dậy, Công cụ không tự tạo ra giá trị.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 5.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Công cụ chỉ khuếch đại giá trị, Sức mạnh kinh tế Mỹ được tạo ra trong nhà máy, được nghiên cứu trong phòng thí nghiệm, được công nhân lắp ráp trên dây chuyền, Phố Wall chỉ biến những thứ đó thành vốn, rồi vốn lại chảy về nhà máy.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 5.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic overhead close-up of a classic luxury wooden board game with miniature houses, dice, and falling stacks of paper bills under moody warm lamp light, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Phòng thí nghiệm, dây chuyền, Mỗi lần bạn mua cổ phiếu, là bạn đang tham gia vào vòng tuần hoàn này, Bạn không đặt cược vào giá cả, Bạn đặt cược vào việc vòng tuần hoàn này có tiếp tục sinh lời không.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 5.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Phần kết, Viết đến đây tôi phải nói thật, Cuốn sách này không phải sách dạy bạn chơi chứng khoán, Nó thậm chí không phải lịch sử tài chính, Gordon viết cuốn sách này để trả lời một câu hỏi, Vì sao Phố Wall tồn tại được 300 năm.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 5.5,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Và nó sẽ còn thay đổi bạn thế nào, Câu trả lời của ông là, Phố Wall là một cỗ máy, Cỗ máy này biến điểm yếu của con người thành động lực kinh tế, Nó dùng lòng tham để thúc đẩy đổi mới, Dùng nỗi sợ để đào thải kẻ yếu.",
+      "vo_at": 0.12,
+      "sfx": []
+    }
+  ]
+}

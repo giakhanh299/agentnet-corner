@@ -1,0 +1,133 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 11,
+  "slug": "k1_srt_11_keynes_day_soi_day_lai_suat_0",
+  "title": "Khi Lãi Suất Về Không: Vì Sao Bơm Tiền Giống Như Đẩy Một Sợi Dây?",
+  "cover_title": "BƠM TIỀN NHƯ ĐẨY SỢI DÂY",
+  "cover_hook": "Khi người dân không còn dám vay nữa, ngân hàng trung ương có hạ lãi suất về không cũng chẳng đẩy nổi nền kinh tế.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 111,
+  "voice": "tienvadoi",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "vay_cang_nhieu_cang_giau_hay_ngheo__7697825840973467283.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Giá cả đang tăng nhẹ, Nợ đang dần được pha loãng, Nhưng người dân không đến mức đổ ra đường tranh mua, Dalio đã nghiên cứu nước Mỹ từ năm 1933 đến năm.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 5.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1930s Wall Street canyon in dramatic sepia-tinted cinema realism, men in wool coats gathered outside classical stone bank pillars in rain, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "1937, Chính sách mới của Roosevelt từ bỏ bản vị vàng.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 5.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Cho phép đồng đô la mất giá, Đồng thời kết hợp với chi tiêu tài khóa, Những năm đó là thời kỳ giảm đòn bẩy hài hòa hiếm thấy trong lịch sử nước Mỹ.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 5.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1930s Wall Street canyon in dramatic sepia-tinted cinema realism, men in wool coats gathered outside classical stone bank pillars in rain, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Thời kỳ giảm đòn bẩy, Nhưng ngay sau đó vào năm 1937, Roosevelt lo ngại lạm phát, Thắt chặt chính sách, Kinh tế lập tức rơi trở lại vào suy thoái, Lời thoại trước của Dalio rất rõ ràng.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 5.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, cinematic macro shot of a heavy braided rope being pushed slack across a dark mahogany central bank conference table, moody chiaroscuro lighting, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Sự cân bằng trong giảm đòn bẩy cực kỳ mong manh, Dừng lại sớm một bước, Công cốc bỏ đi, Trong sách còn một góc nhìn rất thú vị, Về việc đẩy sợi dây.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 5.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, cinematic macro shot of a heavy braided rope being pushed slack across a dark mahogany central bank conference table, moody chiaroscuro lighting, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Đây là một phép so sánh của Keynes, Khi lãi suất đã giảm về không, Chính sách tiền tệ giống như đẩy một sợi dây, Bạn có thể đẩy, Nhưng sợi dây sẽ không tiến về phía trước.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 5.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Dalio dùng khái niệm này để giải thích, Tại sao một số cuộc khủng hoảng kéo dài lâu đến vậy, Sau khi bong bóng Nhật Bản vỡ năm 1990, Ngân hàng trung ương đã hạ lãi suất về không.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 5.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, grand marble banking hall with brass teller cages, leather-bound bond ledgers, and warm beams of sunlight cutting through dust motes, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Nhưng doanh nghiệp không vay tiền, Ngân hàng không cho vay, Người tiêu dùng không chi tiêu, Không phải vì không có tiền, Mà là mọi người đều đang sửa chữa bảng cân đối của mình.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 5.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Dalio nói, Lúc này cần chính sách tài khóa và tiền tệ phối hợp với nhau, Ngân hàng trung ương in tiền, Chính phủ chi ra, Nếu ngân hàng trung ương in tiền.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 5.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, grand marble banking hall with brass teller cages, leather-bound bond ledgers, and warm beams of sunlight cutting through dust motes, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Nhưng chính phủ không chi, Hoặc chính phủ muốn chi, Nhưng ngân hàng trung ương không hợp tác, Thì sợi dây không thể đẩy đi.",
+      "vo_at": 0.12,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 5.5,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Sau năm 2008, Nước Mỹ đã rút ra bài học từ thập niên 1930, Bernanke và Paulson, Đã phối hợp tiền tệ và tài khóa đến mức tối đa.",
+      "vo_at": 0.12,
+      "sfx": []
+    }
+  ]
+}
