@@ -81,6 +81,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Daemon tự động kéo video Muse & hậu kỳ 24/7 không cần AI")
     ap.add_argument("--interval-min", type=float, default=15.0)
     ap.add_argument("--nudge-cooldown-min", type=float, default=45.0)
+    ap.add_argument("--initial-delay-min", type=float, default=0.0)
     ap.add_argument("--once", action="store_true")
     args = ap.parse_args()
 
@@ -90,6 +91,9 @@ def main() -> int:
     last_nudge_ts = 0.0
     tick = 0
     log(f"Khởi động auto_studio_daemon (PID={os.getpid()}, interval={args.interval_min}m)")
+    if args.initial_delay_min > 0:
+        log(f"Đợi khởi động {args.initial_delay_min} phút để tiến trình render hiện tại hoàn tất...")
+        time.sleep(args.initial_delay_min * 60.0)
 
     try:
         while True:
