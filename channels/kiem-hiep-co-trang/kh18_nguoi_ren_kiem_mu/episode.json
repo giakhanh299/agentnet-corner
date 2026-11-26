@@ -71,10 +71,10 @@
       "duration_s": 5.0,
       "image_prompt": "A glowing forge fire at night in a mountain blacksmith workshop, smoke rising in lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Lò rèn đỏ lửa, khói bay lên giữa đêm núi.",
+      "voiceover": "Giữa đêm đông lạnh giá trên đỉnh Thiết Sơn, lò rèn nhỏ cuối con dốc đá vẫn bập bùng ngọn lửa than hồng rực cả góc trời sương.",
       "vo_at": 0.12,
       "sfx": [],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 2,
@@ -82,7 +82,7 @@
       "duration_s": 5.0,
       "image_prompt": "A blind elderly blacksmith sitting quietly and touching a hot iron bar, glowing forge light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Lão thợ rèn mù ngồi lặng, sờ thanh sắt nóng.",
+      "voiceover": "Lão thợ rèn mù đôi mắt đã kéo mây trắng ngồi lặng lẽ bên đe sắt, bàn tay chai sần cảm nhận từng luồng hơi nóng phả ra từ phôi thép.",
       "vo_at": 0.12,
       "sfx": [],
       "voice": "kiemhiep_nam"
@@ -93,10 +93,10 @@
       "duration_s": 5.0,
       "image_prompt": "A blind blacksmith listening to heated steel by a glowing forge, sparks in the dark workshop, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ông nghe tiếng sắt, biết thép đã đủ lửa chưa.",
+      "voiceover": "Chẳng cần nhìn sắc lửa bằng mắt thường, lão chỉ nghiêng tai nghe tiếng than nổ lách tách là biết thanh thép rèn đã tới độ chín muồi.",
       "vo_at": 0.12,
       "sfx": [],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 4,
@@ -104,10 +104,10 @@
       "duration_s": 5.0,
       "image_prompt": "A hammer striking rhythmically on hot steel, sparks flying in a dark forge at night, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Búa gõ đều nhịp, tia lửa bay trong lò tối.",
+      "voiceover": "Từng nhát búa sắt nặng trịch giáng xuống đe vang rền chát chúa, hàng vạn tia lửa đỏ bắn tung như sao sa giữa gian xưởng tối.",
       "vo_at": 0.12,
       "sfx": [],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 5,
@@ -115,10 +115,10 @@
       "duration_s": 5.0,
       "image_prompt": "Many finished swords hanging on a workshop wall, glowing forge light in the background, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Cả đời ông rèn trăm thanh bảo kiếm cho người.",
+      "voiceover": "Suốt bốn mươi năm ẩn cư nơi rừng sâu, đôi tay lão đã rèn ra hàng trăm thanh bảo kiếm danh trấn giang hồ treo kín vách gỗ.",
       "vo_at": 0.12,
       "sfx": [],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 6,
@@ -126,7 +126,7 @@
       "duration_s": 5.0,
       "image_prompt": "An empty sword rack beside a glowing forge, a blind blacksmith working quietly, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ông chưa từng giữ lại một cây kiếm nào.",
+      "voiceover": "Kỳ lạ ở chỗ ai mang ngàn vàng tới mua lão đều đuổi thẳng cổ, còn bản thân lão cũng chưa từng giữ lại một tấc sắt phòng thân!",
       "vo_at": 0.12,
       "sfx": [],
       "voice": "chautinhtri"
@@ -137,7 +137,7 @@
       "duration_s": 5.0,
       "image_prompt": "A young swordsman arriving at a mountain forge at night, asking a blind blacksmith for a sword, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Một kiếm khách trẻ đến, xin ông rèn kiếm mới.",
+      "voiceover": "Đêm ấy có chàng kiếm khách trẻ áo vải sờn rách đội sương tìm đến, quỳ trước hiên lò xin lão rèn giúp một thanh kiếm sắc.",
       "vo_at": 0.12,
       "sfx": [],
       "voice": "chautinhtri"
@@ -148,7 +148,7 @@
       "duration_s": 5.0,
       "image_prompt": "A blind blacksmith asking a young swordsman a question, glowing forge light on their faces, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Lão hỏi kiếm để làm gì, chàng trai cúi đầu.",
+      "voiceover": "Lão thợ rèn mù dừng tay búa, cất giọng trầm khàn hỏi thẳng: Người đời xin kiếm để xưng bá võ lâm, còn ngươi xin kiếm để chém ai?",
       "vo_at": 0.12,
       "sfx": [],
       "voice": "kiemhiep_nam"
@@ -159,7 +159,7 @@
       "duration_s": 5.0,
       "image_prompt": "A young swordsman answering humbly in a mountain forge, glowing firelight and smoke, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chàng đáp kiếm để giữ làng, không để tranh giành.",
+      "voiceover": "Chàng trai cúi đầu đáp thật thà: Sơn tặc cướp phá dân lành dưới chân núi, vãn bối chỉ muốn có thanh kiếm tốt giữ yên xóm làng mà thôi!",
       "vo_at": 0.12,
       "sfx": [],
       "voice": "chautinhtri"
@@ -170,10 +170,10 @@
       "duration_s": 5.0,
       "image_prompt": "A blind blacksmith stoking a glowing forge fire at night, sparks rising in the dark, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Lão gật đầu, nhóm lò, bắt đầu rèn từ đêm.",
+      "voiceover": "Gương mặt khắc khổ của lão già khẽ giãn ra, lão gật đầu kéo ống bễ thổi bùng ngọn lửa xanh thức trắng suốt bảy ngày bảy đêm rèn thép.",
       "vo_at": 0.12,
       "sfx": [],
-      "voice": "chautinhtri"
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 11,
@@ -181,10 +181,10 @@
       "duration_s": 5.0,
       "image_prompt": "A finished sword on a workbench and a glowing forge still burning at night, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Kiếm xong, chàng đi, lò rèn vẫn đỏ lửa.",
+      "voiceover": "Thanh kiếm trao đi không lấy một đồng tiền công, bóng chàng hiệp khách khuất xa mà ánh lửa lò rèn trên đỉnh núi vẫn rực sáng lòng nhân nghĩa...",
       "vo_at": 0.12,
       "sfx": [],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     }
   ],
   "seed": 718,

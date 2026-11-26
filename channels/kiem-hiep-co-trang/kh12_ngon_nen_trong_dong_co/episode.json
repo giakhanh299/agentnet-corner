@@ -25,7 +25,7 @@
       "duration_s": 5.0,
       "image_prompt": "Warm candlelight on a small flame inside a dark misty stone cave, bamboo mountain beyond the entrance, ancient lantern glow, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ba trăm năm ngọn nến trong hang đá vẫn cháy?",
+      "voiceover": "Giang hồ đồn ầm lên rằng trong hang đá Tuyệt Tình có ngọn nến thần cháy suốt ba trăm năm không tắt, nghe đã thấy mùi kỳ bí rồi!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -51,7 +51,7 @@
       "duration_s": 5.0,
       "image_prompt": "Soft golden candlelight on a tiny flame sheltered in a stone niche, mist drifting, bamboo shadows, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ngọn nến nhỏ chưa từng tắt suốt ba trăm năm.",
+      "voiceover": "Giữa lòng núi đá sâu thẳm quanh năm ẩm lạnh, một ngọn lửa vàng nhỏ bằng hạt đậu vẫn lặng lẽ tỏa sáng trên hốc đá rêu phong.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -69,7 +69,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 3,
@@ -77,7 +77,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cool misty light on tall grass swaying at the mouth of a dark stone cave in bamboo mountains, fog drifting, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Hang đá tối sâu, cỏ động lay theo gió núi.",
+      "voiceover": "Ngoài cửa động sương mù cuồn cuộn vần vũ qua rừng trúc xanh thẫm, cỏ dại cao lút đầu người che khuất lối mòn cổ xưa.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -95,7 +95,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 4,
@@ -103,7 +103,7 @@
       "duration_s": 5.0,
       "image_prompt": "Dim lantern light on a young wuxia swordsman in flowing robes entering a dark misty cave, sword at his side, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Hiệp khách trẻ cầm kiếm bước vào hang đá.",
+      "voiceover": "Chàng kiếm khách trẻ vén dây leo bước vào cửa hang tối om, tay giữ chặt chuôi kiếm đề phòng cơ quan ám khí của tiền nhân.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -129,7 +129,7 @@
       "duration_s": 5.0,
       "image_prompt": "Faint golden candlelight glowing in cold darkness inside a stone cave, mist curling, a swordsman silhouette approaching, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ánh nến vàng le lói giữa bóng tối lạnh lẽo.",
+      "voiceover": "Đi sâu vào bóng tối lạnh buốt hơn trăm bước, ánh lửa vàng ấm áp từ ngọn nến cổ bỗng hiện ra soi rõ vách đá khắc chữ kiếm phổ.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -147,7 +147,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 6,
@@ -155,7 +155,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cold mountain wind light on a steady small candle flame inside a sheltered stone hollow, mist streaming past the entrance, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Gió núi lùa vào nhưng ngọn lửa vẫn đứng yên.",
+      "voiceover": "Kỳ lạ thay, từng luồng gió núi thốc mạnh vào cửa động làm tà áo phần phật mà ngọn lửa nhỏ xíu vẫn đứng thẳng không hề chao đảo.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -173,7 +173,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 7,
@@ -181,7 +181,7 @@
       "duration_s": 5.0,
       "image_prompt": "Warm lantern light on an elderly wuxia hermit telling a story to a young swordsman inside a cave, candle flame between them, mist, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Lão nhân kể hang kín gió nên lửa không tắt.",
+      "voiceover": "Một vị ẩn sĩ tóc bạc ngồi xếp bằng bên tảng đá khẽ mỉm cười: Ngọn lửa này không tắt không phải nhờ phép tiên đâu tiểu hữu à!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -207,7 +207,7 @@
       "duration_s": 5.0,
       "image_prompt": "Golden candlelight on dark oily rock seeping inside a misty stone cave, small flame burning slowly, bamboo mountain light outside, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Dầu đá trong hang cháy chậm suốt nhiều năm dài.",
+      "voiceover": "Ông chỉ tay xuống khe đá đen bóng bên dưới: Mạch dầu mỏ tự nhiên rỉ ra từ lòng núi thấm từng giọt nuôi bấc đá cháy bền bỉ qua trăm năm.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -225,7 +225,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 9,
@@ -233,7 +233,7 @@
       "duration_s": 5.0,
       "image_prompt": "Soft warm light on thin oil vapour rising to feed a small steady candle flame in a dark cave, mist, stone walls, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Hơi dầu bốc lên nuôi ngọn lửa nhỏ bền bỉ.",
+      "voiceover": "Chàng kiếm khách vỗ đùi cái đét: Thì ra cổ nhân mượn ngọn lửa dầu đá để dạy hậu thế rằng nội lực muốn bền thì phải biết tích tụ từng giọt!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -259,7 +259,7 @@
       "duration_s": 5.0,
       "image_prompt": "Pale dawn light on a young wuxia swordsman walking out of a misty cave into bamboo mountains, lantern in hand, fog drifting, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Hiệp khách hiểu ra rồi lặng lẽ rời hang đá.",
+      "voiceover": "Chàng chắp tay bái tạ vị tiền bối ẩn danh rồi khoan thai bước ra khỏi cửa động khi ánh bình minh vừa nhuộm hồng biển mây.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -277,7 +277,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 11,
@@ -285,7 +285,7 @@
       "duration_s": 5.0,
       "image_prompt": "Serene misty dawn light over bamboo mountains and a dark cave mouth, a distant swordsman on a ridge, ancient lantern glow, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Giang hồ đẹp khi ta hiểu bí ẩn hang đá.",
+      "voiceover": "Đỉnh núi trúc lại chìm vào vẻ tĩnh lặng ngàn thu, để lại bài học kiếm đạo giản dị mà sâu sắc cho kẻ biết mở lòng quan sát...",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -303,7 +303,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     }
   ],
   "episode": 12,
