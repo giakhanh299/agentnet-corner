@@ -41,6 +41,7 @@ import curiosity_music  # noqa: E402
 import horror_music  # noqa: E402
 import thumbnail as thumb_mod  # noqa: E402
 import voice as voice_mod  # noqa: E402
+import wuxia_music  # noqa: E402
 
 W, H, FPS = 1080, 1920, 30
 SFX_LIB = REPO / "assets" / "sfx"
@@ -337,6 +338,8 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     mus_gen = str((spec.get("music") or {}).get("generator", "horror")).lower()
     if mus_gen == "curiosity":
         curiosity_music.write_wav(music_wav, curiosity_music.compose(total, int(spec.get("seed", 1))))
+    elif mus_gen == "wuxia":
+        wuxia_music.write_wav(music_wav, wuxia_music.compose(total, int(spec.get("seed", 1))))
     else:
         horror_music.write_wav(music_wav, horror_music.compose(total, int(spec.get("seed", 1))))
 
@@ -412,6 +415,12 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
         )
     elif grade == "vivid_doc":
         vf_parts.append("eq=contrast=1.06:saturation=1.10:brightness=0.01")
+    elif grade == "wuxia":
+        vf_parts.append(
+            "eq=contrast=1.08:saturation=0.95:brightness=-0.01,"
+            "colorbalance=rs=0.04:gs=0.01:bs=-0.02:rm=0.02:gm=0.01:bm=0.03,"
+            "noise=alls=2:allf=t+u"
+        )
     vf_parts.append("ass=subs.ass:fontsdir=fonts")
     if spec.get("aigc_label", True):
         vf_parts.append(

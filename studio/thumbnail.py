@@ -99,11 +99,12 @@ def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
     draw = ImageDraw.Draw(base)
 
     theme = str(spec.get("cover_theme") or "horror").lower()
-    is_know = theme == "knowledge"
-    badge_outline = (56, 212, 232, 235) if is_know else (245, 166, 35, 220)
-    badge_fill = (10, 26, 38, 210) if is_know else (14, 18, 26, 195)
-    badge_text_col = (120, 240, 255, 255) if is_know else (248, 190, 72, 255)
-    accent_bar_col = (255, 196, 46, 245) if is_know else (220, 62, 46, 240)
+    if theme == "knowledge":
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (56, 212, 232, 235), (10, 26, 38, 210), (120, 240, 255, 255), (255, 196, 46, 245)
+    elif theme == "wuxia":
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (232, 196, 112, 235), (20, 16, 12, 210), (248, 224, 152, 255), (204, 158, 62, 245)
+    else:
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (245, 166, 35, 220), (14, 18, 26, 195), (248, 190, 72, 255), (220, 62, 46, 240)
 
     series = str(spec.get("series") or "Phim Ma Dân Gian Việt Nam").upper()
     ep_num = int(spec.get("episode") or 1)
