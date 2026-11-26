@@ -37,7 +37,9 @@ from urllib.parse import urlsplit
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 sys.path.insert(0, str(HERE))
+import curiosity_music  # noqa: E402
 import horror_music  # noqa: E402
+import thumbnail as thumb_mod  # noqa: E402
 import voice as voice_mod  # noqa: E402
 
 W, H, FPS = 1080, 1920, 30
@@ -96,6 +98,31 @@ def category_for(text: str) -> str | None:
     return None
 
 
+SFX_SYNONYMS = {
+    "thi tham": ("whisper", "whispering"),
+    "cuoi": ("laugh",),
+    "khoc": ("cry", "crying", "weep"),
+    "tho": ("breath", "breathing"),
+    "bong bong": ("bubble", "bubbles"),
+    "song": ("river", "water", "splash", "wave"),
+    "cheo": ("oar", "paddle", "rowing"),
+    "tom": ("splash", "rock"),
+    "cua": ("door", "creak"),
+    "vong": ("bed", "creak"),
+    "van": ("wood", "creak"),
+    "cau": ("wood", "creak"),
+    "buoc": ("footstep", "footsteps", "leaves"),
+    "la": ("leaves", "rustling", "twig"),
+    "gio": ("wind", "leaves"),
+    "mua": ("rain", "forest", "light"),
+    "sam": ("thunder", "storm"),
+    "drone": ("drone",),
+    "riser": ("sweep", "terror", "trailer"),
+    "impact": ("impact", "hit", "drum"),
+    "tim": ("heartbeat", "drum"),
+}
+
+
 def resolve_sfx(item, manifest: dict) -> Path | None:
     """item: dict {"tag": "rain"} hoặc chuỗi mô tả tiếng Việt. Trả về file âm thanh tốt nhất."""
     tag = item.get("tag") if isinstance(item, dict) else None
@@ -103,7 +130,11 @@ def resolve_sfx(item, manifest: dict) -> Path | None:
     cat = tag if tag else category_for(desc)
     if not cat:
         return None
-    words = set(re.findall(r"[a-z0-9]+", fold(desc)))
+    fdesc = fold(desc)
+    words = set(re.findall(r"[a-z0-9]+", fdesc))
+    for vi_key, en_words in SFX_SYNONYMS.items():
+        if vi_key in fdesc:
+            words.update(en_words)
     best, best_key = None, (-1.0, -1.0)
     for entry in manifest.get("sounds", {}).values():
         if entry.get("category") != cat:
@@ -111,7 +142,7 @@ def resolve_sfx(item, manifest: dict) -> Path | None:
         p = SFX_LIB / entry["file"]
         if not p.is_file():
             continue
-        tag_words = set(re.findall(r"[a-z0-9]+", fold(" ".join(entry.get("tags", [])) + " " + entry.get("name", ""))))
+        tag_words = set(re.findall(r"[a-z0-9]+", fold(" ".join(entry.get("tags", [])) + " " + entry.get("name", "") + " " + entry["file"])))
         key = (len(words & tag_words), float(entry.get("score") or 0))
         if key > best_key:
             best, best_key = p, key
@@ -150,7 +181,22 @@ def fetch_clip(ref: str, clips_dir: Path | None, work: Path, scene_id: int) -> P
     return p if p.is_file() else None
 
 
-def render_scene(src: Path | None, dur: float, dst: Path) -> str:
+def _pick_motion(motion_text: str, idx: int) -> str:
+    m = fold(motion_text)
+    if any(k in m for k in ("zoom ra", "lui may", "pull out", "mo rong")):
+        return "zoom_out"
+    if any(k in m for k in ("nghieng xuong", "tilt down", "tu mat", "xuong doi tay")):
+        return "tilt_down"
+    if any(k in m for k in ("sang trai", "pan left", "troi ngang")):
+        return "pan_left"
+    if any(k in m for k in ("sang phai", "pan right", "lia ngang")):
+        return "pan_right"
+    if any(k in m for k in ("day cham", "zoom vao", "push in", "can canh")):
+        return "zoom_in"
+    return ("zoom_in", "tilt_down", "zoom_out", "pan_right", "pan_left")[idx % 5]
+
+
+def render_scene(src: Path | None, dur: float, dst: Path, motion: str = "", idx: int = 0) -> str:
     vf_fit = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps={FPS},format=yuv420p"
     common = ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", str(dst)]
     if src is None:
@@ -158,12 +204,24 @@ def render_scene(src: Path | None, dur: float, dst: Path) -> str:
         return "THIẾU_CLIP→nền đen"
     ext = src.suffix.lower()
     if ext in IMAGE_EXT:
-        frames = int(dur * FPS)
-        vf = (f"scale={int(W*1.15)}:{int(H*1.15)}:force_original_aspect_ratio=increase,crop={int(W*1.15)}:{int(H*1.15)},"
-              f"zoompan=z='min(zoom+0.0007,1.10)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS},"
-              "format=yuv420p")
+        frames = max(1, int(round(dur * FPS)))
+        mode = _pick_motion(motion, idx)
+        sw, sh = int(W * 1.18), int(H * 1.18)
+        t = f"(on/{frames})"
+        if mode == "zoom_out":
+            zp = f"zoompan=z='1.12-0.10*{t}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        elif mode == "pan_left":
+            zp = f"zoompan=z='1.10':x='(iw-iw/zoom)*(1-{t})':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        elif mode == "pan_right":
+            zp = f"zoompan=z='1.10':x='(iw-iw/zoom)*{t}':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        elif mode == "tilt_down":
+            zp = f"zoompan=z='1.10':x='iw/2-(iw/zoom/2)':y='(ih-ih/zoom)*{t}':d={frames}:s={W}x{H}:fps={FPS}"
+        else:
+            zp = f"zoompan=z='1.00+0.10*{t}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS}"
+        vf = (f"scale={sw}:{sh}:force_original_aspect_ratio=increase,crop={sw}:{sh},"
+              f"{zp},vignette=PI/6,format=yuv420p")
         run(["ffmpeg", "-y", "-loop", "1", "-i", str(src), "-t", f"{dur}", "-vf", vf] + common)
-        return "ẢNH→Ken Burns"
+        return f"ẢNH→{mode}"
     run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(src), "-t", f"{dur}", "-vf", vf_fit] + common)
     return "CLIP (đã tắt tiếng gốc)"
 
@@ -189,6 +247,31 @@ def ass_time(t: float) -> str:
     return f"{int(h)}:{int(m):02d}:{s:05.2f}"
 
 
+def split_caption_chunks(text: str, start: float, end: float, max_words: int = 12) -> list[tuple[float, float, str]]:
+    """Tách câu dài thành từng cụm phụ đề 1-2 dòng theo tỷ lệ số từ để không bị cắt mất chữ."""
+    words = text.split()
+    if len(words) <= max_words:
+        return [(start, end, text)]
+    parts = [p.strip() for p in re.split(r"(?<=[.!?…])\s+", text.strip()) if p.strip()]
+    chunks: list[str] = []
+    for p in parts:
+        pw = p.split()
+        if len(pw) <= max_words:
+            chunks.append(p)
+        else:
+            for i in range(0, len(pw), max_words):
+                chunks.append(" ".join(pw[i:i + max_words]))
+    total_w = max(1, sum(len(c.split()) for c in chunks))
+    dur = max(0.2, end - start)
+    cur = start
+    out = []
+    for c in chunks:
+        seg = dur * (len(c.split()) / total_w)
+        out.append((cur, cur + seg, c))
+        cur += seg
+    return out
+
+
 def write_ass(cues: list[tuple[float, float, str]], path: Path) -> None:
     head = (
         "[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nScaledBorderAndShadow: yes\n\n"
@@ -202,7 +285,8 @@ def write_ass(cues: list[tuple[float, float, str]], path: Path) -> None:
     rows = []
     for start, end, text, *style in cues:
         st = style[0] if style else "Default"
-        rows.append(f"Dialogue: 0,{ass_time(start)},{ass_time(end)},{st},,0,0,0,,{wrap_caption(text)}")
+        for cs, ce, ct in split_caption_chunks(text, start, end):
+            rows.append(f"Dialogue: 0,{ass_time(cs)},{ass_time(ce)},{st},,0,0,0,,{wrap_caption(ct)}")
     path.write_text(head + "\n".join(rows) + "\n", encoding="utf-8")
 
 
@@ -218,11 +302,11 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     t_cursor = 0.0
     starts = []
     with seg_list.open("w", encoding="utf-8") as f:
-        for sc in scenes:
+        for i, sc in enumerate(scenes):
             dur = float(sc["duration_s"])
             src = fetch_clip(sc.get("clip", ""), clips_dir, work, sc["id"])
             seg = work / f"seg_{sc['id']:02d}.mp4"
-            how = render_scene(src, dur, seg)
+            how = render_scene(src, dur, seg, motion=str(sc.get("motion") or ""), idx=i)
             if how.startswith("THIẾU"):
                 report["warnings"].append(f"Cảnh {sc['id']}: thiếu clip, dùng nền đen")
             f.write(f"file '{seg.name}'\n")
@@ -250,7 +334,11 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
 
     # 4. Nhạc
     music_wav = work / "music.wav"
-    horror_music.write_wav(music_wav, horror_music.compose(total, int(spec.get("seed", 1))))
+    mus_gen = str((spec.get("music") or {}).get("generator", "horror")).lower()
+    if mus_gen == "curiosity":
+        curiosity_music.write_wav(music_wav, curiosity_music.compose(total, int(spec.get("seed", 1))))
+    else:
+        horror_music.write_wav(music_wav, horror_music.compose(total, int(spec.get("seed", 1))))
 
     # 5. SFX
     manifest = load_sfx_manifest()
@@ -309,22 +397,42 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     run(["ffmpeg", "-y", "-hide_banner"] + inputs + ["-filter_complex", ";".join(chains), "-map", "[out]",
                                                     "-ar", "48000", "-t", f"{total}", str(mix_wav)])
 
-    # 7. Phụ đề + AIGC + xuất
+    # 7. Đồng màu + Phụ đề + AIGC + xuất
     write_ass(cues, work / "subs.ass")
     fonts = work / "fonts"
     if not fonts.is_dir():
         shutil.copytree(FONT_DIR, fonts)
-    vf = "ass=subs.ass:fontsdir=fonts"
+    vf_parts = []
+    grade = spec.get("color_grade", "folk_horror")
+    if grade == "folk_horror":
+        vf_parts.append(
+            "eq=contrast=1.06:saturation=0.92:brightness=-0.02,"
+            "colorbalance=rs=0.02:gs=0.0:bs=0.05:rm=0.03:gm=0.0:bm=-0.02,"
+            "noise=alls=3:allf=t+u"
+        )
+    elif grade == "vivid_doc":
+        vf_parts.append("eq=contrast=1.06:saturation=1.10:brightness=0.01")
+    vf_parts.append("ass=subs.ass:fontsdir=fonts")
     if spec.get("aigc_label", True):
-        vf += (",drawtext=fontfile=fonts/BeVietnamPro-Bold.ttf:text='AIGC · Nội dung tạo bởi AI':"
-               "fontsize=30:fontcolor=white@0.75:x=w-tw-40:y=h-th-60:box=1:boxcolor=black@0.35:boxborderw=10")
+        vf_parts.append(
+            "drawtext=fontfile=fonts/BeVietnamPro-Bold.ttf:text='AIGC · Nội dung tạo bởi AI':"
+            "fontsize=30:fontcolor=white@0.75:x=w-tw-40:y=h-th-60:box=1:boxcolor=black@0.35:boxborderw=10"
+        )
+    vf = ",".join(vf_parts)
     vcodec = ["-c:v", "h264_nvenc", "-preset", "p5", "-cq", "21"] if has_nvenc() else ["-c:v", "libx264", "-crf", "19"]
     out.parent.mkdir(parents=True, exist_ok=True)
     run(["ffmpeg", "-y", "-hide_banner", "-i", video_silent.name, "-i", mix_wav.name, "-vf", vf] + vcodec +
         ["-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out.resolve())],
         cwd=work)
+    # 8. Ảnh bìa 9:16 + tiêu đề + metadata + contact sheet QC
+    hero_img = None
+    if spec.get("cover_image"):
+        hero_img = fetch_clip(spec["cover_image"], clips_dir, work, 0)
+    pkg = thumb_mod.build_package(spec, out.resolve(), work, hero_image=hero_img)
     report.update({"output": str(out), "duration_s": round(total, 2), "voice": voice_name,
-                   "voice_lines": len(vo_tracks), "sfx_used": len(sfx_tracks)})
+                   "voice_lines": len(vo_tracks), "sfx_used": len(sfx_tracks),
+                   "cover": pkg["cover_path"], "publish_title": pkg["publish_title"],
+                   "contact_sheet": pkg["contact_sheet_path"]})
     (work / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     return report
 

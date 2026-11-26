@@ -18,9 +18,41 @@ PHONUI_REF = Path(r"D:\0.1_FACE_BOOK\Lay video tiktok\voice_samples\giong_dalat_
 
 VOICES = {
     "phonui": "VieNeu v3turbo · clone Góc Nhỏ Phố Núi (Đà Lạt chữa lành)",
+    "maianh": "VieNeu v3turbo · preset Mai Anh (giọng kể kiến thức KENH_008)",
     "edge_nam": "edge-tts vi-VN-NamMinhNeural",
     "edge_nu": "edge-tts vi-VN-HoaiMyNeural",
 }
+
+
+def synth_maianh(lines: list[str], out_dir: Path, atempo: float = 0.78) -> list[Path]:
+    """Giọng VieNeu preset Mai Anh (chuẩn Tập Làm Content KENH_008), gọi chỉ đọc môi trường vieneu_env."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    outs = [out_dir / f"vo_{i:02d}.wav" for i in range(len(lines))]
+    todo = [(i, t, o) for i, (t, o) in enumerate(zip(lines, outs)) if not o.is_file()]
+    if todo:
+        if not VIENEU_PY.is_file():
+            raise FileNotFoundError("Thiếu môi trường VieNeu")
+        script = (
+            "import json, sys, soundfile as sf; from vieneu import Vieneu; "
+            "items = json.loads(sys.stdin.read()); tts = Vieneu(); "
+            "v = tts.get_preset_voice('Mai Anh') if hasattr(tts, 'get_preset_voice') else 'Mai Anh'; "
+            "[sf.write(it['raw'], tts.infer(it['text'], voice=v), 48000) for it in items]"
+        )
+        payload = [{"text": t, "raw": str(out_dir / f"raw_{i:02d}.wav")} for i, t, _ in todo]
+        proc = subprocess.run([str(VIENEU_PY), "-c", script], input=json.dumps(payload, ensure_ascii=False),
+                              text=True, encoding="utf-8", capture_output=True)
+        if proc.returncode:
+            # Fallback sang phonui nếu preset không sẵn trong phiên bản VieNeu hiện tại
+            return synth_phonui(lines, out_dir)
+        for i, _, o in todo:
+            raw = out_dir / f"raw_{i:02d}.wav"
+            subprocess.run(
+                ["ffmpeg", "-y", "-loglevel", "error", "-i", str(raw),
+                 "-af", f"silenceremove=start_periods=1:start_threshold=-45dB,atempo={atempo}",
+                 "-ar", "48000", "-ac", "1", str(o)],
+                check=True,
+            )
+    return outs
 
 
 def synth_phonui(lines: list[str], out_dir: Path, ref: Path = PHONUI_REF) -> list[Path]:
@@ -64,6 +96,8 @@ def synth_edge(lines: list[str], out_dir: Path, voice: str = "vi-VN-NamMinhNeura
 def synth(lines: list[str], out_dir: Path, voice: str = "phonui") -> list[Path]:
     if voice == "phonui":
         return synth_phonui(lines, out_dir)
+    if voice == "maianh":
+        return synth_maianh(lines, out_dir)
     if voice == "edge_nu":
         return synth_edge(lines, out_dir, "vi-VN-HoaiMyNeural")
     return synth_edge(lines, out_dir, "vi-VN-NamMinhNeural")
