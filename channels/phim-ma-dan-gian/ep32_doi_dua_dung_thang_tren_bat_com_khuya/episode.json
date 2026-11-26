@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 32,
+  "slug": "ep32_doi_dua_dung_thang_tren_bat_com_khuya",
+  "title": "Tuyệt Đối Đừng Cắm Thẳng Đôi Đũa Lên Bát Cơm Lúc Ăn Đêm",
+  "cover_title": "ĐỪNG CẮM ĐŨA ĐỨNG GIỮA BÁT CƠM",
+  "cover_hook": "Vì sao đi làm đồng về muộn đói mấy cũng phải đặt đũa nằm ngang miệng bát chứ cấm cắm dựng đứng?",
+  "character_bible": "PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 232,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), dramatic close-up of a ceramic bowl of steaming white rice on a round bamboo tray inside a dim thatched kitchen lit by a tiny oil lamp, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Macro push-in on steaming white rice bowl on bamboo tray at night",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ thuở mới biết cầm bát, đứa trẻ Việt Nam nào cũng bị người lớn gõ tay nhắc nhở: tuyệt đối cấm cắm dựng đứng đôi đũa giữa bát cơm!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), Hậu (22-year-old Vietnamese farmhand in beige homespun shirt, tousled black hair) sitting hungrily at a low wooden kitchen table lifting a woven food cover at midnight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Hậu coming home muddy late at night lifting food cover",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Đêm ấy đi tát nước chống úng ngoài đồng xa về lúc quá nửa đêm, thằng Hậu đói cồn cào bưng bát cơm nguội mẹ phần dưới bếp ra ăn vội.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), tight close-up of Hậu's hand carelessly sticking a pair of bamboo chopsticks straight upright in the center of the white rice bowl like incense sticks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of Hậu sticking bamboo chopsticks straight up in rice bowl",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Nghe tiếng trâu cọ chuồng ngoài sân, nó vô tâm cắm phập đôi đũa tre dựng đứng giữa bát cơm trắng rồi cầm đèn chạy ra ngó chuồng trâu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), eerie wide shot of the empty thatched kitchen as cold mist creeps through the bamboo door slats and the upright chopsticks cast long twin shadows, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Kitchen oil lamp flickers blue as cold draft enters empty kitchen",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Vừa bước chân ra khỏi bậc cửa bếp, ngọn đèn dầu trên chõng bỗng chao nghiêng xanh lét, bóng đôi đũa cắm đứng đổ dài lên vách đất hệt bát cơm cúng tử!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), chilling shot through drifting kitchen smoke showing a faint translucent shadow of a gaunt stranger hunched silently before the upright-chopstick rice bowl, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Pale gaunt shadow sits hunched at the low bamboo tray",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Quay trở vào chưa tới cửa bếp, Hậu khựng lại rụng rời: bên mâm cơm trống không tự lúc nào có một bóng người gầy rộc đang ngồi xổm hơ tay trước bát cơm!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), Mrs. Tư (58-year-old rural mother, hair in neat black bun, dark brown blouse) rushing into the kitchen tossing a handful of white coarse salt into the hearth fire, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Mrs. Tư wakes up rushing into kitchen throwing coarse salt",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Bà Tư từ nhà trên thức giấc chạy xuống vừa thoáng thấy bát cơm cắm đũa đứng liền tái mặt, bốc ngay nắm muối hột ném vào bếp than nổ lách tách!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), dramatic close-up of bright orange hearth sparks flaring upward as the cold shadow dissolves instantly from the wooden stool, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Sparks flare warm orange and the dark shadow vanishes",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ánh lửa muối bùng lên xua tan luồng khí lạnh buốt, cái bóng mờ bên mâm tre tan biến không để lại một tiếng động.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), Mrs. Tư (58, black bun, brown blouse) pulling the chopsticks out while Hậu (22, beige shirt) touches the rice bowl shocked at its icy chill, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Mother pulls chopsticks out laying them flat, rice stone-cold",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Bà Tư rút ngay đôi đũa ra mắng khẽ: Cơm cắm đũa đứng là cơm cúng người khuất mặt ngoài đường, con cắm thế khác nào mời họ vào bếp ăn thay!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), macro shot of the white rice bowl now looking dull, dry, and frost-cold despite the warm summer night, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of rice grains completely dry and flavorless cold",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Thằng Hậu chạm tay vào thành bát mà rùng mình: bát cơm lúc nãy còn dẻo mềm giờ đã khô khốc lạnh ngắt như đá để qua đêm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), Mrs. Tư (58, brown blouse) placing the cold rice neatly on a green banana leaf outside the front bamboo gate with one incense stick, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Mother scoops that bowl onto banana leaf outside gate as offering",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Bà Tư đem phần cơm ấy gói vào tàu lá chuối đặt ra ngoài ngõ khấn tiễn kẻ lỡ đường, rồi nhóm bếp nấu nồi cháo nóng khác cho con trai.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Hậu (22-year-old Vietnamese farmhand, tousled black hair, wearing a simple beige homespun shirt). MOTHER ANCHOR: Mrs. Tư (58-year-old rural mother, hair in a neat black bun, dark brown blouse).), warm comforting close-up of a fresh steaming bowl of rice porridge with bamboo chopsticks laid neatly horizontally across the rim, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Warm peaceful kitchen shot with chopsticks resting horizontally on bowl",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ đêm nhớ đời ấy, dù vội đến mấy Hậu cũng luôn đặt đôi đũa nằm ngang ngay ngắn trên miệng bát trước khi rời mâm...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

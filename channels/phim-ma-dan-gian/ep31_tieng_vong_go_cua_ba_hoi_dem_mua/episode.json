@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 31,
+  "slug": "ep31_tieng_vong_go_cua_ba_hoi_dem_mua",
+  "title": "Đêm Mưa Nghe Gõ Cửa Đúng Ba Tiếng Đừng Vội Mở Ngay",
+  "cover_title": "ĐỪNG VỘI MỞ CỬA ĐÊM KHUYA",
+  "cover_hook": "Người sống gõ cửa nhịp nhanh dồn dập, chỉ có thứ ngoài sương lạnh mới gõ đúng ba tiếng chậm rãi rồi im bặt...",
+  "character_bible": "PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 231,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), close-up of a heavy iron latch on an old Vietnamese timber carpentry workshop door vibrating faintly during a midnight rainstorm, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on rain-lashed wooden workshop door latch at midnight",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Thợ mộc vùng quê xưa có lệ bất thành văn: đêm mưa quá canh hai nghe tiếng gõ cửa thưa thớt đúng ba tiếng một thì cấm được mở then ngay.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), Minh (26-year-old lean Vietnamese carpenter in faded indigo ba-ba shirt, short black hair) planing a fragrant jackfruit wood plank under warm oil lamp light, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Medium shot of Minh planing wood beside oil lamp",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Đêm rằm tháng tám, một mình anh Minh thức khuya bào nốt ván gỗ mít trong xưởng nhỏ ven đồi cho kịp giao hàng sớm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), tight shot of wood shavings trembling on the workbench as three slow deliberate knocks echo from the rain-soaked front door, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Three slow heavy knocks vibrate dust off door frame",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đúng một giờ sáng, tiếng bào gỗ vừa ngơi thì ngoài cánh cửa lim đóng kín vang lên ba tiếng gõ chậm rì: Cốc… cốc… cốc!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), Minh (26, indigo ba-ba shirt) walking cautiously across wood-shaving floor holding an amber oil lamp, calling toward the closed wooden door, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Minh walks toward door holding kerosene lamp asking who it is",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Tưởng bác Tám hàng xóm sang mượn áo mưa, Minh cầm đèn dầu bước ra hỏi lớn 'Ai đấy?' nhưng bên ngoài chỉ có tiếng mưa rơi lộp bộp.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), chilling low-angle close-up of the narrow gap beneath the wooden door showing pale wet moonlight uninterrupted by any standing feet outside, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Looking down at door gap: NO shadow of feet blocking exterior moonlight",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đặt tay lên then sắt định kéo ra, Minh bỗng lạnh gáy nhìn xuống khe hở sát nền gạch: bên ngoài ánh chớp hắt sáng trưng mà tuyệt nhiên không có bóng bàn chân nào chắn sáng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), extreme close-up of the solid wooden door panel trembling at eye level from three slow knocks while cold white mist curls under the empty threshold, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Three exact knocks repeat right at eye level while gap stays empty",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Ngay ngang tầm mặt anh, ba tiếng gõ lạnh lẽo lại vang lên đều tăm tắp kèm giọng khàn đục: Mở cửa cho tôi xin miếng ván đóng hòm…",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), Minh (26, indigo ba-ba shirt) backing away pale-faced toward his workbench, gripping his heavy iron carpenter's square ruler, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Minh backs away gripping iron carpenter's ruler",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Nhớ lời thầy dạy thước lỗ ban của thợ mộc mang sát khí dương mạnh nhất, Minh rút thanh thước sắt gác ngang then cửa rồi ngồi im nín thở.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), atmospheric exterior night shot of storm wind bending bamboo trees outside the sealed carpentry hut as thick ground fog retreats toward the river, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Cold gust howls outside then muddy river smell fades away",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Thanh thước vừa đặt lên chốt sắt, cánh cửa lim rung bần bật một chặp như bị gió lốc giật mạnh rồi luồng hơi tanh mùi bùn sông lặng lẽ rút xa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), Uncle Tam (65-year-old grey-bearded Vietnamese elder in dark brown tunic) and Minh (26, indigo shirt) inspecting wet river-weed streaks on the outer door at misty dawn, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Dawn arrival of Uncle Tam inspecting scratch marks on outer door",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Sáng sớm bác Tám sang mở xưởng nhìn vệt rong rêu ướt bám ngang cánh cửa liền thở phào: Đêm qua sạt bãi tha ma ven sông, may mà cháu không rút then!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), warm morning sunlight as Uncle Tam (65, brown tunic) and Minh (26, indigo shirt) light three incense sticks on a small sawdust brazier outside the workshop, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Both carpenters burning incense and wood shavings before starting work",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Hai bác cháu đốt lò dăm gỗ thơm xông ấm cả gian xưởng, khấn nguyện cho những nấm mồ trôi sông sớm được dân làng quy tập yên nghỉ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Minh (26-year-old lean Vietnamese village carpenter, short neat black hair, wearing a faded indigo cotton ba-ba shirt). ELDER ANCHOR: Uncle Tam (65-year-old grey-bearded master carpenter in dark brown tunic).), cinematic twilight wide shot of the neat timber carpentry workshop beside green hills, a red talisman and iron ruler hanging securely above the door, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Peaceful dusk view of sturdy carpentry workshop with glowing lantern",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ bận ấy trước khi cài cửa ngủ đêm, người thợ mộc trẻ không bao giờ quên gác thanh thước thợ lên khung gỗ đầu hồi...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

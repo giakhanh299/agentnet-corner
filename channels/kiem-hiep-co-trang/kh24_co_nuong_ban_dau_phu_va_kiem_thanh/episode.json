@@ -1,0 +1,221 @@
+{
+  "series": "Kiếm Hiệp Cổ Trang",
+  "target_channel": "KENH_002",
+  "episode": 24,
+  "slug": "kh24_co_nuong_ban_dau_phu_va_kiem_thanh",
+  "title": "Cô Nương Bán Đậu Phụ Khiến Đệ Nhất Kiếm Thánh Bái Phục",
+  "cover_title": "CÔ HÀNG ĐẬU PHỤ & KIẾM THÁNH",
+  "cover_hook": "Luyện kiếm ba mươi năm cầu chữ Nhanh, lại thua đường dao thái đậu phụ mềm như nước của một thiếu nữ...",
+  "character_bible": "MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).",
+  "cover_theme": "wuxia",
+  "cover_scene": 2,
+  "seed": 324,
+  "voice": "chautinhtri",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "wuxia",
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), Lục Thanh (28-year-old proud swordsman, high black ponytail, dark navy robes, clean-shaven) striding down a misty ancient stone market street carrying an ornate silver sword, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Misty morning market street as proud swordsman walks past stalls",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Kiếm khách Lục Thanh mới hai mươi tám tuổi đã đánh bại mười hai cao thủ miền Bắc, lòng kiêu ngạo ngỡ thiên hạ không còn ai nhanh bằng kiếm của mình.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), Lục Thanh (28, black ponytail, navy robes) sitting impatiently at a rustic wooden tofu stall slapping a copper coin onto the table, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lục Thanh sits at humble roadside tofu stall ordering impatiently",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Sáng sớm ghé quán nhỏ chân núi Đạt Ma, chàng vỗ đồng tiền đồng xuống bàn giục: Cô chủ quán, làm nhanh một bát canh đậu phụ nóng để ta còn đi khiêu chiến!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), A Mẫn (21-year-old cheerful girl, braided hair with blue ribbon, cream cotton apron) smiling warmly while balancing a soft white block of fresh tofu on her bare palm, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "A Mẫn smiles brightly lifting block of silky white tofu on palm",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Cô chủ quán A Mẫn mỉm cười hiền hậu nâng miếng đậu phụ non mềm rung rinh ngay trên lòng bàn tay: Khách quan vội thế, nhìn kỹ kẻo chớp mắt là xong nhé!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), extreme macro slow-motion wuxia shot as A Mẫn's thin steel kitchen knife flashes swiftly over her bare palm, slicing soft white tofu into hundreds of hair-thin strands without touching her skin, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Silver kitchen cleaver flashes into blur slicing tofu into hair-thin threads",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ánh dao bếp lóe lên nhanh như ánh chớp bạc: chỉ trong ba hơi thở miếng đậu non đã hóa thành hàng trăm sợi mảnh như tơ trời mà lòng bàn tay nàng không trầy mảy may!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), close-up of Lục Thanh (28, black ponytail, navy robes) staring wide-eyed as the tofu threads bloom like a white chrysanthemum flower in clear hot broth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lục Thanh's jaw drops staring into bowl of floating chrysanthemum tofu",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Lục Thanh sững sờ đánh rơi cả đôi đũa: thả vào bát nước dùng nóng, miếng đậu phụ bung nở đều tăm tắp thành đóa hoa cúc trắng không đứt một sợi nào!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), Lục Thanh (28, navy robes) drawing his gleaming sword in frustration to slice a tofu block on a board, but his fierce sword qi splatters the soft tofu into mush, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lục Thanh tries slicing a tofu block with his famous sword and crushes it",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Không phục khí, chàng rút bảo kiếm xuất chiêu nhanh nhất đời mình chém thử miếng đậu bên cạnh — nào ngờ kình lực quá cương khiến cả khối đậu nát bấy!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), A Mẫn (21, braided hair with blue ribbon, cream apron) smiling gently while wiping her ordinary iron kitchen knife with a clean cloth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "A Mẫn giggles softly wiping her simple kitchen knife",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "A Mẫn khúc khích cười đáp nhẹ: Công tử cầm kiếm luôn nghĩ chuyện hơn thua sát phạt nên tay còn gồng cứng, còn muội chỉ nghĩ làm sao nấu bát canh ngon cho khách thôi!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), poetic medium shot of Lục Thanh (28, black ponytail, navy robes) standing motionless in falling golden bamboo leaves, realizing the flaw in his martial heart, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Wind blows bamboo leaves past Lục Thanh standing enlightened",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Câu nói mộc mạc như tiếng chuông vang tỉnh mộng: suốt mười năm qua chàng chỉ luyện kiếm nhanh để thắng người, chưa từng đạt tới chữ Tự Nhiên vô cầu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), Lục Thanh (28, navy robes) sheathing his ornate sword and bowing deeply with clasped hands to A Mẫn (21, cream apron) before the steaming stall, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lục Thanh bows deeply to the humble tofu girl",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Chàng tra kiếm vào vỏ, cung kính cúi người vái sâu trước cô gái bán đậu phụ: Hôm nay Lục mỗ chưa lên núi đã gặp bậc đại tông sư ngay đầu chợ rồi!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), warm sunlit two-shot as A Mẫn (21, blue hair ribbon) hands a fresh pair of bamboo chopsticks to the smiling humbled Lục Thanh (28, navy robes), strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "A Mẫn hands him fresh chopsticks cheerfully",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Nàng xua tay bật cười trao đôi đũa mới: Tông sư gì đâu công tử ơi, ăn mau kẻo canh nguội mất ngon, bát này muội mời không tính tiền nhát đậu hỏng đâu!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: Lục Thanh (28-year-old proud swordsman, sharp jawline, high black ponytail, dark navy martial robes, clean-shaven, NO glasses). FEMALE LEAD ANCHOR: A Mẫn (21-year-old cheerful tofu seller girl, braided hair with blue ribbon, simple cream cotton apron).), serene vertical 9:16 wuxia wide shot of Lục Thanh (28, navy robes) strolling calmly down the sunlit valley road instead of rushing up the mountain peak, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Wide morning shot of swordsman walking peacefully into misty valley",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Bỏ ý định lên núi tranh danh đệ nhất, chàng kiếm khách trẻ thong dong bước giữa nắng sớm, lòng nhẹ tênh như đóa cúc trắng nở trong bát canh nghèo...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    }
+  ]
+}

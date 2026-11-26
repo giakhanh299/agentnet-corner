@@ -1,0 +1,221 @@
+{
+  "series": "Kiếm Hiệp Cổ Trang",
+  "target_channel": "KENH_002",
+  "episode": 23,
+  "slug": "kh23_cao_thu_rua_bat_va_nu_dao_khach",
+  "title": "Cao Thủ Rửa Bát Và Nữ Đao Khách Tuyết Sơn",
+  "cover_title": "CAO THỦ RỬA BÁT LỘ DIỆN",
+  "cover_hook": "Tưởng gã rửa bát hậu viện chỉ biết cọ nồi, nào ngờ một chiếc vung gỗ cũng đỡ trọn tuyệt chiêu Tuyết Sơn Đao...",
+  "character_bible": "MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).",
+  "cover_theme": "wuxia",
+  "cover_scene": 2,
+  "seed": 323,
+  "voice": "chautinhtri",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "wuxia",
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), A Phúc (25-year-old cheerful young man, messy topknot, grey linen sleeves rolled up, clean-shaven) scrubbing stacks of ceramic bowls beside a steaming well in an ancient inn courtyard, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tracking shot of A Phúc cheerfully washing stack of bowls in courtyard",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Người ta bước chân vào giang hồ thì luyện Cửu Âm Chân Kinh, còn tại hạ luyện rửa ba trăm cái bát mỗi ngày ở hậu viện tửu lầu này suốt năm năm rồi!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), Lãnh Tuyết (23-year-old beauty in white fur-trimmed azure wuxia coat, silver curved sabre) landing lightly in the courtyard holding her bruised left shoulder, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lãnh Tuyết leaps over courtyard wall clutching injured arm",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Đang huýt sáo cọ xoong thì một nữ đao khách áo lam từ trên mái ngói nhảy xuống sân sau, lạnh giọng bảo: Cho ta mượn chỗ trốn nửa tuần trà!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), A Phúc (25, messy topknot, grey linen shirt, clean-shaven) holding a soapy wooden ladle pointing wryly toward stacks of bamboo baskets, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "A Phúc points comically at giant wooden dish tub",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Ơ kìa cô nương, chỗ này toàn nước rửa bát mỡ màng bắn bẩn hết áo lụa đẹp bây giờ, cô nương nấp tạm sau đống sọt tre kia kìa!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor) kicking open the wooden courtyard doors brandishing a heavy serrated broadsword, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Thiết Hùng kicks open courtyard gate with iron broadsword",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Vừa dứt lời, gã trại chủ Thiết Hùng vác đại đao răng cưa đạp tung cánh cổng gỗ quát vang: Con nha đầu Tuyết Sơn trốn đâu rồi, bước ra chịu trói!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), Lãnh Tuyết (23, white fur-trimmed azure coat) clashing her silver sabre against Thiết Hùng's (40, black armor) heavy broadsword in a shower of sparks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lãnh Tuyết steps out clashing silver sabre sparks flying",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Nàng Lãnh Tuyết cắn răng vung đao nghênh chiến, nhưng nội lực hao tổn khiến nàng bị chưởng phong ép lùi thẳng vào chồng bát sứ vừa rửa sạch!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), A Phúc (25, messy topknot, grey linen sleeves, clean-shaven) sliding in effortlessly spinning a round wooden wok lid in one hand, deflecting the heavy iron broadsword away from his bowls, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "A Phúc slides in spinning wooden wok lid deflecting heavy blade",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Khoan đã đại ca ơi! Chồng bát sứ Cảnh Đức Trấn này trừ thẳng vào tiền công cưới vợ của đệ đấy, chém vỡ một cái là đệ liều mạng luôn!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), dynamic wuxia slow-motion shot as A Phúc (25, grey linen shirt) flicks a wet twisted cotton dishcloth like a whip, wrapping and flinging Thiết Hùng's heavy iron broadsword into a roof beam, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Spinning wet dishcloth snaps bandit's heavy blade out of hand",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Chỉ thấy chiếc khăn lau bàn ướt sũng trong tay A Phúc quất vút một tiếng như roi rồng, cuốn bay thanh đại đao trăm cân cắm phập lên xà nhà!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), Thiết Hùng (40, scarred bandit in black iron armor) staring in horror at the vibrating sword high in the roof beam before bolting out the courtyard gate, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Shocked Thiết Hùng stumbles out courtyard gate terrified",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Thiết Hùng trợn ngược hai mắt lắp bắp 'Thái Cực Nhu Kình cảnh giới hóa thần!', chẳng dám nhặt lại đao mà vắt chân lên cổ chạy mất dép!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), Lãnh Tuyết (23, azure coat with white fur collar) bowing with clasped hands offering an engraved white jade pendant to A Phúc (25, grey linen shirt), strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lãnh Tuyết bows respectfully offering jade token to A Phúc",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Nàng Lãnh Tuyết mắt sáng rực rút miếng ngọc bội bên hông trao tặng: Đa tạ ân công cứu mạng, mời huynh về Tuyết Sơn làm khách quý của bổn phái!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), A Phúc (25, messy topknot, grey linen sleeves, clean-shaven) waving soapy hands with a sheepish grin beside his gleaming stack of intact bowls, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "A Phúc waves soapy hands smiling sheepishly",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Thôi thôi cô nương cất ngọc đi, lên Tuyết Sơn lạnh cóng tay sao rửa bát được, ông chủ mà thấy thiếu một cái chén lại mắng tại hạ tới tối!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Eastern wuxia cinema (MALE LEAD ANCHOR: A Phúc (25-year-old cheerful handsome young dishwasher, messy topknot hair, rolled-up coarse grey linen sleeves, clean-shaven, NO beard, NO glasses). FEMALE LEAD ANCHOR: Lãnh Tuyết (23-year-old fierce beauty in white fur-trimmed azure wuxia coat carrying a curved silver sabre). VILLAIN ANCHOR: Thiết Hùng (40-year-old burly scarred bandit chief in black iron shoulder armor).), cinematic golden sunset shot of Lãnh Tuyết (23, azure coat) standing on tiled eaves smiling fondly down at A Phúc humming happily in the courtyard, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lãnh Tuyết smiles warmly looking back from rooftop at sunset",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Nàng mỉm cười ngoái nhìn bóng chàng trai trẻ ca hát bên giếng nước chiều tà, chợt nhận ra cao nhân tự tại nhất vốn chẳng màng danh lợi giang hồ...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    }
+  ]
+}
