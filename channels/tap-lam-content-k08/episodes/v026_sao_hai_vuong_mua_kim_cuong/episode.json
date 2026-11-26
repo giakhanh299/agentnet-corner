@@ -1,0 +1,309 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v026_sao_hai_vuong_mua_kim_cuong",
+  "episode": 26,
+  "title": "Hành Tinh Nào Có Mưa Kim Cương Thật",
+  "cover_text": "MƯA KIM CƯƠNG THẬT",
+  "hook": "Trên Sao Hải Vương, trời thực sự đổ mưa bằng kim cương?",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "total_duration_s": 55,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on deep blue Neptune glowing in dark space, tiny sparkling diamond-like crystals falling through its atmosphere, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sao Hải Vương có mưa kim cương thật không?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Vivid sunlight on blue Neptune seen from space, swirling storms and pale clouds, distant stars behind, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hành tinh xanh xa xôi giấu bí mật kỳ lạ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Bright glowing light on layered blue clouds deep inside Neptune, immense pressure compressing the atmosphere, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sâu bên trong, áp suất lớn đến khó tin.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Intense light on methane gas molecules being squeezed together under thick blue clouds inside Neptune, glowing particles, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khí mêtan bị nén chặt dưới lớp mây dày.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Bright macro light on carbon atoms separating and joining into a clear sparkling crystal lattice, deep blue background, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cácbon tách ra rồi kết lại thành tinh thể.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Brilliant white light on a sparkling diamond crystal held in macro close-up, sharp facets reflecting light, dark blue background, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tinh thể ấy cứng, sáng, giống hệt kim cương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Glowing light on sparkling diamond crystals falling like rain through thick blue gas layers inside Neptune, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chúng rơi xuống như mưa qua lớp khí dày.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Soft telescope light on astronomers observing distant blue Neptune through a large observatory telescope at night, stars above, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nhưng chưa ai nhìn thấy mưa ấy trực tiếp.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Bright laboratory light on scientists using lasers to compress carbon material in a small diamond experiment, sparks and glowing plasma, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Phòng thí nghiệm mới mô phỏng được hiện tượng này.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Bright macro light on tiny diamond crystals forming inside a laboratory sample, sparkling facets under a microscope, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Kết quả cho thấy kim cương có thể hình thành.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Bright starlight on blue Neptune shining among distant stars, a curious young viewer looking up at the night sky, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bí mật vũ trụ vẫn chờ người khám phá tiếp.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 826,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

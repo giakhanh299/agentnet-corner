@@ -1,0 +1,309 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v028_sua_bat_tu_tre_lai_tu_dau",
+  "episode": 28,
+  "title": "Loài Sứa Có Thể Trẻ Lại Từ Đầu Mãi Mãi",
+  "cover_text": "LOÀI SỨA BẤT TỬ",
+  "hook": "Sinh vật duy nhất trên Trái Đất đảo ngược được tuổi già.",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "total_duration_s": 55,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on a tiny glowing jellyfish drifting in clear blue ocean water, delicate tentacles shining, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sinh vật duy nhất đảo ngược được tuổi già sao?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Vivid macro light on a small translucent jellyfish pulsing gently in blue ocean water, sunlight from above, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Loài sứa nhỏ bé này sống lại từ đầu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Soft blue light on an ageing jellyfish sinking slowly toward a dark rocky seabed, faint sunlight fading above, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khi già yếu, nó chìm xuống đáy biển sâu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Bright macro light on a jellyfish shrinking into a tiny round cyst on a dark ocean rock, blue water around, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cơ thể co lại thành một đốm nhỏ xíu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm underwater light on a tiny polyp growing from a rock on the seabed, small stalks reaching upward, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đốm nhỏ bám đá rồi mọc thành polyp mới.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Bright macro light on a polyp budding tiny new jellyfish, delicate young medusae floating free, blue ocean water, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Polyp nảy chồi, sinh ra sứa non giống hệt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Sunlight on a fresh young jellyfish drifting upward through clear blue ocean, new life cycle beginning, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Vòng đời quay lại, tuổi già biến mất hẳn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Soft daylight on a jellyfish drifting near a larger fish in blue ocean water, showing natural danger, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nhưng bất tử không có nghĩa là không chết.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Natural ocean light on small fish swimming past a jellyfish in clear blue water, a balanced marine food web, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bệnh tật, kẻ săn mồi vẫn giết được nó.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Bright laboratory light on a scientist observing a jellyfish in a clear seawater tank, microscope nearby, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Các nhà khoa học học nó để hiểu lão hóa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunlight on a tiny jellyfish glowing in vast blue ocean water at sunset, a sense of wonder, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sống lại được, nhưng sống mãi thì chưa chắc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 828,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

@@ -1,0 +1,309 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v034_trai_dat_quay_nhanh_co_nao",
+  "episode": 34,
+  "title": "Trái Đất Đang Quay Nhanh Hơn Mấy Bay Phản Lực",
+  "cover_text": "TRÁI ĐẤT QUAY SIÊU NHANH",
+  "hook": "Ta đang bay hơn nghìn cây số mỗi giờ mà không hề thấy chóng mặt?.",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "total_duration_s": 55,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on Earth spinning in dark space, clouds swirling above blue oceans, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ta đang bay hơn nghìn cây số mỗi giờ sao?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Vivid daylight on a person standing calmly on green grass, Earth and sky steady around them, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Trái Đất quay nhanh mà ta chẳng hề hay biết.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on a spinning globe model on a desk, a small figure standing on its surface, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mặt đất dưới chân ta cũng đang xoay tròn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Soft daylight on clouds moving smoothly across a blue sky above green fields, air flowing with Earth, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Không khí quanh ta bay cùng tốc độ ấy.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Calm daylight on passengers sitting relaxed inside a smooth-flying aeroplane cabin, coffee steady on a tray, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mọi thứ chuyển động đều nên ta không cảm nhận.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Bright light on a car slowing gently at a traffic light, passengers feeling the change in speed, city street outside, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chỉ khi tốc độ đổi, cơ thể mới nhận ra.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunset light through an aeroplane window, clouds drifting steadily below, a calm traveller looking out, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Giống ngồi máy bay êm khi bay đều vậy.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Bright daylight on a child jumping happily and landing safely on green grass, gravity pulling gently downward, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Trọng lực giữ ta chặt trên mặt đất này.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Time-lapse light on Earth turning from day to night, sunrise glowing over blue oceans and clouds, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ngày đêm đổi thay nhờ Trái Đất quay đều.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sky light on a jet aeroplane flying above white clouds, Earth curving far below, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Máy bay nhanh, nhưng Trái Đất còn nhanh hơn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Starlight on Earth glowing blue in dark space, people living calmly under its steady spin, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ta bay cùng Trái Đất mỗi ngày không ngừng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 834,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

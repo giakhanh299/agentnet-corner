@@ -1,0 +1,187 @@
+{
+  "series": "Tập Làm Content",
+  "episode": 33,
+  "episode_code": "v033",
+  "title": "Mùi Thơm Kỳ Diệu Sau Cơn Mưa Đến Từ Đâu",
+  "cover_title": "MÙI ĐẤT SAU MƯA",
+  "hook": "Mùi đất thơm sau mưa thực chất do một loại vi khuẩn tạo ra?",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Nội dung kiến thức khoa học phổ thông, không phải lời khuyên y tế.",
+  "scientific_note": "Mùi đất sau mưa, còn gọi là petrichor, chủ yếu do geosmin từ vi khuẩn đất thuộc nhóm Actinobacteria tạo ra, cùng với dầu thực vật tích tụ trong đất và ozone khi có sấm sét. Mưa làm bật các hợp chất này vào không khí nên mùi trở nên rõ. Đây là kiến thức chung, không trích một nghiên cứu cụ thể.",
+  "sfx_library": [
+    {
+      "tag": "rain_on_roof",
+      "gain_db": -28
+    },
+    {
+      "tag": "rain_drops",
+      "gain_db": -27
+    },
+    {
+      "tag": "soil_rustle",
+      "gain_db": -28
+    },
+    {
+      "tag": "wind_soft",
+      "gain_db": -29
+    },
+    {
+      "tag": "thunder_distant",
+      "gain_db": -28
+    },
+    {
+      "tag": "birdsong",
+      "gain_db": -27
+    },
+    {
+      "tag": "water_splash",
+      "gain_db": -27
+    },
+    {
+      "tag": "quiet_nature",
+      "gain_db": -26
+    },
+    {
+      "tag": "footsteps_soft",
+      "gain_db": -27
+    },
+    {
+      "tag": "leaf_rustle",
+      "gain_db": -28
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight after rain on dry soil, raindrops and a fresh earthy scent rising in the air, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mưa rơi xuống đất khô, mùi thơm bốc lên ngay.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Rain falling on dry cracked soil in bright light, water soaking into the earth, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Người ta gọi mùi ấy là mùi đất sau mưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Close view of soil bacteria in bright scientific light, earthy soil and tiny spores, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Vi khuẩn đất tạo ra chất có mùi đặc biệt.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "A human nose sensing a fresh earthy scent in bright daylight after rain, close documentary view, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chất ấy đặc biệt, mũi người nhạy cảm vô cùng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Dry cracked soil waiting for rain in bright sunlight, dormant microbes in the earth, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khi đất khô, vi khuẩn nghỉ, chờ mưa quay lại.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Raindrops striking dry soil in bright light, tiny spores and scent rising into the air, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mưa đánh bật bào tử và mùi lên không khí.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Plant oils in dry soil in bright sunlight, leaves and earth after rain, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Dầu thực vật trong đất cũng góp phần tạo mùi.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Lightning in clouds above a rainy landscape in bright daylight, fresh air after rain, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tia chớp trong mây cũng góp phần tạo mùi.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "A person breathing in the fresh scent of rain on soil in bright daylight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mũi người nhận ra mùi đất từ rất xa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Rain watering green plants in bright sunlight after a shower, fresh earth below, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mùi đất báo mưa đã về, cây cối được tưới.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight over wet soil and green plants after rain, a fresh earthy landscape, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mùi thơm sau mưa là quà từ đất và mưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 833,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

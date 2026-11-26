@@ -1,0 +1,309 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v031_vi_sao_ban_ngap_lai_lay_sang_nguoi_khac",
+  "episode": 31,
+  "title": "Tại Sao Thấy Người Khác Ngáp Bạn Cũng Ngáp",
+  "cover_text": "NGÁP LÂY SANG NHAU",
+  "hook": "Chỉ cần nghe chữ ngáp thôi bạn đã muốn ngáp rồi đúng không?",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "total_duration_s": 55,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright daylight on a young woman yawning widely in a sunny park, friends smiling nearby, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chỉ nghe chữ ngáp, bạn đã muốn ngáp rồi.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunlight on a group of friends in a park, one yawning and others starting to yawn too, laughing together, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ngáp lây sang nhau, ai cũng từng trải qua.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Bright macro light on a glowing human brain model, areas lighting up as a person watches someone yawn, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thấy người khác ngáp, não ta phản ứng ngay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Clear light on two people facing each other, one yawning and the other mirroring the same expression, sunny classroom background, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Vùng não soi gương bắt chước hành động quen thuộc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunlight on close friends sharing a kind conversation on a bench, one yawning gently and the other yawning back, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Người càng đồng cảm càng dễ ngáp theo hơn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Cool morning light on a person yawning and stretching after waking, fresh air through an open window, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ngáp giúp não mát lại và tỉnh táo hơn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Soft evening light on a tired student yawning over books at a desk, warm lamp glowing, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thiếu ngủ, mệt mỏi, ngáp càng xuất hiện nhiều.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Bright daylight on a happy dog yawning beside its owner on a sofa, both relaxed at home, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chó cưng cũng ngáp theo chủ của mình đấy.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Bright laboratory light on researchers discussing brain scans and yawning data on a screen, curious and thoughtful, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nhưng khoa học chưa giải thích trọn vẹn hiện tượng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunset light on friends walking together in a park, yawning and laughing in warm friendship, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ngáp lây là dấu hiệu gắn kết xã hội.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunlight on a young woman smiling after a big yawn, friends smiling with her in a bright park, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lần sau ngáp, mỉm cười vì não đang kết nối.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 831,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

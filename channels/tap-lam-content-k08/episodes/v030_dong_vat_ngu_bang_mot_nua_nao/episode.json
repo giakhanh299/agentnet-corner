@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "vivid_doc",
+  "cover_hook": "Một mắt mở, nửa não thức để không bị chìm khi ngủ?",
+  "cover_theme": "knowledge",
+  "cover_title": "NGỦ NỬA BỘ NÃO",
+  "cta": "Bạn muốn ngủ nửa não không? Bình luận nhé!",
+  "description": "Cá heo không thể ngừng bơi để ngủ như động vật trên cạn: chúng ngủ bằng một nửa bộ não, nửa còn lại vẫn thức để bơi lên mặt nước thở và quan sát xung quanh. Mắt mở liên kết với nửa não thức bên đối diện, hai nửa não luân phiên nhau nghỉ ngơi. Một bí quyết sinh tồn kỳ diệu của đại dương.",
+  "episode": 30,
+  "hashtags": [
+    "#TapLamConTent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no blood, no gore, no spells, no charms, no ghost face, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Cá Heo Ngủ Bằng Nửa Bộ Não Như Thế Nào | Tập Làm Content Tập 30",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – một mắt mở, nửa não thức",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on a dolphin swimming underwater, one eye open, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay đẩy chậm vào cá heo bơi dưới nước, một mắt mở",
+      "voiceover": "Một mắt mở, nửa não thức, cá heo không chìm?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt nhạc tò mò ngân khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Cá heo không thể ngừng bơi để ngủ",
+      "duration_s": 5.0,
+      "image_prompt": "Crystal-clear blue water with a dolphin swimming slowly, sunlight from above, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay theo sau cá heo bơi chậm dưới làn nước trong",
+      "voiceover": "Cá heo không thể ngừng bơi để ngủ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -26.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió biển thổi nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Phải tự ý lên mặt nước để thở",
+      "duration_s": 5.0,
+      "image_prompt": "Sunlight on a dolphin surfacing to breathe, ocean waves, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay theo cá heo trồi lên mặt nước hít thở",
+      "voiceover": "Chúng phải tự ý lên mặt nước để thở.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "cá heo trồi lên mặt nước",
+          "dur": 4,
+          "gain_db": -26.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "sóng vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Nửa não ngủ, nửa não còn lại vẫn thức",
+      "duration_s": 5.0,
+      "image_prompt": "Soft blue light on a dolphin resting underwater, one eye open, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung cá heo nghỉ dưới nước, một mắt mở",
+      "voiceover": "Nửa não ngủ, nửa não còn lại vẫn thức.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển lặng",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió biển thổi nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Mắt bên não thức mở ra quan sát",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up sunlight on a dolphin eye open underwater, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "zoom chậm vào mắt cá heo mở ra dưới nước",
+      "voiceover": "Mắt bên não thức mở ra, quan sát xung quanh.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt nhạc tò mò ngân khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Nửa não kia ngủ sâu, nghỉ ngơi thật sự",
+      "duration_s": 5.0,
+      "image_prompt": "Deep blue light on a dolphin resting peacefully underwater, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung cá heo nghỉ yên trong làn nước xanh sâu",
+      "voiceover": "Nửa não kia ngủ sâu, nghỉ ngơi thật sự.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển lặng",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió biển thổi nhẹ",
+          "dur": 5,
+          "gain_db": -29.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Hai nửa não đổi phiên nhau",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on two dolphins swimming side by side, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm giữa hai con cá heo bơi song song",
+      "voiceover": "Sau một lúc, hai nửa não đổi phiên nhau.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "sóng vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Nhờ vậy, cá heo bơi chậm mà vẫn ngủ được",
+      "duration_s": 5.0,
+      "image_prompt": "Soft sunlight on a dolphin gliding slowly underwater, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay theo cá heo lướt chậm dưới nước trong nắng",
+      "voiceover": "Nhờ vậy, cá heo bơi chậm mà vẫn ngủ được.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -26.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió biển thổi nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Bí quyết giúp cá heo sống dưới nước",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunlight on a dolphin in clear blue ocean, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay mở rộng chậm ra biển xanh mênh mông",
+      "voiceover": "Bí quyết này giúp cá heo sống dưới nước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt nhạc tò mò ngân khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Giấc ngủ một nửa thật kỳ diệu",
+      "duration_s": 5.0,
+      "image_prompt": "Vivid blue light on a dolphin leaping above waves, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay theo cá heo nhảy vọt lên khỏi mặt sóng",
+      "voiceover": "Giấc ngủ một nửa thật kỳ diệu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "cá heo vọt lên mặt nước",
+          "dur": 4,
+          "gain_db": -26.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "sóng vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "rain"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunset light on dolphins swimming in the ocean, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text.",
+      "motion": "máy quay mở rộng chậm lên đàn cá heo bơi trong nắng hoàng hôn",
+      "voiceover": "Bạn muốn ngủ nửa não không? Bình luận nhé!",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước biển vỗ nhẹ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió biển thổi nhẹ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    }
+  ],
+  "series": "Tập Làm Content",
+  "title": "Cá Heo Ngủ Bằng Nửa Bộ Não Như Thế Nào",
+  "voice": "maianh",
+  "seed": 830,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

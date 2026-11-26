@@ -1,0 +1,187 @@
+{
+  "series": "Tập Làm Content",
+  "episode": 25,
+  "episode_code": "v025",
+  "title": "Chim Cánh Cụt Tặng Đá Cho Cầu Hôn",
+  "cover_title": "CÁNH CỤT TẶNG ĐÁ",
+  "hook": "Chim cánh cụt đực tìm viên sỏi đẹp nhất để cầu hôn?",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Nội dung kiến thức về động vật, không gây hại.",
+  "scientific_note": "Chim cánh cụt Adelie có hành vi tặng sỏi đã được ghi nhận: con đực mang sỏi cho con cái để xây tổ đá, giúp trứng tránh lạnh và ngập nước. Gọi đây là cầu hôn chỉ là cách ví von của con người, không phải nghi lễ hôn nhân theo nghĩa con người.",
+  "sfx_library": [
+    {
+      "tag": "penguin_calls",
+      "gain_db": -27
+    },
+    {
+      "tag": "ocean_waves",
+      "gain_db": -28
+    },
+    {
+      "tag": "wind_antarctic",
+      "gain_db": -28
+    },
+    {
+      "tag": "footsteps_snow",
+      "gain_db": -27
+    },
+    {
+      "tag": "pebble_drop",
+      "gain_db": -26
+    },
+    {
+      "tag": "water_splash",
+      "gain_db": -28
+    },
+    {
+      "tag": "ice_crack",
+      "gain_db": -29
+    },
+    {
+      "tag": "seabird_calls",
+      "gain_db": -27
+    },
+    {
+      "tag": "snow_wind",
+      "gain_db": -29
+    },
+    {
+      "tag": "quiet_cold_ambience",
+      "gain_db": -26
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright Antarctic sunlight on a male Adelie penguin searching for a smooth pebble on a rocky beach, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cánh cụt đực tìm viên sỏi đẹp nhất trên bãi.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "A male Adelie penguin carrying a smooth pebble in its beak, walking slowly across a rocky Antarctic beach, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nó ngậm viên sỏi, bước chậm về phía bạn tình.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "A female Adelie penguin looking closely at a pebble offered by a male, bright Antarctic daylight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chim cái nhìn viên sỏi, rồi nhìn chàng cánh cụt.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "A smooth grey pebble held in a penguin beak, bright sunlight on a rocky Antarctic nest site, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sỏi không phải nhẫn, mà là vật liệu làm tổ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "A male Adelie penguin placing a pebble on the ground before a female, bright Antarctic sunlight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chim đực đặt sỏi xuống, chờ bạn tình nhận lấy.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "A female Adelie penguin picking up a pebble and arranging it in a small stone nest, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chim cái gắp sỏi lên, xếp vào tổ đá nhỏ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "A stone penguin nest protecting an egg, bright Antarctic sunlight and cold blue ice behind, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tổ đá giúp trứng không bị lạnh và ngập nước.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Many male Adelie penguins carrying pebbles across a rocky Antarctic beach in bright sunlight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nhiều chim đực mang sỏi, ít con được bạn chọn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "A female Adelie penguin inspecting a small stone nest, bright Antarctic sunlight on pebbles, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sỏi đẹp chưa đủ, chim cái còn xem tổ vững.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Two Adelie penguins incubating an egg together in a stone nest, bright Antarctic daylight, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tổ hoàn thành, cặp đôi cùng ấp trứng bên nhau.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "A small smooth pebble in a penguin stone nest at sunset light over an Antarctic beach, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Viên sỏi nhỏ mở đầu câu chuyện gia đình lớn.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 825,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

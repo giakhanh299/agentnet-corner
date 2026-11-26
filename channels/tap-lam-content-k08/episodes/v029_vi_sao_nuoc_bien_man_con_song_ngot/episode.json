@@ -1,0 +1,187 @@
+{
+  "series": "Tập Làm Content",
+  "episode": 29,
+  "episode_code": "v029",
+  "title": "Vì Sao Nước Biển Mặn Còn Sông Ngọt",
+  "cover_title": "SAO BIỂN MẶN SÔNG NGỌT",
+  "hook": "Mỗi năm sông mang hàng tỷ tấn muối ra đại dương?",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Nội dung kiến thức khoa học phổ thông, không phải lời khuyên y tế.",
+  "scientific_note": "Muối biển chủ yếu đến từ khoáng chất hòa tan do nước mưa và sông mang từ đá ra biển; nước bay hơi để lại muối nên biển tích tụ muối theo thời gian, còn sông chảy liên tục nên nồng độ muối thấp. Con số hàng tỷ tấn trong hook là cách diễn đạt gợi mở, không phải số liệu đã kiểm chứng trong tập này.",
+  "sfx_library": [
+    {
+      "tag": "ocean_waves",
+      "gain_db": -28
+    },
+    {
+      "tag": "river_flow",
+      "gain_db": -27
+    },
+    {
+      "tag": "rain_on_roof",
+      "gain_db": -28
+    },
+    {
+      "tag": "mountain_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "water_splash",
+      "gain_db": -27
+    },
+    {
+      "tag": "seabird_calls",
+      "gain_db": -27
+    },
+    {
+      "tag": "waterfall",
+      "gain_db": -28
+    },
+    {
+      "tag": "quiet_nature",
+      "gain_db": -26
+    },
+    {
+      "tag": "wind_soft",
+      "gain_db": -29
+    },
+    {
+      "tag": "droplet",
+      "gain_db": -29
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on a clear river flowing through green mountains, fresh water sparkling, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nước sông ngọt, nước biển mặn, vì sao lại khác?",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Rain falling on green mountains in bright daylight, water running over rocks and soil, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mưa rơi xuống núi, thấm qua đất và đá.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Rainwater washing over rocks in bright sunlight, carrying dissolved minerals toward a river, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nước mưa cuốn theo muối khoáng từ đá ra sông.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "A river flowing into the blue ocean in bright sunlight, fresh water meeting salty sea water, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sông chảy ra biển, mang theo muối khoáng hòa tan.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight over the ocean, water evaporating and leaving salt behind, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Biển nhận muối mãi, nhưng nước lại bay hơi đi.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Water vapour rising from the sunny ocean surface, leaving salt in the sea below, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hơi nước bay lên là nước ngọt, muối ở lại.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Bright sunlight on salty ocean water over geological time, waves and white foam, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Muối tích tụ qua thời gian, biển ngày càng mặn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "A fast river flowing continuously in bright sunlight, clear water over smooth stones, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sông chảy liên tục, muối chưa kịp tích tụ nhiều.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Close view of clear river water in bright sunlight, almost no visible salt, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nước sông cũng có muối, nhưng rất loãng khó nhận.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "A still lake with no outlet in bright sunlight, salt crusts forming along the shore, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hồ không lối thoát cũng mặn dần theo năm tháng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "A split view of a sweet river and a salty ocean in bright sunlight, water cycle in nature, vibrant high-resolution National Geographic documentary macro photography, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Biển mặn, sông ngọt vì vòng tuần hoàn khác nhau.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 829,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}
