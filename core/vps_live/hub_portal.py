@@ -9,8 +9,15 @@ import hashlib
 import hmac
 import html
 import json
+import mimetypes
+import os
+import re
+import zipfile
+from email.parser import BytesParser
+from email.policy import default as EMAIL_POLICY
 from http.cookies import SimpleCookie
 from http.server import BaseHTTPRequestHandler
+from pathlib import Path
 import secrets
 import time
 from urllib.parse import parse_qs, urlsplit
@@ -18,6 +25,38 @@ from urllib.parse import parse_qs, urlsplit
 from research_queue import PROJECT, QueueError, WORKER_ROLES
 
 HUB_DEVICE_TAG = 'hub-web'
+MEDIA_DROP_ROOT = Path(os.environ.get('AGENTNET_MEDIA_ROOT', '/var/lib/agentnet-media'))
+MEDIA_ALLOWED_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.mp4', '.mov', '.webm', '.zip'}
+MEDIA_MAX_BYTES = 120 * 1024 * 1024
+SAFE_SLUG_RE = re.compile(r'^[a-zA-Z0-9_-]{2,80}$')
+
+
+def _safe_media_name(raw_name: str) -> str:
+    base = Path(raw_name or '').name
+    clean = re.sub(r'[^a-zA-Z0-9._-]+', '_', base).strip('._')
+    if not clean or len(clean) > 120:
+        return ''
+    ext = Path(clean).suffix.lower()
+    return clean if ext in MEDIA_ALLOWED_EXT else ''
+
+
+def _parse_multipart(content_type: str, body: bytes) -> tuple[dict[str, str], list[tuple[str, bytes]]]:
+    fields: dict[str, str] = {}
+    files: list[tuple[str, bytes]] = []
+    hdr = f'Content-Type: {content_type}\r\nMIME-Version: 1.0\r\n\r\n'.encode('utf-8')
+    msg = BytesParser(policy=EMAIL_POLICY).parsebytes(hdr + body)
+    if not msg.is_multipart():
+        return fields, files
+    for part in msg.iter_parts():
+        cd = part.get('Content-Disposition', '')
+        name = part.get_param('name', header='content-disposition') or ''
+        fname = part.get_filename()
+        payload = part.get_payload(decode=True) or b''
+        if fname:
+            files.append((fname, payload))
+        elif name:
+            fields[name] = payload.decode('utf-8', errors='replace').strip()
+    return fields, files
 
 
 def _sha256(val: str) -> str:
@@ -425,6 +464,52 @@ def make_hub_handler(hub: HubManager):
                         return self.redirect('/?err=Vui+l%C3%B2ng+nh%E1%BA%ADp+M%C3%A3+Tri%E1%BB%87u+T%E1%BA%ADp+%C4%91%E1%BB%83+v%C3%A0o+S%E1%BA%A3nh+Nhi%E1%BB%87m+V%E1%BB%A5')
                     return self.render_worker_portal(w, tok, flash=qs.get('msg', [''])[0], err=qs.get('err', [''])[0])
 
+                if route == '/media-upload':
+                    w, _ = self.current_worker()
+                    if not w and not self.current_admin():
+                        return self.redirect('/?err=Vui+l%C3%B2ng+v%C3%A0o+S%E1%BA%A3nh+Nhi%E1%BB%87m+V%E1%BB%A5+tr%C6%B0%E1%BB%9Bc+khi+upload')
+                    slug_val = (qs.get('slug', [''])[0] or '').strip()
+                    existing_html = ''
+                    if slug_val and SAFE_SLUG_RE.match(slug_val):
+                        sdir = MEDIA_DROP_ROOT / slug_val
+                        if sdir.is_dir():
+                            base = self.origin_base()
+                            urls = [f'{base}/media/{slug_val}/{p.name}' for p in sorted(sdir.iterdir()) if p.is_file()]
+                            if urls:
+                                existing_html = '<h3>File đã upload cho ' + _esc(slug_val) + '</h3><pre>' + _esc(json.dumps({'slug': slug_val, 'urls': urls}, ensure_ascii=False, indent=2)) + '</pre>'
+                    page_html = (
+                        f'<!doctype html><html><head><meta charset="utf-8"><title>Muse Media Upload</title><style>{BASE_CSS}</style></head><body>'
+                        '<div class="wrap"><div class="card">'
+                        '<h2>Muse Media Dropbox (muse.alltool.pro)</h2>'
+                        '<p>Chọn toàn bộ ảnh 9:16 hoặc clip video .mp4 (hoặc 1 file .zip) cho tập phim rồi bấm Upload Media. Tối đa 120 MB/lần.</p>'
+                        '<form method="post" action="/media-upload" enctype="multipart/form-data">'
+                        f'<label>Mã tập (slug, vd: pn02_nguoi_di_cham_lai)</label><input name="slug" value="{_esc(slug_val)}" required pattern="[A-Za-z0-9_-]{{2,80}}">'
+                        '<label>Chọn file (chọn nhiều file cùng lúc hoặc 1 file .zip)</label><input type="file" name="files" multiple required>'
+                        '<label><input type="checkbox" name="extract" value="1" checked> Tự động giải nén nếu là file .zip</label>'
+                        '<div style="margin-top:12px"><button class="btn" type="submit">Upload Media</button> <a class="btn sec" href="/portal">Quay lại Sảnh</a></div>'
+                        '</form>'
+                        f'{existing_html}'
+                        '</div></div></body></html>'
+                    )
+                    return self.send_html(200, page_html)
+
+                if route.startswith('/media/'):
+                    parts = route.removeprefix('/media/').split('/')
+                    if len(parts) != 2 or not SAFE_SLUG_RE.match(parts[0]):
+                        return self.send_json(404, {'error': 'not_found'})
+                    fname = _safe_media_name(parts[1])
+                    if not fname:
+                        return self.send_json(404, {'error': 'not_found'})
+                    target = (MEDIA_DROP_ROOT / parts[0] / fname).resolve()
+                    try:
+                        target.relative_to(MEDIA_DROP_ROOT.resolve())
+                    except ValueError:
+                        return self.send_json(403, {'error': 'forbidden'})
+                    if not target.is_file():
+                        return self.send_json(404, {'error': 'not_found'})
+                    mime, _ = mimetypes.guess_type(target.name)
+                    return self.send_bytes(200, target.read_bytes(), mime or 'application/octet-stream', cache_control='public, max-age=86400')
+
                 if route == '/admin':
                     adm = self.current_admin()
                     if not adm:
@@ -572,6 +657,77 @@ def make_hub_handler(hub: HubManager):
                     data = json.loads(self.read_body().decode('utf-8'))
                     joined = hub.join_with_invite(data.get('code', ''), self.client_ip(), data.get('role') or None)
                     return self.send_json(200, joined)
+
+                if route == '/media-upload':
+                    w, _ = self.current_worker()
+                    if not w and not self.current_admin():
+                        return self.send_json(403, {'error': 'worker_auth_required'})
+                    qs = parse_qs(urlsplit(self.path).query)
+                    ctype = self.headers.get('Content-Type', '')
+                    n = int(self.headers.get('Content-Length', '0'))
+                    if not (0 < n <= MEDIA_MAX_BYTES):
+                        return self.send_json(413, {'error': 'payload_too_large_max_120MB'})
+                    self.connection.settimeout(120)
+                    raw_body = self.rfile.read(n)
+                    fields: dict[str, str] = {}
+                    uploads: list[tuple[str, bytes]] = []
+                    if 'multipart/form-data' in ctype.lower():
+                        fields, uploads = _parse_multipart(ctype, raw_body)
+                    else:
+                        fields['slug'] = (qs.get('slug', [''])[0] or '').strip()
+                        fields['extract'] = (qs.get('extract', ['1'])[0] or '1').strip()
+                        raw_name = (qs.get('name', [''])[0] or '').strip()
+                        if raw_name:
+                            uploads.append((raw_name, raw_body))
+                    slug_val = (fields.get('slug') or qs.get('slug', [''])[0] or '').strip()
+                    if not SAFE_SLUG_RE.match(slug_val):
+                        return self.send_json(400, {'error': 'invalid_slug'})
+                    if not uploads:
+                        return self.send_json(400, {'error': 'no_files_uploaded'})
+                    sdir = MEDIA_DROP_ROOT / slug_val
+                    sdir.mkdir(parents=True, exist_ok=True)
+                    base = self.origin_base()
+                    saved: list[dict] = []
+                    do_extract = fields.get('extract', '1') != '0'
+                    for raw_name, payload in uploads:
+                        safe = _safe_media_name(raw_name)
+                        if not safe or not payload:
+                            continue
+                        if safe.lower().endswith('.zip') and do_extract:
+                            tmp_zip = sdir / safe
+                            tmp_zip.write_bytes(payload)
+                            try:
+                                with zipfile.ZipFile(tmp_zip, 'r') as zf:
+                                    for info in zf.infolist():
+                                        if info.is_dir() or info.file_size > 60 * 1024 * 1024:
+                                            continue
+                                        inner = _safe_media_name(info.filename)
+                                        if not inner or inner.lower().endswith('.zip'):
+                                            continue
+                                        data_in = zf.read(info)
+                                        (sdir / inner).write_bytes(data_in)
+                                        saved.append({'name': inner, 'size': len(data_in), 'url': f'{base}/media/{slug_val}/{inner}'})
+                            finally:
+                                tmp_zip.unlink(missing_ok=True)
+                        else:
+                            (sdir / safe).write_bytes(payload)
+                            saved.append({'name': safe, 'size': len(payload), 'url': f'{base}/media/{slug_val}/{safe}'})
+                    saved.sort(key=lambda x: x['name'])
+                    result_obj = {'ok': True, 'slug': slug_val, 'count': len(saved), 'files': saved}
+                    want_json = 'application/json' in (self.headers.get('Accept', '').lower()) or qs.get('json', ['0'])[0] == '1'
+                    if want_json:
+                        return self.send_json(200, result_obj)
+                    links_li = ''.join(f'<li><a href="{_esc(x["url"])}" target="_blank">{_esc(x["url"])}</a> ({x["size"]} B)</li>' for x in saved)
+                    page_html = (
+                        f'<!doctype html><html><head><meta charset="utf-8"><title>Upload OK</title><style>{BASE_CSS}</style></head><body>'
+                        '<div class="wrap"><div class="card">'
+                        f'<h2>Upload thành công {len(saved)} file cho {_esc(slug_val)}</h2>'
+                        f'<ul>{links_li}</ul>'
+                        f'<h3>JSON copy vào form Nộp Kết Quả</h3><pre>{_esc(json.dumps(result_obj, ensure_ascii=False, indent=2))}</pre>'
+                        f'<a class="btn" href="/portal">Quay lại Sảnh Nộp Kết Quả</a> <a class="btn sec" href="/media-upload?slug={_esc(slug_val)}">Upload thêm</a>'
+                        '</div></div></body></html>'
+                    )
+                    return self.send_html(200, page_html)
 
                 # JSON Worker API endpoints (/api/claim, /api/tasks/{id}/heartbeat, /api/tasks/{id}/result)
                 if route == '/api/claim' or (route.startswith('/api/tasks/') and route.endswith(('/heartbeat', '/result'))):
