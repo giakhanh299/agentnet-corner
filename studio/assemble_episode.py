@@ -249,27 +249,44 @@ def ass_time(t: float) -> str:
 
 
 def split_caption_chunks(text: str, start: float, end: float, max_words: int = 12) -> list[tuple[float, float, str]]:
-    """Tách câu dài thành từng cụm phụ đề 1-2 dòng theo tỷ lệ số từ để không bị cắt mất chữ."""
-    words = text.split()
+    """Tách câu dài theo dấu ngắt câu (, ; : . ! ? …) và gộp cụm quá ngắn để không bao giờ treo 1-2 chữ lẻ."""
+    clean = re.sub(r"\s+", " ", (text or "").strip())
+    words = clean.split()
     if len(words) <= max_words:
-        return [(start, end, text)]
-    parts = [p.strip() for p in re.split(r"(?<=[.!?…])\s+", text.strip()) if p.strip()]
+        return [(start, end, clean)]
+    clauses = [p.strip() for p in re.split(r"(?<=[,;:—.!?…])\s+", clean) if p.strip()]
     chunks: list[str] = []
-    for p in parts:
-        pw = p.split()
-        if len(pw) <= max_words:
-            chunks.append(p)
+    cur = ""
+    for cl in clauses:
+        cand = f"{cur} {cl}".strip() if cur else cl
+        if len(cand.split()) <= max_words:
+            cur = cand
         else:
-            for i in range(0, len(pw), max_words):
-                chunks.append(" ".join(pw[i:i + max_words]))
+            if cur:
+                chunks.append(cur)
+                cur = ""
+            cw = cl.split()
+            if len(cw) <= max_words:
+                cur = cl
+            else:
+                # Chia đều hai nửa cân đối thay vì để mẩu cuối chỉ còn 1-2 từ
+                n_parts = (len(cw) + max_words - 1) // max_words
+                step = (len(cw) + n_parts - 1) // n_parts
+                for i in range(0, len(cw), step):
+                    chunks.append(" ".join(cw[i:i + step]))
+    if cur:
+        if chunks and len(cur.split()) <= 3 and len(chunks[-1].split()) + len(cur.split()) <= max_words + 2:
+            chunks[-1] = f"{chunks[-1]} {cur}"
+        else:
+            chunks.append(cur)
     total_w = max(1, sum(len(c.split()) for c in chunks))
     dur = max(0.2, end - start)
-    cur = start
+    t_cur = start
     out = []
     for c in chunks:
         seg = dur * (len(c.split()) / total_w)
-        out.append((cur, cur + seg, c))
-        cur += seg
+        out.append((t_cur, t_cur + seg, c))
+        t_cur += seg
     return out
 
 
