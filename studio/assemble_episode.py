@@ -293,18 +293,89 @@ def write_ass(cues: list[tuple[float, float, str]], path: Path) -> None:
 
 # ---------- Ghép ----------
 
+def _resolve_scene_voice(sc: dict, spec: dict, voice_override: str | None) -> str:
+    if voice_override:
+        return voice_override
+    sv = str(sc.get("voice") or "").strip().lower()
+    if sv:
+        return sv
+    gender = str(sc.get("gender") or sc.get("speaker_gender") or "").strip().lower()
+    cid = str(spec.get("target_channel") or "").upper().strip()
+    series_low = str(spec.get("series") or "").lower()
+    mus_gen = str((spec.get("music") or {}).get("generator", "")).lower()
+    is_wuxia = mus_gen == "wuxia" or "kiếm hiệp" in series_low or "cổ trang" in series_low
+    is_horror = spec.get("color_grade") == "folk_horror" or "phim ma" in series_low
+
+    if gender in ("female", "nu", "nữ"):
+        return "kiemhiep_nu"
+    if gender in ("male", "nam"):
+        return "chautinhtri" if is_wuxia else "kiemhiep_nam"
+
+    if is_wuxia:
+        vo_low = (sc.get("voiceover") or "").lower()
+        pr_low = (sc.get("image_prompt") or "").lower()
+        fem_markers = ("cô nương", "nữ hiệp", "thiếu nữ", "sư muội", "nàng ", "cô gái")
+        fem_img = ("swordswoman", "young woman", "female warrior", "maiden", "girl in hanfu")
+        if any(m in vo_low for m in fem_markers) or any(m in pr_low for m in fem_img):
+            return "kiemhiep_nu"
+        return "chautinhtri"
+
+    if is_horror:
+        return "phonui"
+    if cid == "KENH_001":
+        return "tienvadoi"
+    if cid == "KENH_008":
+        return "taplamcontent"
+    raw_v = str(spec.get("voice") or "").strip().lower()
+    if raw_v in ("", "maianh") and cid == "KENH_008":
+        return "taplamcontent"
+    return raw_v or "phonui"
+
+
 def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_override: str | None = None) -> dict:
     work.mkdir(parents=True, exist_ok=True)
     scenes = sorted(spec["scenes"], key=lambda s: s["id"])
     report = {"title": spec.get("title"), "scenes": [], "warnings": []}
 
-    # 1-2. Hình
+    # 1. Giọng (tổng hợp trước để khóa thời lượng từng cảnh sát lời đọc — triệt tiêu khoảng nghỉ chết)
+    cover_intro_s = float(spec.get("cover_intro_s", 0.85))
+    tight_pacing = bool(spec.get("tight_pacing", True))
+    cid = str(spec.get("target_channel") or "").upper().strip()
+
+    vo_items = [(i, sc, _resolve_scene_voice(sc, spec, voice_override))
+                for i, sc in enumerate(scenes) if (sc.get("voiceover") or "").strip()]
+    wavs = voice_mod.synth_multi([(sc["voiceover"].strip(), vk) for _, sc, vk in vo_items], work / "voice") if vo_items else []
+
+    vo_by_idx: dict[int, tuple[Path, float, float, str]] = {}
+    voices_used: list[str] = []
+    for (idx, sc, vk), wav in zip(vo_items, wavs):
+        if vk not in voices_used:
+            voices_used.append(vk)
+        if sc.get("ghost"):
+            wav = voice_mod.ghost_fx(wav, work / "voice" / f"ghost_{sc['id']:02d}.wav", float(sc.get("ghost_semitones", -3)))
+        d = voice_mod.duration(wav)
+        if idx == 0 and cover_intro_s > 0:
+            base_vo_at = max(cover_intro_s + 0.04, 0.88)
+        elif tight_pacing:
+            base_vo_at = min(float(sc.get("vo_at", 0.12)), 0.16)
+        else:
+            base_vo_at = float(sc.get("vo_at", 0.35))
+        vo_by_idx[idx] = (wav, d, base_vo_at, vk)
+
+    # 2. Hình (tự co giãn sát nhịp lời thoại khi tight_pacing=True để không còn khoảng lặng thừa)
     seg_list = work / "segments.txt"
     t_cursor = 0.0
     starts = []
+    vo_tracks, cues = [], []
     with seg_list.open("w", encoding="utf-8") as f:
         for i, sc in enumerate(scenes):
-            dur = float(sc["duration_s"])
+            spec_dur = float(sc["duration_s"])
+            if i in vo_by_idx and tight_pacing:
+                wav, d, base_vo_at, vk = vo_by_idx[i]
+                tail_pad = 0.22 if i == len(scenes) - 1 else 0.16
+                dur = round(max(2.2, base_vo_at + d + tail_pad), 2)
+            else:
+                dur = spec_dur
             src = fetch_clip(sc.get("clip", ""), clips_dir, work, sc["id"])
             seg = work / f"seg_{sc['id']:02d}.mp4"
             how = render_scene(src, dur, seg, motion=str(sc.get("motion") or ""), idx=i)
@@ -312,56 +383,20 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
                 report["warnings"].append(f"Cảnh {sc['id']}: thiếu clip, dùng nền đen")
             f.write(f"file '{seg.name}'\n")
             starts.append(t_cursor)
-            report["scenes"].append({"id": sc["id"], "start": round(t_cursor, 2), "dur": dur, "video": how})
+            sc_rec = {"id": sc["id"], "start": round(t_cursor, 2), "dur": dur, "video": how}
+            if i in vo_by_idx:
+                wav, d, base_vo_at, vk = vo_by_idx[i]
+                at = t_cursor + base_vo_at
+                vo_tracks.append((wav, at))
+                cues.append((at, at + d, sc.get("caption") or sc["voiceover"], "Ghost" if sc.get("ghost") else "Default"))
+                sc_rec["voice"] = vk
+                sc_rec["vo_dur"] = round(d, 2)
+            report["scenes"].append(sc_rec)
             t_cursor += dur
-    total = t_cursor
+    total = round(t_cursor, 2)
     video_silent = work / "video_silent.mp4"
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", seg_list.name, "-c", "copy", video_silent.name], cwd=work)
-
-    # 3. Giọng
-    cover_intro_s = float(spec.get("cover_intro_s", 0.85))
-    vo_items = [(i, sc) for i, sc in enumerate(scenes) if (sc.get("voiceover") or "").strip()]
-    cid = str(spec.get("target_channel") or "").upper().strip()
-    default_voice = (
-        "tienvadoi" if cid == "KENH_001"
-        else "taplamcontent" if cid == "KENH_008"
-        else "phimma"
-    )
-    raw_spec_voice = str(spec.get("voice") or "").strip().lower()
-    if voice_override:
-        voice_name = voice_override
-    elif raw_spec_voice in ("", "phonui") and cid in ("KENH_005", "KENH_002"):
-        voice_name = "phimma"
-    elif raw_spec_voice in ("", "maianh") and cid == "KENH_008":
-        voice_name = "taplamcontent"
-    elif raw_spec_voice == "" and cid == "KENH_001":
-        voice_name = "tienvadoi"
-    else:
-        voice_name = raw_spec_voice or default_voice
-
-    wavs = voice_mod.synth([sc["voiceover"].strip() for _, sc in vo_items], work / "voice", voice=voice_name) if vo_items else []
-    vo_tracks, cues = [], []
-    for (idx, sc), wav in zip(vo_items, wavs):
-        if sc.get("ghost"):
-            wav = voice_mod.ghost_fx(wav, work / "voice" / f"ghost_{sc['id']:02d}.wav", float(sc.get("ghost_semitones", -3)))
-        base_vo_at = float(sc.get("vo_at", 0.45))
-        if idx == 0 and cover_intro_s > 0:
-            base_vo_at = max(base_vo_at, cover_intro_s + 0.05)
-        sc_dur = float(sc["duration_s"])
-        d = voice_mod.duration(wav)
-        avail = max(0.8, sc_dur - base_vo_at - 0.08)
-        if d > avail and d / avail <= 1.38:
-            fit_wav = work / "voice" / f"fit_{sc['id']:02d}.wav"
-            ratio = min(1.38, max(1.02, (d / avail) * 1.02))
-            run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav),
-                 "-af", f"atempo={ratio:.3f}", "-ar", "48000", str(fit_wav)])
-            wav = fit_wav
-            d = voice_mod.duration(wav)
-        at = starts[idx] + base_vo_at
-        if at + d > starts[idx] + sc_dur + 0.08:
-            report["warnings"].append(f"Cảnh {sc['id']}: lời dài {d:.1f}s vượt thời lượng cảnh")
-        vo_tracks.append((wav, at))
-        cues.append((at, at + d, sc.get("caption") or sc["voiceover"], "Ghost" if sc.get("ghost") else "Default"))
+    voice_name = "+".join(voices_used) if voices_used else str(spec.get("voice") or "phonui")
 
     # 4. Nhạc
     music_wav = work / "music.wav"
@@ -393,15 +428,25 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     manifest = load_sfx_manifest()
     sfx_tracks = []
     for idx, sc in enumerate(scenes):
-        for item in sc.get("sfx", []):
-            p = resolve_sfx(item, manifest)
+        raw_sfx = sc.get("sfx") or []
+        if isinstance(raw_sfx, (dict, str)):
+            raw_sfx = [raw_sfx]
+        elif isinstance(raw_sfx, list) and len(raw_sfx) >= 3 and all(isinstance(x, dict) and len(str(x.get("tag", ""))) == 1 for x in raw_sfx):
+            joined_tag = "".join(str(x.get("tag", "")) for x in raw_sfx)
+            raw_sfx = [{"tag": joined_tag, "desc": joined_tag, "at": raw_sfx[0].get("at", 0), "gain_db": raw_sfx[0].get("gain_db", -24)}]
+        for item in raw_sfx:
             label = item if isinstance(item, str) else item.get("tag") or item.get("desc")
+            if str(label) in ("tag", "gain_db", "at", "dur", "desc"):
+                continue
+            p = resolve_sfx(item, manifest)
             if not p:
                 report["warnings"].append(f"Cảnh {sc['id']}: chưa có SFX cho '{label}'")
                 continue
             it = item if isinstance(item, dict) else {}
-            at = starts[idx] + float(it.get("at", 0))
-            dur = float(it.get("dur", sc["duration_s"] - float(it.get("at", 0))))
+            actual_sc_dur = float(report["scenes"][idx]["dur"])
+            rel_at = min(float(it.get("at", 0)), max(0.0, actual_sc_dur - 0.5))
+            at = starts[idx] + rel_at
+            dur = max(0.5, min(float(it.get("dur", actual_sc_dur - rel_at)), actual_sc_dur - rel_at))
             gain = float(it.get("gain_db", -22))
             sfx_tracks.append((p, at, dur, gain))
             report["scenes"][idx].setdefault("sfx", []).append(f"{label}→{p.name}")
