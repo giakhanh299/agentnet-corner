@@ -1,0 +1,145 @@
+{
+  "series": "Góc Nhỏ Phố Núi",
+  "channel": "Góc Nhỏ Phố Núi",
+  "episode_id": "pn05",
+  "episode_number": 5,
+  "title": "Ngọn Đèn Nhỏ Cuối Con Dốc",
+  "cover_text": "NGỌN ĐÈN CUỐI CON DỐC",
+  "hook": "Dù đi xa đến đâu, vẫn có một ngọn đèn ấm đợi bạn về.",
+  "voice": "phonui",
+  "color_grade": "vivid_doc",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "duration_seconds": 55,
+  "hashtags": [
+    "#GocNhoPhoNui",
+    "#ChuaLanh",
+    "#DaLat",
+    "#AIGC"
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden lamplight glows on a misty Dalat pine hill slope at dusk, a small wooden cafe below, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Toàn cảnh",
+      "voiceover": "Chiều xuống, con dốc Đà Lạt chìm trong sương mỏng",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lamp light shines through wooden cafe windows on a foggy slope, a woman opening doors, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Quán gỗ nhỏ mở cửa, đèn vàng vừa sáng lên",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Warm light falls on a teapot and old wooden table inside the cafe, steam rising softly, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Cận cảnh",
+      "voiceover": "Bà chủ đặt ấm trà nóng lên bàn gỗ cũ",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm light follows a tired traveler walking up stone steps toward the glowing cafe, misty pine trees behind, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Khách lạ dừng xe, bước chậm lên từng bậc đá",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lamplight warms a young traveler telling his story at a wooden table, listening host opposite, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Anh kể về những chuyến đi dài và mỏi mệt",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm light glows on cold hands wrapped around a hot tea cup near a small lamp, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Cận cảnh",
+      "voiceover": "Ngọn đèn nhỏ soi ấm đôi bàn tay lạnh giá",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm light inside the cafe as light rain falls on the wooden roof outside, peaceful mood, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Toàn cảnh",
+      "voiceover": "Tiếng mưa rơi nhẹ trên mái, lòng bỗng dịu lại",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm light on a kind elderly woman smiling while pouring fragrant tea, gentle wrinkles, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Cận cảnh",
+      "voiceover": "Bà cười hiền, rót thêm một chén trà thơm",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Warm yellow lights glow quietly over a misty mountain town street at night, pine silhouettes, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Toàn cảnh",
+      "voiceover": "Đêm về, phố núi lặng yên dưới ánh đèn vàng",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm light on a traveler gazing thoughtfully through the cafe window at the glowing slope, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Anh hiểu ra, nhà không chỉ là một nơi chốn",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lamplight shines brightly from the small wooden cafe at the end of the misty slope, inviting home, cozy Dalat misty pine hill wooden cafe, warm morning light photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "Toàn cảnh",
+      "voiceover": "Đi xa đến đâu, đèn ấm vẫn đợi bạn về",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "episode": 5,
+  "seed": 305,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

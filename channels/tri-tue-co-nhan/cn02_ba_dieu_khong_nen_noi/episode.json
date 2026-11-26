@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "wuxia",
+  "cover_hook": "Giận đừng nói lời cay, vui đừng hứa vội vàng…",
+  "cover_theme": "wuxia",
+  "cover_title": "BA ĐIỀU ĐỪNG VỘI NÓI",
+  "cta": "Bạn từng nói vội điều gì chưa? Bình luận nhé!",
+  "description": "Cổ nhân dặn có ba điều đừng vội nói: lúc giận đừng nói lời cay, lúc vui đừng hứa vội vàng, lúc buồn đừng than vãn khắp nơi. Nói chậm một nhịp, lòng nhẹ, đời cũng nhẹ.",
+  "episode": 2,
+  "hashtags": [
+    "#TriTueCoNhan",
+    "#TrietLySong",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no blood, no gore, no violence, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Ba Điều Cổ Nhân Dặn Đừng Vội Nói | Trí Tuệ Cổ Nhân Tập 2",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – giận đừng nói, vui đừng hứa",
+      "duration_s": 5.0,
+      "image_prompt": "Soft misty dawn light over an ancient mountain tea house, serene ink-wash landscape, cinematic photography, vertical 9:16, no text, no watermark.",
+      "motion": "máy quay mở rộng chậm từ mây mù lên trà thất cổ trên núi",
+      "voiceover": "Giận đừng nói lời cay, vui đừng hứa vội vàng...",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Cổ nhân dặn",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on an old scholar pouring tea, misty mountain view, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay đẩy chậm vào bậc trí giả rót trà trong nắng sớm",
+      "voiceover": "Cổ nhân dặn: lời nói ra khó thu lại được.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước trà rót khẽ",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Điều thứ nhất – giận",
+      "duration_s": 5.0,
+      "image_prompt": "Golden dawn light on a calm mountain lake, ink-wash painting style, serene East Asian landscape, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm qua mặt hồ núi lặng trong nắng sớm",
+      "voiceover": "Điều thứ nhất: giận, đừng nói lời cay độc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước hồ gợn nhẹ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 2,
+          "desc": "chim hót buổi sớm",
+          "dur": 3,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Lời cay như dao",
+      "duration_s": 5.0,
+      "image_prompt": "Soft light on a sharp sword resting beside a tea cup, misty dawn, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "zoom chậm vào thanh kiếm đặt bên chén trà trong sương sớm",
+      "voiceover": "Lời cay như dao, cắt vào lòng người thân.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gỗ kẽo kẹt nhẹ",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua trà thất",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Điều thứ hai – vui",
+      "duration_s": 5.0,
+      "image_prompt": "Bright morning light on blooming flowers by a tea house, misty mountains, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay đẩy chậm vào hoa nở bên trà thất trong nắng sớm",
+      "voiceover": "Điều thứ hai: vui, đừng hứa vội vàng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua hoa",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "chim hót vui buổi sáng",
+          "dur": 4,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Lời hứa vội thành gánh nặng",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on a promise scroll and tea set, misty dawn, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm qua cuộn giấy và bộ ấm trà dưới đèn lồng",
+      "voiceover": "Lời hứa vội thành gánh nặng cho mai sau.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "đèn lồng cháy ấm",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "fire_lamp"
+        },
+        {
+          "at": 1,
+          "desc": "gỗ kẽo kẹt nhẹ",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "wood_creak"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Điều thứ ba – buồn",
+      "duration_s": 5.0,
+      "image_prompt": "Soft rain light on a quiet mountain pavilion, misty dawn, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung đình núi yên tĩnh trong mưa nhẹ",
+      "voiceover": "Điều thứ ba: buồn, đừng than vãn khắp nơi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "mưa nhẹ trên mái đình",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "rain"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -29.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Than vãn làm lòng nặng nề",
+      "duration_s": 5.0,
+      "image_prompt": "Gentle dawn light on a lone scholar walking a misty mountain path, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay theo sau bậc trí giả bước chậm trên đường núi trong sương",
+      "voiceover": "Than vãn nhiều chỉ làm lòng thêm nặng nề.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân chậm trên đường núi",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Nói chậm một nhịp",
+      "duration_s": 5.0,
+      "image_prompt": "Calm golden light on still water reflecting misty mountains, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung mặt nước lặng soi bóng núi trong nắng vàng",
+      "voiceover": "Nói chậm một nhịp, lòng nhẹ, đời cũng nhẹ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước lặng gợn nhẹ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 1,
+          "desc": "chim hót xa",
+          "dur": 3,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Ba điều nhớ kỹ",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunrise light on an ancient tea house in misty mountains, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay mở rộng chậm lên trà thất cổ trong nắng sớm",
+      "voiceover": "Ba điều nhớ kỹ, cả đời không hối hận.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió sớm qua núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Bright dawn light over misty mountains and a tea house, a scholar smiling, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay mở rộng chậm lên núi mây mù trong nắng sớm",
+      "voiceover": "Bạn từng nói vội điều gì chưa? Bình luận nhé!",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió sớm qua núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "chim hót buổi sáng",
+          "dur": 3,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    }
+  ],
+  "series": "Trí Tuệ Cổ Nhân",
+  "title": "Ba Điều Cổ Nhân Dặn Đừng Vội Nói",
+  "voice": "phonui",
+  "seed": 402,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

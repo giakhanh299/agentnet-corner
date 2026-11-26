@@ -1,0 +1,309 @@
+{
+  "episode_id": "pn04_buong_bo_noi_lo_ngay_mai",
+  "title": "Buông Bỏ Nỗi Lo Của Ngày Mai",
+  "cover_title": "BUÔNG NỔI LO NGÀY MAI",
+  "series": "Góc Nhỏ Phố Núi",
+  "voice": "phonui",
+  "color_grade": "vivid_doc",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#GocNhoPhoNui",
+    "#ChuaLanh",
+    "#DaLat",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no deformed hands, no extra fingers, no blurry face, no low quality, no distorted architecture",
+  "hook": "Chuyện ngày mai để ngày mai tính, tối nay cứ ngủ thật yên",
+  "total_duration": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden lamp light in a cozy wooden mountain room at night, misty pine hill outside the window, a cup of hot tea steaming, peaceful atmosphere, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Chuyện ngày mai để ngày mai, tối nay ngủ yên.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm light on a person gently setting down a heavy backpack in a wooden room, misty pine forest outside, calm relieved mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nỗi lo nặng trĩu vai, đặt xuống rồi thở nhẹ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Warm yellow lamp light on a clay teapot steaming on a wooden table, cozy mountain room, pine shadows on the wall, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Đèn vàng ấm trong phòng, trà nóng bốc khói thơm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lamp light on hands writing on paper at a wooden desk, a folded note beside a tea cup, misty night outside, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Viết nỗi lo ra giấy, gấp lại rồi cất đi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cool moonlight through pine branches swaying gently at night, mist drifting over Da Lat hills, wooden cabin window glowing warm, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Gió đêm lay cành thông, lòng dần yên như sương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lamp light on a person looking out a wooden window at misty night pines, calm thoughtful face, cozy Da Lat room, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ngày mai chưa tới, đừng vay buồn hôm nay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm light on closed eyes resting peacefully, gentle rain on a wooden rooftop, misty pine hill at night, cozy calm mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nhắm mắt nghe mưa rơi, mọi thứ rồi sẽ ổn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light on a person breathing deeply with eyes closed, steam from tea curling up, misty Da Lat night, peaceful release, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Một hơi thở sâu, buông hết những điều chưa xong.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lamp light on a cozy bed with soft blankets in a wooden mountain room, pine forest night outside, tranquil sleepy mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Chăn ấm, gối mềm, giấc ngủ đến thật nhẹ nhàng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Bright warm morning sunlight breaking over misty Da Lat pine hills, golden rooftops waking, fresh hopeful mood, wooden terrace foreground, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Sớm mai nắng lên, ta lại bắt đầu tươi mới.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light on a wooden chair and empty tea cup at sunrise, misty pine hill behind, peaceful farewell mood, Da Lat morning, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Buông bỏ nỗi lo, ngủ ngon nhé phố núi ơi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 4,
+  "seed": 304,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

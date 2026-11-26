@@ -1,0 +1,308 @@
+{
+  "episode_id": "td03_quy_du_phong_sau_thang",
+  "title": "Quỹ Dự Phòng Sáu Tháng Sinh Hoạt",
+  "cover_title": "QUỸ DỰ PHÒNG 6 THÁNG",
+  "series": "Tiền Và Đời",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TienVaDoi",
+    "#TaiChinhCaNhan",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no deformed hands, no extra fingers, no blurry face, no low quality, no distorted architecture",
+  "hook": "Có khoản tiền này trong tay, bạn không còn sợ biến cố bất ngờ",
+  "total_duration": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a modern desk with a savings jar and notebook, coffee cup, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Có khoản tiền này, bạn không còn sợ biến cố.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a family budget notebook and calculator on a modern desk, coffee, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Quỹ dự phòng sáu tháng, tấm khiên của gia đình.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on hands putting coins into a glass savings jar, modern desk, notebook, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Mỗi tháng trích một phần, nhỏ thôi nhưng đều đặn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a calm person reviewing a budget notebook at home, coffee beside, peaceful minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ốm đau hay mất việc, quỹ này giúp ta thở.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a phone showing a separate savings account, modern desk, coffee and notebook, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Để riêng một tài khoản, chưa cần thì đừng động.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a notebook listing monthly living expenses with a pen, calculator, coffee, minimal modern desk, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Quỹ sáu tháng sinh hoạt, tính theo chi tiêu thật.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a glass jar slowly filling with coins over time, modern desk, notebook, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tích dần từng tháng, quỹ đầy lúc nào không hay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a worried person looking at bills on a modern desk, coffee untouched, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Không có quỹ dự phòng, biến cố thành khủng hoảng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Clean bright morning daylight on hands writing a first savings goal in a notebook, coffee and pen, minimal modern desk, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Bắt đầu hôm nay, dù chỉ một khoản rất nhỏ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a confident person working calmly at a modern desk, savings jar in view, coffee, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "An tâm làm việc, vì sau lưng có điểm tựa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Clean warm daylight on a peaceful home at sunrise, a savings jar and notebook on the desk, coffee steaming, minimal lifestyle photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Quỹ dự phòng sáu tháng, ngủ ngon mỗi đêm dài.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 3,
+  "seed": 503,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

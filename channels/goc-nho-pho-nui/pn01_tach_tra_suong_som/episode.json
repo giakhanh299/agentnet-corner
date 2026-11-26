@@ -1,0 +1,309 @@
+{
+  "episode_id": "pn01_tach_tra_suong_som",
+  "title": "Tách Trà Sương Sớm Phố Núi",
+  "cover_title": "TÁCH TRÀ SƯƠNG SỚM",
+  "series": "Góc Nhỏ Phố Núi",
+  "voice": "phonui",
+  "color_grade": "vivid_doc",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#GocNhoPhoNui",
+    "#ChuaLanh",
+    "#DaLat",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no deformed hands, no extra fingers, no blurry face, no low quality, no distorted architecture",
+  "hook": "Có những buổi sáng Đà Lạt chỉ cần im lặng là lòng đã nhẹ",
+  "total_duration": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden morning light over a misty pine hill in Da Lat, a small wooden cafe terrace, steam rising from a clay teapot, cozy peaceful atmosphere, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Buổi sáng Đà Lạt chỉ cần im lặng là đủ.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft dawn light through thick mist over Da Lat pine forest, quiet mountain town below, wooden cafe balcony in foreground, cozy morning photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Sương sớm phủ kín đồi thông, phố núi còn ngủ say.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on hands holding a ceramic tea cup, gentle steam curling upward, wooden table, pine trees blurred behind, cozy Da Lat cafe, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Bàn tay ấm ôm tách trà, hơi nóng lan chậm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunlight on a woman sipping hot tea on a wooden terrace, misty pine hill behind, calm serene expression, cozy Da Lat morning, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Trà nóng chạm môi, vị đắng nhẹ rồi ngọt dần.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Golden morning light filtering through pine branches, small birds perched on a branch, mist drifting, peaceful Da Lat hillside, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tiếng chim hót xa xa, gió khẽ lay cành thông.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on a person sitting quietly on a wooden bench, mist slowly lifting from the valley, pine hills glowing, cozy contemplative mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ngồi yên nhìn sương tan, chẳng cần vội vàng gì.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm light on a tiny wooden cafe corner among pine trees, string lights and tea set on table, misty Da Lat morning, cozy inviting atmosphere, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Một góc nhỏ phố núi, đủ cho lòng an yên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunrise light through misty pine forest, dew on green pine needles, fresh mountain air, wooden path in Da Lat hills, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Hít sâu mùi thông, mùi đất ẩm sau đêm dài.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on a second cup of tea being poured, golden tea stream, steam rising, wooden cafe table, misty pine background, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tách trà thứ hai, lòng nhẹ như sương sớm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Bright warm morning sunlight over Da Lat town waking up, golden rooftops and pine hills, cheerful peaceful mood, wooden cafe terrace foreground, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nắng lên, phố núi thức giấc trong tiếng cười khẽ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light on an empty wooden chair and tea cup at sunrise, misty pine hill behind, hopeful peaceful farewell mood, Da Lat cafe, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Hẹn nhau sáng mai, vẫn góc nhỏ này nhé.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 1,
+  "seed": 301,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

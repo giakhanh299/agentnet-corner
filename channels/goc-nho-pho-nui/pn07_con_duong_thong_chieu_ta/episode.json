@@ -1,0 +1,309 @@
+{
+  "episode_id": "pn07_con_duong_thong_chieu_ta",
+  "title": "Con Đường Rừng Thông Chiều Tà",
+  "cover_title": "RỪNG THÔNG CHIỀU TÀ",
+  "series": "Góc Nhỏ Phố Núi",
+  "voice": "phonui",
+  "color_grade": "vivid_doc",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#GocNhoPhoNui",
+    "#ChuaLanh",
+    "#DaLat",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no deformed hands, no extra fingers, no blurry face, no low quality, no distorted architecture",
+  "hook": "Gió qua đồi thông nhắc bạn: vết thương nào rồi cũng lành",
+  "total_duration": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden afternoon light through a misty pine forest in Da Lat, wind moving the branches, a wooden path winding, peaceful healing mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Gió qua đồi thông nhắc bạn, vết thương rồi cũng lành.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunset light painting a Da Lat pine forest gold, long shadows on a wooden trail, mist drifting, cozy nostalgic atmosphere, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Chiều tà nhuộm vàng rừng thông, bóng dài trên lối.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Golden afternoon light on slow footsteps over dry pine needles, tall pine trees around, misty Da Lat forest, calm quiet mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Bước chân chậm trên lá khô, nghe rừng thở đều.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunset rays shining through pine needles, golden light spots on a wooden path, misty Da Lat forest, tender peaceful mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nắng chiều xuyên kẽ lá, ấm như bàn tay mẹ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light on a lone person standing among tall pines at dusk, misty Da Lat hills behind, serene peaceful expression, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Một mình giữa rừng thông, lòng bỗng thấy bình yên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm light on old pine bark with a healed scar, golden sunset glow, misty forest background, symbolic hopeful mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Vết thương cũ khép lại, như vỏ cây liền sẹo.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dusk light on a person sitting under an old pine tree, wooden bench, tea cup beside, misty Da Lat forest, reflective calm mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ngồi xuống gốc thông già, kể hết chuyện buồn xưa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm purple sunset light over misty Da Lat pine hills, birds flying home, wooden cafe silhouette, peaceful evening mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Chim chiều bay về tổ, trời dần tím hoàng hôn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Golden evening light on a person breathing deeply in a pine forest, fresh resin scent, mist swirling, strong hopeful mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Hít sâu mùi nhựa thông, thấy mình còn mạnh mẽ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden sunset light on a wooden path back through misty pine forest, long soft shadows, peaceful Da Lat evening, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Đường về phủ nắng vàng, bước chân nhẹ hơn trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light on green pine hills at sunrise, mist lifting, a wooden terrace with tea, hopeful new morning in Da Lat, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ngày mai rừng vẫn xanh, và ta cũng sẽ lành.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 7,
+  "seed": 307,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

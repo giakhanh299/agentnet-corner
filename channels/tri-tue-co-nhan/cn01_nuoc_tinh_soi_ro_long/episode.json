@@ -1,0 +1,308 @@
+{
+  "episode_id": "cn01_nuoc_tinh_moi_soi_ro_long",
+  "title": "Nước Tĩnh Mới Soi Rõ Lòng Người",
+  "cover_title": "NƯỚC TĨNH SOI LÒNG",
+  "series": "Trí Tuệ Cổ Nhân",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TriTueCoNhan",
+    "#TrietLySong",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no deformed hands, no extra fingers, no blurry face, no low quality, no distorted architecture",
+  "hook": "Tâm đang động thì nhìn đâu cũng thấy sóng gió?",
+  "total_duration": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Serene dawn light over ancient East Asian ink-wash mountains, a small tea house on a cliff, mist drifting, cinematic photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tâm đang động thì nhìn đâu cũng thấy sóng gió.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft dawn light on a still mountain lake reflecting ink-wash peaks, a tea house silhouette, serene ancient East Asian mood, cinematic, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nước tĩnh mới soi rõ lòng người, như gương sáng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Serene ink-wash light on an old scholar reading in a mountain tea house at dawn, bamboo and mist, ancient East Asian cinematic photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Cổ nhân dạy rằng, lặng mới nghe được tiếng lòng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dawn light on a clay teapot steaming in an ancient mountain tea house, clouds below the terrace, serene ink-wash mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Một chén trà nóng, ngồi yên giữa núi mây.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Serene dawn light on misty mountains with distant storm clouds, a calm tea house on a cliff, ancient East Asian ink-wash cinematic photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Sóng gió ngoài kia, chẳng chạm được tâm tĩnh lặng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light on a mountain stream flowing gently toward a distant sea, ink-wash peaks, serene ancient East Asian mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Người trí không tranh, như nước chảy về biển lớn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Serene dawn light on white clouds drifting over ink-wash mountains, a lone scholar on a terrace, peaceful ancient East Asian cinematic mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Buông giận một khắc, lòng nhẹ tựa mây trôi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dawn light on a scholar gazing into a still tea bowl, reflection clear, ancient mountain tea house, serene ink-wash cinematic photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nhìn sâu vào trong, mới thấy mình còn thiếu gì.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Serene morning light on vast terraced fields below ink-wash mountains, ancient tea house on a hill, grounded peaceful mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Đức dày như đất, chở hết mọi điều thị phi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Bright dawn light breaking over ink-wash mountain peaks, a stone path leading to a tea house, hopeful serene ancient East Asian mood, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tĩnh rồi mới sáng, sáng rồi mới thấy đường đi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Serene golden light on a still mountain lake mirroring ink-wash peaks at sunrise, tea house on the shore, peaceful ancient East Asian cinematic photography, vertical 9:16, photorealistic, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nước tĩnh soi lòng, người tĩnh soi được đời mình.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 1,
+  "seed": 401,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

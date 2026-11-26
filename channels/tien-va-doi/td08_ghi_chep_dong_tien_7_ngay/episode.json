@@ -1,0 +1,355 @@
+{
+  "series": "Tiền Và Đời",
+  "channel_code": "KÊNH_001",
+  "episode_code": "td08",
+  "episode": 8,
+  "title": "Thử Ghi Chép Chi Tiêu Đúng Bảy Ngày",
+  "cover_text": "GHI CHÉP 7 NGÀY",
+  "hook": "Bạn sẽ giật mình khi thấy tiền chảy đi đâu mỗi tuần.",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "aspect_ratio": "9:16",
+  "shot_duration_seconds": 5,
+  "total_duration_seconds": 55,
+  "style": "clean modern lifestyle photography warm daylight coffee notebook minimal",
+  "hashtags": [
+    "#TienVaDoi",
+    "#TaiChinhCaNhan",
+    "#AIGC"
+  ],
+  "sfx": [
+    {
+      "tag": "pen_write",
+      "gain_db": -27
+    },
+    {
+      "tag": "coffee_pour",
+      "gain_db": -26
+    },
+    {
+      "tag": "paper_rustle",
+      "gain_db": -28
+    },
+    {
+      "tag": "coin_clink",
+      "gain_db": -27
+    },
+    {
+      "tag": "phone_tap",
+      "gain_db": -28
+    },
+    {
+      "tag": "cafe_ambience",
+      "gain_db": -29
+    },
+    {
+      "tag": "keyboard_tap",
+      "gain_db": -27
+    },
+    {
+      "tag": "wallet_open",
+      "gain_db": -26
+    },
+    {
+      "tag": "soft_chime",
+      "gain_db": -28
+    },
+    {
+      "tag": "city_ambience",
+      "gain_db": -29
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a young woman opening a notebook at a bright cafe table with coffee, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Bạn sẽ giật mình khi thấy tiền chảy đi đâu.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on hands writing expenses in a notebook beside coffee, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Bảy ngày ghi chép đủ để nhìn rõ thói quen.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on coins and small receipts arranged neatly on a wooden table, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Mỗi đồng đi ra đều có một lý do riêng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a small coffee cup beside a notebook and phone on a cafe table, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Cà phê sáng nhỏ thôi, cộng lại thành lớn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on loose coins spilling from an open wallet onto a table, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tiền lẻ rơi vãi nhiều hơn ta vẫn tưởng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a pen resting on a handwritten expense notebook, coffee nearby, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ghi lại không phải để tiếc, mà để hiểu mình.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a thoughtful young woman checking a phone calculator at a cafe, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Nhìn con số xong, ta bắt đầu chọn khác đi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on hands closing a slim wallet with relief, notebook behind, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Cắt một khoản nhỏ, ví mình thở nhẹ hơn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a young woman smiling while sorting coins into a small jar, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tiền còn lại không nhiều, nhưng mình làm chủ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a finished notebook page beside a coffee cup on a bright table, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Bảy ngày qua rồi, thói quen tốt ở lại.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a confident young woman holding a notebook and coffee, bright modern cafe, clean modern lifestyle photography, minimal, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ghi chép bảy ngày, tiền mình đi đúng hướng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "limitations": "Original script written from the task hook; no external factual source was cited and no Drive link was created, so no source link is submitted. No audio, image or video was generated or verified in this task.",
+  "seed": 508,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

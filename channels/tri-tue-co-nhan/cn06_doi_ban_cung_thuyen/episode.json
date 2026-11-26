@@ -1,0 +1,355 @@
+{
+  "series": "Trí Tuệ Cổ Nhân",
+  "channel_code": "KÊNH_004",
+  "episode_code": "cn06",
+  "episode": 6,
+  "title": "Chọn Bạn Mà Đi Đường Dài",
+  "cover_text": "CHỌN BẠN ĐƯỜNG DÀI",
+  "hook": "Gần đèn thì sáng, đi cùng người tử tế đời tự hanh thông.",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "aspect_ratio": "9:16",
+  "shot_duration_seconds": 5,
+  "total_duration_seconds": 55,
+  "style": "serene ancient East Asian ink-wash mountain tea house misty dawn cinematic photography",
+  "hashtags": [
+    "#TriTueCoNhan",
+    "#TrietLySong",
+    "#AIGC"
+  ],
+  "sfx": [
+    {
+      "tag": "morning_birds",
+      "gain_db": -27
+    },
+    {
+      "tag": "mountain_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "tea_pour",
+      "gain_db": -26
+    },
+    {
+      "tag": "footsteps_gravel",
+      "gain_db": -27
+    },
+    {
+      "tag": "bamboo_rustle",
+      "gain_db": -28
+    },
+    {
+      "tag": "distant_bell",
+      "gain_db": -29
+    },
+    {
+      "tag": "stream_flow",
+      "gain_db": -27
+    },
+    {
+      "tag": "wood_creak",
+      "gain_db": -28
+    },
+    {
+      "tag": "soft_chime",
+      "gain_db": -26
+    },
+    {
+      "tag": "fire_crackle",
+      "gain_db": -29
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Soft misty dawn light over an ancient East Asian mountain tea house, two friends sharing tea on a wooden veranda, ink-wash style, serene cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Gần đèn thì sáng, gần người tốt lòng an.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on two travelers in ancient robes walking a misty mountain path beside pine trees, ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Đi cùng người tử tế, đường dài cũng nhẹ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Gentle dawn light on a kind elder handing a warm tea cup to a young traveler, ancient mountain tea house, ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Bạn tốt không ồn ào, chỉ lặng lẽ nâng đỡ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Soft golden light on two friends talking beside a misty mountain window, tea steam rising, ancient East Asian ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Một lời nhắc đúng lúc cứu cả một đời.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cool misty light on a traveler helped up a steep stone mountain step by a friend, pine forest, ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Người xấu kéo ta xuống, người tốt dắt lên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dawn light on two pairs of feet walking together on a misty stone mountain path, ancient robes, ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Chọn bạn như chọn đường, chậm mà chắc chắn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light over a winding misty mountain road with two small travelers, pine ridges, ancient East Asian ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Đi xa không sợ mệt, chỉ sợ sai người.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Dramatic misty light on two friends sheltering together under a pine tree in mountain rain, ancient robes, ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Tình bạn thật thử qua gian khó mới bền.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Calm dawn light on a smiling elder pouring tea in a mountain tea house, mist, ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Ở gần người hiền, tâm mình cũng hiền theo.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Golden evening light on two friends leading a horse along a misty mountain trail, pine trees, ancient East Asian ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Đường dài mới biết ngựa hay, bạn hiền.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Bright misty dawn light on two friends raising tea cups together on a mountain veranda, sunrise, ink-wash cinematic photography, vertical 9:16, no text, no logo, no watermark",
+      "motion": "",
+      "voiceover": "Chọn bạn đường dài, đời mình hanh thông.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "limitations": "Original script written from the task hook; no external factual source was cited and no Drive link was created, so no source link is submitted. No audio, image or video was generated or verified in this task.",
+  "seed": 406,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

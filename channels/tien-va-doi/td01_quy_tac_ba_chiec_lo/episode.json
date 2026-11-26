@@ -1,0 +1,144 @@
+{
+  "series": "Tiền Và Đời",
+  "channel": "Tiền Và Đời",
+  "episode_id": "td01",
+  "episode_number": 1,
+  "title": "Quy Tắc Ba Chiếc Lọ Giữ Tiền",
+  "cover_text": "BA CHIẾC LỌ GIỮ TIỀN",
+  "hook": "Lương về chưa tới cuối tháng đã cạn vì thiếu một bước này?",
+  "voice": "maianh",
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": true,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "duration_seconds": 55,
+  "hashtags": [
+    "#TienVaDoi",
+    "#TaiChinhCaNhan",
+    "#AIGC"
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Bright warm daylight on a young woman checking an almost empty wallet at a clean desk, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Lương vừa về, chưa cuối tháng tiền đã cạn dần",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft daylight on coins and receipts scattered on a minimal wooden table, calm mood, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Cận cảnh",
+      "voiceover": "Thiếu một bước nhỏ, chi tiêu cứ trôi không phanh",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Clear daylight on three glass jars labeled only by color on a white desk, notebook beside, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Toàn cảnh",
+      "voiceover": "Ba chiếc lọ trên bàn, mọi thứ bỗng rõ ràng",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on hands placing cash into the first glass jar near groceries, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Cận cảnh",
+      "voiceover": "Lọ đầu giữ tiền ăn uống và sinh hoạt",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Soft daylight on hands dropping a small amount of cash into a second jar, piggy bank nearby, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Cận cảnh",
+      "voiceover": "Lọ hai dành tiết kiệm, dù chỉ một ít thôi",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Calm daylight on a third glass jar with an umbrella and first aid kit in soft background, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Lọ ba giữ tiền dự phòng lúc bất ngờ",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Bright daylight on a person dividing salary cash into three jars on payday, focused expression, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Mỗi lần nhận lương, chia tiền trước khi tiêu xài",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a hand writing expenses in a minimal notebook beside coffee, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Cận cảnh",
+      "voiceover": "Ghi từng khoản nhỏ, bạn sẽ thấy tiền đi đâu",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft evening light on three jars still containing money at month end, relieved smile, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Cuối tháng nhìn lại, ba lọ vẫn còn đủ đầy",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a confident young woman holding a jar and notebook, bright minimal home, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Trung cảnh",
+      "voiceover": "Tiền không tự giữ mình, chính bạn giữ tiền lại",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Bright daylight on three glass jars in a row on a clean desk, coffee and notebook, hopeful fresh start, clean modern lifestyle photography clean coffee notebook minimal, doc 9:16, no text, no logo, no watermark",
+      "motion": "Toàn cảnh",
+      "voiceover": "Bắt đầu từ tháng này, hãy chia ba chiếc lọ",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "episode": 1,
+  "seed": 501,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

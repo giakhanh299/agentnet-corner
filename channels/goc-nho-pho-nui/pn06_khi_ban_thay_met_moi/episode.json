@@ -1,0 +1,312 @@
+{
+  "aigc_label": true,
+  "channel": "KENH_012",
+  "color_grade": "vivid_doc",
+  "cover_hook": "Không sao cả nếu hôm nay bạn chỉ làm được một nửa…",
+  "cover_theme": "wuxia",
+  "cover_title": "MỆT RỒI THÌ NGHỈ CHÚT",
+  "cta": "Theo dõi Góc Nhỏ Phố Núi để nghe thêm những câu chuyện chữa lành mỗi ngày!",
+  "description": "Tập 06: Mệt rồi thì nghỉ chút. Ngồi xuống quán gỗ trên đồi thông Đà Lạt, nghe mưa rơi, nhấp ly cà phê nóng và cho phép mình chậm lại một ngày — vì nghỉ ngơi cũng là thương mình.",
+  "episode": 6,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "hashtags": [
+    "#GocNhoPhoNui",
+    "#ChuaLanh",
+    "#DaLat",
+    "#AIGC",
+    "#NghiNgoi"
+  ],
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, deformed hands, blurry, low quality, modern city, neon signs, anime style, cartoon, blood, gore",
+  "publish_title": "Khi Bạn Thấy Mệt Mỏi Quá Rồi | Góc Nhỏ Phố Núi Tập 06",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook - toan canh quan go tren doi thong",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden morning light over a misty pine hill in Dalat, a small wooden cafe with a glowing window on the slope, cozy documentary photography, vertical 9:16, drifting fog, pine trees, soft amber glow, peaceful quiet mood, no text, no logo, no watermark",
+      "motion": "wide shot, slow push-in",
+      "voiceover": "Không sao cả nếu bạn chỉ làm được một nửa",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Co gai met moi tua dau ben cua so",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm morning light through a wooden cafe window in misty Dalat, a tired young woman resting her head on folded arms at a wooden table, cozy documentary photography, vertical 9:16, pine hill fog outside, gentle calm, steam from a cup, no text, no logo, no watermark",
+      "motion": "close-up, eye level",
+      "voiceover": "Mệt rồi thì nghỉ chút, có sao đâu",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Mua roi tren mai go",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on rain drops sliding down a wooden cafe window in misty Dalat pine hills, cozy documentary photography, vertical 9:16, blurred green pine forest behind glass, soft bokeh, quiet rainy mood, a hand holding a warm cup, no text, no logo, no watermark",
+      "motion": "low angle, rain on window",
+      "voiceover": "Ngồi xuống đây, nghe mưa rơi trên mái gỗ",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Rot ca phe nong",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light from above on a ceramic cup of hot Vietnamese coffee being poured on a wooden cafe table in misty Dalat, cozy documentary photography, vertical 9:16, gentle steam curls, pine hill fog through window, warm amber tones, no text, no logo, no watermark",
+      "motion": "overhead top-down",
+      "voiceover": "Ly cà phê nóng vẫn chờ bạn từ sáng",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Suong phu doi thong",
+      "duration_s": 5.0,
+      "image_prompt": "Golden morning light breaking through fog over a misty pine hill in Dalat, wooden cafe rooftops below, cozy documentary photography, vertical 9:16, layers of pine trees fading into white mist, soft warm glow, serene slow mood, no text, no logo, no watermark",
+      "motion": "wide tracking, slow pan",
+      "voiceover": "Sương phủ đồi thông, lòng bỗng nhẹ tênh",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Nga lung thu gian tren ghe go",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm morning light inside a cozy wooden cafe on a misty Dalat pine hill, a young woman leaning back in a wooden chair with eyes closed, relaxed, documentary photography, vertical 9:16, foggy pine trees outside the window, calm slow breathing mood, no text, no logo, no watermark",
+      "motion": "medium shot, side profile",
+      "voiceover": "Đừng gồng mình nữa, hôm nay cứ chậm thôi",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Hit tho sau, mat nham, nang tren mat",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden morning light falling softly on a young woman's peaceful face with eyes closed in a wooden cafe, misty Dalat pine hill outside, cozy documentary photography, vertical 9:16, gentle sunlight and soft shadows, slow deep breath, serene mood, no text, no logo, no watermark",
+      "motion": "close-up on face",
+      "voiceover": "Một hơi thở sâu, rồi mọi chuyện cũng qua",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Hai tay om ly ca phe am",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light over a wooden cafe table in misty Dalat, two hands gently holding a warm ceramic cup, cozy documentary photography, vertical 9:16, pine hill fog beyond the window, soft amber glow, comforting quiet moment, no text, no logo, no watermark",
+      "motion": "over-the-shoulder",
+      "voiceover": "Bạn đã cố gắng nhiều lắm rồi, biết không",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Goc nghi voi den vang, sach va chan mem",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lamp light glowing inside a cozy wooden cafe corner on a misty Dalat pine hill, a soft blanket and an open book on a wooden chair, documentary photography, vertical 9:16, morning fog outside the window, peaceful restful mood, no text, no logo, no watermark",
+      "motion": "low angle, cozy corner",
+      "voiceover": "Nghỉ ngơi không phải lười, mà là thương mình",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Binh minh len tren doi thong",
+      "duration_s": 5.0,
+      "image_prompt": "Bright golden sunrise light over a misty pine hill in Dalat, a small wooden cafe waking in warm morning glow, cozy documentary photography, vertical 9:16, sun rays through pine trees, fog lifting slowly, hopeful fresh mood, no text, no logo, no watermark",
+      "motion": "wide shot, sunrise",
+      "voiceover": "Mai nắng lên, ta lại bước tiếp thôi",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Buoc ra cua, mim cuoi chao ngay moi",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light at the wooden cafe door on a misty Dalat pine hill, a young woman smiling softly and stepping outside into golden sunlight, cozy documentary photography, vertical 9:16, pine trees and drifting fog, gentle hopeful farewell mood, no text, no logo, no watermark",
+      "motion": "medium shot, tracking out",
+      "voiceover": "Góc nhỏ phố núi luôn chờ bạn ghé chơi",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "series": "Góc Nhỏ Phố Núi",
+  "title": "Khi Bạn Thấy Mệt Mỏi Quá Rồi",
+  "voice": "phonui",
+  "seed": 306,
+  "cover_image": "scene_01.png"
+}

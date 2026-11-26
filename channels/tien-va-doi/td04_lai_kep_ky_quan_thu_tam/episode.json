@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "vivid_doc",
+  "cover_hook": "Một khoản nhỏ để dành mỗi tuần sau mười năm lớn cỡ nào?",
+  "cover_theme": "knowledge",
+  "cover_title": "TÍCH LŨY MỖI NGÀY",
+  "cta": "Tuần này bạn để dành được bao nhiêu? Bình luận nhé!",
+  "description": "Sức mạnh của tích lũy đều đặn không nằm ở số tiền lớn ban đầu, mà ở việc để dành mỗi tuần và để lãi kép làm việc qua thời gian. Tiền nhỏ gom lại thành khoản lớn, mười năm sau bạn sẽ cảm ơn chính mình hôm nay.",
+  "episode": 4,
+  "hashtags": [
+    "#TienVaDoi",
+    "#TaiChinhCaNhan",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no blood, no gore, no violence, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Sức Mạnh Của Tích Lũy Đều Đặn | Tiền Và Đời Tập 4",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – để dành mỗi tuần, mười năm sau lớn cỡ nào",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a minimal desk with a coffee cup and notebook, clean modern lifestyle photography, vertical 9:16, no text, no watermark.",
+      "motion": "máy quay đẩy chậm vào sổ tay và ly cà phê trên bàn làm việc",
+      "voiceover": "Để dành mỗi tuần, mười năm sau lớn cỡ nào?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng bút viết khẽ trên giấy",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua cửa sổ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Bí quyết không nằm ở số tiền lớn",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunlight on a small glass jar of coins on a wooden desk, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "zoom chậm vào hũ thủy tinh đựng tiền xu trên bàn gỗ",
+      "voiceover": "Bí quyết không nằm ở số tiền lớn ban đầu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiền xu chạm khẽ vào nhau",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ buổi sáng",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Bí quyết nằm ở đều đặn",
+      "duration_s": 5.0,
+      "image_prompt": "Bright daylight on hands writing a savings plan in a notebook, coffee nearby, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung cận tay viết kế hoạch tiết kiệm trong sổ",
+      "voiceover": "Bí quyết nằm ở đều đặn mỗi tuần.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng bút viết đều trên giấy",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 1,
+          "desc": "chim hót buổi sáng",
+          "dur": 3,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Tiền nhỏ gom lại thành khoản lớn",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on coins stacking higher on a desk, minimal clean lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay đẩy chậm vào chồng tiền xu cao dần trên bàn",
+      "voiceover": "Tiền nhỏ gom lại, lúc nào cũng thành khoản lớn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiền xu chạm khẽ vào nhau",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua bàn làm việc",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Lãi kép giúp tiền sinh tiền",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm light on a growing plant beside a savings jar, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm từ cây xanh sang hũ tiết kiệm bên cạnh",
+      "voiceover": "Lãi kép giúp tiền sinh thêm tiền mỗi năm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước tưới cây khẽ",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua cửa sổ",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Năm đầu ít, năm sau nhiều hơn",
+      "duration_s": 5.0,
+      "image_prompt": "Warm daylight on a calendar with savings marks, notebook and coffee, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm qua lịch đánh dấu tiết kiệm trên bàn",
+      "voiceover": "Năm đầu ít, năm sau nhiều hơn năm trước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiếng lật trang lịch khẽ",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "wood_creak"
+        },
+        {
+          "at": 0,
+          "desc": "chim hót buổi sáng",
+          "dur": 4,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Người giàu không phải người kiếm nhiều nhất",
+      "duration_s": 5.0,
+      "image_prompt": "Bright daylight on a young woman smiling at her notebook, warm cozy desk, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung trung cảnh cô gái trẻ mỉm cười với sổ tay",
+      "voiceover": "Người giàu không phải người kiếm nhiều nhất.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ buổi sáng",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt nhạc vui khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Người giàu là người giữ tiền đều đặn nhất",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunlight on a piggy bank and notebook on a minimal desk, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "zoom chậm vào heo đất và sổ tay trên bàn làm việc",
+      "voiceover": "Người giàu là người giữ tiền đều đặn nhất.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiền xu rơi khẽ vào heo đất",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua bàn",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Bắt đầu hôm nay",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light on hands placing a coin into a jar, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung cận tay bỏ tiền xu vào hũ tiết kiệm",
+      "voiceover": "Bắt đầu hôm nay, dù chỉ một khoản rất nhỏ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "tiền xu rơi khẽ vào hũ",
+          "dur": 3,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "chim hót buổi sáng",
+          "dur": 4,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Mười năm sau cảm ơn mình hôm nay",
+      "duration_s": 5.0,
+      "image_prompt": "Warm golden light on a desk with a notebook and a small plant, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay mở rộng chậm lên bàn làm việc trong nắng vàng",
+      "voiceover": "Mười năm sau, bạn sẽ cảm ơn mình hôm nay.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió sớm qua cửa sổ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt nhạc vui khẽ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Bright warm daylight on a happy young woman at a minimal desk, coffee and notebook, clean modern lifestyle photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung trung cảnh cô gái mỉm cười bên bàn làm việc",
+      "voiceover": "Tuần này bạn để dành được bao nhiêu?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió nhẹ buổi sáng",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 0,
+          "desc": "mưa nhẹ ngoài cửa sổ",
+          "dur": 4,
+          "gain_db": -29.0,
+          "tag": "rain"
+        }
+      ]
+    }
+  ],
+  "series": "Tiền Và Đời",
+  "title": "Sức Mạnh Của Tích Lũy Đều Đặn",
+  "voice": "maianh",
+  "seed": 504,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

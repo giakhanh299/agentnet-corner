@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "wuxia",
+  "cover_hook": "Không phải sức mạnh nhất thời mà là bước đi đều mỗi ngày…",
+  "cover_theme": "wuxia",
+  "cover_title": "NƯỚC CHẢY ĐÁ MÒN",
+  "cta": "Hôm nay bạn đã bước một bước nhỏ chưa? Bình luận nhé!",
+  "description": "Không phải sức mạnh nhất thời làm nên thành công, mà là bước đi đều mỗi ngày. Giọt nước nhỏ rơi đều, đá cứng cũng mòn dần. Cổ nhân dạy: bền bỉ hơn tài năng nhất thời.",
+  "episode": 8,
+  "hashtags": [
+    "#TriTueCoNhan",
+    "#TrietLySong",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "negative_prompt": "no text, no letters, no watermark, no logo, no blood, no gore, no violence, no distorted hands, no extra fingers, no anime style, no cartoon",
+  "publish_title": "Nước Chảy Đá Mòn Nhờ Bền Bỉ | Trí Tuệ Cổ Nhân Tập 8",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook – bền bỉ hơn sức mạnh nhất thời",
+      "duration_s": 5.0,
+      "image_prompt": "Soft misty dawn light over a mountain stream dripping on stone, serene ink-wash landscape, cinematic photography, vertical 9:16, no text, no watermark.",
+      "motion": "máy quay mở rộng chậm từ dòng suối núi lên tảng đá trong sương",
+      "voiceover": "Không phải sức mạnh nhất thời, mà là bền bỉ...",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước suối chảy khẽ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 1,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Giọt nước nhỏ rơi đều",
+      "duration_s": 5.0,
+      "image_prompt": "Golden dawn light on water drops falling on a smooth stone, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "zoom chậm vào giọt nước rơi đều trên tảng đá nhẵn",
+      "voiceover": "Giọt nước nhỏ rơi đều, đá cứng cũng mòn dần.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "giọt nước rơi đều",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Cổ nhân dạy",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on an old scholar watching a stream, misty mountain view, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay đẩy chậm vào bậc trí giả ngắm dòng suối trong nắng sớm",
+      "voiceover": "Cổ nhân dạy: bền bỉ hơn tài năng nhất thời.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước suối chảy khẽ",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 2,
+          "desc": "chim hót buổi sớm",
+          "dur": 3,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Một bước nhỏ mỗi ngày",
+      "duration_s": 5.0,
+      "image_prompt": "Soft light on a winding mountain path in misty dawn, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm qua đường núi quanh co trong sương sớm",
+      "voiceover": "Một bước nhỏ mỗi ngày, đường dài cũng tới.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân chậm trên đường núi",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Người kiên trì không hỏi đích",
+      "duration_s": 5.0,
+      "image_prompt": "Bright morning light on a lone traveler walking steadily, misty mountains, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay theo sau lữ khách bước đều trên đường núi trong sương",
+      "voiceover": "Người kiên trì không hỏi bao giờ tới đích.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân đều trên đường núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -28.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Lặng lẽ bước như nước chảy",
+      "duration_s": 5.0,
+      "image_prompt": "Calm golden light on a quiet stream flowing over stones, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay giữ khung dòng suối lặng trôi qua đá trong nắng vàng",
+      "voiceover": "Họ chỉ lặng lẽ bước, đều đặn như nước chảy.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "nước suối trôi lặng",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 1,
+          "desc": "chim hót xa",
+          "dur": 3,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Thất bại không phải hết đường",
+      "duration_s": 5.0,
+      "image_prompt": "Soft rain light on a fallen traveler rising again, misty mountain path, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay đẩy chậm vào lữ khách đứng dậy trên đường núi mưa nhẹ",
+      "voiceover": "Thất bại một lần không phải là hết đường.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "mưa nhẹ trên đường núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "rain"
+        },
+        {
+          "at": 0,
+          "desc": "gió nhẹ qua núi",
+          "dur": 5,
+          "gain_db": -29.0,
+          "tag": "leaves_wind"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Đứng dậy, đi tiếp",
+      "duration_s": 5.0,
+      "image_prompt": "Warm sunrise light on footprints along a mountain trail, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay lia chậm qua dấu chân trên đường núi trong nắng sớm",
+      "voiceover": "Đứng dậy, đi tiếp, đá mòn sẽ thấy đường.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "bước chân vững trên đường núi",
+          "dur": 4,
+          "gain_db": -27.0,
+          "tag": "footsteps"
+        },
+        {
+          "at": 0,
+          "desc": "gỗ kẽo kẹt nhẹ",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "wood_creak"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Mười năm bền bỉ",
+      "duration_s": 5.0,
+      "image_prompt": "Gentle dawn light on a stone worn smooth by dripping water, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "zoom chậm vào tảng đá mòn nhẵn vì nước nhỏ giọt",
+      "voiceover": "Mười năm bền bỉ hơn một ngày bùng nổ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "giọt nước rơi đều",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "water"
+        },
+        {
+          "at": 2,
+          "desc": "một nốt sáo dân gian ngân",
+          "dur": 2,
+          "gain_db": -28.0,
+          "tag": "folk_oneshot"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Nước chảy đá mòn",
+      "duration_s": 5.0,
+      "image_prompt": "Bright golden light on a mountain summit at sunrise, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay mở rộng chậm lên đỉnh núi trong nắng vàng",
+      "voiceover": "Nước chảy đá mòn, người bền ắt thành công.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió sớm qua đỉnh núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "chim hót buổi sáng",
+          "dur": 3,
+          "gain_db": -29.0,
+          "tag": "night_creatures"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết – câu hỏi mời bình luận",
+      "duration_s": 5.0,
+      "image_prompt": "Warm dawn light over misty mountains and a tea house, a scholar smiling, serene ink-wash style, cinematic photography, vertical 9:16, no text.",
+      "motion": "máy quay mở rộng chậm lên núi mây mù trong nắng sớm",
+      "voiceover": "Hôm nay bạn đã bước một bước nhỏ chưa?",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "at": 0,
+          "desc": "gió sớm qua núi",
+          "dur": 5,
+          "gain_db": -27.0,
+          "tag": "leaves_wind"
+        },
+        {
+          "at": 1,
+          "desc": "đèn lồng cháy ấm",
+          "dur": 3,
+          "gain_db": -28.0,
+          "tag": "fire_lamp"
+        }
+      ]
+    }
+  ],
+  "series": "Trí Tuệ Cổ Nhân",
+  "title": "Nước Chảy Đá Mòn Nhờ Bền Bỉ",
+  "voice": "phonui",
+  "seed": 408,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}
