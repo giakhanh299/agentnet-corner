@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 24,
+  "slug": "ep24_bu_nhin_rom_quay_mat_ve_lang",
+  "title": "Con Bù Nhìn Rơm Mỗi Đêm Nhích Gần Cổng Làng",
+  "cover_title": "BÙ NHÌN RƠM QUAY MẶT VỀ LÀNG",
+  "cover_hook": "Người ta dựng bù nhìn quay mặt ra đồng đuổi chim, tại sao sáng ra nó lại quay ngoắt đầu nhìn thẳng vào cửa nhà?",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 224,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: moody dusk shot of a tall weathered straw scarecrow wearing a tattered conical hat standing in a misty Vietnamese harvested rice field",
+      "motion": "Slow dolly in on straw scarecrow in twilight paddy field",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Sau vụ gặt tháng mười, lão Hợi dựng một con bù nhìn rơm cao bằng người thật ngoài bờ ruộng sâu để canh đàn chim sẻ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight close-up of a burlap sack scarecrow head where someone drew two crooked black charcoal eyes staring out beneath a frayed non la hat",
+      "motion": "Close-up of charcoal-drawn eyes on burlap sack head",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Chẳng hiểu thằng trẻ trâu nào nghịch dại lại lấy than củi vẽ lên bao tải rơm đôi mắt trợn tròn và cái miệng cười lệch quái đản.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: elderly Vietnamese farmer carrying a hoe along a narrow paddy ridge at twilight, glancing back at the distant scarecrow facing the mountains",
+      "motion": "Farmer walking home looking back over shoulder at dusk",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Chiều muộn vác cuốc về nhà, lão Hợi còn nhớ như in mình đã chôn cọc tre thật chặt, xoay mặt con bù nhìn hướng thẳng ra phía núi.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: chilling misty dawn shot from the farmer's front gate showing the scarecrow now facing straight toward the house doorway",
+      "motion": "Dawn reveal: scarecrow head twisted 180 degrees facing house",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Vậy mà tờ mờ sáng hôm sau mở cổng, lão Hợi rụng rời thấy đầu con bù nhìn đã xoay ngược một trăm tám mươi độ, nhìn trân trối vào hiên nhà!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cold moonlit night shot of the straw scarecrow now standing ten meters closer along the muddy field ridge, fog swirling around its bamboo pole",
+      "motion": "Medium shot of scarecrow closer on mud ridge next night",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Sang đêm thứ hai trời sương muối dày đặc, con bù nhìn không chỉ quay mặt vào xóm mà cọc tre còn dịch gần sát cổng rào hơn chục bước chân.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: frightened middle-aged Vietnamese woman peering between wooden window slats by flickering oil lamplight at the dark courtyard fence",
+      "motion": "Wife peeking through wooden window shutters in terror",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Vợ lão Hợi thức dậy lúc hai giờ sáng lấy nước uống, thề sống thề chết rằng thấy cái nón rách ngoài bờ rào khẽ gật đầu chào bà!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of wet black paddy mud dripping fresh from the bottom of the scarecrow's straw-wrapped bamboo post onto stone steps",
+      "motion": "Macro shot of fresh river mud caked on straw legs",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Cầm đèn bão bước ra soi tận nơi, lão Hợi chết điếng khi thấy dưới chân cọc tre khô khốc lại bê bết lớp bùn ruộng mới tinh vừa nhổ lên.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: elderly village elder holding incense beside the rice ridge, pointing down at a sunken ancient unmarked grave stone hidden under grass",
+      "motion": "Village shaman inspecting old grave mound under field ridge",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Mời cụ Từ trong họ ra xem thế đất, cụ vừa nhìn chỗ lão Hợi đóng cọc ban đầu liền hốt hoảng: Ông đóng cọc trúng ngay mộ cổ lấp dưới bờ ruộng rồi!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic shot of villagers respectfully pulling out the scarecrow post, burning straw effigy safely in a brazier and lighting incense on the ridge",
+      "motion": "Hands pulling bamboo stake and lighting incense at dawn",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ngay trưa hôm ấy lão Hợi vội nhổ cọc đắp lại nấm đất tử tế, hóa tro con bù nhìn vẽ mắt rồi bày mâm lễ tạ lỗi ngoài đầu bờ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: atmospheric twilight wide shot of the peaceful misty rice field where three incense sticks glow warmly on a neat earth mound",
+      "motion": "Wide shot of misty golden rice field with incense smoke",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ ngày dời bờ trả lại phần đất yên nghỉ cho người khuất mặt, đêm khuya ngoài đồng vắng không còn bóng nón lá nào đứng ngóng vào cổng nhà nữa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: eerie closing shot of a tattered conical hat floating slowly down a moonlit irrigation canal into thick white fog",
+      "motion": "Final lingering shot of conical hat drifting on dark canal",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Và người làng truyền tai nhau quy tắc bất thành văn: làm bù nhìn giữ ruộng, tuyệt đối cấm bao giờ vẽ thêm đôi con ngươi...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

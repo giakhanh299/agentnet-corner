@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 28,
+  "slug": "ep28_tieng_goi_ten_ngoai_ber_tre_sau_nha",
+  "title": "Ai Gọi Đúng Tên Bạn Ngoài Bờ Tre Lúc Nửa Đêm",
+  "cover_title": "ĐỪNG THƯA KHI AI GỌI ĐÊM KHUYA",
+  "cover_hook": "Đang ngủ say nghe tiếng người quen gọi đúng tên mình ngoài vườn tối — mở miệng thưa một chữ 'Ơi' là rước họa!",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 228,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic night shot looking past a dim thatched porch into a dense pitch-black bamboo grove swaying in cold mist behind a rural Vietnamese home",
+      "motion": "Eerie push-in toward dark bamboo thicket behind rural house",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Người lớn vùng quê Bắc Bộ kiêng nhất một điều: đêm khuya đang nằm trên giường nghe ai gọi tên ngoài bờ dậu, chưa nhìn thấy mặt tuyệt đối cấm thưa!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: interior night shot of a young Vietnamese man sleeping under a white sheer mosquito net on a bamboo bed while a small oil lamp flickers low",
+      "motion": "Young man sleeping under mosquito net as oil lamp flickers low",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đêm ấy cả nhà đi ăn giỗ bên xã bên chưa về, một mình Tùng nằm canh nhà giữa cơn gió mùa đông bắc lạnh cắt da.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: exterior shot through wooden window bars into foggy bamboo shadows trembling unnaturally despite still air",
+      "motion": "Rustling bamboo outside window as familiar voice calls out",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Đúng một giờ rưỡi sáng, từ bụi tre sau bếp bỗng vang lên giọng gọi kéo dài hệt tiếng anh trai Tùng: Tùng ơi… ra mở cổng cho anh…",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of Tùng sitting up groggily on the wooden bed, lifting the mosquito net corner about to call back toward the back window",
+      "motion": "Tùng sits up half-asleep reaching to lift mosquito net",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Đang ngái ngủ Tùng định buột miệng thưa 'Ơi' một tiếng, nhưng chợt khựng lại lạnh người: cổng nhà nằm đằng sân trước, sao tiếng gọi lại phát ra từ bờ ao sau bếp?",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight POV shot through narrow wooden shutter gap showing a tall rigid dark silhouette standing motionless right at the edge of the bamboo grove in fog",
+      "motion": "Peeking through window slit: tall faceless shadow standing motionless",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Cậu rón rén ghé mắt nhìn qua khe chớp cửa sổ sau: dưới bóng tre mù sương có một bóng đen cao lêu nghêu đứng im phăng phắc, hai tay buông thõng quá đầu gối!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of frost-cold condensation forming on the wooden window bar as the tall shadow tilts its head slightly without stepping into moonlight",
+      "motion": "Voice repeats exact same cadence three times mechanically",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Cái bóng ấy không hề bước ra chỗ sáng, cứ cách đúng ba nhịp thở lại lặp lại nguyên một câu đều đều không cảm xúc: Tùng ơi… ra mở cổng…",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: low-angle shot under the wooden bed where the family yellow dog curls up whimpering silently with ears flattened, refusing to bark",
+      "motion": "Family dog cowers silently under wooden bed trembling",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Con mực nằm dưới gầm phản bình thường dữ tợn là thế, đêm nay cứ cụp đuôi run bần bật rúc sâu vào góc tường không dám sủa nửa tiếng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight close-up of Tùng gripping a brass lighter and iron knife handle beneath his blanket, biting his lip to make zero sound",
+      "motion": "Tùng grabs garlic/knife under pillow and stays dead silent",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Nhớ lời ông nội dặn ma giấu mặt gọi ba tiếng không ai thưa sẽ tự bỏ đi, Tùng nắm chặt con dao đi rừng đầu giường nín thở ngồi im.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: dramatic night shot outside the window as a sudden gust bends the bamboo tops sharply, and the tall shadow dissolves into drifting white fog",
+      "motion": "Bamboo violently shakes once then mist clears empty",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Sau tiếng gọi thứ ba rơi vào im lặng đặc quánh, cả ngọn tre già bỗng quật mạnh một cái rào rào rồi cái bóng cao lêu nghêu tan biến vào sương trắng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: warm lantern-lit shot at the front courtyard gate half an hour later as Tùng's real brother arrives noisily wheeling a bicycle and calling out cheerfully",
+      "motion": "Real brother arrives at FRONT gate with noisy bicycle & warm voice",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Nửa tiếng sau anh trai Tùng mới lạch cạch dắt xe đạp về gõ cổng sân trước, nghe em kể lại mặt anh cắt không còn giọt máu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: chilling misty dawn close-up behind the kitchen showing blackened flattened grass in a circle right beside the dark pond edge",
+      "motion": "Morning discovery of crushed grass circle under back bamboo",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ra sau bếp kiểm tra lúc trời sáng, ngay chỗ cái bóng đứng đêm qua cỏ dại héo rụi một khoanh tròn lạnh ngắt sát mép hố vôi cũ...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

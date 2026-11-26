@@ -1,7 +1,7 @@
 {
-  "aigc_label": true,
+  "aigc_label": false,
   "color_grade": "folk_horror",
-  "cover_hook": "Người xưa dặn: thần cây đa, ma cây gạo…",
+  "cover_hook": "Thần cây đa, ma cây gạo — đừng bao giờ nhặt bông gạo đỏ rụng lúc canh ba đầu ngõ!",
   "cover_theme": "horror",
   "cover_title": "CÂY GẠO ĐẦU NGÕ",
   "cta": "Theo dõi Phim Ma Dân Gian Việt Nam để nghe tập tiếp theo!",
@@ -31,24 +31,17 @@
       "duration_s": 5.0,
       "image_prompt": "Misty moonlight over a giant kapok tree at a 1960s rural Vietnamese village entrance, amber oil lamp glow at its roots, red flowers scattered on dirt path, documentary film still, vertical 9:16, drifting fog, thatched roofs, quiet eerie calm, no text, no logo, no blood",
       "motion": "wide shot, slow push-in",
-      "voiceover": "Người xưa dặn: thần cây đa, ma cây gạo…",
-      "vo_at": 0.0,
+      "voiceover": "Người xưa truyền lại câu sấm lạnh người: Thần cây đa, ma cây gạo, cú cáo cây đề — qua đầu ngõ lúc canh ba chớ ngước nhìn lên.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "leaves_wind",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 2,
@@ -56,24 +49,17 @@
       "duration_s": 5.0,
       "image_prompt": "Amber oil lamp light on a carpet of fallen red kapok flowers covering a 1960s rural Vietnamese village dirt path, documentary film still, vertical 9:16, misty moonlight, bare branches above, quiet night, no text, no logo, no blood",
       "motion": "low angle, slow dolly",
-      "voiceover": "Mùa hoa đỏ, cây gạo rực cả đầu ngõ",
-      "vo_at": 0.3,
+      "voiceover": "Tháng ba âm lịch, cây gạo cổ thụ đầu làng trút sạch lá, nở rực hàng ngàn bông hoa đỏ thẫm như những đốm máu rơi đầy lối đất.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "night_creatures",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 3,
@@ -81,24 +67,17 @@
       "duration_s": 5.0,
       "image_prompt": "Soft moonlight on a single red kapok flower with five petals resting on dark soil, 1960s rural Vietnam, misty night, amber oil lamp glow nearby, documentary film still, vertical 9:16, close-up, dew drops, no text, no logo, no blood",
       "motion": "close-up, eye level",
-      "voiceover": "Hoa gạo đỏ thắm, năm cánh nở giữa trời",
-      "vo_at": 0.3,
+      "voiceover": "Giữa ánh trăng mờ, một bông gạo năm cánh vừa rụng xuống nền đất ẩm dù trên cành hoàn toàn không một cơn gió thoảng.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "horror_stinger",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 4,
@@ -106,24 +85,17 @@
       "duration_s": 5.0,
       "image_prompt": "Warm amber oil lamp light on an old Vietnamese villager in 1960s clothes sitting beneath a giant kapok tree, misty moonlight, documentary film still, vertical 9:16, storytelling gesture, thatched village behind, quiet night, no text, no logo, no blood",
       "motion": "medium shot, eye level",
-      "voiceover": "Ông lão thắp đèn, kể chuyện cây gạo xưa",
-      "vo_at": 0.3,
+      "voiceover": "Ông Cả thắp đèn dầu ngồi canh tuần dưới gốc cây u bướu, kể rằng gốc gạo ba người ôm này đã chứng kiến bao chuyện oan khuất thời loạn.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "fire_lamp",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "kiemhiep_nam",
+      "ghost": false
     },
     {
       "id": 5,
@@ -131,24 +103,17 @@
       "duration_s": 5.0,
       "image_prompt": "Misty moonlight through bare branches of a leafless kapok tree covered in red blossoms, 1960s rural Vietnam, amber oil lamp glow below, documentary film still, vertical 9:16, dry season sky, drifting fog, no text, no logo, no blood",
       "motion": "wide shot, slow tilt up",
-      "voiceover": "Cây trút lá, dồn sức nở hoa mùa khô",
-      "vo_at": 0.3,
+      "voiceover": "Nhìn lên những cành cây khẳng khiu vươn thẳng lên nền trời xám xịt, bóng cành đan vào nhau hệt những cánh tay gầy guộc đang vẫy gọi.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "wood_creak",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 6,
@@ -156,24 +121,17 @@
       "duration_s": 5.0,
       "image_prompt": "Soft morning light on a split kapok fruit releasing white silky fibre drifting over a 1960s rural Vietnamese village path, documentary film still, vertical 9:16, misty air, red petals on ground, gentle breeze, no text, no logo, no blood",
       "motion": "close-up, slow motion feel",
-      "voiceover": "Quả gạo nứt, bông trắng bay khắp ngõ",
-      "vo_at": 0.3,
+      "voiceover": "Tới lúc mờ sương, từng chùm bông gòn trắng xóa từ quả khô bung ra bay lơ lửng khắp ngõ vắng như những dải khăn tang.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "leaves_wind",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 7,
@@ -181,24 +139,17 @@
       "duration_s": 5.0,
       "image_prompt": "Warm morning light on village children gathering fallen red kapok flowers at a 1960s rural Vietnamese village entrance, documentary film still, vertical 9:16, misty sunlight, thatched roofs, joyful quiet mood, no text, no logo, no blood",
       "motion": "medium shot, slow pan",
-      "voiceover": "Sáng ra trẻ nhỏ nhặt hoa rơi đầu ngõ",
-      "vo_at": 0.3,
+      "voiceover": "Sáng tinh mơ lũ trẻ trong xóm chạy ùa ra nhặt hoa gạo rơi, chẳng hề biết đêm qua dưới gốc cây có tiếng ai nức nở suốt canh dài.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "footsteps",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 8,
@@ -206,24 +157,17 @@
       "duration_s": 5.0,
       "image_prompt": "Golden morning light on a small bird drinking nectar from a red kapok flower on a 1960s rural Vietnamese village tree, documentary film still, vertical 9:16, misty air, bees nearby, red petals, peaceful nature, no text, no logo, no blood",
       "motion": "close-up, eye level",
-      "voiceover": "Hoa gạo nuôi chim, nuôi ong cả mùa",
-      "vo_at": 0.3,
+      "voiceover": "Một con chim nhỏ đậu trên đài hoa đỏ chót chợt giật mình tung cánh bay vọt đi khi bóng râm dưới gốc cây khẽ chuyển động.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "night_creatures",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 9,
@@ -231,24 +175,17 @@
       "duration_s": 5.0,
       "image_prompt": "Misty moonlight rising through kapok branches over a 1960s rural Vietnamese village entrance, amber oil lamp glow in fog, documentary film still, vertical 9:16, silver mist, thatched roofs, quiet eerie calm, no text, no logo, no blood",
       "motion": "wide shot, slow push-in",
-      "voiceover": "Trăng lên qua cành, sương phủ kín đầu ngõ",
-      "vo_at": 0.3,
+      "voiceover": "Khi trăng rằm lại nhô lên sau tán cành trơ trụi, sương lạnh phủ kín cổng làng cùng tiếng thở dài khe khẽ từ hốc cây đen ngòm.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "human_eerie",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": true
     },
     {
       "id": 10,
@@ -256,24 +193,17 @@
       "duration_s": 5.0,
       "image_prompt": "Amber oil lamp light on villagers placing flowers respectfully at the roots of a giant kapok tree, 1960s rural Vietnam, misty moonlight, documentary film still, vertical 9:16, calm reverent mood, no text, no logo, no blood",
       "motion": "medium shot, low angle",
-      "voiceover": "Cây già giữ làng, ta giữ cây cho đời",
-      "vo_at": 0.3,
+      "voiceover": "Dân làng bảo nhau mang hương hoa đặt ngay ngắn dưới rễ cây cổ thụ, cầu mong vong linh trú ngụ nơi đầu ngõ đừng trêu ghẹo người đi đêm.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "fire_lamp",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 11,
@@ -281,29 +211,23 @@
       "duration_s": 5.0,
       "image_prompt": "Soft dawn light over a giant kapok tree silhouette at a 1960s rural Vietnamese village entrance, red flowers glowing in first sun, misty morning, documentary film still, vertical 9:16, peaceful hopeful mood, no text, no logo, no blood",
       "motion": "wide shot, slow pull-back",
-      "voiceover": "Hẹn bạn tập sau, chuyện ma làng quê",
-      "vo_at": 0.3,
+      "voiceover": "Bình minh vừa hé rạng sau bóng cây gạo khổng lồ, nhưng chân nhang cắm từ tối qua đã tắt ngúm và xoay ngược hướng về phía cổng làng...",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "gain_db",
-          "desc": "gain_db",
+          "tag": "horror_stinger",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "tag",
-          "desc": "tag",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     }
   ],
   "series": "Phim Ma Dân Gian Việt Nam",
   "title": "Cây Gạo Đầu Ngõ Mùa Hoa Đỏ",
   "voice": "phonui",
   "seed": 615,
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

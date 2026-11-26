@@ -6,7 +6,7 @@
   "voice": "phonui",
   "color_grade": "folk_horror",
   "cover_theme": "horror",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "horror",
     "gain_db": 0
@@ -25,24 +25,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cold misty light on an abandoned Vietnamese mountain pagoda at dawn, bronze bell tower, drifting fog, amber oil lamp glow, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Ngôi chùa bỏ hoang, sao chuông vẫn ngân vang?",
-      "vo_at": 0.0,
+      "voiceover": "Ngôi chùa cổ trên đỉnh núi mù sương đã bỏ hoang suốt ba mươi năm, vậy mà cứ đúng giờ Tý tiếng chuông đồng lại ngân vang lạnh toát.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "folk_oneshot",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 2,
@@ -50,24 +43,17 @@
       "duration_s": 5.0,
       "image_prompt": "Soft morning mist light on mossy tiled roofs of an old Vietnamese pagoda hidden in a pine forest, fog drifting, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chùa bỏ hoang đã ba mươi năm trong rừng sương.",
-      "vo_at": 0.3,
+      "voiceover": "Ẩn sâu giữa rừng thông già âm u, dãy mái ngói âm dương đổ nát phủ đầy rêu xanh không một bóng người lui tới.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "leaves_wind",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 3,
@@ -75,24 +61,17 @@
       "duration_s": 5.0,
       "image_prompt": "Pale dawn light on fog covering ancient mossy roof tiles of a Vietnamese mountain pagoda, pine trees, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sương sớm phủ kín mái ngói rêu phong cổ kính.",
-      "vo_at": 0.3,
+      "voiceover": "Sương mù dày đặc trườn qua từng bậc thềm đá nứt nẻ, che khuất cả lối mòn dẫn lên gác chuông gỗ mục nát.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "night_creatures",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 4,
@@ -100,24 +79,17 @@
       "duration_s": 5.0,
       "image_prompt": "Dim misty light on a large bronze temple bell hanging in a wooden tower, fog swirling, no people near, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tiếng chuông ngân vang dù không ai rung chuông.",
-      "vo_at": 0.3,
+      "voiceover": "Quả đại hồng chung nặng hàng trăm cân treo lơ lửng giữa gác vắng bỗng tự rung lên một tiếng boong trầm đục xé tan màn sương.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "folk_oneshot",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 5,
@@ -125,24 +97,17 @@
       "duration_s": 5.0,
       "image_prompt": "Warm lamp light on an elderly Vietnamese monk holding prayer beads, listening quietly beside a bronze bell, misty pagoda courtyard, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sư thầy già lần chuỗi hạt đứng lặng nghe chuông.",
-      "vo_at": 0.3,
+      "voiceover": "Vị sư già ở ngôi am dưới chân núi lần tràng hạt đứng lặng bên hiên đèn, đôi mắt trầm mặc ngước nhìn lên đỉnh núi mờ tối.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "fire_lamp",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "kiemhiep_nam",
+      "ghost": false
     },
     {
       "id": 6,
@@ -150,24 +115,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cool mountain wind light on a bronze temple bell swaying slightly in its tower, pine branches moving, fog drifting, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Gió núi thổi qua khe chuông tạo tiếng ngân dài.",
-      "vo_at": 0.3,
+      "voiceover": "Trên gác cao lạnh lẽo, chày kình bằng gỗ lim treo ngang vẫn nằm im bất động, nhưng thân chuông đồng lại khẽ chao nghiêng kỳ dị.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "wood_creak",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 7,
@@ -175,24 +133,17 @@
       "duration_s": 5.0,
       "image_prompt": "Soft grey light on a large bronze bell vibrating gently as mountain wind changes direction, wooden tower beams, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Chuông đồng lớn rung nhẹ khi gió đổi hướng.",
-      "vo_at": 0.3,
+      "voiceover": "Trong tiếng ngân dài u uẩn vọng khắp vách đá, thấp thoáng như có tiếng tụng kinh trầm khàn của vị trụ trì viên tịch năm xưa.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "human_eerie",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": true
     },
     {
       "id": 8,
@@ -200,24 +151,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cold foggy light on water droplets on pine needles near an old Vietnamese pagoda, sound waves imagined over a misty valley, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sương lạnh đọng nước khiến âm thanh vang xa hơn.",
-      "vo_at": 0.3,
+      "voiceover": "Từng giọt sương đêm lạnh buốt nhỏ tích tắc từ lá thông xuống nền gạch cổ, hòa cùng dư âm tiếng chuông nghe rợn cả da đầu.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "rain",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 9,
@@ -225,24 +169,17 @@
       "duration_s": 5.0,
       "image_prompt": "Wide misty dawn light over a Vietnamese mountain valley below an old pagoda, bell sound echoing across foggy slopes, pine forest, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tiếng chuông vang nhờ thung lũng khuếch đại âm thanh.",
-      "vo_at": 0.3,
+      "voiceover": "Âm thanh dội qua vách thung lũng sâu thẳm kéo dài thành ba hồi chín tiếng, khiến chim rừng đang ngủ cũng hoảng hốt đập cánh.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "horror_stinger",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 10,
@@ -250,24 +187,17 @@
       "duration_s": 5.0,
       "image_prompt": "Warm incense smoke light on Vietnamese villagers lighting incense at an old pagoda gate, morning mist, bronze bell behind, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Người dân thắp nhang nhớ chùa xưa yên bình.",
-      "vo_at": 0.3,
+      "voiceover": "Mỗi sáng mồng một, dân bản dưới chân núi chỉ dám dừng lại ngoài cổng tam quan đổ nát để thắp nén nhang thơm rồi vội vã xuống núi trước khi trời tối.",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "fire_lamp",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "kiemhiep_nam",
+      "ghost": false
     },
     {
       "id": 11,
@@ -275,24 +205,17 @@
       "duration_s": 5.0,
       "image_prompt": "Serene dawn light over a misty Vietnamese mountain pagoda and pine forest, bronze bell tower, peaceful fog, warm sunrise glow, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Rừng sương đẹp khi ta hiểu tiếng chuông núi.",
-      "vo_at": 0.3,
+      "voiceover": "Bởi ai từng nán lại sau tiếng chuông canh ba đều kể rằng: trong sương mù trước chánh điện vẫn có một bóng áo cà sa đang đứng chắp tay...",
+      "vo_at": 0.12,
       "sfx": [
         {
-          "tag": "tag",
-          "desc": "tag",
+          "tag": "folk_oneshot",
           "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
-        },
-        {
-          "tag": "gain_db",
-          "desc": "gain_db",
-          "at": 0,
-          "dur": 5.0,
-          "gain_db": -28
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     }
   ],
   "episode": 16,
@@ -303,5 +226,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Ngôi chùa cổ bỏ hoang ba mươi năm trên đỉnh núi sương, ai vẫn đều đặn gióng chuông lúc nửa đêm?"
 }

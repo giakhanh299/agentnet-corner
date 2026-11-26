@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 26,
+  "slug": "ep26_tieng_go_mo_dem_mua_ngau",
+  "title": "Tiếng Gõ Mõ Đêm Mưa Ngâu Ngoài Miếu Cô",
+  "cover_title": "TIẾNG GÕ MÕ NGOÀI MIẾU CÔ",
+  "cover_hook": "Ngôi miếu nhỏ ven đồi không có người trông coi, sao đêm mưa ngâu nào cũng vang tiếng mõ gỗ lốc cốc?",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 226,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic night shot of a weathered small mossy brick shrine tucked beneath a twisted frangipani tree on a rainy hillside path",
+      "motion": "Atmospheric wide shot of tiny brick roadside shrine in rain",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Bên sườn đồi thông dẫn sang chợ huyện có ngôi miếu gạch nhỏ bằng manh chiếu, hương khói lạnh lẽo mỗi độ mưa ngâu tháng bảy.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of an old cracked wooden fish-shaped temple block resting on a stone ledge inside the dark shrine, rain dripping outside",
+      "motion": "Macro close-up of cracked wooden temple block wet with rain",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Người đi chợ sớm qua đèo đều rỉ tai nhau: quá canh hai nghe tiếng gõ mõ lốc… cốc… từ miếu vọng ra thì cứ cúi gằm mặt bước thẳng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: 1960s Vietnamese rural merchant in raincoat pushing a heavy cargo bicycle with kerosene lamp up a muddy rain-swept hill road at night",
+      "motion": "stubborn merchant pushing bicycle with oil lantern up muddy slope",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Anh Đạt đi buôn chuyến hàng muộn không tin lời đồn, giữa đêm mưa tầm tã vẫn dắt xe thồ ngang qua bậc đá trước cửa miếu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: low-angle shot looking up stone steps into the pitch-black shrine interior as a faint amber ember flares briefly in the dark",
+      "motion": "Sudden rhythmic wooden knock echoes from dark shrine interior",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Xe vừa trờ tới ngang gốc đại già, từ trong lòng miếu tối đen không một ánh nến chợt vang lên ba tiếng mõ gỗ khô khốc: Cốc… cốc… cốc!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: over-the-shoulder shot as the merchant raises his lantern into the tiny shrine: only cobwebs, cold ash, and a dusty wooden block with no striker",
+      "motion": "Merchant shines lantern into empty cobwebbed shrine",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Sẵn tính tò mò, anh Đạt dựng xe giơ cao đèn bão rọi thẳng vào khám thờ: bên trong mạng nhện giăng kín, chiếc dùi gõ mõ đã mục gãy làm đôi từ đời nào!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: sharp rack-focus back toward the muddy road behind him where the parked cargo bicycle's metal bell trembles in pale lightning glow",
+      "motion": "Bicycle bell rings by itself behind him on empty road",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Chưa kịp hoàn hồn thì ngay sau lưng anh, chiếc chuông xe đạp ngoài đường bỗng tự reo kính coong một hồi lạnh toát giữa màn mưa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: eerie medium shot of wet white frangipani blossoms falling onto mud as a pale soaked hem of an old silk tunic slips behind the tree trunk",
+      "motion": "Pale silk hem disappears behind frangipani trunk in mist",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Quay phắt lại soi đèn, anh chỉ kịp thấy vạt áo lụa trắng ướt đẫm lướt vội ra sau gốc cây đại cùng tiếng thở dài não ruột.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: dramatic wide night shot illuminated by lightning as tons of hillside mud and boulders crash across the narrow mountain road just ahead",
+      "motion": "Mudslide crashes across road 20 meters ahead in lightning flash",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đúng giây phút anh khựng lại chưa kịp dắt xe đi tiếp, một tiếng ầm long trời lở đất vang lên: cả vạt đồi phía trước năm chục thước đổ sập chôn vùi mặt đường!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: emotional medium shot of the rain-soaked merchant kneeling in mud looking back at the tiny silent shrine realizing the knock saved his life",
+      "motion": "Stunned merchant drops to knees facing the small dark shrine",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Anh Đạt bủn rủn chân tay đứng chôn chân giữa mưa tầm tã: nếu tiếng gõ mõ kia không giữ chân anh lại đúng một phút, cả người lẫn xe đã vùi dưới đất đá!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: warm golden morning shot after the storm as the grateful merchant repairs the shrine's broken tiles and places a new carved wooden striker beside incense",
+      "motion": "Merchant repairing shrine roof tiles and placing new wooden striker",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ngay sáng hôm sau anh mua ngói mới lợp lại mái miếu dột, thỉnh chiếc dùi gỗ thơm cùng mâm ngũ quả đặt trang trọng lên bệ đá.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: peaceful twilight wide shot of the neat little shrine under blooming frangipani with a warm oil lamp guiding travellers safely along the mountain pass",
+      "motion": "Serene dusk shot of warm lamp glowing inside hillside shrine",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ mùa mưa năm ấy, ngọn đèn dầu trong miếu Cô lúc nào cũng đỏ lửa soi đường đèo khuya, che chở khách bộ hành qua những đêm giông gió...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

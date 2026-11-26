@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 21,
+  "slug": "ep21_mam_com_cung_co_hon_ngoai_san",
+  "title": "Mâm Cơm Cúng Cô Hồn Đêm Rằm Tháng Bảy",
+  "cover_title": "MÂM CƠM CÚNG CÔ HỒN",
+  "cover_hook": "Chưa tàn tuần nhang tuyệt đối đừng dọn mâm cúng ngoài sân, vì người đang ăn chưa chắc bạn đã nhìn thấy...",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 221,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of three glowing red incense sticks planted in a brass bowl of white rice on a bamboo tray in a dark rural courtyard, curling smoke",
+      "motion": "Slow macro push-in on glowing incense sticks",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đêm rằm tháng bảy mưa phùn rả rích, bà Nội bày mâm cháo trắng muối vừng ra giữa khoảng sân gạch lạnh ngắt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: elderly Vietnamese grandmother in brown ba ba shirt latching a wooden window from inside while holding her young grandson's shoulder by oil lamplight",
+      "motion": "Slow pan across anxious grandmother and grandson indoors",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Bà khép chặt cánh cửa gỗ cài then rồi dặn nhỏ: Chưa tàn hết cây nhang thì ai gọi ngoài sân cũng cấm được thưa!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: low-angle shot across wet brick courtyard toward the wooden offering tray of rice porridge bowls and sugarcane surrounded by swirling ground fog",
+      "motion": "Slow creep forward toward courtyard food tray in mist",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ngoài sân tối mịt không một bóng chó mèo, vậy mà từng chiếc lá mít khô dưới gốc cây cứ lạo xạo như có nhiều bước chân vây quanh.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of a white porcelain spoon in a bowl of steaming rice porridge slowly tilting downward on its own in pale moonlight",
+      "motion": "Tight close-up of porcelain spoon tilting by itself",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Qua khe cửa gỗ hẹp, thằng Nam mở to mắt nhìn chiếc thìa sứ trong bát cháo đầu tiên tự nhiên nghiêng xuống múc một muỗng đầy.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: eerie medium shot of translucent mist silhouettes crouching silently around the bamboo offering tray beneath swaying wet banana leaves",
+      "motion": "Subtle dolly right along misty banana trees",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Khói hương đang bay thẳng lên trời bỗng quẩn tròn là là sát mặt chiếu, phảng phất tiếng húp cháo xì xụp rất khẽ trong gió lạnh.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of small wet bare footprints appearing one by one on dry mossy courtyard bricks leading right up to the wooden doorstep",
+      "motion": "Sudden focus pull to wet bare footprints on dry bricks",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Rợn người hơn cả, trên nền gạch khô dưới mái hiên lần lượt hiện lên hai dấu chân trần ướt sũng tiến sát tới bậu cửa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: interior view of old wooden door planks vibrating slightly as cold mist seeps under the threshold crack beside a trembling oil lamp",
+      "motion": "Slow push-in on wooden door crack with pale eye shadow",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Một giọng trẻ con khàn lạnh cất lên ngay sát vách gỗ: Cho em xin thêm nắm bỏng ngô nữa được không… ngoài đồng lạnh quá…",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of elderly Vietnamese woman closing her eyes tightly, whispering a quiet prayer with weathered hands clasped before an ancestral altar",
+      "motion": "Tight reaction shot of grandmother clasping hands in prayer",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Thằng Nam suýt buột miệng đáp lời thì bàn tay nhăn nheo của bà Nội đã kịp bịt chặt môi nó, lắc đầu ra hiệu nín thở.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of the last glowing red incense tip burning down to the root and dropping a long grey ash onto the brass rim",
+      "motion": "Slow pan down burning incense dropping red ash",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Mãi tới khi tàn nhang thứ ba rụng hẳn xuống chân bát gạo, luồng hơi lạnh buốt thẩm thấu qua khe cửa mới từ từ tan biến.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: over-the-shoulder shot of the grandmother stepping cautiously into the misty courtyard holding an oil lamp above the offering tray",
+      "motion": "Tracking shot of grandmother carrying lamp out to empty tray",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Bà Nội cầm đèn dầu bước ra sân rải muối gạo bốn phương, nhưng nhìn xuống mâm cúng thì cả năm bát cháo nóng đã nguội ngắt không còn một làn hơi.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic high-angle wide shot of the misty rural courtyard at midnight, a single bitten sugarcane piece lying beside the open bamboo gate",
+      "motion": "Slow pull-out from empty courtyard into dark village lane",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ngay sát cổng tre khép hờ, một khúc mía tím vẫn còn in rõ dấu răng nhỏ xíu nằm lăn lóc trên mặt đất ẩm sương...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

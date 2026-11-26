@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 25,
+  "slug": "ep25_chiec_luoc_sung_duoi_chan_cau_ao",
+  "title": "Chiếc Lược Sừng Vớt Dưới Bậc Đá Cầu Ao",
+  "cover_title": "CHIẾC LƯỢC SỪNG DƯỚI CẦU AO",
+  "cover_hook": "Thấy chiếc lược sừng chạm hoa rơi dưới bến nước, đừng bao giờ nhặt về chải tóc lúc nửa đêm!",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 225,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: atmospheric dusk shot of mossy stone steps leading into a dark lotus pond shaded by old banyan roots in 1960s northern Vietnam",
+      "motion": "Slow push-in on mossy stone pond steps in rural dusk",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ao làng phía sau miếu Bà quanh năm nước xanh thẫm lạnh ngắt, rễ đa cổ thụ buông rủ kín mặt nước chẳng mấy ai dám xuống giặt đồ tối muộn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a young Vietnamese woman washing clothes at twilight pulling an ornate black buffalo-horn comb out of dark pond weeds",
+      "motion": "Close-up of young woman's hand pulling carved horn comb from water",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Chiều chạng vạng ra cầu ao vo gạo, cô Mận vô tình vớt được một chiếc lược sừng trâu đen bóng chạm hình chim phượng dưới kẽ đá.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot inside a quiet thatched bedroom at night as the young woman sits on a wooden bed combing her long black hair by oil lamp",
+      "motion": "Warm oil-lamp interior shot of woman admiring comb on bed",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Thấy chiếc lược mịn mát như ngọc quý, tối hôm ấy Mận giấu người nhà mang vào buồng riêng ngồi chải mái tóc dài bên ngọn đèn dầu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of the black horn comb teeth suddenly tangled with long dripping-wet hair strands smelling of pond moss",
+      "motion": "Macro shot of long wet strands tangled in horn comb teeth",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Chải chưa đầy ba đường, cô bỗng giật mình thấy kẽ răng lược dắt đầy những sợi tóc ướt sũng sặc mùi bùn rêu tanh nồng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: chilling shot of the whitewashed bedroom wall where the oil lamp casts the shadow of a second pair of long thin arms standing behind her combing her hair",
+      "motion": "Shadow on lime wall shows TWO pairs of hands combing her hair",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ngước nhìn lên vách vôi đối diện ngọn đèn, bóng in trên tường không chỉ có tay cô mà còn có thêm một đôi tay gầy ngoẳng đang chải phụ từ phía sau!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight close-up of the kerosene lamp glass cracking slightly as cold pond mist curls over the girl's trembling shoulder",
+      "motion": "Cold breath fogs lamp glass as whisper echoes",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Một hơi thở lạnh như nước đá phả sát vành tai cô kèm tiếng cười khúc khích: Tóc em mượt quá… cho chị mượn chải tới sáng nhé…",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: dynamic tracking shot of the terrified young woman bolting barefoot out of the dark bedroom doorway screaming for her mother",
+      "motion": "Mận bolts out of room dropping comb on brick floor",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Mận hét thất thanh quăng chiếc lược xuống nền gạch rồi lao thẳng sang gian nhà chính đập cửa gọi mẹ trong cơn hoảng loạn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: elderly rural mother holding bright oil lamp and burning incense bundle looking down at a dark puddle of pond water spreading around the comb",
+      "motion": "Mother enters with broom and incense seeing wet puddle around comb",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Bà mẹ cầm bó nhang đang cháy bước vào buồng thì sững người: quanh chiếc lược sừng khô ráo lúc chiều giờ đọng cả một vũng nước bèo tấm xanh rì.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: misty dawn shot at the mossy stone pond steps as the mother places the horn comb wrapped in lotus leaf onto a floating banana-trunk raft with incense",
+      "motion": "Dawn ritual returning comb wrapped in lotus leaf to pond steps",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Chờ đúng lúc mặt trời vừa ló rạng, bà mẹ gói chiếc lược vào lá sen đặt lên bè chuối cùng trầu cau thả trả lại giữa lòng ao miếu Bà.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide eerie shot of the small candle-lit banana raft gliding smoothly against the breeze straight into the dark shadow under the banyan roots",
+      "motion": "Floating raft drifts straight against wind under banyan roots",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Lạ lùng thay, chiếc bè chuối không trôi xuôi chiều gió mà tự lướt thẳng vào bóng tối dưới chùm rễ đa già rồi chìm nghỉm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of concentric ripples fading into mirror-black pond water reflecting the silent ancient shrine roof",
+      "motion": "Final close-up of ripples vanishing on black pond water",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ bận ấy chẳng ai trong làng còn dám nhặt bất cứ món đồ trang sức vô chủ nào nằm lại dưới bậc đá cầu ao lúc chạng vạng...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

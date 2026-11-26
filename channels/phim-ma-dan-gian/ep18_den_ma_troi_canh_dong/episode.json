@@ -1,7 +1,7 @@
 {
-  "aigc_label": true,
+  "aigc_label": false,
   "color_grade": "folk_horror",
-  "cover_hook": "Đừng bao giờ đi theo ánh lửa xanh lập lòe giữa đồng…",
+  "cover_hook": "Đốm lửa xanh lạnh lẽo bay là là ngoài nghĩa địa giữa đồng khuya — càng chạy trốn nó càng đuổi sát sau lưng!",
   "cover_theme": "horror",
   "cover_title": "ĐÈN MA TRƠI ĐỒNG KHUYA",
   "cta": "Bạn có từng thấy đèn ma trơi chưa? Bình luận nhé!",
@@ -25,24 +25,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cold moonlight over a misty Vietnamese rice field at night, a small blue flame flickering, 1960s rural documentary film, vertical 9:16, no text, no blood.",
       "motion": "máy quay đẩy chậm vào đốm lửa xanh lập lòe giữa đồng khuya",
-      "voiceover": "Đừng đi theo ánh lửa xanh lập lòe giữa đồng...",
-      "vo_at": 0.0,
+      "voiceover": "Người làng quê xưa luôn răn trẻ nhỏ: đi ngang cánh đồng mả lúc nửa đêm, thấy đốm lửa xanh lơ lửng thì cấm được gọi tên hay bỏ chạy.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "horror_stinger",
           "at": 0,
-          "desc": "đêm yên tĩnh ngoài đồng",
-          "dur": 5,
-          "gain_db": -28.0,
-          "tag": "night_creatures"
-        },
-        {
-          "at": 1,
-          "desc": "một nốt nhạc căng thẳng rất khẽ",
-          "dur": 2,
-          "gain_db": -29.0,
-          "tag": "horror_stinger"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 2,
@@ -50,24 +43,17 @@
       "duration_s": 5.0,
       "image_prompt": "Misty moonlight on a quiet rural Vietnamese village, fog over fields, 1960s documentary film, vertical 9:16, no text.",
       "motion": "máy quay mở rộng chậm qua làng quê chìm trong sương lạnh",
-      "voiceover": "Đêm khuya, đồng làng chìm trong sương lạnh.",
-      "vo_at": 0.3,
+      "voiceover": "Quá canh hai, cả cánh đồng lúa ngoài rìa làng chìm trong biển sương lạnh buốt, thấp thoáng những gò đất cao thấp nhấp nhô.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "night_creatures",
           "at": 0,
-          "desc": "gió lạnh qua đồng",
-          "dur": 5,
-          "gain_db": -27.0,
-          "tag": "leaves_wind"
-        },
-        {
-          "at": 0,
-          "desc": "tiếng dế kêu đêm khuya",
-          "dur": 5,
-          "gain_db": -29.0,
-          "tag": "night_creatures"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 3,
@@ -75,24 +61,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cold blue moonlight on a flickering green flame above a wet field, misty night, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "zoom chậm vào đốm lửa xanh nhấp nháy giữa ruộng nước",
-      "voiceover": "Một đốm lửa xanh bỗng nhấp nháy giữa ruộng.",
-      "vo_at": 0.3,
+      "voiceover": "Từ sau gò mả cổ cuối ruộng, một ngọn lửa màu xanh lục nhợt nhạt bỗng bùng lên không khói, lơ lửng cách mặt bùn gang tấc.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "human_eerie",
           "at": 0,
-          "desc": "nước ruộng gợn nhẹ",
-          "dur": 5,
-          "gain_db": -27.0,
-          "tag": "water"
-        },
-        {
-          "at": 0,
-          "desc": "đêm yên tĩnh",
-          "dur": 5,
-          "gain_db": -28.0,
-          "tag": "night_creatures"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 4,
@@ -100,24 +79,17 @@
       "duration_s": 5.0,
       "image_prompt": "Amber oil lamp light on a curious village boy walking a field path, misty moonlight, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "máy quay theo sau cậu bé Tí bước theo ánh lửa trên lối mòn",
-      "voiceover": "Cậu bé Tí tò mò bước theo ánh lửa ấy.",
-      "vo_at": 0.3,
+      "voiceover": "Thằng Tí xách giỏ cua đi soi đêm về muộn, thấy ánh sáng xanh kỳ lạ liền tò mò cầm đèn dầu bước lần theo bờ ruộng.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "footsteps",
           "at": 0,
-          "desc": "bước chân trên lối mòn",
-          "dur": 4,
-          "gain_db": -27.0,
-          "tag": "footsteps"
-        },
-        {
-          "at": 0,
-          "desc": "đèn dầu cháy ấm",
-          "dur": 5,
-          "gain_db": -28.0,
-          "tag": "fire_lamp"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 5,
@@ -125,24 +97,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cold moonlight on a blue flame drifting over a rice field, misty night, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "máy quay giữ khung đốm lửa xanh trôi xa dần trên đồng",
-      "voiceover": "Lửa lùi một bước, cậu tiến một bước theo.",
-      "vo_at": 0.3,
+      "voiceover": "Kỳ quái thay, thằng bé bước tới một bước thì đốm lửa xanh trôi lùi một bước, hệt như có bàn tay vô hình đang cầm đèn dẫn dụ.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "leaves_wind",
           "at": 0,
-          "desc": "gió lạnh qua đồng",
-          "dur": 5,
-          "gain_db": -26.0,
-          "tag": "leaves_wind"
-        },
-        {
-          "at": 2,
-          "desc": "một nốt nhạc căng thẳng rất khẽ",
-          "dur": 2,
-          "gain_db": -29.0,
-          "tag": "horror_stinger"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 6,
@@ -150,24 +115,17 @@
       "duration_s": 5.0,
       "image_prompt": "Warm amber oil lamp light on an old farmer calling out, misty moonlight, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "máy quay đẩy chậm vào ông Tư cầm đèn dầu gọi lớn",
-      "voiceover": "Ông Tư gọi lớn: quay lại, đừng đi nữa!",
-      "vo_at": 0.3,
+      "voiceover": "Từ trên bờ đê, ông Tư tuần phiên giơ đèn bão hét thất thanh: Tí ơi đứng im đó! Đừng bước thêm bước nào nữa kẻo sụp hố sâu!",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "folk_oneshot",
           "at": 0,
-          "desc": "đèn dầu cháy ấm",
-          "dur": 5,
-          "gain_db": -27.0,
-          "tag": "fire_lamp"
-        },
-        {
-          "at": 1,
-          "desc": "gỗ kẽo kẹt nhẹ",
-          "dur": 2,
-          "gain_db": -28.0,
-          "tag": "wood_creak"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "kiemhiep_nam",
+      "ghost": false
     },
     {
       "id": 7,
@@ -175,24 +133,17 @@
       "duration_s": 5.0,
       "image_prompt": "Amber oil lamp light on a marsh with bubbling mud, cold moonlight, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "máy quay hạ thấp chậm xuống vũng bùn sủi bọt dưới ánh đèn dầu",
-      "voiceover": "Đó không phải ma gọi, chỉ là khí đồng cháy.",
-      "vo_at": 0.3,
+      "voiceover": "Ánh đèn dầu vừa rọi xuống ngay mũi chân thằng bé: chỉ còn cách nửa bước nữa là tới miệng vũng bùn lầy sâu thẳm đen ngòm.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "water",
           "at": 0,
-          "desc": "bùn sủi bọt khẽ",
-          "dur": 5,
-          "gain_db": -27.0,
-          "tag": "water"
-        },
-        {
-          "at": 0,
-          "desc": "đêm yên tĩnh",
-          "dur": 5,
-          "gain_db": -28.0,
-          "tag": "night_creatures"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 8,
@@ -200,24 +151,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cold moonlight on rising marsh gas bubbles over dark water, misty night, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "zoom chậm vào bọt khí bốc lên mặt nước đen trong sương",
-      "voiceover": "Khí bùn thối bốc lên, gặp không khí liền cháy.",
-      "vo_at": 0.3,
+      "voiceover": "Dưới mặt nước đục ngầu sủi tăm lạnh lẽo, đốm lửa ma trơi xanh biếc vẫn chập chờn xoay tròn theo luồng hơi người chuyển động.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "horror_stinger",
           "at": 0,
-          "desc": "bọt khí bốc lên mặt nước",
-          "dur": 5,
-          "gain_db": -27.0,
-          "tag": "water"
-        },
-        {
-          "at": 0,
-          "desc": "gió lạnh qua đồng",
-          "dur": 5,
-          "gain_db": -28.0,
-          "tag": "leaves_wind"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 9,
@@ -225,24 +169,17 @@
       "duration_s": 5.0,
       "image_prompt": "Warm amber oil lamp light on a boy walking home on a dirt path, misty moonlight, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "máy quay theo sau Tí bước về trên lối mòn, đèn dầu vàng soi đường",
-      "voiceover": "Tí quay về, đèn dầu vàng soi lối mòn.",
-      "vo_at": 0.3,
+      "voiceover": "Ông Tư nắm chặt vai thằng bé dắt đi chậm rãi không dám chạy mạnh, vì càng chạy gấp luồng gió hút càng kéo ngọn lửa xanh bay đuổi sát gót.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "footsteps",
           "at": 0,
-          "desc": "bước chân trên lối mòn",
-          "dur": 4,
-          "gain_db": -27.0,
-          "tag": "footsteps"
-        },
-        {
-          "at": 0,
-          "desc": "đèn dầu cháy ấm",
-          "dur": 5,
-          "gain_db": -28.0,
-          "tag": "fire_lamp"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 10,
@@ -250,24 +187,17 @@
       "duration_s": 5.0,
       "image_prompt": "Cold blue moonlight on a distant green flame over dark fields, misty night, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "máy quay mở rộng chậm, đốm lửa xanh lập lòe xa ngoài đồng khuya",
-      "voiceover": "Ánh lửa xanh vẫn lập lòe ngoài đồng khuya.",
-      "vo_at": 0.3,
+      "voiceover": "Về tới tận đầu ngõ mà ngoái nhìn ra cánh đồng khuya, ba bốn đốm lửa xanh đã tụ lại quanh gò đất cũ tự lúc nào.",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "human_eerie",
           "at": 0,
-          "desc": "gió lạnh qua đồng",
-          "dur": 5,
-          "gain_db": -27.0,
-          "tag": "leaves_wind"
-        },
-        {
-          "at": 2,
-          "desc": "mưa nhẹ ngoài đồng",
-          "dur": 3,
-          "gain_db": -29.0,
-          "tag": "rain"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": true
     },
     {
       "id": 11,
@@ -275,24 +205,17 @@
       "duration_s": 5.0,
       "image_prompt": "Warm dawn light over a misty Vietnamese rice field, a boy waving, 1960s rural documentary film, vertical 9:16, no text.",
       "motion": "máy quay mở rộng chậm lên cánh đồng trong nắng sớm",
-      "voiceover": "Bạn có từng thấy đèn ma trơi chưa?",
-      "vo_at": 0.3,
+      "voiceover": "Sáng hôm sau trời quang mây tạnh, bờ ruộng nơi thằng Tí đứng đêm qua in hằn dấu đất sạt ngay sát ngôi mộ vô chủ lâu năm...",
+      "vo_at": 0.12,
       "sfx": [
         {
+          "tag": "night_creatures",
           "at": 0,
-          "desc": "gió sớm qua đồng",
-          "dur": 5,
-          "gain_db": -27.0,
-          "tag": "leaves_wind"
-        },
-        {
-          "at": 1,
-          "desc": "một nốt sáo dân gian ngân khẽ",
-          "dur": 2,
-          "gain_db": -28.0,
-          "tag": "folk_oneshot"
+          "gain_db": -23
         }
-      ]
+      ],
+      "voice": "phonui",
+      "ghost": false
     }
   ],
   "series": "Phim Ma Dân Gian Việt Nam",
@@ -305,5 +228,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

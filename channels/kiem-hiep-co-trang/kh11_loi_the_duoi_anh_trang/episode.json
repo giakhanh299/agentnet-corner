@@ -5,10 +5,10 @@
   "title": "Lời Thề Dưới Ánh Trăng Rừng Mai",
   "cover_title": "LỜI THỀ RỪNG MAI",
   "hook": "Hai vị kiếm khách kết nghĩa nay đứng hai đầu chiến tuyến…",
-  "voice": "phonui",
+  "voice": "chautinhtri",
   "color_grade": "wuxia",
   "cover_theme": "wuxia",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "wuxia",
     "gain_db": 0
@@ -72,8 +72,9 @@
       "image_prompt": "Moonlight over a plum blossom forest at night, two swordsmen standing far apart on a misty path, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Trăng lên trên rừng mai, sương mỏng phủ lối mòn.",
-      "vo_at": 0.0,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 2,
@@ -82,8 +83,9 @@
       "image_prompt": "Two swordsmen facing each other in silence under moonlight in a plum blossom forest, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Hai kiếm khách dừng bước, nhìn nhau không nói gì.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 3,
@@ -92,8 +94,9 @@
       "image_prompt": "Two young swordsmen sharing a sworn oath under moonlight in a plum blossom forest long ago, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Xưa, dưới trăng này, họ từng kết nghĩa huynh đệ.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 4,
@@ -102,8 +105,9 @@
       "image_prompt": "A swordsman holding his sword hilt while keeping an old oath, moonlit plum blossoms around him, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Một người giữ lời thề, một người theo lệnh khác.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 5,
@@ -112,8 +116,9 @@
       "image_prompt": "A sheathed sword at a swordsman's side, wind shaking plum blossom branches in moonlight, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Kiếm chưa rút khỏi vỏ, gió đã lay cành mai.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 6,
@@ -122,8 +127,9 @@
       "image_prompt": "An elder swordsman remembering a shared cup of wine under moonlight in a plum forest, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Người anh cả nhớ chén rượu thề năm ấy.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 7,
@@ -132,8 +138,9 @@
       "image_prompt": "A younger swordsman bowing his head and gripping his sword hilt in a moonlit plum forest, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Người em út cúi đầu, tay siết chặt chuôi kiếm.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 8,
@@ -142,8 +149,9 @@
       "image_prompt": "Moonlight casting two long shadows on a misty forest path between plum blossom trees, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Trăng soi hai bóng dài, lặng lẽ trên lối mòn.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 9,
@@ -152,8 +160,9 @@
       "image_prompt": "A single plum blossom petal falling between two swordsmen on a moonlit forest path, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Một cánh mai rơi xuống, nằm giữa hai người bạn.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 10,
@@ -162,8 +171,9 @@
       "image_prompt": "Two swordsmen sheathing their swords and parting under a full moon in a plum forest, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Họ thu kiếm lại, hẹn gặp nhau khi trăng tròn.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     },
     {
       "id": 11,
@@ -172,8 +182,9 @@
       "image_prompt": "A plum blossom forest blooming in moonlight, petals drifting in the night wind, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Rừng mai vẫn nở, lời thề xưa còn trong gió.",
-      "vo_at": 0.3,
-      "sfx": []
+      "vo_at": 0.12,
+      "sfx": [],
+      "voice": "chautinhtri"
     }
   ],
   "seed": 711,
@@ -183,5 +194,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

@@ -8,7 +8,7 @@
   "voice": "phonui",
   "color_grade": "folk_horror",
   "cover_theme": "horror",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "horror",
     "gain_db": 0
@@ -71,9 +71,17 @@
       "duration_s": 5.0,
       "image_prompt": "A misty narrow Hanoi alley at night in the 1960s, old brick walls and an amber oil lamp glowing in fog, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Nửa đêm, ngõ nhỏ Hà Nội vắng tanh không người.",
-      "vo_at": 0.0,
-      "sfx": []
+      "voiceover": "Đúng hai giờ sáng, con ngõ gạch sâu hun hút giữa lòng phố cổ Hà Nội vắng lặng như tờ, chỉ có ngọn đèn dầu hắt bóng qua song cửa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 2,
@@ -81,9 +89,17 @@
       "duration_s": 5.0,
       "image_prompt": "Wooden clogs tapping on old brick pavement in a misty Hanoi alley at night, amber lamplight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tiếng guốc gỗ vang lên, gõ đều trên gạch cũ.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Từ đầu ngõ tối om chợt vang lên tiếng guốc mộc gõ lộc cộc… lộc cộc… chậm rãi và đều đặn trên mặt gạch nung ẩm ướt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 3,
@@ -91,9 +107,17 @@
       "duration_s": 5.0,
       "image_prompt": "An elderly Vietnamese woman opening a wooden door to a misty Hanoi alley at night, amber oil lamp in hand, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bà Hai mở cửa, nhìn ra ngõ chỉ sương mỏng.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Bà Hai giật mình tỉnh giấc, hé cánh cửa gỗ lim nhìn ra ngoài ngõ nhưng trước mắt chỉ có làn sương mỏng trống không.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "kiemhiep_nu",
+      "ghost": false
     },
     {
       "id": 4,
@@ -101,9 +125,17 @@
       "duration_s": 5.0,
       "image_prompt": "Wooden clogs standing still before an old wooden door in a misty Hanoi alley at night, moonlight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tiếng guốc dừng lại trước cửa, rồi lại vang lên.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Thế nhưng tiếng guốc gỗ vẫn tiến thẳng tới rồi dừng khựng lại ngay sát bậc thềm đá trước mũi chân bà, lạnh buốt sống lưng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 5,
@@ -111,9 +143,17 @@
       "duration_s": 5.0,
       "image_prompt": "An elderly woman lighting an amber oil lamp inside a 1960s Hanoi house at night, flickering warm light, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bà Hai thắp đèn dầu, ánh sáng run trong gió.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Bà vội khép chặt then cửa, tay run rẩy vặn cao bấc đèn dầu khiến bóng người in lên bức tường vôi chao nghiêng chập chờn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 6,
@@ -121,9 +161,17 @@
       "duration_s": 5.0,
       "image_prompt": "An old wooden chest holding a pair of worn wooden clogs, amber lamplight in a 1960s Hanoi house, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bà nhớ đôi guốc gỗ của mẹ trong hòm cũ.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Nhịp gõ guốc mộc quen thuộc đến nhói lòng ấy khiến bà sực nhớ tới đôi guốc cũ của người mẹ quá cố cất dưới đáy rương gỗ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 7,
@@ -131,9 +179,17 @@
       "duration_s": 5.0,
       "image_prompt": "Weathered wooden clogs resting in an old wooden chest, thin dust and amber lamplight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bà mở hòm, đôi guốc nằm im, bụi phủ mỏng.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Khi bà Hai mở nắp rương ra xem, đôi guốc mộc sơn đen nằm trong hòm tự bao giờ đã lấm tấm những vệt nước mưa ẩm lạnh nơi đế gỗ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 8,
@@ -141,9 +197,17 @@
       "duration_s": 5.0,
       "image_prompt": "A misty empty Hanoi alley at night, faint echoes and amber lamplight from a doorway, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Tiếng guốc ngoài ngõ bỗng nhỏ dần, rồi im hẳn.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Đúng lúc ấy ngoài con ngõ tối, tiếng lộc cộc lại thong thả quay đầu nhỏ dần về phía cuối hẻm rồi tan hẳn vào màn đêm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 9,
@@ -151,9 +215,17 @@
       "duration_s": 5.0,
       "image_prompt": "An elderly woman placing worn wooden clogs on a stone doorstep at dawn, soft morning light, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bà đặt đôi guốc xuống thềm, nhớ mẹ ngày xưa.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Mờ sáng hôm sau là đúng ngày giỗ đầu của mẹ, bà Hai rưng rưng bưng đôi guốc cũ đặt ngay ngắn bên bậc thềm đá quen thuộc.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "kiemhiep_nu",
+      "ghost": false
     },
     {
       "id": 10,
@@ -161,9 +233,17 @@
       "duration_s": 5.0,
       "image_prompt": "A narrow Hanoi alley in early morning light, neighbours passing by, warm sunlight on old brick walls, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Sáng sau, ngõ nhỏ rộn ràng tiếng người qua lại.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Nắng sớm chiếu rọi khắp con ngõ nhỏ rộn ràng người qua kẻ lại, xua tan cái lạnh u tịch của đêm sương vừa qua.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 11,
@@ -171,9 +251,17 @@
       "duration_s": 5.0,
       "image_prompt": "An elderly woman smiling while putting wooden clogs into an old wooden chest, warm morning light, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bà Hai mỉm cười, cất đôi guốc vào hòm gỗ.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Bà Hai lau sạch đôi guốc cất vào rương cùng nén hương trầm, từ đêm đó con ngõ nhỏ không còn nghe tiếng guốc khuya tìm về nữa...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     }
   ],
   "seed": 619,
@@ -183,5 +271,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Đúng hai giờ sáng trong con ngõ gạch Hà Nội cũ, tiếng guốc mộc lộc cộc dừng ngay trước thềm nhà..."
 }

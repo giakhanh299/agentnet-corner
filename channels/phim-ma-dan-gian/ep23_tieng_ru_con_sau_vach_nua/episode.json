@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 23,
+  "slug": "ep23_tieng_ru_con_sau_vach_nua",
+  "title": "Tiếng Ru Con Nửa Đêm Sau Vách Nứa Nhà Hoang",
+  "cover_title": "TIẾNG RU SAU VÁCH NỨA",
+  "cover_hook": "Căn nhà tranh sát bờ tre đã bỏ hoang ba năm, sao đêm mưa nào cũng có tiếng võng kẽo kẹt ru con?",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 223,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic night shot of a dilapidated thatched bamboo house overgrown with weeds beside a dark bamboo grove in pouring rain",
+      "motion": "Slow tracking shot past rain-drenched abandoned thatched cottage",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Căn nhà tranh cuối xóm Trại đã bỏ hoang suốt ba mùa mưa bão, mái rạ mục nát chẳng còn ai dám bén mảng tới gần.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of rain-soaked woven bamboo wall between two rural houses at night, faint eerie shadow swaying behind cracked slats",
+      "motion": "Close-up of wet woven bamboo wall trembling in storm",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Anh Thành mới dọn về ở sát vách bên cạnh, cứ đúng một giờ sáng lại giật mình tỉnh giấc bởi tiếng kẽo cà kẽo kẹt bên kia vách nứa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: interior glimpse of a dark abandoned dirt-floor room where a frayed hemp hammock sways slowly back and forth in pale moonlight",
+      "motion": "Slow push-in on dark bamboo hemp hammock rope",
+      "voice": "kiemhiep_nu",
+      "ghost": true,
+      "voiceover": "Hòa trong tiếng mưa rơi trên tàu chuối là giọng người đàn bà hát ru ầu ơ đứt quãng, nghe vừa dịu dàng vừa lạnh buốt tận tim.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: young Vietnamese man in undershirt holding an amber oil lamp close to a crack in the bamboo partition wall, listening intently",
+      "motion": "Medium shot of young man holding oil lamp to bamboo wall",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Nghĩ có người lỡ đường vào trú mưa bế con nhỏ, anh Thành cầm đèn dầu ghé mắt nhìn qua khe nứa rách sang buồng bên.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight POV shot through a narrow bamboo crack revealing an empty tattered hammock swinging rhythmically by itself in a flooded mud room",
+      "motion": "POV shot through crack: empty hammock swinging violently",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Máu trong người anh đông cứng lại: chiếc võng đay mục nát đang tự đung đưa đều tăm tắp giữa căn buồng ngập nước, hoàn toàn không có một bóng người!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of a wet hemp rope loop creaking back and forth on a rotting bamboo ceiling beam as cold mist curls below",
+      "motion": "Extreme close-up of hammock knot rubbing bamboo beam",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Kỳ dị nhất là ở chính giữa lòng võng trũng sâu xuống, như thể vẫn đang có sức nặng của hai mẹ con nằm cuộn tròn bên trong.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: chilling shot of the empty hammock abruptly stopping mid-swing in darkness, silence falling over the rain-soaked room",
+      "motion": "Sudden silence as hammock stops dead facing the wall crack",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Ngay khoảnh khắc hơi thở của anh Thành phả qua khe vách, tiếng hát ru bỗng tắt phụt và chiếc võng đứng khựng lại ngay lập tức!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: low-angle close-up of dark puddles on the dirt floor rippling one step at a time directly toward the bamboo wall crack",
+      "motion": "Slow pan down mud floor showing wet footprints approaching wall",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Dưới vũng nước đục trên nền đất nện, từng gợn nước lõm xuống bước thẳng về phía khe nứa nơi mắt anh vừa áp vào.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: grey misty dawn outside the abandoned cottage as an elderly neighbour burns incense and paper offerings beside a fallen wooden cradle",
+      "motion": "Daybreak shot of village elder burning votive paper at threshold",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Sáng sớm chạy sang hỏi hàng xóm, ông trưởng xóm thở dài kể: Ba năm trước cơn lũ quét nửa đêm đã cuốn trôi hai mẹ con chủ nhà ngay trên chiếc võng ấy.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of rough hands placing a warm bowl of sticky rice, milk, and a handmade bamboo dragonfly respectfully on a wooden stool",
+      "motion": "Close-up of warm rice bowl and small paper toy placed gently",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Chiều hôm đó anh Thành cùng bà con dựng lại mái tranh dột, đặt bát cháo nóng và con chuồn chuồn tre lên chiếc chõng nhỏ rồi khấn tiễn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: serene moonlit view inside the repaired quiet cottage where the old hammock hangs completely still, fireflies drifting outside the window",
+      "motion": "Peaceful night shot of still hammock rope in moonlight",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ đêm mưa sau đó, vách nứa cuối xóm chìm vào giấc ngủ bình yên, không còn tiếng võng kẽo kẹt tìm con lúc canh ba nữa...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

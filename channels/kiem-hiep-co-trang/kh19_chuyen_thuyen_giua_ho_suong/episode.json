@@ -5,10 +5,10 @@
   "title": "Chuyến Thuyền Giữa Hồ Sương",
   "cover_text": "THUYỀN GIỮA HỒ SƯƠNG",
   "hook": "Giữa hồ rộng chỉ một mái chèo cũng thành tuyệt học.",
-  "voice": "phonui",
+  "voice": "chautinhtri",
   "color_grade": "wuxia",
   "cover_theme": "wuxia",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "wuxia",
     "gain_db": 0
@@ -29,7 +29,7 @@
       "image_prompt": "Pale moonlight on a small wooden boat crossing a vast misty lake at dawn, a lone oar cutting calm water, bamboo mountains in fog, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Giữa hồ rộng, một mái chèo cũng thành tuyệt học.",
-      "vo_at": 0.0,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -45,7 +45,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 2,
@@ -54,7 +55,7 @@
       "image_prompt": "Soft morning light on thick fog covering a quiet mountain lake, a small boat drifting slowly through mist, bamboo mountains faint behind, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Sương phủ mặt hồ, thuyền nhỏ trôi lặng lẽ.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -70,7 +71,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 3,
@@ -79,7 +81,7 @@
       "image_prompt": "Warm lantern light on an old boatman in grey robes sitting still at the stern, gazing across a misty lake, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Lão chèo đò ngồi yên, mắt nhìn xa xăm.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -95,7 +97,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 4,
@@ -104,7 +107,7 @@
       "image_prompt": "Golden dusk light on a young traveller with a cloth bundle asking an old boatman for passage across a misty lake, bamboo mountains behind, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Khách lạ xin qua hồ trước khi trời tối.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -120,7 +123,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 5,
@@ -129,7 +133,7 @@
       "image_prompt": "Soft daylight on the old boatman demonstrating a steady rowing stroke to a young traveller on a small wooden boat, calm misty lake, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Lão chỉ dạy chèo, không dạy đánh nhau bao giờ.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -145,7 +149,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 6,
@@ -154,7 +159,7 @@
       "image_prompt": "Grey storm light on a small boat holding steady through rising lake waves, one oar steering firmly, misty bamboo mountains behind, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Một mái chèo giữ thuyền thẳng giữa sóng lớn.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -170,7 +175,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 7,
@@ -179,7 +185,7 @@
       "image_prompt": "Bright morning light on two hands rowing evenly, a small boat gliding smoothly across a calm misty lake, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Hai tay chèo đều, thuyền đi nhanh mà êm.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -195,7 +201,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 8,
@@ -204,7 +211,7 @@
       "image_prompt": "Pale foggy light on a boatman closing his eyes and listening carefully in thick mist on a mountain lake, water rippling softly, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Sương dày che mắt, tai nghe tiếng nước chảy.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -220,7 +227,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 9,
@@ -229,7 +237,7 @@
       "image_prompt": "Moonlight on dark submerged rocks just below clear lake water, a small boat steering safely around them through mist, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Nghe nước, đoán dòng, tránh đá ngầm dưới hồ.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -245,7 +253,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 10,
@@ -254,7 +263,7 @@
       "image_prompt": "Warm sunrise light on the old boatman rowing calmly across a misty lake at dawn, practised and unhurried, bamboo mountains in fog, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Không có tuyệt học, chỉ có luyện tập mỗi ngày.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -270,7 +279,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 11,
@@ -279,7 +289,7 @@
       "image_prompt": "Golden sunset light on a small boat reaching a peaceful far shore, calm misty lake and bamboo mountains behind, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Chèo vững tay, lòng vững hơn, hồ cũng yên.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -295,7 +305,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     }
   ],
   "seed": 719,
@@ -305,5 +316,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 27,
+  "slug": "ep27_bong_nguoi_ngoi_khau_ao_ben_cua_so",
+  "title": "Bóng Người Ngồi Khâu Áo Bên Cửa Sổ Tầng Gác Gỗ",
+  "cover_title": "BÓNG NGƯỜI KHÂU ÁO ĐÊM KHUYA",
+  "cover_hook": "Căn gác xép gỗ đã khóa trái suốt mười năm, vậy bóng người cúi đầu luồn kim in trên rèm cửa mỗi đêm là ai?",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 227,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: moody night exterior shot of an old 1960s Vietnamese two-story timber shophouse, upper wooden shuttered window glowing faintly through thin cloth curtain",
+      "motion": "Low-angle night shot of old French-Vietnamese wooden attic window",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Căn nhà gỗ hai tầng cuối phố huyện có gian gác xép đóng đinh niêm phong từ ngày người thợ may trẻ qua đời trước hôm cưới.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: young male student in white shirt standing in the shadowy downstairs courtyard holding a washbasin, staring up at the dim upstairs window",
+      "motion": "Young student tenant looking up from courtyard well at night",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Hùng thuê trọ tầng dưới để ôn thi, cứ quá nửa đêm ra sân múc nước lại thấy trên tấm rèm vải tầng gác hắt bóng người ngồi khâu áo.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight exterior shot of the yellowed cloth curtain upstairs showing a crisp dark silhouette of a slender woman leaning forward pulling thread rhythmically",
+      "motion": "Close-up of silhouette threading needle with rhythmic arm motion",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Cái bóng gầy gò cúi sát ngọn đèn, cánh tay đưa lên rút chỉ đều đặn từng mũi một, kèm tiếng kéo cắt vải xoẹt… xoẹt… rất khẽ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tense low-angle tracking shot of Hùng climbing narrow dusty wooden stairs holding an oil lamp toward the nailed-shut attic door",
+      "motion": "Hùng climbing creaking wooden stairs with flashlight/oil lamp",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Nghĩ bà chủ nhà lén lên dọn đồ khuya, đêm rằm Hùng đánh bạo cầm đèn dầu bước lên cầu thang gỗ phủ dày bụi trắng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of thick rusted iron nails and unbroken spiderwebs sealing the attic door frame completely shut from the outside",
+      "motion": "Close-up of rusted iron nails still sealing the wooden door",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Lên tới chiếu nghỉ, da đầu anh tê dại: hai thanh gỗ đóng chéo niêm phong cánh cửa vẫn nguyên lớp mạng nhện dày chưa ai từng chạm tới!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: eerie low shot of faint yellow light shining under the sealed attic door suddenly snapping to total darkness as footsteps approach from inside",
+      "motion": "Light suddenly goes pitch dark under attic door crack",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ngay khi bậc thang dưới chân Hùng kêu cót két một tiếng, ánh sáng vàng hắt qua khe cửa lập tức tắt phụt và tiếng kéo cắt vải im bặt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro close-up of a tiny red silk thread spool rolling slowly out from beneath the narrow door gap and stopping against Hùng's shoe",
+      "motion": "Thread spools roll down dusty steps from under door gap",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Từ khe hở dưới chân cửa gỗ tối om, một cuộn chỉ tơ đỏ thẫm tự lăn tròn ra ngoài chạm nhẹ vào mũi dép anh kèm tiếng thở dài lạnh buốt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: emotional morning shot downstairs as the elderly landlady wipes tears while showing Hùng a faded photograph of her late daughter beside a sewing basket",
+      "motion": "Elderly landlady tearing up holding unfinished wedding ao dai",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Sáng hôm sau đem cuộn chỉ xuống hỏi, bà chủ nhà bật khóc nức nở: Con gái bác mất khi chiếc áo dài cưới màu đỏ còn thiếu đúng vạt gấu chưa khâu xong!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: warm dusty sunbeams streaming into the opened wooden attic revealing an antique treadle sewing machine and an unfinished crimson silk ao dai",
+      "motion": "Sunlight streaming into opened attic with vintage Singer sewing machine",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Bà cụ nhờ thợ mở niêm phong bước lên căn gác bụi mờ, nơi chiếc áo dài lụa đỏ vẫn nằm vắt ngang bàn máy khâu cũ kỹ suốt mười năm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: touching close-up of the elderly mother's trembling hands sewing the final hem stitches on the red silk ao dai before burning paper offerings",
+      "motion": "Mother finishing the final stitches of crimson ao dai by daylight",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Đích thân người mẹ ngồi khâu nốt đường kim cuối cùng cho trọn tâm nguyện con gái, rồi làm lễ hóa chiếc áo cưới gửi theo làn khói trắng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: serene midnight exterior shot of the old two-story wooden house under clear moonlight, the upstairs curtain completely still and peaceful",
+      "motion": "Quiet moonlit exterior of dark peaceful attic window",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ đêm đó tấm rèm trắng trên tầng gác gỗ im lìm trong ánh trăng thu, chẳng còn bóng ai chong đèn ngồi khâu áo cưới lúc canh ba nữa...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

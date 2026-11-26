@@ -1,0 +1,220 @@
+{
+  "series": "Kiếm Hiệp Cổ Trang",
+  "target_channel": "KENH_002",
+  "episode": 22,
+  "slug": "kh22_bi_kip_trong_ong_tieu_ngoc",
+  "title": "Ống Tiêu Ngọc Bích Và Cô Gái Mù Chèo Đò Giang Nam",
+  "cover_title": "ỐNG TIÊU NGỌC BÍCH GIANG NAM",
+  "cover_hook": "Cao thủ tranh giành ống tiêu ngọc khắp giang hồ, nhưng chỉ cô gái mù bên bến sông mới thổi ra bí mật...",
+  "cover_theme": "wuxia",
+  "cover_scene": 2,
+  "seed": 322,
+  "voice": "chautinhtri",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "wuxia",
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: poetic wuxia wide shot of a misty emerald river lined with weeping willows at dusk, a wooden skiff moored by stone steps",
+      "motion": "Misty Jiangnan willow river at dusk with small bamboo boat",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Giang hồ đồn rằng bên trong ống tiêu ngọc bích của Tiêu Dao Phái giấu bản đồ kho báu khiến hàng chục môn phái đổ máu tranh giành.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: wuxia young swordsman in tattered blue robes leaping lightly onto a small covered riverboat holding a glowing green jade flute",
+      "motion": "Young wandering swordsman hiding breathlessly on willow boat",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Chàng lãng khách A Tinh vừa cướp được ống tiêu từ tay bọn ác bá, vội nhảy phốc xuống con thuyền nhỏ bên bờ liễu trốn truy binh.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: ethereal close-up of a serene blind young woman in pale green silk robes pouring tea effortlessly inside a lantern-lit boat cabin",
+      "motion": "Blind maiden in pale green hanfu calmly brewing tea in cabin",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Trong khoang thuyền ấm mùi trà sen, một thiếu nữ mù mặc áo lục nhạt mỉm cười lên tiếng: Công tử mang sát khí nặng thế, làm kinh động cá dưới sông rồi.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: close-up of A Tinh squinting through the hollow green jade flute against amber lantern light looking puzzled",
+      "motion": "A Tinh peers closely at jade flute finding zero text inside",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "A Tinh gãi đầu dốc ngược ống tiêu ngọc lắc tới lắc lui: Lạ thật đấy cô nương, ống ngọc rỗng tuếch trơn nhẵn thế này thì giấu bí kíp ở chỗ nào?",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: macro shot of delicate fingers gently feeling microscopic musical notches carved along the translucent green jade flute",
+      "motion": "Maiden's slender fingers trace tiny pinhole carvings on jade",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Cô gái mù khẽ chạm đầu ngón tay lên thân ngọc lạnh mát rồi đáp nhẹ: Người có mắt chỉ nhìn thấy hình tướng, người tĩnh tâm mới nghe được âm luật.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: cinematic medium shot on the boat bow as the blind maiden plays the jade flute under full moonlight, silver ripples spreading across mist",
+      "motion": "Jade flute raised to lips sending ripples across misty river",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Nàng đặt ống tiêu lên môi thổi một khúc nhạc thanh tao giữa sương khuya: mặt nước quanh mạn thuyền bỗng gợn sóng đồng tâm kỳ diệu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: dramatic shot on an arched stone bridge as a fierce scarred sect leader freezes, tears welling in his eyes as he lowers his heavy broadsword",
+      "motion": "Pursuing sect leader stops dead on bridge dropping his broadsword",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Đám cao thủ đuổi tới đầu cầu đá vừa nghe tiếng tiêu ngân liền bần thần buông rơi binh khí, bao nhiêu lệ khí sát phạt trong lòng tự khắc tiêu tan!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: warm moonlit close-up of the blind maiden returning the jade flute to A Tinh with a gentle knowing smile",
+      "motion": "Maiden hands jade flute back gently in moonlight",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Nàng trao lại ống tiêu rồi nói khẽ: Tuyệt học chân chính mà tổ sư để lại chính là khúc Tĩnh Tâm Âm hóa giải oán thù, chứ nào phải vàng bạc.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: medium shot of A Tinh tucking the jade flute into his sash and cheerfully picking up the long bamboo pole to steer the boat through mist",
+      "motion": "A Tinh nods smiling, picks up bamboo pole to punt boat forward",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "A Tinh vỗ trán bật cười sảng khoái: Thì ra báu vật quý nhất thiên hạ là một giấc ngủ ngon không ai đuổi chém, để tại hạ chèo thuyền tiễn cô nương một đoạn!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: breathtaking vertical 9:16 wuxia landscape of the small wooden boat gliding beneath an ancient stone bridge into golden sunrise mist",
+      "motion": "Boat glides beneath arched stone bridge into golden dawn mist",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Con thuyền nhỏ rẽ màn sương bạc trôi xa dần dưới vòm cầu cổ, tiếng tiêu ngọc hòa vào tiếng nước chảy vỗ về cả bến Giang Nam.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "water",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: serene closing shot of green willow branches trailing in sunlit clear water as birds soar toward distant ink-wash peaks",
+      "motion": "Willow branches sway gently over peaceful river morning",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ ngày hôm ấy giang hồ bớt đi một cuộc huyết chiến, và trên sông Tần Hoài xuất hiện thêm đôi tri kỷ ngao du cùng tiếng tiêu xanh...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    }
+  ]
+}

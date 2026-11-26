@@ -3,10 +3,10 @@
   "title": "Hoa Đào Rơi Kiếm Hạ",
   "cover_title": "HOA ĐÀO RƠI KIẾM HẠ",
   "series": "Giang Hồ Kỳ Truyện",
-  "voice": "phonui",
+  "voice": "chautinhtri",
   "color_grade": "wuxia",
   "cover_theme": "wuxia",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "wuxia",
     "gain_db": 0
@@ -26,7 +26,7 @@
       "image_prompt": "Soft peach blossom light on an old wuxia swordsman sitting calmly under a blooming peach tree, petals falling, misty bamboo mountains, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Cảnh giới cao nhất của kiếm đạo là không rút kiếm.",
-      "vo_at": 0.0,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -42,7 +42,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 2,
@@ -51,7 +52,7 @@
       "image_prompt": "Pale morning light on peach petals covering the courtyard of an ancient mountain temple, mist drifting, bamboo forest, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Hoa đào rơi đầy sân chùa cổ giữa núi sương.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -67,7 +68,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 3,
@@ -76,7 +78,7 @@
       "image_prompt": "Warm dappled light on an elderly swordsman in grey robes sitting still beneath an ancient peach tree, petals falling, misty mountains, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Kiếm khách già ngồi yên dưới gốc đào cổ thụ.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -92,7 +94,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 4,
@@ -101,7 +104,7 @@
       "image_prompt": "Bright daylight on three young wuxia swordsmen challenging an elder among blooming peach trees, petals swirling, misty bamboo mountains, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Ba kiếm khách trẻ thách đấu giữa rừng hoa đào.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -117,7 +120,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 5,
@@ -126,7 +130,7 @@
       "image_prompt": "Gentle sunlight on an old swordsman smiling softly while holding a steaming tea cup under a peach tree, petals falling, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Ông chỉ cười nhẹ, tay vẫn cầm chén trà nóng.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -142,7 +146,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 6,
@@ -151,7 +156,7 @@
       "image_prompt": "Soft petal light on peach blossoms touching a sheathed sword while an old swordsman sits motionless, mist, bamboo mountains, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Hoa đào rơi chạm kiếm nhưng ông không động đậy.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -167,7 +172,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 7,
@@ -176,7 +182,7 @@
       "image_prompt": "Cool mountain wind light on peach petals swirling through the air around standing swordsmen, misty bamboo forest, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Gió núi thổi qua, cánh hoa bay theo kiếm khí.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -192,7 +198,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 8,
@@ -201,7 +208,7 @@
       "image_prompt": "Swift motion light on young swordsmen drawing swords while an old master steps calmly aside, petals flying, misty peach grove, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Người trẻ rút kiếm mà không chạm được áo ông.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -217,7 +224,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 9,
@@ -226,7 +234,7 @@
       "image_prompt": "Quiet twilight light on an old swordsman standing still among falling peach petals, young challengers lowering their swords, mist, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Kiếm nhanh thua tĩnh lặng vì tâm chưa thật yên.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -242,7 +250,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 10,
@@ -251,7 +260,7 @@
       "image_prompt": "Warm lantern light on an old swordsman teaching three young swordsmen under a peach tree at dusk, tea steam rising, mist, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Ông dạy kiếm đạo là giữ lòng bình thản trước.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -267,7 +276,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 11,
@@ -276,7 +286,7 @@
       "image_prompt": "Serene sunset light over a misty peach grove and bamboo mountains, petals falling, a lone swordsman walking away, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Hoa đào rơi, giang hồ hiểu kiếm nằm trong tâm.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -292,7 +302,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     }
   ],
   "episode": 20,
@@ -303,5 +314,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

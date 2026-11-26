@@ -8,7 +8,7 @@
   "voice": "phonui",
   "color_grade": "folk_horror",
   "cover_theme": "horror",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "horror",
     "gain_db": 0
@@ -71,9 +71,17 @@
       "duration_s": 5.0,
       "image_prompt": "A misty village road at night in 1960s rural Vietnam, an old bamboo grove and a traveller with an amber oil lamp, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Đêm cuối tháng, con đường làng chìm trong sương mỏng.",
-      "vo_at": 0.0,
-      "sfx": []
+      "voiceover": "Đêm ba mươi cuối tháng tối đen như mực, con đường đất dẫn vào làng chỉ dài năm trăm mét bỗng chìm nghỉm trong màn sương trắng đục.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 2,
@@ -81,9 +89,17 @@
       "duration_s": 5.0,
       "image_prompt": "A traveller walking a narrow village path at night, amber oil lamp light on dry leaves, misty moonlight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Lữ khách bước đi, ánh đèn dầu soi lối nhỏ.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Người lữ khách xách đèn dầu vội vã bước qua rặng tre già, tiếng lá tre khô lạo xạo dưới đế giày nghe rõ mồn một.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 3,
@@ -91,9 +107,17 @@
       "duration_s": 5.0,
       "image_prompt": "An old bamboo root standing still beside a misty village road at night, dry leaves rustling in the wind, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Gốc tre cũ đứng lặng, lá khô xào xạc.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Bên vệ đường có một gốc tre cụt cháy sém đứng trơ trọi, tàu lá rủ xuống quệt ngang vai người đi đường lạnh buốt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 4,
@@ -101,9 +125,17 @@
       "duration_s": 5.0,
       "image_prompt": "A traveller returning to the same old bamboo root on a misty village road at night, amber lamplight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Đi một vòng, người khách lại thấy gốc tre ấy.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Cắm cúi bước ròng rã suốt nửa canh giờ, người khách giật bắn mình khi ánh đèn dầu lại chiếu trúng đúng gốc tre cháy sém ban nãy.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 5,
@@ -111,9 +143,17 @@
       "duration_s": 5.0,
       "image_prompt": "Thick fog over a long village road at night, a traveller with an amber oil lamp walking in circles, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Đi vòng thứ hai, sương dày hơn, đường dài hơn.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Anh cắn răng bước nhanh vòng thứ hai, nhưng sương mù càng lúc càng đặc quánh, con đường nhỏ như tự kéo dài ra vô tận.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 6,
@@ -121,9 +161,17 @@
       "duration_s": 5.0,
       "image_prompt": "A nervous traveller gripping an amber oil lamp tightly on a misty village road at night, moonlight through bamboo, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Đi vòng thứ ba, tim đập nhanh, tay siết đèn.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Sang tới vòng thứ ba, mồ hôi lạnh túa ướt đẫm lưng áo, bàn tay cầm quai đèn dầu run bần bật khi nhận ra mình đã bị ma dắt lối!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "kiemhiep_nam",
+      "ghost": false
     },
     {
       "id": 7,
@@ -131,9 +179,17 @@
       "duration_s": 5.0,
       "image_prompt": "A traveller stopping to listen on a misty village road at night, bamboo leaves and amber lamplight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Người khách dừng lại, lắng nghe tiếng côn trùng đêm.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Anh đứng khựng lại giữa đường cố trấn tĩnh, dỏng tai lắng nghe tiếng ếch nhái và côn trùng râm ran quanh bờ bụi.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 8,
@@ -141,9 +197,17 @@
       "duration_s": 5.0,
       "image_prompt": "Silent bamboo leaves in night wind beside a misty village road, a traveller with an amber oil lamp, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Côn trùng im bặt, chỉ còn gió qua lá tre.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Đúng khoảnh khắc ấy, mọi tiếng côn trùng đồng loạt im bặt, chỉ còn tiếng sột soạt như có ai đang bước sát ngay sau gáy.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 9,
@@ -151,9 +215,17 @@
       "duration_s": 5.0,
       "image_prompt": "A traveller looking back along a foggy village road at night, mist hiding the path behind, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Khách quay đầu, đường phía sau cũng mờ sương.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Anh hoảng hốt ngoái phắt đầu nhìn lại: con đường đất phía sau đã biến mất hoàn toàn trong bức tường sương trắng xóa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     },
     {
       "id": 10,
@@ -161,9 +233,17 @@
       "duration_s": 5.0,
       "image_prompt": "A kind elderly woman pointing toward the village entrance on a misty road at dawn, bamboo grove behind, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Bà cụ xuất hiện, chỉ tay về phía đầu làng.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Giữa màn sương mờ xuất hiện một bà cụ lưng còng mặc áo nâu sồng, lặng lẽ giơ ngón tay gầy guộc chỉ thẳng về phía rặng tre bên trái.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "kiemhiep_nu",
+      "ghost": false
     },
     {
       "id": 11,
@@ -171,9 +251,17 @@
       "duration_s": 5.0,
       "image_prompt": "Sunrise behind a bamboo grove at the end of a misty village road, a traveller walking toward warm light, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Khách theo lối ấy, bình minh lên sau rặng tre.",
-      "vo_at": 0.3,
-      "sfx": []
+      "voiceover": "Người khách nhắm mắt bước liều theo hướng ấy thì gà đầu xóm vừa gáy sáng; ngoái lại sau lưng, chỗ bà cụ đứng chỉ là một ngôi mộ đất cổ phủ cỏ may...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ],
+      "voice": "phonui",
+      "ghost": false
     }
   ],
   "seed": 617,
@@ -183,5 +271,7 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true,
+  "cover_hook": "Bị ma dắt trên con đường làng chỉ dài năm trăm mét — đi rạc chân tới sáng vẫn quay về đúng gốc tre cũ!"
 }

@@ -1,0 +1,220 @@
+{
+  "series": "Kiếm Hiệp Cổ Trang",
+  "target_channel": "KENH_002",
+  "episode": 21,
+  "slug": "kh21_nu_hiep_ao_do_quan_tro_dem_dong",
+  "title": "Nữ Hiệp Áo Đỏ Và Gã Tiểu Nhị Quán Trọ Đêm Tuyết",
+  "cover_title": "NỮ HIỆP ÁO ĐỎ & TIỂU NHỊ",
+  "cover_hook": "Cả giang hồ truy lùng cao thủ đệ nhất kiếm, ai ngờ người đó lại đang lau bàn trong quán trọ nghèo...",
+  "cover_theme": "wuxia",
+  "cover_scene": 2,
+  "seed": 321,
+  "voice": "chautinhtri",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "wuxia",
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: snowstorm swirling around a rustic wooden frontier inn glowing with red lanterns at night, horses tied outside",
+      "motion": "Slow push-in on snowy frontier wooden inn glowing at night",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Đêm đông tuyết rơi dày ba thước ngoài cửa ải, quán trọ Đồng Phúc nghèo rớt mồng tơi của tại hạ bỗng đón toàn khách không mời.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: dramatic medium shot of a stunning wuxia swordswoman in snow-dusted crimson cloak stepping through inn doors, hand on jade sword hilt",
+      "motion": "Door swings open revealing fierce swordswoman in crimson cloak",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Cánh cửa gỗ bật tung, một nữ hiệp áo đỏ lạnh lùng bước vào phủi tuyết trên vai: Tiểu nhị, hâm nóng một vò Nữ Nhi Hồng thượng hạng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: expressive wuxia innkeeper waiter in patched tunic with white towel over shoulder smiling wryly while pouring steaming wine",
+      "motion": "Playful innkeeper wiping table with towel smiling wryly",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Ấy chết cô nương ơi, quán nhỏ chỉ có rượu gạo cay xè thôi, mà cô nương đặt thanh kiếm nhẹ tay kẻo gãy mất cái bàn ba chân của quán!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: low-angle shot of six masked black-robed assassins leaping onto the wooden inn balcony drawing gleaming steel blades",
+      "motion": "Six black-cloaked assassins burst onto mezzanine balcony",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Chén rượu chưa kịp chạm môi, sáu tên sát thủ Huyết Ảnh Môn đã đạp tung lan can gác gỗ hét lớn: Giao cuốn kiếm phổ ra đây thì tha mạng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: dynamic wuxia close-up of the crimson swordswoman spinning her silver blade in lantern light, knocking iron darts into wooden pillars",
+      "motion": "Crimson swordswoman draws flashing blade deflecting darts",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Nữ hiệp áo đỏ vung kiếm gạt văng loạt phi tiêu sắt, nhưng vết thương cũ bên vai tái phát khiến nàng lùi lại trúng ngay quầy rượu!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: cinematic slow-motion close-up of the humble waiter catching a spinning clay wine jar balanced on one fingertip without spilling a drop",
+      "motion": "Innkeeper catches falling wine jar on one finger effortlessly",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Ối giời ơi đánh nhau thì ra ngoài tuyết mà đánh, vỡ bình rượu sành gia truyền này lương ba năm của tôi đền không nổi đâu mấy đại ca!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: dramatic wuxia action shot of two bamboo chopsticks flicked through swirling lantern smoke, snapping steel sword blades in mid-air",
+      "motion": "Chopstick flicked faster than lightning shatters three assassin swords",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Dứt lời, gã tiểu nhị chỉ búng nhẹ đôi đũa tre trên tay: ba lưỡi đao thép của đám sát thủ lập tức gãy đôi rơi loảng xoảng xuống sàn!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: wide shot of shocked black-robed assassins stumbling backward out into the blizzard in sheer disbelief",
+      "motion": "Terrified assassin leader bows trembling and flees into snow",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Tên cầm đầu tái mét mặt mày nhận ra tuyệt kỹ Đạn Chỉ Thần Công thất truyền mười năm, vội vã ôm đầu cuốn gói chạy biến vào bão tuyết!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: warm lantern close-up of the crimson swordswoman gazing in awe at the smiling waiter already sweeping broken wood chips",
+      "motion": "Swordswoman stares amazed at humble waiter sweeping floor",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Nữ hiệp áo đỏ thu kiếm vào vỏ, ánh mắt kinh ngạc chắp tay hỏi: Hóa ra tiền bối chính là Độc Cô Kiếm Khách ẩn danh bấy lâu nay sao?",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: humorous warm medium shot of the wuxia waiter clicking a wooden abacus cheerfully beside a steaming teapot",
+      "motion": "Waiter laughs waving abacus counting silver coins",
+      "voice": "chautinhtri",
+      "ghost": false,
+      "voiceover": "Độc cô độc cốc gì đâu cô nương ơi, giang hồ chém giết mệt người lắm, giờ cộng tiền rượu với tiền gãy hai cái ghế tổng cộng ba lạng bạc chẵn nhé!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic classic Hong Kong & ancient Eastern wuxia cinema, anamorphic lens, dramatic lantern glow and atmospheric mountain mist, expressive faces and dynamic costume detail, no text, no watermark, no logos: cinematic dawn wide shot of crimson swordswoman riding away across sparkling snow glancing back warmly at the small smoking inn chimney",
+      "motion": "Crimson swordswoman smiles leaving silver ingot as dawn snow clears",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Nàng bật cười đặt thỏi bạc trắng lên bàn rồi lên ngựa khuất dạng sau đồi tuyết, để lại quán trọ nhỏ ấm nồng mùi rượu sớm...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -24
+        }
+      ]
+    }
+  ]
+}

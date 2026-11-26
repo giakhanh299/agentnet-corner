@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 22,
+  "slug": "ep22_chiec_guong_dong_trong_ruong_cuoi",
+  "title": "Chiếc Gương Đồng Úp Ngược Dưới Đáy Rương Cưới",
+  "cover_title": "GƯƠNG ĐỒNG TRONG RƯƠNG CƯỚI",
+  "cover_hook": "Tại sao chiếc gương đồng cổ dưới đáy rương gỗ lại bị dán kín bùa vàng suốt hai đời người?",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 222,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of an antique carved Vietnamese wooden bridal chest covered in dust inside a dim tiled-roof back room lit by an oil lamp",
+      "motion": "Slow close-up push-in on antique padlocked camphor chest",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Dưới gầm giường buồng trong của bà Cả có một chiếc rương gỗ long não khóa đồng rỉ sét chưa từng mở suốt bốn mươi năm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: young Vietnamese woman in 1960s silk blouse kneeling on cool floor tiles holding an old brass key beside the dusty wooden chest",
+      "motion": "Medium shot of curious young bride kneeling with brass key",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Ngày về làm dâu, cô Thảo dọn buồng vô tình nhặt được chiếc chìa đồng rơi sau chân tủ liền tò mò mở khóa nắp rương.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: top-down close-up inside the dark wooden chest showing a heavy antique bronze mirror placed face-down on faded red silk with torn yellow paper talisman",
+      "motion": "Overhead reveal of face-down bronze mirror wrapped in red cloth",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Bên dưới lớp lụa đỏ bạc màu là một tấm gương đồng cổ đặt úp sấp, mặt lưng khắc hoa văn kỳ lạ dán dải giấy vàng đã rách góc.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight close-up of young woman's hands lifting the heavy tarnished bronze mirror, faint distorted reflection shimmering in amber lamp glow",
+      "motion": "Slow tilt up as bride lifts tarnish bronze mirror toward face",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Cô Thảo vừa lật ngửa mặt gương lên lau lớp bụi mờ, ngọn đèn dầu trên bàn bỗng phụt xanh lè rồi lụi nhỏ bằng hạt đậu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: over-the-shoulder close-up into the antique bronze mirror: while the room is empty, the mirror reflects a pale bride in ancient red collar standing behind her",
+      "motion": "Chilling rack focus into mirror reflection behind her shoulder",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Trong mặt đồng mờ đục không chỉ in bóng mình cô, mà ngay sát sau vai phải còn hiện lên một người đàn bà mặc áo cưới cổ đang chải tóc.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: dramatic medium shot of the terrified young woman spinning around in the empty dim bedroom, curtains billowing in sudden cold draft",
+      "motion": "Sharp pull-back as Thảo spins around in empty room",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Cô Thảo đánh rơi chiếc khăn tay quay phắt lại sau lưng: căn buồng hoàn toàn trống không, chỉ có gió lạnh thốc tung rèm vải.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of condensation breath forming on the cold bronze mirror surface as if someone is breathing from the inside",
+      "motion": "Macro shot of comb teeth sound and mirror misting up",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Từ trong mặt gương nằm ngửa dưới sàn vọng ra tiếng lược sừng chải tóc sột… soạt… kèm lời thì thầm: Trả trâm cài tóc cho ta…",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: elderly Vietnamese man rushing through the wooden doorway holding a bright kerosene lantern, face pale with shock seeing the open chest",
+      "motion": "Door bursts open as elderly father-in-law rushes in with lamp",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Ông Cả nghe tiếng động chạy bổ vào buồng, vừa thấy tấm gương lật ngửa liền biến sắc lấy vạt áo che mắt con dâu kéo lùi ra cửa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of elderly hands quickly flipping the bronze mirror face-down without looking at it and tying thick red cord tightly around it",
+      "motion": "Close-up of weathered hands wrapping mirror in red cloth",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Không dám nhìn thẳng vào mặt đồng lấy nửa giây, ông Cả úp sấp chiếc gương xuống tấm nhiễu điều rồi buộc chặt ba vòng chỉ đỏ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: somber medium shot in dim ancestral hall as the old man locks the chest and speaks gravely to the shaken young woman",
+      "motion": "Somber two-shot by flickering altar lamp",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Ông trầm giọng kể: Gương tùy táng vớt được dưới bến sông thời loạn đã giữ bóng chủ cũ, soi vào ban đêm là nó mượn bóng người sống!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: low-angle shot of the locked wooden chest pushed deep under the dark bed in moonlight, a faint metallic tap echoing from within",
+      "motion": "Slow push-in on locked chest in dark corner at midnight",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đêm ấy chiếc rương đã khóa hai tầng ổ đồng, nhưng suốt canh ba cô Thảo vẫn nghe tiếng móng tay cào nhè nhẹ từ dưới gầm giường...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,10 @@
   "title": "Ván Cờ Trên Vách Núi Mây",
   "cover_text": "VÁN CỜ VÁCH NÚI",
   "hook": "Một nước cờ đổi lấy sự bình yên của cả ngôi làng.",
-  "voice": "phonui",
+  "voice": "chautinhtri",
   "color_grade": "wuxia",
   "cover_theme": "wuxia",
-  "aigc_label": true,
+  "aigc_label": false,
   "music": {
     "generator": "wuxia",
     "gain_db": 0
@@ -29,7 +29,7 @@
       "image_prompt": "Golden lantern light on an old chess master placing a black stone on a cliffside stone chessboard above clouds, misty bamboo mountains, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Một nước cờ đổi lấy bình yên cả ngôi làng.",
-      "vo_at": 0.0,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -45,7 +45,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 2,
@@ -54,7 +55,7 @@
       "image_prompt": "Soft dawn light on a weathered stone chessboard set into a misty mountain cliff, clouds drifting below, bamboo forest in distance, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Trên vách núi mây, bàn cờ đá vẫn còn đó.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -70,7 +71,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 3,
@@ -79,7 +81,7 @@
       "image_prompt": "Warm lantern light on an elderly chess master in grey robes sitting calmly before a stone chessboard, misty bamboo mountain behind him, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Lão Kỳ ngồi lặng, tay đặt quân cờ đen.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -95,7 +97,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 4,
@@ -104,7 +107,7 @@
       "image_prompt": "Pale moonlight on empty seat opposite the chess master, mist swirling across the stone board, bamboo leaves moving in wind, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Đối thủ của lão chỉ là gió núi mà thôi.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -120,7 +123,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 5,
@@ -129,7 +133,7 @@
       "image_prompt": "Golden sunset light on two mountain villages facing each other across a narrow valley stream, terraced fields below, misty bamboo mountains, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Ngày xưa, hai làng tranh nhau một mạch nước.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -145,7 +149,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 6,
@@ -154,7 +159,7 @@
       "image_prompt": "Lantern light on two village elders shaking hands over a stone chessboard on a mountain cliff, mist and bamboo around them, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Ai thắng ván cờ sẽ giữ dòng nước ấy.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -170,7 +175,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 7,
@@ -179,7 +185,7 @@
       "image_prompt": "Harsh dry sunlight on cracked terraced fields below a misty mountain village, villagers carrying empty water jars, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Lão Kỳ thua ba ván, làng vẫn khát khô.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -195,7 +201,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 8,
@@ -204,7 +211,7 @@
       "image_prompt": "Soft morning light on the old chess master studying clouds gathering over bamboo mountain peaks, wind moving his grey robe, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Rồi lão nhìn mây, nhìn đá, nhìn hướng gió.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -220,7 +227,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 9,
@@ -229,7 +237,7 @@
       "image_prompt": "Grey storm light on dark clouds gathering above misty bamboo mountain peaks, rain approaching a valley village, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Mây tụ trên đỉnh báo mưa sắp về làng.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -245,7 +253,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 10,
@@ -254,7 +263,7 @@
       "image_prompt": "Clear morning light on rain-washed stone chessboard on the mountain cliff, fresh water flowing in the valley stream below, misty bamboo mountains, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Không có phép màu, chỉ có trí tuệ quan sát.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -270,7 +279,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     },
     {
       "id": 11,
@@ -279,7 +289,7 @@
       "image_prompt": "Warm lantern light on the old chess master smiling gently as villagers share water peacefully in the valley below, misty bamboo mountains at dusk, ancient lantern ink atmosphere, cinematic wuxia, vertical 9:16, no text, no logo, no blood",
       "motion": "",
       "voiceover": "Một nước cờ hay giữ làng yên qua mùa khô.",
-      "vo_at": 0.3,
+      "vo_at": 0.12,
       "sfx": [
         {
           "tag": "tag",
@@ -295,7 +305,8 @@
           "dur": 5.0,
           "gain_db": -28
         }
-      ]
+      ],
+      "voice": "chautinhtri"
     }
   ],
   "seed": 716,
@@ -305,5 +316,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "tight_pacing": true
 }

@@ -1,0 +1,220 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 30,
+  "slug": "ep30_buc_anh_tho_nhay_mat_dem_cup_dien",
+  "title": "Đừng Chiếu Đèn Vào Bàn Thờ Cũ Lúc Nửa Đêm Mất Điện",
+  "cover_title": "ĐÊM MẤT ĐIỆN BÊN BÀN THỜ CŨ",
+  "cover_hook": "Khi nến trên bàn thờ nhà cổ vụt tắt giữa đêm giông, tuyệt đối đừng rọi đèn từ dưới hắt ngược lên khung ảnh!",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 230,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: dramatic interior shot of a traditional three-bay Vietnamese wooden ancestral house as lightning flashes outside and darkness swallows the room",
+      "motion": "Thunderstorm plunging old ancestral wooden house into darkness",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Giữa cơn giông sấm sét ầm ầm đêm cuối hạ, cả dãy nhà ngói cổ ba gian mất điện tối sầm chỉ còn tiếng mưa dội xối xả trên sân.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: young Vietnamese man in 1960s shirt holding a small glass oil lamp low near his waist while feeling around an ornate dark wooden altar for matches",
+      "motion": "Nephew searching dark altar table with low-held oil lamp",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Khoa ở lại trông từ đường giúp bác trưởng tộc, mò mẫm cầm ngọn đèn dầu nhỏ đi lên gian giữa tìm bao diêm châm lại đèn thờ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: chilling close-up of an antique sepia ancestral portrait in a wooden frame lit from below by flickering amber light, eyes appearing deep and alive",
+      "motion": "Upward lamp beam casts uncanny moving shadows on sepia portrait",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Quên mất lời dặn của người già, cậu vô tình giơ ngọn đèn hắt thẳng từ dưới cằm ngược lên tấm di ảnh đen trắng của cụ tổ bà.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of the antique wooden portrait frame tilting half an inch on the wall while grey incense ash slides down inside the brass censer",
+      "motion": "Incense bowl ash shifts and portrait frame tilts slightly",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Dưới ánh lửa chập chờn hắt ngược, khóe môi nghiêm nghị trong bức ảnh ố vàng bỗng như cong lên, đôi mắt từ từ liếc xuống nhìn thẳng vào tay cậu!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a small brass altar bell rolling off the carved mahogany table edge by itself and hitting the brick floor with a sharp metallic ring",
+      "motion": "Brass altar bell falls off edge ringing sharply in silent room",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Chưa kịp chớp mắt thì chiếc chuông đồng đặt sát mép bàn thờ tự nhiên lăn tròn rơi keng xuống gạch, dù cửa nẻo bốn bề đã đóng kín mít.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "folk_oneshot",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of Khoa freezing in shock as his lamp reveals dark rainwater leaking from a cracked roof tile directly onto the wooden ancestral tablet behind the frame",
+      "motion": "Khoa freezes seeing wet leak dripping directly onto ancestral tablet",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Tim đập thình thịch định bỏ chạy, nhưng ánh đèn vừa lia qua phía sau khung ảnh khiến cậu sững người phát hiện ra sự thật bất ngờ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight close-up behind the portrait showing a displaced roof tile from the storm dripping rainwater straight down the wall onto the sacred wooden tablet",
+      "motion": "Close-up of roof tile crack pouring rainwater onto antique wood",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Một viên ngói âm dương trên nóc vừa bị gió bão thổi lệch, nước mưa đang xối thẳng xuống làm ướt sũng bài vị gỗ quý phía sau di ảnh!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: respectful medium shot of Khoa climbing a wooden stool to cover the leak, wiping the ancestral frame dry with a clean cloth and lighting three warm incense sticks",
+      "motion": "Khoa respectfully wipes dry, moves tablet safe, lights warm incense",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Hiểu ra bề trên quở nhắc con cháu sửa mái nhà dột, Khoa vội vã lấy khăn sạch lau khô bài vị, kê thau hứng nước rồi thành kính thắp ba nén nhang trầm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: warm symmetrical close-up of two steady oil lamps placed properly on both sides of the altar, the sepia portrait now looking calm and benevolent",
+      "motion": "Warm steady twin altar lamps illuminate peaceful portrait face",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Khi hai ngọn đèn dầu được đặt cân đối hai bên bát hương đúng phép tắc xưa, gương mặt trong bức ảnh cổ lại trở về vẻ hiền từ tĩnh tại.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "leaves_wind",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: bright crisp morning shot of the elderly clan uncle and young nephew on a bamboo ladder replacing red roof tiles under clear blue sky",
+      "motion": "Morning sunlight as uncle & nephew repair roof tiles together",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Sáng sớm bác trưởng tộc trở về nghe chuyện liền gật gù cảm kích, hai bác cháu bắc thang đảo lại toàn bộ hàng ngói nóc từ đường.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic wide interior shot of the traditional Vietnamese ancestral hall bathed in golden afternoon sunbeams drifting through fragrant incense smoke",
+      "motion": "Closing shot of warm ancestral hall glowing with fragrant incense smoke",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Người xưa dạy chớ soi đèn ngược mặt ảnh thờ là vì lòng kính trọng, và nơi hương ấm lòng thành thì gia đạo lúc nào cũng được chở che...",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}
