@@ -1,0 +1,132 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 9,
+  "slug": "k1_srt_09_vay_tien_mua_may_danh_chu_thi_vao_ibm",
+  "title": "Vay Tiền Mua Máy Đánh Chữ Gõ Trắng Đêm 7 Ngày Để Bước Vào IBM",
+  "cover_title": "7 ĐÊM GÕ MÁY ĐÁNH CHỮ VÀO IBM",
+  "cover_hook": "Khi quy tắc chưa viết xong họ đã dám chạy trước, vì ở vị trí cũ họ chẳng có gì để mất.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 109,
+  "voice": "tienvadoi",
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "bi_mat_dong_troi__7698695452514096297.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 8.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1985 young man in a neat white shirt typing intensely late at night on a mechanical typewriter under a green banker lamp, calloused fingers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Năm 1985, Ngô Thế Hoành, một y tá Bắc Kinh, đứng ngoài cửa xoay của Khách sạn Trường Thành, lén xem người ta đi qua cửa xoay đó thế nào.",
+      "vo_at": 0.9,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 8.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1985 young man in a neat white shirt typing intensely late at night on a mechanical typewriter under a green banker lamp, calloused fingers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Ông ấy chưa từng đi qua bao giờ, mất mười phút mới lấy đủ can đảm, Bước vào, Ứng tuyển IBM, Người phỏng vấn hỏi anh có biết đánh máy không.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 8.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1985 young man in a neat white shirt typing intensely late at night on a mechanical typewriter under a green banker lamp, calloused fingers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Anh nói biết, Rời phòng thi, Anh vay 680 nghìn đồng, Mua máy đánh chữ, Ngày đêm gõ suốt một tuần, Mỏi tay đến mức không cầm nổi đũa.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 8.3,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Thử nghĩ năm 1985, Một y tá đến ứng tuyển công ty nước ngoài, Trong giới cũ của anh ấy, Bị coi là không an phận.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 8.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Ngô Tiểu Ba viết trong sách, Nhóm người này có một điểm chung, Sự nông cạn của họ, Khiến họ xử lý mọi vấn đề kinh doanh.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 8.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1923 Weimar Republic archival-style colorized cinema shot of a citizen pushing a wooden wheelbarrow stacked with bundles of paper banknotes past a bakery, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Đều có thể bằng cách gọn nhất, Đi thẳng vào cốt lõi, Sự lạnh lùng của họ, Khiến họ có thể bóc bỏ, Mọi vẻ đạo đức tình cảm.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 8.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, lone runner sprinting across a misty dawn bridge ahead of a distant crowd as city lights flicker on, dramatic cinematic silhouette, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Mà trở về bản chất quan hệ lợi ích, Sự không sợ mệnh trời của họ, Khiến họ có thể không kiêng nể gì mà, Phá vỡ mọi quy tắc và chuẩn mực.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 6.3,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Bạn tưởng mình đang khởi nghiệp, Thực ra bạn đang cược rằng vi phạm sẽ không bị truy cứu.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 5.1,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Những người sau này thành công, Không phải vì họ giỏi tính toán hơn bạn.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 8.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, lone runner sprinting across a misty dawn bridge ahead of a distant crowd as city lights flicker on, dramatic cinematic silhouette, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Mà vì họ dám hơn bạn: khi quy tắc chưa viết xong, Họ chạy trước, Quy tắc viết xong rồi, Đường đua kín chỗ ngay, Bạn chen vào không nổi.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 5.7,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, lone runner sprinting across a misty dawn bridge ahead of a distant crowd as city lights flicker on, dramatic cinematic silhouette, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Nhưng nghĩ sâu thêm một lớp, Tại sao khi quy tắc chưa viết xong, Họ dám chạy.",
+      "vo_at": 0.35,
+      "sfx": []
+    }
+  ]
+}

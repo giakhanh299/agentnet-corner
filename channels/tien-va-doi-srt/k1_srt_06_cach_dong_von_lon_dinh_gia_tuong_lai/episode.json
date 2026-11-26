@@ -1,0 +1,132 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 6,
+  "slug": "k1_srt_06_cach_dong_von_lon_dinh_gia_tuong_lai",
+  "title": "Bí Mật Đằng Sau Bảng Điện: Dòng Vốn Lớn Thực Sự Mua Bán Thứ Gì?",
+  "cover_title": "DÒNG VỐN LỚN MUA THỨ GÌ?",
+  "cover_hook": "Thị trường không giao dịch hiện tại, nó định giá kỳ vọng và nỗi sợ của đám đông về ngày mai.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 106,
+  "voice": "tienvadoi",
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "cuoc_choi_vi_dai_pho_wall__7697568844546088703.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 8.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Cái giá của sự hiệu quả này là gì, Gordon kể một chi tiết trong sách, Thế kỷ 19, Thị trường chứng khoán Phố Wall đầy rẫy thao túng giao dịch nội gián.",
+      "vo_at": 0.9,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 8.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Thông tin giả, Cá lớn tung hoành, Nhà đầu tư nhỏ lẻ đổ máu, Nhưng chính thị trường hỗn loạn này, đã cung cấp cho đường sắt, thép dầu mỏ, của nước Mỹ nguồn vốn khổng lồ.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Kinh tế Mỹ trỗi dậy, Phố Wall cũng trỗi dậy.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 8.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Bạn có nhận ra không, Sự hiệu quả của Phố Wall, được xây trên thua lỗ của hết thế hệ này đến thế hệ khác nhà đầu tư nhỏ lẻ.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 8.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Nhà đầu tư nhỏ lẻ không phải khách hàng của Phố Wall, Nhà đầu tư nhỏ lẻ là nhiên liệu của Phố Wall, Gordon nói trong sách, Lịch sử Phố Wall.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 8.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Là một bước không ngừng biến tiền của nhà đầu tư nhỏ lẻ, Trở thành hạ tầng quốc gia trong lịch sử, Mỗi lần bạn lao vào, đều đang tiếp thêm nhiên liệu cho cỗ máy này.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 8.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Mỗi lần bạn cắt lỗ bỏ chạy, đều đang nhường chỗ cho nhóm người tiếp theo, Tầng thứ hai, Bạn tưởng mình đang đầu tư, thực ra bạn đang châm củi cho bong bóng.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 8.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Nói xong logic nền tảng của Phố Wall chúng ta nói tiếp, một thứ mà ai cũng nghĩ mình hiểu, nhưng gần như ai cũng từng vấp ngã: bong bóng, Gordon đã viết vài bong bóng trong sách.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 8.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Bong bóng kênh đào thập niên 1830, Bong bóng đường sắt thập niên 1850, Bong bóng thép thập niên 1880, Bong bóng ô tô thập niên 1920, Bong bóng internet thập niên 1990.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 5.4,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Mỗi lần bong bóng, kịch bản đều giống nhau, Đầu tiên có một cơ hội thật.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 8.5,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Rồi có người đóng gói cơ hội đó thành một câu chuyện, rồi tất cả mọi người đều trả tiền cho câu chuyện đó, rồi câu chuyện không kể tiếp được nữa rồi sụp đổ.",
+      "vo_at": 0.35,
+      "sfx": []
+    }
+  ]
+}

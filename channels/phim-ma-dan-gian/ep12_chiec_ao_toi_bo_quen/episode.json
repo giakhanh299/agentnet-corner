@@ -1,7 +1,7 @@
 {
   "episode_id": "ep12",
-  "title": "Chiếc Áo Tôi Bỏ Quên Bên Bờ Đê",
-  "cover_title": "CHIẾC ÁO TÔI BỎ QUÊN BÊN BỜ ĐÊ",
+  "title": "Chiếc Áo Tơi Bỏ Quên Bên Bờ Đê",
+  "cover_title": "CHIẾC ÁO TƠI BỎ QUÊN BÊN BỜ ĐÊ",
   "series": "Phim Ma Dân Gian Việt Nam",
   "voice": "phonui",
   "color_grade": "folk_horror",
@@ -25,7 +25,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cold storm light on a lone figure in a raincoat standing on a Vietnamese river dike at night, heavy rain, lightning glow, mist, amber oil lamp, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
       "motion": "",
-      "voiceover": "Đêm mưa bão, ai mặc áo tôi đứng gọi đò?",
+      "voiceover": "Đêm mưa bão, ai mặc áo tơi đứng gọi đò?",
       "vo_at": 0.0,
       "sfx": [
         {
@@ -303,5 +303,6 @@
     "height": 1920,
     "fps": 30
   },
-  "cover_image": "scene_01.png"
+  "cover_image": "scene_01.png",
+  "cover_scene": 1
 }

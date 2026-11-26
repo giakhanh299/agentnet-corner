@@ -1,0 +1,132 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 5,
+  "slug": "k1_srt_05_loi_noi_doi_dat_gia_lan_nay_khac_roi",
+  "title": "Câu Nói Đắt Giá Nhất 300 Năm Lịch Sử Tài Chính: Lần Này Khác Rồi",
+  "cover_title": "BẪY TÂM LÝ: LẦN NÀY KHÁC RỒI",
+  "cover_hook": "Ba trăm năm qua công nghệ đổi thay, nhưng bản tính tham lam và sợ hãi của con người chưa từng đổi.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 105,
+  "voice": "tienvadoi",
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "cuoc_choi_vi_dai_pho_wall__7697568844546088703.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Bạn đang làm gì, Mua thấp bán cao.",
+      "vo_at": 0.9,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 7.8,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Đuổi theo tăng giết theo giảm, Bạn tưởng mình đang dùng công cụ tài chính hiện đại, Thực ra bạn chỉ đang dùng bản.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 8.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Tính con người của 300 năm trước, Chơi trò chơi của 300 năm trước, Gordon nói trong sách, Trên Phố Wall không có gì mới, Mọi thứ đều đã từng xảy ra.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 8.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, crowd of anxious traders watching a massive red market crash curve reflected in their glasses, dramatic cinema lighting, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Chỉ là đổi diễn viên và đạo cụ khác nhau, Bạn hiểu chưa, Mỗi lần bạn nghĩ lần này khác rồi, Đều đã có người nói y hệt.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 8.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, crowd of anxious traders watching a massive red market crash curve reflected in their glasses, dramatic cinema lighting, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Rồi bị chôn chung một cái hố, Nhưng nghĩ sâu thêm một lớp, Vì bản tính con người không đổi, Tại sao Wall Street từ cái chợ dưới gốc cây.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 8.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Lại thành trung tâm tài chính toàn cầu, Vì Wall Street có một thứ, Nơi khác không có, Thanh khoản, Gordon kể một câu chuyện trong sách.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 8.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Giữa thế kỷ 19, Wall Street chỉ là một thị trường nhỏ, Nước Mỹ thời đó, Đâu đâu cũng có sở giao dịch địa phương, Boston có.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 8.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Philadelphia có, Chicago có, Nhưng tại sao cuối cùng Wall Street thắng, Vì Wall Street hút tiền của tất cả mọi người, Về phía mình, Nó không chỉ mua bán cổ phiếu.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 8.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Nó xây đường sắt, Đào kênh, Mở nhà máy, Nó biến vốn của cả thế giới, thành năng lực công nghiệp của Mỹ, Anh thử nghĩ logic này xem.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 8.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, moody cinematic close-up of an antique brass scale balancing gold coins against a stack of debt contracts on dark walnut wood, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Anh có một khoản tiền, Anh muốn đầu tư, Anh đến sàn giao dịch địa phương, Thứ mua được chỉ có vài loại, Anh đến Wall Street.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Anh mua được đường sắt, Mua thép, Mua dầu mỏ, Mua điện báo.",
+      "vo_at": 0.35,
+      "sfx": []
+    }
+  ]
+}

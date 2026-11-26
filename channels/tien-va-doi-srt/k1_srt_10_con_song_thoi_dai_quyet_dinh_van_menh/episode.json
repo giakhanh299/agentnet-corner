@@ -1,0 +1,132 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 10,
+  "slug": "k1_srt_10_con_song_thoi_dai_quyet_dinh_van_menh",
+  "title": "Năng Lực Cá Nhân Hay Con Sóng Thời Đại Mới Quyết Định Giàu Nghèo?",
+  "cover_title": "CON SÓNG THỜI ĐẠI & VẬN MỆNH",
+  "cover_hook": "Hiểu chu kỳ kinh tế không phải để đầu cơ, mà để không đứng ngược chiều khi con sóng lớn ập tới.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 110,
+  "voice": "tienvadoi",
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "bi_mat_dong_troi__7698695452514096297.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 8.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Bạn tưởng mình đang điều hành doanh nghiệp, Thực ra bạn đang điều hành khoảng cách với quyền lực, Bàn xong cách vào cuộc, Ta bàn chuyện sau khi vào cuộc.",
+      "vo_at": 0.9,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 8.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1985 young man in a neat white shirt typing intensely late at night on a mechanical typewriter under a green banker lamp, calloused fingers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Ngô Tiểu Ba viết một chi tiết trong sách, Rất đáng suy ngẫm, Ông ấy nói năm 1987, IBM tung ra dòng sản phẩm mới, Hoàn toàn dựa trên hệ điều hành riêng và chip tự sản xuất.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 8.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1985 young man in a neat white shirt typing intensely late at night on a mechanical typewriter under a green banker lamp, calloused fingers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Nhằm độc chiếm thị trường, Ngô Tiểu Ba nhận xét, Đây là sai lầm mà IBM mắc phải trong thập niên 80, Một trong những sai lầm nghiêm trọng nhất.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 8.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Sao lại nhắc đến IBM, Vì nó đang nói lên một bài học, Chiến lược khép kín là con đường chết, Nhưng doanh nghiệp Trung Quốc đối mặt, Là một kiểu khép kín khác.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 8.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, moody cinematic close-up of an antique brass scale balancing gold coins against a stack of debt contracts on dark walnut wood, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Trong sách có một câu, Được rất nhiều người nhớ, Đấu với trời, đấu với đất, Nhưng không được đấu với chính phủ, Nghe cứ thấy chói tai, Ngô Tiểu Ba viết thẳng hơn bạn tưởng, ông viết.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 8.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Yang Rong năm 2002, Nhân vật huyền thoại của ngành ô tô Trung Quốc, Đi Mỹ rồi không về, Việc ông ra đi, là một trong nhiều ván cờ chính trị - kinh doanh bị phá vỡ.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 8.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Rất điển hình, Bạn thử nghĩ xem, Yang Rong năm đó ở ngành ô tô có vị trí thế nào, Một tay ông điều hành Hoa Thần, đưa một công ty Trung Quốc lên sàn New York.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Ông tưởng mình đang kinh doanh doanh nghiệp, Nhưng trong hệ thống đó.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 8.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Thứ ông kinh doanh chưa bao giờ là doanh nghiệp, Thứ ông kinh doanh là một, giấy phép có thể bị thu hồi bất cứ lúc nào.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 7.2,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Bu Tân Sinh, Nhân vật phong vân cải cách thập niên 1980, Tổng giám đốc nhà máy áo sơ mi Hải Nham.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 7.2,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Năm đó nổi đến mức nào, Cả nước học Bu Tân Sinh, Sau đó thì sao, Ngô Tiểu Ba viết trong sách.",
+      "vo_at": 0.35,
+      "sfx": []
+    }
+  ]
+}

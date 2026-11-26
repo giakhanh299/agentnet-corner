@@ -1,0 +1,132 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 7,
+  "slug": "k1_srt_07_ba_muoi_nam_day_song_pha_bay_lam_thue",
+  "title": "Ba Mươi Năm Dậy Sóng: Vì Sao Chỉ Chăm Chỉ Làm Thuê Khó Đổi Đời?",
+  "cover_title": "BẪY CHĂM CHỈ LÀM THUÊ",
+  "cover_hook": "Mỗi lần bạn tin chỉ cần cố gắng là đổi đời, cuốn sách này sẽ cho bạn thấy quy luật thật sự.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 107,
+  "voice": "tienvadoi",
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "bi_mat_dong_troi__7698695452514096297.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 6.4,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Ngay tên sách đã có mùi máu tanh. Ba mươi năm dậy sóng, có thể bạn sẽ nói.",
+      "vo_at": 0.9,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 8.3,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Tôi đâu có khởi nghiệp. Tôi đâu có mở công ty. Lịch sử doanh nghiệp thời cải cách mở cửa thì liên quan gì đến tôi.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 8.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Liên quan lớn đấy. Mỗi lần bạn nghĩ chỉ cần cố gắng là có thể đổi, đời, mỗi lần tin năng lực quyết định vận mệnh. Mỗi lần tưởng lựa chọn quan trọng hơn nỗ lực.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 8.5,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, lone runner sprinting across a misty dawn bridge ahead of a distant crowd as city lights flicker on, dramatic cinematic silhouette, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Bạn đang dùng một bộ, quy tắc mình chưa hiểu nổi, để lý giải trò chơi mà bạn tưởng đã tham gia. Tác giả cuốn sách này là Ngô Hiểu Ba. Nhà văn tài chính, trước khi viết cuốn này ông đã làm gì?",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 8.5,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, rain-streaked glass skyscraper on Wall Street at night, employees carrying cardboard boxes past glowing red financial tickers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Ông lấy cả giai đoạn 1978 đến 2008, trọn 30 năm, lật từng năm một. Đào từng doanh nghiệp một. Không phải viết sách thành công học. Mà viết về thăng trầm vận mệnh của những người nhỏ bé.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 8.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Cuốn này xuất bản năm 2007. Hai tập, được Ngô Kính Liên đề cử. Có giáo sư Bắc Đại và Harvard cùng đứng ra bảo chứng. Đa phần người ta nói rằng, Đọc xong cuốn sách này.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 8.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Bỗng nhiên cả lịch sử cải cách phát triển của Trung Quốc cứ thế, hiện rõ mồn một trước mắt, Nhưng Ngô Tiểu Ba viết trong sách một câu rất thẳng thừng, Ông ấy nói.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 8.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, rain-streaked glass skyscraper on Wall Street at night, employees carrying cardboard boxes past glowing red financial tickers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Trung Quốc từ năm 1978 đến 2008, Trong giới kinh doanh, Xuất hiện một nhóm người như thế này, Họ xuất thân dân dã, Không thiếu phần man dã, Tính khí thất thường, Nhẫn nại và dám liều mình giành lấy.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 8.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, lone runner sprinting across a misty dawn bridge ahead of a distant crowd as city lights flicker on, dramatic cinematic silhouette, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Bạn hiểu chưa, Không phải giới tinh hoa, Không phải dân học giỏi, Không phải được lên kế hoạch sẵn, Mà là một lũ tay ngang, Tôi sẽ dẫn bạn bóc từng lớp cuốn sách này.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 8.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Để nhìn rõ những thứ khiến bạn trong làn sóng thời đại, Tưởng mình đang bơi, Thật ra chỉ đang bị sặc nước, Rốt cuộc là gì.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 8.5,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Lớp đầu tiên, Bạn tưởng bạn đang khởi nghiệp, Thực ra bạn đang đánh cược vào một cơ hội làm trái quy định. Hỏi bạn một câu trước.",
+      "vo_at": 0.35,
+      "sfx": []
+    }
+  ]
+}

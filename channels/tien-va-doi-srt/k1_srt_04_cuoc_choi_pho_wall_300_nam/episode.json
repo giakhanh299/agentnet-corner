@@ -1,0 +1,132 @@
+{
+  "series": "Tiền Và Đời",
+  "target_channel": "KENH_001",
+  "episode": 4,
+  "slug": "k1_srt_04_cuoc_choi_pho_wall_300_nam",
+  "title": "Cuộc Chơi Vĩ Đại Ở Phố Wall Liên Quan Gì Đến Túi Tiền Của Bạn?",
+  "cover_title": "CUỘC CHƠI VĨ ĐẠI PHỐ WALL",
+  "cover_hook": "Mỗi lần bạn nghĩ không đụng đến cổ phiếu là an toàn, bạn vẫn đang nằm trong cuộc chơi này.",
+  "cover_theme": "knowledge",
+  "cover_scene": 1,
+  "seed": 104,
+  "voice": "tienvadoi",
+  "aigc_label": false,
+  "color_grade": "vivid_doc",
+  "source_srt": "cuoc_choi_vi_dai_pho_wall__7697568844546088703.srt",
+  "music": {
+    "generator": "finance",
+    "gain_db": 2
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 8.5,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Tên sách cực kỳ chất \"Cuộc Chơi Vĩ Đại\", Bạn có thể nói tôi có chơi chứng khoán đâu, Cuộc chơi ở Phố Wall thì liên quan gì đến tôi, Liên quan lớn lắm.",
+      "vo_at": 0.9,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "duration_s": 8.5,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Mỗi lần bạn xem tin tức tài chính, Mỗi lần nghe người ta nói thị trường chứng khoán là phong vũ biểu của kinh tế, Mỗi lần bạn nghĩ không đụng đến cổ phiếu là an toàn rồi.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "duration_s": 8.5,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Bạn đang dùng một bộ luật bạn chưa từng hiểu, Chơi một ván mà bạn tưởng mình đứng ngoài được, Tác giả cuốn sách này là John Steele Gordon, Nhà sử học kinh tế Mỹ.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "duration_s": 6.9,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Trước khi viết cuốn sách này ông đã làm gì, Ông viết về Phố Wall từ năm 1653, Đến năm 2001.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "duration_s": 7.2,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Trải dài 348 năm, Không phải viết về cổ phiếu, Mà viết về lịch sử cuộc chơi của bản tính con người.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "duration_s": 8.5,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Cuốn sách xuất bản năm 2005, Bản tiếng Trung do Tề Bân dịch, Tề Bân là ai, Cựu Giám đốc Sở Quốc tế Ủy ban Chứng khoán Trung Quốc, Sau đó làm Phó Tổng giám đốc Tập đoàn Đầu tư Trung Quốc.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "duration_s": 8.5,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Khi dịch cuốn sách này, ông ấy đã nói một câu, Lịch sử của \"Phố Wall\" chính là lịch sử kinh tế của nước Mỹ, Cũng là lịch sử đấu tranh của bản tính con người.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "duration_s": 8.5,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
+      "voiceover": "Bạn có thể nói, Thì liên quan gì đến tôi, Liên quan lớn đấy, Gordon đã nói một điều trong sách, Bản chất của Phố Wall, là một cỗ máy biến điểm yếu.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "duration_s": 8.5,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
+      "voiceover": "Của con người thành động lực kinh tế, Mỗi lần bạn tham lam, Mỗi lần bạn sợ hãi, Mỗi lần bạn nghĩ, Lần này sẽ khác, Đều nằm trong tính toán của cỗ máy này.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "duration_s": 8.5,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
+      "voiceover": "Tôi sẽ cùng bạn bóc tách cuốn sách này từng lớp một, Nhìn rõ những, thế lực vô hình khiến bạn lao vào đỉnh cao, cắt lỗ bỏ chạy ở đáy thấp, Rốt cuộc là gì.",
+      "vo_at": 0.35,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "duration_s": 7.8,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
+      "voiceover": "Lớp thứ nhất, Bạn tưởng bạn đang chơi chứng khoán, Thực ra bạn đang tham gia một, cuộc chạy tiếp sức ba trăm năm.",
+      "vo_at": 0.35,
+      "sfx": []
+    }
+  ]
+}
