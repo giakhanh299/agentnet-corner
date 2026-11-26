@@ -25,7 +25,7 @@
       "clip": "scene_01.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Một người nắm dòng tiền trong tay, Một người mà ai cũng bảo, Anh làm được, Anh ta đưa ra một quyết định rồi, Sụp đổ, Ngô Tiểu Ba có một câu trong sách, Mỗi lần đọc tôi đều thấy lạnh sống lưng, ông ấy nói.",
+      "voiceover": "Một người nắm dòng tiền trong tay, một người mà ai cũng bảo, anh làm được, anh ta đưa ra một quyết định rồi, sụp đổ, Ngô Tiểu Ba có một câu trong sách, mỗi lần đọc tôi đều thấy lạnh sống lưng, ông ấy nói.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -35,7 +35,7 @@
       "clip": "scene_02.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Bất cứ thứ gì được coi là kỳ tích, Thường rất khó kéo dài, Vì nó đến từ một hành trình vượt xa thông thường, Những người trong cuộc, Những người nhờ đó mà hưởng lợi khổng lồ, Thường chẳng thể thoát khỏi những.",
+      "voiceover": "Bất cứ thứ gì được coi là kỳ tích, thường rất khó kéo dài, vì nó đến từ một hành trình vượt xa thông thường, những người trong cuộc, những người nhờ đó mà hưởng lợi khổng lồ, thường chẳng thể thoát khỏi những.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -45,7 +45,7 @@
       "clip": "scene_03.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Duyên phận khiến họ nhớ cả đời, Họ tin đó là số phận, Họ luôn mong lần nào cũng gặp vận may, Lần nào cũng mong may mắn thắng được, cuối cùng, Mọi vinh quang, thường héo tàn ngay trong vinh quang của chính mình.",
+      "voiceover": "Duyên phận khiến họ nhớ cả đời, họ tin đó là số phận, họ luôn mong lần nào cũng gặp vận may, lần nào cũng mong may mắn thắng được, cuối cùng, mọi vinh quang, thường héo tàn ngay trong vinh quang của chính mình.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -55,7 +55,7 @@
       "clip": "scene_04.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, moody cinematic close-up of an antique brass scale balancing gold coins against a stack of debt contracts on dark walnut wood, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Mọi vinh quang, thường héo tàn ngay trong vinh quang của chính mình, Bạn cứ nói câu này, Bạn không bị đối thủ đánh bại, Bạn bị chính thứ mình giỏi nhất từ từ siết chết, Jianlibao giỏi tiếp thị thể thao.",
+      "voiceover": "Mọi vinh quang, thường héo tàn ngay trong vinh quang của chính mình, bạn cứ nói câu này, bạn không bị đối thủ đánh bại, bạn bị chính thứ mình giỏi nhất từ từ siết chết, jianlibao giỏi tiếp thị thể thao.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -65,7 +65,7 @@
       "clip": "scene_05.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Rồi thị trường thay đổi, Cự Nhân giỏi thẻ Hán tự, Rồi cuộc chiến giá máy tính ập đến.",
+      "voiceover": "Rồi thị trường thay đổi, cự Nhân giỏi thẻ Hán tự, rồi cuộc chiến giá máy tính ập đến.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -75,7 +75,7 @@
       "clip": "scene_06.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Bạn giỏi ở vị trí hiện tại, Rồi ngành đó biến mất, Bạn tưởng mình đang làm thương hiệu, Thực ra bạn đang lấy một câu chuyện sớm muộn sẽ hết hạn.",
+      "voiceover": "Bạn giỏi ở vị trí hiện tại, rồi ngành đó biến mất, bạn tưởng mình đang làm thương hiệu, thực ra bạn đang lấy một câu chuyện sớm muộn sẽ hết hạn.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -85,7 +85,7 @@
       "clip": "scene_07.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Làm nhiên liệu, Tầng thứ tư, Bạn tưởng mình đang thay đổi số phận, Thực ra bạn chỉ đang bị thời đại sàng lọc, Nói đến đây, Giờ ta nói về một thứ lớn hơn: thời đại, Ngô Tiểu Ba trong sách dẫn một câu của Phí Chính Thanh.",
+      "voiceover": "Làm nhiên liệu, tầng thứ tư, bạn tưởng mình đang thay đổi số phận, thực ra bạn chỉ đang bị thời đại sàng lọc, nói đến đây, giờ ta nói về một thứ lớn hơn: thời đại, Ngô Tiểu Ba trong sách dẫn một câu của Phí Chính Thanh.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -95,7 +95,7 @@
       "clip": "scene_08.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Phí Chính Thanh khuyên học trò rằng, Trên sông Hoàng Hà ở Trung Quốc, chèo thuyền ngược dòng, Bạn thường thấy con thuyền uốn lượn đi tới, Mà không để ý những người kéo dây trên bờ, Bạn hiểu chưa.",
+      "voiceover": "Phí Chính Thanh khuyên học trò rằng, trên sông Hoàng Hà ở Trung Quốc, chèo thuyền ngược dòng, bạn thường thấy con thuyền uốn lượn đi tới, mà không để ý những người kéo dây trên bờ, bạn hiểu chưa.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -105,7 +105,7 @@
       "clip": "scene_09.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Bạn thấy là những doanh nhân thành công, Bạn không thấy là những người kéo dây trên bờ, Là những người cũng nỗ lực, Cũng thông minh, Cũng dám đánh cược, Nhưng không được thời đại chọn, Ngô Tiểu Ba viết rất rõ trong sách, năm 1979.",
+      "voiceover": "Bạn thấy là những doanh nhân thành công, bạn không thấy là những người kéo dây trên bờ, là những người cũng nỗ lực, cũng thông minh, cũng dám đánh cược, nhưng không được thời đại chọn, Ngô Tiểu Ba viết rất rõ trong sách, năm 1979.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -115,7 +115,7 @@
       "clip": "scene_10.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Được chọn làm lô thí điểm cải cách doanh nghiệp đầu tiên toàn quốc, Tám doanh nghiệp nhà nước lớn, Đến lúc viết sách, Sáu nhà không còn tồn tại.",
+      "voiceover": "Được chọn làm lô thí điểm cải cách doanh nghiệp đầu tiên toàn quốc, tám doanh nghiệp nhà nước lớn, đến lúc viết sách, sáu nhà không còn tồn tại.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -125,7 +125,7 @@
       "clip": "scene_11.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Hai nhà khó nói là huy hoàng, Tám nhà, sáu nhà mất rồi, Các giám đốc năm đó tâm trạng thế nào, Được chọn làm thí điểm, là vinh quang.",
+      "voiceover": "Hai nhà khó nói là huy hoàng, tám nhà, sáu nhà mất rồi, các giám đốc năm đó tâm trạng thế nào, được chọn làm thí điểm, là vinh quang.",
       "vo_at": 0.12,
       "sfx": []
     }

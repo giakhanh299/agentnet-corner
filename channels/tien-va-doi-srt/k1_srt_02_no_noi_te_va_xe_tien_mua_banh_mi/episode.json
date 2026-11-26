@@ -24,7 +24,7 @@
       "clip": "scene_01.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Giờ hãy xem khủng hoảng nợ trong tên sách, Nhiều người đọc hai chữ khủng hoảng, Phản ứng đầu tiên là hoảng sợ, Nhưng Dalio trong sách mở đầu bằng một việc đi ngược trực giác.",
+      "voiceover": "Giờ hãy xem khủng hoảng nợ trong tên sách, nhiều người đọc hai chữ khủng hoảng, phản ứng đầu tiên là hoảng sợ, nhưng Dalio trong sách mở đầu bằng một việc đi ngược trực giác.",
       "vo_at": 0.9,
       "sfx": []
     },
@@ -34,7 +34,7 @@
       "clip": "scene_02.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, rain-streaked glass skyscraper on Wall Street at night, employees carrying cardboard boxes past glowing red financial tickers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Ông chia khủng hoảng nợ thành hai loại, Một là khủng hoảng nợ giảm phát.",
+      "voiceover": "Ông chia khủng hoảng nợ thành hai loại, một là khủng hoảng nợ giảm phát.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -44,7 +44,7 @@
       "clip": "scene_03.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Xảy ra ở nước có nợ tính bằng nội tệ, Ví dụ như nước Mỹ năm 2008, Loại còn lại là khủng hoảng nợ kiểu lạm phát.",
+      "voiceover": "Xảy ra ở nước có nợ tính bằng nội tệ, ví dụ như nước Mỹ năm 2008, loại còn lại là khủng hoảng nợ kiểu lạm phát.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -54,7 +54,7 @@
       "clip": "scene_04.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Xảy ra ở các nước có nợ tính bằng ngoại tệ, Ví dụ như nước Đức sau Thế chiến thứ nhất, Tại sao sự phân biệt này lại quan trọng, Vì cách ứng phó hoàn toàn khác nhau.",
+      "voiceover": "Xảy ra ở các nước có nợ tính bằng ngoại tệ, ví dụ như nước Đức sau Thế chiến thứ nhất, tại sao sự phân biệt này lại quan trọng, vì cách ứng phó hoàn toàn khác nhau.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -64,7 +64,7 @@
       "clip": "scene_05.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Khi khủng hoảng kiểu giảm phát ập đến, Ngân hàng trung ương có thể hạ lãi suất, Có thể in tiền mua nợ, Chia đều khoản nợ xấu ra nhiều năm, Khi khủng hoảng kiểu lạm phát ập đến.",
+      "voiceover": "Khi khủng hoảng kiểu giảm phát ập đến, ngân hàng trung ương có thể hạ lãi suất, có thể in tiền mua nợ, chia đều khoản nợ xấu ra nhiều năm, khi khủng hoảng kiểu lạm phát ập đến.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -74,7 +74,7 @@
       "clip": "scene_06.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Bạn nợ tiền của người khác, In tiền của mình chẳng ích gì, Tỷ giá sẽ sụp đổ, Giá cả sẽ tăng vọt, Dalio nói rằng, Rủi ro lớn nhất của việc vay nợ nhiều nằm ở việc nhà hoạch định.",
+      "voiceover": "Bạn nợ tiền của người khác, in tiền của mình chẳng ích gì, tỷ giá sẽ sụp đổ, giá cả sẽ tăng vọt, Dalio nói rằng, rủi ro lớn nhất của việc vay nợ nhiều nằm ở việc nhà hoạch định.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -84,7 +84,7 @@
       "clip": "scene_07.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Có ý chí và khả năng phân bổ tổn thất nợ xấu, Ra nhiều năm hay không, Câu này nghe có vẻ rất kỹ thuật, Nhưng thực ra ông ấy đang nói một điều rất đơn giản.",
+      "voiceover": "Có ý chí và khả năng phân bổ tổn thất nợ xấu, ra nhiều năm hay không, câu này nghe có vẻ rất kỹ thuật, nhưng thực ra ông ấy đang nói một điều rất đơn giản.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -94,7 +94,7 @@
       "clip": "scene_08.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1923 Weimar Republic archival-style colorized cinema shot of a citizen pushing a wooden wheelbarrow stacked with bundles of paper banknotes past a bakery, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Nợ người nhà thì có thể thương lượng, Nợ người ngoài thì không thể thương lượng, Nước Đức thập niên 1920 nợ là khoản bồi thường, cho các nước thắng trận, Tính bằng vàng và ngoại tệ.",
+      "voiceover": "Nợ người nhà thì có thể thương lượng, nợ người ngoài thì không thể thương lượng, nước Đức thập niên 1920 nợ là khoản bồi thường, cho các nước thắng trận, tính bằng vàng và ngoại tệ.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -104,7 +104,7 @@
       "clip": "scene_09.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1923 Weimar Republic archival-style colorized cinema shot of a citizen pushing a wooden wheelbarrow stacked with bundles of paper banknotes past a bakery, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Ngân hàng trung ương Đức có in thêm bao nhiêu, đồng mark cũng vô ích, Kết quả là lạm phát phi mã, Đẩy cả xe tiền giấy đi mua một ổ bánh mì.",
+      "voiceover": "Ngân hàng trung ương Đức có in thêm bao nhiêu, đồng mark cũng vô ích, kết quả là lạm phát phi mã, đẩy cả xe tiền giấy đi mua một ổ bánh mì.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -114,7 +114,7 @@
       "clip": "scene_10.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, rain-streaked glass skyscraper on Wall Street at night, employees carrying cardboard boxes past glowing red financial tickers, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Giờ xem mô hình cốt lõi nhất của Dalio, Ông chia một chu kỳ nợ giảm phát điển hình thành bảy giai đoạn.",
+      "voiceover": "Giờ xem mô hình cốt lõi nhất của Dalio, ông chia một chu kỳ nợ giảm phát điển hình thành bảy giai đoạn.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -124,7 +124,7 @@
       "clip": "scene_11.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Giai đoạn đầu, giai đoạn bong bóng, đỉnh, suy thoái, Hài hòa hóa đòn bẩy, đẩy dây thừng, bình thường hóa, Nghe như một đống thuật ngữ chuyên môn.",
+      "voiceover": "Giai đoạn đầu, giai đoạn bong bóng, đỉnh, suy thoái, hài hòa hóa đòn bẩy, đẩy dây thừng, bình thường hóa, nghe như một đống thuật ngữ chuyên môn.",
       "vo_at": 0.35,
       "sfx": []
     }

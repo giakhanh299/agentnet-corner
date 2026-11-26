@@ -64,7 +64,7 @@
       "clip": "scene_05.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Mọi chuyện sẽ diễn biến thế nào, Hôm nay chúng ta cùng đọc hiểu một cuốn sách.",
+      "voiceover": "Mọi chuyện sẽ diễn biến thế nào, hôm nay chúng ta cùng đọc hiểu một cuốn sách.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -74,7 +74,7 @@
       "clip": "scene_06.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Được giới đầu tư và nhà hoạch định chính sách đọc đi đọc lại, Cuốn \"Khủng hoảng nợ\" của Ray Dalio, người sáng lập Bridgewater.",
+      "voiceover": "Được giới đầu tư và nhà hoạch định chính sách đọc đi đọc lại, cuốn \"Khủng hoảng nợ\" của Ray Dalio, người sáng lập Bridgewater.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -82,9 +82,9 @@
       "id": 7,
       "duration_s": 8.5,
       "clip": "scene_07.mp4",
-      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1923 Weimar Republic archival-style colorized cinema shot of a citizen pushing a wooden wheelbarrow stacked with bundles of paper banknotes past a bakery, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, intense close-up of hands signing business contracts across a polished dark mahogany table under warm tungsten lamp light, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Khủng hoảng nợ, Điểm đặc biệt nhất của cuốn sách này là, nó không nói về đạo đức, không nói ai phải chịu trách nhiệm, mà dùng một mô hình cỗ máy lạnh lùng.",
+      "voiceover": "Khủng hoảng nợ, điểm đặc biệt nhất của cuốn sách này là, nó không nói về đạo đức, không nói ai phải chịu trách nhiệm, mà dùng một mô hình cỗ máy lạnh lùng.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -94,7 +94,7 @@
       "clip": "scene_08.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, grand marble banking hall with brass teller cages, leather-bound bond ledgers, and warm beams of sunlight cutting through dust motes, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Để bóc tách cuộc khủng hoảng, Nhiều người vừa nghe đến khủng hoảng nợ, trong đầu lập tức hiện ra những ông chủ ngân hàng tham lam, chính phủ tiêu tiền hoang phí.",
+      "voiceover": "Để bóc tách cuộc khủng hoảng, nhiều người vừa nghe đến khủng hoảng nợ, trong đầu lập tức hiện ra những ông chủ ngân hàng tham lam, chính phủ tiêu tiền hoang phí.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -104,7 +104,7 @@
       "clip": "scene_09.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Thị trường chứng khoán sụp đổ, Nhưng Dalio cho rằng, khủng hoảng nợ thực ra chỉ có một câu, Tín dụng là tiêu trước nợ phải được trả, Và khi khoản trả vượt quá thu nhập.",
+      "voiceover": "Thị trường chứng khoán sụp đổ, nhưng Dalio cho rằng, khủng hoảng nợ thực ra chỉ có một câu, tín dụng là tiêu trước nợ phải được trả, và khi khoản trả vượt quá thu nhập.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -114,7 +114,7 @@
       "clip": "scene_10.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, young office worker sitting at a kitchen table late at night reviewing monthly mortgage bills and a calculator under a single warm pendant lamp, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Hệ thống sẽ đảo chiều, Kinh tế học gọi logic này là chu kỳ nợ, Ví dụ lương tháng của bạn là mười triệu, bạn vay năm trăm triệu để mua nhà.",
+      "voiceover": "Hệ thống sẽ đảo chiều, kinh tế học gọi logic này là chu kỳ nợ, ví dụ lương tháng của bạn là mười triệu, bạn vay năm trăm triệu để mua nhà.",
       "vo_at": 0.35,
       "sfx": []
     },
@@ -124,7 +124,7 @@
       "clip": "scene_11.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, young office worker sitting at a kitchen table late at night reviewing monthly mortgage bills and a calculator under a single warm pendant lamp, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Bạn nghĩ mình đã sở hữu tài sản nhưng thực tế, Bạn đã ký cam kết dòng tiền cho năm năm tới, Nếu lương tăng thì không sao.",
+      "voiceover": "Bạn nghĩ mình đã sở hữu tài sản nhưng thực tế, bạn đã ký cam kết dòng tiền cho năm năm tới, nếu lương tăng thì không sao.",
       "vo_at": 0.35,
       "sfx": []
     }

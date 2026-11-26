@@ -25,7 +25,7 @@
       "clip": "scene_01.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Bong bóng có một tín hiệu điển hình, So với tiêu chuẩn truyền thống, Giá tài sản cao bất thường, Và người ta dùng thời đại mới để giải thích, Tại sao cao lại là hợp lý, Logic này giống hệt giá nhà năm 2007, Không bao giờ giảm trên toàn quốc.",
+      "voiceover": "Bong bóng có một tín hiệu điển hình, so với tiêu chuẩn truyền thống, giá tài sản cao bất thường, và người ta dùng thời đại mới để giải thích, tại sao cao lại là hợp lý, logic này giống hệt giá nhà năm 2007, không bao giờ giảm trên toàn quốc.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -33,9 +33,9 @@
       "id": 2,
       "duration_s": 5.5,
       "clip": "scene_02.mp4",
-      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1923 Weimar Republic archival-style colorized cinema shot of a citizen pushing a wooden wheelbarrow stacked with bundles of paper banknotes past a bakery, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
+      "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, intense close-up of hands signing business contracts across a polished dark mahogany table under warm tungsten lamp light, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Dalio không phải đang phê phán đạo đức, Ông đang mô tả một quy luật nhận thức, Con người trong thuận cảnh sẽ hệ thống hóa việc đánh giá thấp rủi ro, Không phải vì họ ngu, Mà vì não họ bị kinh nghiệm gần đây chiếm giữ.",
+      "voiceover": "Dalio không phải đang phê phán đạo đức, ông đang mô tả một quy luật nhận thức, con người trong thuận cảnh sẽ hệ thống hóa việc đánh giá thấp rủi ro, không phải vì họ ngu, mà vì não họ bị kinh nghiệm gần đây chiếm giữ.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -45,7 +45,7 @@
       "clip": "scene_03.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Đọc đến đây bạn sẽ thấy, Chỗ thực sự ghê gớm của khủng hoảng nợ, Không phải dạy bạn dự đoán khủng hoảng tiếp theo đến khi nào, Chính Dalio đã nhiều lần nói, Rất khó xác định thời điểm xảy ra khủng hoảng, Dù đã nắm kiến thức.",
+      "voiceover": "Đọc đến đây bạn sẽ thấy, chỗ thực sự ghê gớm của khủng hoảng nợ, không phải dạy bạn dự đoán khủng hoảng tiếp theo đến khi nào, chính Dalio đã nhiều lần nói, rất khó xác định thời điểm xảy ra khủng hoảng, dù đã nắm kiến thức.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -55,7 +55,7 @@
       "clip": "scene_04.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Vẫn có thể phán đoán sai, Cuốn sách này thực sự cho bạn ý thức về chu kỳ, Khi tất cả mọi người đều nói, Lần này khác rồi, Bạn sẽ hỏi một câu, Trong lịch sử tình huống tương tự đã xảy ra bao nhiêu lần, Khi đó đã xảy ra chuyện gì.",
+      "voiceover": "Vẫn có thể phán đoán sai, cuốn sách này thực sự cho bạn ý thức về chu kỳ, khi tất cả mọi người đều nói, lần này khác rồi, bạn sẽ hỏi một câu, trong lịch sử tình huống tương tự đã xảy ra bao nhiêu lần, khi đó đã xảy ra chuyện gì.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -65,7 +65,7 @@
       "clip": "scene_05.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Khi tin tức nói chính phủ buộc phải cứu ngân hàng, Bạn sẽ nghĩ đây là loại khủng hoảng nợ nào, In tiền có giải quyết được vấn đề không, Tỷ giá sẽ ra sao, Khi có người nói với bạn, Vay nợ phải trả là lẽ đương nhiên.",
+      "voiceover": "Khi tin tức nói chính phủ buộc phải cứu ngân hàng, bạn sẽ nghĩ đây là loại khủng hoảng nợ nào, in tiền có giải quyết được vấn đề không, tỷ giá sẽ ra sao, khi có người nói với bạn, vay nợ phải trả là lẽ đương nhiên.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -75,7 +75,7 @@
       "clip": "scene_06.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Bạn sẽ nhận ra, Với nợ chủ quyền tính bằng nội tệ, Câu này về mặt kỹ thuật là sai, Vì chính phủ có thể trả nợ bằng cách in tiền và phá giá, Cái giá là người giữ tiền phải chịu tổn thất, Khủng hoảng nợ không phải câu chuyện đạo đức.",
+      "voiceover": "Bạn sẽ nhận ra, với nợ chủ quyền tính bằng nội tệ, câu này về mặt kỹ thuật là sai, vì chính phủ có thể trả nợ bằng cách in tiền và phá giá, cái giá là người giữ tiền phải chịu tổn thất, khủng hoảng nợ không phải câu chuyện đạo đức.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -85,7 +85,7 @@
       "clip": "scene_07.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Đó là cách cỗ máy vận hành trong điều kiện cụ thể, Dalio tự nói rất thẳng thắn, Nhà đầu tư chúng ta chỉ cần hiểu cỗ máy này, Vận hành như thế nào, Còn người ra quyết định phải dựa trên sự hiểu biết, vượt qua mọi rào cản chính trị.",
+      "voiceover": "Đó là cách cỗ máy vận hành trong điều kiện cụ thể, Dalio tự nói rất thẳng thắn, nhà đầu tư chúng ta chỉ cần hiểu cỗ máy này, vận hành như thế nào, còn người ra quyết định phải dựa trên sự hiểu biết, vượt qua mọi rào cản chính trị.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -95,7 +95,7 @@
       "clip": "scene_08.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Để mọi việc có kết quả tốt đẹp, Điều này cần sự thông minh, lòng dũng cảm và trí tuệ chính trị, Đôi khi dù có những thứ đó, các ràng buộc vẫn khiến họ thất bại, Khi người khác nhìn con số nợ chính phủ, họ thấy một vấn đề chính trị.",
+      "voiceover": "Để mọi việc có kết quả tốt đẹp, điều này cần sự thông minh, lòng dũng cảm và trí tuệ chính trị, đôi khi dù có những thứ đó, các ràng buộc vẫn khiến họ thất bại, khi người khác nhìn con số nợ chính phủ, họ thấy một vấn đề chính trị.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -105,7 +105,7 @@
       "clip": "scene_09.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Dalio thấy một vấn đề dòng tiền, Khi người khác nhìn khủng hoảng tài chính, họ thấy lòng tham và sự lừa dối, Dalio thấy, một cỗ máy đang bước vào, giai đoạn mà nó buộc phải bước vào, Và có lẽ đây chính là điều, Ray Dalio muốn nói với chúng ta nhất.",
+      "voiceover": "Dalio thấy một vấn đề dòng tiền, khi người khác nhìn khủng hoảng tài chính, họ thấy lòng tham và sự lừa dối, Dalio thấy, một cỗ máy đang bước vào, giai đoạn mà nó buộc phải bước vào, và có lẽ đây chính là điều, Ray Dalio muốn nói với chúng ta nhất.",
       "vo_at": 0.12,
       "sfx": []
     },

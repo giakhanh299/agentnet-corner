@@ -25,7 +25,7 @@
       "clip": "scene_01.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, young office worker sitting at a kitchen table late at night reviewing monthly mortgage bills and a calculator under a single warm pendant lamp, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Vậy cuốn sách này liên quan gì đến tôi, Tôi có ở Thâm Quyến đâu.",
+      "voiceover": "Vậy cuốn sách này liên quan gì đến tôi, tôi có ở Thâm Quyến đâu.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -35,7 +35,7 @@
       "clip": "scene_02.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, close-up of a fountain pen signing a financial ledger beside a vintage mechanical watch and warm espresso cup, shallow depth of field, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Tôi có phải doanh nhân đâu, Liên quan lớn đấy, Ngô Hiểu Ba viết một câu kết trong sách, ông nói.",
+      "voiceover": "Tôi có phải doanh nhân đâu, liên quan lớn đấy, Ngô Hiểu Ba viết một câu kết trong sách, ông nói.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -45,7 +45,7 @@
       "clip": "scene_03.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Dù có đủ mọi lời than phiền, Thất vọng và lo âu, nhưng, Sau nhiều năm, có lẽ chúng ta vẫn phải nói, Đó từng là một thời đại tốt, bởi vì.",
+      "voiceover": "Dù có đủ mọi lời than phiền, thất vọng và lo âu, nhưng, sau nhiều năm, có lẽ chúng ta vẫn phải nói, đó từng là một thời đại tốt, bởi vì.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -55,7 +55,7 @@
       "clip": "scene_04.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Nó cho phép những khả năng mới nảy sinh, Bạn thử nghĩ về thời đại bạn đang sống, Nó không cho phép điều gì, Bạn đang ở trong khe hở cho phép mình vượt rào.",
+      "voiceover": "Nó cho phép những khả năng mới nảy sinh, bạn thử nghĩ về thời đại bạn đang sống, nó không cho phép điều gì, bạn đang ở trong khe hở cho phép mình vượt rào.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -75,7 +75,7 @@
       "clip": "scene_06.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Nhiều khi, cải cách bắt đầu từ việc vượt rào, Mặt trái của câu nói này là, Nhiều khi số phận, từ khoảnh khắc bạn không dám vượt rào.",
+      "voiceover": "Nhiều khi, cải cách bắt đầu từ việc vượt rào, mặt trái của câu nói này là, nhiều khi số phận, từ khoảnh khắc bạn không dám vượt rào.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -85,7 +85,7 @@
       "clip": "scene_07.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1983 rainy southern port dockyard with stacked iron freight containers, sacks of golden corn grain, and a determined young entrepreneur in a simple jacket, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Đã bị viết chết, Bạn không phải Vương Thạch, Bạn không phải Lưu Vĩnh Hảo, Bạn không phải Ngô Thế Hoành, Bạn không cần trở thành họ.",
+      "voiceover": "Đã bị viết chết, bạn không phải Vương Thạch, bạn không phải Lưu Vĩnh Hảo, bạn không phải Ngô Thế Hoành, bạn không cần trở thành họ.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -95,7 +95,7 @@
       "clip": "scene_08.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Nhưng bạn cần biết một điều, Những người sau này được viết thành câu chuyện, Năm xưa, khi đứng ở đầu câu chuyện, trong tay chẳng có gì.",
+      "voiceover": "Nhưng bạn cần biết một điều, những người sau này được viết thành câu chuyện, năm xưa, khi đứng ở đầu câu chuyện, trong tay chẳng có gì.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -105,7 +105,7 @@
       "clip": "scene_09.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, stacks of hardcover economics books beside a warm brass desk lamp in a quiet mahogany library, cinematic atmosphere, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Chỉ có một lần dũng cảm vượt rào, và một cánh cửa vừa đúng lúc chưa khép lại, Học cách nhìn thấu cánh cửa đó.",
+      "voiceover": "Chỉ có một lần dũng cảm vượt rào, và một cánh cửa vừa đúng lúc chưa khép lại, học cách nhìn thấu cánh cửa đó.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -115,7 +115,7 @@
       "clip": "scene_10.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, moody cinematic close-up of an antique brass scale balancing gold coins against a stack of debt contracts on dark walnut wood, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Đây chính là Ba mươi năm sóng gió, Tất cả những gì trao cho bạn.",
+      "voiceover": "Đây chính là Ba mươi năm sóng gió, tất cả những gì trao cho bạn.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -125,7 +125,7 @@
       "clip": "scene_11.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, aerial twilight view of a glowing financial district skyline with river reflections and car light trails, vertical 9:16 cinema, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Tôi là Câu lạc bộ Nghiên cứu Tài chính, Kỳ sau chúng ta tiếp tục bóc tách sách hay kinh điển.",
+      "voiceover": "Tôi là Câu lạc bộ Nghiên cứu Tài chính, kỳ sau chúng ta tiếp tục bóc tách sách hay kinh điển.",
       "vo_at": 0.12,
       "sfx": []
     }

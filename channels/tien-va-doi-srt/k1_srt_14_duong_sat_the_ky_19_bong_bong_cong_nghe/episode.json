@@ -25,7 +25,7 @@
       "clip": "scene_01.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Cậu phát hiện ra kịch bản này chưa, Đầu tiên phải có một thứ thật, Rồi có người thổi phồng nó lên, Rồi tất cả mọi người đều thổi, Rồi nó vỡ, Gordon kể trong sách một chi tiết.",
+      "voiceover": "Cậu phát hiện ra kịch bản này chưa, đầu tiên phải có một thứ thật, rồi có người thổi phồng nó lên, rồi tất cả mọi người đều thổi, rồi nó vỡ, Gordon kể trong sách một chi tiết.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -35,7 +35,7 @@
       "clip": "scene_02.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, high-speed currency printing press rolling crisp banknotes under dramatic moody tungsten spotlight in a central bank vault, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Cực kỳ thú vị, Những năm 1830, Nước Mỹ đào kênh, Kênh đào thật sự kiếm được tiền, Nhưng vấn đề là, Ai cũng đào kênh, Cậu đào tôi cũng đào, Mọi người cùng đào.",
+      "voiceover": "Cực kỳ thú vị, những năm 1830, nước Mỹ đào kênh, kênh đào thật sự kiếm được tiền, nhưng vấn đề là, ai cũng đào kênh, cậu đào tôi cũng đào, mọi người cùng đào.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -45,7 +45,7 @@
       "clip": "scene_03.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Cuối cùng kênh đào quá nhiều, Năng lực vận tải dư thừa, Không kiếm được tiền nữa, Bong bóng vỡ, Cậu nghĩ xem, Điều này giống gì hôm nay, quang điện, Năng lượng mới.",
+      "voiceover": "Cuối cùng kênh đào quá nhiều, năng lực vận tải dư thừa, không kiếm được tiền nữa, bong bóng vỡ, cậu nghĩ xem, điều này giống gì hôm nay, quang điện, năng lượng mới.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -55,7 +55,7 @@
       "clip": "scene_04.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, translucent iridescent soap bubble reflecting a glowing city stock chart skyline before bursting in slow motion over dark marble, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow pull-out revealing environmental scale, steady gimbal motion",
-      "voiceover": "Trí tuệ nhân tạo, Mỗi cơ hội thật đều bị đầu tư quá mức, Rồi biến thành bong bóng, Nhưng Gordon còn có suy nghĩ sâu hơn, ông ấy nói, Bong bóng không hẳn là điều xấu.",
+      "voiceover": "Trí tuệ nhân tạo, mỗi cơ hội thật đều bị đầu tư quá mức, rồi biến thành bong bóng, nhưng Gordon còn có suy nghĩ sâu hơn, ông ấy nói, bong bóng không hẳn là điều xấu.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -65,7 +65,7 @@
       "clip": "scene_05.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, sleek modern high-speed bullet train gliding across an illuminated urban viaduct at dusk, warm golden economic prosperity glow, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Subtle dolly forward with drifting dust motes in warm tungsten light",
-      "voiceover": "Bong bóng hút vốn về, Xây dựng hạ tầng, Đưa công nghệ đến độ chín, Rồi bong bóng vỡ, Nhưng hạ tầng vẫn còn, Công nghệ vẫn còn, Bạn hiểu chưa, Bong bóng là cách Phố Wall tiến hóa.",
+      "voiceover": "Bong bóng hút vốn về, xây dựng hạ tầng, đưa công nghệ đến độ chín, rồi bong bóng vỡ, nhưng hạ tầng vẫn còn, công nghệ vẫn còn, bạn hiểu chưa, bong bóng là cách Phố Wall tiến hóa.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -75,7 +75,7 @@
       "clip": "scene_06.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, 1980s bustling Asian port city street transitioning from vintage bicycles and cargo crates to gleaming modern glass towers on the horizon, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Nó dùng sụp đổ để đào thải doanh nghiệp kém hiệu quả, Giữ lại những cái hiệu quả cao, Nó dùng thua lỗ để dạy nhà đầu tư, Để họ biết kính sợ.",
+      "voiceover": "Nó dùng sụp đổ để đào thải doanh nghiệp kém hiệu quả, giữ lại những cái hiệu quả cao, nó dùng thua lỗ để dạy nhà đầu tư, để họ biết kính sợ.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -85,7 +85,7 @@
       "clip": "scene_07.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Thưa các vị, Gordon nói trong sách một câu, Lịch sử Phố Wall là lịch sử thử sai không ngừng, Mỗi cuộc khủng hoảng đều khiến hệ thống này, trở nên mạnh mẽ hơn.",
+      "voiceover": "Thưa các vị, Gordon nói trong sách một câu, lịch sử Phố Wall là lịch sử thử sai không ngừng, mỗi cuộc khủng hoảng đều khiến hệ thống này, trở nên mạnh mẽ hơn.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -115,7 +115,7 @@
       "clip": "scene_10.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, towering New York Stock Exchange classical facade with giant flag and glowing digital market boards at blue hour, cinematic vertical 9:16, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Slow cinematic push-in with subtle atmospheric light shift and shallow depth of field",
-      "voiceover": "Ông ấy nói, Trên Phố Wall, Bạn không bao giờ biết ai là người cuối cùng đỡ giá, Nhưng bạn biết, Chắc chắn sẽ có người là người cuối cùng, Mỗi lần bạn lao vào.",
+      "voiceover": "Ông ấy nói, trên Phố Wall, bạn không bao giờ biết ai là người cuối cùng đỡ giá, nhưng bạn biết, chắc chắn sẽ có người là người cuối cùng, mỗi lần bạn lao vào.",
       "vo_at": 0.12,
       "sfx": []
     },
@@ -125,7 +125,7 @@
       "clip": "scene_11.mp4",
       "image_prompt": "Vertical 9:16 photorealistic financial documentary cinematography, dramatic darkroom view of glowing candlestick charts reflecting off a thoughtful investor's eyes at night, 35mm anamorphic lens, rich contrast, deep shadows and warm golden highlights, no text, no watermark, no logos",
       "motion": "Gentle pan right with natural ambient motion and crisp documentary lighting",
-      "voiceover": "Đều là đang đánh cược rằng mình không phải người cuối cùng, Mà người cuối cùng thì luôn tồn tại, Bạn nghĩ sâu thêm một lớp nữa.",
+      "voiceover": "Đều là đang đánh cược rằng mình không phải người cuối cùng, mà người cuối cùng thì luôn tồn tại, bạn nghĩ sâu thêm một lớp nữa.",
       "vo_at": 0.12,
       "sfx": []
     }
