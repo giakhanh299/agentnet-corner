@@ -37,6 +37,7 @@ from urllib.parse import urlsplit
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 sys.path.insert(0, str(HERE))
+import curiosity_music  # noqa: E402
 import horror_music  # noqa: E402
 import thumbnail as thumb_mod  # noqa: E402
 import voice as voice_mod  # noqa: E402
@@ -333,7 +334,11 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
 
     # 4. Nhạc
     music_wav = work / "music.wav"
-    horror_music.write_wav(music_wav, horror_music.compose(total, int(spec.get("seed", 1))))
+    mus_gen = str((spec.get("music") or {}).get("generator", "horror")).lower()
+    if mus_gen == "curiosity":
+        curiosity_music.write_wav(music_wav, curiosity_music.compose(total, int(spec.get("seed", 1))))
+    else:
+        horror_music.write_wav(music_wav, horror_music.compose(total, int(spec.get("seed", 1))))
 
     # 5. SFX
     manifest = load_sfx_manifest()
@@ -405,6 +410,8 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
             "colorbalance=rs=0.02:gs=0.0:bs=0.05:rm=0.03:gm=0.0:bm=-0.02,"
             "noise=alls=3:allf=t+u"
         )
+    elif grade == "vivid_doc":
+        vf_parts.append("eq=contrast=1.06:saturation=1.10:brightness=0.01")
     vf_parts.append("ass=subs.ass:fontsdir=fonts")
     if spec.get("aigc_label", True):
         vf_parts.append(

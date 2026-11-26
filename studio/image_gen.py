@@ -48,12 +48,17 @@ def make_storyboard(images: list[Path], dst: Path, cols: int = 3) -> Path:
     return dst
 
 
+STYLE_SUFFIX_DOC = ", vibrant high-resolution documentary photography, natural crisp lighting, sharp focus, photorealistic"
+
+
 def build_prompt(scene: dict, spec: dict) -> tuple[str, str]:
     raw = str(scene.get("image_prompt") or scene.get("label") or "").strip()
     raw = raw.replace("black-and-white", "checkered").replace("black and white", "checkered")
-    raw = "Color film still, " + raw
-    if "cinematic" not in raw.lower() and "documentary" not in raw.lower():
-        raw = raw + STYLE_SUFFIX
+    is_doc = str(spec.get("color_grade") or "").lower() == "vivid_doc"
+    if not raw.lower().startswith("color"):
+        raw = ("Vibrant color photo, " if is_doc else "Color film still, ") + raw
+    if "cinematic" not in raw.lower() and "documentary" not in raw.lower() and "photo" not in raw.lower():
+        raw = raw + (STYLE_SUFFIX_DOC if is_doc else STYLE_SUFFIX)
     neg = str(spec.get("negative_prompt") or "").strip()
     if not neg or len(neg) < 30:
         neg = DEFAULT_NEG
