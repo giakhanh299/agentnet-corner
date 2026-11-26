@@ -1,0 +1,187 @@
+{
+  "series": "Giang Hồ Kỳ Truyện",
+  "episode": 14,
+  "episode_code": "kh14",
+  "title": "Đêm Mưa Bên Tháp Cổ",
+  "cover_title": "ĐÊM MƯA THÁP CỔ",
+  "hook": "Tiếng kiếm va nhau trong mưa trước ngôi tháp nghìn năm…",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Trận đấu dừng trước khi ai bị thương; kết thúc bằng giúp đỡ và tình bạn.",
+  "scientific_note": "Bậc đá ướt làm giảm ma sát nên dễ trượt chân; tiếng kim loại va nhau vang xa trong không khí ẩm và mưa đêm yên tĩnh. Câu chuyện là hư cấu kiếm hiệp, không phải sự kiện lịch sử đã kiểm chứng.",
+  "sfx_library": [
+    {
+      "tag": "sword_sheath",
+      "gain_db": -27
+    },
+    {
+      "tag": "bamboo_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "lantern_flicker",
+      "gain_db": -29
+    },
+    {
+      "tag": "mountain_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "sword_draw",
+      "gain_db": -26
+    },
+    {
+      "tag": "footsteps_gravel",
+      "gain_db": -27
+    },
+    {
+      "tag": "distant_flute",
+      "gain_db": -28
+    },
+    {
+      "tag": "night_crickets",
+      "gain_db": -29
+    },
+    {
+      "tag": "cloth_rustle",
+      "gain_db": -27
+    },
+    {
+      "tag": "quiet_forest",
+      "gain_db": -26
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Rain falling at night on an ancient stone pagoda, misty mountain light and warm lantern glow, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mưa đêm rơi trên mái tháp cổ nghìn năm tuổi.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Two swordsmen facing each other in heavy rain before an ancient stone pagoda at night, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hai kiếm khách đối diện, áo ướt sũng nước mưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Two swords clashing in heavy rain before an ancient stone pagoda, water spraying in lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tiếng kiếm va nhau vang lên, át tiếng mưa rơi.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "A fast swordsman attacking and a steady swordsman defending in rain before an ancient pagoda, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Kiếm nhanh như chớp, người kia vững như núi.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Rainwater spraying from two clashing sword tips in front of an ancient stone pagoda, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Nước mưa bắn lên từ mũi kiếm chạm nhau.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "An ancient stone pagoda standing silent in night rain, misty mountain atmosphere, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tháp cổ đứng lặng, chứng kiến bao trận đấu xưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "A swordsman slipping on wet stone steps in rain, his sword falling beside an ancient pagoda, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Một kiếm khách trượt chân, kiếm rơi xuống bậc đá.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "A swordsman stopping his attack and offering a hand to a fallen friend in rain, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Người kia dừng tay, chìa tay kéo bạn dậy.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Two swordsmen laughing together in rain before an ancient stone pagoda at night, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hai người cùng cười, mưa vẫn rơi trên tháp cổ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Two swordsmen sheltering inside an ancient pagoda, drying wet robes beside a warm lantern, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Họ vào tháp trú mưa, hong khô áo bên đèn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Morning light after rain over an ancient stone pagoda, two swordsmen walking away together, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đêm mưa qua đi, tình bạn còn lại sau kiếm.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 714,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

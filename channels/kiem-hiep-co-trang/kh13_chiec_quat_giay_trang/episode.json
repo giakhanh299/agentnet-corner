@@ -1,0 +1,187 @@
+{
+  "series": "Giang Hồ Kỳ Truyện",
+  "episode": 13,
+  "episode_code": "kh13",
+  "title": "Chiếc Quạt Giấy Trắng Của Thư Sinh",
+  "cover_title": "QUẠT GIẤY THƯ SINH",
+  "hook": "Chàng thư sinh yếu ớt chỉ vung quạt một cái đã đẩy lùi năm cao thủ…",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Không có cảnh đánh nhau gây thương tích; xung đột dừng ở gió quạt và đối thoại.",
+  "scientific_note": "Quạt giấy tạo ra luồng không khí khi vung, nhưng không thể đẩy lùi năm người trong thực tế; chi tiết này là phóng đại hư cấu của truyện kiếm hiệp, được ghi rõ để không gây hiểu lầm về vật lý.",
+  "sfx_library": [
+    {
+      "tag": "sword_sheath",
+      "gain_db": -27
+    },
+    {
+      "tag": "bamboo_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "lantern_flicker",
+      "gain_db": -29
+    },
+    {
+      "tag": "mountain_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "sword_draw",
+      "gain_db": -26
+    },
+    {
+      "tag": "footsteps_gravel",
+      "gain_db": -27
+    },
+    {
+      "tag": "distant_flute",
+      "gain_db": -28
+    },
+    {
+      "tag": "night_crickets",
+      "gain_db": -29
+    },
+    {
+      "tag": "cloth_rustle",
+      "gain_db": -27
+    },
+    {
+      "tag": "quiet_forest",
+      "gain_db": -26
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "A frail scholar in white robes entering a roadside inn during a rainy night, warm lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thư sinh áo trắng vào quán trọ giữa đêm mưa.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Five martial masters surrounding a frail scholar in white robes inside a rainy night inn, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Năm cao thủ vây quanh, cười khẩy chàng thư sinh.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "A scholar smiling while opening a white paper fan, warm lantern light in a rainy inn, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thư sinh mỉm cười, tay khẽ mở quạt giấy trắng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "A white paper fan sweeping through the air, strong wind moving cloaks in a rainy inn, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Quạt vung một cái, gió mạnh đẩy lùi cao thủ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Five martial masters stepping back as their cloaks billow in wind and rain at night, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Năm người lùi lại, áo choàng bay trong gió mưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "A scholar folding a white paper fan and pouring a cup of hot tea, warm lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thư sinh gấp quạt, ngồi xuống rót chén trà nóng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "A martial master bowing his head to ask a scholar a question, warm lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cao thủ cúi đầu hỏi, võ công này từ đâu.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "A scholar answering calmly while holding a closed white paper fan, books nearby in lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thư sinh đáp, võ học từ sách và kiên nhẫn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Rain easing outside an inn veranda at night, the moon appearing behind thin clouds, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mưa ngoài hiên nhỏ dần, trăng ló sau mây mỏng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Five martial masters sitting down together to learn from a scholar, warm lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Năm cao thủ cùng ngồi xuống, xin học chữ nghĩa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "A closed white paper fan resting on a wooden table, warm lantern light and night rain outside, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Quạt giấy trắng khép lại, câu chuyện còn vang xa.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 713,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

@@ -1,0 +1,309 @@
+{
+  "aigc_label": true,
+  "color_grade": "folk_horror",
+  "cover_hook": "Người xưa dặn: thần cây đa, ma cây gạo…",
+  "cover_theme": "horror",
+  "cover_title": "CÂY GẠO ĐẦU NGÕ",
+  "cta": "Theo dõi Phim Ma Dân Gian Việt Nam để nghe tập tiếp theo!",
+  "description": "Tập 15: Cây gạo đầu ngõ nở hoa đỏ rực, người làng kể câu nói xưa về thần cây đa, ma cây gạo. Nhưng hoa gạo đỏ thắm chỉ là mùa hoa của cây gạo giữa mùa khô, nuôi chim nuôi ong, và cây già vẫn lặng lẽ giữ làng. Dân gian rờn rợn mà ấm áp, không máu me, không mặt ma.",
+  "episode": 15,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TruyenMaVietNam",
+    "#AIGC"
+  ],
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "negative_prompt": "text, logo, watermark, blood, gore, ghost face, witchcraft, deformed hands, blurry, low quality, modern city, neon signs, anime style, cartoon",
+  "publish_title": "Cây Gạo Đầu Ngõ Mùa Hoa Đỏ | Phim Ma Dân Gian Việt Nam Tập 15",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Hook - cây gạo khổng lồ đầu ngõ trong sương đêm",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight over a giant kapok tree at a 1960s rural Vietnamese village entrance, amber oil lamp glow at its roots, red flowers scattered on dirt path, documentary film still, vertical 9:16, drifting fog, thatched roofs, quiet eerie calm, no text, no logo, no blood",
+      "motion": "wide shot, slow push-in",
+      "voiceover": "Người xưa dặn: thần cây đa, ma cây gạo…",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Thảm hoa đỏ phủ kín đường làng",
+      "duration_s": 5.0,
+      "image_prompt": "Amber oil lamp light on a carpet of fallen red kapok flowers covering a 1960s rural Vietnamese village dirt path, documentary film still, vertical 9:16, misty moonlight, bare branches above, quiet night, no text, no logo, no blood",
+      "motion": "low angle, slow dolly",
+      "voiceover": "Mùa hoa đỏ, cây gạo rực cả đầu ngõ",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Cận cảnh một bông gạo năm cánh",
+      "duration_s": 5.0,
+      "image_prompt": "Soft moonlight on a single red kapok flower with five petals resting on dark soil, 1960s rural Vietnam, misty night, amber oil lamp glow nearby, documentary film still, vertical 9:16, close-up, dew drops, no text, no logo, no blood",
+      "motion": "close-up, eye level",
+      "voiceover": "Hoa gạo đỏ thắm, năm cánh nở giữa trời",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Ông lão thắp đèn dầu kể chuyện xưa",
+      "duration_s": 5.0,
+      "image_prompt": "Warm amber oil lamp light on an old Vietnamese villager in 1960s clothes sitting beneath a giant kapok tree, misty moonlight, documentary film still, vertical 9:16, storytelling gesture, thatched village behind, quiet night, no text, no logo, no blood",
+      "motion": "medium shot, eye level",
+      "voiceover": "Ông lão thắp đèn, kể chuyện cây gạo xưa",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Cây trút lá, chỉ còn hoa đỏ giữa mùa khô",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight through bare branches of a leafless kapok tree covered in red blossoms, 1960s rural Vietnam, amber oil lamp glow below, documentary film still, vertical 9:16, dry season sky, drifting fog, no text, no logo, no blood",
+      "motion": "wide shot, slow tilt up",
+      "voiceover": "Cây trút lá, dồn sức nở hoa mùa khô",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Quả gạo nứt, bông trắng bay khắp ngõ",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light on a split kapok fruit releasing white silky fibre drifting over a 1960s rural Vietnamese village path, documentary film still, vertical 9:16, misty air, red petals on ground, gentle breeze, no text, no logo, no blood",
+      "motion": "close-up, slow motion feel",
+      "voiceover": "Quả gạo nứt, bông trắng bay khắp ngõ",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Trẻ nhỏ nhặt hoa rơi buổi sáng",
+      "duration_s": 5.0,
+      "image_prompt": "Warm morning light on village children gathering fallen red kapok flowers at a 1960s rural Vietnamese village entrance, documentary film still, vertical 9:16, misty sunlight, thatched roofs, joyful quiet mood, no text, no logo, no blood",
+      "motion": "medium shot, slow pan",
+      "voiceover": "Sáng ra trẻ nhỏ nhặt hoa rơi đầu ngõ",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Chim uống mật hoa gạo",
+      "duration_s": 5.0,
+      "image_prompt": "Golden morning light on a small bird drinking nectar from a red kapok flower on a 1960s rural Vietnamese village tree, documentary film still, vertical 9:16, misty air, bees nearby, red petals, peaceful nature, no text, no logo, no blood",
+      "motion": "close-up, eye level",
+      "voiceover": "Hoa gạo nuôi chim, nuôi ong cả mùa",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Trăng lên qua cành, sương phủ đầu ngõ",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight rising through kapok branches over a 1960s rural Vietnamese village entrance, amber oil lamp glow in fog, documentary film still, vertical 9:16, silver mist, thatched roofs, quiet eerie calm, no text, no logo, no blood",
+      "motion": "wide shot, slow push-in",
+      "voiceover": "Trăng lên qua cành, sương phủ kín đầu ngõ",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Dân làng đặt hoa dưới gốc cây già",
+      "duration_s": 5.0,
+      "image_prompt": "Amber oil lamp light on villagers placing flowers respectfully at the roots of a giant kapok tree, 1960s rural Vietnam, misty moonlight, documentary film still, vertical 9:16, calm reverent mood, no text, no logo, no blood",
+      "motion": "medium shot, low angle",
+      "voiceover": "Cây già giữ làng, ta giữ cây cho đời",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Kết - bình minh trên cây gạo đầu ngõ",
+      "duration_s": 5.0,
+      "image_prompt": "Soft dawn light over a giant kapok tree silhouette at a 1960s rural Vietnamese village entrance, red flowers glowing in first sun, misty morning, documentary film still, vertical 9:16, peaceful hopeful mood, no text, no logo, no blood",
+      "motion": "wide shot, slow pull-back",
+      "voiceover": "Hẹn bạn tập sau, chuyện ma làng quê",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "title": "Cây Gạo Đầu Ngõ Mùa Hoa Đỏ",
+  "voice": "phonui",
+  "seed": 615,
+  "cover_image": "scene_01.png"
+}

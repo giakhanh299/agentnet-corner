@@ -1,0 +1,187 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "episode": 17,
+  "episode_code": "ep17",
+  "title": "Con Đường Làng Đi Mãi Không Hết",
+  "cover_title": "CON ĐƯỜNG KHÔNG LỐI RA",
+  "hook": "Đi vòng ba lần vẫn quay lại đúng gốc tre cũ…",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TruyenMaVietNam",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Truyện được kể như truyền thuyết dân gian hư cấu, không khẳng định hiện tượng siêu nhiên là sự thật.",
+  "scientific_note": "Trong sương dày, tầm nhìn thấp và các mốc quen thuộc dễ khiến người đi bộ mất phương hướng rồi quay lại cùng một chỗ; đây là hiện tượng định hướng bình thường, không phải bằng chứng siêu nhiên.",
+  "sfx_library": [
+    {
+      "tag": "river_flow",
+      "gain_db": -28
+    },
+    {
+      "tag": "wooden_oar_splash",
+      "gain_db": -27
+    },
+    {
+      "tag": "night_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "oil_lamp_flicker",
+      "gain_db": -29
+    },
+    {
+      "tag": "distant_bell",
+      "gain_db": -28
+    },
+    {
+      "tag": "wooden_footsteps",
+      "gain_db": -27
+    },
+    {
+      "tag": "water_lapping",
+      "gain_db": -28
+    },
+    {
+      "tag": "boat_creak",
+      "gain_db": -27
+    },
+    {
+      "tag": "mist_wind",
+      "gain_db": -29
+    },
+    {
+      "tag": "quiet_night_ambience",
+      "gain_db": -26
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "A misty village road at night in 1960s rural Vietnam, an old bamboo grove and a traveller with an amber oil lamp, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đêm cuối tháng, con đường làng chìm trong sương mỏng.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "A traveller walking a narrow village path at night, amber oil lamp light on dry leaves, misty moonlight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lữ khách bước đi, ánh đèn dầu soi lối nhỏ.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "An old bamboo root standing still beside a misty village road at night, dry leaves rustling in the wind, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Gốc tre cũ đứng lặng, lá khô xào xạc.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "A traveller returning to the same old bamboo root on a misty village road at night, amber lamplight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đi một vòng, người khách lại thấy gốc tre ấy.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Thick fog over a long village road at night, a traveller with an amber oil lamp walking in circles, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đi vòng thứ hai, sương dày hơn, đường dài hơn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "A nervous traveller gripping an amber oil lamp tightly on a misty village road at night, moonlight through bamboo, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đi vòng thứ ba, tim đập nhanh, tay siết đèn.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "A traveller stopping to listen on a misty village road at night, bamboo leaves and amber lamplight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Người khách dừng lại, lắng nghe tiếng côn trùng đêm.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Silent bamboo leaves in night wind beside a misty village road, a traveller with an amber oil lamp, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Côn trùng im bặt, chỉ còn gió qua lá tre.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "A traveller looking back along a foggy village road at night, mist hiding the path behind, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khách quay đầu, đường phía sau cũng mờ sương.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "A kind elderly woman pointing toward the village entrance on a misty road at dawn, bamboo grove behind, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bà cụ xuất hiện, chỉ tay về phía đầu làng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Sunrise behind a bamboo grove at the end of a misty village road, a traveller walking toward warm light, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khách theo lối ấy, bình minh lên sau rặng tre.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 617,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

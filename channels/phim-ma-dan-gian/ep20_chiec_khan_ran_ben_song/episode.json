@@ -1,0 +1,309 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "episode_code": "ep20_chiec_khan_ran_ben_song",
+  "episode": 20,
+  "title": "Chiếc Khăn Rằn Trên Xuồng Ba Lá",
+  "cover_text": "XUỒNG BA LÁ KHÔNG NGƯỜI",
+  "hook": "Chiếc xuồng tự trôi ngược nước về đúng bến cũ, trên mũi xuồng chỉ còn một chiếc khăn rằn ướt sũng.",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TruyenMaVietNam",
+    "#AIGC"
+  ],
+  "total_duration_s": 55,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Moonlight on a misty Mekong river at night, an empty wooden sampan drifting upstream toward an old pier, a wet red checkered scarf on its bow, 1960s rural Vietnam, misty moonlight, amber oil lamp glow, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chiếc xuồng không người tự trôi ngược dòng nước.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Amber oil lamp light on an old fisherman standing silently at a misty river pier at night, watching a drifting sampan, 1960s rural Vietnam, misty moonlight, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông Tư đứng lặng nhìn bến sông mờ sương.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Moonlight close-up of a wet red checkered scarf on the bow of an empty wooden sampan, water drops glistening, misty river at night, 1960s rural Vietnam, amber oil lamp glow, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Trên mũi xuồng, khăn rằn ướt sũng còn vương nước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Soft morning light on an elderly woman rowing a wooden sampan past a quiet river pier, mist over calm water, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Sáng qua, bà Hai còn chèo xuồng qua bến này.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Amber dawn light on an elderly woman tying a sampan quickly at a wooden pier before walking to market, misty Mekong village, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bà buộc xuồng vội rồi đi chợ sớm tinh mơ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Moonlight on a frayed old rope loosening from a wooden pier post as river wind bends riverside grass, 1960s rural Vietnam, misty moonlight, amber oil lamp glow, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Dây thừng mục dần, gió sông thổi mạnh từng cơn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Moonlight on rising tide water swirling gently around wooden pier posts, reversing the river current, misty night, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thủy triều dâng lên, dòng nước đổi chiều lặng lẽ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Moonlight on an empty sampan slowly returning to its familiar old pier, calm misty river at night, 1960s rural Vietnam, amber oil lamp glow, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Xuồng trôi về bến cũ như tìm lại chủ nhân.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Amber oil lamp light on an elderly woman holding a dry red checkered scarf at her riverside home, calm and reassured, 1960s rural Vietnam, misty moonlight, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khăn rằn là dấu riêng bà Hai vẫn thường dùng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Calm moonlight on a quiet Mekong river pier after the tide settles, an empty sampan tied securely, mist lifting, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Không có ma, chỉ có nước, gió và sơ suất.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Warm amber oil lamp light on hands tying a strong new rope around a sampan at a peaceful river pier at dawn, 1960s rural Vietnam, misty moonlight, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Buộc chặt xuồng lại, giữ bến sông luôn bình yên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "seed": 620,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

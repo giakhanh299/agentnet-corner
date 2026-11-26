@@ -1,0 +1,187 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "episode": 14,
+  "episode_code": "ep14",
+  "title": "Chuyến Đò Cuối Năm Sông Hương",
+  "cover_title": "CHUYẾN ĐÒ CUỐI NĂM",
+  "hook": "Người khách lặng lẽ trả đồng xu cổ rồi tan vào sương…",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TruyenMaVietNam",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Truyện được kể như truyền thuyết dân gian hư cấu, không khẳng định hiện tượng siêu nhiên là sự thật.",
+  "scientific_note": "Sương mù là hơi nước ngưng tụ khi không khí ẩm gặp lạnh; đồng xu xỉn màu do bề mặt kim loại bị ô xi hoá theo thời gian. Hai hiện tượng này được dùng làm chất liệu kể chuyện, không phải bằng chứng siêu nhiên.",
+  "sfx_library": [
+    {
+      "tag": "river_flow",
+      "gain_db": -28
+    },
+    {
+      "tag": "wooden_oar_splash",
+      "gain_db": -27
+    },
+    {
+      "tag": "night_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "oil_lamp_flicker",
+      "gain_db": -29
+    },
+    {
+      "tag": "distant_bell",
+      "gain_db": -28
+    },
+    {
+      "tag": "wooden_footsteps",
+      "gain_db": -27
+    },
+    {
+      "tag": "water_lapping",
+      "gain_db": -28
+    },
+    {
+      "tag": "boat_creak",
+      "gain_db": -27
+    },
+    {
+      "tag": "mist_wind",
+      "gain_db": -29
+    },
+    {
+      "tag": "quiet_night_ambience",
+      "gain_db": -26
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "A misty Huong River at night in 1960s rural Vietnam, an old wooden ferry boat and amber oil lamp glowing in fog, moonlight on calm dark water, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đêm cuối năm, sông Hương lặng như tờ giấy cũ.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Close view of an elderly Vietnamese ferryman lighting an amber oil lamp on a wooden boat at night, misty moonlight, 1960s rural documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông lái đò châm đèn dầu, chờ khách qua sông.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "A quiet stranger in a faded long ao dai stepping onto a wooden ferry at night, misty moonlight and amber lamp glow, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khách lạ lặng lẽ bước xuống, áo dài bạc màu.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Close view of a weathered hand offering an old tarnished coin in amber lamplight, misty night river background, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khách trả một đồng xu cổ, lạnh như sương đêm.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "An elderly ferryman examining an old tarnished coin by amber oil lamp light, mist and moonlight on the river, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông lái đò nhìn kỹ đồng xu đã xỉn màu.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "A wooden ferry leaving a misty riverbank at night, white fog rising over calm water, amber lamp and moonlight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Thuyền rời bến, sương trắng dâng lên mặt nước lặng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "A silent passenger in a faded ao dai sitting still on a wooden ferry, gazing toward the far riverbank, misty moonlight, amber lamp glow, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Khách ngồi im, chỉ nhìn về phía bờ bên kia.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "An elderly ferryman speaking softly to a silent passenger on a misty wooden boat at night, amber lamplight and moonlight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lái đò hỏi nhỏ, khách chỉ mỉm cười không đáp.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Mid-river mist thinning over dark calm water at night, an empty wooden ferry seat in amber lamplight, moonlight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đến giữa sông, sương tan dần, khách bỗng biến mất.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Close view of an old tarnished coin resting on an empty wooden ferry seat, cold mist and amber lamplight, moonlit river night, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Trên ghế chỉ còn đồng xu cổ và sương lạnh.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "An elderly ferryman holding an old coin and telling a story to listeners by amber lamplight on a misty riverbank at night, moonlight, 1960s rural Vietnam documentary film, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông lái đò giữ đồng xu, kể lại chuyện xưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 614,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

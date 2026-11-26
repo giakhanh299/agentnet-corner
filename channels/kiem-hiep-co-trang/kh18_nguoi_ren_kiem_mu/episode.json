@@ -1,0 +1,187 @@
+{
+  "series": "Giang Hồ Kỳ Truyện",
+  "episode": 18,
+  "episode_code": "kh18",
+  "title": "Lão Thợ Rèn Kiếm Mù",
+  "cover_title": "THỢ RÈN KIẾM MÙ",
+  "hook": "Cả đời rèn trăm thanh bảo kiếm nhưng chưa từng giữ lại cây nào…",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "language": "Tiếng Việt có dấu",
+  "total_duration_s": 55,
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma. Cảnh rèn được mô tả an toàn, không hướng dẫn chi tiết gây nguy hiểm.",
+  "scientific_note": "Nung nóng làm thép mềm và dễ rèn; gõ búa tạo hình và âm thanh thay đổi theo độ nóng. Người thợ lành nghề có thể dùng thính giác và xúc giác hỗ trợ, nhưng tập này là hư cấu kiếm hiệp, không phải hồ sơ nghề thật.",
+  "sfx_library": [
+    {
+      "tag": "forge_hammer",
+      "gain_db": -27
+    },
+    {
+      "tag": "fire_crackle",
+      "gain_db": -28
+    },
+    {
+      "tag": "footsteps_gravel",
+      "gain_db": -27
+    },
+    {
+      "tag": "distant_flute",
+      "gain_db": -28
+    },
+    {
+      "tag": "quiet_forest",
+      "gain_db": -26
+    },
+    {
+      "tag": "sword_sheath",
+      "gain_db": -27
+    },
+    {
+      "tag": "bamboo_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "lantern_flicker",
+      "gain_db": -29
+    },
+    {
+      "tag": "mountain_wind",
+      "gain_db": -28
+    },
+    {
+      "tag": "night_crickets",
+      "gain_db": -29
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "A glowing forge fire at night in a mountain blacksmith workshop, smoke rising in lantern light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lò rèn đỏ lửa, khói bay lên giữa đêm núi.",
+      "vo_at": 0.0,
+      "sfx": []
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "A blind elderly blacksmith sitting quietly and touching a hot iron bar, glowing forge light, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lão thợ rèn mù ngồi lặng, sờ thanh sắt nóng.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "A blind blacksmith listening to heated steel by a glowing forge, sparks in the dark workshop, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông nghe tiếng sắt, biết thép đã đủ lửa chưa.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "A hammer striking rhythmically on hot steel, sparks flying in a dark forge at night, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Búa gõ đều nhịp, tia lửa bay trong lò tối.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Many finished swords hanging on a workshop wall, glowing forge light in the background, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cả đời ông rèn trăm thanh bảo kiếm cho người.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "An empty sword rack beside a glowing forge, a blind blacksmith working quietly, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông chưa từng giữ lại một cây kiếm nào.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "A young swordsman arriving at a mountain forge at night, asking a blind blacksmith for a sword, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Một kiếm khách trẻ đến, xin ông rèn kiếm mới.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "A blind blacksmith asking a young swordsman a question, glowing forge light on their faces, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lão hỏi kiếm để làm gì, chàng trai cúi đầu.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "A young swordsman answering humbly in a mountain forge, glowing firelight and smoke, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Chàng đáp kiếm để giữ làng, không để tranh giành.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "A blind blacksmith stoking a glowing forge fire at night, sparks rising in the dark, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lão gật đầu, nhóm lò, bắt đầu rèn từ đêm.",
+      "vo_at": 0.3,
+      "sfx": []
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "A finished sword on a workbench and a glowing forge still burning at night, cinematic wuxia misty bamboo mountain ancient lantern ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Kiếm xong, chàng đi, lò rèn vẫn đỏ lửa.",
+      "vo_at": 0.3,
+      "sfx": []
+    }
+  ],
+  "seed": 718,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

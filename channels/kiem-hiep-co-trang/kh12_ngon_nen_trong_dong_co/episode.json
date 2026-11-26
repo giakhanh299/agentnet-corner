@@ -1,0 +1,307 @@
+{
+  "episode_id": "kh12",
+  "title": "Ngọn Nến Trong Cỏ Động",
+  "cover_title": "NGỌN NẾN CỎ ĐỘNG",
+  "series": "Giang Hồ Kỳ Truyện",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no blood, no gore, no ghost face, no talisman, no distorted hands, no extra fingers, no blurry face",
+  "total_duration_sec": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Warm candlelight on a small flame inside a dark misty stone cave, bamboo mountain beyond the entrance, ancient lantern glow, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ba trăm năm ngọn nến trong hang đá vẫn cháy?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft golden candlelight on a tiny flame sheltered in a stone niche, mist drifting, bamboo shadows, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ngọn nến nhỏ chưa từng tắt suốt ba trăm năm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Cool misty light on tall grass swaying at the mouth of a dark stone cave in bamboo mountains, fog drifting, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hang đá tối sâu, cỏ động lay theo gió núi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Dim lantern light on a young wuxia swordsman in flowing robes entering a dark misty cave, sword at his side, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hiệp khách trẻ cầm kiếm bước vào hang đá.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Faint golden candlelight glowing in cold darkness inside a stone cave, mist curling, a swordsman silhouette approaching, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ánh nến vàng le lói giữa bóng tối lạnh lẽo.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Cold mountain wind light on a steady small candle flame inside a sheltered stone hollow, mist streaming past the entrance, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Gió núi lùa vào nhưng ngọn lửa vẫn đứng yên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light on an elderly wuxia hermit telling a story to a young swordsman inside a cave, candle flame between them, mist, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Lão nhân kể hang kín gió nên lửa không tắt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Golden candlelight on dark oily rock seeping inside a misty stone cave, small flame burning slowly, bamboo mountain light outside, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Dầu đá trong hang cháy chậm suốt nhiều năm dài.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft warm light on thin oil vapour rising to feed a small steady candle flame in a dark cave, mist, stone walls, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hơi dầu bốc lên nuôi ngọn lửa nhỏ bền bỉ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Pale dawn light on a young wuxia swordsman walking out of a misty cave into bamboo mountains, lantern in hand, fog drifting, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hiệp khách hiểu ra rồi lặng lẽ rời hang đá.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Serene misty dawn light over bamboo mountains and a dark cave mouth, a distant swordsman on a ridge, ancient lantern glow, cinematic wuxia ink atmosphere, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Giang hồ đẹp khi ta hiểu bí ẩn hang đá.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 12,
+  "seed": 712,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

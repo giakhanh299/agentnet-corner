@@ -1,0 +1,1064 @@
+{
+  "episode_id": "ep13_tieng_sao_dieu_nua_dem",
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "title": "Tiếng Sáo Diều Nửa Đêm",
+  "cover_text": "TIẾNG SÁO DIỀU ĐÊM KHUYA",
+  "hook": "Trời lặng gió mà sáo diều vẫn vi vu trên mái đình...",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TruyenMaVietNam",
+    "#AIGC"
+  ],
+  "total_duration_seconds": 55,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma, giải thích bằng kiến thức khoa học về gió qua ống sáo tre.",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight and amber oil lamp glow, a paper kite with a bamboo flute above a Vietnamese village communal house roof, 1960s rural Vietnam, fog drifting, tiled roof, dark trees, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Đêm lặng gió, sáo diều vẫn vi vu mái đình.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Amber oil lamp light and misty moonlight, an elderly Vietnamese man in 1960s clothes looking up at a paper kite, village courtyard, fog, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Cụ Tư ngẩng đầu nhìn con diều giấy treo cao.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight and amber oil lamp glow, close view of a bamboo flute tied to a paper kite string, wind moving thin clouds, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Gió đêm luồn qua ống sáo tre tạo tiếng ngân.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "u",
+          "desc": "u",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight and amber oil lamp glow, a taut kite string vibrating gently above a village roof, bamboo leaves swaying, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Sợi dây diều rung nhẹ theo từng cơn gió thoảng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "u",
+          "desc": "u",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "v",
+          "desc": "v",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Amber oil lamp light and misty moonlight, Vietnamese village children whispering near a wooden fence at night, curious faces in shadow, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Trẻ con làng thì thầm rằng có người thổi sáo.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Warm amber oil lamp glow and misty moonlight, an elderly Vietnamese man smiling gently while holding a bamboo flute, village house porch, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Cụ Tư cười hiền, giải thích rằng gió biết hát.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight and amber oil lamp glow, hands untying a bamboo flute from a kite string on a village roof, quiet night sky, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Ông tháo ống sáo xuống, tiếng ngân bỗng im bặt.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight and amber oil lamp glow, a quiet Vietnamese communal house under a still night sky, fog settling over tiled roof, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Khi gió ngừng thổi, mái đình lại chìm trong lặng yên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight and amber oil lamp glow, colourful paper kites and bamboo flutes laid on a wooden village table, children hands nearby, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Sáo diều là trò chơi dân gian của mùa gió.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Amber oil lamp light and misty moonlight, an old Vietnamese craftsman tying a bamboo flute to a paper kite frame, village workshop, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Người xưa buộc sáo vào diều để nghe gió kể.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Misty moonlight and amber oil lamp glow, a paper kite with a bamboo flute rising over a quiet Vietnamese village at night, stars and fog, 1960s rural Vietnam, documentary film, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Đêm nay, bạn hãy lắng nghe gió hát cùng sáo.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 13,
+  "seed": 613,
+  "cover_image": "scene_01.png"
+}

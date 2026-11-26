@@ -1,0 +1,307 @@
+{
+  "episode_id": "ep11",
+  "title": "Giếng Làng Đêm Rằm",
+  "cover_title": "GIẾNG LÀNG ĐÊM RẰM",
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TruyenMaVietNam",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no blood, no gore, no ghost face, no distorted hands, no extra fingers, no blurry face",
+  "total_duration_sec": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold moonlight on a young Vietnamese village woman leaning over an ancient stone well at night, full moon above, mist drifting, amber oil lamp glow, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đêm rằm đừng soi mặt xuống giếng cổ đầu làng.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Bright full moonlight on the still dark water inside an old stone village well, mossy rim, drifting mist, amber lamp light nearby, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Trăng tròn treo cao soi sáng mặt nước lặng yên.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Soft moonlight on a moss-covered ancient stone well in a quiet Vietnamese village, banana leaves swaying, thin mist, warm oil lamp glow, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Giếng đá rêu phong đã lặng im trăm năm qua.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Pale moonlight on a young woman in ao dai leaning over a stone well, her soft reflection trembling on dark water, mist, amber lamp glow, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cô gái cúi xuống thấy bóng mình rung nhẹ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Cool night wind light on rippling dark well water under a full moon, leaves rustling, a village woman holding an oil lamp, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Gió đêm thổi qua khiến mặt nước gợn sóng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Dim moonlight inside a deep old stone well shaft, dark water below, faint echoing ripples, a woman listening at the rim, amber lamp glow, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Tiếng vọng từ đáy giếng nghe như ai gọi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Warm oil lamp light on an elderly Vietnamese man in ba ba clothes warning a young woman near a stone well, full moon, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông lão nhắc giếng sâu hơi lạnh dễ choáng váng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Clear moonlight reflection shimmering on dark well water, showing how light bends into a wavering face-like shape, mossy stone rim, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ánh trăng phản chiếu tạo ảo ảnh trên mặt nước.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Cold misty night light on a young woman rubbing her eyes beside an ancient well, damp air rising from dark water, amber lamp glow, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Hơi nước lạnh ban đêm làm mắt mờ thoáng chốc.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm amber oil lamp light on a young woman walking away from an old stone well along a village path, full moon, mist, thatched houses, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Cô gái lùi lại thắp đèn dầu soi đường về.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Serene full moonlight over a quiet Vietnamese village and its ancient stone well, drifting mist, warm lamp windows, peaceful night, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đêm rằm đẹp khi ta biết tôn trọng giếng làng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 11,
+  "seed": 611,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}

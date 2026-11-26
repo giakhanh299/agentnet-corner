@@ -1,0 +1,1162 @@
+{
+  "episode_id": "kh17_chiec_chuong_dong_kiem_mon",
+  "series": "Giang Hồ Kỳ Truyện",
+  "title": "Chiếc Chuông Đồng Cổng Kiếm Môn",
+  "cover_text": "CHUÔNG ĐỒNG KIẾM MÔN",
+  "hook": "Chuông chỉ vang lên khi thiên hạ sắp nổi phong ba...",
+  "voice": "phonui",
+  "color_grade": "wuxia",
+  "cover_theme": "wuxia",
+  "aigc_label": true,
+  "music": {
+    "generator": "wuxia",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#KiemHiep",
+    "#GiangHoKyTruyen",
+    "#AIGC"
+  ],
+  "total_duration_seconds": 55,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "safety": "Không máu me, không bùa chú, không lộ mặt ma, giải thích bằng kiến thức khoa học về gió, đồng và âm vang núi.",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Misty bamboo mountain light, a large bronze bell hanging at an ancient stone sword gate, fog drifting, lantern glow, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Chuông chỉ vang khi thiên hạ sắp nổi phong ba.",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "z",
+          "desc": "z",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Soft dawn light and misty bamboo mountain, a tall ancient stone gate with carved swords, pine trees, fog, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Cổng Kiếm Môn sừng sững giữa núi sương mù sớm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "u",
+          "desc": "u",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Misty bamboo mountain light, close view of a bronze bell with carved patterns swaying gently, mountain wind, lantern glow, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Chiếc chuông đồng treo cao, lặng đón gió núi về.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "u",
+          "desc": "u",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Misty bamboo mountain light, wind moving through a bronze bell mouth, bamboo leaves shaking, distant peaks in fog, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Gió luồn qua miệng chuông tạo nên tiếng ngân trầm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "u",
+          "desc": "u",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light and misty bamboo mountain, a gate keeper in wuxia robes listening with hand on sword hilt, stone gate, fog, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Người giữ cổng lắng nghe, tay đặt lên chuôi kiếm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Misty bamboo mountain light, a gate keeper pointing toward changing clouds above a bronze bell, wind-blown robes, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Tiếng chuông không báo ma, chỉ báo gió đổi chiều.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "h",
+          "desc": "h",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "u",
+          "desc": "u",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cold misty bamboo mountain light, close view of bronze bell surface with frost and carved patterns, lantern glow, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Đồng giãn nở khi trời lạnh, âm thanh vang xa.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "z",
+          "desc": "z",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Misty bamboo mountain light, a wide valley with echoing sound waves over terraced slopes, bronze bell on a cliff gate, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Núi cao dội âm, tiếng chuông vọng khắp thung lũng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "u",
+          "desc": "u",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "b",
+          "desc": "b",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "d",
+          "desc": "d",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Misty bamboo mountain light, a wandering swordsman in wuxia robes stopping before a moss-covered stone gate, fog, lantern glow, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Kiếm khách dừng bước, ngẩng nhìn cổng đá phủ rêu.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "p",
+          "desc": "p",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm lantern light and misty bamboo mountain, an old gate keeper striking a bronze bell gently with a wooden mallet, stone courtyard, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Chuông đồng là tín hiệu xưa của người giữ núi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "c",
+          "desc": "c",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "k",
+          "desc": "k",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Misty bamboo mountain light, a bronze bell ringing above a stone sword gate at dawn, swordsmen walking into fog, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
+      "motion": "",
+      "voiceover": "Khi chuông ngân, giang hồ chuẩn bị đón gió lớn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "f",
+          "desc": "f",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "l",
+          "desc": "l",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "o",
+          "desc": "o",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "w",
+          "desc": "w",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "i",
+          "desc": "i",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "n",
+          "desc": "n",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "g",
+          "desc": "g",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "_",
+          "desc": "_",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "s",
+          "desc": "s",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "t",
+          "desc": "t",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "r",
+          "desc": "r",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "e",
+          "desc": "e",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "a",
+          "desc": "a",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "m",
+          "desc": "m",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 17,
+  "seed": 717,
+  "cover_image": "scene_01.png"
+}

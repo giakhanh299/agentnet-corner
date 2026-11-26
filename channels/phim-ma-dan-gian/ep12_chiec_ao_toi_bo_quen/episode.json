@@ -1,0 +1,307 @@
+{
+  "episode_id": "ep12",
+  "title": "Chiếc Áo Tôi Bỏ Quên Bên Bờ Đê",
+  "cover_title": "CHIẾC ÁO TÔI BỎ QUÊN BÊN BỜ ĐÊ",
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "voice": "phonui",
+  "color_grade": "folk_horror",
+  "cover_theme": "horror",
+  "aigc_label": true,
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#PhimMaDanGian",
+    "#TruyenMaVietNam",
+    "#AIGC"
+  ],
+  "negative_prompt": "no text, no logo, no watermark, no blood, no gore, no ghost face, no distorted hands, no extra fingers, no blurry face",
+  "total_duration_sec": 55,
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Cold storm light on a lone figure in a raincoat standing on a Vietnamese river dike at night, heavy rain, lightning glow, mist, amber oil lamp, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đêm mưa bão, ai mặc áo tôi đứng gọi đò?",
+      "vo_at": 0.0,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Dim lamplight on an empty wooden hook outside a thatched Vietnamese house in a storm, rain falling, wet ground, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Áo mưa tôi treo hiên đã biến mất từ chiều.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Grey storm light on a deserted muddy Vietnamese river dike at night, rain streaks, swaying grass, distant river, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Bờ đê vắng lặng chỉ còn tiếng mưa rơi.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Pale lightning light on a distant raincoat figure standing still on a Vietnamese dike, rain and mist around, dark river below, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Xa xa bóng người khoác áo mưa đứng gọi đò.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Warm oil lamp light on an old Vietnamese ferryman shaking his head beside his wooden boat, rain falling, misty river, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Người lái đò già lắc đầu không thấy ai cả.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Cold rain light on a wet raincoat snagged on a bamboo post at the end of a Vietnamese dike, dripping water, wind moving the fabric, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Áo mưa ướt sũng mắc trên cọc tre cuối đê.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Strong storm wind light on a raincoat flapping on a bamboo post like a standing person, rain streaks, dark dike, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Gió bão thổi mạnh khiến áo bay như người đứng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Flickering storm light on rain-blurred shapes along a Vietnamese river dike, wind-bent grass, echoing water, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mưa gió tạo bóng và tiếng vọng nghe rất lạ.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Soft rainy night light on a young woman squinting through rain toward a dike, blurred coat shape ahead, amber lamp glow, mist, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Mắt mờ trong mưa nên ta dễ nhìn nhầm bóng.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Warm oil lamp light on an old ferryman warning a young woman near a wooden boat, heavy rain, misty river, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Ông lái đò nhắc mưa bão chớ ra đê đêm.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Calm moonlight after rain over a quiet Vietnamese village dike and river, wet grass shining, drifting mist, warm lamp windows, 1960s rural Vietnam, documentary film style, vertical 9:16, no text, no logo, no blood",
+      "motion": "",
+      "voiceover": "Đêm mưa đẹp khi ta hiểu và giữ an toàn.",
+      "vo_at": 0.3,
+      "sfx": [
+        {
+          "tag": "tag",
+          "desc": "tag",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        },
+        {
+          "tag": "gain_db",
+          "desc": "gain_db",
+          "at": 0,
+          "dur": 5.0,
+          "gain_db": -28
+        }
+      ]
+    }
+  ],
+  "episode": 12,
+  "seed": 612,
+  "format": {
+    "ratio": "9:16",
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "cover_image": "scene_01.png"
+}
