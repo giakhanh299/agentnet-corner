@@ -319,24 +319,70 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", seg_list.name, "-c", "copy", video_silent.name], cwd=work)
 
     # 3. Giọng
+    cover_intro_s = float(spec.get("cover_intro_s", 0.85))
     vo_items = [(i, sc) for i, sc in enumerate(scenes) if (sc.get("voiceover") or "").strip()]
-    voice_name = voice_override or spec.get("voice", "phonui")
+    cid = str(spec.get("target_channel") or "").upper().strip()
+    default_voice = (
+        "tienvadoi" if cid == "KENH_001"
+        else "taplamcontent" if cid == "KENH_008"
+        else "phimma"
+    )
+    raw_spec_voice = str(spec.get("voice") or "").strip().lower()
+    if voice_override:
+        voice_name = voice_override
+    elif raw_spec_voice in ("", "phonui") and cid in ("KENH_005", "KENH_002"):
+        voice_name = "phimma"
+    elif raw_spec_voice in ("", "maianh") and cid == "KENH_008":
+        voice_name = "taplamcontent"
+    elif raw_spec_voice == "" and cid == "KENH_001":
+        voice_name = "tienvadoi"
+    else:
+        voice_name = raw_spec_voice or default_voice
+
     wavs = voice_mod.synth([sc["voiceover"].strip() for _, sc in vo_items], work / "voice", voice=voice_name) if vo_items else []
     vo_tracks, cues = [], []
     for (idx, sc), wav in zip(vo_items, wavs):
         if sc.get("ghost"):
             wav = voice_mod.ghost_fx(wav, work / "voice" / f"ghost_{sc['id']:02d}.wav", float(sc.get("ghost_semitones", -3)))
-        at = starts[idx] + float(sc.get("vo_at", 0.6))
+        base_vo_at = float(sc.get("vo_at", 0.45))
+        if idx == 0 and cover_intro_s > 0:
+            base_vo_at = max(base_vo_at, cover_intro_s + 0.05)
+        sc_dur = float(sc["duration_s"])
         d = voice_mod.duration(wav)
-        if at + d > starts[idx] + float(sc["duration_s"]) + 0.05:
+        avail = max(0.8, sc_dur - base_vo_at - 0.08)
+        if d > avail and d / avail <= 1.38:
+            fit_wav = work / "voice" / f"fit_{sc['id']:02d}.wav"
+            ratio = min(1.38, max(1.02, (d / avail) * 1.02))
+            run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav),
+                 "-af", f"atempo={ratio:.3f}", "-ar", "48000", str(fit_wav)])
+            wav = fit_wav
+            d = voice_mod.duration(wav)
+        at = starts[idx] + base_vo_at
+        if at + d > starts[idx] + sc_dur + 0.08:
             report["warnings"].append(f"Cảnh {sc['id']}: lời dài {d:.1f}s vượt thời lượng cảnh")
         vo_tracks.append((wav, at))
         cues.append((at, at + d, sc.get("caption") or sc["voiceover"], "Ghost" if sc.get("ghost") else "Default"))
 
     # 4. Nhạc
     music_wav = work / "music.wav"
-    mus_gen = str((spec.get("music") or {}).get("generator", "horror")).lower()
-    if mus_gen == "curiosity":
+    mus_cfg = spec.get("music") or {}
+    mus_gen = str(mus_cfg.get("generator", "horror")).lower()
+    mus_file = mus_cfg.get("file")
+    if not mus_file and (mus_gen == "finance" or cid == "KENH_001"):
+        k1_music_dir = Path(r"D:\02_CONG_CU\Youtubei-Muti-Channel\Kien-Thuc- Tai-Chinh\templates\music")
+        cands = sorted(k1_music_dir.glob("bg_*.mp3")) if k1_music_dir.is_dir() else []
+        if not cands:
+            fb_bgm = Path(r"D:\0.1_FACE_BOOK\Triet Ly Co Nhan\assets\bgm\tinh_dao_bgm.mp3")
+            cands = [fb_bgm] if fb_bgm.is_file() else []
+        if cands:
+            mus_file = str(cands[int(spec.get("seed", 1)) % len(cands)])
+
+    if mus_file and Path(mus_file).is_file():
+        fo = max(0.0, total - 1.5)
+        run(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-stream_loop", "-1", "-i", str(mus_file),
+             "-t", f"{total:.2f}", "-af", f"aformat=sample_rates=48000:channel_layouts=stereo,afade=t=in:d=0.6,afade=t=out:st={fo:.2f}:d=1.5",
+             str(music_wav)])
+    elif mus_gen == "curiosity":
         curiosity_music.write_wav(music_wav, curiosity_music.compose(total, int(spec.get("seed", 1))))
     elif mus_gen == "wuxia":
         wuxia_music.write_wav(music_wav, wuxia_music.compose(total, int(spec.get("seed", 1))))
@@ -400,11 +446,33 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
     run(["ffmpeg", "-y", "-hide_banner"] + inputs + ["-filter_complex", ";".join(chains), "-map", "[out]",
                                                     "-ar", "48000", "-t", f"{total}", str(mix_wav)])
 
-    # 7. Đồng màu + Phụ đề + AIGC + xuất
+    # 7. Ảnh bìa 9:16 + Logo kênh chuẩn (ĐÃ XÓA NHÃN AIGC) + Đồng màu + Phụ đề + xuất
     write_ass(cues, work / "subs.ass")
     fonts = work / "fonts"
     if not fonts.is_dir():
         shutil.copytree(FONT_DIR, fonts)
+
+    hero_img = None
+    if spec.get("cover_image"):
+        cand = fetch_clip(spec["cover_image"], clips_dir, work, 0)
+        if cand and cand.suffix.lower() in IMAGE_EXT:
+            hero_img = cand
+    if hero_img is None and clips_dir:
+        cov_sc = int(spec.get("cover_scene") or 1)
+        for ext in (".png", ".jpg", ".jpeg", ".webp"):
+            p_cov = clips_dir / f"scene_{cov_sc:02d}{ext}"
+            if p_cov.is_file():
+                hero_img = p_cov
+                break
+    if hero_img is None:
+        at_s = float(spec.get("cover_at_s") or 3.5)
+        hero_img = thumb_mod.extract_hero_frame(video_silent, work / "hero_frame.jpg", at_s=at_s)
+
+    pre_cover = work / "cover_9x16.jpg"
+    thumb_mod.render_cover(hero_img, spec, pre_cover)
+    logo_png = work / "logo_overlay.png"
+    thumb_mod.render_video_logo_overlay(spec, logo_png)
+
     vf_parts = []
     grade = spec.get("color_grade", "folk_horror")
     if grade == "folk_horror":
@@ -422,22 +490,26 @@ def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_ov
             "noise=alls=2:allf=t+u"
         )
     vf_parts.append("ass=subs.ass:fontsdir=fonts")
-    if spec.get("aigc_label", True):
-        vf_parts.append(
-            "drawtext=fontfile=fonts/BeVietnamPro-Bold.ttf:text='AIGC · Nội dung tạo bởi AI':"
-            "fontsize=30:fontcolor=white@0.75:x=w-tw-40:y=h-th-60:box=1:boxcolor=black@0.35:boxborderw=10"
-        )
-    vf = ",".join(vf_parts)
+    base_vf = ",".join(vf_parts)
+
+    fc_steps = [f"[0:v]{base_vf}[vsub]"]
+    extra_inputs = ["-i", logo_png.name]
+    if cover_intro_s > 0.05:
+        extra_inputs += ["-i", pre_cover.name]
+        fc_steps.append(f"[vsub][2:v]overlay=0:0:eof_action=repeat:enable='gte(t,{cover_intro_s:.2f})'[vlogo]")
+        fc_steps.append(f"[vlogo][3:v]overlay=0:0:eof_action=repeat:enable='lt(t,{cover_intro_s:.2f})'[vout]")
+    else:
+        fc_steps.append("[vsub][2:v]overlay=0:0:eof_action=repeat[vout]")
+
     vcodec = ["-c:v", "h264_nvenc", "-preset", "p5", "-cq", "21"] if has_nvenc() else ["-c:v", "libx264", "-crf", "19"]
     out.parent.mkdir(parents=True, exist_ok=True)
-    run(["ffmpeg", "-y", "-hide_banner", "-i", video_silent.name, "-i", mix_wav.name, "-vf", vf] + vcodec +
-        ["-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", str(out.resolve())],
+    run(["ffmpeg", "-y", "-hide_banner", "-i", video_silent.name, "-i", mix_wav.name] + extra_inputs +
+        ["-filter_complex", ";".join(fc_steps), "-map", "[vout]", "-map", "1:a"] + vcodec +
+        ["-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-t", f"{total:.2f}", "-movflags", "+faststart", str(out.resolve())],
         cwd=work)
-    # 8. Ảnh bìa 9:16 + tiêu đề + metadata + contact sheet QC
-    hero_img = None
-    if spec.get("cover_image"):
-        hero_img = fetch_clip(spec["cover_image"], clips_dir, work, 0)
-    pkg = thumb_mod.build_package(spec, out.resolve(), work, hero_image=hero_img)
+
+    # 8. Đóng gói ảnh bìa 9:16 + tiêu đề + metadata + contact sheet QC
+    pkg = thumb_mod.build_package(spec, out.resolve(), work, hero_image=hero_img, pre_rendered_cover=pre_cover)
     report.update({"output": str(out), "duration_s": round(total, 2), "voice": voice_name,
                    "voice_lines": len(vo_tracks), "sfx_used": len(sfx_tracks),
                    "cover": pkg["cover_path"], "publish_title": pkg["publish_title"],

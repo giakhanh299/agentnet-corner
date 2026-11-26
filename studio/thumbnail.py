@@ -1,10 +1,10 @@
-"""Tạo ảnh bìa dọc 9:16 (cover_9x16.jpg), tiêu đề/mô tả (title.txt, metadata.json) và contact_sheet.png cho mỗi tập."""
+"""Tạo ảnh bìa dọc 9:16 (cover_9x16.jpg) có LOGO kênh chuẩn (KHÔNG nhãn AIGC), tiêu đề/caption đúng hashtag từng kênh và contact_sheet.png."""
 from __future__ import annotations
 
 import json
 import subprocess
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageOps
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
@@ -12,6 +12,57 @@ FONT_DIR = REPO / "stickman-shorts" / "src" / "assets" / "fonts"
 FONT_BOLD = FONT_DIR / "BeVietnamPro-Bold.ttf"
 FONT_REG = FONT_DIR / "BeVietnamPro-Regular.ttf"
 W, H = 1080, 1920
+
+K1_AVATAR_CANDIDATES = [
+    Path(r"D:\0.1_FACE_BOOK\videos_upload\KENH_001_TienVaDoi\branding\anh_dai_dien_tien_va_doi.png"),
+    Path(r"D:\02_CONG_CU\Youtubei-Muti-Channel\Kien-Thuc- Tai-Chinh\anh dai dien.png"),
+]
+K1_AVATAR = next((p for p in K1_AVATAR_CANDIDATES if p.is_file()), None)
+
+CHANNEL_BRANDS = {
+    "KENH_005": {
+        "name": "Vũ Trụ Cày Phim",
+        "tag": "@VuTruCayPhim",
+        "hashtags": ["#VuTruCayPhim", "#MePhim", "#ReviewPhim", "#TomTatPhim", "#PhimHay", "#PhimDienAnh", "#reels"],
+        "avatar": None,
+        "mode": "movie",
+    },
+    "KENH_002": {
+        "name": "Bật Phim Lên",
+        "tag": "@BatPhimLen",
+        "hashtags": ["#BatPhimLen", "#MePhim", "#ReviewPhim", "#TomTatPhim", "#PhimHay", "#PhimDienAnh", "#reels"],
+        "avatar": None,
+        "mode": "movie",
+    },
+    "KENH_008": {
+        "name": "Tập Làm Content",
+        "tag": "@TapLamContent",
+        "hashtags": ["#TapLamContent", "#KienThucThuVi", "#KhamPha", "#KhoaHoc", "#SuThatThuVi", "#reels"],
+        "avatar": None,
+        "mode": "knowledge",
+    },
+    "KENH_001": {
+        "name": "Tiền Và Đời",
+        "tag": "@TienVaDoi",
+        "hashtags": ["#TienVaDoi", "#TaiChinh", "#KienThucTaiChinh", "#TuDuyTaiChinh", "#reels"],
+        "avatar": K1_AVATAR,
+        "mode": "finance",
+    },
+}
+
+
+def resolve_brand(spec: dict) -> dict:
+    cid = str(spec.get("target_channel") or "").upper().strip()
+    if cid in CHANNEL_BRANDS:
+        return CHANNEL_BRANDS[cid]
+    s = str(spec.get("series") or "").lower()
+    if "tiền" in s or "tài chính" in s:
+        return CHANNEL_BRANDS["KENH_001"]
+    if "content" in s or "kiến thức" in s:
+        return CHANNEL_BRANDS["KENH_008"]
+    if "bật phim" in s:
+        return CHANNEL_BRANDS["KENH_002"]
+    return CHANNEL_BRANDS["KENH_005"]
 
 
 def _font(path: Path, size: int) -> ImageFont.FreeTypeFont:
@@ -71,25 +122,34 @@ def make_contact_sheet(video: Path, dst: Path, cols: int = 3, rows: int = 2) -> 
     return dst
 
 
+def _paste_circle_avatar(base: Image.Image, avatar_path: Path, x: int, y: int, size: int) -> None:
+    try:
+        av = Image.open(avatar_path).convert("RGBA")
+        av = ImageOps.fit(av, (size, size), Image.Resampling.LANCZOS)
+        mask = Image.new("L", (size, size), 0)
+        ImageDraw.Draw(mask).ellipse((0, 0, size - 1, size - 1), fill=255)
+        base.paste(av, (x, y), mask)
+    except Exception:
+        pass
+
+
 def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
-    """Vẽ ảnh bìa dọc 1080x1920 chuyên nghiệp từ khung hình đẹp nhất + tiêu đề tiếng Việt có dấu."""
+    """Vẽ ảnh bìa dọc 1080x1920 sắc nét + LOGO kênh chuẩn (KHÔNG gắn nhãn AIGC)."""
+    brand = resolve_brand(spec)
     img = Image.open(bg_image).convert("RGB")
-    # Center-crop to 9:16
     scale = max(W / img.width, H / img.height)
     nw, nh = int(img.width * scale), int(img.height * scale)
     img = img.resize((nw, nh), Image.Resampling.LANCZOS)
     left, top = (nw - W) // 2, (nh - H) // 2
     img = img.crop((left, top, left + W, top + H))
     img = ImageEnhance.Contrast(img).enhance(1.12)
-    img = ImageEnhance.Color(img).enhance(0.95)
+    img = ImageEnhance.Color(img).enhance(0.98)
 
     overlay = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
-    # Top scrim for series badge
-    for y in range(0, 460):
-        alpha = int(200 * (1 - y / 460) ** 1.6)
+    for y in range(0, 440):
+        alpha = int(195 * (1 - y / 440) ** 1.6)
         od.line([(0, y), (W, y)], fill=(5, 8, 14, alpha))
-    # Bottom scrim for big title + hook
     for y in range(H - 860, H):
         t = (y - (H - 860)) / 860
         alpha = int(235 * (t ** 1.35))
@@ -99,29 +159,38 @@ def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
     draw = ImageDraw.Draw(base)
 
     theme = str(spec.get("cover_theme") or "horror").lower()
-    if theme == "knowledge":
-        badge_outline, badge_fill, badge_text_col, accent_bar_col = (56, 212, 232, 235), (10, 26, 38, 210), (120, 240, 255, 255), (255, 196, 46, 245)
+    if theme == "knowledge" or brand["mode"] in ("knowledge", "finance"):
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (56, 212, 232, 235), (10, 26, 38, 215), (255, 224, 112, 255), (255, 196, 46, 245)
     elif theme == "wuxia":
-        badge_outline, badge_fill, badge_text_col, accent_bar_col = (232, 196, 112, 235), (20, 16, 12, 210), (248, 224, 152, 255), (204, 158, 62, 245)
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (232, 196, 112, 235), (20, 16, 12, 215), (248, 224, 152, 255), (204, 158, 62, 245)
     else:
-        badge_outline, badge_fill, badge_text_col, accent_bar_col = (245, 166, 35, 220), (14, 18, 26, 195), (248, 190, 72, 255), (220, 62, 46, 240)
+        badge_outline, badge_fill, badge_text_col, accent_bar_col = (245, 166, 35, 225), (14, 18, 26, 210), (248, 190, 72, 255), (220, 62, 46, 240)
 
-    series = str(spec.get("series") or "Phim Ma Dân Gian Việt Nam").upper()
-    ep_num = int(spec.get("episode") or 1)
-    badge_text = f"{series}  ·  TẬP {ep_num:02d}"
+    # Top Channel Logo Badge (replaces generic episode text & AIGC label)
+    logo_label = f"{brand['name'].upper()}  ·  {brand['tag']}"
     f_badge = _font(FONT_BOLD, 34)
-    bx0, by0, bx1, by1 = draw.textbbox((0, 0), badge_text, font=f_badge)
+    bx0, by0, bx1, by1 = draw.textbbox((0, 0), logo_label, font=f_badge)
     bw, bh = bx1 - bx0, by1 - by0
-    pad_x, pad_y = 32, 16
-    rx0 = (W - bw) // 2 - pad_x
-    ry0 = 110
-    draw.rounded_rectangle([rx0, ry0, rx0 + bw + pad_x * 2, ry0 + bh + pad_y * 2],
-                           radius=14, fill=badge_fill, outline=badge_outline, width=3)
-    draw.text(((W - bw) // 2, ry0 + pad_y - 3), badge_text, font=f_badge, fill=badge_text_col)
+    av_path = brand.get("avatar")
+    av_w = 56 if (av_path and Path(av_path).is_file()) else 0
+    pad_x, pad_y = 30, 16
+    total_w = bw + (av_w + 16 if av_w else 0)
+    rx0 = (W - total_w) // 2 - pad_x
+    ry0 = 96
+    box_h = max(bh + pad_y * 2, av_w + 16)
+    draw.rounded_rectangle([rx0, ry0, rx0 + total_w + pad_x * 2, ry0 + box_h],
+                           radius=box_h // 2, fill=badge_fill, outline=badge_outline, width=3)
+    tx = rx0 + pad_x
+    if av_w:
+        _paste_circle_avatar(base, Path(av_path), tx, ry0 + (box_h - av_w) // 2, av_w)
+        draw = ImageDraw.Draw(base)
+        tx += av_w + 16
+    draw.text((tx, ry0 + (box_h - bh) // 2 - 3), logo_label, font=f_badge, fill=badge_text_col)
 
     # Main dramatic title
+    ep_num = int(spec.get("episode") or 1)
     cover_title = str(spec.get("cover_title") or spec.get("title") or f"Tập {ep_num}").upper()
-    f_title = _font(FONT_BOLD, 108)
+    f_title = _font(FONT_BOLD, 106)
     lines = _wrap_lines(draw, cover_title, f_title, W - 120, max_lines=3)
     if len(lines) >= 3:
         f_title = _font(FONT_BOLD, 88)
@@ -138,16 +207,15 @@ def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
     title_line_h = int(f_title.size * 1.18)
     hook_line_h = int(f_hook.size * 1.32)
     block_h = len(lines) * title_line_h + 26 + len(hook_lines) * hook_line_h
-    y = H - 220 - block_h
+    y = H - 190 - block_h
 
-    # Accent bar above title
     draw.rounded_rectangle([(W - 140) // 2, y - 34, (W + 140) // 2, y - 24], radius=5, fill=accent_bar_col)
 
     for ln in lines:
         bb = draw.textbbox((0, 0), ln, font=f_title)
         lw = bb[2] - bb[0]
         x = (W - lw) // 2
-        draw.text((x + 4, y + 6), ln, font=f_title, fill=(0, 0, 0, 210))
+        draw.text((x + 4, y + 6), ln, font=f_title, fill=(0, 0, 0, 215))
         draw.text((x, y), ln, font=f_title, fill=(250, 242, 224, 255))
         y += title_line_h
 
@@ -157,73 +225,147 @@ def render_cover(bg_image: Path, spec: dict, dst: Path) -> Path:
         lw = bb[2] - bb[0]
         x = (W - lw) // 2
         draw.text((x + 2, y + 3), hl, font=f_hook, fill=(0, 0, 0, 200))
-        draw.text((x, y), hl, font=f_hook, fill=(224, 232, 242, 235))
+        draw.text((x, y), hl, font=f_hook, fill=(224, 232, 242, 240))
         y += hook_line_h
 
-    if spec.get("aigc_label", True):
-        f_ai = _font(FONT_BOLD, 28)
-        ai_txt = "AIGC · Nội dung tạo bởi AI"
-        bb = draw.textbbox((0, 0), ai_txt, font=f_ai)
-        draw.text((W - (bb[2] - bb[0]) - 42, H - 78), ai_txt, font=f_ai, fill=(255, 255, 255, 175))
+    # Subtle bottom channel watermark (ZERO AIGC text!)
+    f_wm = _font(FONT_BOLD, 28)
+    wm_txt = f"{brand['name']} · {brand['tag']}"
+    bb = draw.textbbox((0, 0), wm_txt, font=f_wm)
+    draw.text((W - (bb[2] - bb[0]) - 42, H - 74), wm_txt, font=f_wm, fill=(255, 255, 255, 175))
 
     dst.parent.mkdir(parents=True, exist_ok=True)
-    base.convert("RGB").save(dst, "JPEG", quality=92, optimize=True)
+    base.convert("RGB").save(dst, "JPEG", quality=93, optimize=True)
     return dst
 
 
 def build_metadata(spec: dict, video_path: Path, cover_path: Path) -> dict:
+    brand = resolve_brand(spec)
     ep = int(spec.get("episode") or 1)
-    series = str(spec.get("series") or "Phim Ma Dân Gian Việt Nam")
-    title_core = str(spec.get("title") or f"Tập {ep}")
+    title_core = str(spec.get("title") or f"Tập {ep}").strip()
     scenes = sorted(spec.get("scenes") or [], key=lambda s: s.get("id", 0))
     hook = str(spec.get("cover_hook") or (scenes[0].get("voiceover") if scenes else "") or "").strip()
-    publish_title = str(spec.get("publish_title") or f"{title_core} | {series} – Tập {ep:02d}")
-    hashtags = spec.get("hashtags") or [
-        "#PhimMaDanGian", "#ChuyenMaVietNam", "#TruyenThuyetDanGian",
-        "#GocNhoPhoNui", "#ShortHorror", "#AIGC",
-    ]
-    cta = str(spec.get("cta") or "Bạn đã từng nghe người lớn kể chuyện này ở quê chưa? Bình luận bên dưới nhé!")
-    desc = str(spec.get("description") or (
-        f"{hook}\n\n"
-        f"{series} – Tập {ep:02d}: {title_core}.\n"
-        f"{cta}\n\n"
-        "Lưu ý: Video minh họa dân gian được dàn dựng bằng AI (AIGC) phục vụ giải trí & kể chuyện.\n"
-        + " ".join(hashtags)
-    ))
+    hashtags = brand["hashtags"]
+    tag_line = " ".join(hashtags)
+
+    if brand["mode"] == "movie":
+        publish_title = f"🎬 {title_core.upper()} 🔥"
+        desc = (
+            f"{hook} Cùng theo dõi để khám phá những tình tiết bất ngờ của câu chuyện này nhé! 🍿\n\n"
+            f"🎬 Phim hay thì kể, phim dở cũng tám!\n"
+            f"👀 Vào {brand['name']} coi có gì vui!\n\n"
+            f"{tag_line}"
+        )
+    elif brand["mode"] == "finance":
+        publish_title = title_core
+        desc = f"{hook}\n\n{tag_line}"
+    else:
+        publish_title = f"💡 {title_core}"
+        desc = f"{hook}\n\nTheo dõi {brand['name']} mỗi ngày để khám phá thêm nhiều sự thật thú vị!\n\n{tag_line}"
+
     return {
         "episode": ep,
-        "series": series,
+        "channel_name": brand["name"],
+        "channel_tag": brand["tag"],
         "title": title_core,
         "publish_title": publish_title,
         "cover_title": str(spec.get("cover_title") or title_core).upper(),
         "cover_hook": hook,
         "description": desc,
-        "cta": cta,
         "hashtags": hashtags,
-        "aigc_label": bool(spec.get("aigc_label", True)),
-        "video_path": str(video_path),
-        "cover_path": str(cover_path),
+        "video_file": video_path.name,
+        "cover_file": cover_path.name,
     }
 
 
-def build_package(spec: dict, video_path: Path, work_dir: Path, hero_image: Path | None = None) -> dict:
+def render_video_logo_overlay(spec: dict, dst: Path) -> Path:
+    """Tạo lớp phủ RGBA 1080x1920 chứa Logo kênh góc phải trên + watermark chìm góc dưới (KHÔNG AIGC)."""
+    brand = resolve_brand(spec)
+    canvas = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(canvas)
+
+    mode = brand["mode"]
+    if mode in ("knowledge", "finance"):
+        outline_col, fill_col, title_col = (240, 198, 92, 195), (8, 18, 30, 160), (255, 246, 224, 235)
+    else:
+        outline_col, fill_col, title_col = (235, 168, 52, 185), (12, 14, 20, 155), (255, 244, 226, 230)
+
+    f_name = _font(FONT_BOLD, 28)
+    f_tag = _font(FONT_REG, 21)
+    nb = draw.textbbox((0, 0), brand["name"], font=f_name)
+    tb = draw.textbbox((0, 0), brand["tag"], font=f_tag)
+    text_w = max(nb[2] - nb[0], tb[2] - tb[0])
+    text_h = (nb[3] - nb[1]) + 6 + (tb[3] - tb[1])
+
+    av_path = brand.get("avatar")
+    has_av = bool(av_path and Path(av_path).is_file())
+    av_sz = 58 if has_av else 0
+    pad_x, pad_y = 22, 12
+    inner_w = text_w + (av_sz + 14 if has_av else 0)
+    box_w = inner_w + pad_x * 2
+    box_h = max(text_h + pad_y * 2, av_sz + 14)
+
+    x0 = W - box_w - 36
+    y0 = 54
+    draw.rounded_rectangle([x0, y0, x0 + box_w, y0 + box_h], radius=box_h // 2,
+                           fill=fill_col, outline=outline_col, width=2)
+    tx = x0 + pad_x
+    if has_av:
+        _paste_circle_avatar(canvas, Path(av_path), tx, y0 + (box_h - av_sz) // 2, av_sz)
+        draw = ImageDraw.Draw(canvas)
+        tx += av_sz + 14
+    ty = y0 + (box_h - text_h) // 2 - 2
+    draw.text((tx, ty), brand["name"], font=f_name, fill=title_col)
+    draw.text((tx, ty + (nb[3] - nb[1]) + 4), brand["tag"], font=f_tag, fill=(214, 224, 238, 195))
+
+    # Subtle bottom-right handle watermark (replaces AIGC completely)
+    f_wm = _font(FONT_BOLD, 24)
+    wm = brand["tag"]
+    wb = draw.textbbox((0, 0), wm, font=f_wm)
+    wx = W - (wb[2] - wb[0]) - 38
+    wy = H - 68
+    draw.text((wx + 2, wy + 2), wm, font=f_wm, fill=(0, 0, 0, 120))
+    draw.text((wx, wy), wm, font=f_wm, fill=(255, 255, 255, 130))
+
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(dst, "PNG")
+    return dst
+
+
+def build_package(spec: dict, video_path: Path, work_dir: Path, hero_image: Path | None = None,
+                  pre_rendered_cover: Path | None = None) -> dict:
     out_dir = video_path.parent
     stem = video_path.stem
     cover_path = out_dir / f"{stem}_cover_9x16.jpg"
-    sheet_path = out_dir / f"{stem}_contact_sheet.png"
-    meta_path = out_dir / f"{stem}_metadata.json"
-    title_path = out_dir / f"{stem}_title.txt"
+    if pre_rendered_cover and Path(pre_rendered_cover).is_file():
+        if Path(pre_rendered_cover).resolve() != cover_path.resolve():
+            import shutil
+            shutil.copy2(pre_rendered_cover, cover_path)
+    else:
+        if hero_image and Path(hero_image).is_file():
+            bg = Path(hero_image)
+        else:
+            at_s = float(spec.get("cover_at_s") or 3.5)
+            bg = extract_hero_frame(video_path, work_dir / "hero_frame.jpg", at_s=at_s)
+        render_cover(bg, spec, cover_path)
 
-    bg = hero_image if (hero_image and hero_image.is_file()) else extract_hero_frame(video_path, work_dir / "hero_frame.jpg", at_s=3.5)
-    render_cover(bg, spec, cover_path)
-    make_contact_sheet(video_path, sheet_path)
     meta = build_metadata(spec, video_path, cover_path)
-    meta["contact_sheet_path"] = str(sheet_path)
+    meta_path = out_dir / f"{stem}_metadata.json"
     meta_path.write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    title_path.write_text(
-        f"TIÊU ĐỀ:\n{meta['publish_title']}\n\n"
-        f"CHỮ TRÊN ẢNH BÌA:\n{meta['cover_title']}\n{meta['cover_hook']}\n\n"
-        f"MÔ TẢ & HASHTAG:\n{meta['description']}\n",
+
+    title_txt = out_dir / f"{stem}_title.txt"
+    title_txt.write_text(
+        f"TIÊU ĐỀ ĐĂNG:\n{meta['publish_title']}\n\nCHỮ BÌA 9:16:\n{meta['cover_title']}\n\nMÔ TẢ & HASHTAG:\n{meta['description']}\n",
         encoding="utf-8",
     )
-    return meta
+
+    sheet_path = out_dir / f"{stem}_contact_sheet.png"
+    make_contact_sheet(video_path, sheet_path)
+
+    return {
+        "cover_path": str(cover_path),
+        "metadata_path": str(meta_path),
+        "title_path": str(title_txt),
+        "contact_sheet_path": str(sheet_path),
+        "publish_title": meta["publish_title"],
+    }
