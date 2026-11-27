@@ -250,22 +250,21 @@ class ResearchQueue:
                     (node['id'],),
                 ).fetchone()
                 if not row:
-                    # Check if this node recently hit video quota exhaustion or submitted non-.mp4 to muse_make_videos
+                    # Only mark vid_exhausted if the node's MOST RECENT video submission within 90m reported quota exhaustion
                     vid_exhausted = False
-                    recent_vid_rows = c.execute(
-                        "SELECT result FROM tasks WHERE kind='muse_make_videos' AND owner_node=? AND completed_at>? LIMIT 5",
-                        (node['id'], now - 21600),
-                    ).fetchall()
-                    for rvr in recent_vid_rows:
-                        rtxt = (rvr['result'] or '').lower()
-                        if ('video_daily_budget_exhausted' in rtxt or 'video quota exhausted' in rtxt
-                                or 'outside the research-only role' in rtxt):
+                    last_vid = c.execute(
+                        "SELECT result FROM tasks WHERE kind='muse_make_videos' AND owner_node=? AND completed_at>? ORDER BY completed_at DESC LIMIT 1",
+                        (node['id'], now - 5400),
+                    ).fetchone()
+                    if last_vid:
+                        rtxt = (last_vid['result'] or '').lower()
+                        if 'video_daily_budget_exhausted' in rtxt or 'video quota exhausted' in rtxt:
                             vid_exhausted = True
-                            break
 
                     if role == 'artist':
                         candidates = c.execute(
-                            "SELECT * FROM tasks WHERE status='QUEUED' AND (assigned_to='artist' OR (assigned_to='research' AND kind='muse_draw_images')) ORDER BY CASE WHEN assigned_to='artist' THEN 0 ELSE 1 END, created_at LIMIT 80"
+                            "SELECT * FROM tasks WHERE status='QUEUED' AND (assigned_to='artist' OR (assigned_to='research' AND kind='muse_draw_images') OR (assigned_to IN ('animator','research') AND kind='muse_make_videos')) "
+                            "ORDER BY CASE WHEN assigned_to='artist' THEN 0 WHEN kind='muse_draw_images' THEN 1 ELSE 2 END, created_at LIMIT 80"
                         ).fetchall()
                     elif role == 'animator':
                         candidates = c.execute(
