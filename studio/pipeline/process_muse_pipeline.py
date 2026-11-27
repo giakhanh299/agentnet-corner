@@ -213,7 +213,7 @@ def is_fake_zoompan_mp4(p: Path) -> tuple[bool, str]:
             residuals.append(float(np.percentile(diff, 90)))
     med_res = float(np.median(residuals))
     med_inl = float(np.median(inliers))
-    is_fake = (med_res < 15.0 and med_inl > 0.78) or (med_res < 11.0)
+    is_fake = (med_inl > 0.85) or (med_res < 25.0 and med_inl > 0.72) or (med_res < 12.0)
     return is_fake, f"p90_res={med_res:.1f},inlier={med_inl:.2f}"
 
 
