@@ -1,0 +1,279 @@
+{
+  "aigc_label": false,
+  "character_bible": {
+    "characters": [
+      {
+        "age": 70,
+        "costume": "áo bà ba nâu sẫm, quần đen, khăn đen, đi dép mo cau",
+        "face": "gương mặt nhăn nheo hiền hậu, gò má cao, mắt sâu lo lắng",
+        "gender": "nữ",
+        "hair": "tóc bạc búi cao gọn gàng, khăn đen quấn đầu",
+        "id": "ba_sau",
+        "name": "Bà Sáu",
+        "notes": "Luôn xuất hiện cùng đèn dầu, tay nhăn nheo, dáng đi chậm rãi, giữ đúng tuổi 70 và trang phục này trong mọi cảnh",
+        "role": "bà nội",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": 9,
+        "costume": "áo bà ba trắng ngà, quần đen, đi chân đất",
+        "face": "gương mặt bầu bĩnh, mắt to tròn sợ hãi, má lấm lem",
+        "gender": "nữ",
+        "hair": "tóc đen hai bím tết bằng dây vải",
+        "id": "mai",
+        "name": "Mai",
+        "notes": "Luôn nép sau bà Sáu, giữ đúng tuổi 9, tóc hai bím và trang phục này trong mọi cảnh",
+        "role": "cháu gái",
+        "voice": "phonui"
+      },
+      {
+        "age": "không rõ, dáng thiếu nữ",
+        "costume": "áo dài trắng cũ ướt sũng, không trang sức hiện đại",
+        "face": "chỉ là bóng mờ tái nhợt trong nước, không lộ rõ mặt",
+        "gender": "nữ",
+        "hair": "tóc đen dài xõa ướt, trôi trong nước",
+        "id": "vong_gieng",
+        "name": "Vong giếng",
+        "notes": "Chỉ xuất hiện như bóng phản chiếu hoặc bóng mờ trong nước giếng, tuyệt đối không lộ mặt rõ, không máu me",
+        "role": "vong nữ dưới giếng",
+        "voice": "phonui"
+      },
+      {
+        "age": "trưởng thành",
+        "costume": "không xuất hiện trên hình",
+        "face": "không xuất hiện trên hình",
+        "gender": "nữ",
+        "hair": "không xuất hiện trên hình",
+        "id": "narrator",
+        "name": "Người kể chuyện",
+        "notes": "Chỉ dẫn bằng giọng nói, giọng nữ trầm, chậm, lạnh",
+        "role": "dẫn truyện",
+        "voice": "phonui"
+      }
+    ],
+    "forbidden_all_characters": [
+      "không đeo kính cận",
+      "không đeo đồng hồ hiện đại",
+      "không có đồ vật hiện đại",
+      "không chữ, không watermark, không logo, không máu me"
+    ],
+    "setting": "Làng quê Việt Nam những năm 1960, sân gạch, giếng khơi bằng gạch nung, nhà gỗ mái ngói, đèn dầu, trăng lạnh. Tuyệt đối không đồ hiện đại."
+  },
+  "color_grade": "folk_horror",
+  "cover_hook": "Nửa đêm giếng khơi tự khuấy nước, bà Sáu biết có vong về xin một gáo nước mát...",
+  "cover_scene": 1,
+  "cover_theme": "horror",
+  "cover_title": "TIẾNG VONG GIẾNG KHUYA",
+  "episode": 39,
+  "music": {
+    "gain_db": 0,
+    "generator": "horror"
+  },
+  "scenes": [
+    {
+      "clip": "scene_01.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 1,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of dark well water rippling in slow concentric circles under pale moonlight, a faint pale reflection drifting below the surface, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow macro push-in on rippling dark well water",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "water_drip"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Nửa đêm, khi cả làng đã tắt đèn, mặt nước giếng khơi bỗng tự khuấy lên từng vòng tròn lạnh buốt."
+    },
+    {
+      "clip": "scene_02.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 2,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: low-angle wide shot of an old brick well in a misty rural courtyard at midnight, wet banana leaves swaying, a wooden bucket hanging still, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow low-angle tilt up the old brick well into mist",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "leaves_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Giếng làng đã có từ đời ông cố, người già dặn nhau: giếng động giữa khuya là có người dưới ấy về xin nước."
+    },
+    {
+      "clip": "scene_03.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 3,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 70-year-old Vietnamese grandmother with silver hair in a neat bun and black headscarf, wearing a dark brown ba ba shirt, lighting an oil lamp while her 9-year-old granddaughter with two braids in a cream ba ba shirt clings to her side indoors, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan across grandmother lighting lamp and frightened granddaughter",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Bà Sáu châm đèn dầu rồi dặn nhỏ: Đêm nay giếng động, con đừng ra sân, cũng đừng gọi tên ai dưới giếng!"
+    },
+    {
+      "clip": "scene_04.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 4,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of a frayed rope and wooden well bucket slowly lowering by itself into darkness, water drops falling, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight macro follow of rope and bucket sinking alone",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Chưa ai chạm vào dây, vậy mà chiếc gàu gỗ cứ từ từ hạ xuống, kéo theo tiếng nước khuấy đều đều."
+    },
+    {
+      "clip": "scene_05.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 5,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: over-the-shoulder shot of a 9-year-old Vietnamese girl with two braids in a cream ba ba shirt leaning over an old brick well, looking down at her pale reflection rippling in dark water, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow over-the-shoulder lean toward the well reflection",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "water_drip"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Mai rón rén ghé mắt nhìn xuống, bóng mình trong nước bỗng nhòe đi, rồi hiện lên một bóng tóc dài khác."
+    },
+    {
+      "clip": "scene_06.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 6,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a small wet handprint appearing on the mossy stone rim of an old well, water dripping down the bricks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Sudden focus pull to the wet handprint on the well rim",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Trên thành giếng rêu phong, một dấu tay nhỏ ướt sũng in rõ, dù cả đêm không có ai bước ra sân."
+    },
+    {
+      "clip": "scene_07.mp4",
+      "duration_s": 5.0,
+      "ghost": true,
+      "id": 7,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: interior view looking down a dark well mouth, cold mist rising, a faint pale blurred silhouette with long wet hair drifting in the water below, face never clearly revealed, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in into the dark well mouth toward the blurred silhouette",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Một giọng con gái khàn lạnh vọng lên từ đáy giếng: Cho em xin một gáo nước mát... ngoài đồng khát quá..."
+    },
+    {
+      "clip": "scene_08.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 8,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight close-up of a 70-year-old Vietnamese grandmother with silver hair in a neat bun and black headscarf, wearing a dark brown ba ba shirt, closing her eyes tightly and whispering a prayer with weathered hands clasped before a small altar, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight reaction shot of grandmother clasping hands in prayer",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Bà Sáu chắp tay khấn nhỏ, giọng run run: Vong ơi, nước giếng làng vẫn đây, xin đừng gọi tên cháu tôi nữa."
+    },
+    {
+      "clip": "scene_09.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 9,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: slow downward shot of a wooden well bucket rising by itself full of black still water, rope taut with no hand pulling it, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan down the bucket rising alone full of black water",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Chiếc gàu tự kéo lên, đầy ắp nước đen lặng ngắt, rồi dừng lại ngay miệng giếng như chờ ai đó đón lấy."
+    },
+    {
+      "clip": "scene_10.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 10,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot of a 70-year-old Vietnamese grandmother with silver hair in a neat bun and black headscarf, wearing a dark brown ba ba shirt, carrying an oil lamp through mist toward the old well and scattering a handful of salt, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tracking shot of grandmother carrying lamp to the well",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Bà Sáu bưng đèn ra sân, rải một nắm muối quanh giếng, nước trong gàu bỗng trong lại như chưa từng khuấy động."
+    },
+    {
+      "clip": "scene_11.mp4",
+      "duration_s": 5.0,
+      "ghost": false,
+      "id": 11,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic high-angle wide shot of a misty rural courtyard at dawn, the old well covered with a wooden lid, a single wet footprint fading on the bricks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the covered well into the dawn village lane",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Trời hửng sáng, bà Sáu đậy nắp giếng lại và dặn Mai: Giếng là của làng, đêm khuya đừng khuấy nước, kẻo vong tưởng mình được mời."
+    }
+  ],
+  "seed": 391,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "slug": "ep39_tieng_vong_khuay_nuoc_gieng_khuya",
+  "target_channel": "KENH_005",
+  "tight_pacing": true,
+  "title": "Tiếng Vong Khuấy Nước Giếng Khuya",
+  "voice": "phonui"
+}
