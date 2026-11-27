@@ -59,12 +59,18 @@ def enqueue_hub_tasks(tasks: list[dict]) -> int:
 import base64, json, sys
 from pathlib import Path
 sys.path.insert(0, '/opt/agentnet-corner')
-from research_queue import ResearchQueue
+from research_queue import QueueError, ResearchQueue
 tasks = json.loads(base64.b64decode({b64!r}).decode('utf-8'))
 rq = ResearchQueue(Path('/opt/agentnet-corner'))
 node = {{'id': 'chief-local', 'role': 'controller'}}
-res = [rq.post(node, '/tasks', s, False) for s in tasks]
-print(len(res))
+added = 0
+for s in tasks:
+    try:
+        rq.post(node, '/tasks', s, False)
+        added += 1
+    except QueueError:
+        pass
+print(added)
 """
     ssh = connect_vps_ssh(timeout=25)
     try:
