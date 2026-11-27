@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 38,
+  "slug": "ep38_ngon_den_dau_khong_tat_duoi_goc_cay_thi",
+  "title": "Ngọn Đèn Dầu Ba Lần Tự Tắt Dưới Gốc Cây Thị Già Đầu Xóm",
+  "cover_title": "CÂY THỊ GIÀ ĐẦU XÓM ĐÊM RẰM",
+  "cover_hook": "Đi qua gốc cây thị cổ thụ trăm năm ban đêm, vì sao thấy mùi thị chín thơm lừng trái mùa tuyệt đối đừng ngẩng đầu tìm?",
+  "character_bible": "PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 238,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), cinematic vertical low-angle shot of a massive ancient gnarled persimmon-apple tree (cây thị cổ thụ) with twisted roots at a misty Vietnamese village crossroads under a full moon, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Low-angle tilt up massive gnarled ancient village tree in moonlight",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đầu nhiều làng cổ đồng bằng sông Hồng thường có một gốc cây thị già hàng trăm năm tuổi cành lá sum suê che rợp cả khúc đường cái quan.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), Tùng (25-year-old village night watchman, dark brown jacket) and Cụ Mõ Hạc (70, white goatee, gray tunic) patrolling the quiet dirt road carrying a glass-chimney oil lantern, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Young watchman and old elder patrol misty village road with lantern",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Đêm rằm tháng mười se lạnh, Tùng mới nhận chân tuần phiên xóm lần đầu đi gác đêm cùng cụ Mõ Hạc ngang qua gốc thị cổ thụ cạnh bến nước.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), close-up of Tùng's glass-chimney oil lantern suddenly snuffing out into thin white smoke despite zero wind while ripe golden fruit fragrance fills the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lantern flame inside glass chimney goes out suddenly with thin smoke",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đang đi giữa trời lặng gió không một chiếc lá rung, ngọn đèn bão chụp kính kín mít trên tay Tùng bỗng phụt tắt ngấm, đồng thời thoảng mùi thị chín thơm ngát!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), Tùng (25, dark brown jacket) striking flint twice trying to relight the lantern and starting to tilt his chin upward toward the dark dense canopy, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tùng strikes flint to relight lamp and starts looking up into dark branches",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Lấy đá lửa bật đến hai lần bấc đèn vẫn tắt, Tùng lấy làm lạ vì đang giữa mùa đông lấy đâu ra thị chín, bèn định ngẩng cổ rọi lên vòm lá tối đen tìm thử.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), Cụ Mõ Hạc (70, white goatee, gray tunic) gripping Tùng's shoulder firmly pulling his gaze straight down toward the dirt road as a dark shadow shifts high in the boughs, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Old watchman grips Tùng's shoulder firmly keeping his eyes down on road",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Cụ Mõ Hạc đứng cạnh vội ấn chặt vai cậu kéo cúi đầu xuống ngay, gằn giọng khẽ: Đừng ngẩng cổ nhìn lên tán cây, cứ nhìn thẳng xuống mũi chân mà bước tiếp!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), eerie shot of the muddy road beneath the giant tree roots where a huge swaying shadow among the upper branches stretches across the moonlit ground without wind, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Shadow of heavy upper branch sways across moonlit ground in dead calm air",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Nhìn xuống mặt đường trăng soi, Tùng lạnh toát gáy khi thấy bóng một cành cây to trên đỉnh đang đung đưa trĩu nặng in xuống đất dù bốn bề không một ngọn gió!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), Cụ Mõ Hạc striking three crisp resonant beats on his bamboo watchman rattle and bowing slightly toward the ancient tree trunk, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Old watchman taps bamboo rattle three crisp times respectfully",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Cụ Hạc bình tĩnh gõ ba tiếng mõ tre giòn giã rồi cất lời trầm ổn: Tuần đinh làng đi giữ bình yên cho dân xóm, xin thần cây bóng cả chứng giám cho đường thông lối thoáng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "temple_bell",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), close-up of Tùng striking the flint once more fifty paces past the tree and the oil lantern immediately catching a bright steady golden flame, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Oil lantern ignites immediately with warm steady golden flame",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Vừa đi quá gốc thị chừng hai chục bước chân, Tùng bật nhẹ đá lửa một cái là ngọn đèn bão bùng cháy vàng rực, cháy đều tăm tắp suốt cả canh tuần còn lại!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), sitting at the village guardhouse brazier Cụ Mõ Hạc (70, white goatee) warming his hands explaining folklore wisdom to attentive Tùng (25, brown jacket), strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Two watchmen warm hands by glowing brazier inside thatched guardhouse",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Về điếm canh hơ tay bên chậu than, cụ Hạc mới giảng giải: Cây cổ thụ trăm năm vốn tụ khí linh của đất làng, trái mùa mà ngửi mùi thơm lạ gọi mình ngước lên là phép thử vía người yếu bóng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), majestic golden sunrise shining through the ancient village persimmon-apple tree canopy as birds chirp cheerfully on its branches, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Golden morning sunbeams pierce ancient green canopy with chirping birds",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Sáng ra trời hửng nắng ấm, gốc thị già đầu xóm lại hiền hòa tỏa bóng mát cho các bà gánh rau ngồi nghỉ chân trò chuyện rôm rả đầu ngày.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Tùng (25-year-old village night watchman, dark brown homespun jacket, bamboo rattle in hand, earnest expression). ELDER WATCHMAN ANCHOR: Cụ Mõ Hạc (70-year-old retired watchman, white goatee, conical palm hat, gray tunic).), Tùng walking respectfully past the ancient tree in daylight tipping his palm hat slightly with calm gratitude, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Young villager tips palm hat respectfully walking past ancient tree at dawn",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Bởi thế người quê đi qua cây đa cây thị lâu năm lúc đêm hôm luôn giữ lòng kính cẩn, cúi đầu bước đi đàng hoàng thì chẳng bao giờ sợ điều chi quấy quả.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "temple_bell",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

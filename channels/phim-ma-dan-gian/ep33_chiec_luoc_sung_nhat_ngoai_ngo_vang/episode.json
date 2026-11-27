@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 33,
+  "slug": "ep33_chiec_luoc_sung_nhat_ngoai_ngo_vang",
+  "title": "Tuyệt Đối Đừng Nhặt Chiếc Lược Sừng Đánh Rơi Ngoài Ngõ Đêm Khuya",
+  "cover_title": "ĐỪNG NHẶT LƯỢC RƠI ĐÊM KHUYA",
+  "cover_hook": "Gặp chiếc lược sừng đen nhánh nằm giữa ngõ vắng lúc sương xuống, vì sao người già dặn bước qua chứ cấm nhặt?",
+  "character_bible": "PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 233,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), dramatic macro shot of an antique glossy black horn comb lying half-hidden in wet fallen bamboo leaves on a misty village lane under pale moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on glossy black horn comb on wet bamboo leaves",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Người già ở làng quê Bắc Bộ có một lời dặn truyền đời: đi đêm gặp tiền rơi hay chiếc lược sừng đánh rớt giữa ngõ vắng thì cứ lẳng lặng bước tránh qua!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), Thắm (21-year-old rural Vietnamese girl, braided black hair, pale indigo bà ba blouse) walking home carrying a small basket of sewing thread along a bamboo-lined dirt lane with an oil lantern, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Thắm walking down misty village bamboo lane holding lantern",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Tối hôm ấy đi khâu thuê bên xóm dưới về muộn, con Thắm vừa rẽ vào đầu ngõ tre thì ánh đèn dầu quét trúng một chiếc lược sừng trâu đen bóng loáng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), close-up of Thắm's hand reaching down to pick up the cold carved horn comb, wiping morning dew off its fine teeth with her sleeve, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Thắm crouches down and wipes dew off the black horn comb",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Thấy chiếc lược chạm hoa mẫu đơn còn nguyên vẹn đẹp quá, nó tặc lưỡi tiếc của: Ai đánh rơi phí thế này, đem về rửa sạch mai chải tóc thì mượt phải biết!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), Thắm sitting on a wooden bed inside her dim bedroom placing the black horn comb beside a small round brass mirror as the oil lamp flame suddenly dips low, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lamp flame flickers low beside brass mirror and black horn comb",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đem chiếc lược đặt cạnh tấm gương đồng đầu giường chưa đầy nửa canh giờ, ngọn đèn dầu trong buồng bỗng lụi nhỏ bằng hạt đậu mặc dù cửa cài kín mít.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), chilling shot from outside the wooden lattice window showing a pale slender silhouette with waist-length wet black hair standing motionless in the moonlit courtyard, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Long-haired pale silhouette stands silently outside wooden lattice window",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Giữa tiếng gió lùa xào xạc ngoài bụi chuối, vẳng lên tiếng bước chân nhẹ bẫng dừng ngay sát chấn song cửa sổ cùng tiếng thở dài lạnh buốt sống lưng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), eerie close-up of the black horn comb on the wooden table trembling slightly with long wet strands of hair coiled mysteriously around its teeth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Fine wet hair strands glisten around the comb teeth in dim lantern light",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Thắm mở choàng mắt nhìn sang bàn gỗ mà cứng đờ cổ họng: quanh răng chiếc lược sừng tự lúc nào quấn đầy những sợi tóc dài ướt sũng nước ao bèo!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), Bà Cố Năm (74-year-old grandmother, black headscarf, dark brown tunic) entering the room holding three glowing incense sticks and wrapping the horn comb in red paper, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Grandmother enters briskly wrapping the comb in red paper without touching it barehanded",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Bà Cố Năm bên gian ngoài nghe tiếng cháu ú ớ liền thắp ba nén nhang bước vào, vừa nhìn thấy chiếc lược trên bàn bà đã dùng mảnh giấy điều gói chặt lại!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), Bà Cố Năm (74, black headscarf) speaking sternly to trembling Thắm (21, pale indigo blouse) by the warm oil lamp glow, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Grandmother instructs Thắm sternly beside warm oil lamp",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Bà nghiêm giọng mắng: Lược chải tóc vốn giữ vía chủ nhân, người ta làm lễ thả xui hay của người khuất mặt để lại đầu ngõ, cháu nhặt về là rước người ta theo đòi!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), Bà Cố Năm and Thắm walking cautiously back to the bamboo lane entrance at midnight placing the comb onto a banana leaf beside a pinch of white rice and salt, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Grandmother sets the comb gently on banana leaf at lane entrance",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ngay trong đêm, hai bà cháu phải mang chiếc lược đặt trả đúng gốc tre đầu ngõ trên tàu lá chuối, rắc thêm nhúm gạo muối khấn xin trả lại cho chủ cũ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), misty wide shot of the bamboo lane as a sudden gust swirls the fallen leaves and the shadowy presence retreats into the distant pond mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Mist clears rapidly along the quiet village bamboo lane",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Vừa đặt lược xuống đất quay lưng đi ba bước, luồng gió lạnh sau gáy tan biến hẳn, tiếng lá tre xào xạc trên đầu cũng lặng im như chưa từng có ai đứng đợi.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Thắm (21-year-old rural Vietnamese village girl, braided black hair over one shoulder, wearing a modest pale indigo bà ba blouse). GRANDMOTHER ANCHOR: Bà Cố Năm (74-year-old silver-haired Vietnamese grandmother, black headscarf, dark brown tunic).), warm golden morning sunlight filtering through green bamboo groves onto the peaceful rural lane as villagers walk to morning market, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Peaceful dawn sunlight illuminates the village bamboo path",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ bận ấy cho tới lúc lấy chồng, đi đêm thấy vật lạ đẹp mấy rơi giữa đường con Thắm cũng nhớ lời bà dặn: của không phải mồ hôi mình làm ra thì chớ động tay nhặt!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "temple_bell",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

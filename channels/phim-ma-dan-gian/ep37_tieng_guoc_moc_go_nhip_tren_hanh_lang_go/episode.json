@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 37,
+  "slug": "ep37_tieng_guoc_moc_go_nhip_tren_hanh_lang_go",
+  "title": "Tiếng Guốc Mộc Gõ Nhịp Lộc Cộc Dừng Ngay Trước Cửa Buồng Lúc Hai Giờ Sáng",
+  "cover_title": "TIẾNG GUỐC MỘC LÚC NỬA ĐÊM",
+  "cover_hook": "Vì sao ban đêm cởi dép guốc trước hiên nhà xưa tuyệt đối không được để mũi guốc quay thẳng vào gầm giường?",
+  "character_bible": "PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 237,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), cinematic low-angle shot of a pair of traditional lacquered wooden clogs (guốc mộc) left pointing straight inward on a dark polished teakwood corridor at night, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Low push-in on wooden clogs pointing inward on dark teak hallway",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Các bà các mẹ ngày xưa kỹ tính đến mức trước khi lên giường đi ngủ luôn nhắc con cháu xoay ngược mũi giày guốc hướng ra phía cửa chứ cấm chĩa thẳng vào giường!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), Mai (23-year-old seamstress, shoulder-length black hair, cream blouse) tiredly kicking off her wooden clogs right outside her bedroom door in an old two-story wooden town house, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Mai steps out of wooden clogs leaving them pointing straight toward her bed",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Mới thuê căn buồng gác gỗ trong ngôi nhà cổ phố huyện để may áo dài, tối đầu tiên mệt rã rời nên Mai tuột đại đôi guốc mộc chĩa thẳng mũi vào đầu giường rồi lăn ra ngủ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), eerie wide shot of the long dimly lit wooden corridor at 2 AM as moonlight through louvered shutters casts striped shadows across the floorboards, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Moonlight stripes fall across silent antique wooden corridor at night",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đúng khoảng hai giờ sáng khi cả con phố nhỏ đã chìm vào im lặng đặc quánh, hành lang ván lim bên ngoài bỗng vang lên tiếng guốc mộc gõ nhịp rất khẽ: lộc cộc... lộc cộc!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), Mai (23, cream blouse) lying wide-eyed inside her mosquito net staring at the gap under her wooden door where two dark clog shadows pause right at the threshold, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Mai stares terrified under mosquito net at doorway threshold gap",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Mai giật mình tỉnh giấc nín thở nhìn xuống khe cửa: tiếng lộc cộc thong thả bước dọc hành lang vắng rồi dừng khựng lại ngay đúng chỗ đôi guốc của cô để ngoài thềm!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), tense close-up of the brass door latch vibrating faintly in the cold draft as the sound of wooden soles tapping shifts weight right outside, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Brass door latch trembles slightly in icy midnight draft",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Không hề có ai gõ cửa, chỉ có tiếng đế gỗ nhấc lên đặt xuống cồm cộp ngay sát vách buồng như thể có người đang xỏ chân vào đôi guốc hướng thẳng vào giường cô!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), downstairs hallway lamp snapping on warm yellow as Cô Ba Liên (55, wooden hairpin, purple áo bà ba) climbs the wooden stairs carrying a brass oil lamp, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Landlady climbs wooden stairs briskly holding warm brass lamp",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Đúng lúc Mai sợ đến tê cứng cả bàn tay, ánh đèn vàng dưới cầu thang bật sáng, cô chủ nhà Ba Liên khoác áo bước lên làm tiếng lộc cộc im bặt tức khắc!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), Cô Ba Liên (55, purple áo bà ba) opening Mai's door checkingly and immediately turning Mai's wooden clogs 180 degrees so the toes point outward toward the stairs, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Landlady turns wooden clogs around to point outward away from bedroom",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Vừa lên tới đầu hành lang nhìn thấy đôi guốc mộc trước cửa buồng Mai, cô Ba Liên thở dài cúi xuống xoay ngược hai mũi guốc quay hẳn ra phía cầu thang!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), Cô Ba Liên speaking gently to shaken Mai (23, cream blouse) sitting on the edge of the wooden bed holding a cup of warm lotus-seed water, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Landlady explains gently to Mai beside warm bedside lamp",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Cô Ba dặn nhỏ: Nhà gỗ lâu năm ván sàn nhạy tiếng động, đêm hôm cháu để mũi guốc chĩa thẳng vào giường khác nào chỉ lối mời bóng đêm bước theo vào mộng mị!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), close-up of the wooden clogs neatly placed upside-down and pointing outward beside the closed bedroom door under calm warm corridor light, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Wooden clogs rest neatly pointing outward in warm calm hallway",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Lạ kỳ thay, từ lúc đôi guốc được xoay mũi hướng ra ngoài và úp nghiêng sát chân tường, cả hành lang gỗ lim im phăng phắc ấm áp cho tới tận sáng bạch.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), next morning Mai (23, cream blouse) sitting happily at her vintage pedal sewing machine by the sunny balcony window stitching white silk, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Mai sews white silk happily in bright morning sunlight by balcony",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Sáng hôm sau mở tung cửa sổ đón nắng mai tràn ngập căn gác nhỏ, tinh thần Mai tỉnh táo khoan khoái khâu liền một mạch xong hai tà áo lụa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Mai (23-year-old Vietnamese seamstress, neat shoulder-length black hair, wearing a cream cotton pajama blouse). LANDLADY ANCHOR: Cô Ba Liên (55-year-old Hue-style house owner, hair pinned with a wooden hairpin, deep purple áo bà ba).), warm nostalgic wide shot of the peaceful antique Vietnamese town street bathed in golden morning light, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Golden morning sun warms peaceful old Vietnamese town street",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Một mẹo nhỏ xoay mũi dép hướng ra ngoài tưởng chỉ là nếp gọn gàng của người xưa, mà giữ cho giấc ngủ nơi nhà lạ được bình yên trọn vẹn suốt đêm dài.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "temple_bell",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

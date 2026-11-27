@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 36,
+  "slug": "ep36_bat_nuoc_che_xanh_dat_ngoai_bac_them",
+  "title": "Bí Ẩn Bát Nước Chè Xanh Đặt Ngoài Bậc Thềm Đêm Mưa Rừng Vùng Cao",
+  "cover_title": "BÁT NƯỚC CHÈ NGOÀI BẬC THỀM",
+  "cover_hook": "Đêm mưa rừng sương muối lạnh buốt, sao người già vùng cao vẫn múc một bát nước chè ấm đặt sát bậc thang sàn?",
+  "character_bible": "PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 236,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), atmospheric vertical shot of a steaming clay bowl of green tea placed carefully on the bottom wooden step of a traditional highland stilt house in pouring mountain rain, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Warm steam rises from clay tea bowl on wet wooden stilt-house step",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ai từng ngủ nhờ bản xa vùng núi phía Bắc vào mùa mưa dầm hẳn từng thấy cảnh lạ: trước khi gài cửa sàn, chủ nhà luôn bưng một bát nước chè đặt ngay bậc thang dưới cùng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain_storm",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), Phong (29-year-old surveyor, damp olive canvas jacket) climbing up wooden stilt house steps welcomed warmly by Ông Bản Páo (68, indigo tunic, silver beard) holding a lantern, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Muddy surveyor climbs stilt steps greeted by highland elder with lantern",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Đêm ấy mưa rừng đổ sập lối mòn xuống thung lũng, anh Phong đi đo địa chất bị lạc đường may gặp nếp nhà sàn cuối bản của ông Páo cho tá túc qua đêm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), Phong (29, olive jacket) watching curiously beside the warm central hearth as Ông Páo (68, indigo tunic) pours fresh hot Shan Tuyết tea into a chipped earthen bowl, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Elder pours hot mountain tea into earthen bowl beside glowing hearth",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Lúc gần nửa đêm gió hú rít ngoài vách nứa, thấy ông Páo múc bát chè Shan Tuyết nóng hổi đem đặt ra bậc thang mưa lạnh rồi quay vào cài then, Phong ngạc nhiên hỏi nhỏ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), eerie wide shot looking down through dense mountain fog at the winding forest trail outside the stilt house as rain lashes the bamboo fence, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Thick mountain fog drifts along dark wet forest trail outside fence",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ông Páo ngồi添 củi bên bếp than hồng chậm rãi kể: Đèo sau lưng bản dốc đứng trơn trượt, xưa nay không ít phu rừng với khách lỡ độ đường nằm lại giữa sương lạnh.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "rain_storm",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), chilling view through cracks in the bamboo door showing the mist thickening around the bottom wooden step where the clay tea bowl sits, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Swirling white mist gathers low around the clay tea bowl on wooden step",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Khoảng quá canh hai, tiếng chó mực dưới gầm sàn bỗng cụp đuôi rên ư ử, ngoài bậc thang gỗ vẳng lên tiếng bước chân ướt nhẹp dừng lại rất khẽ ngay chỗ bát chè!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), Phong (29, olive jacket) freezing motionless under his wool blanket beside the glowing embers listening intently to the faint clink of ceramic outside, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Phong listens breathless beside glowing embers as ceramic clinks softly outside",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Nằm cạnh bếp lửa, Phong nín thở nghe rõ mồn một tiếng chạm nhẹ vào vành bát sành lanh canh một tiếng, rồi tiếng thở phào nhẹ nhõm tan dần vào màn mưa rừng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), Ông Páo (68, indigo tunic, silver beard) calmly motioning with his hand for Phong to stay quiet and keep facing the warm hearth fire, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Elder calmly gestures to stay still facing the warm hearth",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Ông Páo khẽ ra hiệu cho Phong cứ nằm yên đừng ra mở cửa dòm ngó, chỉ lặng lẽ đẩy thêm thanh củi dẻ vào bếp cho lửa ấm bùng cao sưởi khắp gian sàn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), dawn mist breaking into silver morning light over emerald terraced hills around the peaceful highland stilt house, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Morning sunlight pierces mountain mist over highland stilt house",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Tới lúc gà rừng gáy sáng mưa tạnh hẳn, sương mù tan ra để lộ sườn núi xanh thẫm yên bình như chưa hề có đêm giông lạnh buốt vừa qua.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), close-up of Phong stepping down the wet wooden stairs at dawn looking amazed at the clay bowl now completely cold with two green forest leaves resting neatly across its rim, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Phong stares at cold tea bowl with two fresh forest leaves across rim",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Bước xuống cầu thang rửa mặt sớm, Phong sững người thấy bát chè trên bậc gỗ vơi đi quá nửa, trên miệng bát vắt ngang hai chiếc lá rừng xanh mướt không biết từ đâu bay tới!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), Ông Páo (68, indigo tunic) smiling kindly handing Phong a bamboo water tube and walking cane for his journey down the mountain pass, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Kind highland elder hands bamboo flask to grateful surveyor",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Ông Páo mỉm cười hiền hậu trao cho anh ống nước suối đi đường: Người sống hay kẻ khuất mặt lỡ bước giữa rừng sâu cũng quý nhất một ngụm chè ấm lòng mà thôi chú ạ!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Phong (29-year-old Vietnamese geological surveyor, damp olive canvas jacket, short black hair, muddy boots). ELDER ANCHOR: Ông Bản Páo (68-year-old highland elder, indigo woven tunic, silver beard, calm wise eyes).), wide cinematic shot of Phong walking safely along a sunlit mountain ridge trail looking back respectfully toward the distant stilt house in the valley, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Surveyor walks sunlit mountain ridge looking back toward peaceful valley",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Suốt chặng đường vượt đèo hôm ấy trời quang mây tạnh lạ thường, để lại trong lòng người kỹ sư trẻ bài học thấm thía về tình người ấm áp giữa đại ngàn sương gió.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "temple_bell",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

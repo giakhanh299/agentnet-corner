@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 34,
+  "slug": "ep34_tieng_ru_em_vong_tu_vong_tre_khong_nguoi",
+  "title": "Chiếc Võng Gai Tự Đưa Kẽo Kẹt Giữa Trưa Hè Không Một Bóng Người",
+  "cover_title": "ĐỪNG ĐỂ VÕNG TRỐNG ĐƯA MỘT MÌNH",
+  "cover_hook": "Vì sao đứng dậy khỏi võng người quê luôn phải lấy tay giữ dừng hẳn hoặc vắt chéo mép võng lên trên?",
+  "character_bible": "PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 234,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), cinematic shot of a traditional woven hemp hammock tied between two aged jackfruit wooden pillars on a shady rural porch swaying back and forth completely empty, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Empty woven hemp hammock sways rhythmically on quiet shaded porch",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Ở quê ngày trước có một thói quen rất lạ: hễ ai nằm võng đứng dậy đi chỗ khác là người lớn bắt phải vịn tay cho võng đứng yên rồi vắt ngược mép võng lên!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), Lành (24-year-old Vietnamese country brother, earthy gray shirt) rocking his sleepy little sister Bé Mận (6, twin pigtails, yellow tunic) in the porch hammock at noon, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lành rocks little sister gently in porch hammock at hot summer noon",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Trưa tháng bảy nắng gắt đứng bóng không một gợn gió, anh Lành vừa bế bé Mận đang ngủ say từ võng gai vào giường trong nhà cho đỡ muỗi đốt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), close-up of Lành walking indoors leaving the empty hemp hammock still swinging wide with loud rhythmic creaking on its iron hooks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Empty hammock keeps swinging strongly as Lành steps inside",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đang dở tay bế em nên Lành quên bẵng lời mẹ dặn, cứ mặc chiếc võng không ngoài hiên vắng tự đung đưa kẽo cà kẽo kẹt từng nhịp dài.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), tense medium shot from inside the dark wooden doorway looking out at the sun-baked courtyard while the empty hammock instead of slowing down swings wider and heavier, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Hammock rope strains low in the center as if bearing invisible weight",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Lạ thay, năm phút rồi mười phút trôi qua giữa cái nắng đứng gió hầm hập, tiếng móc võng cọ vào cột mít không những chẳng tắt mà càng lúc càng trĩu nặng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), chilling close-up of the woven hammock belly sagging deep toward the brick floor while a faint soft shadow ripples across the sunbeams, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Center of empty hammock sags down rhythmically with eerie creak",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Nhìn qua khe cửa gỗ, Lành sởn gai ốc thấy lòng võng trũng sâu xuống sát nền gạch tàu như đang có người ngồi đung đưa, kèm tiếng ngân ầu ơ nho nhỏ!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), Bé Mận (6, twin pigtails, yellow tunic) tossing restlessly on the indoor bamboo mat murmuring in her sleep while Lành (24, gray shirt) holds her hand worriedly, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Little sister tosses restlessly on bamboo mat while brother watches",
+      "voice": "kiemhiep_nu",
+      "ghost": false,
+      "voiceover": "Trong buồng, bé Mận đang ngủ ngon bỗng giật mình khóc thét, tay chỉ ra ngoài hiên lắp bắp: Anh hai ơi ai đang nằm võng nhà mình gọi em ra chơi kìa!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), Lành (24, earthy gray shirt) grabbing a bundle of dried mugwort leaves và a broomstick beside the doorway taking a deep breath to step onto the porch, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lành picks up bundle of dried herbs and broom beside wooden threshold",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Sực nhớ lời dặn của ông nội lúc sinh thời, Lành vội rút cành dâu tằm treo trên vách cửa bước thẳng ra hiên, gõ nhẹ ba tiếng xuống cột nhà khấn lớn!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), Lành gripping both hemp hammock ropes firmly bringing the swaying hammock to a dead stop and folding one edge neatly over the top rope, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Lành stops the hammock firmly and folds its woven edge neatly over",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Cậu giữ chặt đầu dây cho chiếc võng đứng im phăng phắc rồi lật vắt chéo hai mép võng lên nhau: Nhà có trẻ nhỏ nghỉ trưa, xin khách qua đường chớ ghé đưa võng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), sunlit courtyard view as cicadas resume singing in the green pomelo trees and the wooden porch pillars stand completely still and warm, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Warm sunlight and gentle breeze return to the peaceful rural courtyard",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Vừa vắt gọn mép võng xong, cái trũng nặng trịch trên dây gai nhẹ bẫng trở lại, tiếng ve sầu ngoài vườn bưởi đang im bặt bỗng râm ran vang lên như cũ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), inside the cool wooden house Bé Mận sleeping peacefully with calm breathing as Lành wipes sweat from her forehead with a damp cloth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Little sister sleeps peacefully again on cool bamboo mat",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Quay vào trong buồng, trán bé Mận đã hết vã mồ hôi lạnh, con bé thở đều êm ả ngủ một mạch tới tận xế chiều mới dậy đòi ăn khoai luộc.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Lành (24-year-old Vietnamese country brother, lean build, short neat black hair, wearing an earthy gray cotton shirt). SISTER ANCHOR: Bé Mận (6-year-old little sister, twin pigtails, faded yellow cotton tunic).), peaceful late afternoon shot of the neatly folded hammock hanging still on the rustic Vietnamese porch bathed in golden sunset light, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Golden sunset shines on folded still hammock on rustic porch",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Bởi vậy các cụ mới bảo: chiếc võng bỏ không tự đưa giữa trưa vắng dễ thành chỗ dừng chân cho khách khuất mặt, đứng dậy nhớ giữ võng dừng rồi hẵng bước đi!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "temple_bell",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}

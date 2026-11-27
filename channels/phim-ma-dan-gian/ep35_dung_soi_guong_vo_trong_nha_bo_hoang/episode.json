@@ -1,0 +1,221 @@
+{
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "target_channel": "KENH_005",
+  "episode": 35,
+  "slug": "ep35_dung_soi_guong_vo_trong_nha_bo_hoang",
+  "title": "Đừng Bao Giờ Ghé Mặt Soi Thử Vào Mảnh Gương Thủy Vỡ Trong Nhà Cũ",
+  "cover_title": "CẤM SOI MẢNH GƯƠNG THỦY VỠ",
+  "cover_hook": "Dọn nhà cũ thấy tấm gương tráng thủy nứt đôi bám bụi, vì sao phải úp mặt gương xuống đất gói kín ngay?",
+  "character_bible": "PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).",
+  "cover_theme": "horror",
+  "cover_scene": 1,
+  "seed": 235,
+  "voice": "phonui",
+  "tight_pacing": true,
+  "aigc_label": false,
+  "color_grade": "folk_horror",
+  "music": {
+    "generator": "horror",
+    "gain_db": 0
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "duration_s": 5.0,
+      "clip": "scene_01.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), dramatic macro shot of a dusty antique beveled wooden mirror cracked jaggedly down the center resting against a mossy brick wall in an old shuttered house, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on cracked dusty antique mirror in dim old room",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Trong nghề thợ mộc tháo dỡ nhà cổ có một luật bất thành văn: gặp tấm gương tráng thủy đã nứt vỡ bỏ lại trong buồng kín thì tuyệt đối đừng ngó mặt vào soi!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "duration_s": 5.0,
+      "clip": "scene_02.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), Khải (27-year-old carpenter, dark blue rolled-up shirt) and Bác Sơn (62, gray mustache, brown vest) carrying wooden tools into a cobwebbed three-bay ancestral house, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Two carpenters carry tools into dusty shuttered old wooden house",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Chiều cuối thu năm ấy, anh Khải theo bác thợ cả Sơn nhận tháo dỡ bộ kèo gỗ mít của một ngôi nhà ba gian đã khóa cửa bỏ không gần mười năm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "duration_s": 5.0,
+      "clip": "scene_03.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), Khải (27, dark blue shirt) wiping sawdust from his brow and curiously lifting a cracked rosewood-framed mirror from behind an old wardrobe, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Khải lifts cracked wooden-framed mirror from dusty corner",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Lúc dọn góc buồng trong, thấy chiếc gương khung gỗ trắc nứt làm ba mảnh vứt sau tủ đứng, Khải tò mò lau lớp bụi mờ rồi ghé sát mặt nhìn thử vết nhọ trên má.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "duration_s": 5.0,
+      "clip": "scene_04.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), chilling over-the-shoulder shot into the तीन jagged mirror shards where two shards reflect Khải's face normally while the third shard lags half a second behind with a hollow stare, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Jagged mirror shard reflection lags eerily behind Khải's movement",
+      "voice": "phonui",
+      "ghost": true,
+      "voiceover": "Ánh nắng xiên qua ngói vỡ chiếu vào mặt thủy loang lổ: Khải đã nghiêng đầu sang phải mà cái bóng trong mảnh nứt thứ ba vẫn đứng sững nhìn trân trân lại anh!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "human_eerie",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "duration_s": 5.0,
+      "clip": "scene_05.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), Khải stumbling backward dropping his wooden mallet on the tiled floor as cold sweat beads on his forehead in the dim room, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Khải stumbles back startled as wooden mallet hits brick floor",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Cảm giác lạnh toát chạy dọc từ gáy xuống tận gót chân, Khải giật bắn người đánh rơi chiếc dùi đục xuống nền gạch kêu cộp một tiếng vang rợn!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "horror_stinger",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "duration_s": 5.0,
+      "clip": "scene_06.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), Bác Sơn (62, gray mustache, brown vest) rushing in immediately throwing a thick black coarse cloth flat over the cracked mirror without looking into it, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Master carpenter throws thick black cloth over cracked mirror immediately",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Bác thợ cả Sơn ngoài hiên nghe động chạy ập vào, vừa liếc thấy tấm gương nứt bác vội cởi ngay tấm khăn vải đen trùm kín mặt gương rồi lật úp xuống nền đất!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "footsteps",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "duration_s": 5.0,
+      "clip": "scene_07.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), Bác Sơn lighting a small pinch of sawdust and pine resin in a clay bowl wafting warm fragrant smoke around Khải's shoulders, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Warm pine resin smoke rises purifying the dusty wooden room",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Bác đốt nắm dăm gỗ thông thơm hơ quanh vai Khải rồi trầm giọng gằn từng chữ: Gương cũ trong nhà hoang hứng âm khí quanh năm, lúc nứt ra mỗi mảnh giữ một bóng lệch, cậu soi vào làm gì cho mất vía!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "fire_lamp",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "duration_s": 5.0,
+      "clip": "scene_08.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), close-up of Bác Sơn wrapping the cloth-covered broken mirror tightly with hemp twine inside thick burlap sack in broad daylight outside, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Broken mirror wrapped securely in dark cloth and burlap sack",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Đợi nắng chiều còn sáng rõ, bác Sơn tự tay buộc chặt tấm gương vỡ trong bao bố dày, rắc một vốc vôi bột trắng lên trên trước khi đem chôn lấp nơi đất cao.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wood_creak",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "duration_s": 5.0,
+      "clip": "scene_09.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), wide shot of the two carpenters opening all wooden shutters of the old three-bay house letting golden afternoon sunbeams flood every dark corner, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Shutters swing wide open flooding dusty wooden interior with warm sunlight",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Cả hai thầy trò mở tung toàn bộ sáu cánh cửa bức bàn cho nắng chiều và gió nam thổi thông suốt ba gian nhà cổ rồi mới tiếp tục hạ kèo gỗ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "wind_trees",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "duration_s": 5.0,
+      "clip": "scene_10.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), that evening Khải sitting beside a warm tea kettle at the carpenter workshop rubbing his temples relieved as color returns to his face, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Khải drinks hot ginger tea at warm lantern-lit workshop",
+      "voice": "kiemhiep_nam",
+      "ghost": false,
+      "voiceover": "Tối về xưởng uống bát nước gừng nóng bác Sơn pha cho, đầu óc Khải mới thôi váng vất cái ánh mắt trân trối lạnh lẽo trong mảnh thủy nứt hồi chiều.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "night_creatures",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "duration_s": 5.0,
+      "clip": "scene_11.mp4",
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema (PROTAGONIST ANCHOR: Khải (27-year-old Vietnamese carpenter, rolled-up dark blue work shirt, muscular forearms, honest weathered face). UNCLE ANCHOR: Bác Thợ Cả Sơn (62-year-old master carpenter, gray-streaked mustache, brown vest).), peaceful sunlit carpenter workshop with stacks of fragrant golden jackfruit timber and traditional hand planes neatly arranged, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Warm morning light over fragrant jackfruit timber in peaceful workshop",
+      "voice": "phonui",
+      "ghost": false,
+      "voiceover": "Từ đó về sau mỗi lần nhận sửa nhà xưa, hễ thấy gương nứt hay khung ảnh vỡ bỏ xó là anh Khải luôn lấy vải tối màu úp sấp gói kỹ ngay từ cái nhìn đầu tiên!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "temple_bell",
+          "at": 0,
+          "gain_db": -23
+        }
+      ]
+    }
+  ]
+}
