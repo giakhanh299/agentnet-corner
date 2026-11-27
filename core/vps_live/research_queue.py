@@ -259,7 +259,7 @@ class ResearchQueue:
                     for rvr in recent_vid_rows:
                         rtxt = (rvr['result'] or '').lower()
                         if ('video_daily_budget_exhausted' in rtxt or 'video quota exhausted' in rtxt
-                                or 'outside the research-only role' in rtxt or '.mp4' not in rtxt):
+                                or 'outside the research-only role' in rtxt):
                             vid_exhausted = True
                             break
 
