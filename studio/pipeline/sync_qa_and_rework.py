@@ -215,10 +215,9 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                             f"2) director_score (0-25): Góc máy 11 cảnh đa dạng, không lặp cảnh nhàm chán, cao trào hợp lý; "
                             f"3) visual_score (0-25): Nhân vật đồng nhất khuôn mặt/trang phục theo character_bible, không kính cận/đồng hồ hiện đại, không chữ rác/AIGC; "
                             f"4) video_score (0-25): Thời lượng chuẩn (55-98s), âm lượng chuẩn (-14..-16 LUFS), phụ đề ngắt câu đẹp không rớt chữ lẻ, có Logo kênh. "
-                            f"BƯỚC 4 (GHI BẢNG ĐIỂM LÊN HUB — KHÔNG HỎI XÁC NHẬN): Trong Ubuntu chạy lệnh gửi điểm: "
-                            f"curl -fsSL -X POST \"{HUB_BASE}/api/qa/score?token={token}\" -H \"Content-Type: application/json\" "
-                            f"-d '{{\"slug\":\"{slug}\",\"channel\":\"{ch_key}\",\"script_score\":23,\"director_score\":22,\"visual_score\":23,\"video_score\":24,\"bad_scenes\":[],\"feedback\":\"Nhận xét chi tiết từng mặt...\"}}' "
-                            f"(thay số điểm thật của bạn; tổng >=85 là PASS, <85 là REWORK kèm số thứ tự cảnh lỗi trong bad_scenes). Sau đó nộp JSON trên /portal!"
+                            f"BƯỚC 4 (NỘP BẢNG ĐIỂM THẲNG TRÊN /PORTAL — KHÔNG CẦN CURL RIÊNG, KHÔNG CẦN CHỜ DUYỆT): Dán thẳng khối JSON điểm số vào ô Tóm tắt (Summary) của form Nộp Kết Quả trên /portal rồi bấm Nộp: "
+                            f"{{\"slug\":\"{slug}\",\"channel\":\"{ch_key}\",\"script_score\":23,\"director_score\":22,\"visual_score\":23,\"video_score\":24,\"bad_scenes\":[],\"feedback\":\"Nhận xét chi tiết từng mặt...\"}} "
+                            f"(thay bằng số điểm thật của bạn; tổng >=85 là PASS, <85 là REWORK kèm số thứ tự cảnh lỗi trong bad_scenes; hệ thống tự động ghi lên Bảng Điểm 100!)."
                         ),
                     },
                 })

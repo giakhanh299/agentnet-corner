@@ -72,7 +72,7 @@ def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
         f"Mở {join} nhận vai qa_critic trên /portal, bấm Claim Task nhận các nhiệm vụ muse_qa_score để CHẤM ĐIỂM THẬT các tập phim hiện có và tập mới! "
         f"Với mỗi tập <slug>, hãy đọc https://muse.alltool.pro/media/<slug>/qa_packet.json VÀ xem trực tiếp bằng mắt ảnh https://muse.alltool.pro/media/<slug>/storyboard_muse.jpg + https://muse.alltool.pro/media/<slug>/final_sheet.jpg + cover_9x16.jpg. "
         f"Chấm nghiêm ngặt 4 cột (mỗi cột 0-25đ = tổng 100đ): script_score (hook, lời thoại, đúng giọng nam/nữ), director_score (nhịp kể, góc máy đa dạng không lặp ảnh), visual_score (nhân vật đồng nhất, không lỗi thời đại/chữ rác), video_score (thời lượng 55-98s, LUFS chuẩn, phụ đề & logo đẹp). "
-        f"Gửi điểm thẳng lên bảng điểm trung tâm bằng: curl -fsSL -X POST \"https://muse.alltool.pro/api/qa/score?token={inv}\" -H \"Content-Type: application/json\" -d '{{\"slug\":\"<slug>\",\"channel\":\"<kênh>\",\"script_score\":...,\"director_score\":...,\"visual_score\":...,\"video_score\":...,\"bad_scenes\":[...],\"feedback\":\"...\"}}' (tổng <85 sẽ tự kích hoạt vẽ/dựng lại cảnh lỗi!), nộp kết quả trên /portal và tự chấm tiếp tập sau!"
+        f"KHÔNG CẦN CHẠY CURL RIÊNG (để không bao giờ vướng thẻ chờ duyệt!): chỉ cần dán thẳng khối JSON {{\"slug\":\"<slug>\",\"channel\":\"<kênh>\",\"script_score\":...,\"director_score\":...,\"visual_score\":...,\"video_score\":...,\"bad_scenes\":[...],\"feedback\":\"...\"}} vào ô Summary của form Nộp Kết Quả ngay trên /portal rồi bấm Nộp (tự động ghi lên Bảng Điểm 100 & tự nhận tập tiếp theo!). Hãy nộp ngay điểm tập 11 đang có sẵn trên /portal và chấm tiếp các tập còn lại!"
     )
 
 

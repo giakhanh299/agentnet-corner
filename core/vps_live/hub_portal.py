@@ -85,6 +85,43 @@ def _relay_to_e_via_croc(hub, slug_val: str, ram_items: list[tuple[str, bytes]],
     threading.Thread(target=_worker, daemon=True).start()
 
 
+def _extract_json_dict(raw_txt: str) -> dict | None:
+    if not isinstance(raw_txt, str):
+        return None
+    for m in re.finditer(r'```(?:json)?\s*(\{.*?\})\s*```', raw_txt, re.S):
+        try:
+            obj = json.loads(m.group(1))
+            if isinstance(obj, dict):
+                return obj
+        except Exception:
+            pass
+    s, e = raw_txt.find('{'), raw_txt.rfind('}')
+    if s != -1 and e > s:
+        try:
+            obj = json.loads(raw_txt[s:e + 1])
+            if isinstance(obj, dict):
+                return obj
+        except Exception:
+            pass
+    return None
+
+
+def _ingest_structured_submission(hub, worker_id: str, summary_txt: str) -> None:
+    parsed = _extract_json_dict(summary_txt)
+    if not parsed:
+        return
+    try:
+        if any(k in parsed for k in ('script_score', 'director_score', 'visual_score', 'video_score', 'total_score')) and parsed.get('slug'):
+            hub.record_episode_score(worker_id, parsed)
+        elif isinstance(parsed.get('scenes'), list) and len(parsed['scenes']) >= 8:
+            slug = str(parsed.get('slug') or parsed.get('episode_code') or '').strip()
+            if SAFE_SLUG_RE.match(slug):
+                raw_b = json.dumps(parsed, ensure_ascii=False, indent=2).encode('utf-8')
+                _relay_to_e_via_croc(hub, slug, [('episode.json', raw_b)], MEDIA_DROP_ROOT / slug)
+    except Exception:
+        pass
+
+
 def _parse_multipart(content_type: str, body: bytes) -> tuple[dict[str, str], list[tuple[str, bytes]]]:
     fields: dict[str, str] = {}
     files: list[tuple[str, bytes]] = []
@@ -1118,7 +1155,10 @@ echo "CROC_PUSH_TO_E_OK slug=$SLUG"
                         return self.send_json(403, {'error': 'worker_auth_required'})
                     data = json.loads(self.read_body().decode('utf-8') or '{}')
                     q_path = route.removeprefix('/api')
-                    return self.send_json(200, hub.queue.post(w, q_path, data, delegated=False))
+                    res_api = hub.queue.post(w, q_path, data, delegated=False)
+                    if route.endswith('/result') and isinstance(data.get('result'), dict):
+                        _ingest_structured_submission(hub, w['id'], str(data['result'].get('summary', '')))
+                    return self.send_json(200, res_api)
 
                 # Browser Worker HTML Portal Actions (/portal/claim, /portal/submit, /portal/logout)
                 if route.startswith('/portal/'):
@@ -1154,6 +1194,7 @@ echo "CROC_PUSH_TO_E_OK slug=$SLUG"
                             'limitations': limitations,
                         }
                         hub.queue.post(w, f'/tasks/{tid}/result', {'lease': lease, 'result': res_obj}, delegated=False)
+                        _ingest_structured_submission(hub, w['id'], res_obj['summary'])
                         # Auto-claim next task right away if requested!
                         if form.get('next', '1') == '1':
                             caps = [w['role'], 'browser', 'web_search', 'research', 'summarize']
