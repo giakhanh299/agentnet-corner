@@ -30,6 +30,15 @@ ROSTER: dict[str, tuple[str, str]] = {
     "fae3a3d4": ("qa_critic", "HỘI ĐỒNG GIÁM KHẢO CHẤM ĐIỂM (QA Critic 100-Point Judge)"),
 }
 
+_EXTRA_ROSTER_FILE = pathlib.Path(os.environ.get("LOCALAPPDATA", "")) / "MuseLoginHelper" / "studio_roster.json"
+if _EXTRA_ROSTER_FILE.is_file():
+    try:
+        for _k, _v in json.loads(_EXTRA_ROSTER_FILE.read_text(encoding="utf-8")).items():
+            if isinstance(_v, list) and len(_v) >= 2:
+                ROSTER[str(_k)[:8]] = (str(_v[0]), str(_v[1]))
+    except Exception:
+        pass
+
 
 def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
     join = f"https://muse.alltool.pro/j/{inv}?role={role}"
