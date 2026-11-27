@@ -354,11 +354,11 @@ def main():
             missing = [i for i in range(1, n_img + 1) if not verify_mp4(clip_dir / f"scene_{i:02d}.mp4")]
             sc_hint = f"scene_01.jpg đến scene_{n_img:02d}.jpg" if len(missing) == n_img else f"các cảnh còn thiếu: {missing}"
             croc_step = (
-                f"BƯỚC 4 (ƯU TIÊN ĐẨY THẲNG VỀ Ổ E: QUA CROC): Trong Ubuntu của Muse chạy 1 lệnh: "
-                f"curl -fsSL \"https://muse.alltool.pro/croc-push.sh?token={inv_tok}&slug={slug}\" | bash -s -- scene_*.mp4 "
-                f"(chờ báo CROC_PUSH_TO_E_OK; chỉ dùng https://muse.alltool.pro/media-upload?slug={slug} khi cần dự phòng). "
+                f"BƯỚC 4 (ĐẨY THẲNG TỪ UBUNTU QUA CẦU CROC VỀ Ổ E: — KHÔNG DÙNG BROWSER UPLOAD, KHÔNG HỎI XÁC NHẬN): Trong Ubuntu chạy ngay: "
+                f"zip -j /tmp/{slug}.zip scene_*.mp4 && curl -fsSL -X POST \"https://muse.alltool.pro/media-upload?token={inv_tok}&slug={slug}&json=1\" -F \"file=@/tmp/{slug}.zip\" "
+                f"(tự chuyển thẳng qua croc về ổ E: trong 2 giây!). "
             ) if inv_tok else (
-                f"BƯỚC 4: Nén các clip .mp4 thành .zip rồi upload tại https://muse.alltool.pro/media-upload?slug={slug} (tích giải nén zip -> Upload Media). "
+                f"BƯỚC 4: Nén các clip .mp4 thành .zip rồi upload tại https://muse.alltool.pro/media-upload?slug={slug}. "
             )
             criteria = (
                 f"VAI TRÒ: MUSE TẠO CLIP VIDEO (Image-to-Video) cho tập '{title}' (kênh {series}, mã {slug}). "

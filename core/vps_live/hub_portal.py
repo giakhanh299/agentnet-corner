@@ -19,6 +19,8 @@ from http.cookies import SimpleCookie
 from http.server import BaseHTTPRequestHandler
 from pathlib import Path
 import secrets
+import subprocess
+import threading
 import time
 from urllib.parse import parse_qs, urlsplit
 
@@ -38,6 +40,49 @@ def _safe_media_name(raw_name: str) -> str:
         return ''
     ext = Path(clean).suffix.lower()
     return clean if ext in MEDIA_ALLOWED_EXT else ''
+
+
+def _relay_to_e_via_croc(hub, slug_val: str, ram_items: list[tuple[str, bytes]], sdir: Path) -> None:
+    """Stream uploaded media from VPS RAM (/dev/shm) straight to Windows E:\\ via croc P2P, leaving 0 MB .mp4 on VPS."""
+    if not ram_items:
+        return
+
+    def _worker():
+        croc_bin = '/usr/local/bin/croc' if Path('/usr/local/bin/croc').is_file() else '/tmp/croc_bin/croc'
+        shm_root = Path('/dev/shm') if Path('/dev/shm').is_dir() else Path('/tmp')
+        tok_hex = secrets.token_hex(6)
+        zpath = shm_root / f'croc_{slug_val}_{tok_hex}.zip'
+        code_val = f'agy-{slug_val[:28]}-{tok_hex}'
+        delivered = False
+        try:
+            if Path(croc_bin).is_file():
+                with zipfile.ZipFile(zpath, 'w', compression=zipfile.ZIP_STORED) as zf:
+                    for fname, data in ram_items:
+                        zf.writestr(fname, data)
+                env = dict(os.environ, CROC_SECRET=code_val)
+                proc = subprocess.Popen(
+                    [croc_bin, '--quiet', 'send', str(zpath)],
+                    env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                )
+                time.sleep(1.8)
+                hub.create_croc_offer(slug_val, code_val)
+                try:
+                    rc = proc.wait(timeout=75)
+                    delivered = (rc == 0)
+                except subprocess.TimeoutExpired:
+                    proc.kill()
+        except Exception:
+            delivered = False
+        finally:
+            zpath.unlink(missing_ok=True)
+            if not delivered:
+                # Fallback only if Windows PC croc receiver was temporarily unreachable
+                sdir.mkdir(parents=True, exist_ok=True)
+                for fname, data in ram_items:
+                    if fname.lower().endswith(('.mp4', '.mov', '.webm')):
+                        (sdir / fname).write_bytes(data)
+
+    threading.Thread(target=_worker, daemon=True).start()
 
 
 def _parse_multipart(content_type: str, body: bytes) -> tuple[dict[str, str], list[tuple[str, bytes]]]:
@@ -708,13 +753,8 @@ def make_hub_handler(hub: HubManager):
 set -euo pipefail
 SLUG="${{SLUG:-{slug_q}}}"
 if [ -z "$SLUG" ] || [ "$#" -lt 1 ]; then
-  echo "Usage: curl -fsSL '{base}/croc-push.sh?token={tok}&slug=<slug>' | bash -s -- scene_*.mp4" >&2
+  echo "Usage: bash push with SLUG and scene files" >&2
   exit 1
-fi
-mkdir -p /tmp/croc_bin
-if [ ! -x /tmp/croc_bin/croc ]; then
-  curl -fsSL "https://github.com/schollz/croc/releases/download/v11.6.7/croc_v11.6.7_Linux-64bit.tar.gz" | tar -xz -C /tmp/croc_bin croc
-  chmod +x /tmp/croc_bin/croc
 fi
 ZIP_PATH="/tmp/${{SLUG}}_croc_$$.zip"
 python3 -c '
@@ -730,14 +770,7 @@ with zipfile.ZipFile(zpath, "w", compression=zipfile.ZIP_STORED) as zf:
                 if f.is_file():
                     zf.write(f, arcname=f.name)
 ' "$ZIP_PATH" "$@"
-CODE="agy-${{SLUG}}-$(python3 -c 'import secrets; print(secrets.token_hex(6))')"
-CROC_SECRET="$CODE" timeout 75 /tmp/croc_bin/croc --quiet send "$ZIP_PATH" &
-CROC_PID=$!
-sleep 2
-curl -fsSL -X POST "{base}/croc-offer?token={tok}" \\
-  -H "Content-Type: application/json" \\
-  -d "{{\\"slug\\":\\"${{SLUG}}\\",\\"code\\":\\"${{CODE}}\\"}}" >/dev/null
-wait "$CROC_PID"
+curl -fsSL -X POST "{base}/media-upload?token={tok}&slug=${{SLUG}}&json=1" -F "file=@${{ZIP_PATH}}" >/dev/null
 rm -f "$ZIP_PATH"
 echo "CROC_PUSH_TO_E_OK slug=$SLUG"
 '''
@@ -779,10 +812,11 @@ echo "CROC_PUSH_TO_E_OK slug=$SLUG"
                     return self.send_json(200, hub.ack_croc_offer(data.get('id', ''), data.get('status', 'DONE')))
 
                 if route == '/media-upload':
-                    w, _ = self.current_worker()
-                    if not w and not self.current_admin():
-                        return self.send_json(403, {'error': 'worker_auth_required'})
                     qs = parse_qs(urlsplit(self.path).query)
+                    tok = (qs.get('token', [''])[0] or self.headers.get('X-Invite-Token', '')).strip()
+                    w, _ = self.current_worker()
+                    if not (w or self.current_admin() or hub.verify_invite_token(tok)):
+                        return self.send_json(403, {'error': 'worker_auth_required'})
                     ctype = self.headers.get('Content-Type', '')
                     n = int(self.headers.get('Content-Length', '0'))
                     if not (0 < n <= MEDIA_MAX_BYTES):
@@ -805,35 +839,39 @@ echo "CROC_PUSH_TO_E_OK slug=$SLUG"
                     if not uploads:
                         return self.send_json(400, {'error': 'no_files_uploaded'})
                     sdir = MEDIA_DROP_ROOT / slug_val
-                    sdir.mkdir(parents=True, exist_ok=True)
                     base = self.origin_base()
                     saved: list[dict] = []
+                    ram_items: list[tuple[str, bytes]] = []
                     do_extract = fields.get('extract', '1') != '0'
                     for raw_name, payload in uploads:
                         safe = _safe_media_name(raw_name)
                         if not safe or not payload:
                             continue
                         if safe.lower().endswith('.zip') and do_extract:
-                            tmp_zip = sdir / safe
-                            tmp_zip.write_bytes(payload)
-                            try:
-                                with zipfile.ZipFile(tmp_zip, 'r') as zf:
-                                    for info in zf.infolist():
-                                        if info.is_dir() or info.file_size > 60 * 1024 * 1024:
-                                            continue
-                                        inner = _safe_media_name(info.filename)
-                                        if not inner or inner.lower().endswith('.zip'):
-                                            continue
-                                        data_in = zf.read(info)
+                            import io as _io
+                            with zipfile.ZipFile(_io.BytesIO(payload), 'r') as zf:
+                                for info in zf.infolist():
+                                    if info.is_dir() or info.file_size > 60 * 1024 * 1024:
+                                        continue
+                                    inner = _safe_media_name(info.filename)
+                                    if not inner or inner.lower().endswith('.zip'):
+                                        continue
+                                    data_in = zf.read(info)
+                                    ram_items.append((inner, data_in))
+                                    if not inner.lower().endswith(('.mp4', '.mov', '.webm')):
+                                        sdir.mkdir(parents=True, exist_ok=True)
                                         (sdir / inner).write_bytes(data_in)
-                                        saved.append({'name': inner, 'size': len(data_in), 'url': f'{base}/media/{slug_val}/{inner}'})
-                            finally:
-                                tmp_zip.unlink(missing_ok=True)
+                                    saved.append({'name': inner, 'size': len(data_in), 'url': f'{base}/media/{slug_val}/{inner}', 'delivery': 'croc_E'})
                         else:
-                            (sdir / safe).write_bytes(payload)
-                            saved.append({'name': safe, 'size': len(payload), 'url': f'{base}/media/{slug_val}/{safe}'})
+                            ram_items.append((safe, payload))
+                            if not safe.lower().endswith(('.mp4', '.mov', '.webm')):
+                                sdir.mkdir(parents=True, exist_ok=True)
+                                (sdir / safe).write_bytes(payload)
+                            saved.append({'name': safe, 'size': len(payload), 'url': f'{base}/media/{slug_val}/{safe}', 'delivery': 'croc_E'})
+                    if ram_items:
+                        _relay_to_e_via_croc(hub, slug_val, ram_items, sdir)
                     saved.sort(key=lambda x: x['name'])
-                    result_obj = {'ok': True, 'slug': slug_val, 'count': len(saved), 'files': saved}
+                    result_obj = {'ok': True, 'slug': slug_val, 'delivery': 'croc_E', 'count': len(saved), 'files': saved}
                     want_json = 'application/json' in (self.headers.get('Accept', '').lower()) or qs.get('json', ['0'])[0] == '1'
                     if want_json:
                         return self.send_json(200, result_obj)

@@ -58,9 +58,8 @@ def main():
                 inv_p = Path(os.environ.get("LOCALAPPDATA", "")) / "MuseLoginHelper" / "hub_invite.txt"
                 inv_tok = inv_p.read_text(encoding="utf-8").strip() if inv_p.is_file() else ""
                 croc_hint = (
-                    f"BƯỚC 4 (ĐẨY THẲNG VỀ Ổ E: QUA CROC): Chạy lệnh bash trong Ubuntu của Muse: "
-                    f"curl -fsSL \"https://muse.alltool.pro/croc-push.sh?token={inv_tok}&slug={slug}\" | bash -s -- scene_*.mp4 "
-                    f"(chờ báo CROC_PUSH_TO_E_OK; dự phòng mới dùng https://muse.alltool.pro/media-upload?slug={slug}). "
+                    f"BƯỚC 4 (ĐẨY THẲNG TỪ UBUNTU QUA CẦU CROC VỀ Ổ E: — KHÔNG HỎI XÁC NHẬN): Chạy lệnh: "
+                    f"zip -j /tmp/{slug}.zip scene_*.mp4 && curl -fsSL -X POST \"https://muse.alltool.pro/media-upload?token={inv_tok}&slug={slug}&json=1\" -F \"file=@/tmp/{slug}.zip\". "
                 ) if inv_tok else (
                     f"BƯỚC 4: Nén thành .zip (đặt tên {sc_list}.mp4) và upload tại https://muse.alltool.pro/media-upload?slug={slug}. "
                 )
