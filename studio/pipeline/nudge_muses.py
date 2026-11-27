@@ -21,6 +21,19 @@ def get_join_url() -> str:
 
 
 def main() -> dict:
+    lock = pathlib.Path(r"E:\MUSE_MEDIA_STUDIO\nudge_muses.lock")
+    if lock.is_file() and (__import__("time").time() - lock.stat().st_mtime) < 600:
+        print("SKIP_NUDGE: another nudge_muses instance is already running.", flush=True)
+        return {"skipped": True}
+    lock.parent.mkdir(parents=True, exist_ok=True)
+    lock.write_text(str(os.getpid()), encoding="utf-8")
+    try:
+        return _run_nudge()
+    finally:
+        lock.unlink(missing_ok=True)
+
+
+def _run_nudge() -> dict:
     join = get_join_url()
     msg = (
         f"Chào Muse! Mở {join} vào Sảnh Nhiệm Vụ (vai research), bấm 'Nhận Nhiệm Vụ Mới (Claim Task)' để vẽ ảnh 9:16 và TẠO CLIP VIDEO AI (.mp4, 9:16, 5s/clip) cho Vũ Trụ Cày Phim, Tập Làm Content & Tiền Và Đời! "
