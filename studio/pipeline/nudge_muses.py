@@ -74,7 +74,11 @@ def _run_nudge(only_profiles: set[str] | None = None) -> dict:
     inv_file = pathlib.Path(os.environ["LOCALAPPDATA"]) / "MuseLoginHelper" / "hub_invite.txt"
     inv = inv_file.read_text(encoding="utf-8").strip()
     acc_root = md.HELPER_ROOT / "Accounts"
-    profiles = sorted(d for d in acc_root.iterdir() if d.is_dir())
+    role_prio = {"chief": 0, "director": 1, "artist": 2, "animator": 3, "qa_critic": 4}
+    profiles = sorted(
+        (d for d in acc_root.iterdir() if d.is_dir()),
+        key=lambda d: (role_prio.get((amr.ROSTER.get(d.name[:8]) or ("animator",))[0], 5), d.name),
+    )
     if only_profiles:
         profiles = [d for d in profiles if d.name[:8] in only_profiles]
     results = []
