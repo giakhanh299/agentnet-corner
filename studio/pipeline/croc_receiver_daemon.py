@@ -85,6 +85,24 @@ def ingest_received_files(slug: str, src_dir: Path) -> tuple[int, int]:
         if not f.is_file():
             continue
         low = f.name.lower()
+        if low == "episode.json":
+            try:
+                spec_obj = json.loads(f.read_text(encoding="utf-8"))
+                ch_hint = str(spec_obj.get("channel") or ch_key)
+                if ch_hint in ("phim-ma-dan-gian", "kiem-hiep-co-trang", "tien-va-doi-srt", "tap-lam-content"):
+                    ch_key = ch_hint
+                    ep_dir = MEDIA_ROOT / ch_key / slug
+                    ep_dir.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, ep_dir / "episode.json")
+                if ch_key == "tap-lam-content":
+                    repo_ep = pm.REPO_K08 / slug / "episode.json"
+                else:
+                    repo_ep = pm.REPO_MA / (ch_key if ch_key != "misc" else "phim-ma-dan-gian") / slug / "episode.json"
+                repo_ep.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, repo_ep)
+            except Exception as e:
+                log(f"WARN ingest episode.json for {slug}: {e}")
+            continue
         m_sc = re.search(r"(?:scene[_-]?|clip[_-]?|s)(\d{1,2})", low)
         sc = int(m_sc.group(1)) if m_sc else 0
         if sc < 1:

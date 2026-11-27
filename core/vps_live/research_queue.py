@@ -7,9 +7,10 @@ import uuid
 from urllib.parse import parse_qs, urlsplit
 
 PROJECT = 'research'
-LEAD_ROLES = ('lead_research', 'lead_verify', 'lead_creative', 'lead_engineer')
-WORKER_ROLES = ('research', 'verify', 'engineer')
-ASSIGNABLE_ROLES = WORKER_ROLES + LEAD_ROLES
+STUDIO_ROLES = ('director', 'artist', 'animator', 'qa_critic', 'chief')
+LEAD_ROLES = ('lead_research', 'lead_verify', 'lead_creative', 'lead_engineer', 'chief')
+WORKER_ROLES = ('research', 'verify', 'engineer') + STUDIO_ROLES
+ASSIGNABLE_ROLES = tuple(dict.fromkeys(WORKER_ROLES + LEAD_ROLES))
 
 
 class QueueError(Exception):
@@ -67,11 +68,11 @@ class ResearchQueue:
             c.close()
 
     def chief(self, node):
-        if node['role'] != 'controller':
+        if node['role'] not in ('controller', 'chief'):
             raise QueueError(403, 'Chief only')
 
     def coordinator(self, node):
-        if node['role'] != 'controller' and node['role'] not in LEAD_ROLES:
+        if node['role'] not in ('controller', 'chief') and node['role'] not in LEAD_ROLES:
             raise QueueError(403, 'Chief or Squad Lead only')
 
     def role(self, node, body, delegated):
@@ -95,7 +96,7 @@ class ResearchQueue:
         if spec.get('project', PROJECT) != PROJECT:
             raise QueueError(400, 'Research project only')
         role = spec.get('assigned_to')
-        allowed_targets = ASSIGNABLE_ROLES if creator_role == 'controller' else WORKER_ROLES
+        allowed_targets = ASSIGNABLE_ROLES if creator_role in ('controller', 'chief') else WORKER_ROLES
         if role not in allowed_targets:
             raise QueueError(400, 'Invalid research role')
         dedup = spec.get('dedup')
@@ -146,7 +147,7 @@ class ResearchQueue:
             if not row:
                 raise QueueError(404, 'Research task not found')
             can_read = (
-                node['role'] in ('controller', 'verify')
+                node['role'] in ('controller', 'chief', 'verify', 'qa_critic', 'director')
                 or node['role'] in LEAD_ROLES
                 or row['owner_node'] == node['id']
             )
@@ -245,8 +246,8 @@ class ResearchQueue:
                     (now,),
                 )
                 row = c.execute(
-                    "SELECT * FROM tasks WHERE assigned_to=? AND status='RUNNING' AND owner_node=? LIMIT 1",
-                    (role, node['id']),
+                    "SELECT * FROM tasks WHERE status='RUNNING' AND owner_node=? LIMIT 1",
+                    (node['id'],),
                 ).fetchone()
                 if not row:
                     # Check if this node recently hit video quota exhaustion or submitted non-.mp4 to muse_make_videos
@@ -262,10 +263,27 @@ class ResearchQueue:
                             vid_exhausted = True
                             break
 
-                    candidates = c.execute(
-                        "SELECT * FROM tasks WHERE assigned_to=? AND status='QUEUED' ORDER BY created_at LIMIT 80",
-                        (role,),
-                    ).fetchall()
+                    if role == 'artist':
+                        candidates = c.execute(
+                            "SELECT * FROM tasks WHERE status='QUEUED' AND (assigned_to='artist' OR (assigned_to='research' AND kind='muse_draw_images')) ORDER BY CASE WHEN assigned_to='artist' THEN 0 ELSE 1 END, created_at LIMIT 80"
+                        ).fetchall()
+                    elif role == 'animator':
+                        candidates = c.execute(
+                            "SELECT * FROM tasks WHERE status='QUEUED' AND (assigned_to='animator' OR (assigned_to='research' AND kind='muse_make_videos')) ORDER BY CASE WHEN assigned_to='animator' THEN 0 ELSE 1 END, created_at LIMIT 80"
+                        ).fetchall()
+                    elif role == 'qa_critic':
+                        candidates = c.execute(
+                            "SELECT * FROM tasks WHERE status='QUEUED' AND assigned_to IN ('qa_critic', 'verify') ORDER BY created_at LIMIT 80"
+                        ).fetchall()
+                    elif role == 'director':
+                        candidates = c.execute(
+                            "SELECT * FROM tasks WHERE status='QUEUED' AND assigned_to='director' ORDER BY created_at LIMIT 80"
+                        ).fetchall()
+                    else:
+                        candidates = c.execute(
+                            "SELECT * FROM tasks WHERE assigned_to=? AND status='QUEUED' ORDER BY created_at LIMIT 80",
+                            (role,),
+                        ).fetchall()
                     chosen = None
                     for cand in candidates:
                         p = json.loads(cand['payload']) if cand['payload'] else {}
@@ -305,7 +323,7 @@ class ResearchQueue:
                 c.execute("UPDATE tasks SET status='APPROVED' WHERE id=?", (tid,))
                 return {'status': 'APPROVED', 'project': PROJECT}
             role = self.role(node, body, delegated)
-            if row['assigned_to'] != role or row['owner_node'] != node['id'] or row['lease'] != body.get('lease'):
+            if row['owner_node'] != node['id'] or row['lease'] != body.get('lease'):
                 raise QueueError(403, 'Wrong role, node or lease')
             if action == 'heartbeat':
                 if row['status'] != 'RUNNING' or row['lease_until'] < now:

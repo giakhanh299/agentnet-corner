@@ -105,6 +105,7 @@ def main() -> int:
                 run_step("requeue_stalled_and_partial.py", timeout_s=180)
                 run_step("prioritize_hub.py", timeout_s=120)
                 _, post_tail = run_step("postprod_muse_videos.py", timeout_s=3600)
+                run_step("sync_qa_and_rework.py", timeout_s=300)
                 queued, running = check_hub_activity()
                 log(f"Hub hiện tại: QUEUED={queued}, RUNNING={running}")
 

@@ -28,7 +28,7 @@ from research_queue import PROJECT, QueueError, WORKER_ROLES
 
 HUB_DEVICE_TAG = 'hub-web'
 MEDIA_DROP_ROOT = Path(os.environ.get('AGENTNET_MEDIA_ROOT', '/var/lib/agentnet-media'))
-MEDIA_ALLOWED_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.mp4', '.mov', '.webm', '.zip'}
+MEDIA_ALLOWED_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.mp4', '.mov', '.webm', '.zip', '.json'}
 MEDIA_MAX_BYTES = 120 * 1024 * 1024
 SAFE_SLUG_RE = re.compile(r'^[a-zA-Z0-9_-]{2,80}$')
 
@@ -139,6 +139,30 @@ def init_hub_tables(connect_fn, root):
                 created_at REAL NOT NULL,
                 updated_at REAL NOT NULL
             );
+            CREATE TABLE IF NOT EXISTS chief_commands(
+                id TEXT PRIMARY KEY,
+                source TEXT NOT NULL,
+                command_text TEXT NOT NULL,
+                status TEXT NOT NULL,
+                plan_json TEXT NOT NULL DEFAULT '{}',
+                report_text TEXT NOT NULL DEFAULT '',
+                created_at REAL NOT NULL,
+                updated_at REAL NOT NULL
+            );
+            CREATE TABLE IF NOT EXISTS episode_scores(
+                slug TEXT PRIMARY KEY,
+                channel TEXT NOT NULL DEFAULT '',
+                script_score INTEGER NOT NULL DEFAULT 0,
+                director_score INTEGER NOT NULL DEFAULT 0,
+                visual_score INTEGER NOT NULL DEFAULT 0,
+                video_score INTEGER NOT NULL DEFAULT 0,
+                total_score INTEGER NOT NULL DEFAULT 0,
+                verdict TEXT NOT NULL DEFAULT 'PENDING',
+                bad_scenes_json TEXT NOT NULL DEFAULT '[]',
+                feedback TEXT NOT NULL DEFAULT '',
+                reviewer_node TEXT NOT NULL DEFAULT '',
+                updated_at REAL NOT NULL
+            );
         ''')
 
 
@@ -232,6 +256,133 @@ class HubManager:
         with self.lock, self.connect(self.registry.root) as db:
             db.execute("UPDATE croc_offers SET status=?, updated_at=? WHERE id=?", (st, now, oid))
         return {'ok': True, 'id': oid, 'status': st}
+
+    # --- Chief Coordinator Command Inbox & QA Scoreboard ---
+    def submit_chief_command(self, source: str, command_text: str) -> dict:
+        txt = (command_text or '').strip()
+        if not txt or len(txt) > 8000:
+            raise ValueError('Lệnh điều phối phải từ 1..8000 ký tự')
+        cid = 'cmd_' + secrets.token_hex(6)
+        now = time.time()
+        with self.lock, self.connect(self.registry.root) as db:
+            db.execute(
+                'INSERT INTO chief_commands VALUES(?,?,?,?,?,?,?,?)',
+                (cid, (source or 'owner')[:40], txt, 'PENDING', '{}', '', now, now),
+            )
+        return {'ok': True, 'command_id': cid, 'status': 'PENDING'}
+
+    def get_chief_inbox(self) -> dict:
+        chief_actor = {'id': 'chief-coordinator', 'role': 'controller'}
+        fleet = self.queue.get(chief_actor, '/fleet')
+        with self.connect(self.registry.root) as db:
+            pending = [dict(r) for r in db.execute(
+                "SELECT * FROM chief_commands WHERE status='PENDING' ORDER BY created_at ASC LIMIT 20"
+            ).fetchall()]
+            recent_cmds = [dict(r) for r in db.execute(
+                "SELECT * FROM chief_commands ORDER BY created_at DESC LIMIT 15"
+            ).fetchall()]
+            scores = [dict(r) for r in db.execute(
+                "SELECT * FROM episode_scores ORDER BY updated_at DESC LIMIT 60"
+            ).fetchall()]
+            role_nodes = [dict(r) for r in db.execute(
+                "SELECT role, count(*) AS count FROM nodes WHERE status='APPROVED' GROUP BY role"
+            ).fetchall()]
+        for s in scores:
+            try:
+                s['bad_scenes'] = json.loads(s.pop('bad_scenes_json', '[]'))
+            except Exception:
+                s['bad_scenes'] = []
+        rework_needed = [s for s in scores if s['verdict'] == 'REWORK']
+        return {
+            'ok': True,
+            'pending_commands': pending,
+            'recent_commands': recent_cmds,
+            'fleet': fleet,
+            'role_nodes': role_nodes,
+            'scores_summary': {
+                'total_scored': len(scores),
+                'passed': sum(1 for s in scores if s['verdict'] == 'PASS'),
+                'rework': len(rework_needed),
+            },
+            'rework_episodes': rework_needed[:20],
+            'recent_scores': scores[:25],
+        }
+
+    def chief_dispatch(self, payload: dict) -> dict:
+        chief_actor = {'id': 'chief-coordinator', 'role': 'controller'}
+        now = time.time()
+        created_tasks = []
+        raw_tasks = payload.get('tasks') or []
+        if raw_tasks:
+            res = self.queue.post(chief_actor, '/tasks/batch', {'project': PROJECT, 'tasks': raw_tasks})
+            created_tasks = res.get('tasks', [])
+        requeued = 0
+        for tid in (payload.get('requeue_ids') or [])[:50]:
+            with self.queue.db() as qdb:
+                qdb.execute(
+                    "UPDATE tasks SET status='QUEUED', owner_node=NULL, lease=NULL, lease_until=NULL, started_at=NULL WHERE id=?",
+                    (str(tid),),
+                )
+                requeued += 1
+        cmd_id = (payload.get('command_id') or '').strip()
+        report_txt = (payload.get('report') or '').strip()[:8000]
+        plan_obj = payload.get('plan') or {'dispatched_count': len(created_tasks), 'requeued': requeued}
+        if cmd_id:
+            new_st = (payload.get('status') or 'DISPATCHED').upper()
+            if new_st not in ('PENDING', 'DISPATCHED', 'DONE'):
+                new_st = 'DISPATCHED'
+            with self.lock, self.connect(self.registry.root) as db:
+                db.execute(
+                    'UPDATE chief_commands SET status=?, plan_json=?, report_text=?, updated_at=? WHERE id=?',
+                    (new_st, json.dumps(plan_obj, ensure_ascii=False), report_txt, now, cmd_id),
+                )
+        return {'ok': True, 'dispatched': len(created_tasks), 'requeued': requeued, 'tasks': created_tasks}
+
+    def record_episode_score(self, reviewer_node: str, data: dict) -> dict:
+        slug = (data.get('slug') or '').strip()
+        if not SAFE_SLUG_RE.match(slug):
+            raise ValueError('Invalid slug')
+        s_sc = max(0, min(25, int(data.get('script_score') or 0)))
+        d_sc = max(0, min(25, int(data.get('director_score') or 0)))
+        v_sc = max(0, min(25, int(data.get('visual_score') or 0)))
+        m_sc = max(0, min(25, int(data.get('video_score') or 0)))
+        tot = int(data.get('total_score') or (s_sc + d_sc + v_sc + m_sc))
+        tot = max(0, min(100, tot))
+        verdict = 'PASS' if tot >= 85 and str(data.get('verdict', '')).upper() != 'REWORK' else 'REWORK'
+        bad = data.get('bad_scenes') or []
+        if not isinstance(bad, list):
+            bad = []
+        bad_clean = [int(x) for x in bad if str(x).isdigit()][:15]
+        fb = (data.get('feedback') or data.get('summary') or '').strip()[:3000]
+        ch = (data.get('channel') or '').strip()[:60]
+        now = time.time()
+        with self.lock, self.connect(self.registry.root) as db:
+            db.execute(
+                '''INSERT OR REPLACE INTO episode_scores
+                   VALUES(?,?,?,?,?,?,?,?,?,?,?,?)''',
+                (slug, ch, s_sc, d_sc, v_sc, m_sc, tot, verdict, json.dumps(bad_clean), fb, (reviewer_node or '')[:24], now),
+            )
+        return {
+            'ok': True, 'slug': slug, 'channel': ch,
+            'script_score': s_sc, 'director_score': d_sc, 'visual_score': v_sc, 'video_score': m_sc,
+            'total_score': tot, 'verdict': verdict, 'bad_scenes': bad_clean,
+        }
+
+    def list_episode_scores(self, limit: int = 100) -> list[dict]:
+        with self.connect(self.registry.root) as db:
+            rows = db.execute(
+                'SELECT * FROM episode_scores ORDER BY updated_at DESC LIMIT ?',
+                (max(1, min(300, int(limit))),),
+            ).fetchall()
+        out = []
+        for r in rows:
+            d = dict(r)
+            try:
+                d['bad_scenes'] = json.loads(d.pop('bad_scenes_json', '[]'))
+            except Exception:
+                d['bad_scenes'] = []
+            out.append(d)
+        return out
 
     # --- Invite & auto-role balancing ---
     def create_invite(self, ttl_minutes=60, max_uses=20, targets=None, default_role='research') -> dict:
@@ -736,6 +887,54 @@ def make_hub_handler(hub: HubManager):
                         resp['items'] = hub.ggmap.list_items(qs.get('filter', ['all'])[0])
                     return self.send_json(200, resp)
 
+                if route in ('/api/chief/inbox', '/api/qa/scores'):
+                    tok = (qs.get('token', [''])[0] or self.headers.get('X-Invite-Token', '')).strip()
+                    w, _ = self.current_worker()
+                    if not (w or self.current_admin() or hub.verify_invite_token(tok)):
+                        return self.send_json(403, {'error': 'auth_required'})
+                    if route == '/api/qa/scores':
+                        return self.send_json(200, {'ok': True, 'scores': hub.list_episode_scores(120)})
+                    return self.send_json(200, hub.get_chief_inbox())
+
+                if route == '/chief':
+                    tok = (qs.get('token', [''])[0] or '').strip()
+                    w, _ = self.current_worker()
+                    adm = self.current_admin()
+                    if not (adm or (w and w['role'] in ('chief', 'controller')) or hub.verify_invite_token(tok)):
+                        return self.render_admin_login('Cần quyền Quản trị hoặc mã mời hợp lệ để mở Trung Tâm Điều Phối')
+                    snap = hub.get_chief_inbox()
+                    role_badges = ' &middot; '.join(f"<b>{_esc(r['role'])}</b>: {r['count']}" for r in snap['role_nodes']) or 'Đang khởi tạo'
+                    cmd_rows = ''.join(
+                        f"<tr><td><code>{_esc(c['id'])}</code></td><td><b>{_esc(c['status'])}</b></td>"
+                        f"<td>{_esc(c['command_text'])}</td><td><small>{_esc(c['report_text'])}</small></td></tr>"
+                        for c in snap['recent_commands']
+                    ) or '<tr><td colspan="4">Chưa có lệnh nào</td></tr>'
+                    sc_rows = ''.join(
+                        f"<tr><td><code>{_esc(s['slug'])}</code><br><small>{_esc(s['channel'])}</small></td>"
+                        f"<td><b>{s['total_score']}/100</b> <span class='badge {'ok' if s['verdict']=='PASS' else 'err'}'>{_esc(s['verdict'])}</span></td>"
+                        f"<td>KB:{s['script_score']} &middot; ĐD:{s['director_score']} &middot; Ảnh:{s['visual_score']} &middot; Video:{s['video_score']}</td>"
+                        f"<td><small>{_esc(s['feedback'])}</small></td></tr>"
+                        for s in snap['recent_scores']
+                    ) or '<tr><td colspan="4">Đội Giám Khảo (qa_critic) đang chấm lô đầu tiên...</td></tr>'
+                    tok_hidden = f'<input type="hidden" name="token" value="{_esc(tok)}">' if tok else ''
+                    html_chief = (
+                        f"<!doctype html><html lang='vi'><head><meta charset='utf-8'><title>Muse Tổng Điều Phối</title><style>{BASE_CSS}</style></head><body>"
+                        "<div class='wrap'>"
+                        "<h1>Trung Tâm Giao Lệnh — 1 Muse Tổng Điều Phối &amp; Hội Đồng Chấm Phim</h1>"
+                        f"<div class='card'><p>Cơ cấu đội hình đang trực: {role_badges} | Đã chấm: <b>{snap['scores_summary']['total_scored']}</b> tập "
+                        f"(Đạt &ge;85đ: <b>{snap['scores_summary']['passed']}</b>, Cần sửa lại: <b>{snap['scores_summary']['rework']}</b>)</p>"
+                        f"<form method='post' action='/api/chief/command?redirect=1{('&token=' + _esc(tok)) if tok else ''}'>"
+                        f"{tok_hidden}"
+                        "<label>Giao lệnh tập trung duy nhất cho Muse Điều Phối Tổng (tự chia việc cho Đạo diễn, Họa sĩ, Dựng video, Giám khảo):</label>"
+                        "<textarea name='command_text' placeholder='Ví dụ: Chấm điểm 10 tập mới nhất + viết kịch bản và vẽ 5 tập Phim Ma dân gian nhịp nhanh, tập nào dưới 85 điểm tự cho vẽ lại cảnh lỗi'></textarea>"
+                        "<div style='margin-top:10px'><button type='submit' class='ok'>Phát Lệnh Cho Muse Điều Phối</button></div>"
+                        "</form></div>"
+                        f"<div class='card'><h2>Lịch Sử Lệnh Điều Phối</h2><table><thead><tr><th>Mã</th><th>Trạng thái</th><th>Nội dung lệnh</th><th>Báo cáo từ Muse Điều Phối</th></tr></thead><tbody>{cmd_rows}</tbody></table></div>"
+                        f"<div class='card'><h2>Bảng Điểm Hội Đồng Muse QA (Thang 100 — Chuẩn duyệt &ge; 85)</h2><table><thead><tr><th>Tập phim</th><th>Tổng điểm</th><th>Chi tiết 4 ban (25đ/ban)</th><th>Nhận xét &amp; Cảnh cần sửa</th></tr></thead><tbody>{sc_rows}</tbody></table></div>"
+                        "</div></body></html>"
+                    )
+                    return self.send_html(200, html_chief)
+
                 if route == '/croc-offers':
                     tok = (qs.get('token', [''])[0] or self.headers.get('X-Invite-Token', '')).strip()
                     w, _ = self.current_worker()
@@ -799,6 +998,31 @@ echo "CROC_PUSH_TO_E_OK slug=$SLUG"
                     data = json.loads(self.read_body().decode('utf-8'))
                     joined = hub.join_with_invite(data.get('code', ''), self.client_ip(), data.get('role') or None)
                     return self.send_json(200, joined)
+
+                if route in ('/api/chief/command', '/api/chief/dispatch', '/api/qa/score'):
+                    qs = parse_qs(urlsplit(self.path).query)
+                    tok = (qs.get('token', [''])[0] or self.headers.get('X-Invite-Token', '')).strip()
+                    w, _ = self.current_worker()
+                    adm = self.current_admin()
+                    if not (w or adm or hub.verify_invite_token(tok)):
+                        return self.send_json(403, {'error': 'auth_required'})
+                    ctype = (self.headers.get('Content-Type') or '').lower()
+                    if 'application/json' in ctype:
+                        data = json.loads(self.read_body().decode('utf-8') or '{}')
+                    else:
+                        data = self.read_form()
+                    if route == '/api/chief/command':
+                        out = hub.submit_chief_command(data.get('source', 'owner'), data.get('command_text', ''))
+                        if qs.get('redirect', ['0'])[0] == '1':
+                            t_qs = ('?token=' + _esc(tok)) if tok else ''
+                            return self.redirect('/chief' + t_qs)
+                        return self.send_json(200, out)
+                    if route == '/api/qa/score':
+                        rev = w['id'] if w else 'qa_critic'
+                        return self.send_json(200, hub.record_episode_score(rev, data))
+                    if not (adm or hub.verify_invite_token(tok) or (w and w['role'] in ('chief', 'controller'))):
+                        return self.send_json(403, {'error': 'chief_role_required'})
+                    return self.send_json(200, hub.chief_dispatch(data))
 
                 if route in ('/croc-offer', '/croc-ack'):
                     qs = parse_qs(urlsplit(self.path).query)
