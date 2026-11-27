@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muse Chief &amp; API gpt-6.1-sol — Trung Tâm Điều Khiển Xưởng Phim AI</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --bg-elev: #111827;
+      --card: #151e31;
+      --card-2: #1b253b;
+      --border: #26334d;
+      --text: #e6edf7;
+      --muted: #93a4c3;
+      --accent: #38bdf8;
+      --purple: #a78bfa;
+      --green: #34d399;
+      --amber: #fbbf24;
+      --red: #f87171;
+      --blue-bg: rgba(56, 189, 248, 0.12);
+      --purple-bg: rgba(167, 139, 250, 0.12);
+      --green-bg: rgba(52, 211, 153, 0.12);
+      --amber-bg: rgba(251, 191, 36, 0.12);
+      --red-bg: rgba(248, 113, 113, 0.14);
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0; height: 100%;
+      background: radial-gradient(circle at 12% 0%, #14213d 0%, var(--bg) 48%);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: #0d1322; }
+    ::-webkit-scrollbar-thumb { background: #2a3958; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3b507a; }
+
+    /* Top bar */
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      flex-wrap: wrap;
+      padding: 12px 20px;
+      background: rgba(11, 15, 25, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .brand-logo {
+      width: 36px; height: 36px; border-radius: 10px;
+      background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 16px; color: #0b0f19;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+    }
+    .brand h1 { margin: 0; font-size: 16px; font-weight: 700; letter-spacing: 0.2px; }
+    .brand small { color: var(--muted); font-size: 12px; display: block; }
+
+    .status-strip {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .pill {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 10px; border-radius: 999px;
+      background: var(--card); border: 1px solid var(--border);
+      font-size: 12px; color: var(--text); white-space: nowrap;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%; background: var(--muted);
+    }
+    .dot.ok { background: var(--green); box-shadow: 0 0 8px var(--green); }
+    .dot.warn { background: var(--amber); box-shadow: 0 0 8px var(--amber); animation: pulse 1.6s infinite; }
+    .dot.err { background: var(--red); box-shadow: 0 0 8px var(--red); }
+    .dot.api { background: var(--purple); box-shadow: 0 0 8px var(--purple); }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+    .btn-sm {
+      background: var(--card-2); color: var(--text); border: 1px solid var(--border);
+      border-radius: 8px; padding: 6px 11px; font-size: 12px; cursor: pointer;
+      transition: all 0.15s; font-weight: 600;
+    }
+    .btn-sm:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-sm.active { background: var(--blue-bg); border-color: var(--accent); color: var(--accent); }
+
+    /* Main Grid */
+    .layout {
+      display: grid;
+      grid-template-columns: 430px minmax(0, 1fr);
+      gap: 16px;
+      padding: 16px 20px 24px;
+      max-width: 1760px;
+      margin: 0 auto;
+    }
+    @media (max-width: 1080px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+
+    .col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+    }
+    .card-hdr {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      margin-bottom: 12px;
+    }
+    .card-title {
+      margin: 0; font-size: 14px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.6px; color: #cbd5e1;
+      display: flex; align-items: center; gap: 8px;
+    }
+
+    /* Mode Selector */
+    .mode-tabs {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+      background: #0d1424; padding: 4px; border-radius: 10px;
+      border: 1px solid var(--border); margin-bottom: 12px;
+    }
+    .mode-btn {
+      border: 0; background: transparent; color: var(--muted);
+      padding: 8px 6px; border-radius: 7px; font-size: 12px; font-weight: 600;
+      cursor: pointer; transition: all 0.15s; text-align: center;
+    }
+    .mode-btn:hover { color: var(--text); }
+    .mode-btn.active[data-mode="llm_dispatch"] {
+      background: linear-gradient(135deg, rgba(167,139,250,0.28), rgba(56,189,248,0.24));
+      color: #fff; border: 1px solid rgba(167,139,250,0.55);
+    }
+    .mode-btn.active[data-mode="llm_chat"] {
+      background: var(--purple-bg); color: var(--purple); border: 1px solid rgba(167,139,250,0.55);
+    }
+    .mode-btn.active[data-mode="direct_chief"] {
+      background: var(--green-bg); color: var(--green); border: 1px solid rgba(52,211,153,0.55);
+    }
+
+    .mode-desc {
+      font-size: 12px; color: var(--muted);
+      background: #0e1627; border-left: 3px solid var(--accent);
+      padding: 8px 10px; border-radius: 6px; margin-bottom: 10px;
+    }
+
+    /* Presets */
+    .presets { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+    .preset-chip {
+      background: var(--card-2); color: #cbd5e1; border: 1px solid var(--border);
+      border-radius: 999px; padding: 4px 10px; font-size: 11.5px; cursor: pointer;
+      transition: all 0.15s;
+    }
+    .preset-chip:hover { border-color: var(--purple); color: #fff; background: var(--purple-bg); }
+
+    textarea.cmd-input {
+      width: 100%; min-height: 106px; resize: vertical;
+      background: #0c1220; color: var(--text);
+      border: 1px solid var(--border); border-radius: 10px;
+      padding: 11px 12px; font-family: inherit; font-size: 13.5px;
+      outline: none; transition: border-color 0.15s;
+    }
+    textarea.cmd-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(56,189,248,0.12); }
+
+    .opts-row {
+      display: flex; flex-direction: column; gap: 6px;
+      margin: 10px 0 12px; font-size: 12.5px; color: #cbd5e1;
+    }
+    .opts-row label { display: flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+    .opts-row input[type="checkbox"] { accent-color: var(--accent); width: 15px; height: 15px; }
+
+    .send-btn {
+      width: 100%; border: 0; border-radius: 10px;
+      padding: 12px 16px; font-size: 14px; font-weight: 700; cursor: pointer;
+      color: #09101d;
+      background: linear-gradient(135deg, #38bdf8, #a78bfa);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.25);
+      transition: transform 0.1s, opacity 0.15s;
+    }
+    .send-btn:hover { opacity: 0.94; }
+    .send-btn:active { transform: scale(0.99); }
+    .send-btn:disabled { opacity: 0.55; cursor: wait; }
+    .send-btn.direct { background: linear-gradient(135deg, #34d399, #10b981); }
+
+    .send-feedback {
+      margin-top: 10px; font-size: 12.5px; padding: 9px 11px; border-radius: 8px;
+      display: none; white-space: pre-wrap; word-break: break-word;
+    }
+    .send-feedback.show { display: block; }
+    .send-feedback.ok { background: var(--green-bg); border: 1px solid rgba(52,211,153,0.4); color: #a7f3d0; }
+    .send-feedback.err { background: var(--red-bg); border: 1px solid rgba(248,113,113,0.45); color: #fecaca; }
+    .send-feedback.info { background: var(--blue-bg); border: 1px solid rgba(56,189,248,0.4); color: #bae6fd; }
+
+    /* Quick Actions */
+    .actions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .act-btn {
+      background: var(--card-2); color: var(--text); border: 1px solid var(--border);
+      border-radius: 9px; padding: 9px 10px; font-size: 12.5px; font-weight: 600;
+      cursor: pointer; text-align: left; display: flex; align-items: center; gap: 8px;
+      transition: all 0.15s;
+    }
+    .act-btn:hover { border-color: var(--accent); background: #202d48; }
+    .act-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .action-console {
+      margin-top: 10px; background: #090e19; border: 1px solid var(--border);
+      border-radius: 8px; padding: 8px 10px; font-family: Consolas, monospace;
+      font-size: 11.5px; color: #93c5fd; max-height: 130px; overflow-y: auto;
+      white-space: pre-wrap; word-break: break-word;
+    }
+
+    /* Movies progress */
+    .movie-row {
+      padding: 9px 10px; background: #0f1729; border: 1px solid #1e2c47;
+      border-radius: 10px; margin-bottom: 8px;
+    }
+    .movie-row:last-child { margin-bottom: 0; }
+    .movie-top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+    .movie-title { font-weight: 600; font-size: 12.5px; color: #e2e8f0; }
+    .movie-slug { font-family: Consolas, monospace; font-size: 11px; color: var(--muted); }
+    .bars { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .bar-wrap { font-size: 11px; color: var(--muted); }
+    .bar-bg { height: 6px; background: #1e293b; border-radius: 99px; overflow: hidden; margin-top: 3px; }
+    .bar-fill { height: 100%; border-radius: 99px; transition: width 0.35s; }
+    .bar-fill.img { background: linear-gradient(90deg, #38bdf8, #818cf8); }
+    .bar-fill.vid { background: linear-gradient(90deg, #34d399, #10b981); }
+
+    /* Right panel tabs */
+    .main-tabs {
+      display: flex; gap: 6px; flex-wrap: wrap;
+      border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 14px;
+    }
+    .main-tab {
+      background: transparent; border: 1px solid transparent; color: var(--muted);
+      padding: 7px 13px; border-radius: 9px; font-size: 13px; font-weight: 600;
+      cursor: pointer; transition: all 0.15s;
+    }
+    .main-tab:hover { color: var(--text); background: #18233a; }
+    .main-tab.active {
+      background: var(--blue-bg); border-color: rgba(56,189,248,0.5); color: #e0f2fe;
+    }
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    /* Stats strip */
+    .kpi-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 14px;
+    }
+    @media (max-width: 720px) { .kpi-grid { grid-template-columns: repeat(2, 1fr); } }
+    .kpi {
+      background: #0f1729; border: 1px solid #202e4a; border-radius: 10px;
+      padding: 10px 12px;
+    }
+    .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+    .kpi-val { font-size: 20px; font-weight: 800; margin-top: 2px; }
+    .kpi-sub { font-size: 11px; color: var(--muted); }
+
+    /* Conversation Timeline */
+    .timeline { display: flex; flex-direction: column; gap: 14px; max-height: 760px; overflow-y: auto; padding-right: 4px; }
+    .thread-card {
+      background: #0f1729; border: 1px solid #22314f; border-radius: 12px;
+      padding: 14px; display: flex; flex-direction: column; gap: 10px;
+    }
+    .thread-hdr {
+      display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;
+      font-size: 11.5px; color: var(--muted);
+      border-bottom: 1px dashed #22314f; padding-bottom: 7px;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 700;
+    }
+    .badge.pending { background: var(--amber-bg); color: var(--amber); border: 1px solid rgba(251,191,36,0.45); }
+    .badge.dispatched, .badge.pass, .badge.approved, .badge.submitted { background: var(--green-bg); color: var(--green); border: 1px solid rgba(52,211,153,0.4); }
+    .badge.api { background: var(--purple-bg); color: var(--purple); border: 1px solid rgba(167,139,250,0.45); }
+    .badge.owner { background: var(--blue-bg); color: var(--accent); border: 1px solid rgba(56,189,248,0.45); }
+    .badge.rework, .badge.err { background: var(--red-bg); color: var(--red); border: 1px solid rgba(248,113,113,0.45); }
+    .badge.running { background: var(--blue-bg); color: #7dd3fc; border: 1px solid rgba(56,189,248,0.4); }
+    .badge.queued { background: #1e293b; color: #cbd5e1; border: 1px solid #334155; }
+
+    .bubble {
+      border-radius: 10px; padding: 10px 12px; font-size: 13px;
+      white-space: pre-wrap; word-break: break-word;
+    }
+    .bubble-lbl {
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px;
+      margin-bottom: 5px; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    }
+    .bubble.user { background: rgba(56, 189, 248, 0.09); border-left: 3px solid var(--accent); }
+    .bubble.api { background: rgba(167, 139, 250, 0.11); border-left: 3px solid var(--purple); }
+    .bubble.chief { background: rgba(52, 211, 153, 0.10); border-left: 3px solid var(--green); }
+    .bubble.waiting { background: rgba(251, 191, 36, 0.08); border-left: 3px solid var(--amber); color: #fde68a; }
+    .bubble.error { background: var(--red-bg); border-left: 3px solid var(--red); color: #fecaca; }
+
+    .plan-box {
+      margin-top: 7px; padding: 6px 9px; border-radius: 6px;
+      background: rgba(0,0,0,0.28); font-family: Consolas, monospace; font-size: 11.5px; color: #a7f3d0;
+    }
+
+    /* Filter bar */
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
+    select.flt {
+      background: #0e1627; color: var(--text); border: 1px solid var(--border);
+      border-radius: 8px; padding: 6px 10px; font-size: 12.5px;
+    }
+
+    /* Worker messages list */
+    .worker-list { display: flex; flex-direction: column; gap: 10px; max-height: 700px; overflow-y: auto; }
+    .worker-msg {
+      background: #0f1729; border: 1px solid #202e4a; border-radius: 10px; padding: 11px 13px;
+    }
+    .worker-msg-top { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+    .worker-summary {
+      background: #0a101d; border: 1px solid #1c2942; border-radius: 8px; padding: 8px 10px;
+      font-family: Consolas, monospace; font-size: 12px; color: #cbd5e1;
+      white-space: pre-wrap; word-break: break-word; max-height: 180px; overflow-y: auto;
+    }
+
+    /* QA Table */
+    table.qa { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+    table.qa th, table.qa td {
+      text-align: left; padding: 9px 10px; border-bottom: 1px solid #202e4a; vertical-align: top;
+    }
+    table.qa th { color: var(--muted); font-size: 11px; text-transform: uppercase; background: #0f1729; }
+
+    /* Roster grid */
+    .roster-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 8px; margin-bottom: 14px; }
+    .roster-item {
+      background: #0f1729; border: 1px solid #202e4a; border-radius: 10px; padding: 9px 10px;
+    }
+    .roster-id { font-family: Consolas, monospace; font-weight: 700; font-size: 12.5px; color: var(--accent); }
+    .log-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    @media (max-width: 900px) { .log-grid { grid-template-columns: 1fr; } }
+    .log-box {
+      background: #090e19; border: 1px solid var(--border); border-radius: 10px;
+      padding: 10px; font-family: Consolas, monospace; font-size: 11.5px;
+      color: #94a3b8; height: 240px; overflow-y: auto; white-space: pre-wrap; word-break: break-word;
+    }
+    .empty { color: var(--muted); text-align: center; padding: 28px 12px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-logo">MC</div>
+      <div>
+        <h1>Muse Chief &amp; API Control Center</h1>
+        <small id="subHeader">Đang kết nối Hub &amp; API gpt-6.1-sol...</small>
+      </div>
+    </div>
+    <div class="status-strip">
+      <span class="pill" id="pillApi"><span class="dot api"></span> API: ...</span>
+      <span class="pill" id="pillHub"><span class="dot"></span> Hub: ...</span>
+      <span class="pill" id="pillDaemon"><span class="dot"></span> Daemon: ...</span>
+      <span class="pill" id="pillLock"><span class="dot"></span> Khóa Nudge: ...</span>
+      <button class="btn-sm active" id="btnAutoRefresh" onclick="toggleAutoRefresh()">Tự cập nhật: 5s</button>
+      <button class="btn-sm" onclick="fetchState(true)">Làm mới ngay</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- LEFT COLUMN: COMMAND & CONTROLS -->
+    <section class="col">
+      <div class="card">
+        <div class="card-hdr">
+          <h2 class="card-title">Bảng Ra Lệnh &amp; Điều Khiển</h2>
+          <span class="badge api" id="badgeModel">gpt-6.1-sol</span>
+        </div>
+
+        <div class="mode-tabs">
+          <button class="mode-btn active" data-mode="llm_dispatch" onclick="setMode('llm_dispatch')">API → Muse Tổng</button>
+          <button class="mode-btn" data-mode="llm_chat" onclick="setMode('llm_chat')">Test API Riêng</button>
+          <button class="mode-btn" data-mode="direct_chief" onclick="setMode('direct_chief')">Thẳng Muse Tổng</button>
+        </div>
+
+        <div class="mode-desc" id="modeDesc">
+          Nhập yêu cầu ngắn: <b>API gpt-6.1-sol</b> đọc số liệu thật của xưởng, viết chỉ thị chuẩn rồi <b>tự bắn lệnh lên Hub cho Muse Tổng (db93da63)</b>.
+        </div>
+
+        <div class="presets">
+          <button class="preset-chip" onclick="usePreset('Kiểm tra tiến độ 8 Hồi của ep40 và kh26, thúc toàn bộ 4 artist mới + 6 animator mới dồn lực chạy xong trước mọi việc khác và báo cáo chi tiết từng Hồi.')">Thúc 8 Hồi ep40 &amp; kh26</button>
+          <button class="preset-chip" onclick="usePreset('Báo cáo ngay toàn bộ đội 25 Muse: ban nào đang chạy tốt, tài khoản nào đang rảnh hoặc kẹt lỗi, và dự kiến mấy giờ xong tập phim 8 phút đầu tiên.')">Báo cáo toàn đội 25 Muse</button>
+          <button class="preset-chip" onclick="usePreset('Giao Ban Đạo Diễn săn thêm 2 truyện kinh dị dân gian & kiếm hiệp Trung Quốc nhiều tầng lật kèo, viết chuẩn 4 Hồi 36-38 cảnh (6-8 phút).')">Giao thêm 2 kịch bản 36 cảnh</button>
+          <button class="preset-chip" onclick="usePreset('Kiểm tra bảng điểm QA và các tập dưới 85 điểm hoặc dưới 4 phút, lập kế hoạch sửa ngay những cảnh lỗi.')">Rà soát QA &amp; Rework</button>
+        </div>
+
+        <textarea id="cmdInput" class="cmd-input" placeholder="Nhập lệnh hoặc câu hỏi của bạn tại đây... (Ctrl + Enter để gửi nhanh)"></textarea>
+
+        <div class="opts-row">
+          <label id="optCtxWrap">
+            <input type="checkbox" id="optIncludeCtx" checked />
+            <span>Đính kèm số liệu thật của xưởng (Hub + Ổ E:) cho API gpt-6.1-sol</span>
+          </label>
+          <label id="optWakeWrap">
+            <input type="checkbox" id="optWakeChief" checked />
+            <span>Tự động đánh thức Muse Tổng (db93da63) ngay sau khi gửi</span>
+          </label>
+        </div>
+
+        <button id="btnSend" class="send-btn" onclick="submitCommand()">Gửi qua API gpt-6.1-sol → Muse Tổng</button>
+        <div id="sendFeedback" class="send-feedback"></div>
+      </div>
+
+      <!-- Quick Controls -->
+      <div class="card">
+        <div class="card-hdr">
+          <h2 class="card-title">Điều Khiển Xưởng Nhanh</h2>
+          <span class="badge queued" id="actionBadge">Sẵn sàng</span>
+        </div>
+        <div class="actions-grid">
+          <button class="act-btn" onclick="triggerAction('wake_chief')">Đánh thức Muse Tổng</button>
+          <button class="act-btn" onclick="triggerAction('wake_all')">Đánh thức cả 25 Muse</button>
+          <button class="act-btn" onclick="triggerAction('harvest_now')">Thu hoạch &amp; Đồng bộ Hub</button>
+          <button class="act-btn" onclick="triggerAction('refresh_tasks')">Tải lại tin Workers</button>
+        </div>
+        <div class="action-console" id="actionConsole">Chưa có lệnh điều khiển cục bộ nào chạy trong phiên này.</div>
+      </div>
+
+      <!-- 4-Act Featured Movies -->
+      <div class="card">
+        <div class="card-hdr">
+          <h2 class="card-title">Tiến Độ Phim Dài 4 Hồi (Ổ E:)</h2>
+          <span style="font-size:11.5px;color:var(--muted)">Chuẩn 36–38 cảnh · 6–8 phút</span>
+        </div>
+        <div id="moviesList"><div class="empty">Đang quét ổ E:\MUSE_MEDIA_STUDIO...</div></div>
+      </div>
+    </section>
+
+    <!-- RIGHT COLUMN: LIVE COMMS & TELEMETRY -->
+    <section class="col">
+      <div class="card" style="min-height: 820px;">
+        <div class="kpi-grid">
+          <div class="kpi">
+            <div class="kpi-label">Lệnh Chờ Muse Tổng</div>
+            <div class="kpi-val" id="kpiPending" style="color:var(--amber)">-</div>
+            <div class="kpi-sub">PENDING trên Hub</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Workers Hoạt Động (5p)</div>
+            <div class="kpi-val" id="kpiActive" style="color:var(--green)">-</div>
+            <div class="kpi-sub" id="kpiActiveSub">Trong 15p: -</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Hàng Đợi Họa Sĩ / Dựng</div>
+            <div class="kpi-val" id="kpiQueue" style="color:var(--accent)">-</div>
+            <div class="kpi-sub" id="kpiQueueSub">Artist · Animator</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Điểm Hội Đồng QA</div>
+            <div class="kpi-val" id="kpiQa" style="color:var(--purple)">-</div>
+            <div class="kpi-sub" id="kpiQaSub">Đạt / Cần sửa</div>
+          </div>
+        </div>
+
+        <div class="main-tabs">
+          <button class="main-tab active" data-tab="comms" onclick="switchTab('comms')">Luồng Đối Thoại (Bạn ↔ API ↔ Muse Tổng)</button>
+          <button class="main-tab" data-tab="workers" onclick="switchTab('workers')">Tin Nhắn Các Ban Muse (<span id="cntWorkers">0</span>)</button>
+          <button class="main-tab" data-tab="qa" onclick="switchTab('qa')">Bảng Điểm QA (<span id="cntQa">0</span>)</button>
+          <button class="main-tab" data-tab="fleet" onclick="switchTab('fleet')">Đội Quân 25 Muse &amp; Log Live</button>
+        </div>
+
+        <!-- TAB 1: CONVERSATION STREAM -->
+        <div class="tab-pane active" id="tab-comms">
+          <div class="filter-bar">
+            <select class="flt" id="fltComms" onchange="renderComms()">
+              <option value="all">Hiển thị: Tất cả luồng (API + Muse Tổng)</option>
+              <option value="api">Chỉ luồng qua API gpt-6.1-sol</option>
+              <option value="chief">Chỉ lệnh trên Hub Muse Tổng</option>
+              <option value="pending">Chỉ lệnh đang chờ Muse Tổng (PENDING)</option>
+            </select>
+            <span style="font-size:12px;color:var(--muted)" id="commsHint"></span>
+          </div>
+          <div class="timeline" id="commsTimeline"><div class="empty">Đang tải luồng đối thoại trực tiếp...</div></div>
+        </div>
+
+        <!-- TAB 2: WORKER MESSAGES -->
+        <div class="tab-pane" id="tab-workers">
+          <div class="filter-bar">
+            <select class="flt" id="fltRole" onchange="renderWorkers()">
+              <option value="all">Tất cả các Ban</option>
+              <option value="director">Đạo diễn (director)</option>
+              <option value="artist">Họa sĩ (artist)</option>
+              <option value="animator">Dựng video (animator)</option>
+              <option value="qa_critic">Giám khảo (qa_critic)</option>
+            </select>
+            <select class="flt" id="fltStatus" onchange="renderWorkers()">
+              <option value="all">Tất cả trạng thái</option>
+              <option value="SUBMITTED">Đã nộp bài (SUBMITTED)</option>
+              <option value="RUNNING">Đang chạy (RUNNING)</option>
+              <option value="QUEUED">Đang chờ (QUEUED)</option>
+              <option value="APPROVED">Đã duyệt (APPROVED)</option>
+            </select>
+            <span style="font-size:12px;color:var(--muted)" id="workersMeta"></span>
+          </div>
+          <div class="worker-list" id="workersList"><div class="empty">Đang kéo danh sách báo cáo từ Hub...</div></div>
+        </div>
+
+        <!-- TAB 3: QA SCORES -->
+        <div class="tab-pane" id="tab-qa">
+          <div style="overflow-x:auto; max-height:700px; overflow-y:auto;">
+            <table class="qa">
+              <thead>
+                <tr>
+                  <th>Tập phim</th>
+                  <th>Điểm</th>
+                  <th>4 Ban (25đ/ban)</th>
+                  <th>Phản hồi trực tiếp từ Muse Giám Khảo</th>
+                </tr>
+              </thead>
+              <tbody id="qaBody"><tr><td colspan="4" class="empty">Đang tải...</td></tr></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 4: ROSTER & LIVE LOGS -->
+        <div class="tab-pane" id="tab-fleet">
+          <div class="card-hdr" style="margin-bottom:8px;">
+            <strong style="font-size:13px;color:#cbd5e1;">Đội Hình Đã Phân Vai (<span id="rosterCount">0</span> hồ sơ)</strong>
+            <span style="font-size:11.5px;color:var(--muted)">Khóa bảo mật lưu riêng ở máy local</span>
+          </div>
+          <div class="roster-grid" id="rosterGrid"></div>
+          <div class="log-grid">
+            <div>
+              <div style="font-size:12px;font-weight:700;color:#93c5fd;margin-bottom:6px;">Log Daemon 24/7 (E:\MUSE_MEDIA_STUDIO\daemon.log)</div>
+              <div class="log-box" id="daemonLogBox"></div>
+            </div>
+            <div>
+              <div style="font-size:12px;font-weight:700;color:#6ee7b7;margin-bottom:6px;">Log Cầu Nhận File Croc (E:\MUSE_MEDIA_STUDIO\croc_receiver.log)</div>
+              <div class="log-box" id="crocLogBox"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    let STATE = null;
+    let currentMode = 'llm_dispatch';
+    let autoRefresh = true;
+    let refreshTimer = null;
+    let sendingTimer = null;
+
+    function esc(s) {
+      return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function fmtTs(ts) {
+      if (!ts) return '';
+      const d = new Date(Number(ts) > 1e12 ? Number(ts) : Number(ts) * 1000);
+      if (isNaN(d.getTime())) return String(ts);
+      return d.toLocaleTimeString('vi-VN', {hour12:false}) + ' ' + d.toLocaleDateString('vi-VN', {day:'2-digit', month:'2-digit'});
+    }
+
+    function setMode(mode) {
+      currentMode = mode;
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+      const desc = document.getElementById('modeDesc');
+      const btn = document.getElementById('btnSend');
+      const ctxWrap = document.getElementById('optCtxWrap');
+      const wakeWrap = document.getElementById('optWakeWrap');
+
+      if (mode === 'llm_dispatch') {
+        desc.innerHTML = 'Nhập yêu cầu ngắn: <b>API gpt-6.1-sol</b> đọc số liệu thật của xưởng, viết chỉ thị chuẩn rồi <b>tự bắn lệnh lên Hub cho Muse Tổng (db93da63)</b>.';
+        btn.textContent = 'Gửi qua API gpt-6.1-sol → Muse Tổng';
+        btn.classList.remove('direct');
+        ctxWrap.style.display = 'flex';
+        wakeWrap.style.display = 'flex';
+      } else if (mode === 'llm_chat') {
+        desc.innerHTML = 'Chế độ <b>Test / Chat riêng với API gpt-6.1-sol</b> (chưa gửi sang Muse). Bạn xem phản hồi nguyên văn rồi bấm nút <i>Chuyển tiếp cho Muse Tổng</i> nếu ưng ý.';
+        btn.textContent = 'Hỏi API gpt-6.1-sol (Chưa gửi Muse)';
+        btn.classList.remove('direct');
+        ctxWrap.style.display = 'flex';
+        wakeWrap.style.display = 'none';
+      } else {
+        desc.innerHTML = 'Gửi lệnh <b>trực tiếp bằng tay</b> từ bạn vào hộp lệnh <code>/api/chief/command</code> cho <b>Muse Tổng Điều Phối (db93da63)</b> (bỏ qua bước API LLM).';
+        btn.textContent = 'Bắn Lệnh Thẳng Cho Muse Tổng';
+        btn.classList.add('direct');
+        ctxWrap.style.display = 'none';
+        wakeWrap.style.display = 'flex';
+      }
+    }
+
+    function usePreset(text) {
+      const inp = document.getElementById('cmdInput');
+      inp.value = text;
+      inp.focus();
+    }
+
+    function switchTab(tab) {
+      document.querySelectorAll('.main-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+      document.querySelectorAll('.tab-pane').forEach(p => p.classList.toggle('active', p.id === 'tab-' + tab));
+    }
+
+    function showFeedback(kind, msg) {
+      const box = document.getElementById('sendFeedback');
+      box.className = 'send-feedback show ' + kind;
+      box.textContent = msg;
+    }
+
+    async function submitCommand() {
+      const inp = document.getElementById('cmdInput');
+      const text = inp.value.trim();
+      if (!text) { showFeedback('err', 'Bạn chưa nhập nội dung lệnh hoặc câu hỏi.'); return; }
+
+      const btn = document.getElementById('btnSend');
+      const origTxt = btn.textContent;
+      btn.disabled = true;
+      const t0 = Date.now();
+      clearInterval(sendingTimer);
+      sendingTimer = setInterval(() => {
+        const s = ((Date.now() - t0) / 1000).toFixed(1);
+        btn.textContent = currentMode === 'direct_chief'
+          ? `Đang gửi lệnh lên Hub... ${s}s`
+          : `Đang chờ API gpt-6.1-sol phản hồi... ${s}s`;
+      }, 150);
+
+      try {
+        let resp;
+        if (currentMode === 'direct_chief') {
+          resp = await fetch('/api/chief/send', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+              command_text: text,
+              source: 'owner_ui',
+              wake_chief: document.getElementById('optWakeChief').checked
+            })
+          });
+        } else {
+          resp = await fetch('/api/llm/ask', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+              prompt: text,
+              auto_dispatch: currentMode === 'llm_dispatch',
+              wake_chief: document.getElementById('optWakeChief').checked,
+              include_studio_context: document.getElementById('optIncludeCtx').checked
+            })
+          });
+        }
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) {
+          showFeedback('err', 'Lỗi: ' + (data.error || resp.statusText));
+        } else {
+          const e = data.entry || {};
+          if (currentMode === 'llm_chat') {
+            showFeedback('ok', `API ${e.api_model} đã phản hồi sau ${e.api_elapsed_s}s! Xem ngay khung Luồng Đối Thoại bên phải.`);
+          } else if (currentMode === 'llm_dispatch') {
+            showFeedback('ok', `API ${e.api_model} phản hồi sau ${e.api_elapsed_s}s → Đã đẩy lên Hub (${e.hub_command_id || 'OK'}). ${e.wake_msg || ''}`);
+          } else {
+            showFeedback('ok', `Đã bắn lệnh trực tiếp lên Hub (${e.hub_command_id || 'OK'}). ${e.wake_msg || ''}`);
+          }
+          inp.value = '';
+          switchTab('comms');
+          await fetchState(true);
+        }
+      } catch (err) {
+        showFeedback('err', 'Lỗi kết nối máy chủ UI cục bộ: ' + err);
+      } finally {
+        clearInterval(sendingTimer);
+        btn.disabled = false;
+        btn.textContent = origTxt;
+      }
+    }
+
+    async function forwardToChief(text, modelName) {
+      showFeedback('info', 'Đang chuyển tiếp phản hồi từ API sang Muse Tổng...');
+      try {
+        const resp = await fetch('/api/chief/send', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({
+            command_text: `[API ${modelName || 'gpt-6.1-sol'}] ${text}`,
+            source: modelName || 'gpt-6.1-sol',
+            wake_chief: document.getElementById('optWakeChief').checked
+          })
+        });
+        const data = await resp.json();
+        if (data.ok) {
+          showFeedback('ok', `Đã chuyển tiếp cho Muse Tổng (${(data.entry||{}).hub_command_id || 'OK'}). ${(data.entry||{}).wake_msg || ''}`);
+          await fetchState(true);
+        } else {
+          showFeedback('err', 'Lỗi chuyển tiếp: ' + (data.error || 'unknown'));
+        }
+      } catch (e) {
+        showFeedback('err', 'Lỗi kết nối: ' + e);
+      }
+    }
+
+    async function triggerAction(act) {
+      try {
+        const r = await fetch('/api/action', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({action: act})
+        });
+        const d = await r.json();
+        showFeedback(d.ok ? 'info' : 'err', d.message || d.error || 'Đã gửi yêu cầu.');
+        await fetchState(true);
+      } catch (e) {
+        showFeedback('err', 'Lỗi: ' + e);
+      }
+    }
+
+    function toggleAutoRefresh() {
+      autoRefresh = !autoRefresh;
+      const b = document.getElementById('btnAutoRefresh');
+      b.classList.toggle('active', autoRefresh);
+      b.textContent = autoRefresh ? 'Tự cập nhật: 5s' : 'Tự cập nhật: TẮT';
+    }
+
+    async function fetchState(force = false) {
+      try {
+        const r = await fetch('/api/state' + (force ? '?force=1' : ''));
+        STATE = await r.json();
+        renderAll();
+      } catch (e) {
+        document.getElementById('subHeader').textContent = 'Mất kết nối tới server cục bộ: ' + e;
+      }
+    }
+
+    function renderAll() {
+      if (!STATE) return;
+      const api = STATE.api_meta || {};
+      const inbox = STATE.inbox || {};
+      const fleet = inbox.fleet || {};
+      const hb = STATE.heartbeat || {};
+      const lk = STATE.nudge_lock || {};
+
+      document.getElementById('subHeader').textContent = `Cập nhật lúc ${STATE.server_time} · Bảo mật cục bộ 127.0.0.1`;
+      document.getElementById('badgeModel').textContent = api.model || 'gpt-6.1-sol';
+
+      document.getElementById('pillApi').innerHTML = `<span class="dot ${api.configured ? 'api' : 'err'}"></span> API: ${esc(api.model || 'chưa có')}`;
+      document.getElementById('pillHub').innerHTML = `<span class="dot ${STATE.inbox_error ? 'err' : 'ok'}"></span> Hub: ${STATE.inbox_error ? 'Lỗi' : 'Trực tuyến'}`;
+      document.getElementById('pillDaemon').innerHTML = `<span class="dot ${hb.tick ? 'ok' : 'warn'}"></span> Daemon: Chu kỳ #${esc(hb.tick || '?')}`;
+      document.getElementById('pillLock').innerHTML = lk.locked
+        ? `<span class="dot warn"></span> Đang đánh thức dàn Muse (${esc(lk.age_s)}s)`
+        : `<span class="dot ok"></span> Khóa Nudge: Rảnh`;
+
+      // KPIs
+      const pending = (inbox.pending_commands || []).length;
+      document.getElementById('kpiPending').textContent = pending;
+      document.getElementById('kpiPending').style.color = pending > 0 ? 'var(--amber)' : 'var(--green)';
+      document.getElementById('kpiActive').textContent = fleet.active_workers_5m ?? '-';
+      document.getElementById('kpiActiveSub').textContent = `Trong 15 phút: ${fleet.active_workers_15m ?? '-'}`;
+
+      let artQ = 0, animQ = 0, runAll = 0;
+      for (const tc of (fleet.task_counts || [])) {
+        if (tc.status === 'RUNNING') runAll += Number(tc.count || 0);
+        if (tc.assigned_to === 'artist' && tc.status === 'QUEUED') artQ += Number(tc.count || 0);
+        if (tc.assigned_to === 'animator' && tc.status === 'QUEUED') animQ += Number(tc.count || 0);
+      }
+      document.getElementById('kpiQueue').textContent = `${artQ} / ${animQ}`;
+      document.getElementById('kpiQueueSub').textContent = `Họa sĩ / Dựng chờ · Đang chạy: ${runAll}`;
+
+      const sc = inbox.scores_summary || {};
+      document.getElementById('kpiQa').textContent = `${sc.passed ?? 0}/${sc.total_scored ?? 0}`;
+      document.getElementById('kpiQaSub').textContent = `Đạt >=85đ · Cần sửa: ${sc.rework ?? 0}`;
+
+      // Action console
+      const act = STATE.action || {};
+      const ab = document.getElementById('actionBadge');
+      ab.textContent = act.running ? `Đang chạy: ${act.name}` : (act.name ? `Xong (${act.exit_code})` : 'Sẵn sàng');
+      ab.className = 'badge ' + (act.running ? 'pending' : (act.exit_code === 0 ? 'dispatched' : 'queued'));
+      if (act.log) {
+        const c = document.getElementById('actionConsole');
+        c.textContent = act.log;
+        c.scrollTop = c.scrollHeight;
+      }
+
+      renderMovies();
+      renderComms();
+      renderWorkers();
+      renderQa();
+      renderFleet();
+    }
+
+    function renderMovies() {
+      const box = document.getElementById('moviesList');
+      const list = STATE.featured_movies || [];
+      if (!list.length) { box.innerHTML = '<div class="empty">Chưa có phim 4 Hồi nào.</div>'; return; }
+      box.innerHTML = list.map(m => {
+        const pImg = Math.min(100, Math.round((m.images / m.target_scenes) * 100));
+        const pVid = Math.min(100, Math.round((m.clips / m.target_scenes) * 100));
+        return `
+          <div class="movie-row">
+            <div class="movie-top">
+              <span class="movie-title">${esc(m.title)}</span>
+              ${m.final_ready ? '<span class="badge dispatched">ĐÃ DỰNG XONG</span>' : `<span class="movie-slug">${esc(m.target_scenes)} cảnh</span>`}
+            </div>
+            <div class="bars">
+              <div class="bar-wrap">
+                Ảnh vẽ: <b>${m.images}/${m.target_scenes}</b>
+                <div class="bar-bg"><div class="bar-fill img" style="width:${pImg}%"></div></div>
+              </div>
+              <div class="bar-wrap">
+                Clip video: <b>${m.clips}/${m.target_scenes}</b>
+                <div class="bar-bg"><div class="bar-fill vid" style="width:${pVid}%"></div></div>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    function renderComms() {
+      const box = document.getElementById('commsTimeline');
+      const flt = document.getElementById('fltComms').value;
+      const inbox = STATE.inbox || {};
+      const hubCmds = inbox.recent_commands || [];
+      const hubMap = {};
+      for (const c of hubCmds) hubMap[c.id] = c;
+
+      const hist = STATE.history || [];
+      const usedHubIds = new Set();
+      const cards = [];
+
+      // 1) Local UI interactions (API + direct UI) paired with Hub command state
+      for (const h of hist) {
+        const hubObj = h.hub_command_id ? hubMap[h.hub_command_id] : null;
+        if (h.hub_command_id) usedHubIds.add(h.hub_command_id);
+        const isApi = h.type === 'llm_dispatch' || h.type === 'llm_chat' || h.type === 'llm_error';
+        const isPending = hubObj ? hubObj.status === 'PENDING' : false;
+        if (flt === 'api' && !isApi) continue;
+        if (flt === 'chief' && !h.hub_command_id) continue;
+        if (flt === 'pending' && !isPending) continue;
+
+        let html = `<div class="thread-card">`;
+        html += `<div class="thread-hdr">
+          <div>
+            ${isApi ? `<span class="badge api">API ${esc(h.api_model || 'gpt-6.1-sol')}</span>` : `<span class="badge owner">CHỦ DỰ ÁN (UI)</span>`}
+            ${h.hub_command_id ? `<code>${esc(h.hub_command_id)}</code>` : ''}
+            ${hubObj ? `<span class="badge ${hubObj.status === 'PENDING' ? 'pending' : 'dispatched'}">${esc(hubObj.status)}</span>` : (h.type === 'llm_chat' ? '<span class="badge queued">CHỈ TEST API</span>' : '')}
+          </div>
+          <span>${esc(h.time_str || fmtTs(h.ts))}</span>
+        </div>`;
+
+        html += `<div class="bubble user">
+          <div class="bubble-lbl"><span>Bạn gửi vào</span></div>
+          ${esc(h.user_prompt)}
+        </div>`;
+
+        if (h.type === 'llm_error') {
+          html += `<div class="bubble error">
+            <div class="bubble-lbl"><span>API gặp lỗi</span></div>
+            ${esc(h.error)}
+          </div>`;
+        } else if (h.api_response) {
+          const encodedResp = encodeURIComponent(h.api_response);
+          const encodedModel = encodeURIComponent(h.api_model || 'gpt-6.1-sol');
+          html += `<div class="bubble api">
+            <div class="bubble-lbl">
+              <span>Phản hồi nguyên văn từ API ${esc(h.api_model)} (${esc(h.api_elapsed_s)}s · ${esc(h.api_via || 'SSE')})</span>
+              ${!h.dispatched_to_chief ? `<button class="btn-sm" onclick="forwardToChief(decodeURIComponent('${encodedResp}'), decodeURIComponent('${encodedModel}'))">Gửi cho Muse Tổng →</button>` : ''}
+            </div>
+            ${esc(h.api_response)}
+          </div>`;
+        }
+
+        if (hubObj) {
+          html += renderChiefReplyBubble(hubObj);
+        } else if (h.hub_command_id) {
+          html += `<div class="bubble waiting">Đã đẩy lệnh <code>${esc(h.hub_command_id)}</code> lên Hub — đang chờ đồng bộ trạng thái...</div>`;
+        }
+
+        html += `</div>`;
+        cards.push({ts: Number(h.ts || 0), html});
+      }
+
+      // 2) Hub commands not originated from local UI history (CLI, earlier gpt-6.1-sol tests, /chief web)
+      for (const c of hubCmds) {
+        if (usedHubIds.has(c.id)) continue;
+        const isApi = String(c.source || '').toLowerCase().includes('gpt') || String(c.command_text || '').includes('[API ');
+        if (flt === 'api' && !isApi) continue;
+        if (flt === 'pending' && c.status !== 'PENDING') continue;
+
+        let html = `<div class="thread-card">`;
+        html += `<div class="thread-hdr">
+          <div>
+            <span class="badge ${isApi ? 'api' : 'owner'}">${esc(c.source || 'hub')}</span>
+            <code>${esc(c.id)}</code>
+            <span class="badge ${c.status === 'PENDING' ? 'pending' : 'dispatched'}">${esc(c.status)}</span>
+          </div>
+          <span>${fmtTs(c.updated_at || c.created_at)}</span>
+        </div>`;
+
+        html += `<div class="bubble ${isApi ? 'api' : 'user'}">
+          <div class="bubble-lbl"><span>${isApi ? 'Lệnh do API tạo & đẩy lên Hub' : 'Lệnh giao cho Muse Tổng'}</span></div>
+          ${esc(c.command_text)}
+        </div>`;
+
+        html += renderChiefReplyBubble(c);
+        html += `</div>`;
+        cards.push({ts: Number(c.updated_at || c.created_at || 0), html});
+      }
+
+      cards.sort((a, b) => b.ts - a.ts);
+      document.getElementById('commsHint').textContent = `Tổng ${cards.length} luồng hội thoại & lệnh điều phối`;
+      box.innerHTML = cards.length ? cards.map(x => x.html).join('') : '<div class="empty">Chưa có tin nhắn nào khớp bộ lọc. Hãy thử gõ lệnh ở cột bên trái!</div>';
+    }
+
+    function renderChiefReplyBubble(c) {
+      if (c.status === 'PENDING' && !c.report_text) {
+        return `<div class="bubble waiting">
+          <div class="bubble-lbl">
+            <span>Muse Tổng Điều Phối (chief · db93da63) — Đang chờ nhận &amp; phản hồi</span>
+            <button class="btn-sm" onclick="triggerAction('wake_chief')">Đánh thức Muse Tổng ngay</button>
+          </div>
+          Lệnh đang nằm trong hộp thư PENDING của Muse Tổng. Ngay khi Muse Tổng đọc <code>/api/chief/inbox</code> và gọi <code>/api/chief/dispatch</code>, báo cáo thật sẽ hiện tự động tại đây.
+        </div>`;
+      }
+      let planHtml = '';
+      if (c.plan_json && c.plan_json !== '{}') {
+        planHtml = `<div class="plan-box">Kế hoạch phân bổ (plan_json): ${esc(c.plan_json)}</div>`;
+      }
+      return `<div class="bubble chief">
+        <div class="bubble-lbl">
+          <span>Tin nhắn phản hồi từ Muse Tổng Điều Phối (chief · db93da63)</span>
+          <span>${fmtTs(c.updated_at)}</span>
+        </div>
+        ${esc(c.report_text || '(Muse Tổng đã xác nhận DISPATCHED nhưng không ghi thêm chữ báo cáo)')}
+        ${planHtml}
+      </div>`;
+    }
+
+    function renderWorkers() {
+      const list = STATE.worker_tasks || [];
+      document.getElementById('cntWorkers').textContent = list.length;
+      const role = document.getElementById('fltRole').value;
+      const st = document.getElementById('fltStatus').value;
+      const meta = document.getElementById('workersMeta');
+      if (STATE.worker_tasks_loading) {
+        meta.textContent = 'Đang đồng bộ danh sách task từ Hub...';
+      } else if (STATE.worker_tasks_err) {
+        meta.textContent = 'Cảnh báo đồng bộ: ' + STATE.worker_tasks_err;
+      } else {
+        meta.textContent = STATE.worker_tasks_ts ? `Đồng bộ lúc ${fmtTs(STATE.worker_tasks_ts)}` : '';
+      }
+
+      const filtered = list.filter(t => (role === 'all' || t.assigned_to === role) && (st === 'all' || t.status === st));
+      const box = document.getElementById('workersList');
+      if (!filtered.length) {
+        box.innerHTML = '<div class="empty">Chưa có báo cáo worker nào khớp bộ lọc.</div>';
+        return;
+      }
+      box.innerHTML = filtered.slice(0, 60).map(t => {
+        const stCls = String(t.status || '').toLowerCase();
+        return `<div class="worker-msg">
+          <div class="worker-msg-top">
+            <div>
+              <span class="badge ${stCls}">${esc(t.status)}</span>
+              <span class="badge api">${esc(t.assigned_to)}</span>
+              <code style="font-size:12px;color:#e2e8f0">${esc(t.slug || t.dedup || t.id)}</code>
+              <span style="font-size:11.5px;color:var(--muted)">(${esc(t.kind)})</span>
+            </div>
+            <span style="font-size:11.5px;color:var(--muted)">${t.claimed_by ? 'Worker: ' + esc(t.claimed_by) + ' · ' : ''}${fmtTs(t.updated_at)}</span>
+          </div>
+          ${t.objective ? `<div style="font-size:12px;color:#cbd5e1;margin-bottom:6px;"><b>Đề bài:</b> ${esc(t.objective)}</div>` : ''}
+          ${t.summary ? `<div class="worker-summary">${esc(t.summary)}</div>` : '<div style="font-size:11.5px;color:var(--muted)">Chưa có tin nhắn nộp bài từ Muse cho task này.</div>'}
+        </div>`;
+      }).join('');
+    }
+
+    function renderQa() {
+      const scores = (STATE.inbox || {}).recent_scores || [];
+      document.getElementById('cntQa').textContent = scores.length;
+      const body = document.getElementById('qaBody');
+      if (!scores.length) {
+        body.innerHTML = '<tr><td colspan="4" class="empty">Chưa có kết quả chấm điểm nào.</td></tr>';
+        return;
+      }
+      body.innerHTML = scores.map(s => `
+        <tr>
+          <td><code>${esc(s.slug)}</code><br><small style="color:var(--muted)">${esc(s.channel)}</small></td>
+          <td><b>${esc(s.total_score)}/100</b><br><span class="badge ${s.verdict === 'PASS' ? 'pass' : 'rework'}">${esc(s.verdict)}</span></td>
+          <td style="white-space:nowrap;">KB:${esc(s.script_score)} · ĐD:${esc(s.director_score)}<br>Ảnh:${esc(s.visual_score)} · Vid:${esc(s.video_score)}</td>
+          <td style="color:#cbd5e1;">${esc(s.feedback)}</td>
+        </tr>
+      `).join('');
+    }
+
+    function renderFleet() {
+      const roster = STATE.roster || [];
+      document.getElementById('rosterCount').textContent = roster.length;
+      document.getElementById('rosterGrid').innerHTML = roster.map(r => `
+        <div class="roster-item">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:4px;">
+            <span class="roster-id">${esc(r.profile)}</span>
+            <div>
+              <span class="badge ${r.role === 'chief' ? 'dispatched' : 'api'}">${esc(r.role)}</span>
+              ${r.is_new_cookie ? '<span class="badge pending">MỚI</span>' : ''}
+            </div>
+          </div>
+          <div style="font-size:11.5px;color:var(--muted);">${esc(r.title)}</div>
+        </div>
+      `).join('');
+
+      const dBox = document.getElementById('daemonLogBox');
+      dBox.textContent = (STATE.daemon_log || []).join('\n') || '(Trống)';
+      dBox.scrollTop = dBox.scrollHeight;
+
+      const cBox = document.getElementById('crocLogBox');
+      cBox.textContent = (STATE.croc_log || []).join('\n') || '(Trống)';
+      cBox.scrollTop = cBox.scrollHeight;
+    }
+
+    document.getElementById('cmdInput').addEventListener('keydown', e => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        submitCommand();
+      }
+    });
+
+    fetchState(true);
+    refreshTimer = setInterval(() => { if (autoRefresh) fetchState(false); }, 5000);
+  </script>
+</body>
+</html>
