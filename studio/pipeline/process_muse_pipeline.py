@@ -373,7 +373,7 @@ def main():
             )
             new_vid_tasks.append({
                 "dedup": dedup,
-                "assigned_to": "research",
+                "assigned_to": "animator",
                 "kind": "muse_make_videos",
                 "payload": {
                     "objective": f"[{slug}] MUSE TẠO VIDEO 9:16 ({len(missing)} clip x 5s): '{title}' ({series}) — tạo clip .mp4 từ ảnh đã vẽ + up lên /media-upload.",
