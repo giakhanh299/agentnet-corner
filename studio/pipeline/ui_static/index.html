@@ -755,8 +755,8 @@
         if (tc.assigned_to === 'artist' && tc.status === 'QUEUED') artQ += Number(tc.count || 0);
         if (tc.assigned_to === 'animator' && tc.status === 'QUEUED') animQ += Number(tc.count || 0);
       }
-      document.getElementById('kpiQueue').textContent = `${artQ} / ${animQ}`;
-      document.getElementById('kpiQueueSub').textContent = `Họa sĩ / Dựng chờ · Đang chạy: ${runAll}`;
+      document.getElementById('kpiQueue').textContent = `Vẽ: ${artQ} · Dựng: ${animQ}`;
+      document.getElementById('kpiQueueSub').textContent = `Đang chờ trên Hub · Đang chạy: ${runAll}`;
 
       const sc = inbox.scores_summary || {};
       document.getElementById('kpiQa').textContent = `${sc.passed ?? 0}/${sc.total_scored ?? 0}`;
