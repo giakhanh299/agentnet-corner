@@ -84,14 +84,14 @@ def whitelist_alltool_and_clear_other(page) -> list[str]:
     except Exception:
         body_txt = ""
 
-    # ONLY click "Always allow this site" when the prompt specifically asks about our own Hub domain `alltool.pro` (and NOT catbox.moe)
-    if "alltool.pro" in body_txt and "catbox.moe" not in body_txt[-900:]:
-        always_btn = page.get_by_role("button", name=re.compile(r"^Always allow this site$|^Allow all always$", re.I))
+    # ONLY click "Always allow this site" when the active approval prompt asks about our own Hub domain `alltool.pro`
+    tail = body_txt[-1200:]
+    if "alltool.pro" in tail and "catbox.moe" not in tail[-400:]:
+        always_btn = page.get_by_role("button", name=re.compile(r"Always allow this site|Allow all always", re.I))
         if always_btn.count() > 0 and always_btn.first.is_visible():
             always_btn.first.click(timeout=4000)
             actions.append("WHITELISTED_ALLTOOL_PRO_ALWAYS")
-            # Give Muse 8s to finish the immediately unblocked upload!
-            page.wait_for_timeout(8000)
+            page.wait_for_timeout(6000)
 
     # Clear any non-alltool stuck approvals / panels
     for pat in (r"^Deny all$", r"^Stop (?:generating|responding|response)$"):
@@ -142,6 +142,7 @@ def main() -> dict:
                         else:
                             msg = build_role_prompt(role, title_vi, inv)
                             ok, detail = md.send_and_verify(page, msg)
+                            rec["actions"].extend(whitelist_alltool_and_clear_other(page))
                             rec.update(status="SENT" if ok else "SEND_FAILED", detail=detail)
                 except Exception as e:
                     rec.update(status="ERROR", detail=f"{type(e).__name__}: {str(e)[:120]}")

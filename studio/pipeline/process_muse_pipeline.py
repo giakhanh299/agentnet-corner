@@ -254,10 +254,13 @@ def sync_vps_media_to_E() -> dict:
             if len(local_imgs) >= 8 and not (ep_dir / "storyboard_muse.jpg").is_file():
                 make_storyboard(local_imgs, ep_dir / "storyboard_muse.jpg")
 
-            # If we already have all 11 verified .mp4 clips on E:, delete entire slug folder from VPS!
+            # Delete scene_* clips/images once all 11 clips are on E:; keep QA review sheets until qa_scorecard.json exists!
             local_clips = [p for p in sorted(clip_dir.glob("scene_*.mp4")) if verify_mp4(p)]
             if len(local_clips) >= 11:
-                _, o2, _ = ssh.exec_command(f"rm -rf /var/lib/agentnet-media/{slug}")
+                if (ep_dir / "03_final_v2" / "qa_scorecard.json").is_file():
+                    _, o2, _ = ssh.exec_command(f"rm -rf /var/lib/agentnet-media/{slug}")
+                else:
+                    _, o2, _ = ssh.exec_command(f"rm -f /var/lib/agentnet-media/{slug}/scene_*")
                 o2.read()
 
             pulled[slug] = {
