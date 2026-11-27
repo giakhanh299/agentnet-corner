@@ -1,0 +1,841 @@
+{
+  "aigc_label": false,
+  "character_bible": {
+    "characters": [
+      {
+        "age": 80,
+        "costume": "áo dài the nâu sẫm, khăn đóng đen, đi hài vải",
+        "face": "gương mặt hiền hậu, râu bạc dài, mắt sâu buồn",
+        "gender": "nam",
+        "hair": "tóc bạc, râu bạc dài",
+        "id": "ong_bay",
+        "name": "Ông Bảy",
+        "notes": "Thầy cúng già nhất làng, đã mất, chỉ hiện hồn trong khói nhang, giữ đúng tuổi 80 và trang phục này",
+        "role": "ông nội đã mất, thầy cúng",
+        "voice": "chautinhtri"
+      },
+      {
+        "age": 16,
+        "costume": "áo bà ba vải nâu, quần đen, đi chân đất",
+        "face": "gương mặt non trẻ, mắt to tò mò rồi sợ hãi",
+        "gender": "nam",
+        "hair": "tóc đen búi cao bằng dây vải",
+        "id": "khai",
+        "name": "Khải",
+        "notes": "Cháu nội ông Bảy, tò mò chấm mắt hình nhân, giữ đúng tuổi 16, tóc búi và trang phục này",
+        "role": "cháu trai, nhân vật chính",
+        "voice": "kiemhiep_nam"
+      },
+      {
+        "age": 68,
+        "costume": "áo bà ba nâu sẫm, quần đen, tạp dề vải",
+        "face": "gương mặt khắc khổ, râu bạc ngắn, mắt lo lắng",
+        "gender": "nam",
+        "hair": "tóc bạc, râu bạc ngắn",
+        "id": "ong_sau",
+        "name": "Ông Sáu",
+        "notes": "Thợ hàng mã 50 năm nghề, giữ đúng tuổi 68 và trang phục này trong mọi cảnh",
+        "role": "thợ hàng mã",
+        "voice": "chautinhtri"
+      },
+      {
+        "age": 62,
+        "costume": "áo bà ba chàm sẫm, quần đen, khăn đen",
+        "face": "gương mặt nhăn nheo hiền hậu, mắt sâu lo lắng",
+        "gender": "nữ",
+        "hair": "tóc bạc búi gọn, khăn đen",
+        "id": "ba_tu",
+        "name": "Bà Tư",
+        "notes": "Vợ ông Bảy, luôn lần tràng hạt, giữ đúng tuổi 62 và trang phục này",
+        "role": "bà nội",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": 22,
+        "costume": "áo dài trắng cũ bằng giấy, không trang sức hiện đại",
+        "face": "chỉ là bóng mờ tái nhợt, không lộ rõ mặt, nước mắt bằng mực",
+        "gender": "nữ",
+        "hair": "tóc đen dài xõa",
+        "id": "co_lua",
+        "name": "Cô Lụa",
+        "notes": "Vong nữ chết oan, hồn bị nhốt trong hình nhân giấy, chỉ xuất hiện như bóng mờ, tuyệt đối không lộ mặt rõ, không máu me",
+        "role": "vong nữ oan khuất",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": 55,
+        "costume": "áo gấm xám, quần đen, đi giày vải",
+        "face": "gương mặt nghiêm khắc, ria mép mỏng, mắt lạnh lùng",
+        "gender": "nam",
+        "hair": "tóc đen chải gọn, búi nhỏ",
+        "id": "quan_gia",
+        "name": "Quản gia nhà họ Kiều",
+        "notes": "Quản gia Bá Hộ Kiều, kẻ ép làm hình nhân người sống, giữ đúng tuổi 55 và trang phục này",
+        "role": "phản diện, quản gia",
+        "voice": "chautinhtri"
+      },
+      {
+        "age": "trưởng thành",
+        "costume": "không xuất hiện trên hình",
+        "face": "không xuất hiện trên hình",
+        "gender": "nữ",
+        "hair": "không xuất hiện trên hình",
+        "id": "narrator",
+        "name": "Người kể chuyện",
+        "notes": "Chỉ dẫn bằng giọng nói, giọng nữ trầm, chậm, lạnh",
+        "role": "dẫn truyện",
+        "voice": "phonui"
+      }
+    ],
+    "forbidden_all_characters": [
+      "không đeo kính cận",
+      "không đeo đồng hồ hiện đại",
+      "không có đồ vật hiện đại",
+      "không chữ, không watermark, không logo, không máu me"
+    ],
+    "setting": "Làng quê Việt Nam những năm 1960, nhà tang lễ, xưởng hàng mã, nhà Bá Hộ Kiều, đèn dầu, trăng lạnh. Tuyệt đối không đồ hiện đại."
+  },
+  "color_grade": "folk_horror",
+  "cover_hook": "Cháu trai lén chấm mắt cho hình nhân giấy đêm đầu thất, hình nhân sống dậy nhưng không phải ông nội...",
+  "cover_scene": 9,
+  "cover_theme": "horror",
+  "cover_title": "THỢ HÀNG MÃ ĐIỂM MẮT ĐÊM ĐẦU THẤT",
+  "episode": 41,
+  "music": {
+    "gain_db": 0,
+    "generator": "horror"
+  },
+  "scenes": [
+    {
+      "act": 1,
+      "clip": "scene_01.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 1,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a rural Vietnamese paper-effigy workshop at dusk, unfinished paper figures hanging from bamboo poles, red and white paper, glue pots and bamboo frames, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the paper effigy workshop at dusk",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Làng An Lạc có một nghề lạ lùng mà ai cũng kiêng dè, đó là nghề làm hàng mã, làm hình nhân giấy tiễn người chết về cõi khác một cách lặng lẽ."
+    },
+    {
+      "act": 1,
+      "clip": "scene_02.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 2,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 68-year-old Vietnamese paper-effigy craftsman with silver hair and a long grey beard, wearing a dark brown ba ba shirt, carving bamboo frames for a paper figure, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan across the old craftsman carving bamboo frames",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Sáu làm hàng mã đã năm mươi năm, tay ông khéo tới mức hình nhân giấy nào cũng giống người thật như đúc, chỉ trừ đôi mắt vẫn luôn để trống."
+    },
+    {
+      "act": 1,
+      "clip": "scene_03.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 3,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a rural Vietnamese funeral house at night, white mourning banners, incense smoke, villagers in white headbands kneeling before a coffin, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tilt up the funeral house with white banners",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Đêm nay là đêm đầu thất của ông Bảy, thầy cúng già nhất làng, người cả đời giữ lễ, giữ vía cho bao nhiêu gia đình nghèo khó trong làng."
+    },
+    {
+      "act": 1,
+      "clip": "scene_04.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 4,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a 16-year-old Vietnamese boy with a topknot, wearing a brown cloth shirt, staring curiously at a tall eyeless paper figure in a funeral house, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the teenage boy staring at the eyeless paper figure",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Khải là cháu nội ông Bảy, mới mười sáu tuổi, cậu cứ nhìn mãi hình nhân giấy đứng bên quan tài, mắt nó trống trơn, trắng xóa, không có lấy một chấm đen."
+    },
+    {
+      "act": 1,
+      "clip": "scene_05.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 5,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 68-year-old paper-effigy craftsman holding an oil lamp, raising a weathered hand to warn the 16-year-old boy beside the paper figure, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the craftsman warning the boy",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Sáu kéo Khải lại, giọng ông khàn đặc như gió qua khe cửa: Hình nhân chưa chấm mắt thì chỉ là giấy, chấm rồi là có hồn, có vía."
+    },
+    {
+      "act": 1,
+      "clip": "scene_06.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 6,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of several unfinished paper figures with blank white eye sockets, brushes and black ink pots on a wooden table in lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the unfinished eyes of paper figures",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Trong nghề hàng mã có một điều cấm kỵ truyền đời, đó là không bao giờ được tự ý chấm mắt cho hình nhân giấy khi chưa tới giờ làm lễ."
+    },
+    {
+      "act": 1,
+      "clip": "scene_07.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 7,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of a 62-year-old Vietnamese woman with grey hair in a bun, wearing a dark indigo ba ba shirt, clutching prayer beads and whispering a prayer, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the old woman clutching prayer beads",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Bà Tư, vợ ông Bảy, lần tràng hạt mà tay run run, bà nói đêm đầu thất vong còn lẩn quẩn quanh nhà, chớ đùa với giấy kẻo rước họa."
+    },
+    {
+      "act": 1,
+      "clip": "scene_08.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 8,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 16-year-old boy's hand hesitantly picking up a fine brush dipped in black ink beside the eyeless paper figure at midnight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in as the boy picks up the brush",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Khải không tin ma quỷ, cậu nghĩ mắt giấy chỉ là nét vẽ, nên nửa đêm cậu lén cầm bút, chấm một chấm mực đen vào hốc mắt trái của hình nhân."
+    },
+    {
+      "act": 1,
+      "clip": "scene_09.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 9,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of a paper figure's left eye, a single black ink dot glinting strangely in oil-lamp light, the paper face suddenly seeming alive, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Sudden focus pull to the dotted eye glinting in lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Chấm mực vừa khô, đôi mắt giấy bỗng ánh lên một tia sáng lạnh, như có ai đó vừa mở mắt ra từ bên trong tờ giấy mỏng manh ấy."
+    },
+    {
+      "act": 2,
+      "clip": "scene_10.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 10,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot down a dark rural Vietnamese funeral corridor at midnight, paper figures casting long shadows, a paper figure's head turning slightly, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot down the dark funeral corridor",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Canh ba, gió lùa qua nhà tang lễ, Khải nghe tiếng giấy sột soạt, rồi tiếng bước chân nhẹ như ai đó đang tập đi bằng đôi chân giấy khô cứng."
+    },
+    {
+      "act": 2,
+      "clip": "scene_11.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 11,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 16-year-old boy frozen at a doorway, eyes wide with fear, staring at a paper figure standing in the middle of the room, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the boy frozen at the doorway",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Khải nín thở, hình nhân giấy đêm qua còn đứng sát quan tài, giờ nó đã bước ra giữa nhà, dáng đi cứng đờ như một con rối gỗ cũ kỹ."
+    },
+    {
+      "act": 2,
+      "clip": "scene_12.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 12,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 68-year-old paper-effigy craftsman kneeling to inspect paper footprints on the dusty floor, his face pale with dread, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan as the craftsman inspects the moved figure",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Sáu quỳ xuống xem dấu chân giấy in trên nền đất, ông nói khẽ: Nó đi rồi, hình nhân đã biết đi là tai họa đã tới cửa nhà."
+    },
+    {
+      "act": 2,
+      "clip": "scene_13.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 13,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a paper figure's pale paper hand slowly reaching toward an oil lamp, its fingers stiff and creased like folded paper, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the paper figure's hand reaching out",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Bàn tay giấy vươn ra, chạm vào ngọn đèn dầu, lửa bập bùng rồi xanh lét lại, cả gian nhà lạnh buốt như có sương mù phủ xuống từng góc."
+    },
+    {
+      "act": 2,
+      "clip": "scene_14.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 14,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 62-year-old woman covering her mouth in terror as a blurred pale female silhouette with long hair drifts behind the paper figure, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the old woman screaming silently",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Bà Tư hét không thành tiếng, sau lưng hình nhân thấp thoáng một bóng nữ tóc dài, mờ ảo như khói, không phải dáng ông Bảy chút nào mà là dáng một cô gái trẻ."
+    },
+    {
+      "act": 2,
+      "clip": "scene_15.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 15,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the paper figure's face in cold moonlight, its painted features shifting subtly into a young woman's sorrowful face, eyes wet with ink tears, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the wrong face of the paper figure",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Khải nhìn kỹ rồi chết lặng, gương mặt giấy không còn giống ông nội nữa, nó đã biến thành mặt một cô gái trẻ đang khóc bằng những giọt mực đen."
+    },
+    {
+      "act": 2,
+      "clip": "scene_16.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 16,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: handheld shot of the 16-year-old boy running through a misty rural village lane at night, paper scraps swirling behind him like white moths, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Shaky handheld follow of the boy running through the village lane",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Khải bỏ chạy ra ngõ, mảnh giấy trắng bay theo sau cậu như bướm đêm, tiếng khóc con gái vọng theo từng bước chân cậu chạy trong đêm tối mịt mù."
+    },
+    {
+      "act": 2,
+      "clip": "scene_17.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 17,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 68-year-old craftsman opening a locked old wooden box, revealing yellowed paper charms, a blood-stained brush and a folded ledger, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the craftsman opening an old wooden box",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Sáu mở chiếc rương gỗ khóa kỹ bao năm, bên trong là bùa giấy úa vàng, cây bút dính máu khô và một cuốn sổ ghi chép cũ kỹ."
+    },
+    {
+      "act": 2,
+      "clip": "scene_18.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 18,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of a yellowed ledger in lamplight, handwritten names and dates, one name circled in red ink: Co Lua, twenty-two years old, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the ledger pages in lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Cuốn sổ ghi rõ từng hình nhân ông từng làm, có một cái tên bị khoanh đỏ, đó là cô Lụa, mới hai mươi hai tuổi, chết oan mà không ai dám nói."
+    },
+    {
+      "act": 2,
+      "clip": "scene_19.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 19,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 16-year-old boy reading the yellowed ledger by oil-lamp light, his face turning pale as he understands the terrible truth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the boy reading the ledger by lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Khải đọc tới dòng cuối thì tay cậu run lên, hình nhân đêm qua không phải làm cho ông nội, nó mang hồn một người chết oan khuất bao năm."
+    },
+    {
+      "act": 3,
+      "clip": "scene_20.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 20,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a grand rural Vietnamese manor house at dawn, high walls, tiled roof, red lanterns, mist drifting over the courtyard, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the village to the grand manor house",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Sáng hôm sau Khải tìm tới nhà Bá Hộ Kiều, ngôi nhà lớn nhất làng, nơi cô Lụa từng làm người ở trước khi chết một cách bí ẩn không ai giải thích được."
+    },
+    {
+      "act": 3,
+      "clip": "scene_21.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 21,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 55-year-old Vietnamese steward with a stern face and thin moustache, wearing a grey brocade robe, standing coldly at the manor gate, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the stern steward in brocade robes",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Quản gia nhà họ Kiều chặn Khải ở cổng, giọng lạnh như đá: Cô Lụa chết vì bệnh, đừng đào bới chuyện nhà người ta nữa, cậu nghe rõ chưa."
+    },
+    {
+      "act": 3,
+      "clip": "scene_22.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 22,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a manor pond at dusk, a blurred pale female silhouette with long wet hair drifting on the water surface, face never clearly revealed, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the ghost girl's blurred reflection in a pond",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Chiều xuống, bên ao nhà họ Kiều, Khải thấy bóng cô Lụa trôi trên mặt nước, tóc dài xõa, miệng mấp máy như muốn kể một điều oan khuất đã giấu kín bao năm."
+    },
+    {
+      "act": 3,
+      "clip": "scene_23.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 23,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a paper effigy made in the likeness of a living young woman in a white ao dai, standing beside a bridal palanquin in a manor courtyard, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Flashback-style slow pan over a paper effigy of a living girl",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Sổ cũ ghi lại, năm ấy nhà họ Kiều ép ông Sáu làm hình nhân giống hệt cô Lụa khi cô còn sống, để cưới âm cho cậu chủ đã chết."
+    },
+    {
+      "act": 3,
+      "clip": "scene_24.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 24,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a blurred pale female ghost with long black hair, lips moving silently, ink tears running down her paper-white cheeks in moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the ghost girl whispering",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Cô Lụa thì thầm qua giấc mộng: Em chưa chết mà họ đã làm hình nhân giống em, họ nhốt hồn em vào giấy để em phải làm vợ ma cho người đã chết."
+    },
+    {
+      "act": 3,
+      "clip": "scene_25.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 25,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 68-year-old craftsman kneeling by lamplight, head bowed in shame, confessing to the 16-year-old boy beside him, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the craftsman confessing by lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Sáu cúi đầu thú nhận, năm ấy ông nghèo, ông nhận tiền nhà họ Kiều, ông không ngờ một nét vẽ lại giam hồn người sống vào trong tờ giấy mỏng."
+    },
+    {
+      "act": 3,
+      "clip": "scene_26.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 26,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot of the 16-year-old boy confronting the 55-year-old steward in the manor courtyard, villagers gathering behind them in the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot of the boy confronting the steward",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Khải quay lại nhà họ Kiều, cậu nói lớn trước mặt bao người: Chính nhà ông đã ép làm hình nhân người sống, đó là tội giam hồn người sống, không phải lễ cưới âm như các người vẫn nói."
+    },
+    {
+      "act": 3,
+      "clip": "scene_27.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 27,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 55-year-old steward's face turning pale, his hand trembling as he clutches a jade pendant, guilt and fear in his eyes, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the steward's face turning pale",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Quản gia tái mặt, tay ông run run nắm chặt miếng ngọc bội, đó là vật cô Lụa để lại, ông giấu nó bao năm vì sợ vong về đòi lại công bằng."
+    },
+    {
+      "act": 3,
+      "clip": "scene_28.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 28,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 16-year-old boy holding a small jade pendant in his palm, the paper figure behind him bowing its head slowly in the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the boy holding the jade pendant",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Khải cầm miếng ngọc bội lên, hình nhân giấy sau lưng cậu bỗng cúi đầu, như người tù vừa nghe tên mình được gọi sau bao nhiêu năm oan khuất đằng đẵng."
+    },
+    {
+      "act": 3,
+      "clip": "scene_29.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 29,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a tall paper figure walking stiffly through a misty village lane toward the funeral house, villagers watching fearfully from doorways, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Wide shot of the paper figure walking toward the funeral house",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Đêm thứ hai, hình nhân giấy tự bước về nhà tang lễ, nó không hại ai, nó chỉ muốn về đúng nơi nó được sinh ra để đòi lại công bằng cho chính mình."
+    },
+    {
+      "act": 4,
+      "clip": "scene_30.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 30,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a translucent elderly Vietnamese man with a long silver beard, wearing a dark brown ceremonial robe, appearing in incense smoke above the coffin, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the grandfather's soul appearing in incense smoke",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Canh ba, khói nhang cuộn lại thành dáng ông Bảy, hồn ông hiện về, giọng ông trầm ấm nhưng buồn, ông nói ông đã chờ đêm này từ rất lâu rồi."
+    },
+    {
+      "act": 4,
+      "clip": "scene_31.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 31,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the translucent elderly man with silver beard leaning toward the 16-year-old boy, his eyes kind yet heavy with a secret, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight shot of the grandfather's soul speaking to the boy",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Bảy nói, năm xưa chính ông đã chấm mắt cho hình nhân bằng máu ngón tay mình, để trấn vong cô Lụa, cứu cả làng khỏi tai họa khôn lường năm ấy."
+    },
+    {
+      "act": 4,
+      "clip": "scene_32.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 32,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of the 68-year-old craftsman's weathered hand holding the old brush stained with dried blood, trembling in lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the blood-stained brush in the craftsman's hand",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Thì ra cây bút dính máu trong rương là của ông Bảy, ông dùng máu mình làm ấn, đổi mạng mình để giữ vong lại trong giấy suốt bao nhiêu năm trời."
+    },
+    {
+      "act": 4,
+      "clip": "scene_33.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 33,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 16-year-old boy pricking his fingertip with a sewing needle, a single drop of blood welling up in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the boy pricking his finger with a needle",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Khải hiểu ra, muốn trả hồn cho cô Lụa, cậu phải làm như ông nội đã làm, cậu chích đầu ngón tay, một giọt máu đỏ thẫm từ từ rỉ ra trong đêm."
+    },
+    {
+      "act": 4,
+      "clip": "scene_34.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 34,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 16-year-old boy and the 68-year-old craftsman kneeling before the paper figure, the boy touching his bloodied fingertip to its painted eyes, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the ritual of returning the eyes",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Sáu hướng dẫn Khải chạm máu vào đôi mắt giấy, vừa khấn vừa nói: Mắt này trả lại cho người, hồn này trả lại cho trời, giấy về với giấy, người về với đất."
+    },
+    {
+      "act": 4,
+      "clip": "scene_35.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 35,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a blurred pale female silhouette with long hair smiling gently as she fades into golden dawn light, paper scraps drifting up like butterflies, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out as the ghost girl smiles and fades",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Cô Lụa mỉm cười lần đầu tiên, bóng cô tan dần trong nắng sớm, mảnh giấy bay lên như bướm trắng, hồn cô cuối cùng đã được siêu thoát nhẹ nhàng."
+    },
+    {
+      "act": 4,
+      "clip": "scene_36.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 36,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the translucent elderly man with silver beard bowing deeply to the boy and the craftsman, then fading into incense smoke at dawn, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the grandfather's soul bowing in farewell",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Hồn ông Bảy cúi đầu chào cháu lần cuối, ông nói: Cháu đã trả được nợ thay ông, từ nay ông mới thật sự yên nghỉ được trong lòng đất."
+    },
+    {
+      "act": 4,
+      "clip": "scene_37.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 37,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a paper figure burning gently in a ritual fire at dawn, flames golden and calm, villagers kneeling in prayer around the fire, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow crane shot of the paper figure burning in the ritual fire",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Hình nhân giấy được đốt đúng lễ trong lửa vàng êm ả, không còn tiếng khóc, không còn oán hận, chỉ còn khói nhang bay lên trời cao trong nắng sớm."
+    },
+    {
+      "act": 4,
+      "clip": "scene_38.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 38,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic high-angle wide shot of a misty rural Vietnamese village lane at dawn, the funeral house quiet, a single paper butterfly drifting over the rooftops, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the village lane into the dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Trời sáng hẳn, làng An Lạc lại yên bình, Khải cất cây bút chấm mắt vào rương, cậu thề cả đời không bao giờ chấm mắt cho hình nhân nữa."
+    }
+  ],
+  "seed": 411,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "slug": "ep41_tho_hang_ma_diem_mat_dem_dau_that",
+  "source_story": "Truyen kinh di dan gian Trung Quoc <Dian Jing Ke> (点睛客) / 纸人点睛 - cam ky cham mat hinh nhan giay, Viet hoa: hinh nhan song day, vong Co Lua bi nhot, Ba Ho Kieu ep lam hinh nhan nguoi song, Ong Bay cham mat bang mau minh de tran vong.",
+  "target_channel": "KENH_005",
+  "tight_pacing": true,
+  "title": "Thợ Hàng Mã Điểm Mắt Đêm Đầu Thất",
+  "total_duration_s": 456.0,
+  "voice": "phonui"
+}

@@ -1,0 +1,817 @@
+{
+  "aigc_label": false,
+  "character_bible": {
+    "characters": [
+      {
+        "age": 26,
+        "costume": "áo dài gấm xanh sẫm, thắt lưng vải, mang trường kiếm",
+        "face": "gương mặt cương nghị, mắt sắc lạnh, mày kiếm",
+        "gender": "nam",
+        "hair": "tóc đen búi cao bằng dây vải, cài trâm gỗ",
+        "id": "lam_phong",
+        "name": "Lâm Phong",
+        "notes": "Kiếm khách lang thang, hậu duệ họ Lâm bị xóa tên, giữ đúng tuổi 26 và trang phục này",
+        "role": "kiếm khách, nhân vật chính",
+        "voice": "kiemhiep_nam"
+      },
+      {
+        "age": 24,
+        "costume": "áo dài gấm đỏ thêu hoa, thắt lưng vải, mang trường kiếm",
+        "face": "gương mặt thanh tú lạnh lùng, mắt sắc như kiếm",
+        "gender": "nữ",
+        "hair": "tóc đen búi cao, cài trâm bạc",
+        "id": "hong_lang",
+        "name": "Hồng Lăng",
+        "notes": "Nữ hiệp áo đỏ, con gái trưởng lão họ Hồng, giữ đúng tuổi 24 và trang phục này",
+        "role": "nữ hiệp, đồng hành",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": 60,
+        "costume": "áo gấm xám, quần đen, đi giày vải",
+        "face": "gương mặt khắc khổ, râu bạc dài, mắt lo lắng",
+        "gender": "nam",
+        "hair": "tóc bạc, râu bạc dài",
+        "id": "lao_chuong_quay",
+        "name": "Lão Chưởng Quầy",
+        "notes": "Chủ quán trọ Qua Ải, thực ra là cha ruột Lâm Phong, giữ đúng tuổi 60 và trang phục này",
+        "role": "chưởng quầy, cha ruột",
+        "voice": "chautinhtri"
+      },
+      {
+        "age": 18,
+        "costume": "áo vải nâu, quần đen, tạp dề vải, khăn quấn đầu",
+        "face": "gương mặt non trẻ, mắt to tò mò",
+        "gender": "nam",
+        "hair": "tóc đen búi nhỏ bằng dây vải",
+        "id": "a_cuu",
+        "name": "A Cửu",
+        "notes": "Tiểu nhị quán trọ, giữ đúng tuổi 18 và trang phục này trong mọi cảnh",
+        "role": "tiểu nhị",
+        "voice": "kiemhiep_nam"
+      },
+      {
+        "age": "trưởng thành",
+        "costume": "không xuất hiện trên hình",
+        "face": "không xuất hiện trên hình",
+        "gender": "nam",
+        "hair": "không xuất hiện trên hình",
+        "id": "narrator",
+        "name": "Người kể chuyện",
+        "notes": "Chỉ dẫn bằng giọng nói, giọng nam trầm, chậm, lạnh",
+        "role": "dẫn truyện",
+        "voice": "kiemhiep_nam"
+      }
+    ],
+    "forbidden_all_characters": [
+      "không đeo kính cận",
+      "không đeo đồng hồ hiện đại",
+      "không có đồ vật hiện đại",
+      "không chữ, không watermark, không logo, không máu me"
+    ],
+    "setting": "Quán trọ Qua Ải giữa đèo núi, thời cổ trang, đèn lồng đỏ, kiếm khách, quan tài đen. Tuyệt đối không đồ hiện đại."
+  },
+  "color_grade": "wuxia",
+  "cover_hook": "Mười ba cỗ quan tài đen qua ải, mười hai cỗ có huy hiệu, cỗ thứ mười ba trống rỗng và không có tên...",
+  "cover_scene": 7,
+  "cover_theme": "wuxia_mystery",
+  "cover_title": "MƯỜI BA CỖ QUAN TÀI QUA ẢI",
+  "episode": 27,
+  "music": {
+    "gain_db": 0,
+    "generator": "wuxia"
+  },
+  "scenes": [
+    {
+      "act": 1,
+      "clip": "scene_01.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 1,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a remote mountain pass inn at dusk, tiled roof, red lanterns, mist over pine forest, a caravan approaching on the stone road, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the mountain pass inn at dusk",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Quán trọ Qua Ải nằm cheo leo giữa đèo núi, đêm nào cũng đón khách lạ, nhưng đêm nay đoàn người tới đây mang theo mười ba cỗ quan tài đen."
+    },
+    {
+      "act": 1,
+      "clip": "scene_02.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 2,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 60-year-old Vietnamese innkeeper with a long silver beard, wearing a grey brocade robe, counting black coffins in the courtyard, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan across the old innkeeper counting coffins",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Lão chưởng quầy sáu mươi tuổi, râu bạc dài, đứng đếm từng cỗ quan tài đen, tay ông run run, miệng lẩm bẩm một điều cấm kỵ xưa cũ trong giang hồ."
+    },
+    {
+      "act": 1,
+      "clip": "scene_03.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 3,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a 26-year-old Vietnamese swordsman with a topknot, wearing a dark blue robe, holding a long sword, watching the coffin caravan warily, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the young swordsman watching the caravan",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong hai mươi sáu tuổi, kiếm khách lang thang, chàng dừng chân ở quán trọ này, mắt chàng không rời mười ba cỗ quan tài đen kỳ lạ trong sân quán."
+    },
+    {
+      "act": 1,
+      "clip": "scene_04.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 4,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 24-year-old Vietnamese swordswoman in a red embroidered robe with a sword at her hip, standing coldly at the inn doorway, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the red-robed swordswoman at the doorway",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng hai mươi bốn tuổi, nữ hiệp áo đỏ, nàng đứng lặng ở cửa quán, ánh mắt nàng sắc như kiếm, như đã biết trước đoàn quan tài này."
+    },
+    {
+      "act": 1,
+      "clip": "scene_05.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 5,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 60-year-old innkeeper holding an oil lamp, raising a weathered hand to warn the young swordsman and swordswoman, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the innkeeper warning the guests",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Lão chưởng quầy kéo Lâm Phong lại, giọng ông khàn đặc: Quan tài đen qua ải, cờ trắng bên trái, đèn đỏ bên phải, chớ mở nắp khi chưa tới giờ."
+    },
+    {
+      "act": 1,
+      "clip": "scene_06.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 6,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of thirteen black coffins lined up in a misty inn courtyard at night, each carved with a different clan insignia, white banners fluttering, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the thirteen black coffins in a row",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Mười ba cỗ quan tài xếp thành hàng dài trong sân, mỗi cỗ khắc một huy hiệu khác nhau, mười hai họ lớn giang hồ đều có mặt ở đây."
+    },
+    {
+      "act": 1,
+      "clip": "scene_07.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 7,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 26-year-old swordsman kneeling beside the thirteenth black coffin, noticing it has no clan insignia carved on its lid, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the swordsman noticing the thirteenth coffin",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong quỳ xuống xem từng cỗ, mười hai cỗ đều có huy hiệu, chỉ cỗ thứ mười ba trơn nhẵn, không khắc tên họ nào cả, trống trơn kỳ lạ."
+    },
+    {
+      "act": 1,
+      "clip": "scene_08.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 8,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 24-year-old swordswoman in red touching the lid of the thirteenth black coffin, her fingers trembling slightly in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in as the swordswoman touches the thirteenth coffin",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng chạm tay lên nắp cỗ quan tài thứ mười ba, nàng nói nhỏ: Cỗ này không có huy hiệu, vì người nằm trong đó chưa từng được ghi tên."
+    },
+    {
+      "act": 1,
+      "clip": "scene_09.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 9,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of a black coffin lid sliding open by a finger's width in the dark courtyard, cold mist pouring out from inside, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Sudden focus pull to a coffin lid moving by itself",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Canh ba, nắp một cỗ quan tài bỗng trượt ra một khe hẹp, khói lạnh tuôn ra, cả sân quán trọ im phăng phắc như có ai bóp nghẹt hơi thở."
+    },
+    {
+      "act": 2,
+      "clip": "scene_10.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 10,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot down a dark inn corridor at midnight, lanterns swaying, shadows of black coffins stretching across the wooden floor, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot down the dark inn corridor",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong rón rén đi dọc hành lang quán trọ lúc nửa đêm, đèn lồng đung đưa, bóng quan tài đen in dài trên sàn gỗ như những con thú nằm phục."
+    },
+    {
+      "act": 2,
+      "clip": "scene_11.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 11,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 24-year-old swordswoman in red frozen in the courtyard, eyes wide, staring at an open black coffin in the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the swordswoman frozen at the courtyard",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng đứng chết lặng giữa sân, một cỗ quan tài đã mở toang, bên trong không có xác chết, chỉ có một lớp vải liệm trống rỗng lạnh lẽo."
+    },
+    {
+      "act": 2,
+      "clip": "scene_12.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 12,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 60-year-old innkeeper kneeling to inspect an empty black coffin, his face pale with dread in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan as the innkeeper inspects the empty coffin",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Lão chưởng quầy quỳ xuống xem cỗ quan tài trống, ông nói khẽ: Quan tài mở mà không có xác, là có người đã lấy thứ bên trong đi rồi."
+    },
+    {
+      "act": 2,
+      "clip": "scene_13.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 13,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of gold ingots and a folded martial arts manual hidden under a white shroud inside a black coffin, glinting in lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of gold ingots hidden under the shroud",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong lật tấm vải liệm lên, dưới đó không phải xác chết mà là vàng thỏi và một cuốn bí kíp võ công, đoàn quan tài này là đoàn buôn lậu."
+    },
+    {
+      "act": 2,
+      "clip": "scene_14.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 14,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 24-year-old swordswoman drawing her sword, blade glinting coldly, her face hard with suspicion in the moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the swordswoman drawing her sword",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "sword_draw"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng rút kiếm, lưỡi kiếm ánh lên lạnh lẽo, nàng nói: Mười hai họ lớn cùng đưa vàng qua ải, ai dám chặn đường đoàn này thì chỉ có chết."
+    },
+    {
+      "act": 2,
+      "clip": "scene_15.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 15,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 26-year-old swordsman reading a folded martial arts manual by lamplight, his face turning pale as he recognises the clan seal, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the swordsman reading the manual",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong đọc tới trang cuối cuốn bí kíp thì tay chàng run lên, trên đó đóng dấu một họ đã bị xóa tên khỏi giang hồ từ mười hai năm trước."
+    },
+    {
+      "act": 2,
+      "clip": "scene_16.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 16,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: handheld shot of the 26-year-old swordsman running through a misty pine forest at night, black coffin bearers chasing him with red lanterns, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Shaky handheld follow of the swordsman running through the pine forest",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong bỏ chạy ra rừng thông, đoàn phu khiêng quan tài đuổi theo sau chàng, đèn đỏ lập lòe như mắt thú trong đêm tối mịt mù lạnh lẽo."
+    },
+    {
+      "act": 2,
+      "clip": "scene_17.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 17,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 60-year-old innkeeper opening a secret compartment under the inn counter, revealing a yellowed ledger and a jade pendant, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the innkeeper opening a secret compartment",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Lão chưởng quầy mở ngăn bí mật dưới quầy quán, bên trong là một cuốn sổ ghi chép cũ và một miếng ngọc bội hình rồng đã sứt một góc."
+    },
+    {
+      "act": 2,
+      "clip": "scene_18.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 18,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of a yellowed ledger in lamplight, handwritten names of twelve clans, the thirteenth name crossed out in black ink, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the ledger pages in lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Cuốn sổ ghi rõ tên mười hai họ lớn, còn cái tên thứ mười ba đã bị gạch đen, đó là họ Lâm, họ của Lâm Phong, bị xóa sổ mười hai năm trước."
+    },
+    {
+      "act": 2,
+      "clip": "scene_19.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 19,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 24-year-old swordswoman reading the yellowed ledger by oil-lamp light, her face turning pale as she understands the truth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the swordswoman reading the ledger",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng đọc tới dòng cuối thì tay nàng run lên, mười ba cỗ quan tài không phải đưa tang, chúng là mười ba cái bẫy giăng sẵn trong đêm nay."
+    },
+    {
+      "act": 3,
+      "clip": "scene_20.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 20,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a mountain pass road at dawn, thirteen black coffins being carried through the mist, red lanterns swaying in the wind, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the inn to the mountain pass road",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Sáng hôm sau Lâm Phong tìm tới con đường qua ải, đoàn mười ba cỗ quan tài đen đang lên đường, đèn đỏ lập lòe trong sương mù buổi sớm mai trên đường đèo."
+    },
+    {
+      "act": 3,
+      "clip": "scene_21.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 21,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 60-year-old innkeeper standing by the mountain road in the mist, holding an oil lamp, his face heavy with memory, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the innkeeper by the mountain road",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Lão chưởng quầy đứng bên đường đèo, giọng ông trầm xuống: Mười hai năm trước, họ Lâm bị mười hai họ lớn hợp sức xóa tên khỏi giang hồ trong đêm diệt môn ấy."
+    },
+    {
+      "act": 3,
+      "clip": "scene_22.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 22,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 24-year-old swordswoman's face reflected in her own sword blade, her eyes cold and distant in the moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the swordswoman's reflection in a sword blade",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "sword_draw"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng soi mặt mình trong lưỡi kiếm, nàng nói lạnh lùng: Ta tới đây không phải để đưa tang, ta tới để đòi lại một món nợ máu mười hai năm."
+    },
+    {
+      "act": 3,
+      "clip": "scene_23.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 23,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a burning clan hall at night, swordsmen fighting in the flames, a young boy being carried away by an old man, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Flashback-style slow pan over a burning clan hall",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Sổ cũ ghi lại, đêm họ Lâm bị diệt môn, lửa cháy suốt một đêm, một đứa bé trai được ông già bế chạy qua ải, đứa bé ấy chính là Lâm Phong."
+    },
+    {
+      "act": 3,
+      "clip": "scene_24.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 24,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 24-year-old swordswoman whispering, her hand on her sword hilt, tears glinting in her eyes in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the swordswoman whispering her identity",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng thì thầm qua kẽ răng: Ta là con gái của trưởng lão họ Hồng, người đã chết trong đêm diệt môn ấy, ta chờ ngày này mười hai năm rồi."
+    },
+    {
+      "act": 3,
+      "clip": "scene_25.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 25,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 60-year-old innkeeper kneeling by lamplight, head bowed in shame, confessing to the 26-year-old swordsman beside him, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the innkeeper confessing by lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Lão chưởng quầy cúi đầu thú nhận, năm ấy ông là người dẫn đường cho đoàn diệt môn, ông không ngờ đứa bé mình cứu lại là con trai mình."
+    },
+    {
+      "act": 3,
+      "clip": "scene_26.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 26,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot of the 26-year-old swordsman confronting the coffin caravan on the mountain road, martial artists gathering behind him in the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot of the swordsman confronting the caravan",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong quay lại chặn đoàn quan tài giữa đường đèo, chàng nói lớn trước mặt bao người: Mười ba cỗ quan tài này là mồi nhử, kẻ chủ mưu đang đứng trong đoàn."
+    },
+    {
+      "act": 3,
+      "clip": "scene_27.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 27,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 24-year-old swordswoman's face turning cold, her hand tightening on her sword hilt, guilt and resolve in her eyes, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the swordswoman's face turning cold",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng tái mặt, tay nàng siết chặt chuôi kiếm, nàng biết Lâm Phong đã đoán ra, chính nàng đã bày ra đoàn quan tài này để dụ kẻ thù ra mặt trong đêm nay."
+    },
+    {
+      "act": 3,
+      "clip": "scene_28.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 28,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 26-year-old swordsman holding a small jade dragon pendant in his palm, the innkeeper behind him bowing his head slowly, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the swordsman holding the jade pendant",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong giơ miếng ngọc bội hình rồng lên, lão chưởng quầy sau lưng chàng bỗng cúi đầu, miếng ngọc ấy là vật ông để lại cho con trai ruột của mình."
+    },
+    {
+      "act": 3,
+      "clip": "scene_29.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 29,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of the thirteenth black coffin being carried through a misty mountain pass toward a stone gate, martial artists watching fearfully, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Wide shot of the thirteenth coffin being carried to the pass",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Đêm thứ hai, cỗ quan tài thứ mười ba được khiêng tới cửa ải, nó trống rỗng, không có xác, nó chỉ chờ một người sống nằm vào trong đó."
+    },
+    {
+      "act": 4,
+      "clip": "scene_30.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 30,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 60-year-old man with a long silver beard, wearing a grey brocade robe, kneeling before the young swordsman in lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the innkeeper revealing his true identity",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Canh ba, lão chưởng quầy quỳ xuống trước mặt Lâm Phong, giọng ông run run, ông nói ông chính là cha ruột của chàng, người ai cũng tưởng đã chết."
+    },
+    {
+      "act": 4,
+      "clip": "scene_31.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 31,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 26-year-old swordsman leaning toward the kneeling old man, his eyes wide with shock and disbelief in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight shot of the swordsman hearing the truth",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong chết lặng, mười hai năm chàng tưởng cha đã chết trong đêm diệt môn, hóa ra ông sống ẩn thân làm chưởng quầy để bảo vệ con trai."
+    },
+    {
+      "act": 4,
+      "clip": "scene_32.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 32,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of the empty thirteenth black coffin in cold moonlight, its lid open, a white shroud folded neatly inside like a bed, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the empty thirteenth coffin in moonlight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Thì ra cỗ quan tài thứ mười ba trống rỗng là dành cho Lâm Phong, kẻ thù muốn chàng nằm vào đó, để họ Lâm tuyệt diệt hoàn toàn trong đêm nay."
+    },
+    {
+      "act": 4,
+      "clip": "scene_33.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 33,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 24-year-old swordswoman drawing her sword, blade flashing, stepping between the young swordsman and the masked assassins, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the swordswoman drawing her sword to protect him",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "sword_draw"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồng Lăng rút kiếm đứng chắn trước mặt Lâm Phong, nàng nói: Ta bày ra đoàn quan tài để dụ kẻ thù, nhưng ta không để chúng giết chàng đâu."
+    },
+    {
+      "act": 4,
+      "clip": "scene_34.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 34,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 26-year-old swordsman and the 24-year-old swordswoman fighting masked assassins at a stone mountain pass gate in moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the duel at the mountain pass gate",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "sword_draw"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Lâm Phong và Hồng Lăng cùng rút kiếm, hai người lưng tựa lưng giữa cửa ải, đánh tan đám sát thủ đeo mặt nạ trong ánh trăng lạnh lẽo trên đèo."
+    },
+    {
+      "act": 4,
+      "clip": "scene_35.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 35,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of the 60-year-old innkeeper burning the yellowed ledger in a brazier at dawn, flames golden and calm, the swordsman watching, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out as the innkeeper father burns the ledger",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Lão chưởng quầy đốt cuốn sổ ghi tên mười hai họ trong chậu than, lửa vàng êm ả, ông nói: Hận thù ghi trong sổ, đốt đi rồi giang hồ mới yên."
+    },
+    {
+      "act": 4,
+      "clip": "scene_36.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 36,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 60-year-old innkeeper bowing deeply to the 26-year-old swordsman, the young man kneeling in return at dawn, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the father and son bowing to each other",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Cha con Lâm Phong cúi đầu chào nhau lần đầu tiên sau mười hai năm, ông nói: Con đã sống sót qua ải, từ nay họ Lâm không còn phải trốn nữa."
+    },
+    {
+      "act": 4,
+      "clip": "scene_37.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 37,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of thirteen black coffins burning gently in a ritual fire at dawn, flames golden and calm, martial artists kneeling in prayer around the fire, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow crane shot of thirteen coffins burning at dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Mười ba cỗ quan tài được đốt đúng lễ trong lửa vàng êm ả, vàng và bí kíp trả lại cho giang hồ, không còn ai phải chết vì chúng nữa."
+    },
+    {
+      "act": 4,
+      "clip": "scene_38.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 38,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic high-angle wide shot of a misty mountain pass at dawn, the inn quiet, a single red lantern still burning above the gate, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the mountain pass into the dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Trời sáng hẳn, đèo núi lại yên bình, Lâm Phong cất thanh kiếm vào vỏ, chàng thề cả đời sẽ không để họ Lâm phải trốn trong quan tài nữa."
+    }
+  ],
+  "seed": 271,
+  "series": "Kiếm Hiệp Cổ Trang",
+  "slug": "kh27_muoi_ba_co_quan_tai_qua_ai",
+  "source_story": "Ky an kiem hiep Trung Quoc <Shi San Kou Hei Guan> (十三口黑棺) - 13 quan tai den, 12 ho + ho thu 13 bi xoa ten, dua tang qua 13 cong de danh lua ke trom mo, co trang den do nua dem, Viet hoa: quan tai chua vang va bi kip, quan tai thu 13 danh cho nguoi song, chuong quay la cha ruot.",
+  "target_channel": "KENH_005",
+  "tight_pacing": true,
+  "title": "Mười Ba Cỗ Quan Tài Qua Ải",
+  "total_duration_s": 456.0,
+  "voice": "kiemhiep_nam"
+}

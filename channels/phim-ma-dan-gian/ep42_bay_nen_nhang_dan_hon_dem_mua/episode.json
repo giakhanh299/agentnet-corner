@@ -1,0 +1,817 @@
+{
+  "aigc_label": false,
+  "character_bible": {
+    "characters": [
+      {
+        "age": 65,
+        "costume": "áo bà ba chàm sẫm, quần đen, khăn đen",
+        "face": "gương mặt hiền hậu, mắt sâu buồn",
+        "gender": "nữ",
+        "hair": "tóc bạc búi gọn, khăn đen",
+        "id": "ba_lieu",
+        "name": "Bà Liễu",
+        "notes": "Mẹ của Hạnh, đã mất đêm mưa, chỉ hiện hồn trong khói nhang, giữ đúng tuổi 65 và trang phục này",
+        "role": "mẹ đã mất",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": 23,
+        "costume": "áo bà ba chàm sẫm, quần đen, tóc tết bím dài",
+        "face": "gương mặt thanh tú, mắt to lo lắng rồi kiên quyết",
+        "gender": "nữ",
+        "hair": "tóc đen dài tết bím bằng dây vải",
+        "id": "hanh",
+        "name": "Hạnh",
+        "notes": "Con gái bà Liễu, thắp bảy nén nhang dẫn hồn, giữ đúng tuổi 23, tóc bím và trang phục này",
+        "role": "con gái, nhân vật chính",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": 72,
+        "costume": "áo bà ba nâu sẫm, quần đen, tạp dề vải",
+        "face": "gương mặt khắc khổ, râu bạc dài, mắt lo lắng",
+        "gender": "nam",
+        "hair": "tóc bạc, râu bạc dài",
+        "id": "ong_tam",
+        "name": "Ông Tám",
+        "notes": "Thợ làm nhang 60 năm nghề, giữ bí quyết nhang dẫn hồn, giữ đúng tuổi 72 và trang phục này",
+        "role": "thợ làm nhang",
+        "voice": "chautinhtri"
+      },
+      {
+        "age": 19,
+        "costume": "áo dài trắng cũ, không trang sức hiện đại",
+        "face": "chỉ là bóng mờ tái nhợt, không lộ rõ mặt",
+        "gender": "nữ",
+        "hair": "tóc đen dài xõa",
+        "id": "duyen",
+        "name": "Duyên",
+        "notes": "Vong nữ em gái bà Liễu, chết trong trận lũ, hồn chờ dẫn về, chỉ xuất hiện như bóng mờ, tuyệt đối không lộ mặt rõ, không máu me",
+        "role": "vong nữ em gái",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": "trưởng thành",
+        "costume": "không xuất hiện trên hình",
+        "face": "không xuất hiện trên hình",
+        "gender": "nữ",
+        "hair": "không xuất hiện trên hình",
+        "id": "narrator",
+        "name": "Người kể chuyện",
+        "notes": "Chỉ dẫn bằng giọng nói, giọng nữ trầm, chậm, lạnh",
+        "role": "dẫn truyện",
+        "voice": "phonui"
+      }
+    ],
+    "forbidden_all_characters": [
+      "không đeo kính cận",
+      "không đeo đồng hồ hiện đại",
+      "không có đồ vật hiện đại",
+      "không chữ, không watermark, không logo, không máu me"
+    ],
+    "setting": "Làng quê Việt Nam những năm 1960, nhà có bàn thờ, bến sông, xưởng làm nhang, mưa đêm, đèn dầu. Tuyệt đối không đồ hiện đại."
+  },
+  "color_grade": "folk_horror",
+  "cover_hook": "Con gái thắp bảy nén nhang dẫn hồn mẹ đêm mưa, khói nhang hiện ra không phải mẹ mà là một cô gái lạ...",
+  "cover_scene": 12,
+  "cover_theme": "horror",
+  "cover_title": "BẢY NÉN NHANG DẪN HỒN ĐÊM MƯA",
+  "episode": 42,
+  "music": {
+    "gain_db": 0,
+    "generator": "horror"
+  },
+  "scenes": [
+    {
+      "act": 1,
+      "clip": "scene_01.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 1,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a rural Vietnamese village in heavy rain at night, tiled roofs glistening, lanterns flickering, mist over flooded rice fields, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on rain over a rural village at night",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "rain_night"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Làng An Phú chìm trong mưa đêm, mưa rơi ba ngày không dứt, như trời cũng đang khóc cho một người vừa nằm xuống trong đêm mưa lạnh lẽo và buồn bã."
+    },
+    {
+      "act": 1,
+      "clip": "scene_02.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 2,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a 23-year-old Vietnamese woman with long black hair in a braid, wearing a dark indigo ba ba shirt, holding seven unlit incense sticks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the young woman holding seven incense sticks",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "rain_night"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh hai mươi ba tuổi, tay run run ôm bảy nén nhang, mẹ cô là bà Liễu vừa mất đêm mưa, hôm nay đã là ngày thứ ba sau khi bà ra đi."
+    },
+    {
+      "act": 1,
+      "clip": "scene_03.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 3,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 72-year-old Vietnamese incense maker with a long silver beard, wearing a dark brown ba ba shirt, grinding herbs and rolling incense sticks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan across the old incense maker grinding herbs",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám làm nhang đã sáu mươi năm, ông dặn Hạnh: Nhang dẫn hồn chỉ có tác dụng trong ba ngày, quá ba ngày hồn sẽ lạc mất giữa cõi âm u tối."
+    },
+    {
+      "act": 1,
+      "clip": "scene_04.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 4,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a rural Vietnamese ancestral altar at night, a portrait of a 65-year-old woman, oil lamps, fruit offerings and incense smoke curling upward, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tilt up the ancestral altar with a portrait",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Trên bàn thờ, di ảnh bà Liễu nhìn xuống, mắt bà hiền hậu mà buồn, như còn một điều gì chưa kịp nói với con gái ruột của mình trong đời."
+    },
+    {
+      "act": 1,
+      "clip": "scene_05.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 5,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 23-year-old woman lighting the first incense stick from an oil lamp, her hands trembling, rain drumming on the roof, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the daughter lighting the first stick",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh châm nén nhang đầu tiên, khói bay lên thẳng tắp, cô khấn thầm: Mẹ ơi, con thắp nhang dẫn hồn, mẹ về nhà với con một lần cuối trong đêm mưa này."
+    },
+    {
+      "act": 1,
+      "clip": "scene_06.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 6,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 72-year-old incense maker holding an oil lamp, raising a weathered hand to warn the young woman beside the altar, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the incense maker warning the girl",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám kéo Hạnh lại, giọng ông khàn đặc: Bảy nén là bảy vì sao Bắc Đẩu, thắp sai một nén là dẫn nhầm hồn người khác về nhà mình trong đêm tối."
+    },
+    {
+      "act": 1,
+      "clip": "scene_07.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 7,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of seven incense sticks standing in a bronze burner, smoke curling in thin spirals, rain light falling through the window, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over seven incense sticks in the burner",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Bảy nén nhang cắm trong lư đồng, khói cuộn lên thành từng vòng xoáy, mỗi vòng như một bậc thang dẫn từ cõi âm về cõi dương trong đêm mưa lạnh."
+    },
+    {
+      "act": 1,
+      "clip": "scene_08.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 8,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 23-year-old woman counting the incense sticks with trembling fingers, her face pale as she realises one stick is missing, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the daughter counting the sticks in fear",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh đếm đi đếm lại, chỉ còn sáu nén trong tay, một nén đã rơi xuống đất từ lúc nào, ướt sũng trong vũng nước mưa lạnh ngoài hiên nhà."
+    },
+    {
+      "act": 1,
+      "clip": "scene_09.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 9,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of a wet incense stick lying on the wooden floor in a puddle of rainwater, its tip darkened and broken, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Sudden focus pull to the wet incense stick on the floor",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Nén nhang thứ bảy nằm ướt sũng dưới sàn, đầu nhang đã gãy, Hạnh không biết thiếu một nén thì hồn mẹ có tìm được đường về nhà trong đêm mưa không."
+    },
+    {
+      "act": 2,
+      "clip": "scene_10.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 10,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot through thick incense smoke in a dark rural Vietnamese house at night, shadows moving slowly in the haze, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot through incense smoke in the dark house",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Canh ba, khói nhang dày đặc khắp nhà, Hạnh nghe tiếng bước chân nhẹ, rồi tiếng ai đó gọi tên cô từ trong làn khói nhang dày đặc u tối."
+    },
+    {
+      "act": 2,
+      "clip": "scene_11.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 11,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 23-year-old woman frozen before the altar, eyes wide with fear, staring at a figure forming in the incense smoke, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the daughter frozen at the altar",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh nín thở, trong khói nhang một bóng người dần hiện ra, dáng cao gầy, tóc dài, nhưng không phải dáng mẹ cô chút nào mà là dáng một cô gái trẻ lạ."
+    },
+    {
+      "act": 2,
+      "clip": "scene_12.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 12,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a blurred pale female ghost with long black hair, nineteen years old, wearing a white ao dai, forming in incense smoke, face never clearly revealed, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the ghost girl's blurred face in smoke",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Một cô gái trẻ hiện ra trong khói, áo dài trắng, tóc dài xõa, cô nhìn Hạnh bằng đôi mắt buồn, môi mấp máy gọi tên một người đã khuất từ lâu lắm."
+    },
+    {
+      "act": 2,
+      "clip": "scene_13.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 13,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 72-year-old incense maker kneeling to study the incense smoke, his face pale with dread as the smoke bends sideways, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan as the incense maker inspects the smoke",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám quỳ xuống xem khói, ông nói khẽ: Khói không bay thẳng là dẫn nhầm hồn, người về đây không phải mẹ cháu đâu, cháu phải hết sức cẩn thận trong đêm nay."
+    },
+    {
+      "act": 2,
+      "clip": "scene_14.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 14,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of incense smoke curling into the shape of a young woman with long hair, drifting above the altar in cold moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the smoke forming a young woman's silhouette",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Khói nhang cuộn lại thành dáng một cô gái mười chín tuổi, cô đứng lặng trên bàn thờ, tay ôm chặt một chiếc khăn tay đã ố vàng theo năm tháng."
+    },
+    {
+      "act": 2,
+      "clip": "scene_15.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 15,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the blurred pale ghost girl whispering, ink-dark tears on her paper-white cheeks, clutching a yellowed handkerchief, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the ghost girl whispering a name",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Cô gái thì thầm qua làn khói: Chị Liễu ơi, em là Duyên đây, chị còn nhớ em không, em chờ chị ở bến sông bốn mươi năm dài đằng đẵng rồi."
+    },
+    {
+      "act": 2,
+      "clip": "scene_16.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 16,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: handheld shot of the 23-year-old woman running through a misty rural village lane in heavy rain at night, lantern light flickering behind her, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Shaky handheld follow of the daughter running into the rain",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "rain_night"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh bỏ chạy ra ngõ trong mưa, cô chưa từng nghe mẹ nhắc tới cái tên Duyên, vậy mà vong nữ ấy lại gọi mẹ cô bằng chị một cách thân thiết."
+    },
+    {
+      "act": 2,
+      "clip": "scene_17.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 17,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 72-year-old incense maker opening a locked old wooden box, revealing yellowed paper charms and a folded ledger of names, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the incense maker opening an old ledger",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám mở chiếc rương gỗ khóa kỹ bao năm, bên trong là bùa giấy úa vàng và một cuốn sổ ghi tên những người chết trong năm lũ lớn kinh hoàng ấy."
+    },
+    {
+      "act": 2,
+      "clip": "scene_18.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 18,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of a yellowed ledger in lamplight, handwritten names and dates, seven names circled in red ink, one name: Duyen, nineteen years old, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the ledger pages in lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Cuốn sổ ghi rõ bảy cái tên bị khoanh đỏ, bảy người chết trong trận lũ năm ấy, có một cái tên là Duyên, mới mười chín tuổi, chết trong trận lũ năm xưa ấy."
+    },
+    {
+      "act": 2,
+      "clip": "scene_19.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 19,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 23-year-old woman reading the yellowed ledger by oil-lamp light, her face turning pale as she understands the truth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the daughter reading the ledger by lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh đọc tới dòng cuối thì tay cô run lên, Duyên là em gái ruột của mẹ cô, người mà cả nhà đã giấu kín suốt bốn mươi năm dài đằng đẵng."
+    },
+    {
+      "act": 3,
+      "clip": "scene_20.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 20,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a swollen rural Vietnamese river in heavy rain at dawn, broken bamboo, flood debris, mist drifting over the water, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the village to the flooded river",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "rain_night"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Sáng hôm sau Hạnh tìm tới bến sông cũ, nơi bốn mươi năm trước nước lũ cuốn trôi cả một đoạn làng, bảy người đã không bao giờ trở về nữa."
+    },
+    {
+      "act": 3,
+      "clip": "scene_21.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 21,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 72-year-old incense maker standing by the swollen river in the rain, holding an oil lamp, his face heavy with memory, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the old incense maker by the river",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám đứng bên bến sông, giọng ông trầm xuống: Năm ấy lũ về lúc nửa đêm, Duyên mới mười chín tuổi, em gái ruột của mẹ cháu đấy con ạ."
+    },
+    {
+      "act": 3,
+      "clip": "scene_22.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 22,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a swollen river at dusk, a blurred pale female silhouette with long wet hair drifting on the water surface, face never clearly revealed, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the ghost girl's blurred reflection in the river",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Chiều xuống, trên mặt sông, Hạnh thấy bóng Duyên trôi lững lờ, tóc dài xõa trên nước, miệng mấp máy như muốn kể một điều oan khuất đã giấu kín bao nhiêu năm trời."
+    },
+    {
+      "act": 3,
+      "clip": "scene_23.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 23,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of two young Vietnamese sisters in a small wooden boat in a flood, the elder sister clutching the younger sister's hand in the rain, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Flashback-style slow pan over two sisters on a boat",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "rain_night"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Sổ cũ ghi lại, đêm lũ ấy hai chị em cùng trên một chiếc thuyền, thuyền lật, Duyên đã đẩy chị Liễu lên bờ rồi chìm xuống dòng nước lũ lạnh lẽo."
+    },
+    {
+      "act": 3,
+      "clip": "scene_24.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 24,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a blurred pale female ghost with long black hair, lips moving silently, clutching a yellowed handkerchief in the moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the ghost girl whispering her promise",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Duyên thì thầm qua giấc mộng: Chị hứa sẽ thắp nhang dẫn hồn em về, nhưng chị sợ quá, chị không dám đốt bảy nén nhang ấy bao giờ trong suốt bốn mươi năm."
+    },
+    {
+      "act": 3,
+      "clip": "scene_25.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 25,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 72-year-old incense maker kneeling by lamplight, head bowed in shame, confessing to the 23-year-old woman beside him, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the incense maker confessing by lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám cúi đầu thú nhận, năm ấy ông làm nhang dẫn hồn cho nhà bà Liễu, nhưng bà sợ gặp em gái nên đã giấu bảy nén nhang đi suốt bao nhiêu năm trời."
+    },
+    {
+      "act": 3,
+      "clip": "scene_26.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 26,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot of the 23-year-old woman kneeling before the ancestral altar, villagers gathering behind her in the misty house, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot of the daughter confronting the truth at the altar",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Hạnh quỳ trước bàn thờ mẹ, cô nói lớn trong nước mắt: Mẹ ơi, dì Duyên chết vì cứu mẹ, mẹ nợ dì một nén nhang dẫn hồn trong đêm mưa này."
+    },
+    {
+      "act": 3,
+      "clip": "scene_27.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 27,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 72-year-old incense maker's weathered hands trembling as he holds seven fresh incense sticks wrapped in red paper, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the incense maker's hands trembling",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám run run đưa cho Hạnh bảy nén nhang mới, ông nói: Bảy nén này là cho bảy người chết năm lũ, nén cuối cùng là của dì Duyên, em gái mẹ cháu."
+    },
+    {
+      "act": 3,
+      "clip": "scene_28.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 28,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 23-year-old woman holding seven fresh incense sticks in her palm, the ghost girl behind her bowing her head slowly in the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the daughter holding the seven sticks",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh cầm bảy nén nhang lên, vong Duyên sau lưng cô bỗng cúi đầu, như người chờ đợi vừa nghe tên mình được gọi sau bốn mươi năm dài đằng đẵng."
+    },
+    {
+      "act": 3,
+      "clip": "scene_29.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 29,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a 23-year-old woman walking stiffly through a misty village lane in heavy rain toward the river, holding seven incense sticks, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Wide shot of the daughter walking to the river in the rain",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "rain_night"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Đêm thứ ba, Hạnh ôm bảy nén nhang ra bến sông, cô không còn sợ nữa, cô chỉ muốn trả lại cho dì Duyên một nén nhang dẫn hồn trong đêm mưa cuối cùng này."
+    },
+    {
+      "act": 4,
+      "clip": "scene_30.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 30,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a translucent elderly Vietnamese woman with grey hair in a bun, wearing a dark indigo ba ba shirt, appearing in incense smoke above the river, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the mother's soul appearing in incense smoke",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Canh ba, khói nhang cuộn lại thành dáng bà Liễu, hồn mẹ hiện về, giọng bà trầm ấm nhưng buồn, bà nói bà đã chờ đêm này từ rất lâu rồi."
+    },
+    {
+      "act": 4,
+      "clip": "scene_31.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 31,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the translucent elderly woman with grey hair leaning toward the 23-year-old woman, her eyes kind yet heavy with guilt, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight shot of the mother's soul speaking to her daughter",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Bà Liễu nói, bà không phải không thương em gái, bà sợ gặp Duyên vì bà mang tội, chính bà đã sống sót nhờ em mình chết thay cho bà trong trận lũ năm ấy."
+    },
+    {
+      "act": 4,
+      "clip": "scene_32.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 32,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of the 23-year-old woman's hand holding a yellowed handkerchief embroidered with a small flower, trembling in lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the yellowed handkerchief in the daughter's hand",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Thì ra chiếc khăn tay ố vàng trong tay Duyên là của bà Liễu, bà thêu nó tặng em gái đêm trước trận lũ, chưa kịp trao thì nước lũ đã cuốn đi mất."
+    },
+    {
+      "act": 4,
+      "clip": "scene_33.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 33,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 23-year-old woman lighting the seventh incense stick from an oil lamp, a single tear falling in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the daughter lighting the seventh stick",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hạnh hiểu ra, muốn mẹ siêu thoát, cô phải thắp nén thứ bảy thay mẹ, cô châm lửa, khói bay lên thẳng tắp giữa đêm mưa lạnh lẽo ngoài bến sông."
+    },
+    {
+      "act": 4,
+      "clip": "scene_34.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 34,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 23-year-old woman and the 72-year-old incense maker kneeling by the river, the woman holding seven burning incense sticks toward the water, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the ritual of guiding the souls",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Ông Tám hướng dẫn Hạnh giơ bảy nén nhang về phía dòng sông, vừa khấn vừa nói: Hồn này dẫn hồn kia, chị em về với nhau, mưa về với mưa trong đêm nay."
+    },
+    {
+      "act": 4,
+      "clip": "scene_35.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 35,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of two blurred pale female silhouettes with long hair smiling gently as they fade into golden dawn light over the river, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out as the two ghost sisters smile and fade",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Duyên mỉm cười lần đầu tiên, bà Liễu nắm tay em gái, hai bóng hồn tan dần trong nắng sớm, cuối cùng cả hai đã được siêu thoát nhẹ nhàng bên nhau."
+    },
+    {
+      "act": 4,
+      "clip": "scene_36.mp4",
+      "duration_s": 12.0,
+      "ghost": true,
+      "id": 36,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the translucent elderly woman with grey hair bowing deeply to her daughter, then fading into incense smoke at dawn, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the mother's soul bowing in farewell",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hồn bà Liễu cúi đầu chào con gái lần cuối, bà nói: Con đã trả được nợ thay mẹ, từ nay mẹ mới thật sự yên nghỉ được trong lòng đất."
+    },
+    {
+      "act": 4,
+      "clip": "scene_37.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 37,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of seven thin columns of incense smoke rising calmly over a river at dawn, rain stopping, villagers kneeling in prayer on the bank, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow crane shot of incense smoke rising over the river at dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Bảy làn khói nhang bay lên êm ả trong nắng sớm, mưa đã tạnh hẳn, không còn tiếng khóc, chỉ còn khói nhang bay lên trời cao trong nắng sớm."
+    },
+    {
+      "act": 4,
+      "clip": "scene_38.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 38,
+      "image_prompt": "Vertical 9:16 photorealistic 1960s rural Vietnamese folk horror cinema, 35mm film grain, moody chiaroscuro amber oil-lamp and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic high-angle wide shot of a misty rural Vietnamese village lane at dawn after rain, the river calm, a single lantern still burning on the bank, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the village lane into the dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "rain_night"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "phonui",
+      "voiceover": "Trời sáng hẳn, làng An Phú lại yên bình, Hạnh cất bảy nén nhang còn lại vào rương, cô thề cả đời sẽ thắp nhang đúng lễ cho người đã khuất."
+    }
+  ],
+  "seed": 421,
+  "series": "Phim Ma Dân Gian Việt Nam",
+  "slug": "ep42_bay_nen_nhang_dan_hon_dem_mua",
+  "source_story": "Truyen kinh di dan gian Trung Quoc <Yin Hun Xiang> / Fan Hun Xiang (引魂香 / 反魂香) - nhang dan hon, khoi hien vong, cua so 3 ngay, bay nen Bac Dau, Viet hoa: khoi hien vong Duyen em gai me, tran lu nam xua, loi hua dan hon.",
+  "target_channel": "KENH_005",
+  "tight_pacing": true,
+  "title": "Bảy Nén Nhang Dẫn Hồn Đêm Mưa",
+  "total_duration_s": 456.0,
+  "voice": "phonui"
+}

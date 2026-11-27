@@ -1,0 +1,817 @@
+{
+  "aigc_label": false,
+  "character_bible": {
+    "characters": [
+      {
+        "age": 32,
+        "costume": "áo dài gấm xám sẫm, thắt lưng vải, mang trường đao",
+        "face": "gương mặt cương nghị, mắt bịt vải đen, tai thính",
+        "gender": "nam",
+        "hair": "tóc đen búi cao bằng dây vải, bịt mắt vải đen",
+        "id": "trinh",
+        "name": "Trình",
+        "notes": "Đao khách mù, thợ mài dao bên bến đò, thực ra là anh trai thất lạc của Yến, giữ đúng tuổi 32 và trang phục này",
+        "role": "đao khách mù, nhân vật chính",
+        "voice": "chautinhtri"
+      },
+      {
+        "age": 20,
+        "costume": "áo dài chàm sẫm, quần đen, tóc tết bím dài",
+        "face": "gương mặt thanh tú, mắt to lo lắng rồi kiên quyết",
+        "gender": "nữ",
+        "hair": "tóc đen dài tết bím bằng dây vải",
+        "id": "yen",
+        "name": "Yến",
+        "notes": "Con gái chủ quán bến đò, bị vu oan giết anh trai, giữ đúng tuổi 20, tóc bím và trang phục này",
+        "role": "con gái chủ quán, đồng hành",
+        "voice": "kiemhiep_nu"
+      },
+      {
+        "age": 55,
+        "costume": "áo gấm đen, quần đen, đi giày vải",
+        "face": "gương mặt nghiêm khắc, ria mép mỏng, mắt lạnh lùng",
+        "gender": "nam",
+        "hair": "tóc đen chải gọn, búi nhỏ",
+        "id": "ba_ho_vu",
+        "name": "Bá Hộ Vũ",
+        "notes": "Chủ họ Vũ, kẻ chủ mưu chiếm bến đò, giữ đúng tuổi 55 và trang phục này",
+        "role": "phản diện, chủ họ Vũ",
+        "voice": "chautinhtri"
+      },
+      {
+        "age": 16,
+        "costume": "áo vải nâu, quần đen, khăn quấn đầu",
+        "face": "gương mặt non trẻ, mắt to tò mò",
+        "gender": "nam",
+        "hair": "tóc đen búi nhỏ bằng dây vải",
+        "id": "a_sinh",
+        "name": "A Sinh",
+        "notes": "Cậu bé chèo đò, giữ đúng tuổi 16 và trang phục này trong mọi cảnh",
+        "role": "cậu bé chèo đò",
+        "voice": "kiemhiep_nam"
+      },
+      {
+        "age": "trưởng thành",
+        "costume": "không xuất hiện trên hình",
+        "face": "không xuất hiện trên hình",
+        "gender": "nam",
+        "hair": "không xuất hiện trên hình",
+        "id": "narrator",
+        "name": "Người kể chuyện",
+        "notes": "Chỉ dẫn bằng giọng nói, giọng nam trầm, chậm, lạnh",
+        "role": "dẫn truyện",
+        "voice": "kiemhiep_nam"
+      }
+    ],
+    "forbidden_all_characters": [
+      "không đeo kính cận",
+      "không đeo đồng hồ hiện đại",
+      "không có đồ vật hiện đại",
+      "không chữ, không watermark, không logo, không máu me"
+    ],
+    "setting": "Bến đò Qua Sông, quán rượu ven sông, thời cổ trang, đèn lồng đỏ, đao khách mù. Tuyệt đối không đồ hiện đại."
+  },
+  "color_grade": "wuxia",
+  "cover_hook": "Đao khách mù mài dao bên bến đò mười năm, đêm cưới máu đổ, con dao giết người lại là dao của chính chàng...",
+  "cover_scene": 12,
+  "cover_theme": "wuxia_mystery",
+  "cover_title": "NGƯỜI MÀI DAO MÙ BÊN BẾN ĐÒ",
+  "episode": 28,
+  "music": {
+    "gain_db": 0,
+    "generator": "wuxia"
+  },
+  "scenes": [
+    {
+      "act": 1,
+      "clip": "scene_01.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 1,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a rural Vietnamese ferry landing at dusk, wooden boats, red lanterns, mist over the river, a blind man sharpening a blade, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the ferry landing at dusk",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "river_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Bến đò Qua Sông nằm lặng lẽ bên dòng sông lớn, đêm nào cũng có người qua lại, nhưng chỉ có một người ngồi mài dao ở đó suốt mười năm."
+    },
+    {
+      "act": 1,
+      "clip": "scene_02.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 2,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 32-year-old Vietnamese blind swordsman with a black cloth over his eyes, wearing a dark grey robe, sharpening a long blade on a whetstone, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan across the blind swordsman sharpening his blade",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "blade_sharpen"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Trình ba mươi hai tuổi, đao khách mù, mắt chàng bịt vải đen, tay chàng mài dao đều đều, tai chàng nghe rõ từng tiếng bước chân trên bến đò."
+    },
+    {
+      "act": 1,
+      "clip": "scene_03.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 3,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a 20-year-old Vietnamese woman with long black hair in a braid, wearing a dark indigo ao dai, serving wine at a riverside tavern, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the young tavern girl serving wine",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "river_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến hai mươi tuổi, con gái chủ quán bến đò, nàng rót rượu cho khách qua sông, tay nàng run run vì đêm nay là đêm cưới của anh trai nàng."
+    },
+    {
+      "act": 1,
+      "clip": "scene_04.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 4,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 16-year-old Vietnamese ferryman boy in a brown cloth shirt, standing nervously at the tavern doorway in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the young ferryman at the doorway",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "A Sinh mười sáu tuổi, cậu bé chèo đò, cậu đứng lặng ở cửa quán, mắt cậu nhìn đoàn người lạ vừa cập bến, tay nắm chặt mái chèo gỗ trong đêm tối."
+    },
+    {
+      "act": 1,
+      "clip": "scene_05.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 5,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 32-year-old blind swordsman holding his blade, raising a weathered hand to warn the young woman beside the tavern, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the blind man warning the girl",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Trình kéo Yến lại, giọng chàng trầm khàn: Đêm nay gió đổi hướng, đao trong vỏ cũng lạnh, có người mang sát khí qua bến đò này trong đêm tối nay."
+    },
+    {
+      "act": 1,
+      "clip": "scene_06.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 6,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a riverside tavern decorated with red wedding lanterns at night, guests drinking, a bride and groom in red robes at the centre, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the wedding lanterns at the tavern",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Quán bến đò treo đèn lồng đỏ mừng đám cưới, anh trai Yến mặc áo đỏ ngồi giữa bàn tiệc, cười nói với khách, không biết tai họa đang tới gần."
+    },
+    {
+      "act": 1,
+      "clip": "scene_07.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 7,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 32-year-old blind swordsman tilting his head, listening intently, his hand resting on his sword hilt in the dark, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the blind man listening to footsteps",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Trình nghiêng đầu lắng nghe, chàng nghe rõ mười bước chân lạ, nặng nề, đi thẳng về phía quán, không phải bước chân của khách qua đò trong đêm nay."
+    },
+    {
+      "act": 1,
+      "clip": "scene_08.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 8,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 20-year-old woman hiding a long blade under the tavern counter, her fingers trembling slightly in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in as the girl hides the blade",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "blade_sharpen"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến giấu con dao của Trình dưới quầy quán, nàng nói nhỏ: Dao của chàng để đây, đêm nay chàng không cần giết ai nữa đâu, chàng cứ yên tâm."
+    },
+    {
+      "act": 1,
+      "clip": "scene_09.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 9,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: extreme close-up of a masked man in black robes entering the riverside tavern at midnight, his sword glinting coldly in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Sudden focus pull to a masked man entering the tavern",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Canh ba, một người đeo mặt nạ đen bước vào quán, kiếm trong tay ánh lên lạnh lẽo, cả quán rượu im phăng phắc như có ai bóp nghẹt hơi thở."
+    },
+    {
+      "act": 2,
+      "clip": "scene_10.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 10,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot through a riverside tavern in chaos at night, tables overturned, lanterns swaying, swordsmen fighting in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot through the tavern in chaos",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "sword_draw"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Tiếng kiếm chạm nhau vang khắp quán bến đò lúc nửa đêm, bàn ghế đổ ngổn ngang, đèn lồng đung đưa, khách chạy tán loạn ra bến sông trong đêm tối."
+    },
+    {
+      "act": 2,
+      "clip": "scene_11.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 11,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 20-year-old woman frozen beside her fallen brother in red wedding robes, eyes wide with horror in the moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the girl frozen beside her brother",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến đứng chết lặng bên anh trai ngã xuống trong áo cưới đỏ, máu loang trên sàn gỗ, nàng không tin người anh vừa cười nói đã nằm im lặng như thế."
+    },
+    {
+      "act": 2,
+      "clip": "scene_12.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 12,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 32-year-old blind swordsman kneeling to feel a bloodied blade with his fingers, his face pale with dread in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan as the blind man kneels to inspect the blade",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "blade_sharpen"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Trình quỳ xuống sờ lưỡi dao dính máu, chàng nói khẽ: Dao này là dao của ta, có người đã mượn nó trong bóng tối rồi trả lại vỏ ngay ngắn."
+    },
+    {
+      "act": 2,
+      "clip": "scene_13.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 13,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of a long blade wiped clean, lying in its sheath on the tavern counter, a single drop of blood still glistening on the hilt, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the blade wiped clean and returned",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Con dao được lau sạch, đặt lại ngay ngắn trong vỏ, chỉ còn một giọt máu trên chuôi, kẻ giết người biết rõ dao treo ở đâu trong quán rượu này."
+    },
+    {
+      "act": 2,
+      "clip": "scene_14.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 14,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 20-year-old woman clutching her brother's wedding robe, guards pointing at her, her face hard with grief and anger, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the girl accused of murder",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "human_eerie"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Quan binh chỉ vào Yến, họ nói nàng giết anh trai vì tranh gia tài, nàng ôm áo cưới của anh, mắt nàng đỏ hoe mà không nói được lời nào trong đêm cưới ấy."
+    },
+    {
+      "act": 2,
+      "clip": "scene_15.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 15,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 32-year-old blind swordsman tilting his head, listening to the false accusation, his hand tightening on his sword hilt, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the blind man listening to the accusation",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Trình nghiêng đầu nghe lời vu oan, chàng nói: Người mù nghe bằng tai, ta nghe rõ tiếng dao rời vỏ lúc canh ba, không phải tay nàng trong đêm nay đâu."
+    },
+    {
+      "act": 2,
+      "clip": "scene_16.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 16,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: handheld shot of the 20-year-old woman running through a misty riverside lane at night, lantern light flickering behind her in the rain, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Shaky handheld follow of the girl running to the river",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Yến bỏ chạy ra bến sông, nước sông đen ngòm vỗ vào bờ, tiếng khóc của nàng hòa vào tiếng sóng, không ai tin nàng vô tội trong đêm nay cả."
+    },
+    {
+      "act": 2,
+      "clip": "scene_17.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 17,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 32-year-old blind swordsman opening a locked old wooden box, revealing a yellowed ledger and a small jade pendant, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the blind man opening an old wooden box",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wood_creak"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Trình mở chiếc rương gỗ khóa kỹ bao năm, bên trong là một cuốn sổ ghi chép cũ kỹ và một miếng ngọc bội hình rồng đã sứt một góc."
+    },
+    {
+      "act": 2,
+      "clip": "scene_18.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 18,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of a yellowed ledger in lamplight, handwritten names and debts, one name circled in red ink: Vu clan, ferry tolls, twelve years, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the ledger pages in lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "paper_rustle"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Cuốn sổ ghi rõ những món nợ của họ Vũ ở bến đò, có một cái tên bị khoanh đỏ, đó là anh trai Yến, người đã dẫn họ Vũ tới quán đêm nay."
+    },
+    {
+      "act": 2,
+      "clip": "scene_19.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 19,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 20-year-old woman reading the yellowed ledger by oil-lamp light, her face turning pale as she understands the truth, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the girl reading the ledger by lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến đọc tới dòng cuối thì tay nàng run lên, anh trai nàng không phải nạn nhân vô tội, anh đã bán bí mật bến đò cho họ Vũ trong đêm cưới định mệnh ấy."
+    },
+    {
+      "act": 3,
+      "clip": "scene_20.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 20,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a river at dawn, wooden boats drifting in the mist, red lanterns still burning at the ferry landing, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the tavern to the river at dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "river_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Sáng hôm sau Trình tìm tới bến sông, đoàn người họ Vũ đang lên thuyền, đèn đỏ lập lòe trong sương mù buổi sớm mai trên dòng sông lớn mênh mông."
+    },
+    {
+      "act": 3,
+      "clip": "scene_21.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 21,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 55-year-old Vietnamese clan chief with a stern face and thin moustache, wearing a dark brocade robe, standing by the river, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the clan chief by the river",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Bá Hộ Vũ năm mươi lăm tuổi, chủ họ Vũ, ông đứng bên bến sông, giọng ông lạnh như đá: Bến đò này từ nay thuộc về họ Vũ, ai cản thì chết."
+    },
+    {
+      "act": 3,
+      "clip": "scene_22.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 22,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 20-year-old woman's face reflected in the river water, her eyes cold and distant in the morning light, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the girl's reflection in the river",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "river_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến soi mặt mình xuống dòng sông, nàng nói lạnh lùng: Ta tới đây không phải để khóc, ta tới để đòi lại một món nợ máu trong đêm cưới."
+    },
+    {
+      "act": 3,
+      "clip": "scene_23.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 23,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a riverside tavern burning at night, a young boy carrying a small girl out of the flames, snow falling in the dark, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Flashback-style slow pan over a burning tavern",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Sổ cũ ghi lại, đêm quán cháy mười hai năm trước, một cậu bé đã bế em gái chạy ra khỏi lửa, mắt cậu bị khói làm mù từ đêm ấy."
+    },
+    {
+      "act": 3,
+      "clip": "scene_24.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 24,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 20-year-old woman whispering, her hand on her brother's wedding robe, tears glinting in her eyes in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight close-up of the girl whispering her suspicion",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến thì thầm qua kẽ răng: Anh trai ta không chết vì bị giết, anh chết vì bị diệt khẩu, họ Vũ sợ anh nói ra bí mật của chúng."
+    },
+    {
+      "act": 3,
+      "clip": "scene_25.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 25,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 32-year-old blind swordsman kneeling by lamplight, head bowed in shame, confessing to the 20-year-old woman beside him, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow dolly in on the blind man confessing by lamplight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Trình cúi đầu thú nhận, năm ấy chàng là sát thủ của họ Vũ, chàng đã mài dao cho chúng, không ngờ con dao ấy lại giết người ở bến đò."
+    },
+    {
+      "act": 3,
+      "clip": "scene_26.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 26,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tracking shot of the 32-year-old blind swordsman confronting the Vu clan on the ferry landing, martial artists gathering behind him in the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow tracking shot of the blind man confronting the clan",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "footsteps"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Trình quay lại chặn đoàn họ Vũ giữa bến đò, chàng nói lớn trước mặt bao người: Dao giết người là dao của ta, nhưng tay cầm dao không phải ta."
+    },
+    {
+      "act": 3,
+      "clip": "scene_27.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 27,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 55-year-old clan chief's face turning pale, his hand trembling as he clutches a jade seal, guilt and fear in his eyes, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Reaction shot of the clan chief's face turning pale",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "horror_stinger"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Bá Hộ Vũ tái mặt, tay ông run run nắm chặt con dấu ngọc, đó là vật chứng anh trai Yến để lại, ông giấu nó bao năm vì sợ sự thật lộ ra."
+    },
+    {
+      "act": 3,
+      "clip": "scene_28.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 28,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 20-year-old woman holding a small jade seal in her palm, the blind swordsman behind her bowing his head slowly in the mist, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the girl holding the jade seal",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến cầm con dấu ngọc lên, Trình sau lưng nàng bỗng cúi đầu, như người tù vừa nghe tên mình được gọi sau bao nhiêu năm tội lỗi đằng đẵng."
+    },
+    {
+      "act": 3,
+      "clip": "scene_29.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 29,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of a 32-year-old blind swordsman walking stiffly through a misty ferry landing in heavy rain toward the river, holding his blade, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Wide shot of the blind man walking to the ferry in the rain",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "river_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Đêm thứ hai, Trình ôm đao ra bến sông, chàng không còn trốn nữa, chàng chỉ muốn trả lại cho Yến một lời xin lỗi và một sự thật trong đêm nay."
+    },
+    {
+      "act": 4,
+      "clip": "scene_30.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 30,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of a 32-year-old blind swordsman with a black cloth over his eyes, kneeling before the young woman in lamplight, his voice trembling, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the blind man revealing his past",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Canh ba, Trình quỳ xuống trước mặt Yến, giọng chàng run run, chàng nói chàng chính là anh trai thất lạc của nàng, người ai cũng tưởng đã chết trong đám cháy năm xưa."
+    },
+    {
+      "act": 4,
+      "clip": "scene_31.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 31,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: tight shot of the 20-year-old woman leaning toward the kneeling blind man, her eyes wide with shock and disbelief in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Tight shot of the girl hearing the truth",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "heartbeat"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến chết lặng, mười hai năm nàng tưởng anh trai đã chết trong đám cháy, hóa ra anh sống ẩn thân mài dao bên bến để bảo vệ em gái."
+    },
+    {
+      "act": 4,
+      "clip": "scene_32.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 32,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: macro shot of burned tavern ruins in cold moonlight, a small child's wooden toy lying in the ashes, smoke still curling upward, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pan over the burned tavern ruins in moonlight",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Thì ra mắt Trình mù vì cứu Yến khỏi đám cháy năm ấy, chàng bế em ra khỏi lửa, khói làm mù mắt chàng, còn em thì không nhớ gì nữa."
+    },
+    {
+      "act": 4,
+      "clip": "scene_33.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 33,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: close-up of the 20-year-old woman gently touching the black cloth over the blind swordsman's eyes, tears falling in the lamplight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Close-up of the girl touching the blind man's face",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Yến chạm tay lên tấm vải đen che mắt anh trai, nàng khóc: Anh mù vì cứu em, vậy mà em lại nghi anh là kẻ giết người trong đêm cưới."
+    },
+    {
+      "act": 4,
+      "clip": "scene_34.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 34,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 32-year-old blind swordsman and the 20-year-old woman fighting masked assassins at a ferry landing in moonlight, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the duel at the ferry landing",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "sword_draw"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Trình và Yến cùng rút đao, hai anh em lưng tựa lưng giữa bến đò, đánh tan đám sát thủ đeo mặt nạ của họ Vũ trong ánh trăng lạnh lẽo."
+    },
+    {
+      "act": 4,
+      "clip": "scene_35.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 35,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of the 55-year-old clan chief kneeling in surrender at dawn, his sword laid on the ground, the blind swordsman standing over him, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out as the clan chief surrenders at dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "fire_lamp"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "chautinhtri",
+      "voiceover": "Bá Hộ Vũ quỳ xuống xin hàng trong nắng sớm, ông nói: Ta thua rồi, bến đò trả lại cho dân, món nợ máu này ta trả bằng cả họ Vũ."
+    },
+    {
+      "act": 4,
+      "clip": "scene_36.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 36,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: medium shot of the 32-year-old blind swordsman bowing deeply to the 20-year-old woman, the young woman kneeling in return at dawn, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow push-in on the siblings bowing to each other",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "wind_mourn"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nu",
+      "voiceover": "Hai anh em cúi đầu chào nhau lần đầu tiên sau mười hai năm, Trình nói: Em đã sống sót qua ải, từ nay anh không còn phải trốn nữa."
+    },
+    {
+      "act": 4,
+      "clip": "scene_37.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 37,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: wide shot of wooden ferry boats drifting calmly on a river at dawn, rain stopping, villagers kneeling in prayer on the bank, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow crane shot of the ferry boats drifting at dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "river_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Thuyền đò lại trôi êm ả trong nắng sớm, mưa đã tạnh, không còn tiếng khóc, chỉ còn tiếng mái chèo khua nước trên dòng sông lớn trong nắng sớm."
+    },
+    {
+      "act": 4,
+      "clip": "scene_38.mp4",
+      "duration_s": 12.0,
+      "ghost": false,
+      "id": 38,
+      "image_prompt": "Vertical 9:16 photorealistic ancient Vietnamese-Chinese wuxia cinema, 35mm film grain, moody chiaroscuro amber lantern light and cold cyan moonlight, rich environmental detail, no text, no watermark, no logos, no gore: cinematic high-angle wide shot of a misty river ferry landing at dawn, the tavern quiet, a single red lantern still burning above the gate, strictly authentic historical period, no modern eyeglasses, no wristwatches, no modern objects, no text, no watermark, no logos",
+      "motion": "Slow pull-out from the ferry landing into the dawn",
+      "sfx": [
+        {
+          "at": 0,
+          "gain_db": -23,
+          "tag": "river_wind"
+        }
+      ],
+      "vo_at": 0.12,
+      "voice": "kiemhiep_nam",
+      "voiceover": "Trời sáng hẳn, bến đò lại yên bình, Trình cất thanh đao vào vỏ, chàng thề cả đời sẽ mài dao cho dân lành, không mài dao cho kẻ ác nữa."
+    }
+  ],
+  "seed": 281,
+  "series": "Kiếm Hiệp Cổ Trang",
+  "slug": "kh28_nguoi_mai_dao_mu_ben_ben_do",
+  "source_story": "Ky an kiem hiep Trung Quoc <Mang Dao Ke> / Mu Zhong Wu Ren (盲刀客 / 目中无人) - dao khach mu, tho san tien thuong, co gai quan tro bi vu oan giet anh, ho Vu tham quyen, dao muon giet nguoi roi lau sach tra lai vo, Viet hoa: dao cua Trinh, anh trai ban bi mat, Trinh mu vi cuu em gai khoi lua.",
+  "target_channel": "KENH_005",
+  "tight_pacing": true,
+  "title": "Người Mài Dao Mù Bên Bến Đò",
+  "total_duration_s": 456.0,
+  "voice": "kiemhiep_nam"
+}
