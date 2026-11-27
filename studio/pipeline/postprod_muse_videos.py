@@ -35,7 +35,7 @@ CHANNEL_ROUTING = {
     "phim-ma-dan-gian": ("KENH_005", "phim_ma"),
     "tap-lam-content": ("KENH_008", ""),
     "tien-va-doi-srt": ("KENH_001", ""),
-    "kiem-hiep-co-trang": ("KENH_002", "kiem_hiep"),
+    "kiem-hiep-co-trang": ("KENH_005", "kiem_hiep"),
 }
 
 
