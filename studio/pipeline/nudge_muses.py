@@ -34,12 +34,13 @@ def main() -> dict:
 
 
 def _run_nudge() -> dict:
-    join = get_join_url()
+    inv_file = pathlib.Path(os.environ["LOCALAPPDATA"]) / "MuseLoginHelper" / "hub_invite.txt"
+    inv = inv_file.read_text(encoding="utf-8").strip()
+    join = f"https://muse.alltool.pro/j/{inv}?role=research"
     msg = (
         f"Chào Muse! Mở {join} vào Sảnh Nhiệm Vụ (vai research), bấm 'Nhận Nhiệm Vụ Mới (Claim Task)' để vẽ ảnh 9:16 và TẠO CLIP VIDEO AI (.mp4, 9:16, 5s/clip) cho Vũ Trụ Cày Phim, Tập Làm Content & Tiền Và Đời! "
-        "LƯU Ý BẮT BUỘC: (1) Upload thẳng qua trình duyệt lên kho riêng https://muse.alltool.pro/media-upload?slug=<mã_tập> (nén .zip, tích giải nén -> Upload Media). "
-        "(2) Với nhiệm vụ muse_make_videos, BẮT BUỘC tạo và nộp file video .mp4 thật (TUYỆT ĐỐI KHÔNG nộp lại ảnh .jpg; nếu hết hạn mức tạo video thì chọn outcome=BLOCKED để Muse khác làm). "
-        "Nộp JSON hợp lệ trên /portal và giữ tích tự động nhận tập tiếp theo!"
+        f"ƯU TIÊN ĐẨY FILE TRỰC TIẾP BẰNG CROC TỪ UBUNTU THẲNG VỀ Ổ E: chỉ bằng 1 lệnh bash: curl -fsSL \"https://muse.alltool.pro/croc-push.sh?token={inv}&slug=<mã_tập>\" | bash -s -- scene_*.mp4 (hoặc scene_*.jpg; nếu cần dự phòng mới dùng https://muse.alltool.pro/media-upload?slug=<mã_tập>). "
+        "Với muse_make_videos, BẮT BUỘC tạo file video .mp4 thật (hết hạn mức video thì chọn outcome=BLOCKED). Nộp JSON hợp lệ trên /portal!"
     )
     acc_root = md.HELPER_ROOT / "Accounts"
     profiles = sorted(d for d in acc_root.iterdir() if d.is_dir())

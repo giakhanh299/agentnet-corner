@@ -86,6 +86,14 @@ def init_hub_tables(connect_fn, root):
                 default_role TEXT NOT NULL,
                 status TEXT NOT NULL
             );
+            CREATE TABLE IF NOT EXISTS croc_offers(
+                id TEXT PRIMARY KEY,
+                slug TEXT NOT NULL,
+                croc_code TEXT NOT NULL,
+                status TEXT NOT NULL,
+                created_at REAL NOT NULL,
+                updated_at REAL NOT NULL
+            );
         ''')
 
 
@@ -130,6 +138,55 @@ class HubManager:
             return False
         expected = json.loads(row['value']).get('sha256', '')
         return bool(expected) and hmac.compare_digest(_sha256(supplied), expected)
+
+    def verify_invite_token(self, raw_code: str) -> bool:
+        code = (raw_code or '').strip()
+        if not (8 <= len(code) <= 80):
+            return False
+        now = time.time()
+        with self.connect(self.registry.root) as db:
+            row = db.execute(
+                "SELECT expires_at, status FROM hub_invites WHERE code_hash=?",
+                (_sha256(code),),
+            ).fetchone()
+        return bool(row and row['status'] == 'ACTIVE' and float(row['expires_at']) > now)
+
+    def create_croc_offer(self, slug: str, croc_code: str) -> dict:
+        if not SAFE_SLUG_RE.match(slug or ''):
+            raise ValueError('invalid_slug')
+        code = re.sub(r'[^a-zA-Z0-9_-]', '', croc_code or '')
+        if not (12 <= len(code) <= 96):
+            raise ValueError('invalid_croc_code')
+        oid = secrets.token_hex(8)
+        now = time.time()
+        with self.lock, self.connect(self.registry.root) as db:
+            db.execute("DELETE FROM croc_offers WHERE created_at < ?", (now - 1800,))
+            db.execute(
+                "INSERT INTO croc_offers VALUES(?,?,?,?,?,?)",
+                (oid, slug, code, 'PENDING', now, now),
+            )
+        return {'id': oid, 'slug': slug, 'status': 'PENDING'}
+
+    def claim_pending_croc_offers(self, limit: int = 5) -> list[dict]:
+        now = time.time()
+        with self.lock, self.connect(self.registry.root) as db:
+            # Expire stale offers older than 90s
+            db.execute("UPDATE croc_offers SET status='EXPIRED', updated_at=? WHERE status IN ('PENDING','RECEIVING') AND created_at < ?", (now, now - 90))
+            rows = db.execute(
+                "SELECT id, slug, croc_code, created_at FROM croc_offers WHERE status='PENDING' ORDER BY created_at ASC LIMIT ?",
+                (max(1, min(10, int(limit))),),
+            ).fetchall()
+            out = [dict(r) for r in rows]
+            for r in out:
+                db.execute("UPDATE croc_offers SET status='RECEIVING', updated_at=? WHERE id=?", (now, r['id']))
+        return out
+
+    def ack_croc_offer(self, oid: str, status: str = 'DONE') -> dict:
+        st = status if status in ('DONE', 'FAILED') else 'DONE'
+        now = time.time()
+        with self.lock, self.connect(self.registry.root) as db:
+            db.execute("UPDATE croc_offers SET status=?, updated_at=? WHERE id=?", (st, now, oid))
+        return {'ok': True, 'id': oid, 'status': st}
 
     # --- Invite & auto-role balancing ---
     def create_invite(self, ttl_minutes=60, max_uses=20, targets=None, default_role='research') -> dict:
@@ -634,6 +691,58 @@ def make_hub_handler(hub: HubManager):
                         resp['items'] = hub.ggmap.list_items(qs.get('filter', ['all'])[0])
                     return self.send_json(200, resp)
 
+                if route == '/croc-offers':
+                    tok = (qs.get('token', [''])[0] or self.headers.get('X-Invite-Token', '')).strip()
+                    w, _ = self.current_worker()
+                    if not (w or self.current_admin() or hub.verify_invite_token(tok)):
+                        return self.send_json(403, {'error': 'auth_required'})
+                    return self.send_json(200, {'ok': True, 'offers': hub.claim_pending_croc_offers(5)})
+
+                if route == '/croc-push.sh':
+                    tok = (qs.get('token', [''])[0] or '').strip()
+                    slug_q = (qs.get('slug', [''])[0] or '').strip()
+                    if not hub.verify_invite_token(tok):
+                        return self.send_json(403, {'error': 'invalid_invite_token'})
+                    base = self.origin_base()
+                    script = f'''#!/usr/bin/env bash
+set -euo pipefail
+SLUG="${{SLUG:-{slug_q}}}"
+if [ -z "$SLUG" ] || [ "$#" -lt 1 ]; then
+  echo "Usage: curl -fsSL '{base}/croc-push.sh?token={tok}&slug=<slug>' | bash -s -- scene_*.mp4" >&2
+  exit 1
+fi
+mkdir -p /tmp/croc_bin
+if [ ! -x /tmp/croc_bin/croc ]; then
+  curl -fsSL "https://github.com/schollz/croc/releases/download/v11.6.7/croc_v11.6.7_Linux-64bit.tar.gz" | tar -xz -C /tmp/croc_bin croc
+  chmod +x /tmp/croc_bin/croc
+fi
+ZIP_PATH="/tmp/${{SLUG}}_croc_$$.zip"
+python3 -c '
+import pathlib, sys, zipfile
+zpath = pathlib.Path(sys.argv[1])
+with zipfile.ZipFile(zpath, "w", compression=zipfile.ZIP_STORED) as zf:
+    for arg in sys.argv[2:]:
+        p = pathlib.Path(arg)
+        if p.is_file():
+            zf.write(p, arcname=p.name)
+        elif p.is_dir():
+            for f in sorted(p.iterdir()):
+                if f.is_file():
+                    zf.write(f, arcname=f.name)
+' "$ZIP_PATH" "$@"
+CODE="agy-${{SLUG}}-$(python3 -c 'import secrets; print(secrets.token_hex(6))')"
+CROC_SECRET="$CODE" timeout 75 /tmp/croc_bin/croc --quiet send "$ZIP_PATH" &
+CROC_PID=$!
+sleep 2
+curl -fsSL -X POST "{base}/croc-offer?token={tok}" \\
+  -H "Content-Type: application/json" \\
+  -d "{{\\"slug\\":\\"${{SLUG}}\\",\\"code\\":\\"${{CODE}}\\"}}" >/dev/null
+wait "$CROC_PID"
+rm -f "$ZIP_PATH"
+echo "CROC_PUSH_TO_E_OK slug=$SLUG"
+'''
+                    return self.send_bytes(200, script.encode('utf-8'), 'text/x-shellscript; charset=utf-8', cache_control='no-store')
+
                 return self.send_json(404, {'error': 'not_found'})
             except QueueError as e:
                 return self.send_json(e.code, {'error': e.message})
@@ -657,6 +766,17 @@ def make_hub_handler(hub: HubManager):
                     data = json.loads(self.read_body().decode('utf-8'))
                     joined = hub.join_with_invite(data.get('code', ''), self.client_ip(), data.get('role') or None)
                     return self.send_json(200, joined)
+
+                if route in ('/croc-offer', '/croc-ack'):
+                    qs = parse_qs(urlsplit(self.path).query)
+                    tok = (qs.get('token', [''])[0] or self.headers.get('X-Invite-Token', '')).strip()
+                    w, _ = self.current_worker()
+                    if not (w or self.current_admin() or hub.verify_invite_token(tok)):
+                        return self.send_json(403, {'error': 'auth_required'})
+                    data = json.loads(self.read_body().decode('utf-8') or '{}')
+                    if route == '/croc-offer':
+                        return self.send_json(200, hub.create_croc_offer(data.get('slug', ''), data.get('code', '')))
+                    return self.send_json(200, hub.ack_croc_offer(data.get('id', ''), data.get('status', 'DONE')))
 
                 if route == '/media-upload':
                     w, _ = self.current_worker()
