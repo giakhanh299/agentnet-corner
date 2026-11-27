@@ -36,7 +36,7 @@ res = rq.get({'id': 'chief-local', 'role': 'controller'}, '/tasks')
 data = res[1] if isinstance(res, tuple) and len(res) >= 2 else res
 if isinstance(data, (bytes, str)):
     data = json.loads(data)
-rows = [r for r in (data.get('tasks', []) if isinstance(data, dict) else data) if r.get('kind') in ('muse_draw_images', 'muse_make_videos')]
+rows = [r for r in (data.get('tasks', []) if isinstance(data, dict) else data) if r.get('kind') in ('muse_draw_images', 'muse_make_videos', 'muse_write_script', 'muse_fix_script', 'muse_qa_score')]
 print(json.dumps(rows, ensure_ascii=False))
 """
     ssh = connect_vps_ssh(timeout=25)
