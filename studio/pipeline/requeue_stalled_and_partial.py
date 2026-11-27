@@ -4,6 +4,7 @@
    reset it back to QUEUED with the exact list of missing scene_XX.mp4 clips (and explicit warning against submitting .jpg).
 """
 import json
+import os
 import re
 import sys
 import time
@@ -54,17 +55,26 @@ def main():
                 title = spec.get("title", slug)
                 series = spec.get("series", ch_key)
                 sc_list = ", ".join(f"scene_{i:02d}" for i in missing)
+                inv_p = Path(os.environ.get("LOCALAPPDATA", "")) / "MuseLoginHelper" / "hub_invite.txt"
+                inv_tok = inv_p.read_text(encoding="utf-8").strip() if inv_p.is_file() else ""
+                croc_hint = (
+                    f"BƯỚC 4 (ĐẨY THẲNG VỀ Ổ E: QUA CROC): Chạy lệnh bash trong Ubuntu của Muse: "
+                    f"curl -fsSL \"https://muse.alltool.pro/croc-push.sh?token={inv_tok}&slug={slug}\" | bash -s -- scene_*.mp4 "
+                    f"(chờ báo CROC_PUSH_TO_E_OK; dự phòng mới dùng https://muse.alltool.pro/media-upload?slug={slug}). "
+                ) if inv_tok else (
+                    f"BƯỚC 4: Nén thành .zip (đặt tên {sc_list}.mp4) và upload tại https://muse.alltool.pro/media-upload?slug={slug}. "
+                )
                 new_payload = {
                     "excluded_nodes": excl,
-                    "objective": f"[{slug}] MUSE TẠO VIDEO 9:16 ({len(missing)} clip .mp4 CÒN THIẾU): '{title}' ({series}) — tạo {sc_list}.mp4 + up /media-upload.",
+                    "objective": f"[{slug}] MUSE TẠO VIDEO 9:16 ({len(missing)} clip .mp4 CÒN THIẾU): '{title}' ({series}) — tạo {sc_list}.mp4 + đẩy croc thẳng về ổ E:.",
                     "acceptance_criteria": (
                         f"BẮT BUỘC TẠO FILE VIDEO .MP4 (TUYỆT ĐỐI KHÔNG NỘP LẠI ẢNH .JPG!). "
                         f"Tập '{title}' ({series}, mã {slug}) còn thiếu {len(missing)} clip video: {sc_list}. "
                         f"BƯỚC 1: Đọc kịch bản tại {spec_url}. "
                         f"BƯỚC 2: Tải ảnh đầu vào tại https://muse.alltool.pro/media/{slug}/ ({sc_list}.jpg). "
                         f"BƯỚC 3: Dùng công cụ tạo video AI (Image-to-Video) của chính Muse biến {len(missing)} ảnh đó thành {len(missing)} clip dọc 9:16 (.mp4, 5s/clip, chuyển động mượt, KHÔNG chữ/watermark). "
-                        f"BƯỚC 4: Nén thành .zip (đặt tên {sc_list}.mp4) và upload qua trình duyệt tại https://muse.alltool.pro/media-upload?slug={slug} (tích giải nén zip -> Upload Media). "
-                        f"BƯỚC 5: Nộp JSON chứa mảng \"videos\" với link .mp4 thật (KHÔNG nộp ảnh .jpg). Nếu tài khoản hết hạn mức tạo video, chọn outcome=BLOCKED để Muse khác nhận!"
+                        f"{croc_hint}"
+                        f"BƯỚC 5: Nộp JSON chứa mảng \"videos\" đã gửi qua croc_E (KHÔNG nộp ảnh .jpg). Nếu tài khoản hết hạn mức tạo video, chọn outcome=BLOCKED để Muse khác nhận!"
                     ),
                 }
                 requeue_vid_updates.append({"id": t["id"], "slug": slug, "missing": missing, "prev_owner": own, "payload": new_payload})

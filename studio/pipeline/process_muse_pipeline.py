@@ -7,6 +7,7 @@
 import base64
 import http.cookiejar
 import json
+import os
 import re
 import subprocess
 import sys
@@ -282,8 +283,15 @@ def main():
     new_vid_tasks = []
     ready_for_postprod = []
 
-    # Check both SUBMITTED draw tasks AND any slug on E: that already has 11 verified images
+    # Check SUBMITTED draw tasks, VPS-synced slugs, AND any slug landed directly on E: via croc!
     candidate_slugs = set(vps_sync["synced_slugs"].keys())
+    for ch_dir in MEDIA_ROOT.iterdir() if MEDIA_ROOT.is_dir() else []:
+        if ch_dir.is_dir():
+            for ep_d in ch_dir.iterdir():
+                if ep_d.is_dir() and ((ep_d / "01_muse_images").is_dir() or (ep_d / "02_muse_clips").is_dir()):
+                    candidate_slugs.add(ep_d.name)
+    inv_path = Path(os.environ.get("LOCALAPPDATA", "")) / "MuseLoginHelper" / "hub_invite.txt"
+    inv_tok = inv_path.read_text(encoding="utf-8").strip() if inv_path.is_file() else ""
     for t in draw_done:
         res = t.get("result") or {}
         obj_txt = (t.get("payload") or {}).get("objective", "")
@@ -345,13 +353,20 @@ def main():
             # Only enqueue missing clip scenes if some clips already exist!
             missing = [i for i in range(1, n_img + 1) if not verify_mp4(clip_dir / f"scene_{i:02d}.mp4")]
             sc_hint = f"scene_01.jpg đến scene_{n_img:02d}.jpg" if len(missing) == n_img else f"các cảnh còn thiếu: {missing}"
+            croc_step = (
+                f"BƯỚC 4 (ƯU TIÊN ĐẨY THẲNG VỀ Ổ E: QUA CROC): Trong Ubuntu của Muse chạy 1 lệnh: "
+                f"curl -fsSL \"https://muse.alltool.pro/croc-push.sh?token={inv_tok}&slug={slug}\" | bash -s -- scene_*.mp4 "
+                f"(chờ báo CROC_PUSH_TO_E_OK; chỉ dùng https://muse.alltool.pro/media-upload?slug={slug} khi cần dự phòng). "
+            ) if inv_tok else (
+                f"BƯỚC 4: Nén các clip .mp4 thành .zip rồi upload tại https://muse.alltool.pro/media-upload?slug={slug} (tích giải nén zip -> Upload Media). "
+            )
             criteria = (
                 f"VAI TRÒ: MUSE TẠO CLIP VIDEO (Image-to-Video) cho tập '{title}' (kênh {series}, mã {slug}). "
                 f"BƯỚC 1: Đọc kịch bản tại {spec_url} để xem chuyển động từng cảnh (5s/cảnh). "
                 f"BƯỚC 2: Tải ảnh 9:16 đã duyệt từ kho riêng: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
                 f"BƯỚC 3: Dùng công cụ TẠO VIDEO TỪ ẢNH (Image-to-Video) của chính Muse để biến {len(missing)} ảnh đó thành {len(missing)} clip video dọc 9:16 (.mp4, 4-5s/clip, chuyển động điện ảnh mượt mà, KHÔNG biến dạng mặt/tay, KHÔNG chữ/watermark). "
-                f"BƯỚC 4: Nén các clip .mp4 (đặt tên scene_01.mp4..scene_{n_img:02d}.mp4) thành 1 file .zip rồi upload qua TRÌNH DUYỆT tại https://muse.alltool.pro/media-upload?slug={slug} (tích giải nén zip -> Upload Media). KHÔNG dùng catbox.moe. "
-                f"BƯỚC 5 (NỘP): Dán JSON hợp lệ trong summary: {{\"channel\":\"{ch_key}\",\"slug\":\"{slug}\",\"videos\":[{{\"scene\":1,\"url\":\"https://muse.alltool.pro/media/{slug}/scene_01.mp4\",\"duration_s\":5,\"tool\":\"Muse video\"}},...]}}."
+                f"{croc_step}"
+                f"BƯỚC 5 (NỘP): Dán JSON hợp lệ trong summary: {{\"channel\":\"{ch_key}\",\"slug\":\"{slug}\",\"delivery\":\"croc_E\",\"videos\":[{{\"scene\":1,\"file\":\"scene_01.mp4\",\"duration_s\":5,\"tool\":\"Muse video\"}},...]}}. Nếu hết hạn mức video, chọn outcome=BLOCKED!"
             )
             new_vid_tasks.append({
                 "dedup": dedup,
