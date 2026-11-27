@@ -386,6 +386,8 @@ def main():
         clip_dir = ep_dir / "02_muse_clips"
         # Download any external URLs (e.g. tmpfiles.org) if not already on E:
         for item in ((parsed or {}).get("images") or []):
+            if not isinstance(item, dict):
+                continue
             sc = int(item.get("scene") or 0)
             url = (item.get("url") or "").strip()
             if sc >= 1 and url.startswith("http"):
@@ -393,6 +395,8 @@ def main():
                 if not dst.is_file() or dst.stat().st_size < 4096:
                     download_file(url, dst)
         for item in ((parsed or {}).get("videos") or []):
+            if not isinstance(item, dict):
+                continue
             sc = int(item.get("scene") or 0)
             url = (item.get("url") or "").strip()
             if sc >= 1 and url.startswith("http"):
