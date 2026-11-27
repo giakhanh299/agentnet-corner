@@ -32,7 +32,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty bamboo mountain light, a large bronze bell hanging at an ancient stone sword gate, fog drifting, lantern glow, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Chuông chỉ vang khi thiên hạ sắp nổi phong ba.",
+      "voiceover": "Tương truyền trên đỉnh Kiếm Môn Quan hiểm trở có treo một quả chuông đồng cổ chỉ tự ngân vang mỗi khi giang hồ sắp nổi cơn đại biến!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -113,7 +113,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 2,
@@ -121,7 +121,7 @@
       "duration_s": 5.0,
       "image_prompt": "Soft dawn light and misty bamboo mountain, a tall ancient stone gate with carved swords, pine trees, fog, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Cổng Kiếm Môn sừng sững giữa núi sương mù sớm.",
+      "voiceover": "Cổng đá rêu phong cao chạm tầng mây sừng sững chắn ngang hẻm vực độc đạo, hai bên vách núi dựng đứng như lưỡi kiếm chém thẳng xuống đất.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -216,7 +216,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 3,
@@ -224,7 +224,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty bamboo mountain light, close view of a bronze bell with carved patterns swaying gently, mountain wind, lantern glow, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Chiếc chuông đồng treo cao, lặng đón gió núi về.",
+      "voiceover": "Quả chuông đồng xanh khắc đầy cổ tự treo lơ lửng dưới vòm cổng đá suốt trăm năm không cần dùi gỗ gõ.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -319,7 +319,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 4,
@@ -327,7 +327,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty bamboo mountain light, wind moving through a bronze bell mouth, bamboo leaves shaking, distant peaks in fog, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Gió luồn qua miệng chuông tạo nên tiếng ngân trầm.",
+      "voiceover": "Ấy thế mà tờ mờ sáng hôm ấy không ai chạm vào, miệng chuông bỗng ngân lên một tiếng trầm hùng rung chuyển cả rừng trúc!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -430,7 +430,7 @@
       "duration_s": 5.0,
       "image_prompt": "Warm lantern light and misty bamboo mountain, a gate keeper in wuxia robes listening with hand on sword hilt, stone gate, fog, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Người giữ cổng lắng nghe, tay đặt lên chuôi kiếm.",
+      "voiceover": "Vị lão nhân gác cổng đặt tay lên chuôi kiếm bên hông, ngước nhìn tầng mây xám cuồn cuộn đổi chiều trên đỉnh đèo cao.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -526,7 +526,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty bamboo mountain light, a gate keeper pointing toward changing clouds above a bronze bell, wind-blown robes, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Tiếng chuông không báo ma, chỉ báo gió đổi chiều.",
+      "voiceover": "Lão trầm giọng giảng cho đám đệ tử trẻ: Không phải quỷ thần báo mộng đâu, mà là cổ nhân đúc chuông theo nguyên lý phong áp của hẻm núi!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -635,7 +635,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 7,
@@ -643,7 +643,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cold misty bamboo mountain light, close view of bronze bell surface with frost and carved patterns, lantern glow, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Đồng giãn nở khi trời lạnh, âm thanh vang xa.",
+      "voiceover": "Mỗi khi luồng khí lạnh cực mạnh chuẩn bị tràn qua khe vực báo hiệu bão lớn, thân đồng co rút cộng hưởng với gió hẻm phát thành tiếng ngân.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -724,7 +724,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 8,
@@ -732,7 +732,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty bamboo mountain light, a wide valley with echoing sound waves over terraced slopes, bronze bell on a cliff gate, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Núi cao dội âm, tiếng chuông vọng khắp thung lũng.",
+      "voiceover": "Vách đá dựng đứng hai bên thung lũng hoạt động như chiếc loa khổng lồ đẩy âm thanh vang vọng xa hàng chục dặm đường núi.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -834,7 +834,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 9,
@@ -842,7 +842,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty bamboo mountain light, a wandering swordsman in wuxia robes stopping before a moss-covered stone gate, fog, lantern glow, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Kiếm khách dừng bước, ngẩng nhìn cổng đá phủ rêu.",
+      "voiceover": "Đám hiệp khách đi đường bên dưới nghe tiếng chuông đồng liền lập tức dừng ngựa tìm quán trú ẩn trước khi mưa đá trút xuống!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -959,7 +959,7 @@
       "duration_s": 5.0,
       "image_prompt": "Warm lantern light and misty bamboo mountain, an old gate keeper striking a bronze bell gently with a wooden mallet, stone courtyard, cinematic wuxia, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Chuông đồng là tín hiệu xưa của người giữ núi.",
+      "voiceover": "Một quả chuông đồng không chỉ canh giữ cửa ải hiểm yếu mà còn cứu mạng biết bao lữ khách độc hành qua đèo vắng.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -1054,7 +1054,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 11,
@@ -1062,7 +1062,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty bamboo mountain light, a bronze bell ringing above a stone sword gate at dawn, swordsmen walking into fog, cinematic wuxia, ancient lantern, ink atmosphere, vertical 9:16, no text, no logo, no blood.",
       "motion": "",
-      "voiceover": "Khi chuông ngân, giang hồ chuẩn bị đón gió lớn.",
+      "voiceover": "Trí tuệ của bậc tiền nhân kết tinh trong từng thớ đồng cổ, để mỗi tiếng chuông ngân lên đều mang lại bình an cho cõi giang hồ...",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -1164,7 +1164,7 @@
           "gain_db": -28
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     }
   ],
   "episode": 17,

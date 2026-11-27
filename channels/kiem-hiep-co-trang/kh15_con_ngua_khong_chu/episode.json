@@ -25,7 +25,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cold moonlight on a white horse crossing a snowstorm, misty bamboo mountain, cinematic wuxia film, vertical 9:16, no text, no blood.",
       "motion": "máy quay mở rộng chậm, ngựa trắng băng qua bão tuyết giữa núi",
-      "voiceover": "Ngựa trắng vượt bão tuyết, mang về thanh kiếm cũ...",
+      "voiceover": "Giữa cơn bão tuyết dữ dội nơi biên ải phía Bắc, một chú chiến mã lông trắng không người cưỡi đơn độc lao xuyên màn đêm đem về thanh cổ kiếm.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -43,7 +43,7 @@
           "tag": "folk_oneshot"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 2,
@@ -51,7 +51,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cold blue moonlight on a snow-covered mountain road, blizzard, cinematic wuxia film, vertical 9:16, no text.",
       "motion": "máy quay lia chậm qua đường núi phủ trắng tuyết trong bão",
-      "voiceover": "Đêm đông, bão tuyết phủ trắng đường núi.",
+      "voiceover": "Tháng chạp tuyết phủ dày trắng xóa con đèo Nhạn Môn Quan, gió bấc gào rít cắt da không một bóng người qua lại.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -69,7 +69,7 @@
           "tag": "rain"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 3,
@@ -77,7 +77,7 @@
       "duration_s": 5.0,
       "image_prompt": "Misty moonlight on a white horse silhouette in heavy snow, cinematic wuxia film, vertical 9:16, no text, no blood.",
       "motion": "máy quay đẩy chậm vào bóng trắng hiện ra giữa màn tuyết dày",
-      "voiceover": "Một bóng trắng hiện ra giữa màn tuyết dày.",
+      "voiceover": "Từ trong màn tuyết mù mịt, một bóng ngựa bạch cao lớn lảo đảo bước ra, hơi thở nóng hổi phả thành từng luồng khói trắng đặc.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -95,7 +95,7 @@
           "tag": "footsteps"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 4,
@@ -103,7 +103,7 @@
       "duration_s": 5.0,
       "image_prompt": "Warm lantern light on a tired white horse, snow falling, cinematic wuxia film, vertical 9:16, no text, no blood.",
       "motion": "máy quay giữ khung cận ngựa trắng thở hổn hển dưới đèn lồng",
-      "voiceover": "Con ngựa trắng thở hổn hển, yên còn nguyên vẹn.",
+      "voiceover": "Lạ một nỗi trên lưng ngựa chẳng có ai cầm cương, bộ yên da sờn cũ đóng băng cứng ngắc nhưng tuyệt nhiên không hề xô lệch!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -129,7 +129,7 @@
       "duration_s": 5.0,
       "image_prompt": "Soft lantern light on an old sword tied to a saddle, snowflakes, cinematic wuxia film, vertical 9:16, no text, no blood.",
       "motion": "zoom chậm vào thanh kiếm cũ buộc chặt bằng dây da trên yên",
-      "voiceover": "Trên yên, thanh kiếm cũ buộc chặt bằng dây da.",
+      "voiceover": "Buộc chặt bên hông yên ngựa bằng ba vòng dây da tẩm dầu là một thanh trọng kiếm vỏ sắt loang lổ vết chém chiến trường.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -147,7 +147,7 @@
           "tag": "fire_lamp"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 6,
@@ -155,7 +155,7 @@
       "duration_s": 5.0,
       "image_prompt": "Warm amber light on an old man touching an old sword, misty night, cinematic wuxia film, vertical 9:16, no text.",
       "motion": "máy quay đẩy chậm vào ông lão chạm tay lên thanh kiếm cũ",
-      "voiceover": "Ông lão nhìn kiếm, tay run run khẽ gọi tên.",
+      "voiceover": "Ông lão giữ trạm gác biên thùy cầm đèn bão bước ra, vừa chạm tay vào chuôi kiếm liền sững người rơi nước mắt gọi tên cố nhân!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -181,7 +181,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cold moonlight on a weathered sword on a wooden table, ink atmosphere, cinematic wuxia film, vertical 9:16, no text.",
       "motion": "máy quay giữ khung thanh kiếm cũ trên bàn gỗ dưới ánh trăng",
-      "voiceover": "Đó là kiếm của tướng quân đã khuất ba năm.",
+      "voiceover": "Đó chính là bội kiếm bất ly thân của vị lão tướng trấn biên đã hy sinh nơi sa trường cách đây tròn ba mùa tuyết rơi.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -199,7 +199,7 @@
           "tag": "leaves_wind"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "kiemhiep_nam"
     },
     {
       "id": 8,
@@ -207,7 +207,7 @@
       "duration_s": 5.0,
       "image_prompt": "Soft dawn light on a white horse walking toward an old house, snow, cinematic wuxia film, vertical 9:16, no text.",
       "motion": "máy quay theo sau ngựa trắng bước về nhà cũ trong sương sớm",
-      "voiceover": "Ngựa tìm về nhà cũ, dù chủ không còn nữa.",
+      "voiceover": "Vượt qua hàng ngàn dặm núi cao vực thẳm không người dẫn lối, con tuấn mã trung nghĩa vẫn nhớ từng con dốc tìm về đúng mái nhà xưa.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -225,7 +225,7 @@
           "tag": "leaves_wind"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 9,
@@ -233,7 +233,7 @@
       "duration_s": 5.0,
       "image_prompt": "Quiet moonlight on a silent village in snowfall, cinematic wuxia film, vertical 9:16, no text.",
       "motion": "máy quay mở rộng chậm qua làng quê lặng đi trong tuyết rơi",
-      "voiceover": "Cả làng lặng đi, tuyết vẫn rơi ngoài hiên.",
+      "voiceover": "Cả thôn trang nhỏ dưới chân đèo lặng đi trong niềm xúc động nghẹn ngào, tiếng gió tuyết ngoài hiên dường như cũng dịu hẳn lại.",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -251,7 +251,7 @@
           "tag": "night_creatures"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     },
     {
       "id": 10,
@@ -259,7 +259,7 @@
       "duration_s": 5.0,
       "image_prompt": "Cold morning light on a white horse waiting at a wooden gate, snow, cinematic wuxia film, vertical 9:16, no text.",
       "motion": "máy quay giữ khung ngựa trắng đứng đợi ở cổng gỗ trong nắng sớm",
-      "voiceover": "Ngựa trắng đứng đợi ở cổng, mắt nhìn xa xăm.",
+      "voiceover": "Người trong giang hồ thề thốt sống chết đôi khi quay lưng là quên, vậy mà con ngựa chiến câm lặng lại giữ trọn chữ Trung tới hơi thở cuối!",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -285,7 +285,7 @@
       "duration_s": 5.0,
       "image_prompt": "Warm sunrise light over a misty bamboo mountain, a white horse silhouette, cinematic wuxia film, vertical 9:16, no text.",
       "motion": "máy quay mở rộng chậm lên núi trúc mây mù trong nắng sớm",
-      "voiceover": "Trung thành với bạn nghĩa là gì? Bình luận nhé!",
+      "voiceover": "Mỗi buổi bình minh lên trên đỉnh núi trúc, bóng con ngựa trắng vẫn đứng lặng trước cổng gỗ cũ ngóng về phương bắc xa xăm...",
       "vo_at": 0.12,
       "sfx": [
         {
@@ -303,7 +303,7 @@
           "tag": "night_creatures"
         }
       ],
-      "voice": "chautinhtri"
+      "voice": "phonui"
     }
   ],
   "series": "Giang Hồ Kỳ Truyện",
