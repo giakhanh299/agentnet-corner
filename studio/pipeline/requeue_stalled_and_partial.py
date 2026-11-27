@@ -27,7 +27,7 @@ def main():
     for t in tasks:
         kind = t.get("kind")
         st = t.get("status")
-        if kind in ("muse_draw_images", "muse_make_videos") and st == "RUNNING":
+        if kind in ("muse_draw_images", "muse_make_videos", "muse_write_script", "muse_fix_script") and st == "RUNNING":
             started = float(t.get("started_at") or t.get("created_at") or now)
             age_min = (now - started) / 60.0
             limit = 22.0 if kind == "muse_draw_images" else 25.0
