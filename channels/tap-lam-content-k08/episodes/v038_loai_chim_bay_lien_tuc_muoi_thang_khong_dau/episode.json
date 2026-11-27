@@ -1,0 +1,208 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v038_loai_chim_bay_lien_tuc_muoi_thang_khong_dau",
+  "slug": "v038_loai_chim_bay_lien_tuc_muoi_thang_khong_dau",
+  "target_channel": "KENH_008",
+  "episode": 38,
+  "title": "Loài Chim Kỳ Diệu Vừa Bay Vừa Ngủ Suốt Mười Tháng Không Một Lần Chạm Đất!",
+  "cover_text": "BAY 10 THÁNG KHÔNG CHẠM ĐẤT",
+  "hook": "Suốt 300 ngày ròng rã ăn, uống và cả ngủ gật ngay giữa tầng mây mà đôi chân không hề đậu xuống cành cây!",
+  "voice": "taplamcontent",
+  "tight_pacing": true,
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": false,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#KhamPha",
+    "#KhoaHoc",
+    "#SuThatThuVi",
+    "#reels"
+  ],
+  "total_duration_s": 70,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Breathtaking National Geographic wildlife shot of a sleek common swift (chim én lớn châu Âu) soaring high above golden clouds against deep blue sky, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Bạn có tin trên bầu trời tồn tại một loài chim nhỏ bé chỉ nặng bằng quả trứng gà nhưng có thể bay ròng rã suốt mười tháng trời không một lần đậu xuống đất?",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "whoosh_soft",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up aerodynamic silhouette of a swift's crescent-shaped wings slicing effortlessly through sunlit high-altitude air currents, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Nhà vô địch đường trường kỳ vĩ ấy là loài chim yến thông thường châu Âu, sở hữu đôi cánh cong hình lưỡi liềm hoàn hảo để lướt trên các luồng khí nóng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Wildlife researchers attaching a tiny featherlight micro-sensor backpack weighing less than half a gram onto a healthy swift in golden light, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Bằng thiết bị cảm biến siêu nhỏ nặng chưa tới nửa gam gắn trên lưng chim, các nhà khoa học Thụy Điển đã ghi lại hành trình di cư khiến cả giới sinh học sững sờ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Stunning aerial view of vast Sahara desert dunes giving way to lush central African rainforests beneath high migratory birds, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Rời tổ ở Bắc Âu từ cuối mùa hè để bay sang tận rừng nhiệt đới Trung Phi tránh rét rồi quay về, hơn chín mươi chín phần trăm thời gian chúng ở tít trên không trung!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "High-speed macro wildlife shot of a swift catching tiny airborne insects mid-flight above shimmering sunlit meadow mist, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Thay vì đáp xuống cành cây kiếm mồi, chúng há mỏ đớp gọn hàng nghìn côn trùng nhỏ bị gió cuốn bay lơ lửng ở độ cao hàng trăm mét mỗi ngày.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Graceful low-skimming shot of a swift dipping just its beak tip across a mirror-calm mountain lake at sunset creating delicate ripples, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Khi khát nước, loài chim này chỉ sà thấp lướt sát mặt hồ phẳng lặng, nhúng nhẹ đầu mỏ hớt một ngụm nước mát rồi vỗ cánh vút thẳng lên trời mây.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Twilight indigo sky at 2,000 meters altitude where a flock of swifts glides motionless on rising warm evening air currents under early stars, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Vậy chúng ngủ bằng cách nào? Cứ mỗi buổi hoàng hôn và bình minh, đàn yến sẽ bay vọt lên độ cao từ hai đến ba cây số rồi dang rộng cánh thả trôi theo gió!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Soft glowing nature visualization showing half of a bird's brain resting in calm blue light while the other half stays alert steering through night clouds, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Trong lúc lượn từ từ hạ độ cao giữa tầng không êm ả, chúng cho từng nửa bán cầu não thay phiên nhau chợp mắt nghỉ ngơi mà vẫn giữ hướng bay chuẩn xác.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of nesting swifts returning in spring to cozy stone roof eaves among blooming European wildflowers, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Chỉ tới hai tháng mùa hè làm tổ đẻ trứng và nuôi con non trên vách đá cao, đôi chân nhỏ xíu của chúng mới thực sự chạm xuống mặt đất nghỉ ngơi.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Epic wide shot of golden sunbeams breaking through dramatic cumulus clouds as swift silhouettes soar freely across endless sky, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Tính trung bình suốt vòng đời hai mươi năm, một chú chim yến bay tổng quãng đường dài gấp bảy lần khoảng cách khứ hồi từ Trái Đất lên tận Mặt Trăng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Inspiring sunset horizon over turquoise sea and golden clouds celebrating the boundless endurance of nature, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Sức bền phi thường trong một cơ thể bé nhỏ chỉ bốn mươi gam ấy thực sự là kiệt tác sống động nhất của bầu trời tự nhiên!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ]
+}

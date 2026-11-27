@@ -1,0 +1,208 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v035_vi_sao_bach_tuoc_co_ba_trai_tim_mau_xanh",
+  "slug": "v035_vi_sao_bach_tuoc_co_ba_trai_tim_mau_xanh",
+  "target_channel": "KENH_008",
+  "episode": 35,
+  "title": "Vì Sao Bạch Tuộc Có Tới Ba Trái Tim Và Dòng Máu Màu Xanh Dương?",
+  "cover_text": "BẠCH TUỘC 3 TIM MÁU XANH",
+  "hook": "Sinh vật thông minh bậc nhất đại dương mang cấu tạo cơ thể kỳ lạ như đến từ hành tinh khác!",
+  "voice": "taplamcontent",
+  "tight_pacing": true,
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": false,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#KhamPha",
+    "#KhoaHoc",
+    "#SuThatThuVi",
+    "#reels"
+  ],
+  "total_duration_s": 70,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Vibrant underwater National Geographic macro photography of a glowing giant Pacific octopus gliding gracefully over colorful coral reef, crystal clear ocean light, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Nếu nghĩ sinh vật ngoài hành tinh chỉ có trong phim viễn tưởng, bạn sẽ kinh ngạc khi biết ngay dưới đáy biển Trái Đất có một loài mang ba trái tim và máu màu xanh biếc!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "whoosh_soft",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up underwater documentary shot of an octopus's expressive golden eye and textured skin changing color seamlessly against volcanic rock, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Đó chính là bạch tuộc, loài động vật thân mềm thông minh đến mức biết mở nắp lọ thủy tinh tìm mồi và ngụy trang đổi màu da chỉ trong chớp mắt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Scientific anatomical glowing 3D-style translucent nature illustration of an octopus showing three distinct pulsing hearts inside its mantle in deep blue water, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Khác hẳn con người chỉ có một trái tim, cơ thể bạch tuộc sở hữu tới ba quả tim hoạt động phối hợp nhịp nhàng suốt ngày đêm dưới áp suất nước khổng lồ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Detailed underwater macro shot of feathery octopus gills gently pulsing in sunlit turquoise sea water with tiny oxygen bubbles, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Hai quả tim nhỏ nằm ngay sát hai bên mang làm nhiệm vụ chuyên biệt là bơm máu đi qua mang để hấp thụ dưỡng khí oxy hòa tan trong nước biển.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Dynamic underwater tracking shot of an octopus jet-propelling swiftly across a sandy seabed between kelp forests, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Quả tim thứ ba lớn nhất nằm ở trung tâm cơ thể chịu trách nhiệm đẩy dòng máu giàu oxy ấy đi nuôi dưỡng toàn bộ tám chiếc xúc tu linh hoạt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Microscopic scientific photography of shimmering cobalt-blue copper-rich hemocyanin molecules flowing in translucent vessels, vivid documentary lighting, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Còn lý do máu bạch tuộc có màu xanh dương rực rỡ thay vì màu đỏ là bởi máu chúng dùng nguyên tố đồng thay cho nguyên tố sắt để vận chuyển oxy.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Deep cold ocean floor scene with dim icy blue bioluminescent waters where a deep-sea octopus rests calmly on basalt rock, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Chất đồng hemocyanin này giúp bạch tuộc duy trì sự sống cực kỳ hiệu quả ngay cả ở những tầng đáy biển lạnh buốt gần đóng băng và cực kỳ nghèo oxy.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of an octopus preferring to crawl smoothly across colorful reef stones using rows of suction cups on its eight arms, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Tuy nhiên cấu tạo này có một điểm yếu thú vị: mỗi khi bạch tuộc bơi vọt đi bằng phản lực nước, quả tim chính của nó sẽ tạm thời ngừng đập!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Calm underwater wide shot of an octopus resting peacefully inside a cozy seashell-lined rock crevice catching its breath, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Việc tim ngừng đập khi bơi nhanh khiến chúng rất mau kiệt sức, đó là lý do bạch tuộc luôn thích bò thong thả dưới đáy đá hơn là bơi đường dài.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Fascinating close-up of an octopus solving a transparent glass maze puzzle in a bright marine biology aquarium lab, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Chưa hết đâu nhé, hai phần ba tổng số tế bào thần kinh của bạch tuộc nằm rải rác ngay trong tám cánh tay, giúp mỗi xúc tu tự cảm nhận độc lập!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunbeams piercing clear turquoise ocean surface illuminating a majestic reef ecosystem teeming with marine life, vertical 9:16, no text, no watermark, no logos",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Thiên nhiên đại dương quả thực ẩn chứa muôn vàn kỳ quan tiến hóa vượt xa trí tưởng tượng của con người phải không bạn?",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ]
+}

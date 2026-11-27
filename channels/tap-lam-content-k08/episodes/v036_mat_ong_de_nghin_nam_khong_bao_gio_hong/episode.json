@@ -1,0 +1,208 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v036_mat_ong_de_nghin_nam_khong_bao_gio_hong",
+  "slug": "v036_mat_ong_de_nghin_nam_khong_bao_gio_hong",
+  "target_channel": "KENH_008",
+  "episode": 36,
+  "title": "Vì Sao Mật Ong Nguyên Chất Để Ba Nghìn Năm Vẫn Không Hề Bị Hỏng?",
+  "cover_text": "MẬT ONG 3.000 NĂM KHÔNG HỎNG",
+  "hook": "Các nhà khảo cổ tìm thấy hũ mật ong từ thời Ai Cập cổ đại mà mở nắp ra vẫn thơm ngon ăn được!",
+  "voice": "taplamcontent",
+  "tight_pacing": true,
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": false,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#KhamPha",
+    "#KhoaHoc",
+    "#SuThatThuVi",
+    "#reels"
+  ],
+  "total_duration_s": 70,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Golden sunlight pouring through pure amber honey dripping slowly from a wooden dipper into a clear glass jar surrounded by wildflowers, National Geographic macro 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Trong căn bếp nhà bạn hầu như mọi thực phẩm đều có hạn sử dụng, nhưng mật ong nguyên chất đậy kín nắp thì để suốt hàng nghìn năm vẫn không hề thối hỏng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "whoosh_soft",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Cinematic archaeological discovery scene inside a sunlit stone chamber showing sealed ancient terracotta jars preserved beside golden artifacts, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Minh chứng kinh ngạc nhất là các nhà khảo cổ từng khai quật những hũ gốm đựng mật ong hơn ba nghìn năm tuổi tại Ai Cập mà chất mật bên trong vẫn dùng tốt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Ultra-macro shot of honeybees working industriously on golden hexagonal honeycomb cells glistening with fresh nectar in warm sunlight, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Bí mật đầu tiên nằm ở cấu trúc hóa học cực kỳ đặc biệt: mật ong chín tự nhiên chứa lượng đường đậm đặc nhưng lại có độ ẩm cực thấp chỉ khoảng mười bảy phần trăm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Microscopic scientific visualization of tiny water molecules locked tightly inside dense golden sugar crystals leaving zero moisture for microbes, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Với lượng nước ít ỏi đến vậy, bất kỳ vi khuẩn hay nấm mốc nào rơi vào mật ong đều lập tức bị hút cạn sạch nước qua màng tế bào và tự tiêu diệt.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Macro close-up of a worker honeybee fanning its wings rapidly over open honeycomb cells to evaporate moisture inside a natural wooden hive, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Đàn ong thợ đã tạo nên kỳ tích ấy bằng cách vỗ cánh quạt gió liên tục hàng giờ liền trong tổ để làm bay hơi gần hết nước thừa từ mật hoa loãng.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Glowing laboratory pH glass dropper testing golden honey showing warm acidic amber tones in a clean food science studio, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Bí mật thứ hai là mật ong có môi trường axit tự nhiên khá mạnh với độ pH chỉ dao động quanh mức ba phẩy chín, ngăn chặn hầu hết vi sinh vật sinh sôi.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of a honeybee collecting pollen on a blooming white forest flower in morning dew as sunlight sparkles on its fuzzy thorax, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Khi chế biến mật hoa trong dạ dày, ong thợ còn tiết ra một loại enzyme quý giá tự sản sinh lượng nhỏ oxy già tự nhiên giúp kháng khuẩn suốt nhiều thế kỷ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Side-by-side macro shot of crystallized creamy golden honey in winter sunlight warming gently in a warm water bath turning clear liquid again, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Nhiều người thấy mật ong để lâu bị đóng đường kết tinh dưới đáy chai thường tưởng là mật hỏng, nhưng thực ra đó chỉ là hiện tượng vật lý hoàn toàn tự nhiên!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Warm kitchen close-up of clear amber honey swirling smoothly into a ceramic cup of steaming herbal ginger tea, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Chỉ cần ngâm lọ mật kết tinh vào bát nước ấm khoảng bốn mươi độ C vài phút, các tinh thể đường sẽ tan chảy mềm mịn thơm ngọt trở lại như lúc mới quay.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Careful hand screwing an airtight lid onto a dry glass honey jar on a sunlit wooden pantry shelf away from water drops, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Kẻ thù duy nhất làm mật ong lên men chua chính là nước lã lọt vào, vì vậy khi múc mật bạn hãy luôn dùng muỗng thật khô ráo và vặn chặt nắp nhé!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Breathtaking wide shot of sunlit green highland valleys filled with blooming coffee and wild flowers where honeybees fly in golden light, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Chỉ từ những giọt mật hoa mong manh mà loài ong nhỏ bé đã chắt lọc nên thứ thực phẩm trường tồn vượt thời gian kỳ diệu biết bao!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ]
+}

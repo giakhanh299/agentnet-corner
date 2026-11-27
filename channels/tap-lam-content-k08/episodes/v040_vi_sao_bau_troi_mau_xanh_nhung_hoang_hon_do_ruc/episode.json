@@ -1,0 +1,208 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v040_vi_sao_bau_troi_mau_xanh_nhung_hoang_hon_do_ruc",
+  "slug": "v040_vi_sao_bau_troi_mau_xanh_nhung_hoang_hon_do_ruc",
+  "target_channel": "KENH_008",
+  "episode": 40,
+  "title": "Vì Sao Cùng Một Mặt Trời Mà Trưa Trời Xanh Ngắt Còn Chiều Lại Đỏ Rực?",
+  "cover_text": "VÌ SAO HOÀNG HÔN ĐỎ RỰC?",
+  "hook": "Ánh nắng Mặt Trời vốn có màu trắng tinh khiết, vậy ai đã nhuộm xanh bầu trời ban trưa và tô đỏ buổi chiều tà?",
+  "voice": "taplamcontent",
+  "tight_pacing": true,
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": false,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#KhamPha",
+    "#KhoaHoc",
+    "#SuThatThuVi",
+    "#reels"
+  ],
+  "total_duration_s": 70,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Spectacular vertical split-time nature photography transitioning from brilliant azure midday sky over green hills to fiery crimson-gold ocean sunset, 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Cùng một Mặt Trời chiếu sáng trên đầu, tại sao giữa trưa ngước lên bầu trời lại xanh biếc trong vắt còn tới lúc chiều tà chân trời lại rực cháy sắc đỏ cam?",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "whoosh_soft",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Crisp physics studio macro shot of a pure white sunbeam passing through a crystal glass prism splitting into a vivid seven-color rainbow spectrum on dark velvet, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Để giải mã hiện tượng tuyệt đẹp này, trước hết hãy nhớ rằng ánh sáng trắng của Mặt Trời thực chất là sự pha trộn của đầy đủ bảy sắc cầu vồng có bước sóng khác nhau.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Scientific glowing illustration of short tight blue waves bouncing energetically off tiny nitrogen and oxygen air molecules high in Earth's atmosphere, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Trong dải màu ấy, ánh sáng xanh lam và tím có bước sóng rất ngắn lăn tăn, còn ánh sáng đỏ và cam lại có bước sóng dài thoai thoải lướt đi rất xa.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Brilliant midday view looking straight up through clear blue sky framed by sunlit tropical palm leaves and fluffy white clouds, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Vào ban trưa khi Mặt Trời chiếu thẳng từ đỉnh đầu xuống, tia nắng đi quãng đường ngắn xuyên qua bầu khí quyển đầy các phân tử khí nitơ và oxy siêu nhỏ.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Sparkling blue sky dome view over snow-capped mountain peaks showing scattered azure light filling every direction of the horizon, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Các phân tử khí nhỏ bé này va chạm và hắt tung ánh sáng bước sóng ngắn màu xanh lam ra khắp mọi hướng trên vòm trời, khiến mắt ta nhìn đâu cũng thấy màu xanh biếc!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Orbital space-perspective photograph of golden low-angle sunlight grazing tangentially through a thick glowing atmospheric rim at Earth's terminator line, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Thế nhưng khi Mặt Trời lặn dần xuống sát đường chân trời lúc chiều muộn, tia nắng phải đi xiên một quãng đường dày gấp gần mười lần qua lớp khí quyển!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Dramatic wide landscape of golden-red sunbeams piercing dusty evening mist over calm rice paddies as blue light scatters away early, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Trên hành trình dài dằng dặc ấy, gần như toàn bộ ánh sáng xanh lam đã bị tán xạ rơi rụng hết dọc đường trước khi kịp chạm tới đôi mắt người đứng ngắm.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of fiery orange and ruby-red sunset reflections shimmering across gentle ocean waves beneath glowing clouds, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Chỉ còn những tia sáng đỏ, cam và vàng có bước sóng dài bền bỉ nhất mới xuyên thủng lớp khí quyển dày cùng bụi mịn để nhuộm rực cả chân trời chiều.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Lunar astronaut-perspective view of bright white sun shining in a pitch-black starless airless sky above gray moon craters, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Nếu đứng trên Mặt Trăng nơi hoàn toàn không có bầu khí quyển bao bọc, dù giữa ban ngày chói chang bạn vẫn sẽ thấy bầu trời đen kịt một màu không chút sắc xanh!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Atmospheric twilight afterglow painting soft pastel pink and violet clouds above a tranquil harbor after sunset, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Thậm chí những chiều sau cơn mưa hoặc có sương bụi mịn lơ lửng trên cao, hiệu ứng tán xạ càng mạnh càng tạo nên những buổi hoàng hôn tím hồng đẹp mê hồn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Peaceful silhouette of coastal pine trees watching the golden sun dip below a glowing sea horizon in serene natural beauty, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Mỗi buổi chiều ngước nhìn hoàng hôn rực rỡ, hóa ra chúng ta đang chiêm ngưỡng màn trình diễn quang học kỳ vĩ nhất của bầu khí quyển Trái Đất!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ]
+}

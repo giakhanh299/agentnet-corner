@@ -1,0 +1,208 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v037_vi_sao_ngon_tay_nhan_nheo_khi_ngam_nuoc_lau",
+  "slug": "v037_vi_sao_ngon_tay_nhan_nheo_khi_ngam_nuoc_lau",
+  "target_channel": "KENH_008",
+  "episode": 37,
+  "title": "Ngón Tay Nhăn Nheo Khi Ngâm Nước Lâu Thực Chất Là Cơ Chế Tiến Hóa Cực Thông Minh!",
+  "cover_text": "BÍ MẬT NGÓN TAY NHĂN KHI TẮM",
+  "hook": "Hóa ra da đầu ngón tay nhăn nheo không phải do ngấm nước trương phồng như ta vẫn lầm tưởng!",
+  "voice": "taplamcontent",
+  "tight_pacing": true,
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": false,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#KhamPha",
+    "#KhoaHoc",
+    "#SuThatThuVi",
+    "#reels"
+  ],
+  "total_duration_s": 70,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Extreme macro photography of clean human fingertips submerged in crystal-clear sunlit water showing distinct tiny ridges and water bubbles, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Ai trong chúng ta cũng từng tắm lâu hay rửa bát mà thấy mười đầu ngón tay nhăn nheo lại như quả táo tàu, nhưng lý do thật sự sẽ làm bạn bất ngờ đấy!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "whoosh_soft",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of water droplets rolling off smooth skin on a human forearm while fingertips show textured grip grooves in clear water, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Suốt nhiều thập kỷ người ta tưởng lớp da ngoài cùng bị ngấm nước nên trương phồng lên, thế nhưng tại sao toàn bộ da cánh tay và mặt lại chẳng hề nhăn?",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Glowing medical science illustration of fine nerve fibers and tiny blood vessels constricting neatly beneath the fingertip pad, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Các nhà khoa học thần kinh đã phát hiện ra rằng: đầu ngón tay nhăn lại là một phản xạ chủ động do hệ thần kinh tự chủ điều khiển co mạch máu dưới da!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Detailed studio close-up of a hand gripping a wet smooth river pebble securely under running clear stream water without slipping, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Khi ngâm nước quá năm phút, dây thần kinh phát tín hiệu thu hẹp các mạch máu nhỏ ở đầu ngón tay, kéo lớp da bên trên xếp thành những rãnh sâu có trật tự.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Macro comparison shot of wet car tire treads channeling rainwater sideways on wet asphalt road during a summer shower, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Những rãnh nhăn ấy hoạt động giống hệt như các đường rãnh thoát nước trên lốp xe ô tô khi chạy dưới trời mưa trơn trượt vậy!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Slow-motion macro shot of fingers pressing onto a wet glass marble showing water squeezing rapidly out through the skin grooves, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Khi bạn cầm nắm vật ướt, các rãnh nhăn giúp ép màng nước thoát nhanh ra ngoài, tăng độ ma sát bám dính lên gấp nhiều lần so với da phẳng trơn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Cinematic nature scene of early humans barefoot wading securely across wet mossy river stones catching fish in a sunlit forest stream, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Nhờ cơ chế tiến hóa thông minh này, tổ tiên loài người xưa kia có thể hái lượm thức ăn dưới suối ướt và đi chân trần trên đá rêu mà không bị trượt ngã.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Laboratory experiment showing volunteers picking up wet marbles rapidly from a clear water tank into a tray in bright daylight, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Thử nghiệm thực tế chứng minh người có ngón tay đã nhăn nhặt những viên bi ướt dưới nước nhanh hơn tới mười hai phần trăm so với người để tay khô phẳng!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Clean medical educational macro shot of a gentle fingertip touch test showing healthy nerve response in warm clinic light, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Đáng chú ý hơn, ở những bệnh nhân không may bị tổn thương dây thần kinh bàn tay, dù có ngâm nước hàng tiếng đồng hồ đầu ngón tay cũng hoàn toàn phẳng lì.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of hands drying softly on a clean white cotton towel in warm morning sunlight as fingertip skin returns completely smooth, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Và ngay khi tay bạn rời khỏi mặt nước chừng mười lăm phút, mạch máu giãn nở bình thường trả lại làn da căng mịn vì đi trên cạn da phẳng mới cảm nhận xúc giác tốt nhất.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Bright inspiring shot of sunlit ocean waves meeting sandy shore where human footprints glisten cleanly in golden light, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Ngay trên đôi bàn tay quen thuộc mỗi ngày vẫn ẩn giấu những thiết kế sinh học tinh vi đến từng milimet phải không nào!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ]
+}

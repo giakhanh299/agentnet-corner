@@ -1,0 +1,208 @@
+{
+  "series": "Tập Làm Content",
+  "episode_code": "v039_vi_sao_giong_noi_ghi_am_nghe_la_hoac",
+  "slug": "v039_vi_sao_giong_noi_ghi_am_nghe_la_hoac",
+  "target_channel": "KENH_008",
+  "episode": 39,
+  "title": "Tại Sao Nghe Lại Giọng Nói Của Chính Mình Qua Ghi Âm Ai Cũng Thấy Lạ Hoắc?",
+  "cover_text": "SAO GIỌNG GHI ÂM NGHE LẠ HOẮC?",
+  "hook": "Giọng nói bạn nghe qua loa điện thoại mới chính là giọng thật mà mọi người xung quanh vẫn nghe hằng ngày!",
+  "voice": "taplamcontent",
+  "tight_pacing": true,
+  "color_grade": "vivid_doc",
+  "cover_theme": "knowledge",
+  "aigc_label": false,
+  "music": {
+    "generator": "curiosity",
+    "gain_db": 0
+  },
+  "hashtags": [
+    "#TapLamContent",
+    "#KienThucThuVi",
+    "#KhamPha",
+    "#KhoaHoc",
+    "#SuThatThuVi",
+    "#reels"
+  ],
+  "total_duration_s": 70,
+  "shot_count": 11,
+  "language": "vi",
+  "scenes": [
+    {
+      "id": 1,
+      "label": "Shot 01",
+      "duration_s": 5.0,
+      "image_prompt": "Relatable bright lifestyle close-up of a young Vietnamese creator listening back to a smartphone voice memo with a surprised amused expression in a sunlit room, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Chắc hẳn bạn từng mở đoạn video quay chung với bạn bè, vừa nghe tới giọng mình phát ra từ loa liền giật mình thắc mắc: ủa sao giọng mình nghe chói và lạ thế này!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "whoosh_soft",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Shot 02",
+      "duration_s": 5.0,
+      "image_prompt": "Warm studio shot of two friends chatting cheerfully across a wooden coffee table with invisible subtle sound waves rippling through sunlit air, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Sự thật phũ phàng nhưng thú vị là chiếc micro điện thoại không hề làm méo tiếng đâu, mà giọng trong bản ghi âm mới chính là giọng thật mọi người vẫn nghe từ bạn!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Shot 03",
+      "duration_s": 5.0,
+      "image_prompt": "Clean glowing 3D educational acoustics visualization of external air sound waves entering the human outer ear canal and vibrating the eardrum, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Khi người khác nói chuyện hoặc khi loa phát âm thanh, sóng âm chỉ đi qua một con đường duy nhất là truyền qua không khí bên ngoài đi vào màng nhĩ của bạn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Shot 04",
+      "duration_s": 5.0,
+      "image_prompt": "Detailed glowing anatomical illustration of vocal cords vibrating and sending warm low-frequency vibrations directly through jaw and skull bones to the inner cochlea, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Nhưng lúc chính miệng bạn cất tiếng nói, tai trong của bạn lại nhận âm thanh từ hai nguồn cùng lúc: đường không khí bên ngoài và đường truyền thẳng qua xương hộp sọ!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Shot 05",
+      "duration_s": 5.0,
+      "image_prompt": "Macro studio shot of a rich wooden cello body resonating deeply as a bow draws across thick bass strings in warm golden stage light, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Xương hàm và hộp sọ đặc của chúng ta dẫn truyền các tần số trầm cực kỳ tốt, giống như thùng đàn gỗ cộng hưởng làm âm thanh trở nên ấm và dày hơn hẳn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Shot 06",
+      "duration_s": 5.0,
+      "image_prompt": "Split visual acoustic comparison showing warm deep amber bass waves inside vs crisp bright cyan treble waves traveling through open air, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Vì thế suốt cả cuộc đời, bộ não bạn luôn quen nghe phiên bản giọng nói đã được hộp sọ tự động tăng thêm âm trầm nghe ấm áp và truyền cảm hơn thực tế.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Shot 07",
+      "duration_s": 5.0,
+      "image_prompt": "Close-up of a professional condenser studio microphone on a boom arm capturing pure airborne vocal waves in a clean acoustic room, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Khi nghe lại qua bản ghi âm, toàn bộ phần cộng hưởng qua xương sọ biến mất hoàn toàn, chỉ còn lại âm thanh truyền qua không khí nên nghe thanh và cao hơn.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Shot 08",
+      "duration_s": 5.0,
+      "image_prompt": "Friendly close-up of a person smiling comfortably while recording a podcast episode with studio headphones in warm natural daylight, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Các nhà tâm lý học gọi cảm giác ngượng ngùng ấy là sự lệch pha nhận thức bản thân, bởi não bộ bỗng thấy giọng thật không khớp với hình ảnh quen thuộc trong đầu.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Shot 09",
+      "duration_s": 5.0,
+      "image_prompt": "Macro shot of studio audio equalizer sliders gently balancing warm vocal frequencies on a sleek mixing console, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Tin vui là bạn bè và người thân xung quanh đã quen với giọng thật ngoài không khí của bạn từ ngày đầu gặp gỡ nên họ thấy nó hoàn toàn tự nhiên dễ chịu!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Shot 10",
+      "duration_s": 5.0,
+      "image_prompt": "Person practicing calm deep diaphragmatic breathing upright beside a sunny window with relaxed shoulders, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Còn nếu muốn giọng thu âm lên video dày và ấm hơn, bạn chỉ cần thả lỏng vai, hít hơi sâu bằng bụng và nói chậm rãi hơn một chút là khác biệt ngay.",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Shot 11",
+      "duration_s": 5.0,
+      "image_prompt": "Bright cheerful workspace with microphone, notebook, and sunlit plants inspiring confidence in sharing one's voice, vertical 9:16, no text, no watermark",
+      "motion": "Smooth cinematic documentary camera movement, subtle parallax and natural motion",
+      "voiceover": "Hiểu rõ bí mật âm học này rồi thì từ nay nghe lại giọng mình trên video cứ tự tin mỉm cười bạn nhé!",
+      "vo_at": 0.12,
+      "sfx": [
+        {
+          "tag": "ambient_room",
+          "at": 0,
+          "gain_db": -26
+        }
+      ]
+    }
+  ]
+}
