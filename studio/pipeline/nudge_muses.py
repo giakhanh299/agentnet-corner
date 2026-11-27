@@ -50,6 +50,14 @@ def main() -> dict:
                 elif not md.wait_for_chat(page, seconds=14):
                     rec.update(status="SESSION_EXPIRED", detail="phiên hết hạn - không tự đăng nhập")
                 else:
+                    # Open a fresh chat thread if New chat button is visible so old 'research-only' threads don't block video generation
+                    try:
+                        nc = page.get_by_role("button", name=md.re.compile(r"new chat|new conversation|cuộc trò chuyện mới", md.re.I))
+                        if nc.count() > 0 and nc.first.is_visible():
+                            nc.first.click(timeout=3000)
+                            page.wait_for_timeout(800)
+                    except Exception:
+                        pass
                     ok, detail = md.send_and_verify(page, msg)
                     rec.update(status="SENT" if ok else "SEND_FAILED", detail=detail)
             except Exception as e:

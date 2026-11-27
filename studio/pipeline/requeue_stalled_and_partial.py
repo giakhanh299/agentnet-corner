@@ -49,10 +49,13 @@ def main():
             if missing:
                 own = (t.get("owner_node") or "")[:8]
                 bad_owners[own] = bad_owners.get(own, 0) + 1
+                old_pay = t.get("payload") or {}
+                excl = list(dict.fromkeys((old_pay.get("excluded_nodes") or []) + ([t["owner_node"]] if t.get("owner_node") else [])))
                 title = spec.get("title", slug)
                 series = spec.get("series", ch_key)
                 sc_list = ", ".join(f"scene_{i:02d}" for i in missing)
                 new_payload = {
+                    "excluded_nodes": excl,
                     "objective": f"[{slug}] MUSE TẠO VIDEO 9:16 ({len(missing)} clip .mp4 CÒN THIẾU): '{title}' ({series}) — tạo {sc_list}.mp4 + up /media-upload.",
                     "acceptance_criteria": (
                         f"BẮT BUỘC TẠO FILE VIDEO .MP4 (TUYỆT ĐỐI KHÔNG NỘP LẠI ẢNH .JPG!). "

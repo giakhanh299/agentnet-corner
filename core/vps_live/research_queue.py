@@ -249,13 +249,30 @@ class ResearchQueue:
                     (role, node['id']),
                 ).fetchone()
                 if not row:
+                    # Check if this node recently hit video quota exhaustion or submitted non-.mp4 to muse_make_videos
+                    vid_exhausted = False
+                    recent_vid_rows = c.execute(
+                        "SELECT result FROM tasks WHERE kind='muse_make_videos' AND owner_node=? AND completed_at>? LIMIT 5",
+                        (node['id'], now - 21600),
+                    ).fetchall()
+                    for rvr in recent_vid_rows:
+                        rtxt = (rvr['result'] or '').lower()
+                        if ('video_daily_budget_exhausted' in rtxt or 'video quota exhausted' in rtxt
+                                or 'outside the research-only role' in rtxt or '.mp4' not in rtxt):
+                            vid_exhausted = True
+                            break
+
                     candidates = c.execute(
-                        "SELECT * FROM tasks WHERE assigned_to=? AND status='QUEUED' ORDER BY created_at LIMIT 50",
+                        "SELECT * FROM tasks WHERE assigned_to=? AND status='QUEUED' ORDER BY created_at LIMIT 80",
                         (role,),
                     ).fetchall()
                     chosen = None
                     for cand in candidates:
                         p = json.loads(cand['payload']) if cand['payload'] else {}
+                        if node['id'] in (p.get('excluded_nodes') or []):
+                            continue
+                        if vid_exhausted and cand['kind'] == 'muse_make_videos':
+                            continue
                         req = p.get('required_capabilities') or []
                         if all(r in cap_set for r in req):
                             chosen = cand
