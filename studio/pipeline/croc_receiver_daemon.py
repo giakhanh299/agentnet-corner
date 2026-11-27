@@ -113,6 +113,7 @@ def ingest_received_files(slug: str, src_dir: Path) -> tuple[int, int]:
             if pm.verify_mp4(dst):
                 clips_saved += 1
             else:
+                log(f"REJECT_FAKE_ZOOMPAN_OR_INVALID slug={slug} file={dst.name} -> đã xóa (chỉ chấp nhận video AI có chuyển động thật!)")
                 dst.unlink(missing_ok=True)
         elif low.endswith((".jpg", ".jpeg", ".png", ".webp")):
             dst = img_dir / f"scene_{sc:02d}.jpg"

@@ -22,7 +22,9 @@ MEDIA_ROOT = Path(r"E:\MUSE_MEDIA_STUDIO")
 FB_ROOT = Path(r"D:\0.1_FACE_BOOK\videos_upload")
 
 sys.path.insert(0, str(REPO_CORE / "studio"))
+sys.path.insert(0, str(REPO_CORE / "studio" / "pipeline"))
 import assemble_episode as ae  # noqa: E402
+import process_muse_pipeline as pm  # noqa: E402
 
 FB_STAGE_DIRS = {
     "KENH_001": FB_ROOT / "KENH_001_TienVaDoi" / "02_MOI_RENDER_CHO_XAC_NHAN",
@@ -127,7 +129,7 @@ def main() -> None:
             clips = [
                 clip_dir / f"scene_{sid:02d}.mp4"
                 for sid in range(1, n_expected + 1)
-                if (clip_dir / f"scene_{sid:02d}.mp4").is_file() and (clip_dir / f"scene_{sid:02d}.mp4").stat().st_size > 20_000
+                if pm.verify_mp4(clip_dir / f"scene_{sid:02d}.mp4")
             ] if clip_dir.is_dir() else []
             if len(clips) < n_expected:
                 continue

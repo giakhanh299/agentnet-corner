@@ -155,7 +155,69 @@ def make_storyboard(img_paths: list[Path], out_path: Path) -> None:
     canvas.save(out_path, quality=88)
 
 
-def verify_mp4(p: Path) -> dict | None:
+def is_fake_zoompan_mp4(p: Path) -> tuple[bool, str]:
+    """Phát hiện clip ăn gian bằng ffmpeg zoompan / Ken Burns (chỉ phóng to/dịch ảnh tĩnh, không có chuyển động AI thật)."""
+    try:
+        import cv2  # noqa: WPS433
+        import numpy as np  # noqa: WPS433
+    except Exception:
+        return False, "no_cv2"
+    cap = cv2.VideoCapture(str(p))
+    try:
+        w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH) or 0)
+        h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT) or 0)
+        n = int(cap.get(cv2.CAP_PROP_FRAME_COUNT) or 0)
+        if w <= 0 or h <= 0 or n < 10:
+            return False, "short"
+        idxs = [max(0, int(n * f)) for f in (0.15, 0.50, 0.85)]
+        frames = []
+        th = max(120, int(360 * h / max(w, 1)))
+        for idx in idxs:
+            cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
+            ok, fr = cap.read()
+            if ok:
+                frames.append(cv2.resize(fr, (360, th)))
+    finally:
+        cap.release()
+    if len(frames) < 3:
+        return False, "few_frames"
+    orb = cv2.ORB_create(800)
+    bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+    residuals: list[float] = []
+    inliers: list[float] = []
+    for a, b in ((frames[0], frames[1]), (frames[1], frames[2]), (frames[0], frames[2])):
+        ga = cv2.cvtColor(a, cv2.COLOR_BGR2GRAY)
+        gb = cv2.cvtColor(b, cv2.COLOR_BGR2GRAY)
+        kp1, d1 = orb.detectAndCompute(ga, None)
+        kp2, d2 = orb.detectAndCompute(gb, None)
+        if d1 is None or d2 is None or len(kp1) < 12 or len(kp2) < 12:
+            residuals.append(99.0)
+            inliers.append(0.0)
+            continue
+        matches = sorted(bf.match(d1, d2), key=lambda m: m.distance)[:200]
+        pts1 = np.float32([kp1[m.queryIdx].pt for m in matches]).reshape(-1, 1, 2)
+        pts2 = np.float32([kp2[m.trainIdx].pt for m in matches]).reshape(-1, 1, 2)
+        M, mask = cv2.estimateAffinePartial2D(pts1, pts2, method=cv2.RANSAC, ransacReprojThreshold=2.5)
+        if M is None or mask is None:
+            residuals.append(99.0)
+            inliers.append(0.0)
+            continue
+        inliers.append(float(mask.mean()))
+        warped = cv2.warpAffine(ga, M, (gb.shape[1], gb.shape[0]))
+        valid = cv2.warpAffine(np.ones_like(ga) * 255, M, (gb.shape[1], gb.shape[0])) > 200
+        valid = cv2.erode(valid.astype(np.uint8), np.ones((15, 15), np.uint8)) > 0
+        if int(valid.sum()) < 1000:
+            residuals.append(99.0)
+        else:
+            diff = np.abs(warped.astype(np.float32) - gb.astype(np.float32))[valid]
+            residuals.append(float(np.percentile(diff, 90)))
+    med_res = float(np.median(residuals))
+    med_inl = float(np.median(inliers))
+    is_fake = (med_res < 15.0 and med_inl > 0.78) or (med_res < 11.0)
+    return is_fake, f"p90_res={med_res:.1f},inlier={med_inl:.2f}"
+
+
+def verify_mp4(p: Path, check_motion: bool = True) -> dict | None:
     if not p.is_file() or p.stat().st_size < 16384:
         return None
     pr = subprocess.run(
@@ -171,6 +233,11 @@ def verify_mp4(p: Path) -> dict | None:
         st = (info.get("streams") or [{}])[0]
         dur = float((info.get("format") or {}).get("duration") or 0)
         if int(st.get("width") or 0) >= 300 and dur >= 1.0:
+            if check_motion:
+                fake, detail = is_fake_zoompan_mp4(p)
+                if fake:
+                    print(f"REJECT_FAKE_ZOOMPAN {p.name}: {detail}", flush=True)
+                    return None
             return {"w": st.get("width"), "h": st.get("height"), "dur": round(dur, 2)}
     except Exception:
         pass
@@ -386,8 +453,9 @@ def main():
                 f"Animation brief for {act_label} of '{title}' ({series}, slug={slug}). "
                 f"Reference storyboard JSON: {spec_url} . "
                 f"Source frames directory: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
-                f"Generate {len(missing)} smooth 5-second vertical 9:16 animated clips named scene_{missing[0]:02d}.mp4 through scene_{missing[-1]:02d}.mp4 "
-                f"matching the storyboard motion notes, without text or watermarks, and deliver using your configured studio upload workflow."
+                f"Use genuine AI Image-to-Video generation to produce {len(missing)} vertical 9:16 video clips named scene_{missing[0]:02d}.mp4 through scene_{missing[-1]:02d}.mp4 "
+                f"with real living character, fabric, water, fire, and atmospheric motion (never static image zoompan or Ken Burns slideshows). "
+                f"Keep clips clean without text or watermarks, and deliver using your configured studio upload workflow."
             )
             new_vid_tasks.append({
                 "dedup": dedup,

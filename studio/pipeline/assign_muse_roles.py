@@ -76,8 +76,10 @@ def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
     if role == "animator":
         return (
             f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} (do Muse Tổng Điều Phối chỉ huy). CHẠY TỰ ĐỘNG 100% — KHÔNG DỪNG LẠI HỎI XÁC NHẬN! "
-            f"Mở {join} nhận vai animator trên /portal! Bấm Claim Task nhận việc muse_make_videos (tạo đúng lô clip 9-11 cảnh được giao của Hồi đó, ví dụ scene_01..09.mp4 hoặc scene_10..18.mp4), tải ảnh gốc tại https://muse.alltool.pro/media/<slug>/, tạo clip video dọc 9:16 (.mp4 thật, 5s/clip, chuyển động điện ảnh mượt mà, hết hạn mức video thì báo outcome=BLOCKED). "
-            f"Đẩy thẳng từ Ubuntu qua cầu croc về ổ E: bằng: {upload_cmd}, nộp JSON trên /portal và làm tiếp liên tục!"
+            f"Mở {join} nhận vai animator trên /portal! Bấm Claim Task nhận việc muse_make_videos (tạo đúng lô clip 9-11 cảnh được giao của Hồi đó, ví dụ scene_01..09.mp4 hoặc scene_10..18.mp4), tải ảnh gốc tại https://muse.alltool.pro/media/<slug>/. "
+            f"QUY TẮC SỐNG CÒN CHỐNG GIAN LẬN: BẮT BUỘC dùng CÔNG CỤ TẠO VIDEO AI THẬT (AI Image-to-Video / generate_video) tích hợp sẵn của Muse để tạo chuyển động sống động thật sự (nhân vật cử động, chớp mắt, quay đầu, bước đi, tóc/áo bay, lửa cháy, mưa rơi, nước chảy, sương trôi). "
+            f"CẤM TUYỆT ĐỐI DÙNG FFMPEG ZOOMPAN / KEN BURNS / SCALE-CROP / PYTHON ĐỂ GIẢ LẬP VIDEO TỪ ẢNH TĨNH! Hệ thống có máy quét OpenCV tự động xóa ngay mọi file zoompan giả và đánh trượt task! Nếu tài khoản hết hạn mức tạo video AI thật thì BẮT BUỘC nộp outcome=BLOCKED, TUYỆT ĐỐI KHÔNG tự ý dùng ffmpeg zoompan thay thế! "
+            f"Tạo xong video AI thật thì đẩy thẳng từ Ubuntu qua cầu croc về ổ E: bằng: {upload_cmd}, nộp JSON trên /portal và làm tiếp liên tục!"
         )
     return (
         f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} (Hội Đồng Thẩm Định Độc Lập dưới quyền Muse Tổng Điều Phối). CHẠY TỰ ĐỘNG 100% — KHÔNG HỎI XÁC NHẬN! "
