@@ -380,30 +380,21 @@ def main():
             )
             if dedup in existing_vid_dedups:
                 continue
-            act_label = f"HỒI {act_idx}/{len(acts)} (cảnh {sc_ids[0]:02d}..{sc_ids[-1]:02d})" if len(acts) > 1 else f"cảnh 01..{n_scenes:02d}"
+            act_label = f"Act {act_idx}/{len(acts)} (scenes {sc_ids[0]:02d}-{sc_ids[-1]:02d})" if len(acts) > 1 else f"scenes 01-{n_scenes:02d}"
             sc_hint = ", ".join(f"scene_{sid:02d}.jpg" for sid in missing)
-            zip_glob = " ".join(f"scene_{sid:02d}.mp4" for sid in missing)
-            croc_step = (
-                f"BƯỚC 4 (ĐẨY THẲNG TỪ UBUNTU QUA CẦU CROC VỀ Ổ E: — KHÔNG DÙNG BROWSER UPLOAD, KHÔNG HỎI XÁC NHẬN): Trong Ubuntu chạy ngay: "
-                f"zip -j /tmp/{slug}_act{act_idx}.zip {zip_glob} && curl -fsSL -X POST \"https://muse.alltool.pro/media-upload?token={inv_tok}&slug={slug}&json=1\" -F \"file=@/tmp/{slug}_act{act_idx}.zip\" "
-                f"(tự chuyển thẳng qua croc về ổ E: trong 2 giây!). "
-            ) if inv_tok else (
-                f"BƯỚC 4: Nén các clip .mp4 thành .zip rồi upload tại https://muse.alltool.pro/media-upload?slug={slug}. "
-            )
             criteria = (
-                f"VAI TRÒ: MUSE TẠO CLIP VIDEO (Image-to-Video) cho {act_label} tập '{title}' (kênh {series}, mã {slug}). "
-                f"BƯỚC 1: Đọc kịch bản tại {spec_url} để xem chuyển động của {act_label}. "
-                f"BƯỚC 2: Tải đúng {len(missing)} ảnh 9:16 của Hồi này từ kho riêng: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
-                f"BƯỚC 3: Dùng công cụ TẠO VIDEO TỪ ẢNH (Image-to-Video) của chính Muse biến {len(missing)} ảnh đó thành {len(missing)} clip video dọc 9:16 (đặt tên đúng scene_{missing[0]:02d}.mp4 .. scene_{missing[-1]:02d}.mp4, 5s/clip, chuyển động điện ảnh mượt mà, KHÔNG biến dạng mặt/tay, KHÔNG chữ/watermark). "
-                f"{croc_step}"
-                f"BƯỚC 5 (NỘP): Dán JSON hợp lệ trong summary: {{\"channel\":\"{ch_key}\",\"slug\":\"{slug}\",\"act\":{act_idx},\"delivery\":\"croc_E\"}}. Nếu hết hạn mức video, chọn outcome=BLOCKED!"
+                f"Animation brief for {act_label} of '{title}' ({series}, slug={slug}). "
+                f"Reference storyboard JSON: {spec_url} . "
+                f"Source frames directory: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
+                f"Generate {len(missing)} smooth 5-second vertical 9:16 animated clips named scene_{missing[0]:02d}.mp4 through scene_{missing[-1]:02d}.mp4 "
+                f"matching the storyboard motion notes, without text or watermarks, and deliver using your configured studio upload workflow."
             )
             new_vid_tasks.append({
                 "dedup": dedup,
                 "assigned_to": "animator",
                 "kind": "muse_make_videos",
                 "payload": {
-                    "objective": f"[{slug}] {act_label} — TẠO {len(missing)} CLIP 9:16: '{title}' ({series})",
+                    "objective": f"[{slug}] {act_label} — Animate {len(missing)} vertical 9:16 clips for '{title}'",
                     "acceptance_criteria": criteria,
                 },
             })
