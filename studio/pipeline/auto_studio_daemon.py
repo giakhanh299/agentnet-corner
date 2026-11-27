@@ -109,7 +109,7 @@ def main() -> int:
                 log(f"Hub hiện tại: QUEUED={queued}, RUNNING={running}")
 
                 nudged = False
-                if queued > 0 and running <= 2 and (time.time() - last_nudge_ts) >= args.nudge_cooldown_min * 60:
+                if queued > 0 and running <= 4 and (time.time() - last_nudge_ts) >= args.nudge_cooldown_min * 60:
                     log("Số Muse đang chạy thấp trong khi còn việc QUEUED -> đánh thức dàn 15 Muse...")
                     run_step("nudge_muses.py", timeout_s=900)
                     last_nudge_ts = time.time()

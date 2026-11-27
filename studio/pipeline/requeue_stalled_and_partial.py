@@ -29,7 +29,7 @@ def main():
         if kind in ("muse_draw_images", "muse_make_videos") and st == "RUNNING":
             started = float(t.get("started_at") or t.get("created_at") or now)
             age_min = (now - started) / 60.0
-            limit = 25.0 if kind == "muse_draw_images" else 35.0
+            limit = 22.0 if kind == "muse_draw_images" else 25.0
             if age_min >= limit:
                 requeue_draw_ids.append((t["id"], (t.get("owner_node") or "")[:8], round(age_min, 1), (t.get("payload") or {}).get("objective", "")[:45]))
         elif kind == "muse_make_videos" and st == "SUBMITTED":
