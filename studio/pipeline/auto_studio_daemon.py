@@ -80,7 +80,7 @@ def check_hub_activity() -> tuple[int, int]:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Daemon tự động kéo video Muse & hậu kỳ 24/7 không cần AI")
     ap.add_argument("--interval-min", type=float, default=15.0)
-    ap.add_argument("--nudge-cooldown-min", type=float, default=45.0)
+    ap.add_argument("--nudge-cooldown-min", type=float, default=28.0)
     ap.add_argument("--initial-delay-min", type=float, default=0.0)
     ap.add_argument("--once", action="store_true")
     args = ap.parse_args()

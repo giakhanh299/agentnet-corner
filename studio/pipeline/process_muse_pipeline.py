@@ -440,39 +440,38 @@ def main():
 
         title = spec.get("title", slug)
         series = spec.get("series", ch_key)
-        chunk_sz = 9 if n_scenes >= 32 else n_scenes
-        acts = [list(range(s, min(s + chunk_sz, n_scenes + 1))) for s in range(1, n_scenes + 1, chunk_sz)]
+        # QUAN TRỌNG: Giới hạn đúng 6 clip/lô vì Muse chỉ cho tạo tối đa 6 video AI thật mỗi lượt chat!
+        missing_all = [
+            sid for sid in range(1, n_scenes + 1)
+            if (img_dir / f"scene_{sid:02d}.jpg").is_file() and not verify_mp4(clip_dir / f"scene_{sid:02d}.mp4")
+        ]
+        if not missing_all:
+            continue
+        batches = [missing_all[i:i + 6] for i in range(0, len(missing_all), 6)]
+        # Dùng trực tiếp URL trên alltool.pro (luôn có sẵn, không bao giờ dính 404 GitHub!)
+        vps_spec_url = f"https://muse.alltool.pro/media/{slug}/episode.json"
 
-        for act_idx, sc_ids in enumerate(acts, 1):
-            have_act_imgs = all((img_dir / f"scene_{sid:02d}.jpg").is_file() for sid in sc_ids)
-            if not have_act_imgs:
-                continue
-            missing = [sid for sid in sc_ids if not verify_mp4(clip_dir / f"scene_{sid:02d}.mp4")]
-            if not missing:
-                continue
-            dedup = (
-                f"musevid-act{act_idx}-{ch_key}-{slug}"
-                if len(acts) > 1
-                else f"musevid-20261126-{ch_key}-{slug}"
-            )
+        for b_idx, sc_ids in enumerate(batches, 1):
+            dedup = f"musevid6-s{sc_ids[0]:02d}_{sc_ids[-1]:02d}-{slug}"
             if dedup in existing_vid_dedups:
                 continue
-            act_label = f"Act {act_idx}/{len(acts)} (scenes {sc_ids[0]:02d}-{sc_ids[-1]:02d})" if len(acts) > 1 else f"scenes 01-{n_scenes:02d}"
-            sc_hint = ", ".join(f"scene_{sid:02d}.jpg" for sid in missing)
+            act_label = f"Batch {b_idx}/{len(batches)} (scenes {sc_ids[0]:02d}-{sc_ids[-1]:02d})"
+            sc_hint = ", ".join(f"scene_{sid:02d}.jpg" for sid in sc_ids)
+            out_hint = ", ".join(f"scene_{sid:02d}.mp4" for sid in sc_ids)
             criteria = (
                 f"Animation brief for {act_label} of '{title}' ({series}, slug={slug}). "
-                f"Reference storyboard JSON: {spec_url} . "
+                f"Reference storyboard JSON: {vps_spec_url} . "
                 f"Source frames directory: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
-                f"Use genuine AI Image-to-Video generation to produce {len(missing)} vertical 9:16 video clips named scene_{missing[0]:02d}.mp4 through scene_{missing[-1]:02d}.mp4 "
-                f"with real living character, fabric, water, fire, and atmospheric motion (never static image zoompan or Ken Burns slideshows). "
-                f"Keep clips clean without text or watermarks, and deliver using your configured studio upload workflow."
+                f"Use genuine AI Image-to-Video generation to produce EXACTLY {len(sc_ids)} vertical 9:16 video clips ({out_hint}) "
+                f"with real living character, fabric, water, fire, and atmospheric motion (NEVER static image zoompan or Ken Burns slideshows). "
+                f"Keep clips clean without text or watermarks, deliver via your studio upload workflow, submit JSON on /portal, then STOP (do not claim a second batch in the same chat turn)."
             )
             new_vid_tasks.append({
                 "dedup": dedup,
                 "assigned_to": "animator",
                 "kind": "muse_make_videos",
                 "payload": {
-                    "objective": f"[{slug}] {act_label} — Animate {len(missing)} vertical 9:16 clips for '{title}'",
+                    "objective": f"[{slug}] {act_label} — Animate {len(sc_ids)} real AI clips ({sc_ids[0]:02d}-{sc_ids[-1]:02d}) for '{title}'",
                     "acceptance_criteria": criteria,
                 },
             })

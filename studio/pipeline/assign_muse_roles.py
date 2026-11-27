@@ -76,10 +76,10 @@ def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
     if role == "animator":
         return (
             f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} (do Muse Tổng Điều Phối chỉ huy). CHẠY TỰ ĐỘNG 100% — KHÔNG DỪNG LẠI HỎI XÁC NHẬN! "
-            f"Mở {join} nhận vai animator trên /portal! Bấm Claim Task nhận việc muse_make_videos (tạo đúng lô clip 9-11 cảnh được giao của Hồi đó, ví dụ scene_01..09.mp4 hoặc scene_10..18.mp4), tải ảnh gốc tại https://muse.alltool.pro/media/<slug>/. "
+            f"Mở {join} nhận vai animator trên /portal! Bấm Claim Task nhận ĐÚNG 1 LÔ VIỆC muse_make_videos (mỗi lô đã được chia gọn tối đa 6 clip để khớp đúng hạn mức 6 video AI/lượt của Muse!), tải ảnh gốc tại https://muse.alltool.pro/media/<slug>/ và đọc storyboard tại https://muse.alltool.pro/media/<slug>/episode.json. "
             f"QUY TẮC SỐNG CÒN CHỐNG GIAN LẬN: BẮT BUỘC dùng CÔNG CỤ TẠO VIDEO AI THẬT (AI Image-to-Video / generate_video) tích hợp sẵn của Muse để tạo chuyển động sống động thật sự (nhân vật cử động, chớp mắt, quay đầu, bước đi, tóc/áo bay, lửa cháy, mưa rơi, nước chảy, sương trôi). "
-            f"CẤM TUYỆT ĐỐI DÙNG FFMPEG ZOOMPAN / KEN BURNS / SCALE-CROP / PYTHON ĐỂ GIẢ LẬP VIDEO TỪ ẢNH TĨNH! Hệ thống có máy quét OpenCV tự động xóa ngay mọi file zoompan giả và đánh trượt task! Nếu tài khoản hết hạn mức tạo video AI thật thì BẮT BUỘC nộp outcome=BLOCKED, TUYỆT ĐỐI KHÔNG tự ý dùng ffmpeg zoompan thay thế! "
-            f"Tạo xong video AI thật thì đẩy thẳng từ Ubuntu qua cầu croc về ổ E: bằng: {upload_cmd}, nộp JSON trên /portal và làm tiếp liên tục!"
+            f"CẤM TUYỆT ĐỐI DÙNG FFMPEG ZOOMPAN / KEN BURNS / SCALE-CROP / PYTHON ĐỂ GIẢ LẬP VIDEO TỪ ẢNH TĨNH! Hệ thống có máy quét OpenCV tự động xóa ngay mọi file zoompan giả! Nếu công cụ video báo 503 hoặc hết lượt thì nộp outcome=BLOCKED. "
+            f"QUY TẮC QUAN TRỌNG VỀ HẠN MỨC 6 VIDEO/LƯỢT: Sau khi tạo xong 1 lô (tối đa 6 clip AI thật), đẩy thẳng từ Ubuntu qua cầu croc về ổ E: bằng {upload_cmd}, nộp JSON trên /portal rồi DỪNG LẠI CHỜ LƯỢT ĐÁNH THỨC TIẾP THEO — TUYỆT ĐỐI KHÔNG bấm Claim Task thứ 2 trong cùng lượt chat này (vì mỗi lượt chat chỉ tạo được tối đa 6 video, nhận thêm sẽ bị BLOCKED làm hỏng hàng đợi)!"
         )
     return (
         f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} (Hội Đồng Thẩm Định Độc Lập dưới quyền Muse Tổng Điều Phối). CHẠY TỰ ĐỘNG 100% — KHÔNG HỎI XÁC NHẬN! "
