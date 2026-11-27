@@ -101,6 +101,7 @@ def main() -> int:
             t0 = time.time()
             log(f"--- Chu kỳ #{tick} bắt đầu ---")
             try:
+                run_step("auto_refill_100_pipeline.py", timeout_s=180)
                 run_step("process_muse_pipeline.py", timeout_s=600)
                 run_step("requeue_stalled_and_partial.py", timeout_s=180)
                 run_step("prioritize_hub.py", timeout_s=120)

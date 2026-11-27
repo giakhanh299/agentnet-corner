@@ -227,9 +227,43 @@ def _tail_file(path: Path, max_lines: int = 30) -> list[str]:
 
 
 def _scan_featured_movies() -> list[dict]:
+    """Tự động quét TẤT CẢ phim dài 4 Hồi (>=32 cảnh) từ repo & ổ E: tiến tới mốc 100 tập."""
     out = []
+    seen_slugs: set[str] = set()
     channels = ("phim-ma-dan-gian", "kiem-hiep-co-trang", "tap-lam-content", "tien-va-doi-srt", "")
+    repo_ma = Path(r"D:\AI_AGENT\agentnet-corner-phim-ma\channels")
+    discovered: list[tuple[str, str, int]] = []
+    for ch_key, label_pref in (("phim-ma-dan-gian", "Phim Ma"), ("kiem-hiep-co-trang", "Kiếm Hiệp")):
+        cdir = repo_ma / ch_key
+        if not cdir.is_dir():
+            continue
+        for ep in sorted(cdir.iterdir(), reverse=True):
+            sp = ep / "episode.json"
+            if not sp.is_file():
+                continue
+            slug = ep.name
+            if slug in seen_slugs:
+                continue
+            if slug.startswith("kh") and ch_key != "kiem-hiep-co-trang":
+                continue
+            if slug.startswith("ep") and ch_key != "phim-ma-dan-gian":
+                continue
+            try:
+                d = json.loads(sp.read_text(encoding="utf-8"))
+                n = len(d.get("scenes") or [])
+                if n < 32:
+                    continue
+                title = f"{label_pref} · {d.get('title') or slug}"
+                discovered.append((slug, title, n))
+                seen_slugs.add(slug)
+            except Exception:
+                continue
     for slug, title, target in FEATURED_MOVIES:
+        if slug not in seen_slugs:
+            discovered.append((slug, title, target))
+            seen_slugs.add(slug)
+
+    for slug, title, target in discovered[:24]:
         imgs = set()
         clips = set()
         final_mp4 = False
@@ -255,6 +289,8 @@ def _scan_featured_movies() -> list[dict]:
             "clips": len(clips),
             "final_ready": final_mp4,
         })
+    # Ưu tiên hiển thị các phim đang làm dở / mới nhất lên đầu
+    out.sort(key=lambda m: (m["final_ready"], m["slug"]), reverse=False)
     return out
 
 

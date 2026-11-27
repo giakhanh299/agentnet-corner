@@ -61,9 +61,22 @@ def hub_json(method: str, path: str, token: str, payload: dict | None = None) ->
         return json.loads(r.read().decode("utf-8"))
 
 
+def _canonical_channel(slug: str, fallback: str) -> str:
+    low = slug.lower()
+    if low.startswith("kh"):
+        return "kiem-hiep-co-trang"
+    if low.startswith("ep"):
+        return "phim-ma-dan-gian"
+    if low.startswith("k1_"):
+        return "tien-va-doi-srt"
+    if low.startswith("v0"):
+        return "tap-lam-content"
+    return fallback
+
+
 def ingest_received_files(slug: str, src_dir: Path) -> tuple[int, int]:
     found = pm.find_spec(slug)
-    ch_key = found[0] if found else "misc"
+    ch_key = _canonical_channel(slug, found[0] if found else "misc")
     ep_dir = MEDIA_ROOT / ch_key / slug
     img_dir = ep_dir / "01_muse_images"
     clip_dir = ep_dir / "02_muse_clips"
@@ -88,7 +101,7 @@ def ingest_received_files(slug: str, src_dir: Path) -> tuple[int, int]:
         if low == "episode.json":
             try:
                 spec_obj = json.loads(f.read_text(encoding="utf-8"))
-                ch_hint = str(spec_obj.get("channel") or ch_key)
+                ch_hint = _canonical_channel(slug, str(spec_obj.get("channel") or ch_key))
                 if ch_hint in ("phim-ma-dan-gian", "kiem-hiep-co-trang", "tien-va-doi-srt", "tap-lam-content"):
                     ch_key = ch_hint
                     ep_dir = MEDIA_ROOT / ch_key / slug
@@ -100,6 +113,11 @@ def ingest_received_files(slug: str, src_dir: Path) -> tuple[int, int]:
                     repo_ep = pm.REPO_MA / (ch_key if ch_key != "misc" else "phim-ma-dan-gian") / slug / "episode.json"
                 repo_ep.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(f, repo_ep)
+                log(f"NEW_SCRIPT_INGESTED slug={slug} ch={ch_key} -> kích hoạt tự động chia 4 Hồi vẽ ảnh!")
+                subprocess.Popen(
+                    [sys.executable, str(HERE / "auto_refill_100_pipeline.py")],
+                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                )
             except Exception as e:
                 log(f"WARN ingest episode.json for {slug}: {e}")
             continue
