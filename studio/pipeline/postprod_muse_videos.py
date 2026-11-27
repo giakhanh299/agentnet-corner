@@ -116,18 +116,28 @@ def main() -> None:
             if out_mp4.is_file() and (final_dir / "qc_report_v2.json").is_file():
                 skipped += 1
                 continue
-            clips = [p for p in sorted(clip_dir.glob("scene_*.mp4")) if p.stat().st_size > 20_000] if clip_dir.is_dir() else []
-            if len(clips) < 11:
-                continue
             spec_path = find_spec(ch_key, slug)
             if not spec_path:
                 continue
+            spec_peek = json.loads(spec_path.read_text(encoding="utf-8"))
+            n_expected = len(spec_peek.get("scenes", [])) or 11
+            # Kênh phim cốt truyện (Phim Ma & Kiếm Hiệp -> KENH_005): CẤM TUYỆT ĐỐI xuất phim ngắn < 32 cảnh (< 4 phút)!
+            if ch_key in ("phim-ma-dan-gian", "kiem-hiep-co-trang") and n_expected < 32:
+                continue
+            clips = [
+                clip_dir / f"scene_{sid:02d}.mp4"
+                for sid in range(1, n_expected + 1)
+                if (clip_dir / f"scene_{sid:02d}.mp4").is_file() and (clip_dir / f"scene_{sid:02d}.mp4").stat().st_size > 20_000
+            ] if clip_dir.is_dir() else []
+            if len(clips) < n_expected:
+                continue
             final_dir.mkdir(parents=True, exist_ok=True)
-            print(f"POSTPROD_V2 {ch_key}/{slug} -> {cid} ({len(clips)} Muse .mp4 clips)...", flush=True)
+            print(f"POSTPROD_V2 {ch_key}/{slug} -> {cid} ({len(clips)}/{n_expected} Muse .mp4 clips)...", flush=True)
             try:
-                spec = json.loads(spec_path.read_text(encoding="utf-8"))
+                spec = spec_peek
                 spec["target_channel"] = cid
                 spec["aigc_label"] = False
+                spec["hashtags"] = [h for h in (spec.get("hashtags") or []) if "aigc" not in str(h).lower()]
                 if img_dir.is_dir():
                     cov_idx = int(spec.get("cover_scene") or 1)
                     cand = img_dir / f"scene_{cov_idx:02d}.jpg"
@@ -147,6 +157,8 @@ def main() -> None:
                     shutil.rmtree(work_dir)
                 rep = ae.assemble(spec, clip_dir, out_mp4, work_dir)
                 qc = measure_qc(out_mp4)
+                if ch_key in ("phim-ma-dan-gian", "kiem-hiep-co-trang") and qc["duration_s"] < 240.0:
+                    raise RuntimeError(f"CHẶN PHIM NGẮN: {slug} chỉ dài {qc['duration_s']}s (< 240s tối thiểu cho phim cốt truyện!)")
                 staged = stage_to_fb(cid, prefix, slug, final_dir)
                 rec = {"channel": ch_key, "slug": slug, "fb_channel": cid, "voice": rep["voice"], "qc": qc, "staged": staged}
                 (final_dir / "qc_report_v2.json").write_text(json.dumps(rec, ensure_ascii=False, indent=2), encoding="utf-8")

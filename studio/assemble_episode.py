@@ -223,6 +223,15 @@ def render_scene(src: Path | None, dur: float, dst: Path, motion: str = "", idx:
               f"{zp},vignette=PI/6,format=yuv420p")
         run(["ffmpeg", "-y", "-loop", "1", "-i", str(src), "-t", f"{dur}", "-vf", vf] + common)
         return f"ẢNH→{mode}"
+    if dur > 5.3:
+        # Seamless cinematic slow-motion + ping-pong (no jump-cut when scene dialogue is 8-14s!)
+        pf = (
+            f"[0:v]setpts=1.25*PTS,{vf_fit},split[vfwd][vtmp];"
+            f"[vtmp]reverse[vrev];"
+            f"[vfwd][vrev]concat=n=2:v=1:a=0[vpong]"
+        )
+        run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(src), "-filter_complex", pf, "-map", "[vpong]", "-t", f"{dur}"] + common)
+        return "CLIP (ping-pong mượt, đã tắt tiếng gốc)"
     run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", str(src), "-t", f"{dur}", "-vf", vf_fit] + common)
     return "CLIP (đã tắt tiếng gốc)"
 

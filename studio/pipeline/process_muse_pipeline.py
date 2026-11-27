@@ -254,9 +254,15 @@ def sync_vps_media_to_E() -> dict:
             if len(local_imgs) >= 8 and not (ep_dir / "storyboard_muse.jpg").is_file():
                 make_storyboard(local_imgs, ep_dir / "storyboard_muse.jpg")
 
-            # Delete scene_* clips/images once all 11 clips are on E:; keep QA review sheets until qa_scorecard.json exists!
+            # Delete scene_* clips/images once ALL expected clips (e.g. 36 for movies, 11 for Reels) are on E:
             local_clips = [p for p in sorted(clip_dir.glob("scene_*.mp4")) if verify_mp4(p)]
-            if len(local_clips) >= 11:
+            n_exp_clean = 11
+            if found:
+                try:
+                    n_exp_clean = len(json.loads(found[1].read_text(encoding="utf-8")).get("scenes", [])) or 11
+                except Exception:
+                    n_exp_clean = 11
+            if len(local_clips) >= n_exp_clean:
                 if (ep_dir / "03_final_v2" / "qa_scorecard.json").is_file():
                     _, o2, _ = ssh.exec_command(f"rm -rf /var/lib/agentnet-media/{slug}")
                 else:
@@ -327,56 +333,77 @@ def main():
                 if not verify_mp4(dst):
                     download_file(url, dst, timeout=90)
 
-    # Enqueue muse_make_videos for any slug with 11 verified images on E: and <11 clips yet
+    # Enqueue muse_make_videos (in 9-10 scene Acts for 36-40 scene movies, or single batch for 11-scene Reels!)
     for slug in sorted(candidate_slugs):
         found = find_spec(slug)
         if not found:
             continue
         ch_key, spec_path, spec_url = found
         spec = json.loads(spec_path.read_text(encoding="utf-8"))
-        n_scenes = len(spec.get("scenes", []))
+        n_scenes = len(spec.get("scenes", [])) or 11
+        # Skip retired short (<32 scene) specs on movie channels so Muses focus 100% on 4-Act (36-40 scene) movies!
+        if ch_key in ("phim-ma-dan-gian", "kiem-hiep-co-trang") and n_scenes < 32:
+            continue
         ep_dir = MEDIA_ROOT / ch_key / slug
         img_dir = ep_dir / "01_muse_images"
         clip_dir = ep_dir / "02_muse_clips"
         local_imgs = sorted(img_dir.glob("scene_*.jpg"))
-        local_clips = [p for p in sorted(clip_dir.glob("scene_*.mp4")) if verify_mp4(p)]
+        local_clips = [
+            clip_dir / f"scene_{sid:02d}.mp4"
+            for sid in range(1, n_scenes + 1)
+            if verify_mp4(clip_dir / f"scene_{sid:02d}.mp4")
+        ]
 
         if len(local_imgs) >= min(n_scenes, 10) and not (ep_dir / "storyboard_muse.jpg").is_file():
-            make_storyboard(local_imgs, ep_dir / "storyboard_muse.jpg")
+            make_storyboard(local_imgs[:16], ep_dir / "storyboard_muse.jpg")
 
-        if len(local_clips) >= min(n_scenes, 10):
-            ready_for_postprod.append({"channel": ch_key, "slug": slug, "clips": len(local_clips)})
+        if len(local_clips) >= n_scenes:
+            ready_for_postprod.append({"channel": ch_key, "slug": slug, "clips": len(local_clips), "expected": n_scenes})
             continue
 
-        dedup = f"musevid-20261126-{ch_key}-{slug}"
-        if len(local_imgs) >= min(n_scenes, 10) and dedup not in existing_vid_dedups:
-            title = spec.get("title", slug)
-            series = spec.get("series", ch_key)
-            n_img = len(local_imgs)
-            # Only enqueue missing clip scenes if some clips already exist!
-            missing = [i for i in range(1, n_img + 1) if not verify_mp4(clip_dir / f"scene_{i:02d}.mp4")]
-            sc_hint = f"scene_01.jpg đến scene_{n_img:02d}.jpg" if len(missing) == n_img else f"các cảnh còn thiếu: {missing}"
+        title = spec.get("title", slug)
+        series = spec.get("series", ch_key)
+        chunk_sz = 9 if n_scenes >= 32 else n_scenes
+        acts = [list(range(s, min(s + chunk_sz, n_scenes + 1))) for s in range(1, n_scenes + 1, chunk_sz)]
+
+        for act_idx, sc_ids in enumerate(acts, 1):
+            have_act_imgs = all((img_dir / f"scene_{sid:02d}.jpg").is_file() for sid in sc_ids)
+            if not have_act_imgs:
+                continue
+            missing = [sid for sid in sc_ids if not verify_mp4(clip_dir / f"scene_{sid:02d}.mp4")]
+            if not missing:
+                continue
+            dedup = (
+                f"musevid-act{act_idx}-{ch_key}-{slug}"
+                if len(acts) > 1
+                else f"musevid-20261126-{ch_key}-{slug}"
+            )
+            if dedup in existing_vid_dedups:
+                continue
+            act_label = f"HỒI {act_idx}/{len(acts)} (cảnh {sc_ids[0]:02d}..{sc_ids[-1]:02d})" if len(acts) > 1 else f"cảnh 01..{n_scenes:02d}"
+            sc_hint = ", ".join(f"scene_{sid:02d}.jpg" for sid in missing)
+            zip_glob = " ".join(f"scene_{sid:02d}.mp4" for sid in missing)
             croc_step = (
                 f"BƯỚC 4 (ĐẨY THẲNG TỪ UBUNTU QUA CẦU CROC VỀ Ổ E: — KHÔNG DÙNG BROWSER UPLOAD, KHÔNG HỎI XÁC NHẬN): Trong Ubuntu chạy ngay: "
-                f"zip -j /tmp/{slug}.zip scene_*.mp4 && curl -fsSL -X POST \"https://muse.alltool.pro/media-upload?token={inv_tok}&slug={slug}&json=1\" -F \"file=@/tmp/{slug}.zip\" "
+                f"zip -j /tmp/{slug}_act{act_idx}.zip {zip_glob} && curl -fsSL -X POST \"https://muse.alltool.pro/media-upload?token={inv_tok}&slug={slug}&json=1\" -F \"file=@/tmp/{slug}_act{act_idx}.zip\" "
                 f"(tự chuyển thẳng qua croc về ổ E: trong 2 giây!). "
             ) if inv_tok else (
                 f"BƯỚC 4: Nén các clip .mp4 thành .zip rồi upload tại https://muse.alltool.pro/media-upload?slug={slug}. "
             )
             criteria = (
-                f"VAI TRÒ: MUSE TẠO CLIP VIDEO (Image-to-Video) cho tập '{title}' (kênh {series}, mã {slug}). "
-                f"BƯỚC 1: Đọc kịch bản tại {spec_url} để xem chuyển động từng cảnh (5s/cảnh). "
-                f"BƯỚC 2: Tải ảnh 9:16 đã duyệt từ kho riêng: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
-                f"BƯỚC 3: Dùng công cụ TẠO VIDEO TỪ ẢNH (Image-to-Video) của chính Muse để biến {len(missing)} ảnh đó thành {len(missing)} clip video dọc 9:16 (.mp4, 4-5s/clip, chuyển động điện ảnh mượt mà, KHÔNG biến dạng mặt/tay, KHÔNG chữ/watermark). "
+                f"VAI TRÒ: MUSE TẠO CLIP VIDEO (Image-to-Video) cho {act_label} tập '{title}' (kênh {series}, mã {slug}). "
+                f"BƯỚC 1: Đọc kịch bản tại {spec_url} để xem chuyển động của {act_label}. "
+                f"BƯỚC 2: Tải đúng {len(missing)} ảnh 9:16 của Hồi này từ kho riêng: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
+                f"BƯỚC 3: Dùng công cụ TẠO VIDEO TỪ ẢNH (Image-to-Video) của chính Muse biến {len(missing)} ảnh đó thành {len(missing)} clip video dọc 9:16 (đặt tên đúng scene_{missing[0]:02d}.mp4 .. scene_{missing[-1]:02d}.mp4, 5s/clip, chuyển động điện ảnh mượt mà, KHÔNG biến dạng mặt/tay, KHÔNG chữ/watermark). "
                 f"{croc_step}"
-                f"BƯỚC 5 (NỘP): Dán JSON hợp lệ trong summary: {{\"channel\":\"{ch_key}\",\"slug\":\"{slug}\",\"delivery\":\"croc_E\",\"videos\":[{{\"scene\":1,\"file\":\"scene_01.mp4\",\"duration_s\":5,\"tool\":\"Muse video\"}},...]}}. Nếu hết hạn mức video, chọn outcome=BLOCKED!"
+                f"BƯỚC 5 (NỘP): Dán JSON hợp lệ trong summary: {{\"channel\":\"{ch_key}\",\"slug\":\"{slug}\",\"act\":{act_idx},\"delivery\":\"croc_E\"}}. Nếu hết hạn mức video, chọn outcome=BLOCKED!"
             )
             new_vid_tasks.append({
                 "dedup": dedup,
                 "assigned_to": "animator",
                 "kind": "muse_make_videos",
                 "payload": {
-                    "objective": f"[{slug}] MUSE TẠO VIDEO 9:16 ({len(missing)} clip x 5s): '{title}' ({series}) — tạo clip .mp4 từ ảnh đã vẽ + up lên /media-upload.",
+                    "objective": f"[{slug}] {act_label} — TẠO {len(missing)} CLIP 9:16: '{title}' ({series})",
                     "acceptance_criteria": criteria,
                 },
             })
