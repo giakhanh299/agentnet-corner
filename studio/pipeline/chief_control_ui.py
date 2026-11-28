@@ -263,7 +263,7 @@ def _scan_featured_movies() -> list[dict]:
             discovered.append((slug, title, target))
             seen_slugs.add(slug)
 
-    for slug, title, target in discovered[:24]:
+    for slug, title, target in discovered:
         imgs = set()
         clips = set()
         final_mp4 = False
@@ -271,16 +271,19 @@ def _scan_featured_movies() -> list[dict]:
             sdir = (MEDIA_ROOT / ch / slug) if ch else (MEDIA_ROOT / slug)
             if not sdir.is_dir():
                 continue
-            for f in sdir.rglob("*"):
-                if not f.is_file():
-                    continue
-                nm = f.name.lower()
-                if nm.startswith("scene_") and nm.endswith((".jpg", ".jpeg", ".png")):
-                    imgs.add(nm)
-                elif nm.startswith("scene_") and nm.endswith(".mp4"):
-                    clips.add(nm)
-                elif nm.endswith("_final.mp4") or nm == f"{slug}.mp4":
-                    final_mp4 = True
+            idir = sdir / "01_muse_images"
+            if idir.is_dir():
+                for f in idir.glob("scene_*.jpg"):
+                    if f.stat().st_size > 4096:
+                        imgs.add(f.name.lower())
+            cdir = sdir / "02_muse_clips"
+            if cdir.is_dir():
+                for f in cdir.glob("scene_*.mp4"):
+                    if f.stat().st_size > 20000:
+                        clips.add(f.name.lower())
+            fdir = sdir / "03_final_v2"
+            if fdir.is_dir() and (fdir / f"{slug}.mp4").is_file() and (fdir / "qc_report_v2.json").is_file():
+                final_mp4 = True
         out.append({
             "slug": slug,
             "title": title,
@@ -289,8 +292,8 @@ def _scan_featured_movies() -> list[dict]:
             "clips": len(clips),
             "final_ready": final_mp4,
         })
-    # Ưu tiên hiển thị các phim đang làm dở / mới nhất lên đầu
-    out.sort(key=lambda m: (m["final_ready"], m["slug"]), reverse=False)
+    # Ghim phim đang có clip AI thật / đã dựng xong lên ĐẦU, sau đó đến phim đủ ảnh & mới nhất!
+    out.sort(key=lambda m: (1 if m["clips"] > 0 else 0, m["clips"], 1 if m["final_ready"] else 0, m["images"], m["slug"]), reverse=True)
     return out
 
 

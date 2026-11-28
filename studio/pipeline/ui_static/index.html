@@ -424,9 +424,9 @@
       <div class="card">
         <div class="card-hdr">
           <h2 class="card-title">Tiến Độ Phim Dài 4 Hồi (Ổ E:)</h2>
-          <span style="font-size:11.5px;color:var(--muted)">Chuẩn 36–38 cảnh · 6–8 phút</span>
+          <span id="moviesSummary" style="font-size:11.5px;color:var(--green);font-weight:600">Đang quét...</span>
         </div>
-        <div id="moviesList"><div class="empty">Đang quét ổ E:\MUSE_MEDIA_STUDIO...</div></div>
+        <div id="moviesList" style="max-height:540px;overflow-y:auto;padding-right:4px;"><div class="empty">Đang quét ổ E:\MUSE_MEDIA_STUDIO...</div></div>
       </div>
     </section>
 
@@ -782,8 +782,13 @@
 
     function renderMovies() {
       const box = document.getElementById('moviesList');
+      const sum = document.getElementById('moviesSummary');
       const list = STATE.featured_movies || [];
       if (!list.length) { box.innerHTML = '<div class="empty">Chưa có phim 4 Hồi nào.</div>'; return; }
+      const fullImg = list.filter(m => m.images >= m.target_scenes).length;
+      const hasClip = list.filter(m => m.clips > 0).length;
+      const doneCnt = list.filter(m => m.final_ready).length;
+      if (sum) sum.textContent = `${list.length}/100 KB · ${fullImg} đủ ảnh · ${hasClip} đang có clip · ${doneCnt} xong phim`;
       box.innerHTML = list.map(m => {
         const pImg = Math.min(100, Math.round((m.images / m.target_scenes) * 100));
         const pVid = Math.min(100, Math.round((m.clips / m.target_scenes) * 100));
