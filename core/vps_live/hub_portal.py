@@ -31,6 +31,26 @@ MEDIA_DROP_ROOT = Path(os.environ.get('AGENTNET_MEDIA_ROOT', '/var/lib/agentnet-
 MEDIA_ALLOWED_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.mp4', '.mov', '.webm', '.zip', '.json'}
 MEDIA_MAX_BYTES = 120 * 1024 * 1024
 SAFE_SLUG_RE = re.compile(r'^[a-zA-Z0-9_-]{2,80}$')
+# Sổ tay vai trò bền vững cho mọi AI (nguồn: agentnet-corner-core/docs/roles/*.md), phục vụ công khai chỉ-đọc tại /roles
+ROLES_ROOT = Path(os.environ.get('AGENTNET_ROLES_ROOT', '/opt/agentnet-corner/roles'))
+SAFE_ROLE_DOC_RE = re.compile(r'^[A-Za-z0-9_-]{1,64}\.md$')
+
+
+def _role_docs_index() -> dict:
+    docs = []
+    if ROLES_ROOT.is_dir():
+        for p in sorted(ROLES_ROOT.glob('*.md')):
+            if not SAFE_ROLE_DOC_RE.match(p.name) or not p.is_file():
+                continue
+            raw = p.read_bytes()
+            version = ''
+            m = re.search(rb'\*\*Phi\xc3\xaan b\xe1\xba\xa3n:\*\*\s*`([^`]+)`', raw[:2000])
+            if m:
+                version = m.group(1).decode('utf-8', 'replace')
+            docs.append({'file': p.name, 'url': f'/roles/{p.name}', 'bytes': len(raw),
+                         'sha256': hashlib.sha256(raw).hexdigest(), 'version': version,
+                         'updated_at': int(p.stat().st_mtime)})
+    return {'service': 'agentnet-role-handbook', 'start_here': '/roles/README.md', 'docs': docs}
 
 
 def _safe_media_name(raw_name: str) -> str:
@@ -724,6 +744,22 @@ def make_hub_handler(hub: HubManager):
 
                 if route == '/health':
                     return self.send_json(200, {'status': 'ok', 'service': 'agentnet-hub', 'project': PROJECT})
+
+                # Sổ tay vai trò (chỉ-đọc, công khai): /roles -> danh mục JSON, /roles/<file>.md -> nội dung Markdown
+                if route == '/roles':
+                    return self.send_json(200, _role_docs_index())
+                if route.startswith('/roles/'):
+                    doc_name = route.split('/roles/', 1)[1]
+                    if not SAFE_ROLE_DOC_RE.match(doc_name):
+                        return self.send_json(404, {'error': 'not_found'})
+                    doc_path = (ROLES_ROOT / doc_name).resolve()
+                    try:
+                        doc_path.relative_to(ROLES_ROOT.resolve())
+                    except ValueError:
+                        return self.send_json(403, {'error': 'forbidden'})
+                    if not doc_path.is_file():
+                        return self.send_json(404, {'error': 'not_found'})
+                    return self.send_bytes(200, doc_path.read_bytes(), 'text/markdown; charset=utf-8', cache_control='no-cache')
 
                 # 1-Click Browser Muse Join Link: /j/<CODE>
                 if route.startswith('/j/'):
@@ -1588,6 +1624,20 @@ echo "CROC_PUSH_TO_E_OK slug=$SLUG"
                 </div>
                 """
 
+            role_slug = str(worker.get('role') or '').strip()
+            role_links = ['<a href="/roles/README.md" target="_blank">README.md</a>']
+            if SAFE_ROLE_DOC_RE.match(f'{role_slug}.md') and (ROLES_ROOT / f'{role_slug}.md').is_file():
+                role_links.append(f'<a href="/roles/{_esc(role_slug)}.md" target="_blank">{_esc(role_slug)}.md</a>')
+            if (ROLES_ROOT / 'TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md').is_file():
+                role_links.append('<a href="/roles/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md" target="_blank">Tiêu chuẩn Kịch bản &amp; Diễn xuất</a>')
+            role_links.append('<a href="/roles" target="_blank">Danh mục JSON</a>')
+            handbook_html = (
+                '<div class="card" style="padding:10px 16px;font-size:13px">'
+                '<strong>Sổ tay vai trò bắt buộc:</strong> '
+                + ' &middot; '.join(role_links)
+                + '</div>'
+            ) if ROLES_ROOT.is_dir() else ''
+
             body = f"""<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sảnh Nhiệm Vụ Muse — {_esc(worker['role'].upper())}</title><style>{BASE_CSS}</style></head><body>
 <div class="wrap">
@@ -1602,6 +1652,7 @@ echo "CROC_PUSH_TO_E_OK slug=$SLUG"
       <button type="submit" class="sec">Thoát phiên</button>
     </form>
   </div>
+  {handbook_html}
   {flash_html}{err_html}
   {task_section}
 </div></body></html>"""

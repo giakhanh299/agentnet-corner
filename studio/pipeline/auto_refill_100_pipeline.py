@@ -323,6 +323,7 @@ def main() -> int:
                         f"Read the script and character_bible at {spec_url}. "
                         f"Illustrate {cnt} cinematic vertical 9:16 frames (1152x2048) named scene_{s_start:02d}.jpg through scene_{s_end:02d}.jpg "
                         f"with strict character consistency across all scenes, rich lighting, and zero text or watermarks. "
+                        f"Frame each scene as an acted moment, not a static portrait: honour shot/blocking/action/reaction/continuity when present (see https://muse.alltool.pro/roles/artist.md). "
                         f"Deliver using your configured artist upload workflow with keep_jpg=1 and submit your summary on /portal."
                     ),
                 },
@@ -351,7 +352,6 @@ def main() -> int:
             if any(slug in str(t.get("dedup") or "") or slug in str((t.get("payload") or {}).get("objective") or "") for t in existing_tasks):
                 continue
             genre_vi = "Phim Ma Dân Gian Trung Quốc chuyển thể" if ch_key == "phim-ma-dan-gian" else "Phim Kiếm Hiệp Cổ Trang Kỳ Án kiểu Cổ Long"
-            voices = "phonui, kiemhiep_nam, chautinhtri" if ch_key == "phim-ma-dan-gian" else "kiemhiep_nam, kiemhiep_nu, phonui"
             director_tasks_to_add.append({
                 "kind": "muse_write_script",
                 "assigned_to": "director",
@@ -363,8 +363,12 @@ def main() -> int:
                     "acceptance_criteria": (
                         f"Write a full 4-Act (38 scenes, total 1400-1700 Vietnamese words for 6-8 minutes runtime) episode.json for slug='{slug}', channel='{ch_key}', target_channel='KENH_005'. "
                         f"Story concept: {title} — {premise}. "
-                        f"Include at least 2-3 layered plot twists, a strict character_bible locking age/face/costume across all 38 scenes (no modern glasses/watches), "
-                        f"multi-voice cast ({voices}), aigc_label=false, zero #AIGC hashtags, and atmospheric cinema English image_prompt per scene (avoid graphic words like blood/corpse/dagger; use moody cinematic lighting). "
+                        f"Include at least 2-3 layered plot twists, a strict character_bible locking age/face/costume across all 38 scenes (no modern glasses/watches) plus speech_style/want/secret per main character, "
+                        f"voice fields per character (final voicing is decided in post-production), aigc_label=false, zero #AIGC hashtags, and atmospheric cinema English image_prompt per scene (avoid graphic words like blood/corpse/dagger; use moody cinematic lighting). "
+                        f"MANDATORY 'show, don't tell' standard (episode.json v2): follow https://muse.alltool.pro/roles/director.md and https://muse.alltool.pro/roles/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md — "
+                        f">=60% scenes are doi_thoai/hanh_dong with characters directly talking, acting and reacting to each other; no reported speech and no age/costume read-outs in voiceover; "
+                        f"each scene has scene_type, beat, blocking, action, dialogue[{{speaker,to,line,intent,delivery}}], reaction (listener), beat_pause, shot{{size,angle,subject,purpose,move}}, continuity; "
+                        f"motion = character performance first, then a motivated camera note (never just 'slow push-in'). "
                         f"Deliver episode.json via your director studio workflow and submit a concise JSON summary on /portal."
                     ),
                 },

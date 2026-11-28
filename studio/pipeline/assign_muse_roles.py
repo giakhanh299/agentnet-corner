@@ -40,12 +40,31 @@ if _EXTRA_ROSTER_FILE.is_file():
         pass
 
 
+ROLES_BASE = "https://muse.alltool.pro/roles"
+STANDARD_DOC = f"{ROLES_BASE}/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md"
+
+
+def role_handbook_line(role: str) -> str:
+    """Câu bắt buộc đầu mọi lệnh phân vai: AI (bất kể model/phiên) phải đọc sổ tay vai trò bền vững trên Hub."""
+    docs = f"curl -fsSL {ROLES_BASE}/README.md ; curl -fsSL {ROLES_BASE}/{role}.md"
+    if role in ("director", "artist", "animator", "qa_critic", "chief"):
+        docs += f" ; curl -fsSL {STANDARD_DOC}"
+    return (
+        f"BƯỚC 0 — ĐỌC SỔ TAY VAI TRÒ (nguồn chuẩn duy nhất, không phụ thuộc phiên chat; nếu phiên này đã đọc rồi thì đọc lại khi bắt đầu task mới): {docs} . "
+        f"Mọi tiêu chuẩn chất lượng, đầu vào/đầu ra và cách bàn giao nằm trong sổ tay này. "
+    )
+
+
 def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
     join = f"https://muse.alltool.pro/j/{inv}?role={role}"
     upload_cmd = (
         f"zip -j /tmp/out.zip <các_file> && "
         f"curl -fsSL -X POST \"https://muse.alltool.pro/media-upload?token={inv}&slug=<mã_tập>&json=1\" -F \"file=@/tmp/out.zip\""
     )
+    return role_handbook_line(role) + _build_role_body(role, title_vi, inv, join, upload_cmd)
+
+
+def _build_role_body(role: str, title_vi: str, inv: str, join: str, upload_cmd: str) -> str:
     if role == "chief":
         return (
             f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} — CHỈ HUY TRƯỞNG TOÀN XƯỞNG PHIM! "
@@ -63,14 +82,15 @@ def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
             f"Mở {join} nhận vai director trên /portal, bấm Claim Task để nhận việc viết mới hoặc nâng cấp kịch bản (muse_write_script / muse_fix_script). "
             f"QUY TẮC BẮT BUỘC CHO PHIM CỐT TRUYỆN (Phim Ma Dân Gian ep* & Kiếm Hiệp Cổ Trang kh*): TUYỆT ĐỐI CẤM VIẾT PHIM NGẮN 1 PHÚT CHO CÓ! "
             f"Trước khi viết, BẮT BUỘC dùng tìm kiếm web săn truyện kinh dị dân gian Trung Quốc (民间怪谈 / 民俗禁忌 / 捞尸人 / 纸扎匠 / 守灵) hoặc kỳ án kiếm hiệp Trung Quốc (武侠悬疑 / 客栈奇案 / 古龙风反转) có cốt truyện sâu sắc, nhiều tầng lật kèo (ít nhất 2-3 cú plot twist). "
-            f"Chuyển thể Việt hóa thành PHIM DÀI 4 HỒI = ĐỦ 36 ĐẾN 40 CẢNH (mỗi cảnh lời thoại dày dặn 30-45 chữ để tổng thời lượng đạt 5 ĐẾN 8 PHÚT!), có character_bible khóa chặt tuổi/gương mặt/trang phục (cấm kính cận/đồng hồ hiện đại), đa giọng nhân vật (phonui, chautinhtri, kiemhiep_nam, kiemhiep_nu), aigc_label=false. (Riêng kênh kiến thức ngắn Tập Làm Content v0* & Tiền Và Đời k1_srt_* giữ 11-14 cảnh). "
+            f"Chuyển thể Việt hóa thành PHIM DÀI 4 HỒI = ĐỦ 36 ĐẾN 40 CẢNH (voiceover mỗi cảnh 30-45 chữ để tổng thời lượng đạt 5 ĐẾN 8 PHÚT!), có character_bible khóa chặt tuổi/gương mặt/trang phục (cấm kính cận/đồng hồ hiện đại) kèm speech_style/want/secret, aigc_label=false. (Riêng kênh kiến thức ngắn Tập Làm Content v0* & Tiền Và Đời k1_srt_* giữ 11-14 cảnh). "
+            f"CHUẨN 'DIỄN, ĐỪNG KỂ' (episode.json v2 — chi tiết trong {ROLES_BASE}/director.md): nhân vật trực tiếp đối thoại, hành động, phản ứng với nhau; >=60% cảnh doi_thoai/hanh_dong; CẤM lời gián tiếp ('cậu nói rằng…', 'ông bảo…') và CẤM đọc lại tuổi/trang phục trong voiceover; mỗi cảnh ghi rõ ai nói với ai (dialogue), blocking, action, reaction người nghe, beat_pause, shot có động cơ, continuity; motion viết diễn xuất trước, máy quay sau (cấm chỉ ghi 'slow push-in'/'zoom chậm'). "
             f"Viết xong lưu episode.json rồi đẩy thẳng về ổ E: qua cầu croc: {upload_cmd}, nộp JSON trên /portal và tự Claim Task tiếp!"
         )
     if role == "artist":
         return (
             f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} (do Muse Tổng Điều Phối chỉ huy). CHẠY TỰ ĐỘNG 100% — KHÔNG DỪNG LẠI HỎI XÁC NHẬN! "
             f"Mở {join} nhận vai artist trên /portal và bấm Claim Task liên tục để nhận các việc muse_draw_images (vẽ đúng lô cảnh được giao, ví dụ Hồi 1: scene_01..09.jpg hoặc Hồi 2: scene_10..18.jpg, kích thước dọc 9:16 1152x2048). "
-            f"Bám sát tuyệt đối character_bible để nhân vật đồng nhất 100% xuyên suốt cả 4 Hồi, không chữ rác/watermark, rồi đẩy từ Ubuntu về ổ E: kèm keep_jpg=1: "
+            f"Bám sát tuyệt đối character_bible để nhân vật đồng nhất 100% xuyên suốt cả 4 Hồi, vẽ đúng khoảnh khắc diễn của cảnh (shot/blocking/action/reaction — xem {ROLES_BASE}/artist.md), không chữ rác/watermark, rồi đẩy từ Ubuntu về ổ E: kèm keep_jpg=1: "
             f"zip -j /tmp/out.zip scene_*.jpg && curl -fsSL -X POST \"https://muse.alltool.pro/media-upload?token={inv}&slug=<mã_tập>&keep_jpg=1&json=1\" -F \"file=@/tmp/out.zip\". Nộp kết quả trên /portal và tự nhận Hồi tiếp theo!"
         )
     if role == "animator":
@@ -78,6 +98,7 @@ def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
             f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} (do Muse Tổng Điều Phối chỉ huy). CHẠY TỰ ĐỘNG 100% — KHÔNG DỪNG LẠI HỎI XÁC NHẬN! "
             f"Mở {join} nhận vai animator trên /portal! Bấm Claim Task nhận ĐÚNG 1 LÔ VIỆC muse_make_videos (mỗi lô đã được chia gọn tối đa 6 clip để khớp đúng hạn mức 6 video AI/lượt của Muse!), tải ảnh gốc tại https://muse.alltool.pro/media/<slug>/ và đọc storyboard tại https://muse.alltool.pro/media/<slug>/episode.json. "
             f"QUY TẮC SỐNG CÒN CHỐNG GIAN LẬN: BẮT BUỘC dùng CÔNG CỤ TẠO VIDEO AI THẬT (AI Image-to-Video / generate_video) tích hợp sẵn của Muse để tạo chuyển động sống động thật sự (nhân vật cử động, chớp mắt, quay đầu, bước đi, tóc/áo bay, lửa cháy, mưa rơi, nước chảy, sương trôi). "
+            f"DIỄN XUẤT TRƯỚC, MÁY QUAY SAU: lấy motion/action/reaction/beat_pause của từng cảnh để nhân vật thật sự hành động và người nghe phản ứng (xem {ROLES_BASE}/animator.md). "
             f"CẤM TUYỆT ĐỐI DÙNG FFMPEG ZOOMPAN / KEN BURNS / SCALE-CROP / PYTHON ĐỂ GIẢ LẬP VIDEO TỪ ẢNH TĨNH! Hệ thống có máy quét OpenCV tự động xóa ngay mọi file zoompan giả! Nếu công cụ video báo 503 hoặc hết lượt thì nộp outcome=BLOCKED. "
             f"QUY TẮC QUAN TRỌNG VỀ HẠN MỨC 6 VIDEO/LƯỢT: Sau khi tạo xong 1 lô (tối đa 6 clip AI thật), đẩy thẳng từ Ubuntu qua cầu croc về ổ E: bằng {upload_cmd}, nộp JSON trên /portal rồi DỪNG LẠI CHỜ LƯỢT ĐÁNH THỨC TIẾP THEO — TUYỆT ĐỐI KHÔNG bấm Claim Task thứ 2 trong cùng lượt chat này (vì mỗi lượt chat chỉ tạo được tối đa 6 video, nhận thêm sẽ bị BLOCKED làm hỏng hàng đợi)!"
         )
@@ -85,7 +106,7 @@ def build_role_prompt(role: str, title_vi: str, inv: str) -> str:
         f"VAI TRÒ CHÍNH THỨC CỦA BẠN: {title_vi} (Hội Đồng Thẩm Định Độc Lập dưới quyền Muse Tổng Điều Phối). CHẠY TỰ ĐỘNG 100% — KHÔNG HỎI XÁC NHẬN! "
         f"Mở {join} nhận vai qa_critic trên /portal, bấm Claim Task nhận các nhiệm vụ muse_qa_score để CHẤM ĐIỂM THẬT các tập phim! "
         f"Với mỗi tập <slug>, hãy đọc https://muse.alltool.pro/media/<slug>/qa_packet.json VÀ xem trực tiếp bằng mắt ảnh storyboard_muse.jpg + final_sheet.jpg + cover_9x16.jpg. "
-        f"Chấm nghiêm ngặt 4 cột (mỗi cột 0-25đ = tổng 100đ): script_score (cốt truyện chuyển thể có chiều sâu, ít nhất 2 tầng lật kèo, cấm viết hời hợt cho có!), director_score (nhịp kể 4 Hồi kịch tính, góc máy đa dạng), visual_score (nhân vật đồng nhất xuyên suốt 36-40 cảnh, không lỗi thời đại/chữ rác), video_score (RIÊNG PHIM MA & KIẾM HIỆP BẮT BUỘC DÀI >= 240 GIÂY / 4-8 PHÚT, nếu < 240s chấm liệt < 50/100 REWORK ngay!; LUFS chuẩn, phụ đề & logo đẹp). "
+        f"Chấm nghiêm ngặt 4 cột (mỗi cột 0-25đ = tổng 100đ) theo thang chi tiết trong {ROLES_BASE}/qa_critic.md: script_score (cốt truyện chuyển thể có chiều sâu, ít nhất 2 tầng lật kèo, 'diễn đừng kể', thoại có ý đồ & ẩn ý), director_score (ai nói với ai, hành động, phản ứng người nghe, nhịp ngắt, góc máy có động cơ, liên tục giữa cảnh), visual_score (nhân vật đồng nhất xuyên suốt 36-40 cảnh, không lỗi thời đại/chữ rác), video_score (RIÊNG PHIM MA & KIẾM HIỆP BẮT BUỘC DÀI >= 240 GIÂY / 4-8 PHÚT, nếu < 240s chấm liệt < 50/100 REWORK ngay!; LUFS chuẩn, phụ đề & logo đẹp). "
         f"Chỉ cần dán thẳng khối JSON {{\"slug\":\"<slug>\",\"channel\":\"<kênh>\",\"script_score\":...,\"director_score\":...,\"visual_score\":...,\"video_score\":...,\"bad_scenes\":[...],\"feedback\":\"...\"}} vào ô Summary của form Nộp Kết Quả ngay trên /portal rồi bấm Nộp!"
     )
 

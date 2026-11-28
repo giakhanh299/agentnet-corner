@@ -144,6 +144,34 @@ class HubPortalTests(unittest.TestCase):
         updated = self.queue.get({'id': 'chief', 'role': 'controller'}, '/tasks/' + running['id'])
         self.assertEqual(updated['status'], 'APPROVED')
 
+    def test_role_handbook_endpoints(self):
+        import hub_portal
+        roles_dir = self.root / 'roles'
+        roles_dir.mkdir()
+        (roles_dir / 'README.md').write_text('# Handbook\n> **Phiên bản:** `v2.0`\n', encoding='utf-8')
+        (roles_dir / 'director.md').write_text('# Director\n> **Phiên bản:** `v2.0`\n', encoding='utf-8')
+        old_root = hub_portal.ROLES_ROOT
+        hub_portal.ROLES_ROOT = roles_dir
+        try:
+            op = build_opener()
+            idx = json.loads(op.open(self.base + '/roles').read().decode('utf-8'))
+            self.assertEqual(idx['start_here'], '/roles/README.md')
+            by_file = {d['file']: d for d in idx['docs']}
+            self.assertIn('director.md', by_file)
+            self.assertEqual(by_file['director.md']['version'], 'v2.0')
+            self.assertEqual(len(by_file['director.md']['sha256']), 64)
+
+            md_resp = op.open(self.base + '/roles/director.md')
+            self.assertIn('text/markdown', md_resp.headers.get('Content-Type', ''))
+            self.assertIn('# Director', md_resp.read().decode('utf-8'))
+
+            for bad in ('/roles/not_exists.md', '/roles/secret.py', '/roles/..%2Fsecret.md'):
+                with self.assertRaises(HTTPError) as ctx:
+                    op.open(self.base + bad)
+                self.assertEqual(ctx.exception.code, 404)
+        finally:
+            hub_portal.ROLES_ROOT = old_root
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

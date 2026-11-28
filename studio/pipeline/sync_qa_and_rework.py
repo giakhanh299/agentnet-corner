@@ -20,6 +20,31 @@ import process_muse_pipeline as pm  # noqa: E402
 
 MEDIA_ROOT = Path(r"E:\MUSE_MEDIA_STUDIO")
 HUB_BASE = "https://muse.alltool.pro"
+ROLES_BASE = f"{HUB_BASE}/roles"
+STORY_PREFIXES = ("ep", "kh")
+# Trường chỉ đạo diễn xuất v2 (docs/roles/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md) đưa vào gói chấm điểm
+V2_SCENE_FIELDS = ("act", "scene_type", "beat", "characters_in_scene", "blocking", "action", "dialogue",
+                   "reaction", "beat_pause", "shot", "continuity")
+
+sys.path.insert(0, str(HERE.parent))
+try:
+    import script_direction_lint as sdl  # noqa: E402
+except Exception:  # noqa: BLE001
+    sdl = None
+
+
+def _is_story_slug(slug: str) -> bool:
+    return slug.startswith(STORY_PREFIXES) and len(slug) > 2 and slug[2].isdigit()
+
+
+def _is_script_rework(slug: str, sc: dict) -> bool:
+    """Phim cốt truyện bị trừ điểm chủ yếu ở kịch bản/chỉ đạo (<18/25 và thấp hơn mặt hình ảnh/video) -> giao director sửa."""
+    if not _is_story_slug(slug):
+        return False
+    s, d = int(sc.get("script_score", 25)), int(sc.get("director_score", 25))
+    v, m = int(sc.get("visual_score", 25)), int(sc.get("video_score", 25))
+    weakest_story = min(s, d)
+    return weakest_story < 18 and weakest_story <= min(v, m)
 
 
 def get_invite_token() -> str:
@@ -118,6 +143,29 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                     if fix_dedup not in existing_qa_dedups:
                         bad_scenes = sc.get("bad_scenes") or [1]
                         fb = sc.get("feedback", "Cần nâng cấp chất lượng theo nhận xét Giám khảo QA")
+                        sc_str = ", ".join(f"scene_{int(i):02d}" for i in bad_scenes)
+                        found = pm.find_spec(slug)
+                        spec_url = found[2] if found else ""
+                        if _is_script_rework(slug, sc):
+                            # Lỗi nằm ở kịch bản / chỉ đạo diễn xuất -> giao Ban Đạo Diễn sửa trước, KHÔNG xóa ảnh/clip
+                            pm.enqueue_hub_tasks([{
+                                "dedup": fix_dedup,
+                                "assigned_to": "director",
+                                "kind": "muse_fix_script",
+                                "payload": {
+                                    "slug": slug,
+                                    "objective": f"[{slug}] SỬA KỊCH BẢN & CHỈ ĐẠO DIỄN XUẤT THEO QA ({sc.get('total_score')}/100đ): {sc_str}",
+                                    "acceptance_criteria": (
+                                        f"QA scored {slug} {sc.get('total_score')}/100 (script {sc.get('script_score')}/25, director {sc.get('director_score')}/25). Feedback: {fb}. "
+                                        f"Read {spec_url}. Rewrite ONLY scenes {sc_str} (plus adjacent scenes if continuity requires) following "
+                                        f"{ROLES_BASE}/director.md and {ROLES_BASE}/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md (episode.json v2: direct dialogue, acting direction, listener reaction, motivated camera, continuity). "
+                                        f"Keep scene ids/act/clip names unchanged. If a scene's acted moment changes enough to need a new frame, list it in \"redraw_scenes\" in your /portal JSON. "
+                                        f"Upload the fixed episode.json via your director upload workflow (slug={slug}) and submit on /portal."
+                                    ),
+                                },
+                            }])
+                            reworks_triggered.append({"slug": slug, "role": "director", "bad_scenes": bad_scenes})
+                            continue
                         # Xóa các cảnh bị chê để tự render lại sau khi đội chuyên môn nộp bản sửa
                         for b_idx in bad_scenes:
                             if int(sc.get("visual_score", 25)) < 18:
@@ -126,9 +174,6 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                         qc_file.unlink(missing_ok=True)
                         target_role = "artist" if int(sc.get("visual_score", 25)) <= int(sc.get("video_score", 25)) else "animator"
                         kind = "muse_draw_images" if target_role == "artist" else "muse_make_videos"
-                        found = pm.find_spec(slug)
-                        spec_url = found[2] if found else ""
-                        sc_str = ", ".join(f"scene_{int(i):02d}" for i in bad_scenes)
                         rework_task = {
                             "dedup": fix_dedup,
                             "assigned_to": target_role,
@@ -181,10 +226,20 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                             "voiceover": s.get("voiceover", ""),
                             "image_prompt": s.get("image_prompt", ""),
                             "motion": s.get("motion", ""),
+                            **{k: s[k] for k in V2_SCENE_FIELDS if k in s},
                         }
                         for s in spec_obj.get("scenes", [])
                     ],
                 }
+                if sdl is not None and _is_story_slug(slug):
+                    try:
+                        rep = sdl.lint_episode(spec_obj)
+                        packet["script_direction_lint"] = {
+                            k: rep[k] for k in ("standard", "score", "passed", "acted_ratio", "narration_ratio", "issue_counts")
+                        }
+                        packet["role_standard"] = f"{ROLES_BASE}/qa_critic.md"
+                    except Exception as e:  # noqa: BLE001
+                        packet["script_direction_lint"] = {"error": f"{type(e).__name__}"}
                 pkt_local = final_dir / "qa_packet.json"
                 pkt_local.write_text(json.dumps(packet, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -208,7 +263,8 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                         "objective": f"[{slug}] HỘI ĐỒNG MUSE CHẤM ĐIỂM TẬP PHIM (thang 100): '{title}' ({ch_key})",
                         "acceptance_criteria": (
                             f"VAI TRÒ: GIÁM KHẢO CHẤM ĐIỂM ĐỘC LẬP (qa_critic) cho tập '{title}' (kênh {ch_key}, mã {slug}). "
-                            f"BƯỚC 1: Đọc dữ liệu kịch bản + thông số kỹ thuật tại {HUB_BASE}/media/{slug}/qa_packet.json. "
+                            + (f"PHIM CỐT TRUYỆN: chấm theo thang chi tiết + quy tắc trần điểm 'diễn đừng kể' tại {ROLES_BASE}/qa_critic.md và {ROLES_BASE}/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md (qa_packet có sẵn script_direction_lint làm bằng chứng). " if _is_story_slug(slug) else "")
+                            + f"BƯỚC 1: Đọc dữ liệu kịch bản + thông số kỹ thuật tại {HUB_BASE}/media/{slug}/qa_packet.json. "
                             f"BƯỚC 2: Xem thật bằng mắt bảng 11 ảnh gốc {HUB_BASE}/media/{slug}/storyboard_muse.jpg, bảng 8 khung hình trích từ video thành phẩm (có phụ đề & logo) {HUB_BASE}/media/{slug}/final_sheet.jpg và ảnh bìa {HUB_BASE}/media/{slug}/cover_9x16.jpg. "
                             f"BƯỚC 3: Chấm điểm khắt khe trung thực trên thang 100: "
                             f"1) script_score (0-25): Hook 3s đầu cuốn hút, thoại tự nhiên giàu chi tiết, đúng giọng nam/nữ nhân vật; "

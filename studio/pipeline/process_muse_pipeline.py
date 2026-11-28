@@ -525,6 +525,7 @@ def main():
                 f"Source frames directory: https://muse.alltool.pro/media/{slug}/ ({sc_hint}). "
                 f"Use genuine AI Image-to-Video generation to produce EXACTLY {len(sc_ids)} vertical 9:16 video clips ({out_hint}) "
                 f"with real living character, fabric, water, fire, and atmospheric motion (NEVER static image zoompan or Ken Burns slideshows). "
+                f"Act out each scene: use its motion/action/reaction/beat_pause so characters perform and listeners react; camera moves only when motivated (see https://muse.alltool.pro/roles/animator.md). "
                 f"Keep clips clean without text or watermarks, deliver via your studio upload workflow, submit JSON on /portal, then STOP (do not claim a second batch in the same chat turn)."
             )
             new_vid_tasks.append({
