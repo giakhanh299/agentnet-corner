@@ -8,6 +8,7 @@
 """
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import shutil
@@ -25,6 +26,7 @@ sys.path.insert(0, str(REPO_CORE / "studio"))
 sys.path.insert(0, str(REPO_CORE / "studio" / "pipeline"))
 import assemble_episode as ae  # noqa: E402
 import process_muse_pipeline as pm  # noqa: E402
+import production_profiles  # noqa: E402
 
 FB_STAGE_DIRS = {
     "KENH_001": FB_ROOT / "KENH_001_TienVaDoi" / "02_MOI_RENDER_CHO_XAC_NHAN",
@@ -86,6 +88,9 @@ def stage_to_fb(cid: str, prefix: str, slug: str, final_dir: Path) -> str:
 
 
 def find_spec(ch_key: str, slug: str) -> Path | None:
+    local_e = MEDIA_ROOT / ch_key / slug / "episode.json"
+    if local_e.is_file():
+        return local_e
     if ch_key == "tap-lam-content":
         p = REPO_K08 / slug / "episode.json"
     else:
@@ -94,6 +99,16 @@ def find_spec(ch_key: str, slug: str) -> Path | None:
 
 
 def main() -> None:
+    ap = argparse.ArgumentParser(description="Hậu kỳ tự động trên PC từ clip AI thật của Muse")
+    ap.add_argument(
+        "--profile",
+        choices=sorted(production_profiles.PRODUCTION_PROFILES),
+        default=None,
+        help="Nhánh cấu hình: ke_chuyen (Cấu hình 1 - mặc định 1 giọng Góc Nhỏ Phố Núi) | phim_da_vai (Cấu hình 2 - làm phim đa giọng)",
+    )
+    args = ap.parse_args()
+    active_prof = production_profiles.get_profile(explicit=args.profile)
+
     rendered = []
     skipped = 0
     errors = []
@@ -157,15 +172,23 @@ def main() -> None:
                 work_dir = ep_dir / "03_work_v2"
                 if work_dir.is_dir():
                     shutil.rmtree(work_dir)
-                rep = ae.assemble(spec, clip_dir, out_mp4, work_dir)
+                rep = ae.assemble(spec, clip_dir, out_mp4, work_dir, profile_name=active_prof["id"])
                 qc = measure_qc(out_mp4)
                 if ch_key in ("phim-ma-dan-gian", "kiem-hiep-co-trang") and qc["duration_s"] < 240.0:
                     raise RuntimeError(f"CHẶN PHIM NGẮN: {slug} chỉ dài {qc['duration_s']}s (< 240s tối thiểu cho phim cốt truyện!)")
                 staged = stage_to_fb(cid, prefix, slug, final_dir)
-                rec = {"channel": ch_key, "slug": slug, "fb_channel": cid, "voice": rep["voice"], "qc": qc, "staged": staged}
+                rec = {
+                    "channel": ch_key,
+                    "slug": slug,
+                    "fb_channel": cid,
+                    "production_profile": active_prof["id"],
+                    "voice": rep["voice"],
+                    "qc": qc,
+                    "staged": staged,
+                }
                 (final_dir / "qc_report_v2.json").write_text(json.dumps(rec, ensure_ascii=False, indent=2), encoding="utf-8")
                 rendered.append(rec)
-                print(f"  OK {slug} -> {cid}/02_MOI_RENDER_CHO_XAC_NHAN | {qc['duration_s']}s {qc['res']} {qc['lufs']} LUFS", flush=True)
+                print(f"  OK {slug} -> {cid}/02_MOI_RENDER_CHO_XAC_NHAN | profile={active_prof['id']} voice={rep['voice']} | {qc['duration_s']}s {qc['res']} {qc['lufs']} LUFS", flush=True)
             except Exception as e:
                 errors.append({"channel": ch_key, "slug": slug, "err": str(e)[:300]})
                 print(f"  ERR {slug}: {e}", flush=True)

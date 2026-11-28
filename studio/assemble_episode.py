@@ -39,6 +39,7 @@ REPO = HERE.parent
 sys.path.insert(0, str(HERE))
 import curiosity_music  # noqa: E402
 import horror_music  # noqa: E402
+import production_profiles  # noqa: E402
 import thumbnail as thumb_mod  # noqa: E402
 import voice as voice_mod  # noqa: E402
 import wuxia_music  # noqa: E402
@@ -319,32 +320,51 @@ def write_ass(cues: list[tuple[float, float, str]], path: Path) -> None:
 
 # ---------- Ghép ----------
 
-def _resolve_scene_voice(sc: dict, spec: dict, voice_override: str | None) -> str:
+def _resolve_scene_voice(
+    sc: dict,
+    spec: dict,
+    voice_override: str | None,
+    profile: dict | None = None,
+) -> str:
     if voice_override:
         return voice_override
-    sv = str(sc.get("voice") or "").strip().lower()
-    if sv:
-        return sv
-    gender = str(sc.get("gender") or sc.get("speaker_gender") or "").strip().lower()
+
+    prof = profile or production_profiles.get_profile(spec=spec)
     cid = str(spec.get("target_channel") or "").upper().strip()
     series_low = str(spec.get("series") or "").lower()
     mus_gen = str((spec.get("music") or {}).get("generator", "")).lower()
     is_wuxia = mus_gen == "wuxia" or "kiếm hiệp" in series_low or "cổ trang" in series_low
     is_horror = spec.get("color_grade") == "folk_horror" or "phim ma" in series_low
 
-    if gender in ("female", "nu", "nữ"):
-        return "kiemhiep_nu"
-    if gender in ("male", "nam"):
-        return "chautinhtri" if is_wuxia else "kiemhiep_nam"
+    # Cấu hình 1 (`ke_chuyen` — mặc định): dùng DUY NHẤT 1 giọng kể chuyện `phonui` (Góc Nhỏ Phố Núi)
+    # cho toàn bộ nhánh truyện (Phim Ma & Kiếm Hiệp), không chia đa giọng nhân vật.
+    if prof.get("voice_mode") == "single_narrator":
+        if cid == "KENH_001":
+            return "tienvadoi"
+        if cid == "KENH_008":
+            return "taplamcontent"
+        return str(prof.get("story_narrator_voice") or "phonui")
 
-    if is_wuxia:
-        vo_low = (sc.get("voiceover") or "").lower()
-        pr_low = (sc.get("image_prompt") or "").lower()
-        fem_markers = ("cô nương", "nữ hiệp", "thiếu nữ", "sư muội", "nàng ", "cô gái")
-        fem_img = ("swordswoman", "young woman", "female warrior", "maiden", "girl in hanfu")
-        if any(m in vo_low for m in fem_markers) or any(m in pr_low for m in fem_img):
+    # Cấu hình 2 (`phim_da_vai` — nhánh làm phim thật sự có phân tích cảnh / khẩu hình miệng / phân vai):
+    sv = str(sc.get("voice") or "").strip().lower()
+    if sv and prof.get("allow_scene_voice_override", True):
+        return sv
+    gender = str(sc.get("gender") or sc.get("speaker_gender") or "").strip().lower()
+
+    if prof.get("allow_gender_casting", True):
+        if gender in ("female", "nu", "nữ"):
             return "kiemhiep_nu"
-        return "chautinhtri"
+        if gender in ("male", "nam"):
+            return "chautinhtri" if is_wuxia else "kiemhiep_nam"
+
+        if is_wuxia:
+            vo_low = (sc.get("voiceover") or "").lower()
+            pr_low = (sc.get("image_prompt") or "").lower()
+            fem_markers = ("cô nương", "nữ hiệp", "thiếu nữ", "sư muội", "nàng ", "cô gái")
+            fem_img = ("swordswoman", "young woman", "female warrior", "maiden", "girl in hanfu")
+            if any(m in vo_low for m in fem_markers) or any(m in pr_low for m in fem_img):
+                return "kiemhiep_nu"
+            return "chautinhtri"
 
     if is_horror:
         return "phonui"
@@ -358,26 +378,44 @@ def _resolve_scene_voice(sc: dict, spec: dict, voice_override: str | None) -> st
     return raw_v or "phonui"
 
 
-def assemble(spec: dict, clips_dir: Path | None, out: Path, work: Path, voice_override: str | None = None) -> dict:
+def assemble(
+    spec: dict,
+    clips_dir: Path | None,
+    out: Path,
+    work: Path,
+    voice_override: str | None = None,
+    profile_name: str | None = None,
+) -> dict:
     work.mkdir(parents=True, exist_ok=True)
     scenes = sorted(spec["scenes"], key=lambda s: s["id"])
-    report = {"title": spec.get("title"), "scenes": [], "warnings": []}
+    prof = production_profiles.get_profile(explicit=profile_name, spec=spec)
+    report = {
+        "title": spec.get("title"),
+        "production_profile": prof["id"],
+        "production_profile_label": prof["label"],
+        "scenes": [],
+        "warnings": [],
+    }
 
     # 1. Giọng (tổng hợp trước để khóa thời lượng từng cảnh sát lời đọc — triệt tiêu khoảng nghỉ chết)
     cover_intro_s = float(spec.get("cover_intro_s", 0.85))
     tight_pacing = bool(spec.get("tight_pacing", True))
     cid = str(spec.get("target_channel") or "").upper().strip()
 
-    vo_items = [(i, sc, _resolve_scene_voice(sc, spec, voice_override))
-                for i, sc in enumerate(scenes) if (sc.get("voiceover") or "").strip()]
+    vo_items = [
+        (i, sc, _resolve_scene_voice(sc, spec, voice_override, profile=prof))
+        for i, sc in enumerate(scenes)
+        if (sc.get("voiceover") or "").strip()
+    ]
     wavs = voice_mod.synth_multi([(sc["voiceover"].strip(), vk) for _, sc, vk in vo_items], work / "voice") if vo_items else []
 
     vo_by_idx: dict[int, tuple[Path, float, float, str]] = {}
     voices_used: list[str] = []
+    allow_ghost_fx = bool(prof.get("allow_ghost_fx", False))
     for (idx, sc, vk), wav in zip(vo_items, wavs):
         if vk not in voices_used:
             voices_used.append(vk)
-        if sc.get("ghost"):
+        if sc.get("ghost") and allow_ghost_fx:
             wav = voice_mod.ghost_fx(wav, work / "voice" / f"ghost_{sc['id']:02d}.wav", float(sc.get("ghost_semitones", -3)))
         d = voice_mod.duration(wav)
         if idx == 0 and cover_intro_s > 0:
@@ -596,10 +634,16 @@ def main() -> int:
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--work", type=Path)
     ap.add_argument("--voice", choices=sorted(voice_mod.VOICES), help="ghi đè giọng trong spec")
+    ap.add_argument(
+        "--profile",
+        choices=sorted(production_profiles.PRODUCTION_PROFILES),
+        default=None,
+        help="Nhánh cấu hình: ke_chuyen (Cấu hình 1 - mặc định 1 giọng Góc Nhỏ Phố Núi) | phim_da_vai (Cấu hình 2 - đa giọng làm phim)",
+    )
     a = ap.parse_args()
     spec = json.loads(a.spec.read_text(encoding="utf-8"))
     work = a.work or a.out.with_suffix("").parent / (a.out.stem + "_work")
-    rep = assemble(spec, a.clips_dir, a.out, work, a.voice)
+    rep = assemble(spec, a.clips_dir, a.out, work, a.voice, profile_name=a.profile)
     print(json.dumps(rep, ensure_ascii=False, indent=2))
     return 0
 
