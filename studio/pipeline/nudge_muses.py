@@ -68,12 +68,47 @@ def _clear_stuck_ui(page) -> None:
         pass
 
 
+def _get_queued_counts_by_role() -> dict[str, int]:
+    """Đọc số task QUEUED thực tế theo vai trên Hub để điều phối linh hoạt Muse rảnh sang phụ việc đang ùn."""
+    try:
+        sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+        import process_muse_pipeline as pm  # noqa: E402
+        counts: dict[str, int] = {}
+        for t in pm.fetch_hub_tasks():
+            if t.get("status") == "QUEUED":
+                r = str(t.get("assigned_to") or "").strip().lower()
+                counts[r] = counts.get(r, 0) + 1
+        return counts
+    except Exception:
+        return {}
+
+
+def _resolve_effective_role(base_role: str, base_title: str, q_counts: dict[str, int]) -> tuple[str, str]:
+    """Giữ nguyên chief & các vai còn việc; tự động điều phối director/artist đang rảnh (0 việc QUEUED)
+    sang trợ lực animator (hoặc artist nếu artist còn việc) để tận dụng tối đa 25 Muse!
+    """
+    if base_role == "chief" or not q_counts:
+        return base_role, base_title
+    if q_counts.get(base_role, 0) > 0:
+        return base_role, base_title
+    if base_role in ("director", "artist"):
+        if q_counts.get("artist", 0) > 0:
+            return "artist", f"{base_title} (TRỢ LỰC VẼ ẢNH)"
+        if q_counts.get("animator", 0) > 0:
+            return "animator", f"{base_title} (TRỢ LỰC DỰNG VIDEO AI)"
+    if base_role == "qa_critic" and q_counts.get("qa_critic", 0) == 0 and q_counts.get("animator", 0) > 0:
+        return "animator", f"{base_title} (TRỢ LỰC DỰNG VIDEO AI)"
+    return base_role, base_title
+
+
 def _run_nudge(only_profiles: set[str] | None = None) -> dict:
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
     import assign_muse_roles as amr  # noqa: E402
     inv_file = pathlib.Path(os.environ["LOCALAPPDATA"]) / "MuseLoginHelper" / "hub_invite.txt"
     inv = inv_file.read_text(encoding="utf-8").strip()
     acc_root = md.HELPER_ROOT / "Accounts"
+    q_counts = _get_queued_counts_by_role()
+    print(f"LIVE_QUEUED_BY_ROLE={q_counts}", flush=True)
     role_prio = {"chief": 0, "director": 1, "artist": 2, "animator": 3, "qa_critic": 4}
     profiles = sorted(
         (d for d in acc_root.iterdir() if d.is_dir()),
@@ -88,14 +123,15 @@ def _run_nudge(only_profiles: set[str] | None = None) -> dict:
         for i, prof in enumerate(profiles, 1):
             prefix = prof.name[:8]
             if prefix in amr.ROSTER:
-                role, title_vi = amr.ROSTER[prefix]
+                base_role, base_title = amr.ROSTER[prefix]
             else:
-                role = extra_roles[extra_idx % len(extra_roles)]
+                base_role = extra_roles[extra_idx % len(extra_roles)]
                 extra_idx += 1
-                title_vi = f"THÀNH VIÊN ĐỘI {role.upper()}"
+                base_title = f"THÀNH VIÊN ĐỘI {base_role.upper()}"
+            role, title_vi = _resolve_effective_role(base_role, base_title, q_counts)
             msg = amr.build_role_prompt(role, title_vi, inv)
-            rec = {"profile": prefix, "role": role, "status": "", "detail": ""}
-            print(f"[{i}/{len(profiles)}] hồ sơ {prefix} ({role})…", flush=True)
+            rec = {"profile": prefix, "base_role": base_role, "role": role, "status": "", "detail": ""}
+            print(f"[{i}/{len(profiles)}] hồ sơ {prefix} ({base_role} -> {role})…", flush=True)
             try:
                 ctx = pw.chromium.launch_persistent_context(prof, channel="chrome", headless=False, no_viewport=True)
             except Exception as e:
