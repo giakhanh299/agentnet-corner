@@ -18,11 +18,11 @@ from vps_ssh_helper import connect_vps_ssh
 STUDIO_ROOT = pathlib.Path(r"E:\MUSE_MEDIA_STUDIO")
 
 
-def scan_local_progress() -> tuple[dict[str, int], set[str]]:
-    clip_counts: dict[str, int] = {}
+def scan_local_progress() -> tuple[dict[str, list[int]], set[str]]:
+    clip_scenes: dict[str, list[int]] = {}
     final_done: set[str] = set()
     if not STUDIO_ROOT.exists():
-        return clip_counts, final_done
+        return clip_scenes, final_done
 
     # Check both channel/<slug> and direct <slug>
     candidates: list[pathlib.Path] = []
@@ -50,8 +50,14 @@ def scan_local_progress() -> tuple[dict[str, int], set[str]]:
 
     for ep in candidates:
         slug = ep.name
-        mp4s = list(ep.rglob("scene_*.mp4"))
-        clip_counts[slug] = len(mp4s)
+        nums: list[int] = []
+        for mp4 in ep.rglob("scene_*.mp4"):
+            try:
+                if mp4.stat().st_size > 20_000:
+                    nums.append(int(mp4.stem.split("_")[1]))
+            except Exception:
+                pass
+        clip_scenes[slug] = sorted(set(nums))
         has_local_final = (
             (ep / "03_final_v2" / f"{slug}.mp4").is_file()
             or (ep / "03_final_v2" / "qc_report_v2.json").is_file()
@@ -63,20 +69,20 @@ def scan_local_progress() -> tuple[dict[str, int], set[str]]:
         if has_local_final or any(slug.lower() in stem for stem in final_mp4_stems):
             final_done.add(slug)
 
-    return clip_counts, final_done
+    return clip_scenes, final_done
 
 
 def main() -> int:
-    clip_counts, final_done = scan_local_progress()
+    clip_scenes, final_done = scan_local_progress()
     # Only send slugs with clips > 0 or already finalized to keep payload tiny
-    active_clips = {k: v for k, v in clip_counts.items() if v > 0 and k not in final_done}
-    data_json = json.dumps({"active_clips": active_clips, "final_done": sorted(final_done)}, ensure_ascii=False)
+    active_scenes = {k: v for k, v in clip_scenes.items() if len(v) > 0 and k not in final_done}
+    data_json = json.dumps({"active_scenes": active_scenes, "final_done": sorted(final_done)}, ensure_ascii=False)
 
     remote = f"""
-import json, sqlite3
+import json, re, sqlite3
 
 info = json.loads({data_json!r})
-active_clips = info['active_clips']
+active_scenes = {{k: set(v) for k, v in info['active_scenes'].items()}}
 final_done = set(info['final_done'])
 
 con = sqlite3.connect('/opt/agentnet-corner/state/research.sqlite3')
@@ -93,6 +99,7 @@ def _slug_sort_key(row):
 rows.sort(key=_slug_sort_key)
 
 canceled = 0
+canceled_dup_batch = 0
 for i, (tid, kind, dedup, pay) in enumerate(rows):
     hay = (dedup or '') + ' ' + (pay or '')
     if kind == 'muse_make_videos':
@@ -105,9 +112,18 @@ for i, (tid, kind, dedup, pay) in enumerate(rows):
 
         # Finish-closest-first: 4-Act movies (ep*/kh*) with real AI clips go FIRST (100..500),
         # then short channels (v0*/k1_srt_*) with real AI clips (600..900)
-        matched_slug = next((s for s in active_clips if s in hay), None)
+        matched_slug = next((s for s in active_scenes if s in hay), None)
         if matched_slug is not None:
-            clips = int(active_clips[matched_slug])
+            have_set = active_scenes[matched_slug]
+            # Auto-cancel musevid6-sXX_YY-<slug> if EVERY scene in [XX..YY] is ALREADY on E:!
+            m_rng = re.match(r'^musevid6-s(\\d+)_(\\d+)-', dedup or '')
+            if m_rng:
+                a, b = int(m_rng.group(1)), int(m_rng.group(2))
+                if a <= b and all(sc in have_set for sc in range(a, b + 1)):
+                    con.execute("UPDATE tasks SET status='CANCELED' WHERE id=?", (tid,))
+                    canceled_dup_batch += 1
+                    continue
+            clips = len(have_set)
             is_4act = matched_slug.startswith(("ep", "kh"))
             tier_base = 100.0 if is_4act else 600.0
             base = tier_base + max(0, 40 - clips) * 10.0
@@ -140,7 +156,7 @@ con.commit()
 q = con.execute("SELECT kind, status, COUNT(*) FROM tasks WHERE kind IN ('muse_draw_images','muse_make_videos') GROUP BY kind, status").fetchall()
 top5 = con.execute("SELECT dedup, round(created_at, 3) FROM tasks WHERE kind='muse_make_videos' AND status='QUEUED' ORDER BY created_at ASC LIMIT 6").fetchall()
 print('HUB_QUEUE_NOW:', q)
-print('AUTO_CANCELED_FINALIZED:', canceled)
+print('AUTO_CANCELED_FINALIZED:', canceled, 'AUTO_CANCELED_ALREADY_ON_DISK:', canceled_dup_batch)
 print('TOP6_ANIMATOR:', top5)
 """
 
