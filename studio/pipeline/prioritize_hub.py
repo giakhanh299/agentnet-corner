@@ -80,7 +80,17 @@ active_clips = info['active_clips']
 final_done = set(info['final_done'])
 
 con = sqlite3.connect('/opt/agentnet-corner/state/research.sqlite3')
-rows = con.execute("SELECT id, kind, dedup, payload FROM tasks WHERE status='QUEUED' ORDER BY id ASC").fetchall()
+rows = con.execute("SELECT id, kind, dedup, payload FROM tasks WHERE status='QUEUED'").fetchall()
+
+def _slug_sort_key(row):
+    tid, kind, dedup, pay = row
+    d = dedup or ''
+    # Extract slug after second '-' for musevid6-sXX_YY-<slug> so all batches of the same movie stay consecutive!
+    parts = d.split('-', 2)
+    slug = parts[2] if len(parts) == 3 else d
+    return (slug, d, tid)
+
+rows.sort(key=_slug_sort_key)
 
 canceled = 0
 for i, (tid, kind, dedup, pay) in enumerate(rows):
