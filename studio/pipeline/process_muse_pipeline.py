@@ -242,6 +242,44 @@ def is_fake_zoompan_mp4(p: Path) -> tuple[bool, str]:
     return is_fake, f"p90_res={med_res:.1f},inlier={med_inl:.2f}"
 
 
+def is_mismatched_source_mp4(p: Path) -> tuple[bool, str]:
+    """Phát hiện clip bị lẫn từ tập khác (cross-episode leak) bằng đối chiếu ảnh gốc 01_muse_images/scene_XX.jpg."""
+    try:
+        jpg = p.parent.parent / "01_muse_images" / f"{p.stem}.jpg"
+        if not jpg.is_file():
+            return False, "no_src_jpg"
+        import cv2  # noqa: WPS433
+        import numpy as np  # noqa: WPS433
+        src = cv2.imread(str(jpg))
+        if src is None:
+            return False, "unreadable_jpg"
+        a = cv2.resize(src, (64, 112)).astype(np.float32).ravel()
+        a -= a.mean()
+        na = float(np.linalg.norm(a))
+        if na <= 1e-6:
+            return False, "flat_jpg"
+        cap = cv2.VideoCapture(str(p))
+        best = -1.0
+        try:
+            for fi in (0, 5, 15):
+                cap.set(cv2.CAP_PROP_POS_FRAMES, fi)
+                ok, fr = cap.read()
+                if not ok or fr is None:
+                    continue
+                b = cv2.resize(fr, (64, 112)).astype(np.float32).ravel()
+                b -= b.mean()
+                nb = float(np.linalg.norm(b))
+                if nb > 1e-6:
+                    best = max(best, float(np.dot(a, b) / (na * nb)))
+        finally:
+            cap.release()
+        if best < -0.5:
+            return False, "no_frames"
+        return best < 0.25, f"src_corr={best:.3f}"
+    except Exception:
+        return False, "err"
+
+
 def verify_mp4(p: Path, check_motion: bool = True) -> dict | None:
     if not p.is_file() or p.stat().st_size < 16384:
         return None
@@ -262,6 +300,10 @@ def verify_mp4(p: Path, check_motion: bool = True) -> dict | None:
                 fake, detail = is_fake_zoompan_mp4(p)
                 if fake:
                     print(f"REJECT_FAKE_ZOOMPAN {p.name}: {detail}", flush=True)
+                    return None
+                mismatched, mdetail = is_mismatched_source_mp4(p)
+                if mismatched:
+                    print(f"REJECT_WRONG_EPISODE_CLIP {p.name}: {mdetail}", flush=True)
                     return None
             return {"w": st.get("width"), "h": st.get("height"), "dur": round(dur, 2)}
     except Exception:
