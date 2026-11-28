@@ -26,17 +26,36 @@ RAW_K08 = "https://raw.githubusercontent.com/giakhanh299/agentnet-corner/feat/ta
 
 
 def fetch_hub_tasks() -> list[dict]:
+    """Query ALL muse_* tasks directly from Hub SQLite (no 200/400-row API truncation!)."""
     remote = r"""
 import json, sys
 from pathlib import Path
 sys.path.insert(0, '/opt/agentnet-corner')
 from research_queue import ResearchQueue
+
+def _parse_json(val):
+    if isinstance(val, dict):
+        return val
+    if isinstance(val, str) and val.strip():
+        try:
+            return json.loads(val)
+        except Exception:
+            return val
+    return {} if val is None else val
+
 rq = ResearchQueue(Path('/opt/agentnet-corner'))
-res = rq.get({'id': 'chief-local', 'role': 'controller'}, '/tasks')
-data = res[1] if isinstance(res, tuple) and len(res) >= 2 else res
-if isinstance(data, (bytes, str)):
-    data = json.loads(data)
-rows = [r for r in (data.get('tasks', []) if isinstance(data, dict) else data) if r.get('kind') in ('muse_draw_images', 'muse_make_videos', 'muse_write_script', 'muse_fix_script', 'muse_qa_score')]
+kinds = ('muse_draw_images', 'muse_make_videos', 'muse_write_script', 'muse_fix_script', 'muse_qa_score')
+rows = []
+with rq.db() as db:
+    for r in db.execute(
+        "SELECT id, dedup, project, assigned_to, kind, payload, status, created_at, started_at, completed_at, result, lease, lease_until, owner_node "
+        "FROM tasks WHERE kind IN ('muse_draw_images', 'muse_make_videos', 'muse_write_script', 'muse_fix_script', 'muse_qa_score') "
+        "ORDER BY created_at DESC"
+    ).fetchall():
+        d = dict(r)
+        d['payload'] = _parse_json(d.get('payload'))
+        d['result'] = _parse_json(d.get('result'))
+        rows.append(d)
 print(json.dumps(rows, ensure_ascii=False))
 """
     ssh = connect_vps_ssh(timeout=25)
