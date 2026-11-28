@@ -52,9 +52,13 @@ def scan_local_progress() -> tuple[dict[str, int], set[str]]:
         slug = ep.name
         mp4s = list(ep.rglob("scene_*.mp4"))
         clip_counts[slug] = len(mp4s)
-        has_local_final = any(
-            f.name.startswith("final_") or f.name.startswith("phim_ma_") or f.name.startswith("kiem_hiep_")
-            for f in ep.glob("*.mp4")
+        has_local_final = (
+            (ep / "03_final_v2" / f"{slug}.mp4").is_file()
+            or (ep / "03_final_v2" / "qc_report_v2.json").is_file()
+            or any(
+                f.name.startswith("final_") or f.name.startswith("phim_ma_") or f.name.startswith("kiem_hiep_")
+                for f in ep.glob("*.mp4")
+            )
         )
         if has_local_final or any(slug.lower() in stem for stem in final_mp4_stems):
             final_done.add(slug)
