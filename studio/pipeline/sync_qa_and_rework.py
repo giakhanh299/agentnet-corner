@@ -37,6 +37,15 @@ def _is_story_slug(slug: str) -> bool:
     return slug.startswith(STORY_PREFIXES) and len(slug) > 2 and slug[2].isdigit()
 
 
+def _is_v2_spec(spec_obj: dict | None) -> bool:
+    """Chỉ các tập mới viết theo chuẩn v2 ('Diễn, đừng kể') mới có scene_type hoặc standard v2."""
+    if not isinstance(spec_obj, dict):
+        return False
+    if str(spec_obj.get("standard") or spec_obj.get("standard_version") or "").lower().startswith("v2"):
+        return True
+    return any(isinstance(s, dict) and s.get("scene_type") for s in (spec_obj.get("scenes") or []))
+
+
 def _is_script_rework(slug: str, sc: dict) -> bool:
     """Phim cốt truyện bị trừ điểm chủ yếu ở kịch bản/chỉ đạo (<18/25 và thấp hơn mặt hình ảnh/video) -> giao director sửa."""
     if not _is_story_slug(slug):
@@ -146,8 +155,17 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                         sc_str = ", ".join(f"scene_{int(i):02d}" for i in bad_scenes)
                         found = pm.find_spec(slug)
                         spec_url = found[2] if found else ""
+                        spec_obj_chk = None
+                        if found and found[1].is_file():
+                            try:
+                                spec_obj_chk = json.loads(found[1].read_text(encoding="utf-8"))
+                            except Exception:
+                                spec_obj_chk = None
                         if _is_script_rework(slug, sc):
-                            # Lỗi nằm ở kịch bản / chỉ đạo diễn xuất -> giao Ban Đạo Diễn sửa trước, KHÔNG xóa ảnh/clip
+                            if not _is_v2_spec(spec_obj_chk):
+                                # Lô kịch bản cũ (pre-v2): chuẩn v2 dành cho đợt sau -> KHÔNG tự viết lại kịch bản hay xóa ảnh/clip
+                                continue
+                            # Lỗi nằm ở kịch bản / chỉ đạo diễn xuất (đợt v2) -> giao Ban Đạo Diễn sửa trước, KHÔNG xóa ảnh/clip
                             pm.enqueue_hub_tasks([{
                                 "dedup": fix_dedup,
                                 "assigned_to": "director",
@@ -231,15 +249,19 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                         for s in spec_obj.get("scenes", [])
                     ],
                 }
-                if sdl is not None and _is_story_slug(slug):
-                    try:
-                        rep = sdl.lint_episode(spec_obj)
-                        packet["script_direction_lint"] = {
-                            k: rep[k] for k in ("standard", "score", "passed", "acted_ratio", "narration_ratio", "issue_counts")
-                        }
-                        packet["role_standard"] = f"{ROLES_BASE}/qa_critic.md"
-                    except Exception as e:  # noqa: BLE001
-                        packet["script_direction_lint"] = {"error": f"{type(e).__name__}"}
+                is_v2_ep = _is_v2_spec(spec_obj)
+                if _is_story_slug(slug):
+                    if is_v2_ep and sdl is not None:
+                        try:
+                            rep = sdl.lint_episode(spec_obj)
+                            packet["script_direction_lint"] = {
+                                k: rep[k] for k in ("standard", "score", "passed", "acted_ratio", "narration_ratio", "issue_counts")
+                            }
+                            packet["role_standard"] = f"{ROLES_BASE}/qa_critic.md"
+                        except Exception as e:  # noqa: BLE001
+                            packet["script_direction_lint"] = {"error": f"{type(e).__name__}"}
+                    elif not is_v2_ep:
+                        packet["legacy_pre_v2_batch"] = True
                 pkt_local = final_dir / "qa_packet.json"
                 pkt_local.write_text(json.dumps(packet, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -263,7 +285,12 @@ def main(max_enqueue_per_tick: int = 8) -> dict:
                         "objective": f"[{slug}] HỘI ĐỒNG MUSE CHẤM ĐIỂM TẬP PHIM (thang 100): '{title}' ({ch_key})",
                         "acceptance_criteria": (
                             f"VAI TRÒ: GIÁM KHẢO CHẤM ĐIỂM ĐỘC LẬP (qa_critic) cho tập '{title}' (kênh {ch_key}, mã {slug}). "
-                            + (f"PHIM CỐT TRUYỆN: chấm theo thang chi tiết + quy tắc trần điểm 'diễn đừng kể' tại {ROLES_BASE}/qa_critic.md và {ROLES_BASE}/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md (qa_packet có sẵn script_direction_lint làm bằng chứng). " if _is_story_slug(slug) else "")
+                            + (
+                                f"PHIM CỐT TRUYỆN ĐỢT V2: chấm theo thang chi tiết + quy tắc trần điểm 'diễn đừng kể' tại {ROLES_BASE}/qa_critic.md và {ROLES_BASE}/TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md (qa_packet có sẵn script_direction_lint làm bằng chứng). "
+                                if (_is_story_slug(slug) and is_v2_ep) else
+                                (f"PHIM CỐT TRUYỆN LÔ CŨ (pre-v2): chấm theo chuẩn lô cũ (cốt truyện 4 Hồi, hình ảnh, video >= 240s, LUFS, logo/phụ đề) — KHÔNG áp trần điểm v2 'diễn đừng kể' (chuẩn v2 dành cho đợt sau, xem {ROLES_BASE}/qa_critic.md mục 4). "
+                                 if _is_story_slug(slug) else "")
+                            )
                             + f"BƯỚC 1: Đọc dữ liệu kịch bản + thông số kỹ thuật tại {HUB_BASE}/media/{slug}/qa_packet.json. "
                             f"BƯỚC 2: Xem thật bằng mắt bảng 11 ảnh gốc {HUB_BASE}/media/{slug}/storyboard_muse.jpg, bảng 8 khung hình trích từ video thành phẩm (có phụ đề & logo) {HUB_BASE}/media/{slug}/final_sheet.jpg và ảnh bìa {HUB_BASE}/media/{slug}/cover_9x16.jpg. "
                             f"BƯỚC 3: Chấm điểm khắt khe trung thực trên thang 100: "

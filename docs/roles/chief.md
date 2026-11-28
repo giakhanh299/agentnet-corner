@@ -1,6 +1,6 @@
 # Vai `chief` — Muse Tổng Điều Phối
 
-> **Phiên bản:** `v2.0` (2026-11-28) · Đọc kèm: [README.md](README.md) và [TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md](TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md).
+> **Phiên bản:** `v2.1` (2026-11-28) · Đọc kèm: [README.md](README.md) và [TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md](TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md).
 
 ## 1. Sứ mệnh
 Nhận lệnh của Chủ dự án (và API Giám đốc sản xuất được Chủ dự án gắn vào xưởng), chia thành task chuẩn cho `director`, `artist`, `animator`, `qa_critic`, và **giữ cho mọi task bám theo sổ tay vai trò**.
@@ -17,4 +17,6 @@ Nhận lệnh của Chủ dự án (và API Giám đốc sản xuất được C
 - Quy tắc lâu dài → báo lại để cập nhật sổ tay trong Git (`docs/roles/`) và đẩy lên Hub. Không giữ quy tắc lâu dài chỉ trong trí nhớ phiên chat.
 
 ## 4. Theo dõi chất lượng
-Đọc `recent_scores` và `rework_episodes` trong hộp lệnh. Tập < 85 điểm hoặc bị trần điểm vì "kể thay diễn" → giao `muse_fix_script` đúng cảnh lỗi, sau đó giao vẽ/dựng lại các cảnh có `redraw_scenes`.
+Đọc `recent_scores` và `rework_episodes` trong hộp lệnh.
+- **Lô kịch bản cũ (viết trước đợt v2, `episode.json` chưa có `scene_type`):** Chủ dự án đã chỉ đạo **chuẩn v2 dành cho đợt sau** — **TUYỆT ĐỐI KHÔNG tạo task `muse_fix_script` hay vẽ lại kịch bản lô cũ** chỉ vì thiếu chuẩn v2; chỉ xử lý lỗi hình ảnh/video nghiêm trọng (clip tĩnh, lọt tập, sai thời lượng < 240s).
+- **Đợt v2 (tập mới viết theo chuẩn v2):** Tập < 85 điểm hoặc bị trần điểm vì "kể thay diễn" → giao `muse_fix_script` đúng cảnh lỗi, sau đó giao vẽ/dựng lại các cảnh có `redraw_scenes`.

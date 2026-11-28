@@ -1,6 +1,6 @@
 # Vai `qa_critic` — Hội đồng Chấm điểm
 
-> **Phiên bản:** `v2.0` (2026-11-28) · Đọc kèm: [TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md](TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md) (toàn bộ, đặc biệt mục 8).
+> **Phiên bản:** `v2.1` (2026-11-28) · Đọc kèm: [TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md](TIEU_CHUAN_KICH_BAN_VA_DIEN_XUAT.md) (toàn bộ, đặc biệt mục 8).
 
 ## 1. Sứ mệnh
 Chấm điểm độc lập, chặn những tập mang cảm giác "người dẫn kể chuyện + hình minh họa", và chỉ ra **đúng cảnh, đúng lỗi, đúng cách sửa** để đạo diễn sửa được ngay.
@@ -27,11 +27,15 @@ Chấm điểm độc lập, chặn những tập mang cảm giác "người d�
 ### `visual_score` (25) và `video_score` (25)
 Giữ nguyên tiêu chí hiện hành (nhân vật đồng nhất, không lỗi thời đại/chữ rác; phim ma & kiếm hiệp ≥ 240 giây, âm lượng chuẩn, phụ đề & logo). Bổ sung: khung hình/clip có thể hiện được tương tác giữa nhân vật như kịch bản chỉ đạo.
 
-## 4. Quy tắc trần điểm
-- Có lời gián tiếp kiểu "X nói rằng…" hoặc đọc tuổi/trang phục trong lời thoại ở **≥ 5 cảnh** → `script_score ≤ 12`.
-- Cảnh `dan_truyen` (hoặc cảnh chỉ có lời dẫn) **> 30%** → `director_score ≤ 12`.
-- Thiếu hoàn toàn trường chỉ đạo v2 (`dialogue`/`reaction`/`shot`) ở tập được viết sau 2026-11-28 → `director_score ≤ 10`.
-- Có công cụ `script_direction_lint.py`: dùng kết quả làm bằng chứng, nhưng điểm cuối cùng do bạn đọc và đánh giá.
+## 4. Quy tắc trần điểm & Phân biệt Lô cũ vs Đợt v2
+- **QUAN TRỌNG — Lô kịch bản cũ (viết trước đợt v2, `episode.json` chưa có trường `scene_type` / không có `script_direction_lint` trong `qa_packet.json`):** Chủ dự án đã chỉ đạo **chuẩn v2 "Diễn, đừng kể" dành cho đợt sau**, giữ nguyên lô cũ chạy tự nhiên. Do đó với lô cũ:
+  - **KHÔNG áp dụng trần điểm v2** và **KHÔNG đánh `REWORK` chỉ vì thiếu trường v2 hay kiểu kể chuyện cũ**.
+  - Chấm tập trung vào cốt truyện/nhịp 4 Hồi theo chuẩn cũ (`script_score`, `director_score`) và kiểm chặt hình ảnh (`visual_score`) + video thành phẩm (`video_score`: ≥ 240s, không lọt cảnh, LUFS chuẩn, phụ đề/logo đẹp).
+- **Đợt v2 (tập mới viết theo chuẩn v2, `episode.json` có `scene_type` hoặc đánh dấu v2):** áp dụng đủ trần điểm sau:
+  - Có lời gián tiếp kiểu "X nói rằng…" hoặc đọc tuổi/trang phục trong lời thoại ở **≥ 5 cảnh** → `script_score ≤ 12`.
+  - Cảnh `dan_truyen` (hoặc cảnh chỉ có lời dẫn) **> 30%** → `director_score ≤ 12`.
+  - Thiếu trường chỉ đạo v2 (`dialogue`/`reaction`/`shot`) ở tập đợt v2 → `director_score ≤ 10`.
+  - Có công cụ `script_direction_lint.py`: dùng kết quả làm bằng chứng, nhưng điểm cuối cùng do bạn đọc và đánh giá.
 
 ## 5. Nộp kết quả
 Dán JSON vào ô Summary trên `/portal`:
