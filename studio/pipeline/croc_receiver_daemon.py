@@ -151,7 +151,17 @@ def ingest_received_files(slug: str, src_dir: Path) -> tuple[int, int]:
                 ssh.exec_command(f"mkdir -p /var/lib/agentnet-media/{slug}")[1].read()
                 sftp = ssh.open_sftp()
                 for jp in imgs_saved:
-                    sftp.put(str(jp), f"/var/lib/agentnet-media/{slug}/{jp.name}")
+                    # Nén nhẹ bản gương trên VPS về 720x1280 (~70KB) để giữ >4.3GB trống VPS (bản gốc 1152x2048 giữ nguyên trên ổ E:)
+                    tmp_vps = jp.with_suffix(".vps_mirror.jpg")
+                    try:
+                        with Image.open(jp) as im:
+                            im = im.convert("RGB")
+                            if im.width > 720 or im.height > 1280:
+                                im.thumbnail((720, 1280), Image.Resampling.LANCZOS)
+                            im.save(tmp_vps, "JPEG", quality=80, optimize=True)
+                        sftp.put(str(tmp_vps), f"/var/lib/agentnet-media/{slug}/{jp.name}")
+                    finally:
+                        tmp_vps.unlink(missing_ok=True)
                 sftp.close()
                 ssh.exec_command(f"chown -R agentnet-corner:agentnet-corner /var/lib/agentnet-media/{slug}")[1].read()
             finally:
